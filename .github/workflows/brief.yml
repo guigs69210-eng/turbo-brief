@@ -1,0 +1,88 @@
+name: Turbo Brief — Auto
+
+on:
+  schedule:
+    - cron: '50 7 * * 1-5'
+    - cron: '20 12 * * 1-5'
+    - cron: '20 13 * * 1-5'
+    - cron: '20 15 * * 1-5'
+    - cron: '45 16 * * 1-5'
+    - cron: '0 19 * * 1-5'
+
+  workflow_dispatch:
+    inputs:
+      trigger:
+        description: 'Type de brief'
+        required: true
+        default: 'manual'
+        type: choice
+        options:
+          - morning
+          - us
+          - fomc
+          - manual
+
+env:
+  TZ: Europe/Paris
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Detect trigger type
+        id: trigger
+        run: |
+          HOUR=$(date -u +%H)
+          MANUAL="${{ github.event.inputs.trigger }}"
+          if [ -n "$MANUAL" ]; then
+            echo "type=$MANUAL" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" = "07" ]; then
+            echo "type=morning" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" = "13" ]; then
+            echo "type=us" >> $GITHUB_OUTPUT
+          elif [ "$HOUR" = "16" ]; then
+            echo "type=eod" >> $GITHUB_OUTPUT
+          else
+            echo "type=refresh" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run brief agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BRIEF_TRIGGER: ${{ steps.trigger.outputs.type }}
+        run: python run_brief.py --trigger $BRIEF_TRIGGER
+
+      - name: Upload brief artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: brief-${{ github.run_number }}
+          path: |
+            output/brief_latest.json
+            output/turbo_brief_live.html
+          retention-days: 7
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          keep_files: true
