@@ -14,7 +14,7 @@ log = logging.getLogger("agent.claude")
 PARIS = ZoneInfo("Europe/Paris")
 
 CLIENT = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-MODEL  = "gemini-2.0-flash"
+MODEL  = "gemini-1.5-flash"
 
 SYSTEM_PROMPT = """Tu es l'algorithme de trading de Turbo Brief, un outil de day trading sur turbos/warrants (Paris, PEA + CTO).
 
