@@ -55,9 +55,9 @@ jobs:
             echo "type=refresh" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run brief agent
+   - name: Run brief agent
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           BRIEF_TRIGGER: ${{ steps.trigger.outputs.type }}
