@@ -1,0 +1,117 @@
+{
+  "signal_du_jour": {
+    "titre": "Biais haussier conditionnel — NQ Futures en rebond technique",
+    "description": "NQ Futures +2.49% en session européenne, rebond depuis supports 24329.75. VIX en baisse (-7.44%) mais reste élevé (24.77). CAC40 +1.37% mais RSI baissier (34.3).",
+    "biais": "haussier",
+    "conviction": "modérée",
+    "contexte_macro": "FOMC ce soir : marché anticipe un hold à 92% avec 8% de probabilité de coupe. Sentiment neutre. Pétrole en forte baisse (-6.23%) mais or en hausse (+2.16%)."
+  },
+  "plan_actions": [
+    {
+      "heure": "15h00",
+      "titre": "CALL NQ Futures ×20 (PEAK)",
+      "sens": "CALL",
+      "mise": "2000 €",
+      "levier": 20,
+      "strike_ko": "Strike 24500 / KO 24000",
+      "gain_cible": "+25% si NQ +1.2%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée après rebond sur support 24329.75. Stop mental -40% si KO. TP1 à +25% → sortir 50%, stop à +10%.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "15h30",
+      "titre": "PUT CAC40 ×15 (COVER)",
+      "sens": "PUT",
+      "mise": "1500 €",
+      "levier": 15,
+      "strike_ko": "Strike 7800 / KO 7850",
+      "gain_cible": "+20% si CAC40 -0.8%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "CAC40 en rebond technique mais RSI baissier. Couverture partielle en cas de retournement. Stop mental -40% si KO.",
+      "urgence": "normale"
+    }
+  ],
+  "niveaux_cles": [
+    {
+      "label": "Résistance haute NQ",
+      "prix": 26349.0,
+      "type": "resistance",
+      "action": "Prendre profits TP2 si atteinte",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support clé NQ",
+      "prix": 24329.75,
+      "type": "support",
+      "action": "Valider rebond avant entrée CALL",
+      "couleur": "blue"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 8179.58,
+      "type": "resistance",
+      "action": "Éviter les positions longues au-delà",
+      "couleur": "bear"
+    },
+    {
+      "label": "Support CAC40",
+      "prix": 7700.0,
+      "type": "support",
+      "action": "Stop loss si cassure",
+      "couleur": "blue"
+    }
+  ],
+  "alertes": [
+    "FOMC 20h CET — Risque de volatilité accrue",
+    "Surveiller pétrole (Brent) pour impact sur indices énergétiques",
+    "Schneider Electric : RSI neutre mais tendance baissière — éviter si rebond faible"
+  ],
+  "regles_session": [
+    "Stop mental -40% = sortie immédiate",
+    "Clôture obligatoire CAC40 à 17h30",
+    "Turbo NQ gardé jusqu'à 22h si position ouverte"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "24 551",
+      "chg": "+2.49%",
+      "dir": "up"
+    },
+    "cac40": {
+      "valeur": "7 765",
+      "chg": "+1.37%",
+      "dir": "up"
+    },
+    "brent": {
+      "valeur": "$101.2",
+      "chg": "-6.23%",
+      "dir": "dn"
+    },
+    "vix": {
+      "valeur": "24.8",
+      "chg": "-7.44%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "4449.40",
+      "chg": "+2.16%",
+      "dir": "up"
+    },
+    "eurusd": {
+      "valeur": "1.1606",
+      "chg": "+0.27%",
+      "dir": "up"
+    },
+    "us10y": {
+      "valeur": "4.372",
+      "chg": "-0.43%",
+      "dir": "dn"
+    }
+  },
+  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (turbo/warrants uniquement).",
+  "edition": "14h53 CET",
+  "mode": "normal",
+  "timestamp": "2026-03-23T14:53:10.100872+01:00",
+  "date_fr": "Monday 23 march 2026"
+}
