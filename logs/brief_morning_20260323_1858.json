@@ -1,0 +1,408 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24401.75,
+        "prev_close": 23954.75,
+        "change_pct": 1.87,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7726.2002,
+        "prev_close": 7660.4702,
+        "change_pct": 0.86,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.42,
+        "prev_close": 26.76,
+        "change_pct": -5.01,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4413.5,
+        "prev_close": 4355.2998,
+        "change_pct": 1.34,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 101.33,
+        "prev_close": 107.93,
+        "change_pct": -6.12,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1608,
+        "prev_close": 1.1575,
+        "change_pct": 0.28,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.348,
+        "prev_close": 4.391,
+        "change_pct": -0.98,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6644.25,
+        "prev_close": 6524.75,
+        "change_pct": 1.83,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 243.3,
+        "prev_close": 239.15,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 466.6,
+        "prev_close": 453.95,
+        "change_pct": 2.79,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 165.56,
+        "prev_close": 166.9,
+        "change_pct": -0.8,
+        "direction": "dn"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.35,
+        "prev_close": 82.24,
+        "change_pct": 1.35,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.649,
+        "prev_close": 5.534,
+        "change_pct": 2.08,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-23T17:58:48.693439+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [],
+      "flash_alerts": [],
+      "sentiment": 0,
+      "themes": [],
+      "scanned_at": "2026-03-23T17:58:43.623205+00:00",
+      "mode": "full"
+    },
+    "calendar": {
+      "today_high_impact": [],
+      "today_all": [],
+      "tomorrow_events": [],
+      "fomc_schedule": {
+        "next_meeting": {
+          "date": "2026-05-07",
+          "label": "Mai 2026"
+        },
+        "days_until": 45,
+        "probabilities": {
+          "hold": 92.0,
+          "cut_25": 8.0,
+          "hike_25": 0.0
+        }
+      },
+      "next_event": null,
+      "fetched_at": "2026-03-23T17:58:43.593715+00:00"
+    },
+    "technical": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "name": "NQ Futures",
+        "current_price": 24401.75,
+        "rsi": 43.6,
+        "rsi_signal": "neutre",
+        "ma20": 24800.0,
+        "ma50": 25154.95,
+        "ema9": 24534.19,
+        "ema21": 24742.71,
+        "vwap": 24489.72,
+        "bb_upper": 25421.24,
+        "bb_lower": 24178.76,
+        "atr": 549.88,
+        "atr_pct": 2.25,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 26349.0,
+            "pct_away": 7.98,
+            "type": "resistance"
+          },
+          {
+            "price": 26027.75,
+            "pct_away": 6.66,
+            "type": "resistance"
+          },
+          {
+            "price": 25263.0,
+            "pct_away": 3.53,
+            "type": "resistance"
+          },
+          {
+            "price": 24668.0,
+            "pct_away": 1.09,
+            "type": "resistance"
+          },
+          {
+            "price": 24329.75,
+            "pct_away": -0.3,
+            "type": "support"
+          },
+          {
+            "price": 24000.0,
+            "pct_away": -1.65,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "name": "CAC 40",
+        "current_price": 7726.2,
+        "rsi": 31.8,
+        "rsi_signal": "baissier",
+        "ma20": 8098.78,
+        "ma50": 8191.6,
+        "ema9": 7873.86,
+        "ema21": 8025.41,
+        "vwap": NaN,
+        "bb_upper": 8671.12,
+        "bb_lower": 7526.45,
+        "atr": 171.99,
+        "atr_pct": 2.23,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 8179.58,
+            "pct_away": 5.87,
+            "type": "resistance"
+          },
+          {
+            "price": 8107.19,
+            "pct_away": 4.93,
+            "type": "resistance"
+          },
+          {
+            "price": 8066.62,
+            "pct_away": 4.41,
+            "type": "resistance"
+          },
+          {
+            "price": 8008.67,
+            "pct_away": 3.66,
+            "type": "resistance"
+          },
+          {
+            "price": 7856.61,
+            "pct_away": 1.69,
+            "type": "resistance"
+          },
+          {
+            "price": 7768.11,
+            "pct_away": 0.54,
+            "type": "resistance"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "name": "Schneider Electric",
+        "current_price": 243.3,
+        "rsi": 42.0,
+        "rsi_signal": "neutre",
+        "ma20": 254.73,
+        "ma50": 249.52,
+        "ema9": 247.14,
+        "ema21": 251.06,
+        "vwap": 247.35,
+        "bb_upper": 275.0,
+        "bb_lower": 234.46,
+        "atr": 9.91,
+        "atr_pct": 4.07,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 247.3,
+            "pct_away": 1.64,
+            "type": "resistance"
+          },
+          {
+            "price": 245.75,
+            "pct_away": 1.01,
+            "type": "resistance"
+          },
+          {
+            "price": 239.65,
+            "pct_away": -1.5,
+            "type": "support"
+          },
+          {
+            "price": 237.65,
+            "pct_away": -2.32,
+            "type": "support"
+          },
+          {
+            "price": 236.0,
+            "pct_away": -3.0,
+            "type": "support"
+          },
+          {
+            "price": 233.15,
+            "pct_away": -4.17,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "computed_at": "2026-03-23T17:58:44.939701+00:00"
+    },
+    "trigger": "morning",
+    "timestamp": "2026-03-23T18:58:48.693791+01:00",
+    "context": {
+      "note": "",
+      "github_run": "20",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Haussier — Biais fort sur NQ et CAC",
+      "description": "NQ Futures +1.87% en clôture européenne, CAC40 +0.86% malgré un VIX en baisse de 5%. Sentiment neutre mais momentum haussier intraday.",
+      "biais": "haussier",
+      "conviction": "forte",
+      "contexte_macro": "FOMC attendu demain avec probabilité de maintien des taux à 92%. Marché actions en rebond technique après une semaine volatile. Pétrole en forte baisse (-6.12%) soutenant les valeurs cycliques."
+    },
+    "plan_actions": [
+      {
+        "heure": "09h00",
+        "titre": "CALL NQ Futures ×25 (BEST SG Bourse)",
+        "sens": "CALL",
+        "mise": "2500 €",
+        "levier": 25,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ > 24500",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée sur reprise du momentum haussier post-FOMC. Stop mental à -40% (KO).",
+        "urgence": "haute"
+      },
+      {
+        "heure": "09h15",
+        "titre": "CALL CAC40 ×15 (Warrant BNP)",
+        "sens": "CALL",
+        "mise": "1500 €",
+        "levier": 15,
+        "strike_ko": "Strike 7600 / KO 7500",
+        "gain_cible": "+20% si CAC > 7800",
+        "plateforme": "bnpparibas.com → CAC40 → CALL Warrant",
+        "note": "Cible TP1 à +25% (sortir 50%), stop à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance haute NQ",
+        "prix": 26349.0,
+        "type": "resistance",
+        "action": "Prendre profits TP2 si atteinte",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support clé NQ",
+        "prix": 24329.75,
+        "type": "support",
+        "action": "Stop loss renforcé si cassure",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC",
+        "prix": 8179.58,
+        "type": "resistance",
+        "action": "Objectif TP2 si dépassement",
+        "couleur": "bull"
+      },
+      {
+        "label": "VWAP NQ",
+        "prix": 24489.72,
+        "type": "current",
+        "action": "Zone de contrôle pour entrée CALL",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "FOMC demain 20h CET — surveiller réaction marché",
+      "Brent en baisse (-6.12%) : opportunité sur valeurs énergétiques si rebond NQ",
+      "Schneider Electric : RSI neutre, tendance baissière — éviter pour l'instant"
+    ],
+    "regles_session": [
+      "Stop mental −40% sur turbo = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → gardés jusqu'à 22h",
+      "TP1 (+25%) → sortir 50%, stop à +10%",
+      "FOMC → levier max ×20"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 402",
+        "chg": "+1.87%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 726",
+        "chg": "+0.86%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$101.3",
+        "chg": "-6.12%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.4",
+        "chg": "-5.01%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1608",
+        "chg": "+0.28%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "4413.5",
+        "chg": "+1.34%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.348",
+        "chg": "-0.98%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (NQ/CAC uniquement).",
+    "edition": "18:58 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-23T18:58:55.097119+01:00",
+    "date_fr": "Monday 23 march 2026"
+  }
+}
