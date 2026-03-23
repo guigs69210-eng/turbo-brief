@@ -1,72 +1,53 @@
 {
   "signal_du_jour": {
     "titre": "Haussier — Impulsion post-FOMC",
-    "description": "NQ Futures +2.15% après la décision de la Fed (taux inchangés, signal dovish). VIX en baisse de 4%, EURUSD et or en hausse. Brent chute de 8.5% sur excès d'offre.",
+    "description": "NQ Futures +1.95% après la décision de la Fed, VIX en baisse de 2.28%, marché actions européens en hausse (+0.86% CAC40).",
     "biais": "haussier",
     "conviction": "forte",
-    "contexte_macro": "La Fed maintient ses taux mais adopte un ton accommodant, soutenant les marchés actions. La chute du Brent et la hausse de l'or reflètent des tensions géopolitiques persistantes et des craintes de ralentissement économique."
+    "contexte_macro": "La Fed a maintenu ses taux mais signalé une possible pause future. Les marchés actions réagissent positivement avec une hausse marquée des indices US et européens. Le VIX reste élevé mais en baisse, indiquant une réduction temporaire de la volatilité."
   },
   "plan_actions": [
     {
-      "heure": "20h40",
+      "heure": "22h00",
       "titre": "CALL NQ Futures ×20 (FOMC)",
       "sens": "CALL",
       "mise": "2000 €",
       "levier": 20,
       "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1.5%",
+      "gain_cible": "+25% si NQ +1%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée immédiate après la décision Fed. Surveillance du VIX et de l'EURUSD pour confirmation.",
+      "note": "Entrée après validation du communiqué FOMC. Surveillance active jusqu'à 22h30.",
       "urgence": "haute"
-    },
-    {
-      "heure": "21h00",
-      "titre": "PUT BRENT ×15 (couverture)",
-      "sens": "PUT",
-      "mise": "1500 €",
-      "levier": 15,
-      "strike_ko": "Strike 98 / KO 102",
-      "gain_cible": "+20% si Brent -2%",
-      "plateforme": "bnpparibas.com → Energie → PUT Warrant",
-      "note": "Protection contre une éventuelle reprise du Brent après la chute. Stop mental à -40%.",
-      "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance haute NQ",
-      "prix": 24600,
+      "label": "Résistance haute",
+      "prix": 24500,
       "type": "resistance",
-      "action": "Prendre profits TP1 si atteinte",
+      "action": "Prendre profits TP1 (+25%)",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ",
+      "label": "Support clé",
       "prix": 24200,
       "type": "support",
-      "action": "Achat supplémentaire si cassure",
-      "couleur": "bear"
-    },
-    {
-      "label": "Seuil Brent",
-      "prix": 97,
-      "type": "support",
-      "action": "Sortie PUT si cassure",
+      "action": "Stop loss si cassure",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Surveillance VIX (niveau 24) pour confirmation de la tendance haussière.",
-    "FOMC terminé — pas d'autres annonces majeures prévues ce soir."
+    "Surveillance FOMC jusqu'à 22h30",
+    "VIX à 26.15 — risque de rebond possible"
   ],
   "regles_session": [
-    "Stop mental −40% sur chaque position = sortie immédiate",
-    "Clôture obligatoire à 22h pour les turbos NQ/indices"
+    "Stop mental −40% = sortie immédiate",
+    "Clôture obligatoire 22h30 pour NQ Futures"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 470",
-      "chg": "+2.15%",
+      "valeur": "24 421",
+      "chg": "+1.95%",
       "dir": "up"
     },
     "cac40": {
@@ -75,23 +56,23 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$98.8",
-      "chg": "-8.50%",
+      "valeur": "$100.2",
+      "chg": "-7.19%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.7",
-      "chg": "-4.00%",
+      "valeur": "26.1",
+      "chg": "-2.28%",
       "dir": "dn"
     },
-    "eurusd": {
-      "valeur": "1.1623",
-      "chg": "+0.41%",
+    "gold": {
+      "valeur": "4 414.90",
+      "chg": "+1.37%",
       "dir": "up"
     },
-    "gold": {
-      "valeur": "4407.90",
-      "chg": "+1.21%",
+    "eurusd": {
+      "valeur": "1.1614",
+      "chg": "+0.34%",
       "dir": "up"
     },
     "us10y": {
@@ -100,9 +81,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Capital day trading dédié uniquement.",
-  "edition": "20h37 CET",
+  "pea_note": "PEA — Ne pas toucher.",
+  "edition": "21h58 CET",
   "mode": "fomc",
-  "timestamp": "2026-03-23T20:37:49.405117+01:00",
+  "timestamp": "2026-03-23T21:58:25.477756+01:00",
   "date_fr": "Monday 23 march 2026"
 }
