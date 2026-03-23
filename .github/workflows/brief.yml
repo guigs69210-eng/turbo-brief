@@ -1,4 +1,4 @@
-name: Turbo Brief — Auto
+name: Turbo Brief Auto
 
 on:
   schedule:
@@ -55,7 +55,7 @@ jobs:
             echo "type=refresh" >> $GITHUB_OUTPUT
           fi
 
-   - name: Run brief agent
+      - name: Run brief agent
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
