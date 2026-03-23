@@ -1,17 +1,20 @@
 """
-Sous-agent Claude — Synthèse LLM
+Sous-agent Gemini — Synthèse LLM (gratuit)
 """
 
 import json
 import logging
+import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-import anthropic
+import aiohttp
 
 log = logging.getLogger("agent.claude")
 PARIS = ZoneInfo("Europe/Paris")
-CLIENT = anthropic.Anthropic()
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
 SYSTEM_PROMPT = """Tu es l'algorithme de trading de Turbo Brief, un outil de day trading sur turbos/warrants (Paris, PEA + CTO).
 
@@ -31,15 +34,15 @@ RÈGLES IMPÉRATIVES :
 5. Ne jamais passer un FOMC en levier ×25 → réduire à ×20
 6. Jamais de moyenne à la baisse
 
-FORMAT DE RÉPONSE : JSON strict, pas de texte avant/après.
+FORMAT DE RÉPONSE : JSON strict uniquement, pas de texte avant/après, pas de backticks.
 
 {
   "signal_du_jour": {
-    "titre": "Neutre — Biais haussier conditionnel FOMC",
-    "description": "NQ Futures XX (+X%), VIX XX en baisse...",
+    "titre": "Neutre — Biais haussier conditionnel",
+    "description": "NQ Futures XX (+X%), VIX XX...",
     "biais": "haussier|baissier|neutre",
     "conviction": "faible|modérée|forte",
-    "contexte_macro": "Résumé macro en 2 phrases"
+    "contexte_macro": "Résumé en 2 phrases"
   },
   "plan_actions": [
     {
@@ -64,7 +67,7 @@ FORMAT DE RÉPONSE : JSON strict, pas de texte avant/après.
       "couleur": "bull|bear|amber|blue"
     }
   ],
-  "alertes": ["FOMC ce soir 20h ET — volatilité max"],
+  "alertes": ["FOMC ce soir 20h ET"],
   "regles_session": ["Stop mental −40% = sortie immédiate"],
   "market_strip": {
     "nq":    {"valeur": "25 112", "chg": "+0,39%", "dir": "up"},
@@ -72,34 +75,44 @@ FORMAT DE RÉPONSE : JSON strict, pas de texte avant/après.
     "brent": {"valeur": "101,0",  "chg": "-0,20%", "dir": "dn"},
     "vix":   {"valeur": "22,4",   "chg": "-17,7%", "dir": "up"}
   },
-  "pea_note": "PEA — Ne pas toucher. Couverture PUT active.",
+  "pea_note": "PEA — Ne pas toucher.",
   "timestamp": "2026-03-18T09:00:00",
   "edition": "09h00 CET",
-  "mode": "normal|fomc|news_flash|market_alert"
-}
-
-CONSIGNES :
-- Sois précis sur les niveaux de prix
-- Génère 2-4 actions maximum par brief
-- Adapte le levier au contexte (FOMC → max ×20)
-- Si VIX > 25 : réduire les mises
-- En mode FOMC : ajouter scénarios dovish et hawkish
-"""
+  "mode": "normal|fomc|news_flash"
+}"""
 
 
 async def synthesize_brief(raw_data: dict, trigger_type) -> dict:
     user_message = _build_user_message(raw_data, trigger_type)
-    log.info(f"Appel Claude API — {len(user_message)} chars")
+    log.info(f"Appel Gemini API — {len(user_message)} chars")
 
-    response = CLIENT.messages.create(
-        model="claude-sonnet-4-5",
-        max_tokens=3000,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_message}],
-    )
+    payload = {
+        "contents": [
+            {
+                "parts": [
+                    {"text": SYSTEM_PROMPT + "\n\n" + user_message}
+                ]
+            }
+        ],
+        "generationConfig": {
+            "temperature": 0.3,
+            "maxOutputTokens": 3000,
+        }
+    }
 
-    raw_response = response.content[0].text
-    log.info(f"Claude répondu — {len(raw_response)} chars")
+    async with aiohttp.ClientSession() as session:
+        async with session.post(
+            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
+            json=payload,
+            timeout=aiohttp.ClientTimeout(total=30)
+        ) as resp:
+            if resp.status != 200:
+                body = await resp.text()
+                raise Exception(f"Gemini error {resp.status}: {body[:300]}")
+            data = await resp.json()
+
+    raw_response = data["candidates"][0]["content"]["parts"][0]["text"]
+    log.info(f"Gemini répondu — {len(raw_response)} chars")
 
     brief = _parse_response(raw_response)
     brief = _validate_brief(brief, raw_data)
@@ -135,13 +148,12 @@ def _build_user_message(data: dict, trigger_type) -> str:
                     f"Trend: {t.get('trend','?')}, VWAP: {t.get('vwap','?')}, ATR: {t.get('atr_pct','?')}%"
                 )
                 sr = t.get("sr_levels", [])
-                if sr:
-                    resistances = [l for l in sr if l["type"] == "resistance"][:2]
-                    supports    = [l for l in sr if l["type"] == "support"][:2]
-                    if resistances:
-                        sections.append(f"  Résistances: {', '.join(str(l['price']) for l in resistances)}")
-                    if supports:
-                        sections.append(f"  Supports: {', '.join(str(l['price']) for l in supports)}")
+                resistances = [l for l in sr if l["type"] == "resistance"][:2]
+                supports    = [l for l in sr if l["type"] == "support"][:2]
+                if resistances:
+                    sections.append(f"  Résistances: {', '.join(str(l['price']) for l in resistances)}")
+                if supports:
+                    sections.append(f"  Supports: {', '.join(str(l['price']) for l in supports)}")
         sections.append("")
 
     cal = data.get("calendar", {})
@@ -166,15 +178,21 @@ def _build_user_message(data: dict, trigger_type) -> str:
             sections.append(f"  - [{a.get('urgency','?').upper()}] {a.get('title','')}")
         sections.append("")
 
-    sections.append("Génère le brief JSON complet.")
+    sections.append("Génère le brief JSON complet. JSON uniquement, aucun texte autour.")
     return "\n".join(sections)
 
 
 def _parse_response(text: str) -> dict:
     text = text.strip()
-    if text.startswith("```"):
+    # Nettoyer les backticks
+    if "```" in text:
         lines = [l for l in text.split("\n") if not l.startswith("```")]
-        text = "\n".join(lines)
+        text = "\n".join(lines).strip()
+    # Extraire le JSON si entouré de texte
+    start = text.find("{")
+    end   = text.rfind("}") + 1
+    if start >= 0 and end > start:
+        text = text[start:end]
     try:
         return json.loads(text)
     except json.JSONDecodeError as e:
@@ -182,13 +200,13 @@ def _parse_response(text: str) -> dict:
         return {
             "signal_du_jour": {
                 "titre": "Erreur de génération",
-                "description": "Vérifier les logs GitHub Actions.",
+                "description": "Vérifier les logs.",
                 "biais": "neutre",
                 "conviction": "faible",
             },
             "plan_actions": [],
             "niveaux_cles": [],
-            "alertes": ["⚠️ Erreur de génération du brief"],
+            "alertes": ["⚠️ Erreur de génération"],
             "regles_session": [],
             "market_strip": {},
         }
