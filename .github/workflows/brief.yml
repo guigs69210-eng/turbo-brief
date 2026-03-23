@@ -1,5 +1,5 @@
 name: Turbo Brief — Auto
- 
+
 on:
   schedule:
     - cron: '50 7 * * 1-5'
@@ -8,7 +8,6 @@ on:
     - cron: '20 15 * * 1-5'
     - cron: '45 16 * * 1-5'
     - cron: '0 19 * * 1-5'
-
   workflow_dispatch:
     inputs:
       trigger:
@@ -22,14 +21,10 @@ on:
           - fomc
           - manual
 
-env:
-  TZ: Europe/Paris
-
 jobs:
   brief:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Detect trigger type
+      - name: Detect trigger
         id: trigger
         run: |
           HOUR=$(date -u +%H)
@@ -61,14 +56,14 @@ jobs:
           fi
 
       - name: Run brief agent
-          env:
+        env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           BRIEF_TRIGGER: ${{ steps.trigger.outputs.type }}
         run: python run_brief.py --trigger $BRIEF_TRIGGER
 
-      - name: Upload brief artifacts
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
