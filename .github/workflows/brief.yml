@@ -1,5 +1,5 @@
 name: Turbo Brief — Auto
-
+ 
 on:
   schedule:
     - cron: '50 7 * * 1-5'
