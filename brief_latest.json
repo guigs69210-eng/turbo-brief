@@ -1,83 +1,74 @@
 {
   "signal_du_jour": {
-    "titre": "Haussier — Biais fort sur NQ et CAC",
-    "description": "NQ Futures +1.87% en clôture européenne, CAC40 +0.86% malgré un VIX en baisse de 5%. Sentiment neutre mais momentum haussier intraday.",
+    "titre": "Haussier — Impulsion post-FOMC",
+    "description": "NQ Futures +2,07% après la décision de la Fed (taux inchangés, dot plot haussier). VIX en baisse de 5,42% mais reste élevé à 25,31. CAC40 +0,86% en réaction.",
     "biais": "haussier",
     "conviction": "forte",
-    "contexte_macro": "FOMC attendu demain avec probabilité de maintien des taux à 92%. Marché actions en rebond technique après une semaine volatile. Pétrole en forte baisse (-6.12%) soutenant les valeurs cycliques."
+    "contexte_macro": "La Fed maintient une posture restrictive mais les marchés anticipent une pause future. L'or et l'euro renforcent leur tendance haussière, tandis que le Brent chute fortement (-6,87%) en raison de craintes sur la demande mondiale."
   },
   "plan_actions": [
     {
-      "heure": "09h00",
-      "titre": "CALL NQ Futures ×25 (BEST SG Bourse)",
+      "heure": "19h10",
+      "titre": "CALL NQ Futures ×20",
       "sens": "CALL",
-      "mise": "2500 €",
-      "levier": 25,
+      "mise": "2000 €",
+      "levier": 20,
       "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ > 24500",
+      "gain_cible": "+25% si NQ +1,5%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée sur reprise du momentum haussier post-FOMC. Stop mental à -40% (KO).",
+      "note": "Entrée 19h10–19h30. Surveillance du VIX et des taux US10Y.",
       "urgence": "haute"
     },
     {
-      "heure": "09h15",
-      "titre": "CALL CAC40 ×15 (Warrant BNP)",
-      "sens": "CALL",
+      "heure": "19h15",
+      "titre": "PUT BRENT ×15 (couverture)",
+      "sens": "PUT",
       "mise": "1500 €",
       "levier": 15,
-      "strike_ko": "Strike 7600 / KO 7500",
-      "gain_cible": "+20% si CAC > 7800",
-      "plateforme": "bnpparibas.com → CAC40 → CALL Warrant",
-      "note": "Cible TP1 à +25% (sortir 50%), stop à +10%.",
+      "strike_ko": "Strike 102 / KO 105",
+      "gain_cible": "+20% si Brent -2%",
+      "plateforme": "bnpparibas.com → Pétrole → PUT Warrant",
+      "note": "Couvertures en cas de rebond du Brent. Stop mental -40%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
       "label": "Résistance haute NQ",
-      "prix": 26349.0,
+      "prix": 24600,
       "type": "resistance",
-      "action": "Prendre profits TP2 si atteinte",
+      "action": "Prendre profits TP1",
       "couleur": "bull"
     },
     {
-      "label": "Support clé NQ",
-      "prix": 24329.75,
+      "label": "Support NQ",
+      "prix": 24200,
       "type": "support",
-      "action": "Stop loss renforcé si cassure",
+      "action": "Stop loss si cassure",
       "couleur": "bear"
     },
     {
-      "label": "Résistance CAC",
-      "prix": 8179.58,
-      "type": "resistance",
-      "action": "Objectif TP2 si dépassement",
-      "couleur": "bull"
-    },
-    {
-      "label": "VWAP NQ",
-      "prix": 24489.72,
-      "type": "current",
-      "action": "Zone de contrôle pour entrée CALL",
+      "label": "Seuil Brent",
+      "prix": 100.0,
+      "type": "support",
+      "action": "Surveillance renforcée",
       "couleur": "amber"
     }
   ],
   "alertes": [
-    "FOMC demain 20h CET — surveiller réaction marché",
-    "Brent en baisse (-6.12%) : opportunité sur valeurs énergétiques si rebond NQ",
-    "Schneider Electric : RSI neutre, tendance baissière — éviter pour l'instant"
+    "FOMC terminé — surveiller les réactions des marchés US.",
+    "Brent en chute libre — risque de rebond technique.",
+    "VIX à 25,31 — volatilité élevée."
   ],
   "regles_session": [
-    "Stop mental −40% sur turbo = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → gardés jusqu'à 22h",
-    "TP1 (+25%) → sortir 50%, stop à +10%",
-    "FOMC → levier max ×20"
+    "Stop mental -40% sur tous les turbos = sortie immédiate.",
+    "Clôture obligatoire des positions FR à 17h30 (déjà fait).",
+    "NQ/indices gardés jusqu'à 22h."
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 402",
-      "chg": "+1.87%",
+      "valeur": "24 452",
+      "chg": "+2.07%",
       "dir": "up"
     },
     "cac40": {
@@ -86,34 +77,34 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$101.3",
-      "chg": "-6.12%",
+      "valeur": "$100.5",
+      "chg": "-6.87%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.4",
-      "chg": "-5.01%",
+      "valeur": "25.3",
+      "chg": "-5.42%",
       "dir": "dn"
     },
-    "eurusd": {
-      "valeur": "1.1608",
-      "chg": "+0.28%",
+    "gold": {
+      "valeur": "4 430,0",
+      "chg": "+1,72%",
       "dir": "up"
     },
-    "gold": {
-      "valeur": "4413.5",
-      "chg": "+1.34%",
+    "eurusd": {
+      "valeur": "1,1606",
+      "chg": "+0,27%",
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4.348",
-      "chg": "-0.98%",
+      "valeur": "4,342",
+      "chg": "-1,12%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (NQ/CAC uniquement).",
-  "edition": "18:58 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-23T18:58:55.097119+01:00",
+  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (positions ouvertes : 3 500 €).",
+  "edition": "19h10 CET",
+  "mode": "fomc",
+  "timestamp": "2026-03-23T19:07:31.535319+01:00",
   "date_fr": "Monday 23 march 2026"
 }

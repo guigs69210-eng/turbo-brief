@@ -1,0 +1,224 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24451.75,
+        "prev_close": 23954.75,
+        "change_pct": 2.07,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7726.2002,
+        "prev_close": 7660.4702,
+        "change_pct": 0.86,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.31,
+        "prev_close": 26.76,
+        "change_pct": -5.42,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4430.0,
+        "prev_close": 4355.2998,
+        "change_pct": 1.72,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 100.52,
+        "prev_close": 107.93,
+        "change_pct": -6.87,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1606,
+        "prev_close": 1.1575,
+        "change_pct": 0.27,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.342,
+        "prev_close": 4.391,
+        "change_pct": -1.12,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6654.0,
+        "prev_close": 6524.75,
+        "change_pct": 1.98,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 243.3,
+        "prev_close": 239.15,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 466.6,
+        "prev_close": 453.95,
+        "change_pct": 2.79,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 165.56,
+        "prev_close": 166.9,
+        "change_pct": -0.8,
+        "direction": "dn"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.35,
+        "prev_close": 82.24,
+        "change_pct": 1.35,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.649,
+        "prev_close": 5.534,
+        "change_pct": 2.08,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-23T18:07:25.398709+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [],
+      "flash_alerts": [],
+      "sentiment": 0,
+      "themes": [],
+      "scanned_at": "2026-03-23T18:07:22.321156+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-23T19:07:25.398973+01:00",
+    "context": {
+      "note": "",
+      "github_run": "21",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Haussier — Impulsion post-FOMC",
+      "description": "NQ Futures +2,07% après la décision de la Fed (taux inchangés, dot plot haussier). VIX en baisse de 5,42% mais reste élevé à 25,31. CAC40 +0,86% en réaction.",
+      "biais": "haussier",
+      "conviction": "forte",
+      "contexte_macro": "La Fed maintient une posture restrictive mais les marchés anticipent une pause future. L'or et l'euro renforcent leur tendance haussière, tandis que le Brent chute fortement (-6,87%) en raison de craintes sur la demande mondiale."
+    },
+    "plan_actions": [
+      {
+        "heure": "19h10",
+        "titre": "CALL NQ Futures ×20",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 20,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1,5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 19h10–19h30. Surveillance du VIX et des taux US10Y.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "19h15",
+        "titre": "PUT BRENT ×15 (couverture)",
+        "sens": "PUT",
+        "mise": "1500 €",
+        "levier": 15,
+        "strike_ko": "Strike 102 / KO 105",
+        "gain_cible": "+20% si Brent -2%",
+        "plateforme": "bnpparibas.com → Pétrole → PUT Warrant",
+        "note": "Couvertures en cas de rebond du Brent. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance haute NQ",
+        "prix": 24600,
+        "type": "resistance",
+        "action": "Prendre profits TP1",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24200,
+        "type": "support",
+        "action": "Stop loss si cassure",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil Brent",
+        "prix": 100.0,
+        "type": "support",
+        "action": "Surveillance renforcée",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "FOMC terminé — surveiller les réactions des marchés US.",
+      "Brent en chute libre — risque de rebond technique.",
+      "VIX à 25,31 — volatilité élevée."
+    ],
+    "regles_session": [
+      "Stop mental -40% sur tous les turbos = sortie immédiate.",
+      "Clôture obligatoire des positions FR à 17h30 (déjà fait).",
+      "NQ/indices gardés jusqu'à 22h."
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 452",
+        "chg": "+2.07%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 726",
+        "chg": "+0.86%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$100.5",
+        "chg": "-6.87%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.3",
+        "chg": "-5.42%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4 430,0",
+        "chg": "+1,72%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1,1606",
+        "chg": "+0,27%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4,342",
+        "chg": "-1,12%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (positions ouvertes : 3 500 €).",
+    "edition": "19h10 CET",
+    "mode": "fomc",
+    "timestamp": "2026-03-23T19:07:31.535319+01:00",
+    "date_fr": "Monday 23 march 2026"
+  }
+}
