@@ -8,13 +8,13 @@ import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-import aiohttp
+from google import genai
 
 log = logging.getLogger("agent.claude")
 PARIS = ZoneInfo("Europe/Paris")
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+CLIENT = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+MODEL  = "gemini-2.0-flash"
 
 SYSTEM_PROMPT = """Tu es l'algorithme de trading de Turbo Brief, un outil de day trading sur turbos/warrants (Paris, PEA + CTO).
 
@@ -76,7 +76,6 @@ FORMAT DE RÉPONSE : JSON strict uniquement, pas de texte avant/après, pas de b
     "vix":   {"valeur": "22,4",   "chg": "-17,7%", "dir": "up"}
   },
   "pea_note": "PEA — Ne pas toucher.",
-  "timestamp": "2026-03-18T09:00:00",
   "edition": "09h00 CET",
   "mode": "normal|fomc|news_flash"
 }"""
@@ -86,32 +85,19 @@ async def synthesize_brief(raw_data: dict, trigger_type) -> dict:
     user_message = _build_user_message(raw_data, trigger_type)
     log.info(f"Appel Gemini API — {len(user_message)} chars")
 
-    payload = {
-        "contents": [
-            {
-                "parts": [
-                    {"text": SYSTEM_PROMPT + "\n\n" + user_message}
-                ]
-            }
-        ],
-        "generationConfig": {
-            "temperature": 0.3,
-            "maxOutputTokens": 3000,
-        }
-    }
+    prompt = SYSTEM_PROMPT + "\n\n" + user_message
 
-    async with aiohttp.ClientSession() as session:
-        async with session.post(
-            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-            json=payload,
-            timeout=aiohttp.ClientTimeout(total=30)
-        ) as resp:
-            if resp.status != 200:
-                body = await resp.text()
-                raise Exception(f"Gemini error {resp.status}: {body[:300]}")
-            data = await resp.json()
+    import asyncio
+    loop = asyncio.get_event_loop()
+    response = await loop.run_in_executor(
+        None,
+        lambda: CLIENT.models.generate_content(
+            model=MODEL,
+            contents=prompt,
+        )
+    )
 
-    raw_response = data["candidates"][0]["content"]["parts"][0]["text"]
+    raw_response = response.text
     log.info(f"Gemini répondu — {len(raw_response)} chars")
 
     brief = _parse_response(raw_response)
@@ -184,11 +170,9 @@ def _build_user_message(data: dict, trigger_type) -> str:
 
 def _parse_response(text: str) -> dict:
     text = text.strip()
-    # Nettoyer les backticks
     if "```" in text:
         lines = [l for l in text.split("\n") if not l.startswith("```")]
         text = "\n".join(lines).strip()
-    # Extraire le JSON si entouré de texte
     start = text.find("{")
     end   = text.rfind("}") + 1
     if start >= 0 and end > start:
