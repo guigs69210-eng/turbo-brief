@@ -1,5 +1,5 @@
 """
-Sous-agent Gemini — Synthèse LLM (gratuit)
+Sous-agent Mistral — Synthèse LLM (gratuit, EU)
 """
 
 import json
@@ -8,33 +8,34 @@ import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-from google import genai
+import aiohttp
 
 log = logging.getLogger("agent.claude")
 PARIS = ZoneInfo("Europe/Paris")
 
-CLIENT = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-MODEL  = "gemini-1.5-flash"
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
+MISTRAL_URL     = "https://api.mistral.ai/v1/chat/completions"
+MODEL           = "mistral-small-latest"
 
-SYSTEM_PROMPT = """Tu es l'algorithme de trading de Turbo Brief, un outil de day trading sur turbos/warrants (Paris, PEA + CTO).
+SYSTEM_PROMPT = """Tu es l'algorithme de trading de Turbo Brief, outil de day trading sur turbos/warrants (Paris, PEA + CTO).
 
-TON RÔLE : Analyser les données de marché fournies et générer un brief de trading JSON structuré.
+RÔLE : Analyser les données de marché et générer un brief JSON structuré.
 
-CONTEXTE UTILISATEUR :
-- Trader basé à Paris, sessions 09h–17h30 + soirée US jusqu'à 22h
-- Instruments : Turbos BEST (SG Bourse), warrants (BNP), turbos infinis (Vontobel)
-- Leviers habituels : ×15 à ×25 intraday, ×7 pour couvertures
-- Capital day trading : ~10 000 € actif (PEA 26 000 € séparé, ne pas toucher)
+CONTEXTE :
+- Trader Paris, sessions 09h–17h30 + soirée US jusqu'à 22h
+- Instruments : Turbos BEST (SG Bourse), warrants BNP, turbos Vontobel
+- Leviers : ×15 à ×25 intraday, ×7 couvertures
+- Capital day trading : ~10 000 € (PEA 26 000 € séparé, ne pas toucher)
 
-RÈGLES IMPÉRATIVES :
+RÈGLES :
 1. Stop mental −40% sur le turbo = sortie immédiate
 2. Actions FR → clôture obligatoire 17h30
-3. Turbos indices/NQ → peuvent être gardés jusqu'à 22h
-4. TP1 atteint (+25%) → sortir 50%, déplacer stop à +10%
-5. Ne jamais passer un FOMC en levier ×25 → réduire à ×20
+3. Turbos NQ/indices → gardés jusqu'à 22h
+4. TP1 (+25%) → sortir 50%, stop à +10%
+5. FOMC → levier max ×20
 6. Jamais de moyenne à la baisse
 
-FORMAT DE RÉPONSE : JSON strict uniquement, pas de texte avant/après, pas de backticks.
+RÉPONSE : JSON strict uniquement, aucun texte avant/après, aucun backtick.
 
 {
   "signal_du_jour": {
@@ -83,22 +84,37 @@ FORMAT DE RÉPONSE : JSON strict uniquement, pas de texte avant/après, pas de b
 
 async def synthesize_brief(raw_data: dict, trigger_type) -> dict:
     user_message = _build_user_message(raw_data, trigger_type)
-    log.info(f"Appel Gemini API — {len(user_message)} chars")
+    log.info(f"Appel Mistral API — {len(user_message)} chars")
 
-    prompt = SYSTEM_PROMPT + "\n\n" + user_message
+    headers = {
+        "Authorization": f"Bearer {MISTRAL_API_KEY}",
+        "Content-Type":  "application/json",
+    }
+    payload = {
+        "model": MODEL,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user",   "content": user_message},
+        ],
+        "temperature":  0.3,
+        "max_tokens":   3000,
+        "response_format": {"type": "json_object"},
+    }
 
-    import asyncio
-    loop = asyncio.get_event_loop()
-    response = await loop.run_in_executor(
-        None,
-        lambda: CLIENT.models.generate_content(
-            model=MODEL,
-            contents=prompt,
-        )
-    )
+    async with aiohttp.ClientSession() as session:
+        async with session.post(
+            MISTRAL_URL,
+            headers=headers,
+            json=payload,
+            timeout=aiohttp.ClientTimeout(total=30)
+        ) as resp:
+            if resp.status != 200:
+                body = await resp.text()
+                raise Exception(f"Mistral error {resp.status}: {body[:300]}")
+            data = await resp.json()
 
-    raw_response = response.text
-    log.info(f"Gemini répondu — {len(raw_response)} chars")
+    raw_response = data["choices"][0]["message"]["content"]
+    log.info(f"Mistral répondu — {len(raw_response)} chars")
 
     brief = _parse_response(raw_response)
     brief = _validate_brief(brief, raw_data)
@@ -164,7 +180,7 @@ def _build_user_message(data: dict, trigger_type) -> str:
             sections.append(f"  - [{a.get('urgency','?').upper()}] {a.get('title','')}")
         sections.append("")
 
-    sections.append("Génère le brief JSON complet. JSON uniquement, aucun texte autour.")
+    sections.append("Génère le brief JSON complet.")
     return "\n".join(sections)
 
 
