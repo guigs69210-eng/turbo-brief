@@ -1,109 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier renforcé — Survente technique",
-    "description": "NQ Futures en correction (-0.28% intraday), RSI 34.1 sur NQ, VIX en hausse (+1.34%) et or en forte hausse (+1.82%) suggèrent un biais baissier malgré la stabilité du CAC40.",
-    "biais": "baissier",
-    "conviction": "forte",
-    "contexte_macro": "FOMC à 19h (hold attendu à 92%) avec un marché déjà en tension sur les taux longs (US10Y -1.30%). L'or en hausse reflète un risque de flight-to-quality, tandis que le Brent recule (-1.30%) en raison d'une demande atone."
+    "titre": "Clôture Paris — 17:17",
+    "description": "NQ: 24288 (+0.06%) · CAC: 7726 (-0.02%)",
+    "biais": "neutre",
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "13h30",
-      "titre": "PUT NQ Futures ×20",
-      "sens": "PUT",
-      "mise": "2000 €",
-      "levier": 20,
-      "strike_ko": "Strike 24300 / KO 24800",
-      "gain_cible": "+25% si NQ -0.5%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée après rebond technique sur résistance 24342.5. Stop mental à -40% si KO. Garder jusqu'à 22h si FOMC sans surprise.",
-      "urgence": "haute"
-    },
-    {
-      "heure": "14h00",
-      "titre": "PUT CAC40 ×15",
-      "sens": "PUT",
-      "mise": "1500 €",
-      "levier": 15,
-      "strike_ko": "Strike 7700 / KO 8100",
-      "gain_cible": "+20% si CAC40 -0.3%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Survente technique (RSI 27.4) avec résistance à 8179.58. Clôture obligatoire 17h30.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Résistance haute NQ",
-      "prix": 26349.0,
-      "type": "resistance",
-      "action": "Prendre profits TP2 si NQ touche ce niveau",
-      "couleur": "bear"
-    },
-    {
-      "label": "Support bas NQ",
-      "prix": 24329.75,
-      "type": "support",
-      "action": "Risque de rebond technique si cassure",
-      "couleur": "bull"
-    },
-    {
-      "label": "Support bas CAC40",
-      "prix": 7700.0,
-      "type": "support",
-      "action": "Clôture 17h30 si cassure",
-      "couleur": "bear"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "FOMC 19h — Hold attendu (92%).",
-    "Surveillance or (4426.10) et Brent (102.69) pour confirmation du biais baissier."
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Clôture obligatoire 17h30 pour actions FR (CAC40)",
-    "TP1 (+25%) → sortir 50%, stop à +10%"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 342",
-      "chg": "+0.28%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "7 728",
-      "chg": "+0.01%",
-      "dir": "up"
-    },
-    "brent": {
-      "valeur": "$102.7",
-      "chg": "-1.30%",
-      "dir": "dn"
-    },
-    "vix": {
-      "valeur": "26.5",
-      "chg": "+1.34%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "4 426.10",
-      "chg": "+1.82%",
-      "dir": "up"
-    },
-    "eurusd": {
-      "valeur": "1.1597",
-      "chg": "-0.12%",
-      "dir": "dn"
-    },
-    "us10y": {
-      "valeur": "4.334",
-      "chg": "-1.30%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Ne pas toucher.",
-  "edition": "13h29 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-24T13:29:26.327185+01:00",
-  "date_fr": "Tuesday 24 march 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Tuesday 24 march 2026",
+  "edition": "17h17 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
