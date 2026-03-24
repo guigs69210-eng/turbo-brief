@@ -1,3 +1,4 @@
+run :
 name: Turbo Brief Daily
 
 on:
@@ -22,7 +23,4 @@ jobs:
         run: pip install reportlab yfinance
 
       - name: Run Turbo Brief Agent
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT:  ${{ secrets.TELEGRAM_CHAT }}
-        run: python agent_makecom.py --token $TELEGRAM_TOKEN --chat $TELEGRAM_CHAT
+        run: python agent_makecom.py --token "${{ secrets.TELEGRAM_TOKEN }}" --chat "${{ secrets.TELEGRAM_CHAT }}"
