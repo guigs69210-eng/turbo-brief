@@ -1,76 +1,79 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier conditionnel — Survente extrême",
-    "description": "NQ Futures +0,53% après overnight baissier, VIX +3% mais RSI 34,9 (baissier). CAC40 +0,22% avec RSI 28,6 (survendu). Gold +2,95% en forte hausse.",
+    "titre": "Biais haussier conditionnel — Réaction post-FOMC en attente",
+    "description": "NQ Futures en légère hausse (+0.53%) mais RSI baissier (34.9) et trend baissier. VIX en hausse (+3.06%) reflétant une volatilité accrue. CAC40 en léger rebond (+0.22%) mais survendu (RSI 28.6).",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "FOMC ce soir (probabilité de coupe à 8%) dans un contexte de survente technique sur les indices US et européens. Le marché pourrait rebondir en cas de signal dovish."
+    "contexte_macro": "FOMC maintenu (92% de probabilité), marché en attente de réactions post-décision. Sentiment neutre. Volatilité élevée (VIX +3.06%) avec or en forte hausse (+2.95%) et pétrole en baisse (-3.84%)."
   },
   "plan_actions": [
     {
       "heure": "09h10",
-      "titre": "CALL NQ Futures ×20 (levier réduit)",
+      "titre": "CALL NQ Futures ×20 (FOMC soir)",
       "sens": "CALL",
       "mise": "2000 €",
       "levier": 20,
       "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1,5%",
+      "gain_cible": "+25% si NQ +1.5%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 09h10–09h30 si rebond sur supports 24329.75. Stop mental à -40% du turbo.",
-      "urgence": "normale"
+      "note": "Entrée 09h10–09h30 après validation FOMC. Stop mental −40% immédiat.",
+      "urgence": "haute"
     },
     {
-      "heure": "09h15",
-      "titre": "PUT CAC40 ×15 (couverture partielle)",
+      "heure": "10h00",
+      "titre": "PUT CAC40 ×15 (survendu)",
       "sens": "PUT",
       "mise": "1500 €",
       "levier": 15,
       "strike_ko": "Strike 7700 / KO 7800",
-      "gain_cible": "+20% si CAC40 -0,5%",
+      "gain_cible": "+20% si CAC40 −0.8%",
       "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "À placer en parallèle du CALL NQ si le CAC40 reste sous 7800. Stop mental à -40%.",
+      "note": "Entrée si rebond CAC40 vers 7800-7850. Stop mental −40% immédiat.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ",
-      "prix": 26349,
+      "label": "Résistance haute NQ",
+      "prix": 26349.0,
       "type": "resistance",
       "action": "Prendre profits TP2 si atteinte",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ",
+      "label": "Support bas NQ",
       "prix": 24329.75,
       "type": "support",
-      "action": "Entrée CALL si rebond",
+      "action": "Renforcer position CALL si rebond",
       "couleur": "bear"
     },
     {
-      "label": "Résistance CAC40",
+      "label": "Résistance haute CAC40",
       "prix": 8179.58,
       "type": "resistance",
-      "action": "Sortie PUT si dépassement",
+      "action": "Sortie PUT si test",
       "couleur": "bear"
     },
     {
-      "label": "Support CAC40",
-      "prix": 7700,
+      "label": "Support bas CAC40",
+      "prix": 7700.0,
       "type": "support",
-      "action": "Entrée PUT si cassure",
+      "action": "Renforcer position PUT si cassure",
       "couleur": "bull"
     }
   ],
   "alertes": [
-    "FOMC 20h CET — Risque de volatilité élevée",
-    "Survente extrême CAC40 (RSI 28,6)",
-    "Gold en forte hausse (+2,95%) — attention à l'impact sur les indices"
+    "FOMC 20h CET — Réaction immédiate attendue",
+    "Surveillance VIX > 25 (volatilité élevée)",
+    "Or en forte hausse (+2.95%) — corrélation inverse NQ possible"
   ],
   "regles_session": [
-    "Stop mental −40% sur tout turbo = sortie immédiate",
-    "Clôture obligatoire CAC40 à 17h30",
-    "Turbo NQ gardé jusqu'à 22h si position ouverte"
+    "Stop mental −40% sur turbo = sortie immédiate",
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ/indices → gardés jusqu'à 22h",
+    "TP1 (+25%) → sortir 50%, stop à +10%",
+    "FOMC → levier max ×20",
+    "Jamais de moyenne à la baisse"
   ],
   "market_strip": {
     "nq": {
@@ -94,24 +97,24 @@
       "dir": "up"
     },
     "gold": {
-      "valeur": "4 474,90",
-      "chg": "+2,95%",
+      "valeur": "4 474.90",
+      "chg": "+2.95%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1,1618",
-      "chg": "+0,07%",
+      "valeur": "1.1623",
+      "chg": "+0.10%",
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4,392",
-      "chg": "+1,34%",
+      "valeur": "4.392",
+      "chg": "+1.34%",
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (turbo/warrants uniquement).",
-  "edition": "09h04 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-24T23:05:04.282914+01:00",
+  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (PEA 26 000 € séparé).",
+  "edition": "23:09 CET",
+  "mode": "fomc",
+  "timestamp": "2026-03-24T23:09:27.876444+01:00",
   "date_fr": "Tuesday 24 march 2026"
 }
