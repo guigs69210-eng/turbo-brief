@@ -1,0 +1,322 @@
+{
+  "created": "2026-03-18",
+  "updated": "2026-03-18",
+  "positions": [
+    {
+      "isin": "DE000FD0H2Z3",
+      "label": "CALL NQ Turbo Infini BEST",
+      "emetteur": "SG",
+      "sous_jacent": "NQ Futures",
+      "sens": "CALL",
+      "statut": "OUVERT",
+      "nb_titres": 150,
+      "prix_achat": 8.68,
+      "mise": 1302.0,
+      "strike": 23997.58,
+      "parite": 100,
+      "devise": "USD",
+      "eurusd": 1.1534,
+      "sj_entree": 25112,
+      "heure_achat": "09h10",
+      "date_achat": "2026-03-18",
+      "levier": 22.5,
+      "ko_dist_pct": 4.4,
+      "tp1_sj": 25200,
+      "tp1_turbo": 12.024,
+      "tp1_pct": 38.5,
+      "tp1_eur": 502,
+      "tp2_sj": 25478,
+      "tp2_turbo": 14.804,
+      "tp2_pct": 70.6,
+      "tp2_eur": 919,
+      "stop_turbo": 5.208,
+      "stop_pct": -40.0,
+      "stop_eur": -521,
+      "prix_cloture": null,
+      "sj_cloture": null,
+      "heure_cloture": null,
+      "date_cloture": null,
+      "pnl_eur": null,
+      "pnl_pct": null,
+      "raison_cloture": null
+    },
+    {
+      "isin": "DE000FE1ZS87",
+      "label": "CALL Thales Turbo Infini BEST",
+      "emetteur": "SG",
+      "sous_jacent": "Thales",
+      "sens": "CALL",
+      "statut": "OUVERT",
+      "nb_titres": 550,
+      "prix_achat": 1.94,
+      "mise": 1067.0,
+      "strike": 236.5995,
+      "parite": 10,
+      "devise": "EUR",
+      "eurusd": 1.0,
+      "sj_entree": 256.0,
+      "heure_achat": "11h40",
+      "date_achat": "2026-03-18",
+      "levier": 13.2,
+      "ko_dist_pct": 7.6,
+      "tp1_sj": 260.0,
+      "tp1_turbo": 2.34,
+      "tp1_pct": 20.6,
+      "tp1_eur": 220,
+      "tp2_sj": 264.4,
+      "tp2_turbo": 2.78,
+      "tp2_pct": 43.3,
+      "tp2_eur": 462,
+      "stop_turbo": 1.164,
+      "stop_pct": -40.0,
+      "stop_eur": -427,
+      "prix_cloture": null,
+      "sj_cloture": null,
+      "heure_cloture": null,
+      "date_cloture": null,
+      "pnl_eur": null,
+      "pnl_pct": null,
+      "raison_cloture": null
+    }
+  ],
+  "historique": [
+    {
+      "isin": "DE000FD0H2Z3",
+      "label": "CALL NQ Turbo Infini BEST",
+      "emetteur": "Société Générale",
+      "sous_jacent": "Nasdaq 100 (NQ)",
+      "sens": "CALL",
+      "statut": "CLÔTURÉ",
+      "nb_titres": 150,
+      "prix_achat": 8.68,
+      "mise": 1302.0,
+      "strike": 23997.58,
+      "parite": 100,
+      "devise": "USD",
+      "eurusd": 1.1534,
+      "sj_entree": 25112,
+      "heure_achat": "09h10",
+      "date_achat": "2026-03-18",
+      "prix_cloture": 10.425,
+      "sj_cloture": 25200.0,
+      "heure_cloture": "18h10",
+      "date_cloture": "2026-03-18",
+      "pnl_eur": 262.0,
+      "pnl_pct": 20.1,
+      "raison_cloture": "18h15 préventif FOMC",
+      "tp1_sj": 25200,
+      "tp1_turbo": 12.024,
+      "tp1_pct": 38.5,
+      "tp1_eur": 502,
+      "tp2_sj": 25478,
+      "tp2_turbo": 14.804,
+      "tp2_pct": 70.6,
+      "tp2_eur": 919,
+      "tp3_sj": 25693,
+      "tp3_turbo": 16.954,
+      "tp3_pct": 95.0,
+      "tp3_eur": 1241,
+      "stop_turbo": 5.208,
+      "stop_pct": -40.0,
+      "stop_eur": -521,
+      "ko_dist_pct": 4.4,
+      "levier": 22.5,
+      "note": "FOMC ce soir — clore avant 18h15 si pas suivi nuit",
+      "supports": [
+        24411,
+        24000
+      ],
+      "resistances": [
+        25200,
+        25478
+      ]
+    },
+    {
+      "isin": "DE000FE1ZS87",
+      "label": "CALL Thales Turbo Infini BEST",
+      "emetteur": "Société Générale",
+      "sous_jacent": "Thales (HO)",
+      "sens": "CALL",
+      "statut": "CLÔTURÉ",
+      "nb_titres": 550,
+      "prix_achat": 1.94,
+      "mise": 1067.0,
+      "strike": 236.5995,
+      "parite": 10,
+      "devise": "EUR",
+      "eurusd": 1.0,
+      "sj_entree": 256.0,
+      "heure_achat": "11h40",
+      "date_achat": "2026-03-18",
+      "prix_cloture": 2.14,
+      "sj_cloture": 258.0,
+      "heure_cloture": "18h10",
+      "date_cloture": "2026-03-18",
+      "pnl_eur": 110.0,
+      "pnl_pct": 10.3,
+      "raison_cloture": "18h15 préventif FOMC",
+      "tp1_sj": 260.0,
+      "tp1_turbo": 2.34,
+      "tp1_pct": 20.6,
+      "tp1_eur": 220,
+      "tp2_sj": 264.4,
+      "tp2_turbo": 2.78,
+      "tp2_pct": 43.3,
+      "tp2_eur": 462,
+      "tp3_sj": 272.0,
+      "tp3_turbo": 3.54,
+      "tp3_pct": 82.5,
+      "tp3_eur": 880,
+      "stop_turbo": 1.164,
+      "stop_pct": -40.0,
+      "stop_eur": -427,
+      "ko_dist_pct": 7.6,
+      "levier": 13.2,
+      "note": "Cassure résistance 253€ confirmée — défense structurel",
+      "supports": [
+        248,
+        245,
+        236.6
+      ],
+      "resistances": [
+        260,
+        264.4,
+        272
+      ]
+    }
+  ],
+  "stats": {
+    "total_trades": 2,
+    "trades_gagnants": 2,
+    "trades_perdants": 0,
+    "pnl_total_eur": 372.0,
+    "win_rate": 100.0,
+    "pnl_moyen_eur": 186.0,
+    "meilleur_trade": "CALL NQ Turbo Infini BEST",
+    "pire_trade": "CALL Thales Turbo Infini BEST"
+  },
+  "scores_history": [
+    {
+      "score": 64,
+      "conviction": "FORTE",
+      "facteurs": {
+        "momentum": 15,
+        "ratio_rr": 13,
+        "ko_distance": 4,
+        "vix": 8,
+        "catalyseur": 11,
+        "correlation": 10,
+        "spread_volume": 3
+      },
+      "detail": {
+        "momentum": {
+          "score": 15,
+          "max": 20,
+          "pct": 75,
+          "desc": "Signal technique (RSI, MACD, MA)"
+        },
+        "ratio_rr": {
+          "score": 13,
+          "max": 20,
+          "pct": 65,
+          "desc": "Ratio gain potentiel / perte max stop"
+        },
+        "ko_distance": {
+          "score": 4,
+          "max": 15,
+          "pct": 27,
+          "desc": "Distance à la barrière KO"
+        },
+        "vix": {
+          "score": 8,
+          "max": 15,
+          "pct": 53,
+          "desc": "Niveau de volatilité marché"
+        },
+        "catalyseur": {
+          "score": 11,
+          "max": 15,
+          "pct": 73,
+          "desc": "Catalyseur fondamental du jour"
+        },
+        "correlation": {
+          "score": 10,
+          "max": 10,
+          "pct": 100,
+          "desc": "Corrélation actif/NQ (risque concentration)"
+        },
+        "spread_volume": {
+          "score": 3,
+          "max": 5,
+          "pct": 60,
+          "desc": "Liquidité du turbo (spread, volume)"
+        }
+      },
+      "recommandation": "ENTRER — bon setup. Taille réduite (10-15% du CTO).",
+      "actif": "CALL NQ ×22 (DE000FD0H2Z3)",
+      "date": "2026-03-18",
+      "datetime": "2026-03-18 12:26"
+    },
+    {
+      "score": 65,
+      "conviction": "FORTE",
+      "facteurs": {
+        "momentum": 15,
+        "ratio_rr": 7,
+        "ko_distance": 12,
+        "vix": 8,
+        "catalyseur": 15,
+        "correlation": 5,
+        "spread_volume": 3
+      },
+      "detail": {
+        "momentum": {
+          "score": 15,
+          "max": 20,
+          "pct": 75,
+          "desc": "Signal technique (RSI, MACD, MA)"
+        },
+        "ratio_rr": {
+          "score": 7,
+          "max": 20,
+          "pct": 35,
+          "desc": "Ratio gain potentiel / perte max stop"
+        },
+        "ko_distance": {
+          "score": 12,
+          "max": 15,
+          "pct": 80,
+          "desc": "Distance à la barrière KO"
+        },
+        "vix": {
+          "score": 8,
+          "max": 15,
+          "pct": 53,
+          "desc": "Niveau de volatilité marché"
+        },
+        "catalyseur": {
+          "score": 15,
+          "max": 15,
+          "pct": 100,
+          "desc": "Catalyseur fondamental du jour"
+        },
+        "correlation": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Corrélation actif/NQ (risque concentration)"
+        },
+        "spread_volume": {
+          "score": 3,
+          "max": 5,
+          "pct": 60,
+          "desc": "Liquidité du turbo (spread, volume)"
+        }
+      },
+      "recommandation": "ENTRER — bon setup. Taille réduite (10-15% du CTO).",
+      "actif": "CALL Thales ×13 (DE000FE1ZS87)",
+      "date": "2026-03-18",
+      "datetime": "2026-03-18 12:26"
+    }
+  ]
+}

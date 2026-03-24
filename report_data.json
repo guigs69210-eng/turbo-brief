@@ -1,0 +1,1438 @@
+{
+  "date": "Mardi 24 mars 2026",
+  "heure": "21h28",
+  "nasdaq_current": 24470,
+  "nasdaq_prev_close": 24598,
+  "nasdaq_open": 24750,
+  "nasdaq_range_day": "24 618 - 25 257",
+  "nasdaq_change_pct": -0.52,
+  "nasdaq_52w_range": "16 460 - 26 399",
+  "nasdaq_contract": "US100 / NQ Jun 2026",
+  "nasdaq_volume": 36300,
+  "barchart_signal": "SELL — FOMC hawkish + Iran escalade",
+  "signal": "NEUTRE — PIVOT IRAN",
+  "signal_force": 3.5,
+  "confiance": 35,
+  "score_global": 45.5,
+  "regime": "TALKS IRAN 5J — IRAN DÉNIE — PUT NQ STOP ATTEINT — CALL HO +56%",
+  "consensus_median": 25200,
+  "esperance_math": 25050,
+  "momentum_score": 50,
+  "fear_greed": 28,
+  "var95": -620,
+  "esperance_gain_pct": 5.8,
+  "polymarket": {
+    "recession_2026": 31,
+    "recession_kalshi": 32.4,
+    "recession_goldman": 25,
+    "ceasefire_iran_june": 62,
+    "ceasefire_iran_dec": 71,
+    "ceasefire_iran_march31": 8,
+    "hormuz_normal_april": 39,
+    "hormuz_normal_june": 67,
+    "us_declare_war_iran": 11,
+    "us_forces_enter_iran_dec": 67,
+    "nuclear_deal_june": 21,
+    "nuclear_deal_march31": 2,
+    "source_volume_total": "9.6M",
+    "note": "Sources: Polymarket (9.6M vol) + Kalshi + Goldman Sachs"
+  },
+  "fed": {
+    "rate_current": "3.50-3.75%",
+    "meeting_date": "18 Mars 2026",
+    "hold_prob": 100,
+    "cut25_prob": 0,
+    "hike_prob": 0.0,
+    "april_hold": 82.1,
+    "april_cut25": 17.3,
+    "april_cut50": 0.6,
+    "june_cut25": 12,
+    "year_cut50_total": 32.5,
+    "year_cut75_total": 25.9,
+    "year_cut100_total": 11.7,
+    "impact_nasdaq": "Neutre 18 mars (96% hold). Coupe juin 47% = soutien Q3. Stagflation = Fed coincée."
+  },
+  "oil": {
+    "brent": 101.0,
+    "wti": 97.0,
+    "brent_prev_close": 103.18,
+    "brent_range_day": "100.40 - 103.20",
+    "brent_52w_range": "58.40 - 119.50",
+    "wti_range_day": "92.04 - 99.32",
+    "yoy_change_pct": 45.1,
+    "hormuz_status": "Tensions accrues — Iran riposte aux frappes US/Israël",
+    "eia_forecast_q2": ">95$/bbl",
+    "eia_forecast_q3": "<80$/bbl",
+    "impact_nasdaq": "NÉGATIF. Corr -0.72. +1% pétrole = -0.35% NDX.",
+    "scenario_hormuz_close": "Brent 130-140$ → Nasdaq -12% à -18%",
+    "scenario_deescalade": "Brent 75-85$ → Nasdaq +6% à +10%",
+    "gas_price_us": 3.48,
+    "recession_threshold_brent": 125,
+    "change_pct_jour": -0.5
+  },
+  "additional_kpis": {
+    "us10y_yield": 4.2,
+    "dxy": 100.11,
+    "gold": 4620,
+    "vix": 24.4,
+    "put_call_ratio": 1.38,
+    "credit_spread_hy": 425,
+    "sofr_3m": 4.62,
+    "breakeven_inflation_5y": 3.42,
+    "copper_yoy": -4.2,
+    "baltic_dry": 1820,
+    "sp500": 6699,
+    "sp500_change": 1.01,
+    "vix_note": "+12.2% hier — peur revenue",
+    "eur_usd": 1.1534,
+    "us10y": 4.28
+  },
+  "smart_money_flow": 1.8,
+  "retail_flow": 0.5,
+  "hedge_flow": 4.1,
+  "rf_bear": 40.5,
+  "rf_bull": 44.2,
+  "lstm_median": 25180,
+  "lstm_pessimist": 24600,
+  "lstm_optimist": 25700,
+  "scenarios": [
+    {
+      "label": "Talks Iran échouent → reprise guerre",
+      "prob": 45,
+      "range": "23 500–24 200",
+      "driver": "Iran dénie → NQ replonge → PUT profite"
+    },
+    {
+      "label": "Pause 5j incertaine",
+      "prob": 30,
+      "range": "24 200–24 800",
+      "driver": "Ni ceasefire ni escalade → range"
+    },
+    {
+      "label": "Ceasefire confirmé",
+      "prob": 15,
+      "range": "25 200–26 000",
+      "driver": "NQ +5% → PUT KO → CALL NQ urgent"
+    },
+    {
+      "label": "PMI récession + Iran",
+      "prob": 10,
+      "range": "< 23 000",
+      "driver": "Double choc → PUT ×2"
+    }
+  ],
+  "indicators": [
+    {
+      "name": "RSI 14j NQ",
+      "value": "42",
+      "signal": "Baissier — en zone négative",
+      "score": "4/10"
+    },
+    {
+      "name": "MA 20j NQ",
+      "value": "24 850",
+      "signal": "Cours sous MA20 → baissier",
+      "score": "3/10"
+    },
+    {
+      "name": "VWAP trimestriel",
+      "value": "24 411",
+      "signal": "Support clé — surveiller",
+      "score": "5/10"
+    },
+    {
+      "name": "VIX",
+      "value": "25.09",
+      "signal": "Peur revenue +12%",
+      "score": "3/10"
+    },
+    {
+      "name": "Thales RSI",
+      "value": "55",
+      "signal": "Neutre — résistance relative",
+      "score": "6/10"
+    },
+    {
+      "name": "Brent",
+      "value": "$103.4",
+      "signal": "Hausse Iran → pression NQ",
+      "score": "3/10"
+    },
+    {
+      "name": "US 10Y",
+      "value": "4.259%",
+      "signal": "Taux montent → négatif tech",
+      "score": "3/10"
+    }
+  ],
+  "fibo_levels": [
+    {
+      "level": "23.6%",
+      "price": 25693,
+      "status": "Résistance",
+      "prob72h": 10
+    },
+    {
+      "level": "38.2%",
+      "price": 24848,
+      "status": "Résistance proche",
+      "prob72h": 45
+    },
+    {
+      "level": "50.0%",
+      "price": 24362,
+      "status": "EN TEST",
+      "prob72h": 82
+    },
+    {
+      "level": "61.8%",
+      "price": 23876,
+      "status": "Objectif baisse",
+      "prob72h": 55
+    },
+    {
+      "level": "78.6%",
+      "price": 22912,
+      "status": "Extension",
+      "prob72h": 18
+    }
+  ],
+  "catalysts": [
+    {
+      "event": "🚨 PUT NQ stop −40% atteint",
+      "prob": 100,
+      "impact": "Décision immédiate : vendre ou tenir avec stop 24 500",
+      "timing": "MAINTENANT"
+    },
+    {
+      "event": "Iran dénie les talks (Araghchi)",
+      "prob": 100,
+      "impact": "Ambiguïté totale — ni ceasefire confirmé ni guerre relancée",
+      "timing": "Ce matin"
+    },
+    {
+      "event": "Fenêtre 5j Trump (expires ~28 mars)",
+      "prob": 100,
+      "impact": "NQ volatile ±2% selon chaque tweet Trump",
+      "timing": "5 jours"
+    },
+    {
+      "event": "PMI Flash US (aujourd'hui 15h45 ET)",
+      "prob": 100,
+      "impact": "Si PMI < 50 → récession → NQ −2%",
+      "timing": "15h45 ET / 21h45 Paris"
+    },
+    {
+      "event": "CALL Thales +56% — sécuriser",
+      "prob": 100,
+      "impact": "TP partiel 50% maintenant = +230€ sécurisés",
+      "timing": "Maintenant"
+    }
+  ],
+  "allocation": [
+    {
+      "position": "PUT Nasdaq (hedge stagflation)",
+      "pct": 52,
+      "montant": 2600,
+      "raison": "NQ -1.53%, Strong Sell"
+    },
+    {
+      "position": "CALL Nvidia (GTC ce soir)",
+      "pct": 22,
+      "montant": 1100,
+      "raison": "Décorrélé pétrole"
+    },
+    {
+      "position": "CALL Nasdaq (rebond FOMC)",
+      "pct": 8,
+      "montant": 400,
+      "raison": "Hold 96% = soulagement"
+    },
+    {
+      "position": "CASH (réserve)",
+      "pct": 18,
+      "montant": 900,
+      "raison": "Volatilité Polymarket/FOMC"
+    }
+  ],
+  "monte_carlo": [
+    {
+      "range": "< 23 000",
+      "prob": 15,
+      "portfolio": 7200,
+      "gain_pct": 44
+    },
+    {
+      "range": "23 000 - 23 500",
+      "prob": 30,
+      "portfolio": 6500,
+      "gain_pct": 30
+    },
+    {
+      "range": "23 500 - 24 000",
+      "prob": 20,
+      "portfolio": 5800,
+      "gain_pct": 16
+    },
+    {
+      "range": "24 000 - 24 500",
+      "prob": 16,
+      "portfolio": 5200,
+      "gain_pct": 4
+    },
+    {
+      "range": "24 500 - 25 000",
+      "prob": 11,
+      "portfolio": 4600,
+      "gain_pct": -8
+    },
+    {
+      "range": "25 000 - 25 500",
+      "prob": 5,
+      "portfolio": 4250,
+      "gain_pct": -15
+    },
+    {
+      "range": "> 25 500",
+      "prob": 3,
+      "portfolio": 6100,
+      "gain_pct": 22
+    }
+  ],
+  "actions": [
+    "09h10-09h30 : Ouvrir CALL NQ x25 (2 500€) + CALL Schneider x25 (1 000€)",
+    "Turbos NQ/indices cotent 8h00-22h00 sur Euronext. Turbos actions FR : 9h05-17h30.",
+    "18h15 : Décision — option A : clore tout avant FOMC (sécurité). Option B : garder si conviction fort.",
+    "20h00 ET (02h Paris) : FOMC. Si dovish -> CALL NQ x20 (3 000€) sur réserve. Si hawkish -> PUT NQ x20 (2 000€).",
+    "Niveaux NQ : Support 24 411 (VWAP TV) — Résistance 25 478 — Target dovish 26 000.",
+    "PEA : NE PAS TOUCHER. CAC 7 900, PUT Infini x7 couverture en place."
+  ],
+  "gold": {
+    "spot": 5007,
+    "futures_april": 5018,
+    "prev_close": 5061,
+    "range_day": "4 990 - 5 035",
+    "open": 4996.2,
+    "change_pct": -1.06,
+    "ath": 5595,
+    "yoy_change_pct": 67.2,
+    "corr_nasdaq": -0.45,
+    "corr_brent": 0.38,
+    "signal": "CORRECTION — prise de profits risk-on. Support 4 990 tenu.",
+    "eia_note": "Safe-haven fort. Dollar plus fort pèse court terme. ATH $5595 (jan 2026).",
+    "turbo_play": "CALL OR : si Brent >110$ → or monte vers $5400-5600. PUT OR : si ceasefire juin → risk-on → or corrige vers $4700-4800",
+    "target_hausse": 5400,
+    "target_baisse": 4750,
+    "target_prob_hausse": 45,
+    "target_prob_baisse": 30
+  },
+  "profil": {
+    "pea_valeur": 26000,
+    "cto_cash": 10000,
+    "total_patrimoine": 36000,
+    "style": "DAY TRADING",
+    "levier_cible": "25x-30x",
+    "horizon": "Intraday (séance même jour)",
+    "perte_max_cto": 3000,
+    "perte_max_pct": 30,
+    "note_risque": "Levier x25-30 : +1% sous-jacent = +25-30% sur le turbo. KO rapide si mouvement adverse."
+  },
+  "allocation_cto": [
+    {
+      "position": "TURBO PUT Nasdaq 100",
+      "montant": 4200,
+      "pct": 42,
+      "levier": "5x-6x",
+      "sous_jacent": "Nasdaq 100",
+      "sens": "PUT",
+      "strike_cible": "25 000-25 500",
+      "barriere_ko": "26 500-27 000",
+      "echeance": "Mai-Juin 2026",
+      "emetteur": "SG ou BNP",
+      "raison": "NQ -1.53% futures, Strong Sell, Brent 103$",
+      "gain_si_24000": "+30% à +35%",
+      "ko_si": "Nasdaq remonte >26 500",
+      "priorite": 1
+    },
+    {
+      "position": "TURBO CALL Or / XAU",
+      "montant": 2500,
+      "pct": 25,
+      "levier": "4x-5x",
+      "sous_jacent": "Or spot XAU/USD",
+      "sens": "CALL",
+      "strike_cible": "4 800-4 900$",
+      "barriere_ko": "4 650-4 700$",
+      "echeance": "Turbo illimité / Avril 2026",
+      "emetteur": "Vontobel ou SG",
+      "raison": "Safe-haven Hormuz, ATH $5595, support $5000 tenu",
+      "gain_si_5400": "+50% à +60%",
+      "ko_si": "Or casse $4700 (ceasefire + dollar fort)",
+      "priorite": 2
+    },
+    {
+      "position": "TURBO CALL Nvidia",
+      "montant": 1800,
+      "pct": 18,
+      "levier": "6x-8x",
+      "sous_jacent": "Nvidia (NVDA)",
+      "sens": "CALL",
+      "strike_cible": "175-180$",
+      "barriere_ko": "165-170$",
+      "echeance": "Avril-Mai 2026",
+      "emetteur": "BNP ou SG",
+      "raison": "GTC keynote ce soir, décorrélé pétrole, AI demand",
+      "gain_si_gtc": "+60% à +80%",
+      "ko_si": "NVDA casse $165",
+      "priorite": 3
+    },
+    {
+      "position": "TURBO CALL Pétrole (CALL Brent)",
+      "montant": 1000,
+      "pct": 10,
+      "levier": "4x-5x",
+      "sous_jacent": "Brent Crude Oil",
+      "sens": "CALL",
+      "strike_cible": "95-98$",
+      "barriere_ko": "88-90$",
+      "echeance": "Avril 2026",
+      "emetteur": "SG ou Vontobel",
+      "raison": "Hormuz quasi-fermé, EIA >95$ Q2, risque escalade",
+      "gain_si_110": "+50% à +70%",
+      "ko_si": "Brent casse $90 (ceasefire surprise)",
+      "priorite": 4
+    },
+    {
+      "position": "CASH RÉSERVE CTO",
+      "montant": 500,
+      "pct": 5,
+      "levier": "—",
+      "sous_jacent": "—",
+      "sens": "—",
+      "strike_cible": "—",
+      "barriere_ko": "—",
+      "echeance": "—",
+      "emetteur": "—",
+      "raison": "Réserve post-GTC / post-FOMC 18 mars",
+      "gain_si_110": "—",
+      "ko_si": "—",
+      "priorite": 5
+    }
+  ],
+  "strategie_pea": {
+    "valeur": 26000,
+    "note": "Pas de turbos en PEA. Stratégie : rester investi, laisser tourner.",
+    "risque_pea": "Si Nasdaq -15% → PEA perd ~3 900€ (ETF tech). Le CTO PUT Nasdaq couvre partiellement.",
+    "couverture": "PUT Nasdaq CTO (4 200€ x levier 5x = exposition 21k€ virtuelle) couvre ~80% du PEA tech.",
+    "action": "NE PAS TOUCHER le PEA. Laisser la couverture CTO travailler.",
+    "etf_pea_recommandes": "Amundi Nasdaq 100 (CU2), LYXOR S&P 500 (SP5) — position longue maintenue"
+  },
+  "pea_positions": [
+    {
+      "ticker": "MC",
+      "nom": "LVMH",
+      "valeur_pea": 6000,
+      "poids_pea": 23.1,
+      "cours": 478.5,
+      "range_jour": "470.55 - 493.15",
+      "52w": "436.55 - 654.70",
+      "macd": "Négatif < signal",
+      "rsi": "< 20 (extrêmement survendu)",
+      "stoch": "< 20",
+      "signal_jour": "RSI survendu — attendre confirmation",
+      "signal_color": "YELLOW",
+      "beta_cac": 1.35,
+      "expo_iran": "Forte — Asie/luxe sensible récession",
+      "reco_pea": "CONSERVER — survendu, ne pas vendre dans la panique. Rebond technique possible.",
+      "reco_cto_turbo": "TURBO CALL MC levier 25x si rebond confirmé au-dessus de 478",
+      "target_jour": 488,
+      "stop_jour": 468,
+      "catalyseur": "Résultats Q1 : 15 avril 2026"
+    },
+    {
+      "ticker": "BNP",
+      "nom": "BNP Paribas",
+      "valeur_pea": 2000,
+      "poids_pea": 7.7,
+      "cours": 68.5,
+      "range_jour": "67.20 - 69.80",
+      "52w": "58.40 - 82.30",
+      "macd": "Négatif",
+      "rsi": "38",
+      "stoch": "32",
+      "signal_jour": "BAISSIER modéré",
+      "signal_color": "RED",
+      "beta_cac": 1.45,
+      "expo_iran": "Indirecte — crédit spread HY 425bps pèse sur banques",
+      "reco_pea": "CONSERVER — litige Soudan pricé (UBS objectif 103€). Long terme haussier.",
+      "reco_cto_turbo": "TURBO PUT BNP levier 25x si CAC casse 7800",
+      "target_jour": 66.5,
+      "stop_jour": 70.2,
+      "catalyseur": "Litige Soudan — décision appel fin 2026"
+    },
+    {
+      "ticker": "AI",
+      "nom": "Air Liquide",
+      "valeur_pea": 4000,
+      "poids_pea": 15.4,
+      "cours": 155.2,
+      "range_jour": "153.40 - 157.60",
+      "52w": "138.50 - 178.20",
+      "macd": "Négatif / signal",
+      "rsi": "42",
+      "stoch": "38",
+      "signal_jour": "NEUTRE légèrement baissier",
+      "signal_color": "YELLOW",
+      "beta_cac": 0.75,
+      "expo_iran": "Modérée — gaz industriel, coûts énergie impactés",
+      "reco_pea": "CONSERVER — défensif, beta faible, Bernstein surperformance objectif 190€.",
+      "reco_cto_turbo": "Pas de turbo sur AI — trop peu volatile pour levier x25",
+      "target_jour": 157,
+      "stop_jour": 152,
+      "catalyseur": "Demande datacenter H2 gaz"
+    },
+    {
+      "ticker": "CU2",
+      "nom": "ETF Nasdaq 100 (Amundi)",
+      "valeur_pea": 10000,
+      "poids_pea": 38.5,
+      "cours": 24394,
+      "range_jour": "24 333 - 24 805",
+      "52w": "16 460 - 26 399",
+      "macd": "Death Cross actif",
+      "rsi": "39.5",
+      "stoch": "31",
+      "signal_jour": "BAISSIER — Strong Sell Barchart",
+      "signal_color": "RED",
+      "beta_cac": 1.2,
+      "expo_iran": "Directe — NQ -1.53% futures, Brent 103$",
+      "reco_pea": "CONSERVER — ne pas vendre dans la panique. Couvert par PUT NQ sur CTO.",
+      "reco_cto_turbo": "PUT NQ x25 CTO = couverture principale du portefeuille",
+      "target_jour": 24000,
+      "stop_jour": 24900,
+      "catalyseur": "GTC Nvidia ce soir + FOMC 18 mars"
+    },
+    {
+      "ticker": "SGO",
+      "nom": "Saint-Gobain",
+      "valeur_pea": 1000,
+      "poids_pea": 3.8,
+      "cours": 52.4,
+      "range_jour": "51.80 - 53.20",
+      "52w": "46.50 - 72.80",
+      "macd": "Très négatif",
+      "rsi": "28",
+      "stoch": "18",
+      "signal_jour": "FORTEMENT SURVENDU",
+      "signal_color": "YELLOW",
+      "beta_cac": 1.25,
+      "expo_iran": "Modérée — construction, coûts matériaux",
+      "reco_pea": "CONSERVER — UBS vendre (obj 78€) mais survendu court terme. Position petite (1k).",
+      "reco_cto_turbo": "TURBO CALL SGO levier 25x si rebond +2% confirmé",
+      "target_jour": 53.8,
+      "stop_jour": 51.2,
+      "catalyseur": "EBITDA >15% visé 2026"
+    },
+    {
+      "ticker": "SU",
+      "nom": "Schneider Electric",
+      "valeur_pea": 1000,
+      "poids_pea": 3.8,
+      "cours": 204.2,
+      "range_jour": "196.40 - 201.80",
+      "52w": "172.30 - 247.60",
+      "macd": "Négatif, signal remonte",
+      "rsi": "44",
+      "stoch": "40",
+      "signal_jour": "FORT REBOND +2.9% lundi",
+      "signal_color": "GREEN",
+      "beta_cac": 1.15,
+      "expo_iran": "Faible — datacenter/énergie, demande structurelle",
+      "reco_pea": "CONSERVER voire RENFORCER — Oddo favori 2026, datacenter AI, croissance 7-10%/an jusqu'en 2030.",
+      "reco_cto_turbo": "TURBO CALL SU x25 — momentum datacenters",
+      "target_jour": 203,
+      "stop_jour": 195,
+      "catalyseur": "Datacenter demand AI, marges en hausse"
+    },
+    {
+      "ticker": "STLAP",
+      "nom": "Stellantis",
+      "valeur_pea": 1000,
+      "poids_pea": 3.8,
+      "cours": 10.34,
+      "range_jour": "9.62 - 10.04",
+      "52w": "8.90 - 16.40",
+      "macd": "Très négatif",
+      "rsi": "32",
+      "stoch": "22",
+      "signal_jour": "REBOND +5% lundi — Ventes voitures USA",
+      "signal_color": "GREEN",
+      "beta_cac": 1.6,
+      "expo_iran": "Forte — autos, pétrole, récession",
+      "reco_pea": "ALERTE — perte 2025, reset objectifs. Surveiller 9.50 comme support clé.",
+      "reco_cto_turbo": "TURBO CALL STLAP x25 si rebond confirmé >10.20",
+      "target_jour": 9.45,
+      "stop_jour": 10.1,
+      "catalyseur": "Reset objectifs 2026 — risque récession auto"
+    }
+  ],
+  "allocation_cto_daytrading": [
+    {
+      "priorite": 1,
+      "position": "🚨 PUT NQ — STOP −40% ATTEINT (-58.2%)",
+      "sens": "SELL",
+      "montant": 845,
+      "levier_cible": "×26",
+      "sous_jacent": "NQ",
+      "emetteur": "SG",
+      "strike": "24 855 (KO dist 1.6%)",
+      "horizon": "Décision immédiate",
+      "gain_cible_jour": "—",
+      "ko_si": "NQ > 24 855 (385 pts)",
+      "conviction": "SORTIR",
+      "note": "VI actuelle 3.3374€ < stop 4.7855€. Règle des −40% = sortie sans discussion. SAUF si conviction talks Iran vont échouer : garder avec stop à 24 500. Iran dénie les talks ce matin → biais baissier maintenu.",
+      "entree": "VENDRE maintenant OU stop à 24 500",
+      "tp1": "NQ 23 500 → VI ~11.75€ (+47%)",
+      "tp2": "NQ 23 000 → VI ~16.08€ (+102%)",
+      "stop": "NQ > 24 500 → sortie / turbo < 4.785€"
+    },
+    {
+      "priorite": 2,
+      "position": "✅ CALL Thales — Prendre profits partiels (+56%)",
+      "sens": "HOLD/TP",
+      "montant": 850,
+      "levier_cible": "×34",
+      "sous_jacent": "Thales (HO)",
+      "emetteur": "SG",
+      "strike": "236.82 (KO dist 4.5%)",
+      "horizon": "Clore avant 17h30",
+      "gain_cible_jour": "+56% / +473€",
+      "ko_si": "HO < 236.82€",
+      "conviction": "TP PARTIEL",
+      "note": "Thales 248.0€, P&L +56% / +473€. Vendre 50% maintenant = sécuriser +230€. Garder 50% avec stop à 0.430€ (−40%) ou HO < 241€. Clore 100% avant 17h30 impérativement.",
+      "entree": "Vendre 50% maintenant",
+      "tp1": "HO 252€ → +98% / +800€",
+      "tp2": "HO 258€ → +180% / +1450€",
+      "stop": "Turbo ≤ 0.430€ ou HO < 241€"
+    },
+    {
+      "priorite": 3,
+      "position": "Après clôture Thales : observer talks Iran",
+      "sens": "WAIT",
+      "montant": 5494,
+      "levier_cible": "—",
+      "sous_jacent": "—",
+      "emetteur": "—",
+      "strike": "—",
+      "horizon": "Cette semaine",
+      "gain_cible_jour": "—",
+      "ko_si": "—",
+      "conviction": "ATTENDRE",
+      "note": "Fenêtre 5j de pause. Garder réserve. Si Iran confirme talks → NQ rebond → CALL NQ. Si Iran nie + escalade → NQ plonge → nouveau PUT.",
+      "entree": "Après clarification talks Iran",
+      "tp1": "—",
+      "tp2": "—",
+      "stop": "—"
+    }
+  ],
+  "cac40": {
+    "cours": 7900,
+    "change_24h": -0.1,
+    "change_1m": -5.19,
+    "ath_2026": 8642,
+    "range_52w": "6 817 - 8 642",
+    "signal": "ATTENTISME — FOMC ce soir 20h",
+    "support_1": 7800,
+    "support_2": 7650,
+    "resistance_1": 8100,
+    "resistance_2": 8250,
+    "note": "CAC40 : La consolidation se poursuit (Zonebourse, 16/03/2026)",
+    "cfd_fr40": 8190,
+    "high_jour": 8202,
+    "low_jour": 8076,
+    "tv_note": "TradingView TVC:CAC40 = 7 935.98 | Capital.com FR40 CFD = 8 190"
+  },
+  "data_source": "TradingView (live)",
+  "nasdaq_tv_note": "TradingView CME_MINI:NQ1! | Résistance 25 478 | Support 24 411",
+  "tv_levels": {
+    "resistance_haute": 25478,
+    "resistance_fomc": 25200,
+    "actuel": 24894,
+    "support_vwap": 24411,
+    "support_majeur": 24000,
+    "ko_nq": 23998
+  },
+  "approche_trading": {
+    "cto_directionnel": {
+      "titre": "TRADE DIRECTIONNEL — CTO DAY TRADING",
+      "principe": "UNE seule direction par jour. Décision à 09h00 selon contexte. Jamais PUT+CALL simultanément.",
+      "budget": 9500,
+      "regles": [
+        "Ouvrir 1 seule position entre 09h00 et 09h30",
+        "Stop mental : -40% sur le turbo = sortie immédiate (pas de négociation)",
+        "Objectif : +25% à +35% = prise de profit partielle, laisser courir 50%",
+        "Clôturer TOUT avant 18h15 (pas de position overnight sur x25)",
+        "Max 2 positions simultanées sur sous-jacents DIFFÉRENTS (NQ + Schneider OK, NQ + CAC40 = trop corrélés)",
+        "Taille max par position : 40% du CTO (4 000€)"
+      ],
+      "signal_jour": "NEUTRE → biais HAUSSIER (NQ +0.66%, Brent -2%, VIX 23.51)",
+      "direction_jour": "CALL",
+      "raison_direction": "NQ +0.66% futures. Brent recule -2.17% (Hormuz partiel). VIX 23.51 vs 27.19 hier (-13%). FOMC demain = attentisme haussier.",
+      "trades": [
+        {
+          "rang": 1,
+          "conviction": "MAXIMALE",
+          "sens": "CALL",
+          "sous_jacent": "Nasdaq 100 (US100)",
+          "cours_actuel": 24555,
+          "levier": "25x",
+          "mise": 3500,
+          "emetteur": "SG ou BNP Paribas",
+          "strike_ideal": 23000,
+          "barriere_ko": 22500,
+          "comment_strike": "Strike 23 000 = levier ~25x avec NQ à 24 555. KO à 22 500 = -8.4% du sous-jacent. Marge suffisante.",
+          "prix_turbo_estime": "0.62€ (parité 1:100)",
+          "entree": "Dès 09h10 si NQ futures > 24 500 stable",
+          "tp1": 24800,
+          "tp1_gain_turbo": "+28%",
+          "tp2": 25025,
+          "tp2_gain_turbo": "+62%",
+          "stop_sousjacent": 24200,
+          "stop_turbo": "-40% (≈ 0.37€)",
+          "ko_declenche_si": "NQ casse 22 500 (scenario impossible intraday sauf black swan)",
+          "horizon": "Intraday — sortie max 18h15",
+          "catalyseur": "Brent <100$, FOMC anticipation Hold, momentum lundi +1.15%",
+          "isin_recherche": "sgbourse.fr → Turbos → Nasdaq 100 → CALL → Strike ~23 000 → Levier ~25x"
+        },
+        {
+          "rang": 2,
+          "conviction": "FORTE",
+          "sens": "CALL",
+          "sous_jacent": "Schneider Electric (SU)",
+          "cours_actuel": 204.2,
+          "levier": "28x",
+          "mise": 2000,
+          "emetteur": "SG ou Vontobel",
+          "strike_ideal": 196,
+          "barriere_ko": 194,
+          "comment_strike": "Strike 196 = levier ~28x avec SU à 204. KO 194 = -5% du sous-jacent. Solide.",
+          "prix_turbo_estime": "0.29€ (parité 1:10)",
+          "entree": "Si SU ouvre > 202€",
+          "tp1": 208,
+          "tp1_gain_turbo": "+55%",
+          "tp2": 212,
+          "tp2_gain_turbo": "+111%",
+          "stop_sousjacent": 200,
+          "stop_turbo": "-40% (≈ 0.17€)",
+          "ko_declenche_si": "SU casse 194€ (très improbable intraday)",
+          "horizon": "Intraday — sortie max 18h15",
+          "catalyseur": "+2.9% lundi, momentum datacenters AI, Oddo favori 2026",
+          "isin_recherche": "sgbourse.fr → Turbos → Schneider Electric → CALL → Strike ~196 → Levier ~28x"
+        },
+        {
+          "rang": 3,
+          "conviction": "TACTIQUE",
+          "sens": "CALL",
+          "sous_jacent": "Stellantis (STLAP)",
+          "cours_actuel": 10.34,
+          "levier": "26x",
+          "mise": 1000,
+          "emetteur": "BNP ou SG",
+          "strike_ideal": 9.95,
+          "barriere_ko": 9.85,
+          "comment_strike": "Strike 9.95 = levier ~25x avec STLAP à 10.34. KO 9.85 = -4.7%.",
+          "prix_turbo_estime": "0.039€ (parité 1:1)",
+          "entree": "Si STLAP ouvre > 10.20€",
+          "tp1": 10.6,
+          "tp1_gain_turbo": "+67%",
+          "tp2": 10.9,
+          "tp2_gain_turbo": "+145%",
+          "stop_sousjacent": 10.05,
+          "stop_turbo": "-40% (≈ 0.023€)",
+          "ko_declenche_si": "STLAP casse 9.85€",
+          "horizon": "Intraday — sortie max 18h15",
+          "catalyseur": "+5.1% lundi, voitures US, rebond sectoriel autos",
+          "isin_recherche": "warrants.bnpparibas.com → Turbos → Stellantis → CALL → Strike ~9.95"
+        }
+      ],
+      "cash_reserve": 3000,
+      "cash_note": "Réserve post-FOMC 18 mars — déployer mercredi soir selon décision Fed"
+    },
+    "pea_couverture": {
+      "titre": "COUVERTURE PEA — PROTECTION LONG TERME",
+      "principe": "Turbo infini PUT à levier FAIBLE (x5-8). Objectif : protéger 26k€ PEA si correction -15%. Ce N'est PAS un trade spéculatif.",
+      "budget": 500,
+      "levier_max": "6x-8x (jamais x25 sur hedge)",
+      "horizon": "4-8 semaines — laisser tourner",
+      "regles": [
+        "Levier FAIBLE x6-8 uniquement — le but est survie, pas multiplication",
+        "Barrière KO très éloignée : minimum -20% du cours actuel",
+        "Turbo INFINI ou échéance longue (juin-sept 2026)",
+        "Taille : 500€ max — ce n'est pas du tout du day trading",
+        "Ne pas vendre si le marché monte (c'est une assurance, pas un trade)",
+        "Prendre les profits si NQ baisse -10% — la couverture a joué son rôle"
+      ],
+      "trade": {
+        "sens": "PUT",
+        "sous_jacent": "Nasdaq 100 (US100)",
+        "cours_actuel": 24555,
+        "levier": "7x",
+        "mise": 500,
+        "emetteur": "SG — Turbo Infini",
+        "strike_ideal": 27000,
+        "barriere_ko": 27500,
+        "comment_strike": "Strike 27 000 (au-dessus du cours) = levier 7x. KO 27 500 = +12% au-dessus. NQ devrait monter +12% pour KO. Sécurisé.",
+        "prix_turbo_estime": "0.24€ (parité 1:100)",
+        "horizon": "4-8 semaines — ne pas toucher",
+        "protection_pea": "Si NQ -15% → NQ à 20 870 → PUT x7 ≈ +105% → 500€ → ~1 025€ gain. Compense partiellement PEA -15% (≈ -3 900€)",
+        "ko_declenche_si": "NQ monte à 27 500 (+12%). Dans ce cas PEA gagne ≈ +3 000€, compense la perte du PUT.",
+        "isin_recherche": "sgbourse.fr → Turbos Infinis → Nasdaq 100 → PUT → Strike ~27 000 → Levier ~7x → Échéance: Infini",
+        "note": "Turbo INFINI = pas de date d'expiry. Le strike évolue chaque jour (+coût de portage ~0.04% /jour). Tenir compte sur >4 semaines."
+      },
+      "couverture_cac": {
+        "sens": "PUT",
+        "sous_jacent": "CAC 40",
+        "cours_actuel": 7881,
+        "levier": "6x",
+        "mise": 0,
+        "note": "Optionnel — uniquement si tu veux couvrir aussi la partie CAC du PEA. Même logique : strike éloigné, levier faible, infini.",
+        "isin_recherche": "sgbourse.fr → Turbos Infinis → CAC 40 → PUT → Strike ~8 800 → Levier ~6x"
+      }
+    },
+    "comparaison": [
+      {
+        "critere": "Objectif",
+        "directionnel": "Gagner 25-35% sur mise intraday",
+        "couverture": "Limiter perte PEA si crash"
+      },
+      {
+        "critere": "Levier",
+        "directionnel": "x25-30 (maximiser gain)",
+        "couverture": "x6-8 (survivre à la volatilité)"
+      },
+      {
+        "critere": "Horizon",
+        "directionnel": "Intraday — clôture 18h15",
+        "couverture": "4-8 semaines en place"
+      },
+      {
+        "critere": "Budget CTO",
+        "directionnel": "9 500€ (95%)",
+        "couverture": "500€ (5%)"
+      },
+      {
+        "critere": "Strike",
+        "directionnel": "Proche du cours (~levier x25)",
+        "couverture": "Très éloigné (~+12%)"
+      },
+      {
+        "critere": "Risque KO",
+        "directionnel": "Élevé — mouvement de 4% suffit",
+        "couverture": "Faible — +12% nécessaire"
+      },
+      {
+        "critere": "Si marché stagne",
+        "directionnel": "Perte partielle (érosion)",
+        "couverture": "Perte légère (coût portage)"
+      },
+      {
+        "critere": "Erreur à éviter",
+        "directionnel": "PUT+CALL simultanés",
+        "couverture": "Mettre un levier x25"
+      }
+    ]
+  },
+  "positions_ouvertes": [
+    {
+      "label": "PUT NQ Turbo Infini BEST (SG) NASDQ24858",
+      "sens": "PUT",
+      "sous_jacent": "NQ Futures",
+      "isin": "NASDQ24858TPIOPENS",
+      "nb_titres": 106,
+      "prix_achat": 7.9758,
+      "strike": 24854.932,
+      "parite": 100,
+      "levier": 26.0,
+      "sj_entree": 23935,
+      "sj_live": 24470,
+      "heure_achat": "10h36 23/03",
+      "pnl_live_pct": -51.7,
+      "pnl_live_eur": -437.0,
+      "ko_dist_live": 1.6,
+      "status_live": "-51.7% / -437€",
+      "tp1_sj": 23500,
+      "tp2_sj": 23000,
+      "tp1_turbo": 11.747,
+      "tp2_turbo": 16.082,
+      "stop_turbo": 4.785,
+      "alerte_stop": 4.785,
+      "alerte_tp1": 11.747,
+      "alerte_tp2": 16.082,
+      "stop_pct": -40,
+      "tp1_pct": 47,
+      "tp2_pct": 102,
+      "stop_eur": -492.0,
+      "tp1_eur": 400,
+      "tp2_eur": 859,
+      "ko_dist_pct": 1.6
+    },
+    {
+      "label": "CALL Thales Turbo Infini BEST (SG) TALES236.7",
+      "sens": "CALL",
+      "sous_jacent": "Thales (HO)",
+      "isin": "TALES236.7TCIOPENS",
+      "nb_titres": 1183,
+      "prix_achat": 0.7184,
+      "strike": 236.816,
+      "parite": 10,
+      "levier": 34.0,
+      "sj_entree": 244.0,
+      "sj_live": 248.0,
+      "heure_achat": "10h36 23/03",
+      "pnl_live_pct": 55.7,
+      "pnl_live_eur": 473.0,
+      "ko_dist_live": 4.5,
+      "status_live": "+55.7% / +473€",
+      "tp1_sj": 252,
+      "tp2_sj": 258,
+      "tp1_turbo": 1.518,
+      "tp2_turbo": 2.118,
+      "stop_turbo": 0.431,
+      "alerte_stop": 0.431,
+      "alerte_tp1": 1.518,
+      "alerte_tp2": 2.118,
+      "stop_pct": -40,
+      "tp1_pct": 98,
+      "tp2_pct": 180,
+      "stop_eur": -340,
+      "tp1_eur": 800,
+      "tp2_eur": 1450,
+      "ko_dist_pct": 4.5
+    }
+  ],
+  "cto_recap": {
+    "total_engage": 1695,
+    "budget_total": 9500,
+    "reserve_dispo": 5494,
+    "nb_positions": 2,
+    "pnl_live_total": 36.0,
+    "gain_potentiel_tp1": 1200,
+    "gain_potentiel_tp2": 2309,
+    "perte_max_stop": -832,
+    "ratio_rr_tp1": 1.44
+  },
+  "scores_opportunites": [
+    {
+      "label": "CALL Thales ×13 [OUVERT]",
+      "isin": "DE000FE1ZS87",
+      "is_open": true,
+      "score": 63,
+      "conviction": "FORTE",
+      "reco": "ENTRER — bon setup. Taille 10-15% CTO.",
+      "facteurs": {
+        "momentum_technique": 8,
+        "esperance_ponderee": 18,
+        "ko_niveau": 5,
+        "vix_regime": 2,
+        "catalyseur_grille": 9,
+        "contexte_macro": 0,
+        "correlation_portef": 6,
+        "volume_relatif": 3,
+        "bougie_daily": 7,
+        "options_flow": 5
+      },
+      "detail": {
+        "momentum_technique": {
+          "score": 8,
+          "max": 18,
+          "pct": 44,
+          "desc": "RSI/MA position + structure tendance"
+        },
+        "esperance_ponderee": {
+          "score": 18,
+          "max": 16,
+          "pct": 112,
+          "desc": "E=Σ(prob×gain) pondéré"
+        },
+        "ko_niveau": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Distance KO + support sous barrière"
+        },
+        "vix_regime": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "VIX niveau + direction delta 3j"
+        },
+        "catalyseur_grille": {
+          "score": 9,
+          "max": 10,
+          "pct": 90,
+          "desc": "Catalyseur macro/sectoriel/micro"
+        },
+        "contexte_macro": {
+          "score": 0,
+          "max": 8,
+          "pct": 0,
+          "desc": "DXY + yield curve + crédit + sentiment"
+        },
+        "correlation_portef": {
+          "score": 6,
+          "max": 6,
+          "pct": 100,
+          "desc": "Concentration CTO + corrélation NQ"
+        },
+        "volume_relatif": {
+          "score": 3,
+          "max": 6,
+          "pct": 50,
+          "desc": "Volume J-1 vs moy.20j + liquidité turbo"
+        },
+        "bougie_daily": {
+          "score": 7,
+          "max": 8,
+          "pct": 88,
+          "desc": "Bougie J-1 : Hammer/Engulfing + niveau"
+        },
+        "options_flow": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Put/Call ratio + OI QQQ + sweep orders"
+        }
+      },
+      "flow_signals": {
+        "cboe_pc": "P/C 1.05 — couverture institutionnelle croissante",
+        "qqq_oi": "QQQ OI P/C 1.85 — excès puts = mur de support"
+      }
+    },
+    {
+      "label": "PUT CAC40 ×20",
+      "isin": null,
+      "is_open": false,
+      "score": 60,
+      "conviction": "MODÉRÉE",
+      "reco": "ATTENDRE confirmation. Taille max 5-8% si conviction persiste.",
+      "facteurs": {
+        "momentum_technique": 3,
+        "esperance_ponderee": 18,
+        "ko_niveau": 7,
+        "vix_regime": 2,
+        "catalyseur_grille": 4,
+        "contexte_macro": 4,
+        "correlation_portef": 6,
+        "volume_relatif": 4,
+        "bougie_daily": 7,
+        "options_flow": 5
+      },
+      "detail": {
+        "momentum_technique": {
+          "score": 3,
+          "max": 18,
+          "pct": 17,
+          "desc": "RSI/MA position + structure tendance"
+        },
+        "esperance_ponderee": {
+          "score": 18,
+          "max": 16,
+          "pct": 112,
+          "desc": "E=Σ(prob×gain) pondéré"
+        },
+        "ko_niveau": {
+          "score": 7,
+          "max": 10,
+          "pct": 70,
+          "desc": "Distance KO + support sous barrière"
+        },
+        "vix_regime": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "VIX niveau + direction delta 3j"
+        },
+        "catalyseur_grille": {
+          "score": 4,
+          "max": 10,
+          "pct": 40,
+          "desc": "Catalyseur macro/sectoriel/micro"
+        },
+        "contexte_macro": {
+          "score": 4,
+          "max": 8,
+          "pct": 50,
+          "desc": "DXY + yield curve + crédit + sentiment"
+        },
+        "correlation_portef": {
+          "score": 6,
+          "max": 6,
+          "pct": 100,
+          "desc": "Concentration CTO + corrélation NQ"
+        },
+        "volume_relatif": {
+          "score": 4,
+          "max": 6,
+          "pct": 67,
+          "desc": "Volume J-1 vs moy.20j + liquidité turbo"
+        },
+        "bougie_daily": {
+          "score": 7,
+          "max": 8,
+          "pct": 88,
+          "desc": "Bougie J-1 : Hammer/Engulfing + niveau"
+        },
+        "options_flow": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Put/Call ratio + OI QQQ + sweep orders"
+        }
+      },
+      "flow_signals": {
+        "cboe_pc": "P/C 1.05 — légèrement bearish"
+      }
+    },
+    {
+      "label": "CALL Thales ×13 (renforcer)",
+      "isin": null,
+      "is_open": false,
+      "score": 58,
+      "conviction": "MODÉRÉE",
+      "reco": "ATTENDRE confirmation. Taille max 5-8% si conviction persiste.",
+      "facteurs": {
+        "momentum_technique": 8,
+        "esperance_ponderee": 18,
+        "ko_niveau": 5,
+        "vix_regime": 2,
+        "catalyseur_grille": 9,
+        "contexte_macro": 0,
+        "correlation_portef": 6,
+        "volume_relatif": 3,
+        "bougie_daily": 2,
+        "options_flow": 5
+      },
+      "detail": {
+        "momentum_technique": {
+          "score": 8,
+          "max": 18,
+          "pct": 44,
+          "desc": "RSI/MA position + structure tendance"
+        },
+        "esperance_ponderee": {
+          "score": 18,
+          "max": 16,
+          "pct": 112,
+          "desc": "E=Σ(prob×gain) pondéré"
+        },
+        "ko_niveau": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Distance KO + support sous barrière"
+        },
+        "vix_regime": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "VIX niveau + direction delta 3j"
+        },
+        "catalyseur_grille": {
+          "score": 9,
+          "max": 10,
+          "pct": 90,
+          "desc": "Catalyseur macro/sectoriel/micro"
+        },
+        "contexte_macro": {
+          "score": 0,
+          "max": 8,
+          "pct": 0,
+          "desc": "DXY + yield curve + crédit + sentiment"
+        },
+        "correlation_portef": {
+          "score": 6,
+          "max": 6,
+          "pct": 100,
+          "desc": "Concentration CTO + corrélation NQ"
+        },
+        "volume_relatif": {
+          "score": 3,
+          "max": 6,
+          "pct": 50,
+          "desc": "Volume J-1 vs moy.20j + liquidité turbo"
+        },
+        "bougie_daily": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "Bougie J-1 : Hammer/Engulfing + niveau"
+        },
+        "options_flow": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Put/Call ratio + OI QQQ + sweep orders"
+        }
+      },
+      "flow_signals": {
+        "cboe_pc": "P/C 1.05 — couverture institutionnelle croissante",
+        "qqq_oi": "QQQ OI P/C 1.85 — excès puts = mur de support"
+      }
+    },
+    {
+      "label": "PUT NQ ×53 SG",
+      "isin": null,
+      "is_open": false,
+      "score": 56,
+      "conviction": "MODÉRÉE",
+      "reco": "ATTENDRE confirmation. Taille max 5-8% si conviction persiste.",
+      "facteurs": {
+        "momentum_technique": 0,
+        "esperance_ponderee": 18,
+        "ko_niveau": 5,
+        "vix_regime": 2,
+        "catalyseur_grille": 4,
+        "contexte_macro": 4,
+        "correlation_portef": 6,
+        "volume_relatif": 5,
+        "bougie_daily": 7,
+        "options_flow": 5
+      },
+      "detail": {
+        "momentum_technique": {
+          "score": 0,
+          "max": 18,
+          "pct": 0,
+          "desc": "RSI/MA position + structure tendance"
+        },
+        "esperance_ponderee": {
+          "score": 18,
+          "max": 16,
+          "pct": 112,
+          "desc": "E=Σ(prob×gain) pondéré"
+        },
+        "ko_niveau": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Distance KO + support sous barrière"
+        },
+        "vix_regime": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "VIX niveau + direction delta 3j"
+        },
+        "catalyseur_grille": {
+          "score": 4,
+          "max": 10,
+          "pct": 40,
+          "desc": "Catalyseur macro/sectoriel/micro"
+        },
+        "contexte_macro": {
+          "score": 4,
+          "max": 8,
+          "pct": 50,
+          "desc": "DXY + yield curve + crédit + sentiment"
+        },
+        "correlation_portef": {
+          "score": 6,
+          "max": 6,
+          "pct": 100,
+          "desc": "Concentration CTO + corrélation NQ"
+        },
+        "volume_relatif": {
+          "score": 5,
+          "max": 6,
+          "pct": 83,
+          "desc": "Volume J-1 vs moy.20j + liquidité turbo"
+        },
+        "bougie_daily": {
+          "score": 7,
+          "max": 8,
+          "pct": 88,
+          "desc": "Bougie J-1 : Hammer/Engulfing + niveau"
+        },
+        "options_flow": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Put/Call ratio + OI QQQ + sweep orders"
+        }
+      },
+      "flow_signals": {
+        "cboe_pc": "P/C 1.05 — légèrement bearish"
+      }
+    },
+    {
+      "label": "CALL NQ ×22 [OUVERT]",
+      "isin": "DE000FD0H2Z3",
+      "is_open": true,
+      "score": 19,
+      "conviction": "ÉVITER",
+      "reco": "NE PAS TRADER — conditions défavorables.",
+      "facteurs": {
+        "momentum_technique": 0,
+        "esperance_ponderee": 0,
+        "ko_niveau": 0,
+        "vix_regime": 2,
+        "catalyseur_grille": 4,
+        "contexte_macro": 0,
+        "correlation_portef": 6,
+        "volume_relatif": 0,
+        "bougie_daily": 2,
+        "options_flow": 5
+      },
+      "detail": {
+        "momentum_technique": {
+          "score": 0,
+          "max": 18,
+          "pct": 0,
+          "desc": "RSI/MA position + structure tendance"
+        },
+        "esperance_ponderee": {
+          "score": 0,
+          "max": 16,
+          "pct": 0,
+          "desc": "E=Σ(prob×gain) pondéré"
+        },
+        "ko_niveau": {
+          "score": 0,
+          "max": 10,
+          "pct": 0,
+          "desc": "Distance KO + support sous barrière"
+        },
+        "vix_regime": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "VIX niveau + direction delta 3j"
+        },
+        "catalyseur_grille": {
+          "score": 4,
+          "max": 10,
+          "pct": 40,
+          "desc": "Catalyseur macro/sectoriel/micro"
+        },
+        "contexte_macro": {
+          "score": 0,
+          "max": 8,
+          "pct": 0,
+          "desc": "DXY + yield curve + crédit + sentiment"
+        },
+        "correlation_portef": {
+          "score": 6,
+          "max": 6,
+          "pct": 100,
+          "desc": "Concentration CTO + corrélation NQ"
+        },
+        "volume_relatif": {
+          "score": 0,
+          "max": 6,
+          "pct": 0,
+          "desc": "Volume J-1 vs moy.20j + liquidité turbo"
+        },
+        "bougie_daily": {
+          "score": 2,
+          "max": 8,
+          "pct": 25,
+          "desc": "Bougie J-1 : Hammer/Engulfing + niveau"
+        },
+        "options_flow": {
+          "score": 5,
+          "max": 10,
+          "pct": 50,
+          "desc": "Put/Call ratio + OI QQQ + sweep orders"
+        }
+      },
+      "flow_signals": {
+        "cboe_pc": "P/C 1.05 — couverture institutionnelle croissante",
+        "qqq_oi": "QQQ OI P/C 1.85 — excès puts = mur de support"
+      }
+    }
+  ],
+  "pnl_live_total": 36.0,
+  "portfolio_stats": {
+    "total_trades": 2,
+    "trades_gagnants": 2,
+    "trades_perdants": 0,
+    "pnl_total_eur": 372.0,
+    "win_rate": 100.0,
+    "pnl_moyen_eur": 186.0,
+    "meilleur_trade": "CALL NQ Turbo Infini BEST",
+    "pire_trade": "CALL Thales Turbo Infini BEST"
+  },
+  "fomc_result": "HAWKISH",
+  "fomc_note": "Powell a exprimé une grande incertitude sur l'impact du choc pétrolier iranien sur l'inflation. Taux maintenus mais ton restrictif — pas de coupe juin signalée. NQ a chuté −1.45% après l'annonce. Dot plot : moins de coupes qu'attendu.",
+  "bilan_veille": {
+    "date": "2026-03-23",
+    "fomc_result": "HAWKISH",
+    "positions_cloturees": 2,
+    "pnl_journee": -2306,
+    "details": [
+      "CALL NQ KO −1246€",
+      "CALL Thales KO −1060€"
+    ],
+    "reserve_deployer_demain": 0,
+    "note": "Lundi chaos : 2 KO (NQ + Thales). Racheté PUT NQ 850€ + CALL Thales 850€. Trump annonce talks Iran → NQ +2.3%, Brent −13%. Iran dénie les talks → incertitude maximale. PUT NQ sous le stop −40% (-58.2%). CALL Thales en profit +56%."
+  },
+  "options_flow": {
+    "cboe_equity_pc": 0.92,
+    "cboe_equity_pc_src": "J-1",
+    "qqq_oi_pc": 1.55,
+    "qqq_oi_pc_src": "dernier connu",
+    "score": 4,
+    "interpretation": "Neutre — incertitude Iran domaine",
+    "signals": {
+      "pc": "P/C 0.92 légèrement élevé",
+      "oi": "QQQ OI neutre",
+      "geopolitique": "Iran volatilité domine"
+    }
+  },
+  "calendrier_jour": [
+    {
+      "heure_paris": "21h45",
+      "heure_et": "15h45",
+      "event": "PMI Flash US Composite (Mars final)",
+      "precedent": "52.1",
+      "consensus": "50.5",
+      "importance": "HAUTE",
+      "couleur": "AMBER",
+      "impact_nq": "Si < 50 → récession → NQ −2%",
+      "note": "Premier indicateur avancé récession 2026"
+    },
+    {
+      "heure_paris": "Continu",
+      "heure_et": "Continu",
+      "event": "🕊️ Talks Iran — 5j de pause Trump",
+      "precedent": "—",
+      "consensus": "Iran dénie",
+      "importance": "CRITIQUE",
+      "couleur": "RED",
+      "impact_nq": "Chaque tweet Trump = ±2% NQ",
+      "note": "Iran Foreign Min. Araghchi : \"Pas de talks\""
+    },
+    {
+      "heure_paris": "16h00",
+      "heure_et": "10h00",
+      "event": "Existing Home Sales (Fév)",
+      "precedent": "4.08M",
+      "consensus": "4.12M",
+      "importance": "FAIBLE",
+      "couleur": "INK",
+      "impact_nq": "Impact secondaire",
+      "note": ""
+    },
+    {
+      "heure_paris": "Vendredi 14h30",
+      "heure_et": "08h30",
+      "event": "Core PCE Inflation (Fév)",
+      "precedent": "+2.8%",
+      "consensus": "+2.9%",
+      "importance": "HAUTE",
+      "couleur": "AMBER",
+      "impact_nq": "Si > 3.0% → hawkish → NQ −2%",
+      "note": "Indicateur inflation préféré de la Fed"
+    }
+  ]
+}
