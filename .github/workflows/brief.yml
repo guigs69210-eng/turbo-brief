@@ -56,7 +56,13 @@ jobs:
           else
             echo "type=refresh" >> $GITHUB_OUTPUT
           fi
-
+          
+ - name: Debug files
+        run: |
+          echo "Workspace: $GITHUB_WORKSPACE"
+          ls -la $GITHUB_WORKSPACE
+          ls -la $GITHUB_WORKSPACE/output/
+          
       - name: Run brief agent
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
