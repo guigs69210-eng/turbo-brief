@@ -1,14 +1,14 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier renforcé — VIX en hausse, NQ sous pression",
-    "description": "NQ Futures en léger repli (-0.14%) avec VIX à 26.71 (+2.14%), or en hausse (+0.96%) suggérant un mouvement de risque négatif. EURUSD et Brent en baisse.",
+    "titre": "Biais baissier renforcé — FOMC imminent",
+    "description": "NQ Futures en légère baisse (-0.12%) avec VIX en hausse (+1.91%) et US10Y à 4.392%. Contexte de prudence avant la décision FOMC.",
     "biais": "baissier",
-    "conviction": "modérée",
-    "contexte_macro": "Le VIX en hausse et la baisse du NQ indiquent une aversion au risque. L'or en hausse confirme ce biais. Les taux US à 4.4% renforcent la pression sur les actifs risqués."
+    "conviction": "forte",
+    "contexte_macro": "Les marchés anticipent une possible hausse des taux ou un ton restrictif de la Fed ce soir. Le VIX en hausse confirme une aversion au risque temporaire."
   },
   "plan_actions": [
     {
-      "heure": "19h15",
+      "heure": "20h45",
       "titre": "PUT NQ Futures ×20 (FOMC)",
       "sens": "PUT",
       "mise": "2000 €",
@@ -16,38 +16,58 @@
       "strike_ko": "Strike 24000 / KO 24500",
       "gain_cible": "+25% si NQ -0.5%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 19h15–19h30. Attention à la volatilité post-FOMC.",
+      "note": "Entrée rapide avant la décision FOMC. Stop mental à -40%.",
       "urgence": "haute"
+    },
+    {
+      "heure": "21h00",
+      "titre": "Surveillance CAC40 — Possible PUT ×15",
+      "sens": "PUT",
+      "mise": "1500 €",
+      "levier": 15,
+      "strike_ko": "Strike 7700 / KO 7800",
+      "gain_cible": "+20% si CAC40 -0.3%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "À déclencher si CAC40 casse 7740 en clôture. Stop mental à -40%.",
+      "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
       "label": "Support NQ",
-      "prix": 24100,
+      "prix": 24200,
       "type": "support",
-      "action": "Achat PUT renforcé si cassure",
+      "action": "Entrée PUT si cassé",
       "couleur": "bear"
     },
     {
       "label": "Résistance NQ",
-      "prix": 24400,
+      "prix": 24350,
       "type": "resistance",
-      "action": "Prendre profits si rebond",
+      "action": "Prendre profits si touché",
       "couleur": "bull"
+    },
+    {
+      "label": "Support CAC40",
+      "prix": 7720,
+      "type": "support",
+      "action": "Entrée PUT si cassé",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "FOMC à 20h ET — Volatilité accrue attendue",
-    "Surveiller VIX > 25 pour confirmation baissière"
+    "FOMC 20h (décision taux)",
+    "US10Y à 4.392% — vigilance sur les taux"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Clôture NQ à 22h"
+    "Clôture obligatoire 17h30 pour actions FR (déjà passée)",
+    "Turbo NQ gardé jusqu'à 22h"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 241",
-      "chg": "-0.14%",
+      "valeur": "24 246",
+      "chg": "-0.12%",
       "dir": "dn"
     },
     "cac40": {
@@ -56,34 +76,34 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$103.7",
-      "chg": "-0.37%",
+      "valeur": "$103.5",
+      "chg": "-0.54%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "26.7",
-      "chg": "+2.14%",
+      "valeur": "26.6",
+      "chg": "+1.91%",
       "dir": "up"
     },
     "gold": {
-      "valeur": "4 388,5",
-      "chg": "+0,96%",
+      "valeur": "4 402.70",
+      "chg": "+1.29%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1,1573",
-      "chg": "-0,32%",
+      "valeur": "1.159",
+      "chg": "-0.17%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4,4",
-      "chg": "+1,52%",
+      "valeur": "4.392%",
+      "chg": "+1.34%",
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Ne pas toucher.",
-  "edition": "19h11 CET",
+  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (PEA 26 000 € séparé).",
+  "edition": "20h44 CET",
   "mode": "fomc",
-  "timestamp": "2026-03-24T19:12:01.240926+01:00",
+  "timestamp": "2026-03-24T20:44:47.650473+01:00",
   "date_fr": "Tuesday 24 march 2026"
 }
