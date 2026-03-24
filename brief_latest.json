@@ -1,19 +1,89 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 17:43",
-    "description": "NQ: 24329 (+0.22%) · CAC: 7750 (+0.29%)",
-    "biais": "neutre",
-    "conviction": "faible"
+    "titre": "Biais baissier renforcé — VIX en hausse, NQ sous pression",
+    "description": "NQ Futures en léger repli (-0.14%) avec VIX à 26.71 (+2.14%), or en hausse (+0.96%) suggérant un mouvement de risque négatif. EURUSD et Brent en baisse.",
+    "biais": "baissier",
+    "conviction": "modérée",
+    "contexte_macro": "Le VIX en hausse et la baisse du NQ indiquent une aversion au risque. L'or en hausse confirme ce biais. Les taux US à 4.4% renforcent la pression sur les actifs risqués."
   },
-  "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "plan_actions": [
+    {
+      "heure": "19h15",
+      "titre": "PUT NQ Futures ×20 (FOMC)",
+      "sens": "PUT",
+      "mise": "2000 €",
+      "levier": 20,
+      "strike_ko": "Strike 24000 / KO 24500",
+      "gain_cible": "+25% si NQ -0.5%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée 19h15–19h30. Attention à la volatilité post-FOMC.",
+      "urgence": "haute"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Tuesday 24 march 2026",
-  "edition": "17h43 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "niveaux_cles": [
+    {
+      "label": "Support NQ",
+      "prix": 24100,
+      "type": "support",
+      "action": "Achat PUT renforcé si cassure",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance NQ",
+      "prix": 24400,
+      "type": "resistance",
+      "action": "Prendre profits si rebond",
+      "couleur": "bull"
+    }
+  ],
+  "alertes": [
+    "FOMC à 20h ET — Volatilité accrue attendue",
+    "Surveiller VIX > 25 pour confirmation baissière"
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Clôture NQ à 22h"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "24 241",
+      "chg": "-0.14%",
+      "dir": "dn"
+    },
+    "cac40": {
+      "valeur": "7 744",
+      "chg": "+0.22%",
+      "dir": "up"
+    },
+    "brent": {
+      "valeur": "$103.7",
+      "chg": "-0.37%",
+      "dir": "dn"
+    },
+    "vix": {
+      "valeur": "26.7",
+      "chg": "+2.14%",
+      "dir": "up"
+    },
+    "gold": {
+      "valeur": "4 388,5",
+      "chg": "+0,96%",
+      "dir": "up"
+    },
+    "eurusd": {
+      "valeur": "1,1573",
+      "chg": "-0,32%",
+      "dir": "dn"
+    },
+    "us10y": {
+      "valeur": "4,4",
+      "chg": "+1,52%",
+      "dir": "up"
+    }
+  },
+  "pea_note": "PEA — Ne pas toucher.",
+  "edition": "19h11 CET",
+  "mode": "fomc",
+  "timestamp": "2026-03-24T19:12:01.240926+01:00",
+  "date_fr": "Tuesday 24 march 2026"
 }
