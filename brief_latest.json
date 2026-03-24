@@ -1,78 +1,106 @@
 {
   "signal_du_jour": {
-    "titre": "Haussier — Impulsion post-FOMC",
-    "description": "NQ Futures +1.95% après la décision de la Fed, VIX en baisse de 2.28%, marché actions européens en hausse (+0.86% CAC40).",
-    "biais": "haussier",
+    "titre": "Biais baissier renforcé — Survente technique",
+    "description": "NQ Futures XX (+0.50%), VIX XX (+1.95%), CAC40 en baisse (-0.19%). RSI survendu sur CAC40 et NQ, tendance baissière confirmée.",
+    "biais": "baissier",
     "conviction": "forte",
-    "contexte_macro": "La Fed a maintenu ses taux mais signalé une possible pause future. Les marchés actions réagissent positivement avec une hausse marquée des indices US et européens. Le VIX reste élevé mais en baisse, indiquant une réduction temporaire de la volatilité."
+    "contexte_macro": "FOMC en attente (Hold 92%), marché en attente de catalyseurs. Volatilité élevée (VIX +1.95%) avec pression sur les indices européens. Or en hausse (+1.57%) mais Brent en forte baisse (-5.89%)."
   },
   "plan_actions": [
     {
-      "heure": "22h00",
-      "titre": "CALL NQ Futures ×20 (FOMC)",
-      "sens": "CALL",
-      "mise": "2000 €",
+      "heure": "10h30",
+      "titre": "PUT CAC40 ×20 (Schneider Electric sous-jacent)",
+      "sens": "PUT",
+      "mise": "1500 €",
       "levier": 20,
-      "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée après validation du communiqué FOMC. Surveillance active jusqu'à 22h30.",
-      "urgence": "haute"
+      "strike_ko": "Strike 7650 / KO 7700",
+      "gain_cible": "+25% si CAC40 -0.5%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "Entrée 10h30–11h00 si rebond technique vers 7720. Stop mental -40% immédiat.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "11h15",
+      "titre": "PUT NQ Futures ×25",
+      "sens": "PUT",
+      "mise": "2000 €",
+      "levier": 25,
+      "strike_ko": "Strike 24500 / KO 24700",
+      "gain_cible": "+30% si NQ -1.0%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée si cassure des supports 24329.75. Stop mental -40% immédiat.",
+      "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance haute",
-      "prix": 24500,
+      "label": "Résistance haute CAC40",
+      "prix": 8179.58,
       "type": "resistance",
-      "action": "Prendre profits TP1 (+25%)",
-      "couleur": "bull"
+      "action": "Prendre profits TP1 si atteinte",
+      "couleur": "bear"
     },
     {
-      "label": "Support clé",
-      "prix": 24200,
+      "label": "Support clé CAC40",
+      "prix": 7650,
       "type": "support",
-      "action": "Stop loss si cassure",
+      "action": "Sortie si cassure",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance haute NQ",
+      "prix": 26349.0,
+      "type": "resistance",
+      "action": "Éviter les positions CALL",
+      "couleur": "bear"
+    },
+    {
+      "label": "Support clé NQ",
+      "prix": 24000.0,
+      "type": "support",
+      "action": "Renforcement baissier si cassure",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Surveillance FOMC jusqu'à 22h30",
-    "VIX à 26.15 — risque de rebond possible"
+    "FOMC à 20h CET — Levier max ×20",
+    "Surveillance VIX pour confirmation de tendance baissière",
+    "Brent en forte baisse — Risque de contagion sur les indices"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Clôture obligatoire 22h30 pour NQ Futures"
+    "Clôture obligatoire CAC40 à 17h30",
+    "TP1 (+25%) → sortir 50%, stop à +10%"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 421",
-      "chg": "+1.95%",
+      "valeur": "24 397",
+      "chg": "+0.50%",
       "dir": "up"
     },
     "cac40": {
-      "valeur": "7 726",
-      "chg": "+0.86%",
-      "dir": "up"
+      "valeur": "7 712",
+      "chg": "-0.19%",
+      "dir": "dn"
     },
     "brent": {
-      "valeur": "$100.2",
-      "chg": "-7.19%",
+      "valeur": "$97.9",
+      "chg": "-5.89%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "26.1",
-      "chg": "-2.28%",
-      "dir": "dn"
-    },
-    "gold": {
-      "valeur": "4 414.90",
-      "chg": "+1.37%",
+      "valeur": "26.7",
+      "chg": "+1.95%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1614",
-      "chg": "+0.34%",
+      "valeur": "1.1586",
+      "chg": "-0.21%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "4 415.0",
+      "chg": "+1.57%",
       "dir": "up"
     },
     "us10y": {
@@ -81,9 +109,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher.",
-  "edition": "21h58 CET",
-  "mode": "fomc",
-  "timestamp": "2026-03-23T21:58:25.477756+01:00",
-  "date_fr": "Monday 23 march 2026"
+  "pea_note": "PEA — Ne pas toucher. Schneider Electric sous-jacent uniquement pour turbo BEST.",
+  "edition": "10h15 CET",
+  "mode": "normal",
+  "timestamp": "2026-03-24T10:15:28.734152+01:00",
+  "date_fr": "Tuesday 24 march 2026"
 }

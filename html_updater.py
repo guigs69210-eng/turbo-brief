@@ -4,6 +4,7 @@ HTML Updater — Injecte le brief JSON dans turbo_brief_v2.html
 
 import json
 import logging
+import os
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -11,7 +12,7 @@ from zoneinfo import ZoneInfo
 log = logging.getLogger("output.html_updater")
 PARIS = ZoneInfo("Europe/Paris")
 
-HTML_TEMPLATE = Path("turbo_brief_v2.html")
+HTML_TEMPLATE = Path(os.getenv("GITHUB_WORKSPACE", ".")) / "turbo_brief_v2.html"
 HTML_OUTPUT   = Path("output/turbo_brief_live.html")
 JSON_OUTPUT   = Path("output/brief_latest.json")
 
