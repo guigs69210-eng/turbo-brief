@@ -34,8 +34,15 @@ Retourne UNIQUEMENT un JSON valide avec cette structure exacte :
 ────────────────────────────────
 """
 
-import os as _os
-_BASE = _os.path.dirname(_os.path.abspath(__file__))
+import os as _os, sys as _sys
+
+# Robuste : fonctionne avec exec(), subprocess, GitHub Actions
+try:
+    _BASE = _os.path.dirname(_os.path.abspath(__file__))
+except NameError:
+    _BASE = _os.path.dirname(_os.path.abspath(_sys.argv[0]))
+if not _BASE or _BASE == '/':
+    _BASE = _os.getcwd()
 
 def _path(filename):
     return _os.path.join(_BASE, filename)
@@ -217,9 +224,13 @@ def generate_pdf():
         pass
 
     if result.returncode != 0:
-        raise RuntimeError("PDF error: " + result.stderr[-300:])
-    if not os.path.exists(PDF_PATH):
-        raise FileNotFoundError("PDF absent. stdout:" + result.stdout[-200:])
+        raise RuntimeError("PDF error: " + result.stderr[-400:] + result.stdout[-200:])
+    if not _os.path.exists(PDF_PATH):
+        raise FileNotFoundError(
+            f"PDF absent dans {PDF_PATH}.\n"
+            f"stdout: {result.stdout[-300:]}\n"
+            f"stderr: {result.stderr[-300:]}"
+        )
 
     with open(PDF_PATH, 'rb') as f:
         b64 = base64.b64encode(f.read()).decode()

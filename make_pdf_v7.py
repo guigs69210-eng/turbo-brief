@@ -1,5 +1,9 @@
-import os as _os
-_BASE = _os.path.dirname(_os.path.abspath(__file__))
+import os as _os, sys as _sys
+try:
+    _BASE = _os.path.dirname(_os.path.abspath(__file__))
+except NameError:
+    _BASE = _os.getcwd()
+_BASE = _BASE or _os.getcwd()
 
 """
 make_pdf_v7.py — One-pager action plan + annexes
@@ -18,7 +22,11 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
 from portfolio import score_setup_v2, FACTEURS_V2
 
-_BASE_PDF = _os.path.dirname(_os.path.abspath(__file__))
+try:
+    _BASE_PDF = _os.path.dirname(_os.path.abspath(__file__))
+except NameError:
+    _BASE_PDF = _os.getcwd()
+_BASE_PDF = _BASE_PDF or _os.getcwd()
 import sys as _sys
 if _BASE_PDF not in _sys.path:
     _sys.path.insert(0, _BASE_PDF)
