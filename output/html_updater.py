@@ -4,6 +4,7 @@ HTML Updater — Injecte le brief JSON dans turbo_brief_v2.html
 
 import json
 import logging
+import os
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
