@@ -1,0 +1,252 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24363.75,
+        "prev_close": 24376.5,
+        "change_pct": -0.05,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7846.5498,
+        "prev_close": 7751.54,
+        "change_pct": 1.23,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.33,
+        "prev_close": 26.94,
+        "change_pct": -5.98,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4502.0,
+        "prev_close": 4567.7998,
+        "change_pct": -1.44,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 98.1,
+        "prev_close": 99.79,
+        "change_pct": -1.69,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1562,
+        "prev_close": 1.1617,
+        "change_pct": -0.47,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.328,
+        "prev_close": 4.392,
+        "change_pct": -1.46,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6638.75,
+        "prev_close": 6647.5,
+        "change_pct": -0.13,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 247.95,
+        "prev_close": 242.4,
+        "change_pct": 2.29,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 462.35,
+        "prev_close": 460.3,
+        "change_pct": 0.45,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.26,
+        "prev_close": 169.04,
+        "change_pct": 1.31,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.31,
+        "prev_close": 83.09,
+        "change_pct": 1.47,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.938,
+        "prev_close": 5.844,
+        "change_pct": 1.61,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-25T20:57:44.648295+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Barclays raises Arm stock price target on AI server chip outlook",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/barclays-raises-arm-stock-price-target-on-ai-server-chip-outlook-93CH-4580979",
+          "source": "investing_news",
+          "published": "2026-03-25T20:44:56+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "d18267d8f168"
+        },
+        {
+          "title": "Barclays raises Ionis stock price target on Tryngolza opportunity",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/barclays-raises-ionis-stock-price-target-on-tryngolza-opportunity-93CH-4580978",
+          "source": "investing_news",
+          "published": "2026-03-25T20:44:56+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "01202b37fe64"
+        },
+        {
+          "title": "Rio Tinto’s Diavik diamond mine concludes operations in Canada",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/rio-tintos-diavik-diamond-mine-concludes-operations-in-canada-93CH-4580977",
+          "source": "investing_news",
+          "published": "2026-03-25T20:44:56+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "51ea0b6abee7"
+        },
+        {
+          "title": "Universal Display to present OLED tech at China display conference",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/universal-display-to-present-oled-tech-at-china-display-conference-93CH-4580976",
+          "source": "investing_news",
+          "published": "2026-03-25T20:44:52+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "95184b81399d"
+        },
+        {
+          "title": "Ousted Homeland Security chief Noem begins new envoy role with tour",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/ousted-homeland-security-chief-noem-begins-new-envoy-role-with-tour-4580975",
+          "source": "investing_news",
+          "published": "2026-03-25T20:43:00+00:00",
+          "age_minutes": 14,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "eb2a943dc57d"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 6
+        }
+      ],
+      "scanned_at": "2026-03-25T20:57:41.055761+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-25T21:57:44.648513+01:00",
+    "context": {
+      "note": "",
+      "github_run": "50",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre — Tech/IA en surperformance, mais marché hésitant",
+      "description": "NQ Futures stable (-0.05%), CAC40 +1.23% en clôture. VIX en baisse (-5.98%) mais reste élevé (25.33). Sentiment global neutre malgré les news tech positives.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Marché actions en range post-FOMC hawkish. Tech/IA en tête des gains sectoriels."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ Futures",
+        "prix": 24300,
+        "type": "support",
+        "action": "Achat CALL si rebond",
+        "couleur": "blue"
+      },
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "Vente PUT si rejet",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "News tech à surveiller 22h CET (Universal Display)",
+      "VIX à 25.33 — éviter les leviers >×15"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → clôture possible 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 364",
+        "chg": "-0.05%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 847",
+        "chg": "+1.23%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$98.1",
+        "chg": "-1.69%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.3",
+        "chg": "-5.98%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 502.0",
+        "chg": "-1.44%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1562",
+        "chg": "-0.47%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.328%",
+        "chg": "-1.46%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises à trader ce soir.",
+    "edition": "21:57 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-25T21:57:48.275937+01:00",
+    "date_fr": "Mercredi 25 mars 2026"
+  }
+}

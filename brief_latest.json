@@ -1,60 +1,36 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à léger baissier — Banque de France révisée",
-    "description": "NQ Futures stable (-0.05%), VIX en baisse (-5.79%) malgré la révision à la baisse de la croissance française. Brent recule de -2.04% sur demande mondiale.",
+    "titre": "Biais neutre — Tech/IA en surperformance, mais marché hésitant",
+    "description": "NQ Futures stable (-0.05%), CAC40 +1.23% en clôture. VIX en baisse (-5.98%) mais reste élevé (25.33). Sentiment global neutre malgré les news tech positives.",
     "biais": "neutre",
-    "conviction": "modérée",
-    "contexte_macro": "La Banque de France réduit ses prévisions de croissance 2026 et relève ses anticipations d'inflation, pesant sur l'euro et les actifs européens."
+    "conviction": "faible",
+    "contexte_macro": "Marché actions en range post-FOMC hawkish. Tech/IA en tête des gains sectoriels."
   },
-  "plan_actions": [
-    {
-      "heure": "20:40",
-      "titre": "PUT EURUSD ×15 (Turbo BEST SG Bourse)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 15,
-      "strike_ko": "Strike 1.1600 / KO 1.1650",
-      "gain_cible": "+25% si EURUSD -0.8%",
-      "plateforme": "sgbourse.fr → EURUSD → PUT BEST",
-      "note": "Entrée 20:40–21:00. Stop mental -40%.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "21:15",
-      "titre": "CALL NQ Futures ×18 (Turbo Vontobel)",
-      "sens": "CALL",
-      "mise": "1800 €",
-      "levier": 18,
-      "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+30% si NQ +1.2%",
-      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
-      "note": "Entrée 21:15–21:45. Stop mental -40%.",
-      "urgence": "normale"
-    }
-  ],
+  "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Support NQ",
-      "prix": 24200,
+      "label": "Support NQ Futures",
+      "prix": 24300,
       "type": "support",
-      "action": "Entrée CALL si cassé",
-      "couleur": "bull"
+      "action": "Achat CALL si rebond",
+      "couleur": "blue"
     },
     {
-      "label": "Résistance EURUSD",
-      "prix": 1.165,
+      "label": "Résistance NQ Futures",
+      "prix": 24500,
       "type": "resistance",
-      "action": "Sortie PUT si atteint",
+      "action": "Vente PUT si rejet",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Suivre la réaction du marché après la publication des minutes du FOMC (20:30 CET)",
-    "Surveiller l'impact de la révision de la Banque de France sur les actifs européens"
+    "News tech à surveiller 22h CET (Universal Display)",
+    "VIX à 25.33 — éviter les leviers >×15"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Turbos NQ → cotent jusqu'à 22h CET"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ → clôture possible 22h CET"
   ],
   "market_strip": {
     "nq": {
@@ -68,23 +44,23 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$97.8",
-      "chg": "-2.04%",
+      "valeur": "$98.1",
+      "chg": "-1.69%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.4",
-      "chg": "-5.79%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.1566",
-      "chg": "-0.44%",
+      "valeur": "25.3",
+      "chg": "-5.98%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 511.10",
-      "chg": "-1.24%",
+      "valeur": "$4 502.0",
+      "chg": "-1.44%",
+      "dir": "dn"
+    },
+    "eurusd": {
+      "valeur": "1.1562",
+      "chg": "-0.47%",
       "dir": "dn"
     },
     "us10y": {
@@ -93,9 +69,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Non applicable (NQ Futures et EURUSD).",
-  "edition": "20:36 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-03-25T20:36:27.409837+01:00",
+  "pea_note": "PEA — Pas d'actions françaises à trader ce soir.",
+  "edition": "21:57 CET",
+  "mode": "normal",
+  "timestamp": "2026-03-25T21:57:48.275937+01:00",
   "date_fr": "Mercredi 25 mars 2026"
 }
