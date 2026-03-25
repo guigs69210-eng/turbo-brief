@@ -19,62 +19,71 @@ MODEL           = "mistral-small-latest"
 
 SYSTEM_PROMPT = """Tu es l'algorithme de trading de Turbo Brief, outil de day trading sur turbos/warrants (Paris, PEA + CTO).
 
-RÔLE : Analyser les données de marché et générer un brief JSON structuré.
+RÔLE : Analyser les données de marché et générer un brief JSON structuré avec des recommandations de trading intraday.
 
-CONTEXTE :
-- Trader Paris, sessions 09h–17h30 + soirée US jusqu'à 22h
-- Instruments : Turbos BEST (SG Bourse), warrants BNP, turbos Vontobel
-- Leviers : ×15 à ×25 intraday, ×7 couvertures
-- Capital day trading : ~10 000 € (PEA 26 000 € séparé, ne pas toucher)
+CONTEXTE TRADER :
+- Sessions : Paris 09h–17h30, US jusqu'à 22h CET
+- Instruments : Turbos Infinis BEST (SG Bourse), warrants BNP, turbos Vontobel
+- Leviers typiques : ×15 à ×25 intraday
+- CALL = pari haussier, PUT = pari baissier
+- Turbos BEST : pour un CALL, le KO est SOUS le strike. Pour un PUT, le KO est AU-DESSUS du strike.
 
-RÈGLES :
+RÈGLES IMPÉRATIVES :
 1. Stop mental −40% sur le turbo = sortie immédiate
-2. Actions FR → clôture obligatoire 17h30
-3. Turbos NQ/indices → gardés jusqu'à 22h
-4. TP1 (+25%) → sortir 50%, stop à +10%
-5. FOMC → levier max ×20
+2. Actions FR → clôture obligatoire avant 17h30
+3. Turbos NQ/indices → cotent jusqu'à 22h CET
+4. TP1 (+25%) → sortir 50%, déplacer stop à +10%
+5. Levier max ×20 en période de forte volatilité (VIX > 25)
 6. Jamais de moyenne à la baisse
+
+IMPORTANT SUR LES TURBOS :
+- CALL Turbo : KO si le sous-jacent DESCEND sous la barrière → KO toujours INFÉRIEUR au cours actuel
+- PUT Turbo : KO si le sous-jacent MONTE au-dessus de la barrière → KO toujours SUPÉRIEUR au cours actuel
+- Levier réel = Cours SJ / (Valeur Intrinsèque × Parité × FX)
 
 RÉPONSE : JSON strict uniquement, aucun texte avant/après, aucun backtick.
 
 {
   "signal_du_jour": {
-    "titre": "Neutre — Biais haussier conditionnel",
-    "description": "NQ Futures XX (+X%), VIX XX...",
+    "titre": "Biais baissier conditionnel — Iran talks incertains",
+    "description": "NQ 24 428 (+0.21%), VIX 25.9 en baisse. Brent recule -3.6% sur espoirs de négociations.",
     "biais": "haussier|baissier|neutre",
     "conviction": "faible|modérée|forte",
-    "contexte_macro": "Résumé en 2 phrases"
+    "contexte_macro": "2 phrases max sur le contexte du jour."
   },
   "plan_actions": [
     {
       "heure": "09h10",
-      "titre": "CALL NQ Futures ×25",
+      "titre": "CALL NQ Futures ×20",
       "sens": "CALL|PUT",
-      "mise": "2500 €",
-      "levier": 25,
+      "mise": "1500 €",
+      "levier": 20,
       "strike_ko": "Strike 23500 / KO 23000",
-      "gain_cible": "+20% si NQ +0,8%",
+      "gain_cible": "+30% si NQ +1.5%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 09h10–09h30...",
+      "note": "Entrée 09h10–09h30. Stop mental -40%.",
       "urgence": "haute|normale|faible"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance haute",
-      "prix": 25478,
+      "label": "Résistance NQ",
+      "prix": 24800,
       "type": "resistance|support|current",
-      "action": "Prendre profits TP2",
+      "action": "TP1 si atteint",
       "couleur": "bull|bear|amber|blue"
     }
   ],
-  "alertes": ["FOMC ce soir 20h ET"],
-  "regles_session": ["Stop mental −40% = sortie immédiate"],
+  "alertes": ["Événement macro important aujourd'hui 15h ET"],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Actions FR → clôture obligatoire 17h30"
+  ],
   "market_strip": {
-    "nq":    {"valeur": "25 112", "chg": "+0,39%", "dir": "up"},
-    "cac40": {"valeur": "7 900",  "chg": "-0,10%", "dir": "fl"},
-    "brent": {"valeur": "101,0",  "chg": "-0,20%", "dir": "dn"},
-    "vix":   {"valeur": "22,4",   "chg": "-17,7%", "dir": "up"}
+    "nq":    {"valeur": "24 428", "chg": "+0.21%", "dir": "up"},
+    "cac40": {"valeur": "7 822",  "chg": "+0.91%", "dir": "up"},
+    "brent": {"valeur": "$96.2",  "chg": "-3.58%", "dir": "dn"},
+    "vix":   {"valeur": "25.9",   "chg": "-3.97%", "dir": "dn"}
   },
   "pea_note": "PEA — Ne pas toucher.",
   "edition": "09h00 CET",
@@ -123,12 +132,26 @@ async def synthesize_brief(raw_data: dict, trigger_type) -> dict:
 
 def _build_user_message(data: dict, trigger_type) -> str:
     now = datetime.now(PARIS)
+
+    # ── Date et contexte temporel explicite ──────────────────────────────────
+    jours_fr = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+    mois_fr  = ["janvier", "février", "mars", "avril", "mai", "juin",
+                "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    date_fr  = f"{jours_fr[now.weekday()]} {now.day} {mois_fr[now.month-1]} {now.year}"
+
     sections = [
-        f"# BRIEF {trigger_type}",
-        f"Date: {now.strftime('%A %d %B %Y — %H:%M CET')}",
+        f"# BRIEF {trigger_type} — {date_fr} — {now.strftime('%H:%M')} CET",
+        "",
+        "## CONTEXTE TEMPOREL IMPORTANT",
+        f"- Date aujourd'hui : {date_fr}",
+        f"- Heure actuelle : {now.strftime('%H:%M')} CET",
+        "- Le dernier FOMC a eu lieu le 18 mars 2026 (résultat : HOLD hawkish, taux inchangés)",
+        "- Prochain FOMC : 7 mai 2026",
+        "- Ne pas mentionner le FOMC comme événement à venir aujourd'hui.",
         "",
     ]
 
+    # ── Données marché ────────────────────────────────────────────────────────
     market = data.get("market", {})
     if market and not market.get("error"):
         sections.append("## COTATIONS")
@@ -139,6 +162,7 @@ def _build_user_message(data: dict, trigger_type) -> str:
                 sections.append(f"- {key.upper()}: {item['price']} ({chg})")
         sections.append("")
 
+    # ── Analyse technique ─────────────────────────────────────────────────────
     tech = data.get("technical", {})
     if tech and not tech.get("error"):
         sections.append("## TECHNIQUE")
@@ -158,29 +182,48 @@ def _build_user_message(data: dict, trigger_type) -> str:
                     sections.append(f"  Supports: {', '.join(str(l['price']) for l in supports)}")
         sections.append("")
 
+    # ── Calendrier ────────────────────────────────────────────────────────────
     cal = data.get("calendar", {})
     if cal and not cal.get("error"):
-        sections.append("## CALENDRIER")
-        for e in cal.get("today_high_impact", []):
-            sections.append(f"  ⚠️ {e.get('time','?')} — {e.get('name','?')}")
-        fomc = cal.get("fomc_schedule", {})
-        if fomc:
-            probs = fomc.get("probabilities", {})
-            sections.append(f"FOMC: Hold {probs.get('hold','?')}%, Coupe {probs.get('cut_25','?')}%")
-        sections.append("")
+        events = cal.get("today_high_impact", [])
+        if events:
+            sections.append("## CALENDRIER ÉCONOMIQUE AUJOURD'HUI")
+            for e in events:
+                sections.append(f"  ⚠️ {e.get('time','?')} — {e.get('name','?')}")
+            sections.append("")
+        else:
+            sections.append("## CALENDRIER")
+            sections.append("- Aucun événement macro majeur aujourd'hui.")
+            sections.append("")
 
+    # ── News ──────────────────────────────────────────────────────────────────
     news = data.get("news", {})
     if news and not news.get("error"):
-        sections.append("## NEWS")
-        sections.append(f"Sentiment: {news.get('sentiment', 0):+.2f}")
+        sections.append("## NEWS DU JOUR")
+        sections.append(f"Sentiment global: {news.get('sentiment', 0):+.2f}")
         themes = news.get("themes", [])
         if themes:
-            sections.append(f"Thèmes: {', '.join(t['theme'] for t in themes)}")
-        for a in [a for a in news.get("articles", []) if a.get("urgency") in ("high", "critical")][:4]:
-            sections.append(f"  - [{a.get('urgency','?').upper()}] {a.get('title','')}")
+            sections.append(f"Thèmes dominants: {', '.join(t['theme'] for t in themes[:3])}")
+
+        # Articles haute importance en premier
+        articles = news.get("articles", [])
+        high_articles = [a for a in articles if a.get("urgency") in ("critical", "high")][:6]
+        other_articles = [a for a in articles if a.get("urgency") not in ("critical", "high")][:4]
+
+        if high_articles:
+            sections.append("### Flash haute importance:")
+            for a in high_articles:
+                age = a.get("age_minutes", 999)
+                age_str = f"{age}min" if age < 120 else f"{age//60}h"
+                sections.append(f"  [{a.get('urgency','?').upper()}] ({age_str}) {a.get('title','')}")
+
+        if other_articles:
+            sections.append("### Autres news:")
+            for a in other_articles:
+                sections.append(f"  - {a.get('title','')}")
         sections.append("")
 
-    sections.append("Génère le brief JSON complet.")
+    sections.append(f"Génère le brief JSON pour {date_fr} à {now.strftime('%H:%M')} CET.")
     return "\n".join(sections)
 
 
@@ -213,11 +256,20 @@ def _parse_response(text: str) -> dict:
 
 
 def _validate_brief(brief: dict, raw_data: dict) -> dict:
-    if not brief.get("timestamp"):
-        brief["timestamp"] = datetime.now(PARIS).isoformat()
-    if not brief.get("edition"):
-        brief["edition"] = datetime.now(PARIS).strftime("%Hh%M CET")
+    now = datetime.now(PARIS)
 
+    if not brief.get("timestamp"):
+        brief["timestamp"] = now.isoformat()
+    if not brief.get("edition"):
+        brief["edition"] = now.strftime("%Hh%M CET")
+
+    # ── date_fr toujours en français ──────────────────────────────────────────
+    jours_fr = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+    mois_fr  = ["janvier", "février", "mars", "avril", "mai", "juin",
+                "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    brief["date_fr"] = f"{jours_fr[now.weekday()]} {now.day} {mois_fr[now.month-1]} {now.year}"
+
+    # ── market_strip depuis données live ─────────────────────────────────────
     market = raw_data.get("market", {})
     if market and not market.get("error"):
         strip = brief.get("market_strip", {})
@@ -229,10 +281,10 @@ def _validate_brief(brief: dict, raw_data: dict) -> dict:
             return f"{chg:+.2f}%" if chg is not None else "—"
 
         for key, label, decimals in [
-            ("nq_futures", "nq", 0),
-            ("cac40", "cac40", 0),
-            ("vix", "vix", 1),
-            ("brent", "brent", 1),
+            ("nq_futures", "nq",    0),
+            ("cac40",      "cac40", 0),
+            ("vix",        "vix",   1),
+            ("brent",      "brent", 1),
         ]:
             m = market.get(key, {})
             if m.get("price"):
@@ -244,5 +296,4 @@ def _validate_brief(brief: dict, raw_data: dict) -> dict:
                 }
         brief["market_strip"] = strip
 
-    brief["date_fr"] = datetime.now(PARIS).strftime("%A %d %B %Y").capitalize()
     return brief
