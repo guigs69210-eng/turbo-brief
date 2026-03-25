@@ -1,110 +1,91 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier conditionnel — Réaction post-FOMC en attente",
-    "description": "NQ Futures en légère hausse (+0.53%) mais RSI baissier (34.9) et trend baissier. VIX en hausse (+3.06%) reflétant une volatilité accrue. CAC40 en léger rebond (+0.22%) mais survendu (RSI 28.6).",
+    "titre": "Haussier — Impulsion CAC40 +1.47%",
+    "description": "NQ Futures +0.31% en légère hausse, CAC40 en forte progression (+1.47%) malgré un VIX en baisse (-4.57%). Brent chute de -4.78% sous 95$, EURUSD stable.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "FOMC maintenu (92% de probabilité), marché en attente de réactions post-décision. Sentiment neutre. Volatilité élevée (VIX +3.06%) avec or en forte hausse (+2.95%) et pétrole en baisse (-3.84%)."
+    "contexte_macro": "Le CAC40 profite d'un rebond technique et d'un sentiment risque modéré. Le Brent en baisse pourrait soutenir les valeurs énergétiques à court terme. Le VIX reste élevé mais en repli."
   },
   "plan_actions": [
     {
-      "heure": "09h10",
-      "titre": "CALL NQ Futures ×20 (FOMC soir)",
+      "heure": "11h40",
+      "titre": "CALL CAC40 ×20 (PEA)",
       "sens": "CALL",
-      "mise": "2000 €",
+      "mise": "1800 €",
       "levier": 20,
-      "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1.5%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 09h10–09h30 après validation FOMC. Stop mental −40% immédiat.",
-      "urgence": "haute"
+      "strike_ko": "Strike 7900 / KO 7700",
+      "gain_cible": "+25% si CAC40 +0.8%",
+      "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
+      "note": "Entrée 11h40–12h00. Surveillance du Brent pour confirmation.",
+      "urgence": "normale"
     },
     {
-      "heure": "10h00",
-      "titre": "PUT CAC40 ×15 (survendu)",
+      "heure": "11h50",
+      "titre": "PUT BRENT ×15 (CTO)",
       "sens": "PUT",
-      "mise": "1500 €",
+      "mise": "1200 €",
       "levier": 15,
-      "strike_ko": "Strike 7700 / KO 7800",
-      "gain_cible": "+20% si CAC40 −0.8%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée si rebond CAC40 vers 7800-7850. Stop mental −40% immédiat.",
+      "strike_ko": "Strike 95.5 / KO 97.0",
+      "gain_cible": "+20% si Brent -0.5%",
+      "plateforme": "sgbourse.fr → Brent → PUT BEST",
+      "note": "Entrée 11h50–12h10. Couverture partielle si rebond sur 94.5$.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance haute NQ",
-      "prix": 26349.0,
+      "label": "Résistance CAC40",
+      "prix": 7920,
       "type": "resistance",
-      "action": "Prendre profits TP2 si atteinte",
+      "action": "Prendre profits TP1 si touché",
       "couleur": "bull"
     },
     {
-      "label": "Support bas NQ",
-      "prix": 24329.75,
+      "label": "Support Brent",
+      "prix": 94.5,
       "type": "support",
-      "action": "Renforcer position CALL si rebond",
+      "action": "Acheter si rebond pour couverture",
       "couleur": "bear"
-    },
-    {
-      "label": "Résistance haute CAC40",
-      "prix": 8179.58,
-      "type": "resistance",
-      "action": "Sortie PUT si test",
-      "couleur": "bear"
-    },
-    {
-      "label": "Support bas CAC40",
-      "prix": 7700.0,
-      "type": "support",
-      "action": "Renforcer position PUT si cassure",
-      "couleur": "bull"
     }
   ],
   "alertes": [
-    "FOMC 20h CET — Réaction immédiate attendue",
-    "Surveillance VIX > 25 (volatilité élevée)",
-    "Or en forte hausse (+2.95%) — corrélation inverse NQ possible"
+    "Brent à surveiller pour confirmation baissière",
+    "FOMC demain soir 20h ET"
   ],
   "regles_session": [
-    "Stop mental −40% sur turbo = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ/indices → gardés jusqu'à 22h",
-    "TP1 (+25%) → sortir 50%, stop à +10%",
-    "FOMC → levier max ×20",
-    "Jamais de moyenne à la baisse"
+    "Stop mental −40% = sortie immédiate",
+    "Clôture obligatoire CAC40 à 17h30"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 404",
-      "chg": "+0.53%",
+      "valeur": "24 452",
+      "chg": "+0.31%",
       "dir": "up"
     },
     "cac40": {
-      "valeur": "7 744",
-      "chg": "+0.22%",
+      "valeur": "7 866",
+      "chg": "+1.47%",
       "dir": "up"
     },
     "brent": {
-      "valeur": "$100.0",
-      "chg": "-3.84%",
+      "valeur": "$95.0",
+      "chg": "-4.78%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "26.9",
-      "chg": "+3.06%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "4 474.90",
-      "chg": "+2.95%",
-      "dir": "up"
+      "valeur": "25.7",
+      "chg": "-4.57%",
+      "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1623",
-      "chg": "+0.10%",
-      "dir": "up"
+      "valeur": "1.1601",
+      "chg": "-0.14%",
+      "dir": "fl"
+    },
+    "gold": {
+      "valeur": "4551.90",
+      "chg": "-0.35%",
+      "dir": "dn"
     },
     "us10y": {
       "valeur": "4.392",
@@ -112,9 +93,9 @@
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (PEA 26 000 € séparé).",
-  "edition": "23:09 CET",
-  "mode": "fomc",
-  "timestamp": "2026-03-24T23:09:27.876444+01:00",
-  "date_fr": "Tuesday 24 march 2026"
+  "pea_note": "PEA — Position CAC40 CALL ×20 ouverte (1800 €). Ne pas toucher.",
+  "edition": "11h34 CET",
+  "mode": "normal",
+  "timestamp": "2026-03-25T11:34:30.907567+01:00",
+  "date_fr": "Wednesday 25 march 2026"
 }

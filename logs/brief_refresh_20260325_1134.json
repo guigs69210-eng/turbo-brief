@@ -1,0 +1,215 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24452.5,
+        "prev_close": 24376.5,
+        "change_pct": 0.31,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7865.6401,
+        "prev_close": 7751.54,
+        "change_pct": 1.47,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.71,
+        "prev_close": 26.94,
+        "change_pct": -4.57,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4551.8999,
+        "prev_close": 4567.7998,
+        "change_pct": -0.35,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 95.02,
+        "prev_close": 99.79,
+        "change_pct": -4.78,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1601,
+        "prev_close": 1.1617,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.392,
+        "prev_close": 4.334,
+        "change_pct": 1.34,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6658.0,
+        "prev_close": 6647.5,
+        "change_pct": 0.16,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 249.7,
+        "prev_close": 242.4,
+        "change_pct": 3.01,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 467.2,
+        "prev_close": 460.3,
+        "change_pct": 1.5,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 172.34,
+        "prev_close": 169.04,
+        "change_pct": 1.95,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.42,
+        "prev_close": 83.09,
+        "change_pct": 1.6,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.96,
+        "prev_close": 5.844,
+        "change_pct": 1.98,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-25T10:34:25.536507+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [],
+      "flash_alerts": [],
+      "sentiment": 0,
+      "themes": [],
+      "scanned_at": "2026-03-25T10:34:19.652976+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-25T11:34:25.536771+01:00",
+    "context": {
+      "note": "",
+      "github_run": "37",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Haussier — Impulsion CAC40 +1.47%",
+      "description": "NQ Futures +0.31% en légère hausse, CAC40 en forte progression (+1.47%) malgré un VIX en baisse (-4.57%). Brent chute de -4.78% sous 95$, EURUSD stable.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Le CAC40 profite d'un rebond technique et d'un sentiment risque modéré. Le Brent en baisse pourrait soutenir les valeurs énergétiques à court terme. Le VIX reste élevé mais en repli."
+    },
+    "plan_actions": [
+      {
+        "heure": "11h40",
+        "titre": "CALL CAC40 ×20 (PEA)",
+        "sens": "CALL",
+        "mise": "1800 €",
+        "levier": 20,
+        "strike_ko": "Strike 7900 / KO 7700",
+        "gain_cible": "+25% si CAC40 +0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
+        "note": "Entrée 11h40–12h00. Surveillance du Brent pour confirmation.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "11h50",
+        "titre": "PUT BRENT ×15 (CTO)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 95.5 / KO 97.0",
+        "gain_cible": "+20% si Brent -0.5%",
+        "plateforme": "sgbourse.fr → Brent → PUT BEST",
+        "note": "Entrée 11h50–12h10. Couverture partielle si rebond sur 94.5$.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance CAC40",
+        "prix": 7920,
+        "type": "resistance",
+        "action": "Prendre profits TP1 si touché",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support Brent",
+        "prix": 94.5,
+        "type": "support",
+        "action": "Acheter si rebond pour couverture",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Brent à surveiller pour confirmation baissière",
+      "FOMC demain soir 20h ET"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Clôture obligatoire CAC40 à 17h30"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 452",
+        "chg": "+0.31%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 866",
+        "chg": "+1.47%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$95.0",
+        "chg": "-4.78%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.7",
+        "chg": "-4.57%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1601",
+        "chg": "-0.14%",
+        "dir": "fl"
+      },
+      "gold": {
+        "valeur": "4551.90",
+        "chg": "-0.35%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.392",
+        "chg": "+1.34%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Position CAC40 CALL ×20 ouverte (1800 €). Ne pas toucher.",
+    "edition": "11h34 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-25T11:34:30.907567+01:00",
+    "date_fr": "Wednesday 25 march 2026"
+  }
+}
