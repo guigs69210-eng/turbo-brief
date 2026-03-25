@@ -1,55 +1,55 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à léger baissier — Iran tensions et inflation",
-    "description": "NQ Futures stable (+0.04%), VIX en baisse (-5.16%) mais sentiment global modéré (+0.17). Brent recule (-2.68%) sur espoirs diplomatiques, mais inflation importée en hausse.",
+    "titre": "Biais neutre — Marché en attente post-FOMC, volatilité en baisse",
+    "description": "NQ Futures stables (+0.19%), VIX en chute (-6.27%) après le FOMC hawkish. CAC40 rebondit (+1.23%) sur les valeurs tech européennes.",
     "biais": "neutre",
     "conviction": "faible",
-    "contexte_macro": "Tensions géopolitiques persistantes (Iran) et inflation importée en hausse (+4 ans) freinent la dynamique haussière malgré un VIX en baisse."
+    "contexte_macro": "Marché en phase de digestion après le FOMC. Sentiment global modéré (+0.08) avec des thèmes tech et géopolitiques en arrière-plan."
   },
   "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ Futures",
-      "prix": 26027.75,
+      "label": "Résistance NQ",
+      "prix": 24550,
       "type": "resistance",
-      "action": "À surveiller pour rejet ou breakout",
+      "action": "Surveillance pour rejet ou breakout",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ Futures",
-      "prix": 24329.75,
+      "label": "Support NQ",
+      "prix": 24300,
       "type": "support",
-      "action": "Zone critique pour rebond ou KO",
+      "action": "Stop loss si cassé",
       "couleur": "bear"
     },
     {
-      "label": "Résistance CAC40",
-      "prix": 8179.58,
+      "label": "CAC40 Résistance",
+      "prix": 7900,
       "type": "resistance",
-      "action": "Objectif théorique si momentum haussier",
+      "action": "TP partiel si testé",
       "couleur": "bull"
     },
     {
-      "label": "Support CAC40",
-      "prix": 7768.11,
+      "label": "CAC40 Support",
+      "prix": 7800,
       "type": "support",
-      "action": "Seuil de protection contre chute",
+      "action": "Entrée PUT si cassé",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Surveillance Iran/US 18h30 CET",
-    "NQ Futures 24329.75 : zone de décision critique"
+    "Surveillance des résultats InnoCare Pharma (impact potentiel sur les valeurs biotech)",
+    "Form 144 US Antimony For aujourd'hui — risque de volatilité sur les métaux"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
+    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
     "Turbos NQ/indices → cotent jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 387",
-      "chg": "+0.04%",
+      "valeur": "24 422",
+      "chg": "+0.19%",
       "dir": "up"
     },
     "cac40": {
@@ -59,33 +59,33 @@
     },
     "brent": {
       "valeur": "$97.1",
-      "chg": "-2.68%",
+      "chg": "-2.71%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.6",
-      "chg": "-5.16%",
+      "valeur": "25.2",
+      "chg": "-6.27%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 543.90",
-      "chg": "-0.52%",
+      "valeur": "$4 550.80",
+      "chg": "-0.37%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1575",
-      "chg": "-0.36%",
+      "valeur": "1.1582",
+      "chg": "-0.30%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.328%",
-      "chg": "-1.46%",
+      "valeur": "4.326%",
+      "chg": "-1.50%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Sessions terminées.",
-  "edition": "18:21 CET",
+  "pea_note": "PEA — Pas d'actions françaises en portefeuille. Marché fermé.",
+  "edition": "19:12 CET",
   "mode": "normal",
-  "timestamp": "2026-03-25T18:21:38.599429+01:00",
+  "timestamp": "2026-03-25T19:13:00.328953+01:00",
   "date_fr": "Mercredi 25 mars 2026"
 }
