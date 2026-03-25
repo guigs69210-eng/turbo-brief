@@ -155,36 +155,47 @@ def _format_telegram(brief: dict, trigger: str) -> str:
     signal  = brief.get("signal_du_jour", {})
     actions = brief.get("plan_actions", [])
     alertes = brief.get("alertes", [])
-    strip   = brief.get("market_strip", {})
+
+    # Cours marchés — depuis market_strip (clés valeur/chg/dir)
+    strip = brief.get("market_strip", {})
+
+    def _price(key):
+        return strip.get(key, {}).get("valeur", "—")
+
+    def _chg(key):
+        return strip.get(key, {}).get("chg", "")
 
     emoji = {"morning":"🌅","us":"🇺🇸","fomc":"🏛️","refresh":"🔄","eod":"🔔","manual":"📋"}.get(trigger,"🗞")
 
+    biais = signal.get("biais","").upper()
+    biais_icon = "🟢" if "haussier" in biais.lower() else "🔴" if "baissier" in biais.lower() else "🟡"
+
     lines = [
-        f"{emoji} *Turbo Brief* — {brief.get('edition','?')}",
-        f"*{signal.get('titre','—')}*",
-        f"_{signal.get('description','')[:100]}_",
+        f"{emoji} *TURBO BRIEF — {datetime.now(PARIS).strftime('%H:%M')} CET — {brief.get('date_fr', datetime.now(PARIS).strftime('%d/%m/%Y'))}*",
+        f"{biais_icon} *{signal.get('titre','—')}*",
+        f"_{signal.get('description','')[:120]}_",
+        "",
+        f"📈 NQ `{_price('nq')}` {_chg('nq')} · CAC `{_price('cac40')}` {_chg('cac40')}",
+        f"📊 VIX `{_price('vix')}` · Brent `{_price('brent')}`",
         "",
     ]
 
-    nq  = strip.get("nq", {})
-    cac = strip.get("cac40", {})
-    vix = strip.get("vix", {})
-    if nq.get("valeur"):
-        lines.append(f"NQ `{nq['valeur']}` {nq['chg']} · CAC `{cac.get('valeur','—')}` · VIX `{vix.get('valeur','—')}`")
+    if actions:
+        lines.append("*Plan d'action :*")
+        for action in actions[:4]:
+            e = "🟢" if action.get("sens") == "CALL" else "🔴" if action.get("sens") == "PUT" else "⚪"
+            mise = action.get("mise","?")
+            lev  = action.get("levier","?")
+            gain = action.get("gain_cible","")
+            lines.append(f"{e} *{action.get('heure','?')}* — {action.get('titre','?')}")
+            if mise != "?" or lev != "?":
+                lines.append(f"   `{mise}` · ×{lev}" + (f" · {gain}" if gain else ""))
         lines.append("")
 
-    for action in actions[:3]:
-        e = "🟢" if action.get("sens") == "CALL" else "🔴" if action.get("sens") == "PUT" else "⚪"
-        lines.append(f"{e} *{action.get('heure','?')}* — {action.get('titre','?')}")
-        lines.append(f"   `{action.get('mise','?')}` · ×{action.get('levier','?')}")
-
-    for a in alertes[:2]:
+    for a in alertes[:3]:
         lines.append(f"⚠️ {a}")
 
-    repo = os.getenv("GITHUB_REPOSITORY", "")
-    if repo and "/" in repo:
-        user, repo_name = repo.split("/", 1)
-        lines.append(f"\n📱 [Voir le brief](https://{user}.github.io/{repo_name}/)")
+    lines.append(f"\n📄 PDF ci-dessous")
 
     return "\n".join(lines)
 
