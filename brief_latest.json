@@ -1,7 +1,7 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 17:43",
-    "description": "NQ: 24435 (+0.24%) · CAC: 7825 (+0.94%)",
+    "titre": "Clôture Paris — 17:48",
+    "description": "NQ: 24434 (+0.24%) · CAC: 7829 (+1.00%)",
     "biais": "neutre",
     "conviction": "faible"
   },
@@ -13,7 +13,7 @@
   "regles_session": [],
   "market_strip": {},
   "date_fr": "Wednesday 25 march 2026",
-  "edition": "17h43 CET",
+  "edition": "17h48 CET",
   "mode": "eod",
   "trigger": "eod"
 }

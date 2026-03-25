@@ -1,0 +1,221 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24434.25,
+        "prev_close": 24376.5,
+        "change_pct": 0.24,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7829.1001,
+        "prev_close": 7751.54,
+        "change_pct": 1.0,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.54,
+        "prev_close": 26.94,
+        "change_pct": -5.2,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4553.2002,
+        "prev_close": 4567.7998,
+        "change_pct": -0.32,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 96.67,
+        "prev_close": 99.79,
+        "change_pct": -3.13,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1573,
+        "prev_close": 1.1617,
+        "change_pct": -0.38,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.318,
+        "prev_close": 4.392,
+        "change_pct": -1.68,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6654.5,
+        "prev_close": 6647.5,
+        "change_pct": 0.11,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 246.8,
+        "prev_close": 242.4,
+        "change_pct": 1.82,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 461.25,
+        "prev_close": 460.3,
+        "change_pct": 0.21,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 170.8,
+        "prev_close": 169.04,
+        "change_pct": 1.04,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.06,
+        "prev_close": 83.09,
+        "change_pct": 1.17,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.946,
+        "prev_close": 5.844,
+        "change_pct": 1.75,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-25T16:48:42.101636+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "57-unit Applebee’s franchisee files Chapter 11 bankruptcy",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/57-unit-applebee-franchisee-files-163300354.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T16:33:00+00:00",
+          "age_minutes": 15,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "15a5c70305fc"
+        },
+        {
+          "title": "EDAP earnings missed by €0.10, revenue topped estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/edap-earnings-missed-by-010-revenue-topped-estimates-4580475",
+          "source": "investing_news",
+          "published": "2026-03-25T16:20:11+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "cbcba24b4d93"
+        },
+        {
+          "title": "UCB banks on Georgia for $2bn biologics manufacturing facility",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/ucb-banks-georgia-2bn-biologics-163357191.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T16:33:57+00:00",
+          "age_minutes": 14,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "70973a4527fa"
+        },
+        {
+          "title": "Walmart makes a massive move for clothing customers",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/walmart-makes-massive-move-clothing-163300033.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T16:33:00+00:00",
+          "age_minutes": 15,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "86c5b07d1029"
+        },
+        {
+          "title": "U.S. stock valuations point to near-term upside, Citadel strategist says",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-valuations-point-to-nearterm-upside-citadel-strategist-says-4580490",
+          "source": "investing_news",
+          "published": "2026-03-25T16:31:42+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "2d0474fb8fbc"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "57-unit Applebee’s franchisee files Chapter 11 bankruptcy",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/57-unit-applebee-franchisee-files-163300354.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T16:33:00+00:00",
+          "age_minutes": 15,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "15a5c70305fc"
+        },
+        {
+          "title": "EDAP earnings missed by €0.10, revenue topped estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/edap-earnings-missed-by-010-revenue-topped-estimates-4580475",
+          "source": "investing_news",
+          "published": "2026-03-25T16:20:11+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "cbcba24b4d93"
+        }
+      ],
+      "sentiment": 0.1,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 5
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 4
+        }
+      ],
+      "scanned_at": "2026-03-25T16:48:37.313672+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-03-25T17:48:42.101901+01:00",
+    "context": {
+      "note": "",
+      "github_run": "46",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 17:48",
+      "description": "NQ: 24434 (+0.24%) · CAC: 7829 (+1.00%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Wednesday 25 march 2026",
+    "edition": "17h48 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}
