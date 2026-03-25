@@ -1,116 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier renforcé — FOMC en attente",
-    "description": "NQ Futures en tendance baissière (RSI < 40), CAC40 rebond technique mais sous pression macro. Sentiment négatif (-0.03) avec tensions géopolitiques et incertitudes Fed.",
-    "biais": "baissier",
-    "conviction": "modérée",
-    "contexte_macro": "FOMC en attente (Hold à 92%), tensions au Moyen-Orient impactant l'immobilier US et les matières premières. Tech/IA en correction malgré quelques signaux isolés."
+    "titre": "Clôture Paris — 17:43",
+    "description": "NQ: 24435 (+0.24%) · CAC: 7825 (+0.94%)",
+    "biais": "neutre",
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "15h30",
-      "titre": "PUT NQ Futures ×25 (couverture)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 25,
-      "strike_ko": "Strike 24500 / KO 25000",
-      "gain_cible": "+25% si NQ -0,5%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 15h30–16h00 pour profiter de la tendance baissière intraday. Stop mental -40% = sortie immédiate.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "16h30",
-      "titre": "PUT CAC40 ×15 (couverture)",
-      "sens": "PUT",
-      "mise": "800 €",
-      "levier": 15,
-      "strike_ko": "Strike 7850 / KO 7900",
-      "gain_cible": "+20% si CAC40 -0,8%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "CAC40 en rebond technique mais sous pression macro. Stop mental -40% = sortie immédiate.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Résistance NQ",
-      "prix": 25243.28,
-      "type": "resistance",
-      "action": "Prendre profits TP1 si atteinte",
-      "couleur": "bear"
-    },
-    {
-      "label": "Support NQ",
-      "prix": 24329.75,
-      "type": "support",
-      "action": "Risque de rebond technique",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance CAC40",
-      "prix": 8066.62,
-      "type": "resistance",
-      "action": "Vente à découvert si résistance validée",
-      "couleur": "bear"
-    },
-    {
-      "label": "Support CAC40",
-      "prix": 7768.11,
-      "type": "support",
-      "action": "Risque de cassure baissière",
-      "couleur": "bear"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "FOMC 20h ET — Volatilité attendue. Levier max ×20.",
-    "Surveiller les annonces géopolitiques (Moyen-Orient) et immobilières (KB Home)."
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "TP1 (+25%) → sortir 50%, stop à +10%"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 428",
-      "chg": "+0.21%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "7 822",
-      "chg": "+0.91%",
-      "dir": "up"
-    },
-    "brent": {
-      "valeur": "$96.2",
-      "chg": "-3.58%",
-      "dir": "dn"
-    },
-    "vix": {
-      "valeur": "25.9",
-      "chg": "-3.97%",
-      "dir": "dn"
-    },
-    "gold": {
-      "valeur": "4 549.40",
-      "chg": "-0.40%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.1581",
-      "chg": "-0.31%",
-      "dir": "dn"
-    },
-    "us10y": {
-      "valeur": "4.344",
-      "chg": "-1.09%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 €.",
-  "edition": "15h24 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-25T15:24:31.223625+01:00",
-  "date_fr": "Wednesday 25 march 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Wednesday 25 march 2026",
+  "edition": "17h43 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
