@@ -1,0 +1,677 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24427.5,
+        "prev_close": 24376.5,
+        "change_pct": 0.21,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7821.7998,
+        "prev_close": 7751.54,
+        "change_pct": 0.91,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.87,
+        "prev_close": 26.94,
+        "change_pct": -3.97,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4549.3999,
+        "prev_close": 4567.7998,
+        "change_pct": -0.4,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 96.22,
+        "prev_close": 99.79,
+        "change_pct": -3.58,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1581,
+        "prev_close": 1.1617,
+        "change_pct": -0.31,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.344,
+        "prev_close": 4.392,
+        "change_pct": -1.09,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6649.5,
+        "prev_close": 6647.5,
+        "change_pct": 0.03,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 246.85,
+        "prev_close": 242.4,
+        "change_pct": 1.84,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 458.85,
+        "prev_close": 460.3,
+        "change_pct": -0.32,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.24,
+        "prev_close": 169.04,
+        "change_pct": 1.3,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.01,
+        "prev_close": 83.09,
+        "change_pct": 1.11,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.949,
+        "prev_close": 5.844,
+        "change_pct": 1.8,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-25T14:24:24.761292+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "KB Home CEO: Middle East war is hurting US housing market",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/kb-home-ceo-middle-east-war-is-hurting-us-housing-market-135634993.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T13:56:34+00:00",
+          "age_minutes": 27,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "38d60815c677"
+        },
+        {
+          "title": "Why Chewy Stock Is Rallying Despite An Earnings Miss",
+          "summary": "",
+          "url": "https://www.investors.com/news/technology/chewy-stock-chwy-q4-2025-earnings/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T13:56:13+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "d08f7a16ebb0"
+        },
+        {
+          "title": "Economic calendar: Speech by Trump ally at Fed follows report on import prices",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=1651fdf0-cdd5-4433-a4c4-7c446152166e&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T12:37:02+00:00",
+          "age_minutes": 107,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "d24d994ad569"
+        },
+        {
+          "title": "Home builder KB says Iran war has already cut into sales",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=50bd60eb-66c4-4165-b5de-0f863da01f26&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T12:03:02+00:00",
+          "age_minutes": 141,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "76390139d60a"
+        },
+        {
+          "title": "Stock Market News for Mar 25, 2026",
+          "summary": "U.S. stocks closed lower on Tuesday as rising oil prices due to tensions in the Middle East fueled inflation worries and created additional market uncertainty.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-mar-25-120000079.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T12:00:00+00:00",
+          "age_minutes": 144,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "dd542ed9f4bf"
+        },
+        {
+          "title": "ADP to Announce Third Quarter Fiscal 2026 Financial Results on April 29, 2026",
+          "summary": "ADP (Nasdaq: ADP), a global leader in HR and payroll solutions, is scheduled to release its financial results for the third fiscal quarter ending March 31, 2026 before the opening of the Nasdaq on April 29, 2026.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/adp-announce-third-quarter-fiscal-120000966.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T12:00:00+00:00",
+          "age_minutes": 144,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "1331d7d09e5b"
+        },
+        {
+          "title": "Clear as Mud — Heard on the Street Tuesday Recap",
+          "summary": "Stocks looked for direction as markets tried to read signals on the direction of the Iran war.  The Dow Jones Industrials closed down 84 points, or 0.2%.  Front-month Brent crude futures settled up 4.6% to $104.49 a barrel, while Nymex crude futures gained 4.8% to $92.35.",
+          "url": "https://finance.yahoo.com/m/6571e1df-32e1-366d-b878-4b956e111133/clear-as-mud-%E2%80%94-heard-on-the.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T10:43:04+00:00",
+          "age_minutes": 221,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "ecab59fddffc"
+        },
+        {
+          "title": "Morning Brief: 3 factors have made for big historical stock market losses",
+          "summary": "In addition to monitoring the Iran situation, we're watching software stocks as Anthropic's new capacities may put them back into the hot seat.",
+          "url": "https://finance.yahoo.com/news/morning-brief-3-factors-have-made-for-big-historical-stock-market-losses-100036294.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T10:00:36+00:00",
+          "age_minutes": 263,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "6e1c9b53e50e"
+        },
+        {
+          "title": "U.S. oil prices trading around $88 after reports of ceasefire proposal",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=4d216f26-de9f-46e9-8eae-c90902df8e51&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T09:51:58+00:00",
+          "age_minutes": 272,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "b76c8736f12f"
+        },
+        {
+          "title": "Software stocks fall as fear of AI disruption is back in full force",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=a4df55c0-2873-4d68-a41c-a6515f026964&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-24T21:55:54+00:00",
+          "age_minutes": 988,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c5af7ee72d82"
+        },
+        {
+          "title": "Winnebago Industries earnings beat by $0.03, revenue topped estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/winnebago-industries-earnings-beat-by-003-revenue-topped-estimates-4580267",
+          "source": "investing_news",
+          "published": "2026-03-25T14:15:30+00:00",
+          "age_minutes": 8,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "eeccb1ac697d"
+        },
+        {
+          "title": "Cintas earnings beat by $0.01, revenue topped estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/cintas-earnings-beat-by-001-revenue-topped-estimates-4580266",
+          "source": "investing_news",
+          "published": "2026-03-25T14:15:10+00:00",
+          "age_minutes": 9,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "55ede9b54602"
+        },
+        {
+          "title": "Varonis Systems (VRNS) Fell as It Missed Quarterly Projections",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/varonis-systems-vrns-fell-missed-140238056.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T14:02:38+00:00",
+          "age_minutes": 21,
+          "urgency": "medium",
+          "sentiment": -1.0,
+          "id": "3d7a6a8f11e5"
+        },
+        {
+          "title": "Nasdaq bounces as oil price softens as US pushes for Iran talks",
+          "summary": "10am: US stocks open higher, ARM jerks higher on AI chip pivot US stocks opened strongly but have eased back from early gains, with the Dow Jones and S&P 500 now up 0.6% and the Nasdaq holding a firmer 0.9% rise. Early leadership on the S&P came from tech and crypto-linked names,...",
+          "url": "https://www.proactiveinvestors.com/companies/news/1089487/nasdaq-set-to-bounce-back-as-oil-price-falls-on-us-diplomatic-push-with-iran-1089487.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T14:00:00+00:00",
+          "age_minutes": 24,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "e4941eaa589a"
+        },
+        {
+          "title": "The Nasdaq Could Pop 2% On Today’s News",
+          "summary": "The Nasdaq is staging a meaningful recovery Wednesday morning, with the index up 1.1% as of the early session, driven by two catalysts: a sharp drop in oil prices tied to potential U.S.-Iran peace negotiations, and a dramatic move in tech broadly. One of the leading stocks driving the rally today is",
+          "url": "https://247wallst.com/investing/2026/03/25/the-nasdaq-could-pop-2-on-todays-news/?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:57:02+00:00",
+          "age_minutes": 27,
+          "urgency": "medium",
+          "sentiment": 0.3333333333333333,
+          "id": "372747f3bff8"
+        },
+        {
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise amid hopes of US-Iran talks, oil falls below $100",
+          "summary": "Wall Street is weighing reports that the US has approached Iran with a plan to halt fighting.",
+          "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-amid-hopes-of-us-iran-talks-oil-falls-below-100-133140032.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:31:40+00:00",
+          "age_minutes": 52,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "30561988144f"
+        },
+        {
+          "title": "Bond to Ring the Nasdaq Closing Bell Today at 4:00 PM Eastern Time",
+          "summary": "CEO will also appear as a guest on Cheddar TV at approximately 11:30 a.m. Eastern Time todayNEW YORK, March 25, 2026 (GLOBE NEWSWIRE) -- Our Bond, Inc. (“Bond”) (NASDAQ: OBAI), the creator of the world’s first AI-powered Preventative Personal Security platform adopted by leading multinational compan",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bond-ring-nasdaq-closing-bell-131700770.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:17:00+00:00",
+          "age_minutes": 67,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "f8f5dd9246d8"
+        },
+        {
+          "title": "TruGolf Announces Reverse Stock Split",
+          "summary": "Salt Lake City, Utah, March 25, 2026 (GLOBE NEWSWIRE) -- TruGolf Holdings, Inc. (NASDAQ: TRUG), today announced a 1-for-10 reverse split of its Class A common stock. Beginning on March 27, 2026, the Company’s Class A common stock will continue to trade on The Nasdaq Capital Market on a split adjuste",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/trugolf-announces-reverse-stock-split-130000069.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:00:00+00:00",
+          "age_minutes": 84,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "79e8cbcaa819"
+        },
+        {
+          "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Wednesday Amid Hopes of Iran, US Truce",
+          "summary": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was up 0.9% and the actively trad",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125518439.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T12:55:18+00:00",
+          "age_minutes": 89,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "008f7001dd68"
+        },
+        {
+          "title": "INVO Fertility Announces a 1:5 Reverse Stock Split Effective Pre-Market Opening on March 27, 2026",
+          "summary": "SARASOTA, Fla., March 25, 2026 (GLOBE NEWSWIRE) -- INVO Fertility, Inc. (“INVO”) (NASDAQ: IVF), a healthcare company focused on the fertility market, announced today that it will effect a 1-for-5 reverse split of its issued and outstanding and of its authorized common stock effective as of 12:01 a.m",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/invo-fertility-announces-1-5-123000686.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T12:30:00+00:00",
+          "age_minutes": 114,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "b667c626d6f0"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "KB Home CEO: Middle East war is hurting US housing market",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/kb-home-ceo-middle-east-war-is-hurting-us-housing-market-135634993.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T13:56:34+00:00",
+          "age_minutes": 27,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "38d60815c677"
+        },
+        {
+          "title": "Why Chewy Stock Is Rallying Despite An Earnings Miss",
+          "summary": "",
+          "url": "https://www.investors.com/news/technology/chewy-stock-chwy-q4-2025-earnings/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T13:56:13+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "d08f7a16ebb0"
+        },
+        {
+          "title": "Economic calendar: Speech by Trump ally at Fed follows report on import prices",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=1651fdf0-cdd5-4433-a4c4-7c446152166e&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T12:37:02+00:00",
+          "age_minutes": 107,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "d24d994ad569"
+        }
+      ],
+      "sentiment": -0.03,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 21
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 18
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 6
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-25T14:24:24.494216+00:00",
+      "mode": "full"
+    },
+    "calendar": {
+      "today_high_impact": [],
+      "today_all": [],
+      "tomorrow_events": [],
+      "fomc_schedule": {
+        "next_meeting": {
+          "date": "2026-05-07",
+          "label": "Mai 2026"
+        },
+        "days_until": 43,
+        "probabilities": {
+          "hold": 92.0,
+          "cut_25": 8.0,
+          "hike_25": 0.0
+        }
+      },
+      "next_event": null,
+      "fetched_at": "2026-03-25T14:24:21.420319+00:00"
+    },
+    "technical": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "name": "NQ Futures",
+        "current_price": 24427.5,
+        "rsi": 38.6,
+        "rsi_signal": "baissier",
+        "ma20": 24711.85,
+        "ma50": 25105.67,
+        "ema9": 24462.41,
+        "ema21": 24670.4,
+        "vwap": 24324.21,
+        "bb_upper": 25321.26,
+        "bb_lower": 24102.44,
+        "atr": 517.43,
+        "atr_pct": 2.12,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 26027.75,
+            "pct_away": 6.55,
+            "type": "resistance"
+          },
+          {
+            "price": 25243.28,
+            "pct_away": 3.34,
+            "type": "resistance"
+          },
+          {
+            "price": 24715.5,
+            "pct_away": 1.18,
+            "type": "resistance"
+          },
+          {
+            "price": 24329.75,
+            "pct_away": -0.4,
+            "type": "support"
+          },
+          {
+            "price": 24000.0,
+            "pct_away": -1.75,
+            "type": "support"
+          },
+          {
+            "price": 23772.5,
+            "pct_away": -2.68,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "name": "CAC 40",
+        "current_price": 7821.8,
+        "rsi": 38.2,
+        "rsi_signal": "baissier",
+        "ma20": 8023.16,
+        "ma50": 8169.35,
+        "ema9": 7842.66,
+        "ema21": 7983.74,
+        "vwap": NaN,
+        "bb_upper": 8537.29,
+        "bb_lower": 7509.02,
+        "atr": 168.14,
+        "atr_pct": 2.15,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 8107.19,
+            "pct_away": 3.65,
+            "type": "resistance"
+          },
+          {
+            "price": 8066.62,
+            "pct_away": 3.13,
+            "type": "resistance"
+          },
+          {
+            "price": 8008.67,
+            "pct_away": 2.39,
+            "type": "resistance"
+          },
+          {
+            "price": 7856.61,
+            "pct_away": 0.45,
+            "type": "resistance"
+          },
+          {
+            "price": 7768.11,
+            "pct_away": -0.69,
+            "type": "support"
+          },
+          {
+            "price": 7505.27,
+            "pct_away": -4.05,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "name": "Schneider Electric",
+        "current_price": 246.85,
+        "rsi": 45.1,
+        "rsi_signal": "neutre",
+        "ma20": 252.79,
+        "ma50": 249.9,
+        "ema9": 246.23,
+        "ema21": 249.91,
+        "vwap": 243.29,
+        "bb_upper": 272.99,
+        "bb_lower": 232.58,
+        "atr": 9.73,
+        "atr_pct": 3.94,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 257.57,
+            "pct_away": 4.34,
+            "type": "resistance"
+          },
+          {
+            "price": 247.3,
+            "pct_away": 0.18,
+            "type": "resistance"
+          },
+          {
+            "price": 245.75,
+            "pct_away": -0.45,
+            "type": "support"
+          },
+          {
+            "price": 239.65,
+            "pct_away": -2.92,
+            "type": "support"
+          },
+          {
+            "price": 237.65,
+            "pct_away": -3.73,
+            "type": "support"
+          },
+          {
+            "price": 236.0,
+            "pct_away": -4.4,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "computed_at": "2026-03-25T14:24:22.282955+00:00"
+    },
+    "trigger": "manual",
+    "timestamp": "2026-03-25T15:24:24.761564+01:00",
+    "context": {
+      "note": "",
+      "github_run": "43",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — FOMC en attente",
+      "description": "NQ Futures en tendance baissière (RSI < 40), CAC40 rebond technique mais sous pression macro. Sentiment négatif (-0.03) avec tensions géopolitiques et incertitudes Fed.",
+      "biais": "baissier",
+      "conviction": "modérée",
+      "contexte_macro": "FOMC en attente (Hold à 92%), tensions au Moyen-Orient impactant l'immobilier US et les matières premières. Tech/IA en correction malgré quelques signaux isolés."
+    },
+    "plan_actions": [
+      {
+        "heure": "15h30",
+        "titre": "PUT NQ Futures ×25 (couverture)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 25,
+        "strike_ko": "Strike 24500 / KO 25000",
+        "gain_cible": "+25% si NQ -0,5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 15h30–16h00 pour profiter de la tendance baissière intraday. Stop mental -40% = sortie immédiate.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "16h30",
+        "titre": "PUT CAC40 ×15 (couverture)",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7850 / KO 7900",
+        "gain_cible": "+20% si CAC40 -0,8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "CAC40 en rebond technique mais sous pression macro. Stop mental -40% = sortie immédiate.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 25243.28,
+        "type": "resistance",
+        "action": "Prendre profits TP1 si atteinte",
+        "couleur": "bear"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24329.75,
+        "type": "support",
+        "action": "Risque de rebond technique",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8066.62,
+        "type": "resistance",
+        "action": "Vente à découvert si résistance validée",
+        "couleur": "bear"
+      },
+      {
+        "label": "Support CAC40",
+        "prix": 7768.11,
+        "type": "support",
+        "action": "Risque de cassure baissière",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "FOMC 20h ET — Volatilité attendue. Levier max ×20.",
+      "Surveiller les annonces géopolitiques (Moyen-Orient) et immobilières (KB Home)."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "TP1 (+25%) → sortir 50%, stop à +10%"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 428",
+        "chg": "+0.21%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 822",
+        "chg": "+0.91%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$96.2",
+        "chg": "-3.58%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.9",
+        "chg": "-3.97%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4 549.40",
+        "chg": "-0.40%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1581",
+        "chg": "-0.31%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.344",
+        "chg": "-1.09%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 €.",
+    "edition": "15h24 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-25T15:24:31.223625+01:00",
+    "date_fr": "Wednesday 25 march 2026"
+  }
+}
