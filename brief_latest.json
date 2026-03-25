@@ -1,118 +1,109 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier conditionnel — Attente FOMC",
-    "description": "NQ Futures en légère hausse (+0.23%) mais RSI baissier (38.7), CAC40 rebondit (+1.11%) mais reste sous pression technique. Brent chute (-4.01%) et US10Y recule (-1.14%).",
+    "titre": "Biais baissier renforcé — NQ sous pression",
+    "description": "NQ Futures XX (+X%) en tendance baissière (RSI 39.2), CAC40 rebond technique (+1.27%) mais structure fragile. VIX en baisse (-4.08%) mais reste élevé (25.84).",
     "biais": "baissier",
     "conviction": "modérée",
-    "contexte_macro": "FOMC attendu ce soir avec probabilité de maintien des taux à 92%. Marché hésitant avant décision. Brent et US10Y en baisse renforcent pression baissière sur indices."
+    "contexte_macro": "FOMC ce soir avec probabilité de maintien à 92%. Marché actions US hésitant malgré rebond CAC. Or et pétrole en baisse, reflétant un risque aversion modéré."
   },
   "plan_actions": [
     {
-      "heure": "14h00",
-      "titre": "PUT CAC40 ×20 (PEA)",
+      "heure": "14h15",
+      "titre": "PUT NQ Futures ×20",
       "sens": "PUT",
-      "mise": "1500 €",
+      "mise": "2000 €",
       "levier": 20,
-      "strike_ko": "Strike 7850 / KO 7900",
-      "gain_cible": "+25% si CAC40 -0.5%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée sur rebond technique vers résistance 8107.19. Stop mental -40% immédiat.",
+      "strike_ko": "Strike 24500 / KO 24800",
+      "gain_cible": "+25% si NQ -0.6%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée après rebond CAC pour jouer la divergence baissière NQ. Stop mental -40% immédiat.",
       "urgence": "normale"
     },
     {
       "heure": "14h30",
-      "titre": "PUT NQ Futures ×25",
+      "titre": "PUT CAC40 ×15",
       "sens": "PUT",
-      "mise": "2000 €",
-      "levier": 25,
-      "strike_ko": "Strike 24500 / KO 24800",
-      "gain_cible": "+30% si NQ -1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée si NQ casse support 24329.75. Surveillance VIX en hausse (25.99).",
+      "mise": "1500 €",
+      "levier": 15,
+      "strike_ko": "Strike 7900 / KO 8000",
+      "gain_cible": "+20% si CAC -0.8%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "Cible résistance 8107.19. Stop mental -40% immédiat.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance CAC40",
-      "prix": 8107.19,
+      "label": "Résistance NQ",
+      "prix": 25243.28,
       "type": "resistance",
-      "action": "Prendre profits TP1 si résistance tenue",
+      "action": "Prendre profits TP1 si touché",
       "couleur": "bear"
     },
     {
-      "label": "Support CAC40",
+      "label": "Support CAC",
       "prix": 7768.11,
       "type": "support",
-      "action": "Stop loss renforcé si cassure",
+      "action": "Risque de cassure baissière",
       "couleur": "bear"
     },
     {
-      "label": "Résistance NQ Futures",
-      "prix": 26027.75,
-      "type": "resistance",
-      "action": "Niveau clé à surveiller en clôture",
-      "couleur": "bear"
-    },
-    {
-      "label": "Support NQ Futures",
-      "prix": 24000.0,
-      "type": "support",
-      "action": "Stop loss absolu si cassure",
-      "couleur": "bear"
+      "label": "VWAP NQ",
+      "prix": 24320.16,
+      "type": "current",
+      "action": "Surveiller pour rebond technique",
+      "couleur": "amber"
     }
   ],
   "alertes": [
-    "FOMC 20h CET — Décision taux à 20h",
-    "Surveillance Brent (-4.01%) et US10Y (-1.14%)",
-    "VIX en hausse à 25.99 — Risque de volatilité accrue"
+    "FOMC 20h ET — Levier max ×20",
+    "Surveiller cassure support CAC 7768.11"
   ],
   "regles_session": [
     "Stop mental -40% = sortie immédiate",
-    "Clôture CAC40 obligatoire à 17h30",
-    "Turbo NQ gardé jusqu'à 22h",
+    "Clôture CAC40 obligatoire 17h30",
     "TP1 (+25%) → sortir 50%, stop à +10%"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 434",
-      "chg": "+0.23%",
+      "valeur": "24 452",
+      "chg": "+0.31%",
       "dir": "up"
     },
     "cac40": {
-      "valeur": "7 838",
-      "chg": "+1.11%",
+      "valeur": "7 850",
+      "chg": "+1.27%",
       "dir": "up"
     },
     "brent": {
-      "valeur": "$95.8",
-      "chg": "-4.01%",
+      "valeur": "$95.6",
+      "chg": "-4.23%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "26.0",
-      "chg": "-3.53%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.1592",
-      "chg": "-0.22%",
+      "valeur": "25.8",
+      "chg": "-4.08%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "4 548.10",
-      "chg": "-0.43%",
+      "valeur": "4 546.20",
+      "chg": "-0.47%",
       "dir": "dn"
     },
+    "eurusd": {
+      "valeur": "1.16",
+      "chg": "-0.15%",
+      "dir": "fl"
+    },
     "us10y": {
-      "valeur": "4.342",
-      "chg": "-1.14%",
+      "valeur": "4.336",
+      "chg": "-1.28%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Schneider Electric PUT ×20 en cours. Ne pas toucher.",
-  "edition": "13h51 CET",
+  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 €.",
+  "edition": "14h10 CET",
   "mode": "normal",
-  "timestamp": "2026-03-25T13:51:35.226423+01:00",
+  "timestamp": "2026-03-25T14:08:51.416228+01:00",
   "date_fr": "Wednesday 25 march 2026"
 }
