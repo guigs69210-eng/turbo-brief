@@ -1,117 +1,116 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier modéré sur CAC40, neutre sur NQ — FOMC en attente",
-    "description": "CAC40 rebondit fortement (+1.43%) après une ouverture baissière, NQ en légère hausse (+0.41%) avec RSI baissier. VIX en baisse (-4.86%) mais reste élevé. FOMC ce soir à 20h avec probabilité de maintien à 92%.",
+    "titre": "Biais haussier modéré sur CAC40 et NQ — Correction technique en cours",
+    "description": "Le CAC40 rebondit (+1.45%) après une ouverture volatile, tandis que le NQ Futures reste sous pression malgré un léger rebond (+0.38%). Le VIX recule (-5.38%) mais reste élevé, indiquant une prudence persistante. La séance US s'annonce calme avant le FOMC.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Marché actions européens en rebond technique après une nuit de baisse. FOMC attendu en mode 'hold', ce qui pourrait stabiliser les indices US. Sentiment global neutre mais volatilité élevée en raison du contexte géopolitique."
+    "contexte_macro": "Le marché reste prudent avant l'annonce du FOMC, avec un biais haussier sur les indices européens grâce à un rebond technique. Les matières premières (Brent) et l'or sont en baisse, reflétant une aversion au risque modérée."
   },
   "plan_actions": [
     {
       "heure": "14h30",
-      "titre": "CALL CAC40 ×20 (Turbo BEST SG)",
+      "titre": "CALL CAC40 ×20 (Turbo BEST)",
       "sens": "CALL",
-      "mise": "2000 €",
+      "mise": "1500 €",
       "levier": 20,
-      "strike_ko": "Strike 7800 / KO 7700",
+      "strike_ko": "Strike 7850 / KO 7600",
       "gain_cible": "+25% si CAC40 > 7900",
       "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
-      "note": "Entrée sur rebond technique avec stop mental -40% (KO 7700). Sortie partielle à TP1 (+25%) avec stop à +10%.",
+      "note": "Entrée sur rebond technique, sortie à 17h30. Stop mental -40%.",
       "urgence": "normale"
     },
     {
       "heure": "15h00",
-      "titre": "PUT NQ Futures ×25 (Turbo Vontobel)",
+      "titre": "PUT NQ Futures ×25 (Turbo BEST)",
       "sens": "PUT",
-      "mise": "2500 €",
+      "mise": "2000 €",
       "levier": 25,
       "strike_ko": "Strike 24500 / KO 25000",
       "gain_cible": "+20% si NQ < 24400",
-      "plateforme": "vontobel.com → Nasdaq 100 → PUT",
-      "note": "Position inverse au CAC40 pour couvrir le risque FOMC. Stop mental -40% (KO 25000). Sortie partielle à TP1 (+20%) avec stop à +10%.",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée sur résistance technique, sortie à 22h. Stop mental -40%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance haute CAC40",
-      "prix": 8179.58,
+      "label": "Résistance CAC40",
+      "prix": 7900,
       "type": "resistance",
-      "action": "Prendre profits TP2 si atteinte",
+      "action": "Prendre profits TP1",
       "couleur": "bull"
     },
     {
-      "label": "Support clé CAC40",
+      "label": "Support CAC40",
       "prix": 7856.61,
       "type": "support",
-      "action": "Stop KO si cassé",
+      "action": "Stop loss si cassé",
       "couleur": "bear"
     },
     {
-      "label": "Résistance haute NQ",
-      "prix": 26027.75,
+      "label": "Résistance NQ Futures",
+      "prix": 25243.28,
       "type": "resistance",
-      "action": "Sortie partielle si test",
+      "action": "Prendre profits TP2",
       "couleur": "bear"
     },
     {
-      "label": "Support clé NQ",
+      "label": "Support NQ Futures",
       "prix": 24329.75,
       "type": "support",
-      "action": "Entrée PUT si cassé",
+      "action": "Stop loss si cassé",
       "couleur": "bull"
     }
   ],
   "alertes": [
-    "FOMC 20h00 CET — Prévoir couverture avant annonce",
-    "Surveiller VIX pour confirmation de tendance",
-    "CAC40 : Si cassure 7900 → accélération haussière possible"
+    "FOMC à 20h — Levier max ×20",
+    "Sortie CAC40 obligatoire à 17h30"
   ],
   "regles_session": [
-    "Stop mental -40% = sortie immédiate",
-    "Clôture obligatoire CAC40 à 17h30",
-    "Turbo NQ gardé jusqu'à 22h"
+    "Stop mental −40% = sortie immédiate",
+    "TP1 (+25%) → sortir 50%, stop à +10%",
+    "Jamais de moyenne à la baisse"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 475",
-      "chg": "+0.41%",
+      "valeur": "24 469",
+      "chg": "+0.38%",
       "dir": "up"
     },
     "cac40": {
-      "valeur": "7 863",
-      "chg": "+1.43%",
+      "valeur": "7 864",
+      "chg": "+1.45%",
       "dir": "up"
     },
     "brent": {
-      "valeur": "$95.0",
-      "chg": "-4.78%",
+      "valeur": "$95.1",
+      "chg": "-4.74%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.6",
-      "chg": "-4.86%",
+      "valeur": "25.5",
+      "chg": "-5.38%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1592",
-      "chg": "-0.22%",
+      "valeur": "1.1593",
+      "chg": "-0.21%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "4 563.30",
-      "chg": "-0.10%",
+      "valeur": "4 561.60",
+      "chg": "-0.14%",
       "dir": "fl"
     },
     "us10y": {
-      "valeur": "4.332",
-      "chg": "-1.37%",
+      "valeur": "4.328",
+      "chg": "-1.46%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Capital day trading : ~10 000 € (CAC40/NQ uniquement).",
-  "edition": "14h18 CET",
+  "pea_note": "PEA — Ne pas toucher.",
+  "edition": "14h21 CET",
   "mode": "normal",
-  "timestamp": "2026-03-25T14:18:23.298556+01:00",
+  "timestamp": "2026-03-25T14:21:14.992378+01:00",
   "date_fr": "Wednesday 25 march 2026"
 }
