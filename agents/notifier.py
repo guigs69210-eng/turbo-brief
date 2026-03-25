@@ -1,10 +1,16 @@
 """
-Sous-agent Notifications — Telegram + Email
+Sous-agent Notifications — Telegram + Email + PDF
 """
 
 import logging
 import os
+import sys
+import json
+import base64
+import subprocess
 import smtplib
+import urllib.request
+import urllib.parse
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -19,6 +25,9 @@ SMTP_PORT      = int(os.getenv("SMTP_PORT", 587))
 SMTP_USER      = os.getenv("SMTP_USER")
 SMTP_PASS      = os.getenv("SMTP_PASS")
 EMAIL_TO       = os.getenv("EMAIL_TO")
+
+# Répertoire racine du repo
+_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 async def send_telegram(message: str) -> bool:
@@ -47,6 +56,99 @@ async def send_telegram(message: str) -> bool:
                     return False
     except Exception as e:
         log.error(f"Telegram error: {e}")
+        return False
+
+
+async def send_telegram_pdf(brief: dict) -> bool:
+    """Génère le PDF v7 et l'envoie via Telegram"""
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT:
+        log.warning("Telegram non configuré — PDF non envoyé")
+        return False
+
+    try:
+        # 1. Générer le PDF via make_pdf_v7.py
+        pdf_path = os.path.join(_BASE, "turbo_brief_daily.pdf")
+        make_pdf = os.path.join(_BASE, "make_pdf_v7.py")
+
+        if not os.path.exists(make_pdf):
+            log.warning(f"make_pdf_v7.py introuvable dans {_BASE}")
+            return False
+
+        # Patcher le chemin de sortie
+        with open(make_pdf, "r", encoding="utf-8") as f:
+            code = f.read()
+
+        import re
+        code = re.sub(
+            r"""[\"'][^\"']*\.pdf[\"']""",
+            f'"{pdf_path}"',
+            code,
+            count=1
+        )
+
+        tmp = os.path.join(_BASE, "_make_pdf_tmp.py")
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(code)
+
+        result = subprocess.run(
+            [sys.executable, tmp],
+            capture_output=True, text=True, timeout=60,
+            cwd=_BASE
+        )
+        try:
+            os.remove(tmp)
+        except Exception:
+            pass
+
+        if result.returncode != 0:
+            log.error(f"PDF generation failed: {result.stderr[-300:]}")
+            return False
+
+        if not os.path.exists(pdf_path):
+            log.error(f"PDF absent après génération. stdout: {result.stdout[-200:]}")
+            return False
+
+        log.info(f"PDF généré : {os.path.getsize(pdf_path)//1024} KB")
+
+        # 2. Envoyer via Telegram sendDocument
+        with open(pdf_path, "rb") as f:
+            pdf_bytes = f.read()
+        os.remove(pdf_path)
+
+        from datetime import date
+        filename = f"turbo_brief_{date.today().strftime('%Y%m%d')}.pdf"
+        caption  = f"📄 Turbo Brief — {brief.get('date_fr', date.today().strftime('%d/%m/%Y'))}"
+
+        boundary = "TurboBriefBoundary"
+        body = (
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="chat_id"\r\n\r\n'
+            f"{TELEGRAM_CHAT}\r\n"
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="caption"\r\n\r\n'
+            f"{caption}\r\n"
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="document"; filename="{filename}"\r\n'
+            f"Content-Type: application/pdf\r\n\r\n"
+        ).encode("utf-8") + pdf_bytes + f"\r\n--{boundary}--\r\n".encode("utf-8")
+
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendDocument"
+        req = urllib.request.Request(
+            url, data=body,
+            headers={"Content-Type": f"multipart/form-data; boundary={boundary}"}
+        )
+        resp = urllib.request.urlopen(req, timeout=30)
+        result_tg = json.loads(resp.read())
+
+        if result_tg.get("ok"):
+            log.info("Telegram PDF: envoyé ✓")
+            return True
+        else:
+            log.warning(f"Telegram PDF error: {result_tg}")
+            return False
+
+    except Exception as e:
+        log.error(f"send_telegram_pdf error: {e}")
         return False
 
 
@@ -88,9 +190,6 @@ def _build_email_html(brief: dict) -> str:
     actions = brief.get("plan_actions", [])
     alertes = brief.get("alertes", [])
     strip   = brief.get("market_strip", {})
-
-    def m(key, field, default="—"):
-        return strip.get(key, {}).get(field, default)
 
     strip_html = ""
     for key, label in [("nq","NQ"), ("cac40","CAC 40"), ("vix","VIX"), ("brent","Brent")]:
