@@ -1,0 +1,659 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24386.75,
+        "prev_close": 24376.5,
+        "change_pct": 0.04,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7846.5498,
+        "prev_close": 7751.54,
+        "change_pct": 1.23,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.55,
+        "prev_close": 26.94,
+        "change_pct": -5.16,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4543.8999,
+        "prev_close": 4567.7998,
+        "change_pct": -0.52,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 97.12,
+        "prev_close": 99.79,
+        "change_pct": -2.68,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1575,
+        "prev_close": 1.1617,
+        "change_pct": -0.36,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.328,
+        "prev_close": 4.392,
+        "change_pct": -1.46,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6646.25,
+        "prev_close": 6647.5,
+        "change_pct": -0.02,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 247.95,
+        "prev_close": 242.4,
+        "change_pct": 2.29,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 462.35,
+        "prev_close": 460.3,
+        "change_pct": 0.45,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.26,
+        "prev_close": 169.04,
+        "change_pct": 1.31,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.31,
+        "prev_close": 83.09,
+        "change_pct": 1.47,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.938,
+        "prev_close": 5.844,
+        "change_pct": 1.61,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-25T17:21:34.307614+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Federated Investors Inc B stock hits all-time high at 57.82 USD",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/federated-investors-inc-b-stock-hits-alltime-high-at-5782-usd-93CH-4580555",
+          "source": "investing_news",
+          "published": "2026-03-25T17:12:54+00:00",
+          "age_minutes": 8,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "2be4e78e0ee6"
+        },
+        {
+          "title": "US Equity Indexes Off Session Highs as Investors Assess Diplomatic Engagements to End Iran War",
+          "summary": "US equity indexes rose in midday trading on Wednesday, albeit off session highs, as investors weighe",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-off-session-162356189.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T16:23:56+00:00",
+          "age_minutes": 57,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f212161fda0c"
+        },
+        {
+          "title": "Federal Reserve Board releases annual audited financial statements",
+          "summary": "Federal Reserve Board releases annual audited financial statements",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260325a.htm",
+          "source": "fed_press",
+          "published": "2026-03-25T16:00:00+00:00",
+          "age_minutes": 81,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "4ff08af179b5"
+        },
+        {
+          "title": "Higher inflation is coming — import prices show biggest increase in four years",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=a9595473-e379-4fe0-85f4-9203f8b399ca&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T15:27:17+00:00",
+          "age_minutes": 114,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "37b3badddc75"
+        },
+        {
+          "title": "Iran outlines critical conditions for ending war with US",
+          "summary": "Oil prices (CL=F, BZ=F) are pulling back — Brent crude dipping back below $100 per barrel — after Iran outlined several critical conditions for ending the war with the US, according to the nation's state media.Yahoo Finance Senior Reporter Brooke DiPalma reports the latest.",
+          "url": "https://finance.yahoo.com/video/iran-outlines-critical-conditions-for-ending-war-with-us-143640771.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T14:36:40+00:00",
+          "age_minutes": 164,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "fcce65b20344"
+        },
+        {
+          "title": "Pre-Markets, Imports/Exports, Up in Early Trading",
+          "summary": "After yesterday's moderate sell-off, this morning we see pre-market indexes in the green.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/pre-markets-imports-exports-early-142100052.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T14:21:00+00:00",
+          "age_minutes": 180,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "af20824f27d4"
+        },
+        {
+          "title": "Stocks Rally on US Peace Plan to End Iran War",
+          "summary": "The S&P 500 Index ($SPX ) (SPY ) today is up +0.62%, the Dow Jones Industrial Average ($DOWI ) (DIA ) is up +0.67%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) is up +0.75%. June E-mini S&P futures (ESM26 ) are up +0.61%, and June E-mini Nasdaq futures...",
+          "url": "https://www.barchart.com/story/news/945332/stocks-rally-on-us-peace-plan-to-end-iran-war?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T14:09:43+00:00",
+          "age_minutes": 191,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "c8620e4a7106"
+        },
+        {
+          "title": "Stocks Pop at the Open as Oil Slides. Wall Street Is Hoping for Peace Talks.",
+          "summary": "The stock market was back in rally mode on Wednesday as Wall Street held out hope the U.S. and Iran could hash out a ceasefire.  The Nasdaq Composite was up 1.2%.  Brent crude oil futures were down 5% to $99.32 a barrel.",
+          "url": "https://finance.yahoo.com/m/6c9f693b-2a8e-3976-bd31-fe226e5a9c44/stocks-pop-at-the-open-as-oil.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:35:01+00:00",
+          "age_minutes": 226,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "c274b5846a2c"
+        },
+        {
+          "title": "Economic calendar: Speech by Trump ally at Fed follows report on import prices",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=1651fdf0-cdd5-4433-a4c4-7c446152166e&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T12:37:02+00:00",
+          "age_minutes": 284,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "d24d994ad569"
+        },
+        {
+          "title": "Home builder KB says Iran war has already cut into sales",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=50bd60eb-66c4-4165-b5de-0f863da01f26&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T12:03:02+00:00",
+          "age_minutes": 318,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "76390139d60a"
+        },
+        {
+          "title": "U.S. oil prices trading around $88 after reports of ceasefire proposal",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=4d216f26-de9f-46e9-8eae-c90902df8e51&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T09:51:58+00:00",
+          "age_minutes": 449,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "b76c8736f12f"
+        },
+        {
+          "title": "The Last Time the Nasdaq Sold Off Like This, These Were the Best Stocks to Own. Here's What They Tell Us About 2026.",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/last-time-nasdaq-sold-off-170500549.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T17:05:00+00:00",
+          "age_minutes": 16,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "96f5cbbd16a9"
+        },
+        {
+          "title": "Stock Market Today: Nasdaq, Dow Gains Trimmed; AI, Chip Firms Run As Tapestry Creates New Entry (Live Coverage)",
+          "summary": "Stock Market Today: The Dow Jones index gains Wednesday as President Donald Trump sends a peace plan to Iran. Oil prices take a dive.",
+          "url": "https://finance.yahoo.com/m/f291dd83-b2cd-374a-9129-444e00ecdc50/stock-market-today%3A-nasdaq%2C.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T16:53:54+00:00",
+          "age_minutes": 27,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "1f8b52110026"
+        },
+        {
+          "title": "Dow Gives Back Early Gains. It's Still Following Moves in the Oil Market.",
+          "summary": "The stock market lost some steam as the morning rolled on. You can probably guess the reason. The Dow was up 130 points, or 0.3%, after jumping nearly 600 points at the open. The S&P 500 was up 0.3%. The Nasdaq Composite was up 0.",
+          "url": "https://finance.yahoo.com/m/4ced9fae-f759-39ac-87d7-c5a26416b7cf/dow-gives-back-early-gains..html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T15:21:58+00:00",
+          "age_minutes": 119,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "0a94115f8ee9"
+        },
+        {
+          "title": "Arm Stock Soars on Plans to Sell Its Own Chips",
+          "summary": "Shares in Arm Holdings jumped more than 15% Wednesday after the company revealed its first-ever in-house chip at an event the day before.  The jump in Arm shares comes alongside a broader rally in technology stocks Wednesday.  The tech-heavy Nasdaq composite index jumped 1%, while the S&P 500 rose 0",
+          "url": "https://finance.yahoo.com/m/b9f4eaf4-2d23-3982-ada0-ffeae45d5265/arm-stock-soars-on-plans-to.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T14:12:12+00:00",
+          "age_minutes": 189,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "2844b6a423ad"
+        },
+        {
+          "title": "The Nasdaq Could Pop 2% On Today’s News",
+          "summary": "The Nasdaq is staging a meaningful recovery Wednesday morning, with the index up 1.1% as of the early session, driven by two catalysts: a sharp drop in oil prices tied to potential U.S.-Iran peace negotiations, and a dramatic move in tech broadly. One of the leading stocks driving the rally today is",
+          "url": "https://247wallst.com/investing/2026/03/25/the-nasdaq-could-pop-2-on-todays-news/?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:57:02+00:00",
+          "age_minutes": 204,
+          "urgency": "medium",
+          "sentiment": 0.3333333333333333,
+          "id": "372747f3bff8"
+        },
+        {
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise amid hopes of US-Iran talks, oil falls below $100",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-amid-hopes-of-us-iran-talks-oil-falls-below-100-133140032.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-25T13:31:40+00:00",
+          "age_minutes": 229,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "30561988144f"
+        },
+        {
+          "title": "Bond to Ring the Nasdaq Closing Bell Today at 4:00 PM Eastern Time",
+          "summary": "CEO will also appear as a guest on Cheddar TV at approximately 11:30 a.m. Eastern Time todayNEW YORK, March 25, 2026 (GLOBE NEWSWIRE) -- Our Bond, Inc. (“Bond”) (NASDAQ: OBAI), the creator of the world’s first AI-powered Preventative Personal Security platform adopted by leading multinational compan",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bond-ring-nasdaq-closing-bell-131700770.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:17:00+00:00",
+          "age_minutes": 244,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "f8f5dd9246d8"
+        },
+        {
+          "title": "TruGolf Announces Reverse Stock Split",
+          "summary": "Salt Lake City, Utah, March 25, 2026 (GLOBE NEWSWIRE) -- TruGolf Holdings, Inc. (NASDAQ: TRUG), today announced a 1-for-10 reverse split of its Class A common stock. Beginning on March 27, 2026, the Company’s Class A common stock will continue to trade on The Nasdaq Capital Market on a split adjuste",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/trugolf-announces-reverse-stock-split-130000069.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T13:00:00+00:00",
+          "age_minutes": 261,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "79e8cbcaa819"
+        },
+        {
+          "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Wednesday Amid Hopes of Iran, US Truce",
+          "summary": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was up 0.9% and the actively trad",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125518439.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T12:55:18+00:00",
+          "age_minutes": 266,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "008f7001dd68"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Federated Investors Inc B stock hits all-time high at 57.82 USD",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/federated-investors-inc-b-stock-hits-alltime-high-at-5782-usd-93CH-4580555",
+          "source": "investing_news",
+          "published": "2026-03-25T17:12:54+00:00",
+          "age_minutes": 8,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "2be4e78e0ee6"
+        },
+        {
+          "title": "US Equity Indexes Off Session Highs as Investors Assess Diplomatic Engagements to End Iran War",
+          "summary": "US equity indexes rose in midday trading on Wednesday, albeit off session highs, as investors weighe",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-off-session-162356189.html?.tsrc=rss",
+          "source": "yahoo_markets",
+          "published": "2026-03-25T16:23:56+00:00",
+          "age_minutes": 57,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f212161fda0c"
+        },
+        {
+          "title": "Federal Reserve Board releases annual audited financial statements",
+          "summary": "Federal Reserve Board releases annual audited financial statements",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260325a.htm",
+          "source": "fed_press",
+          "published": "2026-03-25T16:00:00+00:00",
+          "age_minutes": 81,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "4ff08af179b5"
+        },
+        {
+          "title": "Higher inflation is coming — import prices show biggest increase in four years",
+          "summary": "",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=a9595473-e379-4fe0-85f4-9203f8b399ca&mod=mw_rss_bulletins",
+          "source": "marketwatch_economy",
+          "published": "2026-03-25T15:27:17+00:00",
+          "age_minutes": 114,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "37b3badddc75"
+        }
+      ],
+      "sentiment": 0.17,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 25
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 18
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 10
+        }
+      ],
+      "scanned_at": "2026-03-25T17:21:32.991220+00:00",
+      "mode": "full"
+    },
+    "calendar": {
+      "today_high_impact": [],
+      "today_all": [],
+      "tomorrow_events": [],
+      "fomc_schedule": {
+        "next_meeting": {
+          "date": "2026-05-07",
+          "label": "Mai 2026"
+        },
+        "days_until": 43,
+        "probabilities": {
+          "hold": 92.0,
+          "cut_25": 8.0,
+          "hike_25": 0.0
+        }
+      },
+      "next_event": null,
+      "fetched_at": "2026-03-25T17:21:30.982255+00:00"
+    },
+    "technical": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "name": "NQ Futures",
+        "current_price": 24386.75,
+        "rsi": 37.7,
+        "rsi_signal": "baissier",
+        "ma20": 24709.81,
+        "ma50": 25104.86,
+        "ema9": 24454.26,
+        "ema21": 24666.69,
+        "vwap": 24330.26,
+        "bb_upper": 25323.48,
+        "bb_lower": 24096.15,
+        "atr": 517.43,
+        "atr_pct": 2.12,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 26027.75,
+            "pct_away": 6.73,
+            "type": "resistance"
+          },
+          {
+            "price": 25243.28,
+            "pct_away": 3.51,
+            "type": "resistance"
+          },
+          {
+            "price": 24715.5,
+            "pct_away": 1.35,
+            "type": "resistance"
+          },
+          {
+            "price": 24329.75,
+            "pct_away": -0.23,
+            "type": "support"
+          },
+          {
+            "price": 24000.0,
+            "pct_away": -1.59,
+            "type": "support"
+          },
+          {
+            "price": 23772.5,
+            "pct_away": -2.52,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "name": "CAC 40",
+        "current_price": 7846.55,
+        "rsi": 39.7,
+        "rsi_signal": "baissier",
+        "ma20": 8024.39,
+        "ma50": 8169.85,
+        "ema9": 7847.61,
+        "ema21": 7985.99,
+        "vwap": NaN,
+        "bb_upper": 8536.6,
+        "bb_lower": 7512.18,
+        "atr": 168.14,
+        "atr_pct": 2.14,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 8179.58,
+            "pct_away": 4.24,
+            "type": "resistance"
+          },
+          {
+            "price": 8107.19,
+            "pct_away": 3.32,
+            "type": "resistance"
+          },
+          {
+            "price": 8066.62,
+            "pct_away": 2.8,
+            "type": "resistance"
+          },
+          {
+            "price": 8008.67,
+            "pct_away": 2.07,
+            "type": "resistance"
+          },
+          {
+            "price": 7856.61,
+            "pct_away": 0.13,
+            "type": "resistance"
+          },
+          {
+            "price": 7768.11,
+            "pct_away": -1.0,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "name": "Schneider Electric",
+        "current_price": 247.95,
+        "rsi": 46.1,
+        "rsi_signal": "neutre",
+        "ma20": 252.84,
+        "ma50": 249.93,
+        "ema9": 246.45,
+        "ema21": 250.01,
+        "vwap": 243.36,
+        "bb_upper": 272.99,
+        "bb_lower": 232.69,
+        "atr": 9.73,
+        "atr_pct": 3.93,
+        "trend": "baissier",
+        "sr_levels": [
+          {
+            "price": 257.57,
+            "pct_away": 3.88,
+            "type": "resistance"
+          },
+          {
+            "price": 247.3,
+            "pct_away": -0.26,
+            "type": "support"
+          },
+          {
+            "price": 245.75,
+            "pct_away": -0.89,
+            "type": "support"
+          },
+          {
+            "price": 239.65,
+            "pct_away": -3.35,
+            "type": "support"
+          },
+          {
+            "price": 237.65,
+            "pct_away": -4.15,
+            "type": "support"
+          },
+          {
+            "price": 236.0,
+            "pct_away": -4.82,
+            "type": "support"
+          }
+        ],
+        "above_ma20": false,
+        "above_ma50": false
+      },
+      "computed_at": "2026-03-25T17:21:31.639880+00:00"
+    },
+    "trigger": "morning",
+    "timestamp": "2026-03-25T18:21:34.307973+01:00",
+    "context": {
+      "note": "",
+      "github_run": "47",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à léger baissier — Iran tensions et inflation",
+      "description": "NQ Futures stable (+0.04%), VIX en baisse (-5.16%) mais sentiment global modéré (+0.17). Brent recule (-2.68%) sur espoirs diplomatiques, mais inflation importée en hausse.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Tensions géopolitiques persistantes (Iran) et inflation importée en hausse (+4 ans) freinent la dynamique haussière malgré un VIX en baisse."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 26027.75,
+        "type": "resistance",
+        "action": "À surveiller pour rejet ou breakout",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ Futures",
+        "prix": 24329.75,
+        "type": "support",
+        "action": "Zone critique pour rebond ou KO",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8179.58,
+        "type": "resistance",
+        "action": "Objectif théorique si momentum haussier",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support CAC40",
+        "prix": 7768.11,
+        "type": "support",
+        "action": "Seuil de protection contre chute",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveillance Iran/US 18h30 CET",
+      "NQ Futures 24329.75 : zone de décision critique"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 387",
+        "chg": "+0.04%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 847",
+        "chg": "+1.23%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$97.1",
+        "chg": "-2.68%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.6",
+        "chg": "-5.16%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 543.90",
+        "chg": "-0.52%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1575",
+        "chg": "-0.36%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.328%",
+        "chg": "-1.46%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Sessions terminées.",
+    "edition": "18:21 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-25T18:21:38.599429+01:00",
+    "date_fr": "Mercredi 25 mars 2026"
+  }
+}

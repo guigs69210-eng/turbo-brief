@@ -1,19 +1,91 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 17:48",
-    "description": "NQ: 24434 (+0.24%) · CAC: 7829 (+1.00%)",
+    "titre": "Biais neutre à léger baissier — Iran tensions et inflation",
+    "description": "NQ Futures stable (+0.04%), VIX en baisse (-5.16%) mais sentiment global modéré (+0.17). Brent recule (-2.68%) sur espoirs diplomatiques, mais inflation importée en hausse.",
     "biais": "neutre",
-    "conviction": "faible"
+    "conviction": "faible",
+    "contexte_macro": "Tensions géopolitiques persistantes (Iran) et inflation importée en hausse (+4 ans) freinent la dynamique haussière malgré un VIX en baisse."
   },
   "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "niveaux_cles": [
+    {
+      "label": "Résistance NQ Futures",
+      "prix": 26027.75,
+      "type": "resistance",
+      "action": "À surveiller pour rejet ou breakout",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support NQ Futures",
+      "prix": 24329.75,
+      "type": "support",
+      "action": "Zone critique pour rebond ou KO",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 8179.58,
+      "type": "resistance",
+      "action": "Objectif théorique si momentum haussier",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support CAC40",
+      "prix": 7768.11,
+      "type": "support",
+      "action": "Seuil de protection contre chute",
+      "couleur": "bear"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Wednesday 25 march 2026",
-  "edition": "17h48 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "alertes": [
+    "Surveillance Iran/US 18h30 CET",
+    "NQ Futures 24329.75 : zone de décision critique"
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ/indices → cotent jusqu'à 22h CET"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "24 387",
+      "chg": "+0.04%",
+      "dir": "up"
+    },
+    "cac40": {
+      "valeur": "7 847",
+      "chg": "+1.23%",
+      "dir": "up"
+    },
+    "brent": {
+      "valeur": "$97.1",
+      "chg": "-2.68%",
+      "dir": "dn"
+    },
+    "vix": {
+      "valeur": "25.6",
+      "chg": "-5.16%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "$4 543.90",
+      "chg": "-0.52%",
+      "dir": "dn"
+    },
+    "eurusd": {
+      "valeur": "1.1575",
+      "chg": "-0.36%",
+      "dir": "dn"
+    },
+    "us10y": {
+      "valeur": "4.328%",
+      "chg": "-1.46%",
+      "dir": "dn"
+    }
+  },
+  "pea_note": "PEA — Ne pas toucher. Sessions terminées.",
+  "edition": "18:21 CET",
+  "mode": "normal",
+  "timestamp": "2026-03-25T18:21:38.599429+01:00",
+  "date_fr": "Mercredi 25 mars 2026"
 }
