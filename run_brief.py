@@ -40,7 +40,7 @@ async def main(trigger: str):
     from agents.calendar_agent  import get_eco_calendar
     from agents.technical_agent import get_technicals
     from agents.claude_agent    import synthesize_brief
-    from agents.notifier        import send_telegram, send_email
+    from agents.notifier        import send_telegram, send_email, send_telegram_pdf
     from output.html_updater    import update_turbo_brief_html
 
     run_all = trigger in ("morning", "us", "fomc", "manual")
@@ -99,11 +99,20 @@ async def main(trigger: str):
     hist = output_dir / "logs" / f"brief_{trigger}_{ts}.json"
     hist.write_text(json.dumps({"raw": raw_data, "brief": brief}, indent=2, ensure_ascii=False))
 
-    update_turbo_brief_html(brief)
+    try:
+        update_turbo_brief_html(brief)
+    except Exception as e:
+        log.warning(f"HTML update: {e}")
 
+    # 1. Message Telegram texte
     telegram_msg = _format_telegram(brief, trigger)
     ok = await send_telegram(telegram_msg)
     log.info(f"Telegram: {'✓' if ok else '✗'}")
+
+    # 2. PDF Telegram — toujours pour morning/fomc/manual, jamais pour eod/refresh
+    if trigger in ("morning", "us", "fomc", "manual"):
+        ok_pdf = await send_telegram_pdf(brief)
+        log.info(f"Telegram PDF: {'✓' if ok_pdf else '✗'}")
 
     if trigger in ("morning", "us", "fomc"):
         await send_email(brief)
