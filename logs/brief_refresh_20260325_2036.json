@@ -1,0 +1,292 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24364.25,
+        "prev_close": 24376.5,
+        "change_pct": -0.05,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7846.5498,
+        "prev_close": 7751.54,
+        "change_pct": 1.23,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.38,
+        "prev_close": 26.94,
+        "change_pct": -5.79,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4511.1001,
+        "prev_close": 4567.7998,
+        "change_pct": -1.24,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 97.75,
+        "prev_close": 99.79,
+        "change_pct": -2.04,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1566,
+        "prev_close": 1.1617,
+        "change_pct": -0.44,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.328,
+        "prev_close": 4.392,
+        "change_pct": -1.46,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6641.75,
+        "prev_close": 6647.5,
+        "change_pct": -0.09,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 247.95,
+        "prev_close": 242.4,
+        "change_pct": 2.29,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 462.35,
+        "prev_close": 460.3,
+        "change_pct": 0.45,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.26,
+        "prev_close": 169.04,
+        "change_pct": 1.31,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.31,
+        "prev_close": 83.09,
+        "change_pct": 1.47,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.938,
+        "prev_close": 5.844,
+        "change_pct": 1.61,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-25T19:36:22.282946+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Bank of France cuts 2026 growth forecast, raises inflation outlook",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/bank-of-france-cuts-2026-growth-forecast-raises-inflation-outlook-93CH-4580683",
+          "source": "investing_news",
+          "published": "2026-03-25T19:11:16+00:00",
+          "age_minutes": 25,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "23353f03f942"
+        },
+        {
+          "title": "Factbox-What did jury decide in social media case against Meta and Google?",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxwhat-did-jury-decide-in-social-media-case-against-meta-and-google-4580645",
+          "source": "investing_news",
+          "published": "2026-03-25T19:18:28+00:00",
+          "age_minutes": 17,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "95af4f0fbd2d"
+        },
+        {
+          "title": "ISS backs Eldorado Gold’s share issuance for Foran deal",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/iss-backs-eldorado-golds-share-issuance-for-foran-deal-93CH-4580694",
+          "source": "investing_news",
+          "published": "2026-03-25T19:17:04+00:00",
+          "age_minutes": 19,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "0e2b12235c09"
+        },
+        {
+          "title": "Form 13G 1st Source Corp For: 25 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-1st-source-corp-for-25-march-93CH-4580690",
+          "source": "investing_news",
+          "published": "2026-03-25T19:15:57+00:00",
+          "age_minutes": 20,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1c842cd54584"
+        },
+        {
+          "title": "Form 13G 10X Genomics Inc For: 25 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-10x-genomics-inc-for-25-march-93CH-4580689",
+          "source": "investing_news",
+          "published": "2026-03-25T19:15:52+00:00",
+          "age_minutes": 20,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "854ece700ede"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Bank of France cuts 2026 growth forecast, raises inflation outlook",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/bank-of-france-cuts-2026-growth-forecast-raises-inflation-outlook-93CH-4580683",
+          "source": "investing_news",
+          "published": "2026-03-25T19:11:16+00:00",
+          "age_minutes": 25,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "23353f03f942"
+        }
+      ],
+      "sentiment": 0.31,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 5
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-03-25T19:36:16.955473+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-25T20:36:22.283250+01:00",
+    "context": {
+      "note": "",
+      "github_run": "49",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à léger baissier — Banque de France révisée",
+      "description": "NQ Futures stable (-0.05%), VIX en baisse (-5.79%) malgré la révision à la baisse de la croissance française. Brent recule de -2.04% sur demande mondiale.",
+      "biais": "neutre",
+      "conviction": "modérée",
+      "contexte_macro": "La Banque de France réduit ses prévisions de croissance 2026 et relève ses anticipations d'inflation, pesant sur l'euro et les actifs européens."
+    },
+    "plan_actions": [
+      {
+        "heure": "20:40",
+        "titre": "PUT EURUSD ×15 (Turbo BEST SG Bourse)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 1.1600 / KO 1.1650",
+        "gain_cible": "+25% si EURUSD -0.8%",
+        "plateforme": "sgbourse.fr → EURUSD → PUT BEST",
+        "note": "Entrée 20:40–21:00. Stop mental -40%.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "21:15",
+        "titre": "CALL NQ Futures ×18 (Turbo Vontobel)",
+        "sens": "CALL",
+        "mise": "1800 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+30% si NQ +1.2%",
+        "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
+        "note": "Entrée 21:15–21:45. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24200,
+        "type": "support",
+        "action": "Entrée CALL si cassé",
+        "couleur": "bull"
+      },
+      {
+        "label": "Résistance EURUSD",
+        "prix": 1.165,
+        "type": "resistance",
+        "action": "Sortie PUT si atteint",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Suivre la réaction du marché après la publication des minutes du FOMC (20:30 CET)",
+      "Surveiller l'impact de la révision de la Banque de France sur les actifs européens"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 364",
+        "chg": "-0.05%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 847",
+        "chg": "+1.23%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$97.8",
+        "chg": "-2.04%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.4",
+        "chg": "-5.79%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1566",
+        "chg": "-0.44%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 511.10",
+        "chg": "-1.24%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.328%",
+        "chg": "-1.46%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Non applicable (NQ Futures et EURUSD).",
+    "edition": "20:36 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-25T20:36:27.409837+01:00",
+    "date_fr": "Mercredi 25 mars 2026"
+  }
+}

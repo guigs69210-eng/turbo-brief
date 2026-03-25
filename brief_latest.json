@@ -1,56 +1,66 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre — Marché en attente post-FOMC, volatilité en baisse",
-    "description": "NQ Futures stables (+0.19%), VIX en chute (-6.27%) après le FOMC hawkish. CAC40 rebondit (+1.23%) sur les valeurs tech européennes.",
+    "titre": "Biais neutre à léger baissier — Banque de France révisée",
+    "description": "NQ Futures stable (-0.05%), VIX en baisse (-5.79%) malgré la révision à la baisse de la croissance française. Brent recule de -2.04% sur demande mondiale.",
     "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Marché en phase de digestion après le FOMC. Sentiment global modéré (+0.08) avec des thèmes tech et géopolitiques en arrière-plan."
+    "conviction": "modérée",
+    "contexte_macro": "La Banque de France réduit ses prévisions de croissance 2026 et relève ses anticipations d'inflation, pesant sur l'euro et les actifs européens."
   },
-  "plan_actions": [],
+  "plan_actions": [
+    {
+      "heure": "20:40",
+      "titre": "PUT EURUSD ×15 (Turbo BEST SG Bourse)",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 15,
+      "strike_ko": "Strike 1.1600 / KO 1.1650",
+      "gain_cible": "+25% si EURUSD -0.8%",
+      "plateforme": "sgbourse.fr → EURUSD → PUT BEST",
+      "note": "Entrée 20:40–21:00. Stop mental -40%.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "21:15",
+      "titre": "CALL NQ Futures ×18 (Turbo Vontobel)",
+      "sens": "CALL",
+      "mise": "1800 €",
+      "levier": 18,
+      "strike_ko": "Strike 24000 / KO 23500",
+      "gain_cible": "+30% si NQ +1.2%",
+      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
+      "note": "Entrée 21:15–21:45. Stop mental -40%.",
+      "urgence": "normale"
+    }
+  ],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ",
-      "prix": 24550,
-      "type": "resistance",
-      "action": "Surveillance pour rejet ou breakout",
-      "couleur": "bull"
-    },
-    {
       "label": "Support NQ",
-      "prix": 24300,
+      "prix": 24200,
       "type": "support",
-      "action": "Stop loss si cassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "CAC40 Résistance",
-      "prix": 7900,
-      "type": "resistance",
-      "action": "TP partiel si testé",
+      "action": "Entrée CALL si cassé",
       "couleur": "bull"
     },
     {
-      "label": "CAC40 Support",
-      "prix": 7800,
-      "type": "support",
-      "action": "Entrée PUT si cassé",
+      "label": "Résistance EURUSD",
+      "prix": 1.165,
+      "type": "resistance",
+      "action": "Sortie PUT si atteint",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Surveillance des résultats InnoCare Pharma (impact potentiel sur les valeurs biotech)",
-    "Form 144 US Antimony For aujourd'hui — risque de volatilité sur les métaux"
+    "Suivre la réaction du marché après la publication des minutes du FOMC (20:30 CET)",
+    "Surveiller l'impact de la révision de la Banque de France sur les actifs européens"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
-    "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    "Turbos NQ → cotent jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 422",
-      "chg": "+0.19%",
-      "dir": "up"
+      "valeur": "24 364",
+      "chg": "-0.05%",
+      "dir": "dn"
     },
     "cac40": {
       "valeur": "7 847",
@@ -58,34 +68,34 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$97.1",
-      "chg": "-2.71%",
+      "valeur": "$97.8",
+      "chg": "-2.04%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.2",
-      "chg": "-6.27%",
-      "dir": "dn"
-    },
-    "gold": {
-      "valeur": "$4 550.80",
-      "chg": "-0.37%",
+      "valeur": "25.4",
+      "chg": "-5.79%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1582",
-      "chg": "-0.30%",
+      "valeur": "1.1566",
+      "chg": "-0.44%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "$4 511.10",
+      "chg": "-1.24%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.326%",
-      "chg": "-1.50%",
+      "valeur": "4.328%",
+      "chg": "-1.46%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Pas d'actions françaises en portefeuille. Marché fermé.",
-  "edition": "19:12 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-25T19:13:00.328953+01:00",
+  "pea_note": "PEA — Non applicable (NQ Futures et EURUSD).",
+  "edition": "20:36 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-03-25T20:36:27.409837+01:00",
   "date_fr": "Mercredi 25 mars 2026"
 }
