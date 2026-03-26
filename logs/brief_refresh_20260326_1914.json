@@ -1,0 +1,300 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23878.0,
+        "prev_close": 24378.5,
+        "change_pct": -2.05,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7769.3101,
+        "prev_close": 7827.3301,
+        "change_pct": -0.74,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 28.4,
+        "prev_close": 25.35,
+        "change_pct": 12.03,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4379.7002,
+        "prev_close": 4510.2002,
+        "change_pct": -2.89,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 102.13,
+        "prev_close": 98.45,
+        "change_pct": 3.74,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1534,
+        "prev_close": 1.1565,
+        "change_pct": -0.27,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.422,
+        "prev_close": 4.328,
+        "change_pct": 2.17,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6543.25,
+        "prev_close": 6639.25,
+        "change_pct": -1.45,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 238.2,
+        "prev_close": 246.8,
+        "change_pct": -3.48,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 458.3,
+        "prev_close": 461.25,
+        "change_pct": -0.64,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.32,
+        "prev_close": 170.8,
+        "change_pct": 0.3,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.87,
+        "prev_close": 84.06,
+        "change_pct": -2.61,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.87,
+        "prev_close": 5.946,
+        "change_pct": -1.28,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-26T18:14:26.499354+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Analysis-Trump officials tout US energy dominance as global oil execs warn of supply crisis",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/analysistrump-officials-tout-us-energy-dominance-as-global-oil-execs-warn-of-supply-crisis-4583242",
+          "source": "investing_news",
+          "published": "2026-03-26T18:01:53+00:00",
+          "age_minutes": 12,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f1a38ab86697"
+        },
+        {
+          "title": "Earnings call transcript: Equatorial Energia’s Q4 2025 performance shines",
+          "summary": "",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-equatorial-energias-q4-2025-performance-shines-93CH-4583246",
+          "source": "investing_news",
+          "published": "2026-03-26T18:01:57+00:00",
+          "age_minutes": 12,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "ea7a8db30aa5"
+        },
+        {
+          "title": "Microsoft freezes hiring in major cloud, sales groups, The Information reports",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/microsoft-freezes-hiring-in-major-cloud-sales-groups-the-information-reports-4583253",
+          "source": "investing_news",
+          "published": "2026-03-26T18:07:31+00:00",
+          "age_minutes": 6,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "d69e341ebf23"
+        },
+        {
+          "title": "Trump administration opens investigations into three medical schools, NYT reports",
+          "summary": "",
+          "url": "https://www.investing.com/news/general-news/trump-administration-opens-investigations-into-three-medical-schools-nyt-reports-4583245",
+          "source": "investing_news",
+          "published": "2026-03-26T18:07:15+00:00",
+          "age_minutes": 7,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "c17355786bdb"
+        },
+        {
+          "title": "United Airlines flight attendants reach tentative five-year labor deal",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/united-airlines-reaches-tentative-labor-deal-with-flight-attendants-4583163",
+          "source": "investing_news",
+          "published": "2026-03-26T18:06:58+00:00",
+          "age_minutes": 7,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "637a792922fd"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Analysis-Trump officials tout US energy dominance as global oil execs warn of supply crisis",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/analysistrump-officials-tout-us-energy-dominance-as-global-oil-execs-warn-of-supply-crisis-4583242",
+          "source": "investing_news",
+          "published": "2026-03-26T18:01:53+00:00",
+          "age_minutes": 12,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f1a38ab86697"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 7
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        }
+      ],
+      "scanned_at": "2026-03-26T18:14:23.487356+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-26T19:14:26.499634+01:00",
+    "context": {
+      "note": "",
+      "github_run": "54",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Tensions géopolitiques et VIX en hausse",
+      "description": "NQ Futures chute de -2.05% après un flash géopolitique sur les tensions énergétiques et un VIX à 28.4 (+12%). Brent rebondit de +3.74% sur les craintes d'offre.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Géopolitique énergétique tendue (Trump officials vs. oil execs) et VIX en forte hausse (+12%) reflétant une aversion au risque accrue."
+    },
+    "plan_actions": [
+      {
+        "heure": "19h15",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 24500",
+        "gain_cible": "+35% si NQ -1.5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée immédiate. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "19h20",
+        "titre": "PUT CAC40 ×15",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7800 / KO 7850",
+        "gain_cible": "+28% si CAC40 -1%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 19h20–19h30. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23700,
+        "type": "support",
+        "action": "Rebond possible",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7850,
+        "type": "resistance",
+        "action": "Rejection probable",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil KO PUT NQ",
+        "prix": 24500,
+        "type": "current",
+        "action": "À surveiller pour KO",
+        "couleur": "red"
+      }
+    ],
+    "alertes": [
+      "Géopolitique énergie : Trump officials vs. oil execs — risque de volatilité accrue",
+      "VIX 28.4 (+12%) — environnement de marché très volatile"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée, attention aux positions ouvertes)",
+      "Turbos NQ → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 878",
+        "chg": "-2.05%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 769",
+        "chg": "-0.74%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$102.1",
+        "chg": "+3.74%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "28.4",
+        "chg": "+12.03%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1534",
+        "chg": "-0.27%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 379.70",
+        "chg": "-2.89%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.422%",
+        "chg": "+2.17%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises en portefeuille. Attention aux turbos sur indices.",
+    "edition": "19h14 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-26T19:14:31.597366+01:00",
+    "date_fr": "Jeudi 26 mars 2026"
+  }
+}
