@@ -1,0 +1,240 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24005.75,
+        "prev_close": 24378.5,
+        "change_pct": -1.53,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7771.6899,
+        "prev_close": 7827.3301,
+        "change_pct": -0.71,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 27.19,
+        "prev_close": 25.35,
+        "change_pct": 7.26,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4393.5,
+        "prev_close": 4510.2002,
+        "change_pct": -2.59,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 102.46,
+        "prev_close": 98.45,
+        "change_pct": 4.07,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1537,
+        "prev_close": 1.1565,
+        "change_pct": -0.24,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.392,
+        "prev_close": 4.328,
+        "change_pct": 1.48,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6566.5,
+        "prev_close": 6639.25,
+        "change_pct": -1.1,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 238.8,
+        "prev_close": 246.8,
+        "change_pct": -3.24,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 458.15,
+        "prev_close": 461.25,
+        "change_pct": -0.67,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.28,
+        "prev_close": 170.8,
+        "change_pct": 0.28,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.95,
+        "prev_close": 84.06,
+        "change_pct": -2.51,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.896,
+        "prev_close": 5.946,
+        "change_pct": -0.84,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-26T16:40:01.363417+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "CMC Q2 FY2026 slides: precast drives growth despite earnings miss",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/cmc-q2-fy2026-slides-precast-drives-growth-despite-earnings-miss-93CH-4583102",
+          "source": "investing_news",
+          "published": "2026-03-26T16:34:36+00:00",
+          "age_minutes": 5,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "822498a4aa3b"
+        },
+        {
+          "title": "US fixed 30-year mortgage rate jumps to six-month high as Iran war drags on",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/us-fixed-30-mortgage-rate-161742474.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-26T16:17:42+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b0fdb148b3d6"
+        },
+        {
+          "title": "Stock Market Today: Dow Falls As Trump's War Comments Hit Stocks; Oil Surges (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-oil-prices-surge/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-26T16:07:15+00:00",
+          "age_minutes": 32,
+          "urgency": "high",
+          "sentiment": -0.3333333333333333,
+          "id": "d19f4aad057d"
+        },
+        {
+          "title": "Commercial Metals Q2 Earnings Call Highlights",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/commercial-metals-q2-earnings-call-162113290.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-26T16:21:13+00:00",
+          "age_minutes": 18,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "32cc4808421e"
+        },
+        {
+          "title": "Stock market today: Dow, S&P 500, Nasdaq fall as Wall Street weighs prospects for Iran truce",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-fall-as-wall-street-weighs-prospects-for-iran-truce-133318490.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-26T13:33:18+00:00",
+          "age_minutes": 186,
+          "urgency": "medium",
+          "sentiment": -1.0,
+          "id": "f91240470a39"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "CMC Q2 FY2026 slides: precast drives growth despite earnings miss",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/cmc-q2-fy2026-slides-precast-drives-growth-despite-earnings-miss-93CH-4583102",
+          "source": "investing_news",
+          "published": "2026-03-26T16:34:36+00:00",
+          "age_minutes": 5,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "822498a4aa3b"
+        },
+        {
+          "title": "US fixed 30-year mortgage rate jumps to six-month high as Iran war drags on",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/us-fixed-30-mortgage-rate-161742474.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-26T16:17:42+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b0fdb148b3d6"
+        },
+        {
+          "title": "Stock Market Today: Dow Falls As Trump's War Comments Hit Stocks; Oil Surges (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-oil-prices-surge/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-26T16:07:15+00:00",
+          "age_minutes": 32,
+          "urgency": "high",
+          "sentiment": -0.3333333333333333,
+          "id": "d19f4aad057d"
+        }
+      ],
+      "sentiment": -0.07,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 9
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 7
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 3
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-26T16:39:55.475296+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-03-26T17:40:01.363602+01:00",
+    "context": {
+      "note": "",
+      "github_run": "52",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 17:40",
+      "description": "NQ: 24006 (-1.53%) · CAC: 7772 (-0.71%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Thursday 26 march 2026",
+    "edition": "17h40 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}

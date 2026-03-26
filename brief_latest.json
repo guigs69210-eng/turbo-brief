@@ -1,110 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier renforcé — Régulation chinoise et VIX en hausse",
-    "description": "NQ Futures -0.74%, VIX +7% à 27.13. Chine annonce régulation des guerres de prix destructrices. BRENT +1.57% sur tensions géopolitiques.",
-    "biais": "baissier",
-    "conviction": "forte",
-    "contexte_macro": "La régulation chinoise pourrait impacter les marges des géants tech. Le VIX en hausse reflète une aversion au risque accrue."
+    "titre": "Clôture Paris — 17:40",
+    "description": "NQ: 24006 (-1.53%) · CAC: 7772 (-0.71%)",
+    "biais": "neutre",
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "11h45",
-      "titre": "PUT NQ Futures ×18",
-      "sens": "PUT",
-      "mise": "2000 €",
-      "levier": 18,
-      "strike_ko": "Strike 24000 / KO 24500",
-      "gain_cible": "+25% si NQ -1.2%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 11h45–12h00. Stop mental -40%.",
-      "urgence": "haute"
-    },
-    {
-      "heure": "12h15",
-      "titre": "PUT CAC40 ×15",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 15,
-      "strike_ko": "Strike 7800 / KO 7850",
-      "gain_cible": "+20% si CAC40 -0.8%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée 12h15–12h30. Stop mental -40%.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Support NQ",
-      "prix": 24000,
-      "type": "support",
-      "action": "Achat PUT renforcé si cassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance CAC40",
-      "prix": 7850,
-      "type": "resistance",
-      "action": "Vente PUT si test",
-      "couleur": "bear"
-    },
-    {
-      "label": "Seuil VIX",
-      "prix": 27,
-      "type": "current",
-      "action": "Surveillance accrue",
-      "couleur": "amber"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Flash Chine 11h39 — Régulation prix à surveiller",
-    "VIX > 25 — Levier max ×18",
-    "BRENT +1.57% — Risque inflation persistant"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → clôture 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 199",
-      "chg": "-0.74%",
-      "dir": "dn"
-    },
-    "cac40": {
-      "valeur": "7 784",
-      "chg": "-0.55%",
-      "dir": "dn"
-    },
-    "brent": {
-      "valeur": "$100.0",
-      "chg": "+1.57%",
-      "dir": "up"
-    },
-    "vix": {
-      "valeur": "27.1",
-      "chg": "+7.02%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "$4 443.30",
-      "chg": "-1.48%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.1566",
-      "chg": "+0.01%",
-      "dir": "up"
-    },
-    "us10y": {
-      "valeur": "4.328%",
-      "chg": "-1.46%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Ne pas toucher. Focus sur les turbos BEST.",
-  "edition": "11h39 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-03-26T11:39:30.918604+01:00",
-  "date_fr": "Jeudi 26 mars 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Thursday 26 march 2026",
+  "edition": "17h40 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
