@@ -1,0 +1,309 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24199.0,
+        "prev_close": 24378.5,
+        "change_pct": -0.74,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7784.2598,
+        "prev_close": 7827.3301,
+        "change_pct": -0.55,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 27.13,
+        "prev_close": 25.35,
+        "change_pct": 7.02,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4443.2998,
+        "prev_close": 4510.2002,
+        "change_pct": -1.48,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 100.0,
+        "prev_close": 98.45,
+        "change_pct": 1.57,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1566,
+        "prev_close": 1.1565,
+        "change_pct": 0.01,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.328,
+        "prev_close": 4.392,
+        "change_pct": -1.46,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6601.0,
+        "prev_close": 6639.25,
+        "change_pct": -0.58,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 243.2,
+        "prev_close": 246.8,
+        "change_pct": -1.46,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 457.85,
+        "prev_close": 461.25,
+        "change_pct": -0.74,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.1,
+        "prev_close": 170.8,
+        "change_pct": 0.18,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 82.67,
+        "prev_close": 84.06,
+        "change_pct": -1.65,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.81,
+        "prev_close": 5.946,
+        "change_pct": -2.29,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-26T10:39:24.823288+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "China vows to regulate destructive price wars",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/china-vows-to-regulate-destructive-price-wars-93CH-4581903",
+          "source": "investing_news",
+          "published": "2026-03-26T10:34:36+00:00",
+          "age_minutes": 4,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "5ce85919a8fa"
+        },
+        {
+          "title": "Barclays favors U.S. equities as energy shock meets AI-driven earnings",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/barclays-favors-us-equities-as-energy-shock-meets-aidriven-earnings-4581907",
+          "source": "investing_news",
+          "published": "2026-03-26T10:36:21+00:00",
+          "age_minutes": 2,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "79e668250aca"
+        },
+        {
+          "title": "Hostelworld FY 2025 slides: revenue rises 2%, social platform gains traction",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/hostelworld-fy-2025-slides-revenue-rises-2-social-platform-gains-traction-93CH-4581913",
+          "source": "investing_news",
+          "published": "2026-03-26T10:37:03+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "fad9f0280df2"
+        },
+        {
+          "title": "Herbalife to acquire Bioniq personalized supplement assets for $55M",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/herbalife-to-acquire-bioniq-personalized-supplement-assets-for-55m-93CH-4581912",
+          "source": "investing_news",
+          "published": "2026-03-26T10:37:03+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "24d9489d9747"
+        },
+        {
+          "title": "Cuban doctors endure burnout, blackouts as once-vaunted healthcare declines ​",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/cuban-doctors-endure-burnout-blackouts-as-oncevaunted-healthcare-declines--4581775",
+          "source": "investing_news",
+          "published": "2026-03-26T10:36:29+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "c3dbf0c34f87"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "China vows to regulate destructive price wars",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/china-vows-to-regulate-destructive-price-wars-93CH-4581903",
+          "source": "investing_news",
+          "published": "2026-03-26T10:34:36+00:00",
+          "age_minutes": 4,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "5ce85919a8fa"
+        }
+      ],
+      "sentiment": -0.18,
+      "themes": [
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 2
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-26T10:39:19.353522+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-26T11:39:24.823497+01:00",
+    "context": {
+      "note": "",
+      "github_run": "51",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Régulation chinoise et VIX en hausse",
+      "description": "NQ Futures -0.74%, VIX +7% à 27.13. Chine annonce régulation des guerres de prix destructrices. BRENT +1.57% sur tensions géopolitiques.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "La régulation chinoise pourrait impacter les marges des géants tech. Le VIX en hausse reflète une aversion au risque accrue."
+    },
+    "plan_actions": [
+      {
+        "heure": "11h45",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 24500",
+        "gain_cible": "+25% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 11h45–12h00. Stop mental -40%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "12h15",
+        "titre": "PUT CAC40 ×15",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 7800 / KO 7850",
+        "gain_cible": "+20% si CAC40 -0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 12h15–12h30. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24000,
+        "type": "support",
+        "action": "Achat PUT renforcé si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7850,
+        "type": "resistance",
+        "action": "Vente PUT si test",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil VIX",
+        "prix": 27,
+        "type": "current",
+        "action": "Surveillance accrue",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "Flash Chine 11h39 — Régulation prix à surveiller",
+      "VIX > 25 — Levier max ×18",
+      "BRENT +1.57% — Risque inflation persistant"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → clôture 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 199",
+        "chg": "-0.74%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 784",
+        "chg": "-0.55%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$100.0",
+        "chg": "+1.57%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "27.1",
+        "chg": "+7.02%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 443.30",
+        "chg": "-1.48%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1566",
+        "chg": "+0.01%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.328%",
+        "chg": "-1.46%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur les turbos BEST.",
+    "edition": "11h39 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-26T11:39:30.918604+01:00",
+    "date_fr": "Jeudi 26 mars 2026"
+  }
+}

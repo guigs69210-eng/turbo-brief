@@ -1,67 +1,100 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre — Tech/IA en surperformance, mais marché hésitant",
-    "description": "NQ Futures stable (-0.05%), CAC40 +1.23% en clôture. VIX en baisse (-5.98%) mais reste élevé (25.33). Sentiment global neutre malgré les news tech positives.",
-    "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Marché actions en range post-FOMC hawkish. Tech/IA en tête des gains sectoriels."
+    "titre": "Biais baissier renforcé — Régulation chinoise et VIX en hausse",
+    "description": "NQ Futures -0.74%, VIX +7% à 27.13. Chine annonce régulation des guerres de prix destructrices. BRENT +1.57% sur tensions géopolitiques.",
+    "biais": "baissier",
+    "conviction": "forte",
+    "contexte_macro": "La régulation chinoise pourrait impacter les marges des géants tech. Le VIX en hausse reflète une aversion au risque accrue."
   },
-  "plan_actions": [],
-  "niveaux_cles": [
+  "plan_actions": [
     {
-      "label": "Support NQ Futures",
-      "prix": 24300,
-      "type": "support",
-      "action": "Achat CALL si rebond",
-      "couleur": "blue"
+      "heure": "11h45",
+      "titre": "PUT NQ Futures ×18",
+      "sens": "PUT",
+      "mise": "2000 €",
+      "levier": 18,
+      "strike_ko": "Strike 24000 / KO 24500",
+      "gain_cible": "+25% si NQ -1.2%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée 11h45–12h00. Stop mental -40%.",
+      "urgence": "haute"
     },
     {
-      "label": "Résistance NQ Futures",
-      "prix": 24500,
-      "type": "resistance",
-      "action": "Vente PUT si rejet",
+      "heure": "12h15",
+      "titre": "PUT CAC40 ×15",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 15,
+      "strike_ko": "Strike 7800 / KO 7850",
+      "gain_cible": "+20% si CAC40 -0.8%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "Entrée 12h15–12h30. Stop mental -40%.",
+      "urgence": "normale"
+    }
+  ],
+  "niveaux_cles": [
+    {
+      "label": "Support NQ",
+      "prix": 24000,
+      "type": "support",
+      "action": "Achat PUT renforcé si cassé",
       "couleur": "bear"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 7850,
+      "type": "resistance",
+      "action": "Vente PUT si test",
+      "couleur": "bear"
+    },
+    {
+      "label": "Seuil VIX",
+      "prix": 27,
+      "type": "current",
+      "action": "Surveillance accrue",
+      "couleur": "amber"
     }
   ],
   "alertes": [
-    "News tech à surveiller 22h CET (Universal Display)",
-    "VIX à 25.33 — éviter les leviers >×15"
+    "Flash Chine 11h39 — Régulation prix à surveiller",
+    "VIX > 25 — Levier max ×18",
+    "BRENT +1.57% — Risque inflation persistant"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
     "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → clôture possible 22h CET"
+    "Turbos NQ → clôture 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 364",
-      "chg": "-0.05%",
+      "valeur": "24 199",
+      "chg": "-0.74%",
       "dir": "dn"
     },
     "cac40": {
-      "valeur": "7 847",
-      "chg": "+1.23%",
-      "dir": "up"
+      "valeur": "7 784",
+      "chg": "-0.55%",
+      "dir": "dn"
     },
     "brent": {
-      "valeur": "$98.1",
-      "chg": "-1.69%",
-      "dir": "dn"
+      "valeur": "$100.0",
+      "chg": "+1.57%",
+      "dir": "up"
     },
     "vix": {
-      "valeur": "25.3",
-      "chg": "-5.98%",
-      "dir": "dn"
+      "valeur": "27.1",
+      "chg": "+7.02%",
+      "dir": "up"
     },
     "gold": {
-      "valeur": "$4 502.0",
-      "chg": "-1.44%",
+      "valeur": "$4 443.30",
+      "chg": "-1.48%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1562",
-      "chg": "-0.47%",
-      "dir": "dn"
+      "valeur": "1.1566",
+      "chg": "+0.01%",
+      "dir": "up"
     },
     "us10y": {
       "valeur": "4.328%",
@@ -69,9 +102,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Pas d'actions françaises à trader ce soir.",
-  "edition": "21:57 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-25T21:57:48.275937+01:00",
-  "date_fr": "Mercredi 25 mars 2026"
+  "pea_note": "PEA — Ne pas toucher. Focus sur les turbos BEST.",
+  "edition": "11h39 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-03-26T11:39:30.918604+01:00",
+  "date_fr": "Jeudi 26 mars 2026"
 }
