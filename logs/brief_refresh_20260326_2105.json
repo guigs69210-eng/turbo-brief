@@ -1,0 +1,312 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23788.0,
+        "prev_close": 24378.5,
+        "change_pct": -2.42,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7769.3101,
+        "prev_close": 7827.3301,
+        "change_pct": -0.74,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 28.06,
+        "prev_close": 25.35,
+        "change_pct": 10.69,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4363.5,
+        "prev_close": 4510.2002,
+        "change_pct": -3.25,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 101.51,
+        "prev_close": 98.45,
+        "change_pct": 3.11,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1525,
+        "prev_close": 1.1565,
+        "change_pct": -0.35,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.416,
+        "prev_close": 4.328,
+        "change_pct": 2.03,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6523.5,
+        "prev_close": 6639.25,
+        "change_pct": -1.74,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 238.2,
+        "prev_close": 246.8,
+        "change_pct": -3.48,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 458.3,
+        "prev_close": 461.25,
+        "change_pct": -0.64,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.32,
+        "prev_close": 170.8,
+        "change_pct": 0.3,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.87,
+        "prev_close": 84.06,
+        "change_pct": -2.61,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.87,
+        "prev_close": 5.946,
+        "change_pct": -1.28,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-26T20:05:30.199059+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Factbox-How many people have been killed in the US-Israeli war on Iran?",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/factboxhow-many-people-have-been-killed-in-the-usisraeli-war-on-iran-4576864",
+          "source": "investing_news",
+          "published": "2026-03-26T19:43:35+00:00",
+          "age_minutes": 21,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "057df457cff0"
+        },
+        {
+          "title": "White House weighs sidestepping Congress to pay TSA officers, Washington Post reports",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/white-house-weighs-sidestepping-congress-to-pay-tsa-officers-washington-post-reports-4583357",
+          "source": "investing_news",
+          "published": "2026-03-26T19:43:18+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "f64746a84981"
+        },
+        {
+          "title": "California lawmakers approve renaming Cesar Chavez Day to Farmworkers Day",
+          "summary": "",
+          "url": "https://www.investing.com/news/politics-news/california-lawmakers-approve-renaming-cesar-chavez-day-to-farmworkers-day-4583376",
+          "source": "investing_news",
+          "published": "2026-03-26T19:43:01+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "f9bdd3cdd8b4"
+        },
+        {
+          "title": "Oil rises as de-escalation hopes fade; Trump says Iran let 10 ships through Hormuz",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/oil-prices-tick-higher-as-iran-reviews-us-proposal-to-end-war-4581327",
+          "source": "investing_news",
+          "published": "2026-03-26T19:42:58+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "9203bbd760ae"
+        },
+        {
+          "title": "Stressed US grid forcing data centers to get more flexible",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/stressed-us-grid-forcing-data-centers-to-get-more-flexible-4583375",
+          "source": "investing_news",
+          "published": "2026-03-26T19:42:35+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "5e21e17603cc"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Factbox-How many people have been killed in the US-Israeli war on Iran?",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/factboxhow-many-people-have-been-killed-in-the-usisraeli-war-on-iran-4576864",
+          "source": "investing_news",
+          "published": "2026-03-26T19:43:35+00:00",
+          "age_minutes": 21,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "057df457cff0"
+        }
+      ],
+      "sentiment": -0.08,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 5
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-03-26T20:05:27.170940+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-26T21:05:30.199335+01:00",
+    "context": {
+      "note": "",
+      "github_run": "56",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier fort — Escalade géopolitique Iran/US",
+      "description": "NQ Futures -2.42% (23788), VIX à 28.06 (+10.69%) sur tensions Iran/US. Gold -3.25% malgré contexte géopolitique tendu.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Guerre US-Israël en Iran s'intensifie avec 10 navires bloqués dans le détroit d'Ormuz. Trump menace d'action militaire directe."
+    },
+    "plan_actions": [
+      {
+        "heure": "21:10",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 24500",
+        "gain_cible": "+35% si NQ -1.5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 21:10–21:30. Stop mental -40%. Cible prioritaire : 23500 (support clé).",
+        "urgence": "haute"
+      },
+      {
+        "heure": "21:15",
+        "titre": "PUT CAC40 ×15",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 7800 / KO 7850",
+        "gain_cible": "+28% si CAC -1%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 21:15–21:45. Stop mental -40%. Cible : 7700 (support historique).",
+        "urgence": "haute"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ Futures",
+        "prix": 23500,
+        "type": "support",
+        "action": "TP1 si atteint",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24100,
+        "type": "resistance",
+        "action": "Éviter les CALL",
+        "couleur": "bear"
+      },
+      {
+        "label": "Support CAC40",
+        "prix": 7700,
+        "type": "support",
+        "action": "TP1 si atteint",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7850,
+        "type": "resistance",
+        "action": "Éviter les CALL",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Guerre Iran/US en direct — risque de flash crash sur NQ",
+      "VIX > 25 → levier max ×18 autorisé",
+      "News géopolitique à 21:20 (suivi en direct)"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET",
+      "TP1 (+25%) → sortir 50%, déplacer stop à +10%"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 788",
+        "chg": "-2.42%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 769",
+        "chg": "-0.74%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$101.5",
+        "chg": "+3.11%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "28.1",
+        "chg": "+10.69%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 363.5",
+        "chg": "-3.25%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1525",
+        "chg": "-0.35%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.416%",
+        "chg": "+2.03%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises en portefeuille (contexte baissier).",
+    "edition": "21:05 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-26T21:05:35.693671+01:00",
+    "date_fr": "Jeudi 26 mars 2026"
+  }
+}
