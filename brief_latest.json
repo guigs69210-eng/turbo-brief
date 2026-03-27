@@ -1,19 +1,90 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 17:10",
-    "description": "NQ: 23554 (-1.44%) · CAC: 7721 (-0.64%)",
-    "biais": "neutre",
-    "conviction": "faible"
+    "titre": "Biais baissier renforcé — ECB prudente, VIX en hausse",
+    "description": "NQ Futures -2.25% après un rebond technique raté. VIX à 30.34 (+10.73%) reflète une aversion au risque accrue. Brent +4.10% sur tensions géopolitiques persistantes.",
+    "biais": "baissier",
+    "conviction": "forte",
+    "contexte_macro": "La BCE adopte une posture prudente sur les taux, limitant les espoirs de soutien monétaire. Le marché actions US reste sous pression malgré le rebond du pétrole."
   },
-  "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "plan_actions": [
+    {
+      "heure": "19h10",
+      "titre": "PUT NQ Futures ×18",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 18,
+      "strike_ko": "Strike 23000 / KO 23800",
+      "gain_cible": "+35% si NQ -1.8%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée 19h10–19h30. Stop mental -40%.",
+      "urgence": "normale"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Friday 27 march 2026",
-  "edition": "17h10 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "niveaux_cles": [
+    {
+      "label": "Support NQ",
+      "prix": 23000,
+      "type": "support",
+      "action": "TP1 si atteint",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance NQ",
+      "prix": 23800,
+      "type": "resistance",
+      "action": "Sortie si cassé",
+      "couleur": "bear"
+    }
+  ],
+  "alertes": [
+    "ECB Schnabel 22min — impact potentiel sur EURUSD et indices",
+    "VIX > 30 — risque de continuation baissière"
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+    "Turbos NQ → cotent jusqu'à 22h CET"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "23 361",
+      "chg": "-2.25%",
+      "dir": "dn"
+    },
+    "cac40": {
+      "valeur": "7 702",
+      "chg": "-0.88%",
+      "dir": "dn"
+    },
+    "brent": {
+      "valeur": "$105.0",
+      "chg": "+4.10%",
+      "dir": "up"
+    },
+    "vix": {
+      "valeur": "30.3",
+      "chg": "+10.73%",
+      "dir": "up"
+    },
+    "eurusd": {
+      "valeur": "1.1514",
+      "chg": "-0.20%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "$4 517.5",
+      "chg": "+1.93%",
+      "dir": "up"
+    },
+    "us10y": {
+      "valeur": "4.422%",
+      "chg": "+0.14%",
+      "dir": "up"
+    }
+  },
+  "pea_note": "PEA — Fermé pour la session. Pas d'actions FR.",
+  "edition": "19h06 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-03-27T19:06:42.804202+01:00",
+  "date_fr": "Vendredi 27 mars 2026"
 }

@@ -1,0 +1,300 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23360.75,
+        "prev_close": 23898.0,
+        "change_pct": -2.25,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7701.9502,
+        "prev_close": 7770.6899,
+        "change_pct": -0.88,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 30.34,
+        "prev_close": 27.4,
+        "change_pct": 10.73,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4517.5,
+        "prev_close": 4432.0,
+        "change_pct": 1.93,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 105.01,
+        "prev_close": 100.87,
+        "change_pct": 4.1,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1514,
+        "prev_close": 1.1537,
+        "change_pct": -0.2,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.422,
+        "prev_close": 4.416,
+        "change_pct": 0.14,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6430.5,
+        "prev_close": 6552.0,
+        "change_pct": -1.85,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.2,
+        "prev_close": 238.5,
+        "change_pct": -3.9,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 455.75,
+        "prev_close": 458.6,
+        "change_pct": -0.62,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 172.94,
+        "prev_close": 171.18,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.08,
+        "prev_close": 81.85,
+        "change_pct": -0.94,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.882,
+        "prev_close": 5.888,
+        "change_pct": -0.1,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-27T18:06:38.146063+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "ECB should not be in a rush to raise rates, Schnabel says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/ecb-should-not-be-in-a-rush-to-raise-rates-schnabel-says-4585663",
+          "source": "investing_news",
+          "published": "2026-03-27T17:43:38+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "0c4a4b7e01c8"
+        },
+        {
+          "title": "Analysis-Services firms feel the squeeze as oil rally from Iran war fails to spur drilling",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/analysisservices-firms-feel-the-squeeze-as-oil-rally-from-iran-war-fails-to-spur-drilling-4585682",
+          "source": "investing_news",
+          "published": "2026-03-27T17:43:10+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "faf0eabb3068"
+        },
+        {
+          "title": "Form 13G UFP Technologies Inc For: 27 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-ufp-technologies-inc-for-27-march-93CH-4585692",
+          "source": "investing_news",
+          "published": "2026-03-27T17:45:56+00:00",
+          "age_minutes": 20,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "9942945aafec"
+        },
+        {
+          "title": "Trump says he wants Deere, Caterpillar to cut farmers’ tractor costs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-says-he-wants-deere-caterpillar-to-cut-farmers-tractor-costs-4585668",
+          "source": "investing_news",
+          "published": "2026-03-27T17:43:56+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "fabf53bccc19"
+        },
+        {
+          "title": "Apple hires former Google executive to lead AI product marketing",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/apple-hires-former-google-executive-to-lead-ai-product-marketing-93CH-4585690",
+          "source": "investing_news",
+          "published": "2026-03-27T17:43:03+00:00",
+          "age_minutes": 23,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "cce8795647cc"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "ECB should not be in a rush to raise rates, Schnabel says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/ecb-should-not-be-in-a-rush-to-raise-rates-schnabel-says-4585663",
+          "source": "investing_news",
+          "published": "2026-03-27T17:43:38+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "0c4a4b7e01c8"
+        },
+        {
+          "title": "Analysis-Services firms feel the squeeze as oil rally from Iran war fails to spur drilling",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/analysisservices-firms-feel-the-squeeze-as-oil-rally-from-iran-war-fails-to-spur-drilling-4585682",
+          "source": "investing_news",
+          "published": "2026-03-27T17:43:10+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "faf0eabb3068"
+        }
+      ],
+      "sentiment": -0.08,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 3
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-27T18:06:35.769669+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-27T19:06:38.146263+01:00",
+    "context": {
+      "note": "",
+      "github_run": "60",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — ECB prudente, VIX en hausse",
+      "description": "NQ Futures -2.25% après un rebond technique raté. VIX à 30.34 (+10.73%) reflète une aversion au risque accrue. Brent +4.10% sur tensions géopolitiques persistantes.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "La BCE adopte une posture prudente sur les taux, limitant les espoirs de soutien monétaire. Le marché actions US reste sous pression malgré le rebond du pétrole."
+    },
+    "plan_actions": [
+      {
+        "heure": "19h10",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 23000 / KO 23800",
+        "gain_cible": "+35% si NQ -1.8%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 19h10–19h30. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23000,
+        "type": "support",
+        "action": "TP1 si atteint",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 23800,
+        "type": "resistance",
+        "action": "Sortie si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "ECB Schnabel 22min — impact potentiel sur EURUSD et indices",
+      "VIX > 30 — risque de continuation baissière"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 361",
+        "chg": "-2.25%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 702",
+        "chg": "-0.88%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$105.0",
+        "chg": "+4.10%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "30.3",
+        "chg": "+10.73%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1514",
+        "chg": "-0.20%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 517.5",
+        "chg": "+1.93%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.422%",
+        "chg": "+0.14%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Fermé pour la session. Pas d'actions FR.",
+    "edition": "19h06 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-27T19:06:42.804202+01:00",
+    "date_fr": "Vendredi 27 mars 2026"
+  }
+}
