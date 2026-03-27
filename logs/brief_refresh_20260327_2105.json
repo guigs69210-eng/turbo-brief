@@ -1,0 +1,288 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23327.25,
+        "prev_close": 23898.0,
+        "change_pct": -2.39,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7701.9502,
+        "prev_close": 7770.6899,
+        "change_pct": -0.88,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 31.36,
+        "prev_close": 27.4,
+        "change_pct": 14.45,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4545.7998,
+        "prev_close": 4432.0,
+        "change_pct": 2.57,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 105.76,
+        "prev_close": 100.87,
+        "change_pct": 4.85,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1521,
+        "prev_close": 1.1537,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.44,
+        "prev_close": 4.416,
+        "change_pct": 0.54,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6411.0,
+        "prev_close": 6552.0,
+        "change_pct": -2.15,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.2,
+        "prev_close": 238.5,
+        "change_pct": -3.9,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 455.75,
+        "prev_close": 458.6,
+        "change_pct": -0.62,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 172.94,
+        "prev_close": 171.18,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.08,
+        "prev_close": 81.85,
+        "change_pct": -0.94,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.882,
+        "prev_close": 5.888,
+        "change_pct": -0.1,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-27T20:05:06.602085+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Trump tells farmers that tractor companies should lower prices",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-says-he-wants-deere-caterpillar-to-cut-farmers-tractor-costs-4585668",
+          "source": "investing_news",
+          "published": "2026-03-27T19:54:44+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "43d73e9125dc"
+        },
+        {
+          "title": "US veterans’ agency defied court order on union bargaining, judge says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/us-veterans-agency-blatantly-defied-court-order-on-union-bargaining-judge-says-4585595",
+          "source": "investing_news",
+          "published": "2026-03-27T19:54:29+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "a578e64da370"
+        },
+        {
+          "title": "Jefferies reiterates OneSpaWorld stock Buy on Carnival results",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-onespaworld-stock-buy-on-carnival-results-93CH-4585832",
+          "source": "investing_news",
+          "published": "2026-03-27T19:53:10+00:00",
+          "age_minutes": 11,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "8e98dfc56746"
+        },
+        {
+          "title": "Leerink raises Rocket Pharmaceuticals stock price target on FDA approval",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/leerink-raises-rocket-pharmaceuticals-stock-price-target-on-fda-approval-93CH-4585831",
+          "source": "investing_news",
+          "published": "2026-03-27T19:53:10+00:00",
+          "age_minutes": 11,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "74b454931882"
+        },
+        {
+          "title": "Tiger Woods involved in rollover crash in Florida, ABC News reports",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/tiger-woods-involved-in-rollover-crash-in-florida-abc-news-reports-4585830",
+          "source": "investing_news",
+          "published": "2026-03-27T19:48:27+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "7b18e87ef999"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-03-27T20:05:02.861277+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-27T21:05:06.602323+01:00",
+    "context": {
+      "note": "",
+      "github_run": "62",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier marqué — VIX en forte hausse, NQ en correction",
+      "description": "NQ Futures chute de -2.39% sur fond de tensions géopolitiques et de prudence macro. VIX explose à 31.36 (+14.45%), reflétant une aversion au risque accrue.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Marchés actions en correction après une semaine volatile. Le secteur tech, leader de la hausse récente, subit des prises de bénéfices. L'or et le Brent résistent grâce à des facteurs géopolitiques."
+    },
+    "plan_actions": [
+      {
+        "heure": "21h10",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 23000 / KO 24000",
+        "gain_cible": "+35% si NQ -1.5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 21h10–21h30. Stop mental -40%. Levier réduit en raison du VIX > 25.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "21h15",
+        "titre": "PUT CAC40 ×15",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7650 / KO 7750",
+        "gain_cible": "+28% si CAC -1%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 21h15–21h30. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23000,
+        "type": "support",
+        "action": "Entrée PUT confirmée si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7800,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil VIX",
+        "prix": 30,
+        "type": "current",
+        "action": "Surveillance accrue",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "VIX > 30 — Risque de gap baissier demain matin",
+      "NQ Futures proche de son KO PUT (24000) — vigilance accrue"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+      "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 327",
+        "chg": "-2.39%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 702",
+        "chg": "-0.88%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$105.8",
+        "chg": "+4.85%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "31.4",
+        "chg": "+14.45%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "4 545.80",
+        "chg": "+2.57%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1521",
+        "chg": "-0.14%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.44",
+        "chg": "+0.54%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Fermé. Aucun trade possible.",
+    "edition": "21h05 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-27T21:05:11.997966+01:00",
+    "date_fr": "Vendredi 27 mars 2026"
+  }
+}
