@@ -1,0 +1,319 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23732.75,
+        "prev_close": 23898.0,
+        "change_pct": -0.69,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7705.5,
+        "prev_close": 7770.6899,
+        "change_pct": -0.84,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 28.7,
+        "prev_close": 27.4,
+        "change_pct": 4.74,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4455.1001,
+        "prev_close": 4432.0,
+        "change_pct": 0.52,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 103.33,
+        "prev_close": 100.87,
+        "change_pct": 2.44,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1525,
+        "prev_close": 1.1537,
+        "change_pct": -0.1,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.416,
+        "prev_close": 4.328,
+        "change_pct": 2.03,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6513.5,
+        "prev_close": 6552.0,
+        "change_pct": -0.59,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 234.7,
+        "prev_close": 238.5,
+        "change_pct": -1.59,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 457.15,
+        "prev_close": 458.6,
+        "change_pct": -0.32,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 171.96,
+        "prev_close": 171.18,
+        "change_pct": 0.46,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.85,
+        "prev_close": 81.85,
+        "change_pct": -1.22,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.84,
+        "prev_close": 5.888,
+        "change_pct": -0.82,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-27T10:11:47.716307+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Iran conflict latest: Pentagon weighing sending additional ground troops, WSJ says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/iran-conflict-latest-pentagon-weighing-sending-additional-ground-troops-wsj-says-4584406",
+          "source": "investing_news",
+          "published": "2026-03-27T09:58:49+00:00",
+          "age_minutes": 12,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "33077962bc8b"
+        },
+        {
+          "title": "Euro area inflation expectations softened ahead of Iran war: ECB poll",
+          "summary": "",
+          "url": "https://www.investing.com/news/economic-indicators/euro-area-inflation-expectations-softened-ahead-of-iran-war-ecb-poll-4584373",
+          "source": "investing_news",
+          "published": "2026-03-27T09:41:50+00:00",
+          "age_minutes": 29,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "130bf85b6bcc"
+        },
+        {
+          "title": "Evercore ISI cuts Nike stock price target on earnings concerns",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/evercore-isi-cuts-nike-stock-price-target-on-earnings-concerns-93CH-4584390",
+          "source": "investing_news",
+          "published": "2026-03-27T09:54:55+00:00",
+          "age_minutes": 16,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "7e9a818dd991"
+        },
+        {
+          "title": "P3 Health Partners falls over 6% on weak guidance despite Q4 beat",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/p3-health-partners-falls-over-6-on-weak-guidance-despite-q4-beat-93CH-4584383",
+          "source": "investing_news",
+          "published": "2026-03-27T09:45:20+00:00",
+          "age_minutes": 26,
+          "urgency": "medium",
+          "sentiment": -0.3333333333333333,
+          "id": "b3850b0cf5a1"
+        },
+        {
+          "title": "Citi keeps S&P 500 base at 7700; flags rising risks to ‘goldilocks’ outlook",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/citi-keeps-sp-500-base-at-7700-flags-rising-risks-to-goldilocks-outlook-4584372",
+          "source": "investing_news",
+          "published": "2026-03-27T09:41:25+00:00",
+          "age_minutes": 30,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "4503a79813ac"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Iran conflict latest: Pentagon weighing sending additional ground troops, WSJ says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/iran-conflict-latest-pentagon-weighing-sending-additional-ground-troops-wsj-says-4584406",
+          "source": "investing_news",
+          "published": "2026-03-27T09:58:49+00:00",
+          "age_minutes": 12,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "33077962bc8b"
+        },
+        {
+          "title": "Euro area inflation expectations softened ahead of Iran war: ECB poll",
+          "summary": "",
+          "url": "https://www.investing.com/news/economic-indicators/euro-area-inflation-expectations-softened-ahead-of-iran-war-ecb-poll-4584373",
+          "source": "investing_news",
+          "published": "2026-03-27T09:41:50+00:00",
+          "age_minutes": 29,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "130bf85b6bcc"
+        }
+      ],
+      "sentiment": -0.19,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 5
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 1
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-27T10:11:42.217584+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-27T11:11:47.716599+01:00",
+    "context": {
+      "note": "",
+      "github_run": "57",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Risque géopolitique Iran",
+      "description": "NQ Futures -0.69%, VIX 28.7 (+4.74%) en hausse. Brent +2.44% sur tensions géopolitiques. Sentiment global négatif (-0.19).",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Tensions Iran/Pentagone et inflation européenne en baisse. Marchés actions sous pression avec VIX en hausse."
+    },
+    "plan_actions": [
+      {
+        "heure": "11h15",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 23500 / KO 24200",
+        "gain_cible": "+35% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 11h15–11h45. Stop mental -40%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "11h30",
+        "titre": "PUT CAC40 ×15",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7700 / KO 7850",
+        "gain_cible": "+25% si CAC40 -0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 11h30–12h00. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23500,
+        "type": "support",
+        "action": "Entrée PUT",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7850,
+        "type": "resistance",
+        "action": "KO PUT CAC40",
+        "couleur": "bear"
+      },
+      {
+        "label": "KO PUT NQ",
+        "prix": 24200,
+        "type": "resistance",
+        "action": "KO Turbo",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Flash Iran 12min à 11h23",
+      "VIX > 25 → levier max ×20 autorisé"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → clôture 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 733",
+        "chg": "-0.69%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 706",
+        "chg": "-0.84%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$103.3",
+        "chg": "+2.44%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "28.7",
+        "chg": "+4.74%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "4 455.10",
+        "chg": "+0.52%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1525",
+        "chg": "-0.10%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.416",
+        "chg": "+2.03%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur CAC40.",
+    "edition": "11h11 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-27T11:11:53.124739+01:00",
+    "date_fr": "Vendredi 27 mars 2026"
+  }
+}
