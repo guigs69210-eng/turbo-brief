@@ -1,0 +1,225 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23554.0,
+        "prev_close": 23898.0,
+        "change_pct": -1.44,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7720.5898,
+        "prev_close": 7770.6899,
+        "change_pct": -0.64,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 28.93,
+        "prev_close": 27.4,
+        "change_pct": 5.58,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4556.2002,
+        "prev_close": 4432.0,
+        "change_pct": 2.8,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 104.35,
+        "prev_close": 100.87,
+        "change_pct": 3.45,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1526,
+        "prev_close": 1.1537,
+        "change_pct": -0.09,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.418,
+        "prev_close": 4.416,
+        "change_pct": 0.05,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6472.25,
+        "prev_close": 6552.0,
+        "change_pct": -1.22,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 227.6,
+        "prev_close": 238.5,
+        "change_pct": -4.57,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 457.15,
+        "prev_close": 458.6,
+        "change_pct": -0.32,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 173.5,
+        "prev_close": 171.18,
+        "change_pct": 1.36,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.41,
+        "prev_close": 81.85,
+        "change_pct": -0.54,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.873,
+        "prev_close": 5.888,
+        "change_pct": -0.25,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-27T16:10:11.924884+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "The market is starting to think the Federal Reserve's next move is raising interest rates",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/the-market-is-starting-to-think-the-federal-reserves-next-move-is-raising-interest-rates-154704986.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T15:47:04+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "f6228f21dc7b"
+        },
+        {
+          "title": "Stock Market Today: Nasdaq Correction Deepens On U.S.-Iran War News; Sandisk Finds Support (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T15:38:22+00:00",
+          "age_minutes": 31,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "042ef9c0c456"
+        },
+        {
+          "title": "Cruise operator Carnival cuts annual profit forecast as fuel costs surge",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/cruise-operator-carnival-cuts-annual-profit-forecast-on-higher-fuel-costs-4585233",
+          "source": "investing_news",
+          "published": "2026-03-27T16:07:18+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "f2458088d93a"
+        },
+        {
+          "title": "WTO reform talks face U.S.-India wall in Cameroon, diplomats say",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/wto-reform-talks-face-usindia-wall-in-cameroon-diplomats-say-4584772",
+          "source": "investing_news",
+          "published": "2026-03-27T16:06:58+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1bdb281fce99"
+        },
+        {
+          "title": "LB Pharmaceuticals presents LB-102 cognitive data at SIRS meeting",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/lb-pharmaceuticals-presents-lb102-cognitive-data-at-sirs-meeting-93CH-4585549",
+          "source": "investing_news",
+          "published": "2026-03-27T16:05:16+00:00",
+          "age_minutes": 4,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "ee37f79ac21f"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "The market is starting to think the Federal Reserve's next move is raising interest rates",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/the-market-is-starting-to-think-the-federal-reserves-next-move-is-raising-interest-rates-154704986.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T15:47:04+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "f6228f21dc7b"
+        },
+        {
+          "title": "Stock Market Today: Nasdaq Correction Deepens On U.S.-Iran War News; Sandisk Finds Support (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T15:38:22+00:00",
+          "age_minutes": 31,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "042ef9c0c456"
+        }
+      ],
+      "sentiment": 0.15,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 13
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-03-27T16:10:09.620357+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-03-27T17:10:11.925153+01:00",
+    "context": {
+      "note": "",
+      "github_run": "59",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 17:10",
+      "description": "NQ: 23554 (-1.44%) · CAC: 7721 (-0.64%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Friday 27 march 2026",
+    "edition": "17h10 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}
