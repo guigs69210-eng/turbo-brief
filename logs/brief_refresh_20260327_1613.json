@@ -1,0 +1,308 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23518.75,
+        "prev_close": 23898.0,
+        "change_pct": -1.59,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7704.96,
+        "prev_close": 7770.6899,
+        "change_pct": -0.85,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 29.42,
+        "prev_close": 27.4,
+        "change_pct": 7.37,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4538.8999,
+        "prev_close": 4432.0,
+        "change_pct": 2.41,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 103.64,
+        "prev_close": 100.87,
+        "change_pct": 2.75,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1535,
+        "prev_close": 1.1537,
+        "change_pct": -0.01,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.43,
+        "prev_close": 4.416,
+        "change_pct": 0.32,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6472.0,
+        "prev_close": 6552.0,
+        "change_pct": -1.22,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 228.65,
+        "prev_close": 238.5,
+        "change_pct": -4.13,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 455.3,
+        "prev_close": 458.6,
+        "change_pct": -0.72,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 173.54,
+        "prev_close": 171.18,
+        "change_pct": 1.38,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.19,
+        "prev_close": 81.85,
+        "change_pct": -0.81,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.87,
+        "prev_close": 5.888,
+        "change_pct": -0.31,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-27T15:12:58.759727+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Stock Market Today: Dow Slumps 400 Points On U.S.-Iran War News; Sandisk Jumps, Finds Support (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T14:49:17+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "8046d4cf9c72"
+        },
+        {
+          "title": "How high will gold go this year? Top 3 predictions about gold prices.",
+          "summary": "",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/how-high-will-gold-go-this-year-top-3-predictions-about-gold-prices-150000192.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T15:00:00+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "b9eb1eaaa7e0"
+        },
+        {
+          "title": "Funds Go Nuclear For This IBD 50 Stock With Unique Power. AI Data Centers, U.S. Navy Fuel Growth.",
+          "summary": "",
+          "url": "https://www.investors.com/research/ibd-stock-analysis/bwxt-stock-nuclear-energy-ai-data-center-fuels-growth/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T14:55:05+00:00",
+          "age_minutes": 17,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "765e82a5832f"
+        },
+        {
+          "title": "1 Low-Cost ETF That Could Outperform Actively Managed Funds This Year",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/1-low-cost-etf-could-145000129.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T14:50:00+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "f51de98046f5"
+        },
+        {
+          "title": "Disney’s Stock Is A Dog",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/disney-stock-dog-144534578.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T14:45:34+00:00",
+          "age_minutes": 27,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "86bc5e708f83"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Stock Market Today: Dow Slumps 400 Points On U.S.-Iran War News; Sandisk Jumps, Finds Support (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-27T14:49:17+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "8046d4cf9c72"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 8
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-27T15:12:52.786811+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-27T16:12:58.759995+01:00",
+    "context": {
+      "note": "",
+      "github_run": "58",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Escalade géopolitique Iran/US",
+      "description": "NQ Futures -1.59% à 23518.75, VIX +7.37% à 29.42. Gold +2.41% sur craintes géopolitiques. Brent +2.75% malgré tensions.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Tensions Iran/US après une frappe américaine en Syrie. Marché actions US en repli de 400 points sur la news. Gold et pétrole en hausse."
+    },
+    "plan_actions": [
+      {
+        "heure": "16:15",
+        "titre": "PUT NQ Futures ×18 (clôture obligatoire)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 23500 / KO 24000",
+        "gain_cible": "+25% si NQ -1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 16:15–16:30. Stop mental -40%. Clôture avant 17h30 CET.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "16:20",
+        "titre": "PUT CAC40 ×15 (clôture obligatoire)",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7700 / KO 7800",
+        "gain_cible": "+20% si CAC40 -0.5%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 16:20–16:40. Stop mental -40%. Clôture avant 17h30 CET.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23400,
+        "type": "support",
+        "action": "Entrée PUT confirmée si test",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7750,
+        "type": "resistance",
+        "action": "Validation baissière si rejet",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil KO PUT NQ",
+        "prix": 24000,
+        "type": "current",
+        "action": "KO si dépassé à la hausse",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "News géopolitique Iran/US en cours — risque de gap lundi",
+      "Clôture positions avant 17h30 CET pour actions FR"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "TP1 (+25%) → sortir 50%, déplacer stop à +10%"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 519",
+        "chg": "-1.59%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 705",
+        "chg": "-0.85%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$103.6",
+        "chg": "+2.75%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "29.4",
+        "chg": "+7.37%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 538.90",
+        "chg": "+2.41%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1535",
+        "chg": "-0.01%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.43%",
+        "chg": "+0.32%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Aucune action FR en portefeuille. Clôture positions avant 17h30 CET.",
+    "edition": "16:12 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-27T16:13:04.386655+01:00",
+    "date_fr": "Vendredi 27 mars 2026"
+  }
+}

@@ -1,109 +1,109 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier renforcé — Risque géopolitique Iran",
-    "description": "NQ Futures -0.69%, VIX 28.7 (+4.74%) en hausse. Brent +2.44% sur tensions géopolitiques. Sentiment global négatif (-0.19).",
+    "titre": "Biais baissier renforcé — Escalade géopolitique Iran/US",
+    "description": "NQ Futures -1.59% à 23518.75, VIX +7.37% à 29.42. Gold +2.41% sur craintes géopolitiques. Brent +2.75% malgré tensions.",
     "biais": "baissier",
     "conviction": "forte",
-    "contexte_macro": "Tensions Iran/Pentagone et inflation européenne en baisse. Marchés actions sous pression avec VIX en hausse."
+    "contexte_macro": "Tensions Iran/US après une frappe américaine en Syrie. Marché actions US en repli de 400 points sur la news. Gold et pétrole en hausse."
   },
   "plan_actions": [
     {
-      "heure": "11h15",
-      "titre": "PUT NQ Futures ×18",
+      "heure": "16:15",
+      "titre": "PUT NQ Futures ×18 (clôture obligatoire)",
       "sens": "PUT",
       "mise": "1200 €",
       "levier": 18,
-      "strike_ko": "Strike 23500 / KO 24200",
-      "gain_cible": "+35% si NQ -1.2%",
+      "strike_ko": "Strike 23500 / KO 24000",
+      "gain_cible": "+25% si NQ -1%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 11h15–11h45. Stop mental -40%.",
+      "note": "Entrée 16:15–16:30. Stop mental -40%. Clôture avant 17h30 CET.",
       "urgence": "haute"
     },
     {
-      "heure": "11h30",
-      "titre": "PUT CAC40 ×15",
+      "heure": "16:20",
+      "titre": "PUT CAC40 ×15 (clôture obligatoire)",
       "sens": "PUT",
       "mise": "800 €",
       "levier": 15,
-      "strike_ko": "Strike 7700 / KO 7850",
-      "gain_cible": "+25% si CAC40 -0.8%",
+      "strike_ko": "Strike 7700 / KO 7800",
+      "gain_cible": "+20% si CAC40 -0.5%",
       "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée 11h30–12h00. Stop mental -40%.",
+      "note": "Entrée 16:20–16:40. Stop mental -40%. Clôture avant 17h30 CET.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
       "label": "Support NQ",
-      "prix": 23500,
+      "prix": 23400,
       "type": "support",
-      "action": "Entrée PUT",
+      "action": "Entrée PUT confirmée si test",
       "couleur": "bear"
     },
     {
       "label": "Résistance CAC40",
-      "prix": 7850,
+      "prix": 7750,
       "type": "resistance",
-      "action": "KO PUT CAC40",
+      "action": "Validation baissière si rejet",
       "couleur": "bear"
     },
     {
-      "label": "KO PUT NQ",
-      "prix": 24200,
-      "type": "resistance",
-      "action": "KO Turbo",
+      "label": "Seuil KO PUT NQ",
+      "prix": 24000,
+      "type": "current",
+      "action": "KO si dépassé à la hausse",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Flash Iran 12min à 11h23",
-    "VIX > 25 → levier max ×20 autorisé"
+    "News géopolitique Iran/US en cours — risque de gap lundi",
+    "Clôture positions avant 17h30 CET pour actions FR"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
     "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → clôture 22h CET"
+    "TP1 (+25%) → sortir 50%, déplacer stop à +10%"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "23 733",
-      "chg": "-0.69%",
+      "valeur": "23 519",
+      "chg": "-1.59%",
       "dir": "dn"
     },
     "cac40": {
-      "valeur": "7 706",
-      "chg": "-0.84%",
+      "valeur": "7 705",
+      "chg": "-0.85%",
       "dir": "dn"
     },
     "brent": {
-      "valeur": "$103.3",
-      "chg": "+2.44%",
+      "valeur": "$103.6",
+      "chg": "+2.75%",
       "dir": "up"
     },
     "vix": {
-      "valeur": "28.7",
-      "chg": "+4.74%",
+      "valeur": "29.4",
+      "chg": "+7.37%",
       "dir": "up"
     },
     "gold": {
-      "valeur": "4 455.10",
-      "chg": "+0.52%",
+      "valeur": "$4 538.90",
+      "chg": "+2.41%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1525",
-      "chg": "-0.10%",
+      "valeur": "1.1535",
+      "chg": "-0.01%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.416",
-      "chg": "+2.03%",
+      "valeur": "4.43%",
+      "chg": "+0.32%",
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Focus sur CAC40.",
-  "edition": "11h11 CET",
+  "pea_note": "PEA — Aucune action FR en portefeuille. Clôture positions avant 17h30 CET.",
+  "edition": "16:12 CET",
   "mode": "news_flash",
-  "timestamp": "2026-03-27T11:11:53.124739+01:00",
+  "timestamp": "2026-03-27T16:13:04.386655+01:00",
   "date_fr": "Vendredi 27 mars 2026"
 }
