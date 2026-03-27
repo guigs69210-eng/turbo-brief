@@ -1,0 +1,296 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23348.5,
+        "prev_close": 23898.0,
+        "change_pct": -2.3,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7701.9502,
+        "prev_close": 7770.6899,
+        "change_pct": -0.88,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 31.23,
+        "prev_close": 27.4,
+        "change_pct": 13.98,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4547.2998,
+        "prev_close": 4432.0,
+        "change_pct": 2.6,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 105.15,
+        "prev_close": 100.87,
+        "change_pct": 4.24,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1517,
+        "prev_close": 1.1537,
+        "change_pct": -0.17,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.44,
+        "prev_close": 4.416,
+        "change_pct": 0.54,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6420.75,
+        "prev_close": 6552.0,
+        "change_pct": -2.0,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.2,
+        "prev_close": 238.5,
+        "change_pct": -3.9,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 455.75,
+        "prev_close": 458.6,
+        "change_pct": -0.62,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 172.94,
+        "prev_close": 171.18,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.08,
+        "prev_close": 81.85,
+        "change_pct": -0.94,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.882,
+        "prev_close": 5.888,
+        "change_pct": -0.1,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-27T19:29:05.471278+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Elon Musk joins Trump-Modi call amid wartime crisis",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/elon-musk-joins-trumpmodi-call-amid-wartime-crisis-93CH-4585794",
+          "source": "investing_news",
+          "published": "2026-03-27T19:12:09+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "61b51e6e0304"
+        },
+        {
+          "title": "Displaced mothers in Lebanon welcome babies’ new lives with hope and fear",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/displaced-mothers-in-lebanon-welcome-babies-new-lives-with-hope-and-fear-4585796",
+          "source": "investing_news",
+          "published": "2026-03-27T19:12:38+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "f0d62cfcbe65"
+        },
+        {
+          "title": "Form DEF 14A MID PENN BANCORP For: 27 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-def-14a-mid-penn-bancorp-for-27-march-93CH-4585795",
+          "source": "investing_news",
+          "published": "2026-03-27T19:12:20+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "9e58d747e27b"
+        },
+        {
+          "title": "Oil erases weekly loss, Brent above $110 as steel, energy targets struck in Iran",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/oil-prices-tick-down-set-for-weekly-losses-on-middle-east-deescalation-hopes-4584055",
+          "source": "investing_news",
+          "published": "2026-03-27T19:10:58+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "8216ca64d9b0"
+        },
+        {
+          "title": "Ncino stock hits 52-week low at $13.80",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/ncino-stock-hits-52week-low-at-1380-93CH-4585792",
+          "source": "investing_news",
+          "published": "2026-03-27T19:10:24+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a93fda23ce5d"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Elon Musk joins Trump-Modi call amid wartime crisis",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/elon-musk-joins-trumpmodi-call-amid-wartime-crisis-93CH-4585794",
+          "source": "investing_news",
+          "published": "2026-03-27T19:12:09+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "61b51e6e0304"
+        }
+      ],
+      "sentiment": -0.15,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 5
+        }
+      ],
+      "scanned_at": "2026-03-27T19:28:58.959502+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-27T20:29:05.471542+01:00",
+    "context": {
+      "note": "",
+      "github_run": "61",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Tensions géopolitiques et VIX en hausse",
+      "description": "NQ Futures -2.30% à 23348.5, VIX à 31.23 (+13.98%). Elon Musk rejoint un appel Trump-Modi en pleine crise géopolitique. Brent +4.24% à 105.15 suite à des frappes en Iran.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "VIX >30 et tensions géopolitiques majeures (Iran) pèsent sur les marchés. Le FOMC reste en arrière-plan avec une politique hawkish."
+    },
+    "plan_actions": [
+      {
+        "heure": "20:30",
+        "titre": "PUT NQ Futures ×15 (session US)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 15,
+        "strike_ko": "Strike 23500 / KO 24000",
+        "gain_cible": "+25% si NQ -1.5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 20:30–21:00. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "20:35",
+        "titre": "CALL GOLD ×12 (session US)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 12,
+        "strike_ko": "Strike 4500 / KO 4400",
+        "gain_cible": "+20% si Gold +1%",
+        "plateforme": "sgbourse.fr → Gold → CALL BEST",
+        "note": "Entrée 20:35–21:00. Stop mental -40%. TP1 à +20% → sortir 50%, stop déplacé à +5%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23000,
+        "type": "support",
+        "action": "Achat PUT renforcé si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 23800,
+        "type": "resistance",
+        "action": "TP1 PUT si atteint",
+        "couleur": "bear"
+      },
+      {
+        "label": "Support Gold",
+        "prix": 4500,
+        "type": "support",
+        "action": "Entrée CALL renforcée si rebond",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "News géopolitique majeure à surveiller (Iran)",
+      "VIX >30 : volatilité extrême, éviter les leviers >×15"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passé)",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 348",
+        "chg": "-2.30%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 702",
+        "chg": "-0.88%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$105.2",
+        "chg": "+4.24%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "31.2",
+        "chg": "+13.98%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 547.30",
+        "chg": "+2.60%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1517",
+        "chg": "-0.17%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.44%",
+        "chg": "+0.54%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Fermé pour la journée.",
+    "edition": "20:29 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-27T20:29:10.935577+01:00",
+    "date_fr": "Vendredi 27 mars 2026"
+  }
+}
