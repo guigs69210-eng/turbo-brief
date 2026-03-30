@@ -1,0 +1,291 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23101.75,
+        "prev_close": 23299.75,
+        "change_pct": -0.85,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7772.4502,
+        "prev_close": 7700.3301,
+        "change_pct": 0.94,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 30.61,
+        "prev_close": 31.06,
+        "change_pct": -1.45,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4540.3999,
+        "prev_close": 4528.1001,
+        "change_pct": 0.27,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.75,
+        "prev_close": 107.84,
+        "change_pct": 0.84,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1461,
+        "prev_close": 1.151,
+        "change_pct": -0.42,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.342,
+        "prev_close": 4.44,
+        "change_pct": -2.21,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6382.25,
+        "prev_close": 6409.25,
+        "change_pct": -0.42,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 227.55,
+        "prev_close": 227.45,
+        "change_pct": 0.04,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.65,
+        "prev_close": 455.75,
+        "change_pct": 1.73,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 176.38,
+        "prev_close": 173.08,
+        "change_pct": 1.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.92,
+        "prev_close": 81.21,
+        "change_pct": -0.36,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.993,
+        "prev_close": 5.876,
+        "change_pct": 1.99,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-30T21:09:26.607202+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Factbox-How many people have been killed in the Iran war?",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxhow-many-people-have-been-killed-in-the-usisraeli-war-on-iran-4586333",
+          "source": "investing_news",
+          "published": "2026-03-30T21:00:36+00:00",
+          "age_minutes": 8,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "32e48f9585d1"
+        },
+        {
+          "title": "Sangamo Therapeutics earnings missed by $0.10, revenue fell short of estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/sangamo-therapeutics-earnings-missed-by-010-revenue-fell-short-of-estimates-4588773",
+          "source": "investing_news",
+          "published": "2026-03-30T20:59:19+00:00",
+          "age_minutes": 10,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "d6d67e26ea90"
+        },
+        {
+          "title": "Trading Day: Growth fears snowball",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trading-day-growth-fears-snowball-4588789",
+          "source": "investing_news",
+          "published": "2026-03-30T21:06:33+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "f5516bb24d6c"
+        },
+        {
+          "title": "Truist initiates Digital Realty stock with buy rating on data center demand",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/truist-initiates-digital-realty-stock-with-buy-rating-on-data-center-demand-93CH-4588786",
+          "source": "investing_news",
+          "published": "2026-03-30T21:01:59+00:00",
+          "age_minutes": 7,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "61ebf0f08d2f"
+        },
+        {
+          "title": "Truist initiates Equinix stock coverage with buy rating on scale",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/truist-initiates-equinix-stock-coverage-with-buy-rating-on-scale-93CH-4588785",
+          "source": "investing_news",
+          "published": "2026-03-30T21:01:49+00:00",
+          "age_minutes": 7,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "0dca9b924ba6"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Factbox-How many people have been killed in the Iran war?",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxhow-many-people-have-been-killed-in-the-usisraeli-war-on-iran-4586333",
+          "source": "investing_news",
+          "published": "2026-03-30T21:00:36+00:00",
+          "age_minutes": 8,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "32e48f9585d1"
+        },
+        {
+          "title": "Sangamo Therapeutics earnings missed by $0.10, revenue fell short of estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/sangamo-therapeutics-earnings-missed-by-010-revenue-fell-short-of-estimates-4588773",
+          "source": "investing_news",
+          "published": "2026-03-30T20:59:19+00:00",
+          "age_minutes": 10,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "d6d67e26ea90"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 4
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 4
+        }
+      ],
+      "scanned_at": "2026-03-30T21:09:20.924634+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-30T23:09:26.607496+02:00",
+    "context": {
+      "note": "",
+      "github_run": "68",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier sur NQ — Géopolitique et résultats décevants",
+      "description": "NQ Futures -0.85% après news Iran (guerre) et résultats Sangamo Therapeutics en dessous des attentes. VIX à 30.61 (+1.45%).",
+      "biais": "baissier",
+      "conviction": "modérée",
+      "contexte_macro": "Guerre Iranienne en cours, résultats tech décevants aux US. Sentiment global neutre."
+    },
+    "plan_actions": [
+      {
+        "heure": "23h10",
+        "titre": "PUT NQ Futures ×18",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 23000 / KO 23500",
+        "gain_cible": "+25% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 23h10–23h30. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 22900,
+        "type": "support",
+        "action": "Entrée PUT confirmée",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 23300,
+        "type": "resistance",
+        "action": "Sortie si dépassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "News Iran en cours (8min)",
+      "Résultats Sangamo Therapeutics (10min)"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Indices US → clôture possible 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 102",
+        "chg": "-0.85%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 772",
+        "chg": "+0.94%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$108.8",
+        "chg": "+0.84%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "30.6",
+        "chg": "-1.45%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4540.40",
+        "chg": "+0.27%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1461",
+        "chg": "-0.42%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.342",
+        "chg": "-2.21%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Hors session. Focus sur indices US.",
+    "edition": "23h09 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-30T23:09:30.556544+02:00",
+    "date_fr": "Lundi 30 mars 2026"
+  }
+}

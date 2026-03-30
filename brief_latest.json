@@ -1,81 +1,53 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier fort — Tensions géopolitiques et VIX élevé",
-    "description": "NQ Futures en baisse (-0.87%) à 23097.75, VIX à 30.81 (+volatilité). Trump menace Téhéran, tensions géopolitiques persistantes.",
+    "titre": "Biais baissier sur NQ — Géopolitique et résultats décevants",
+    "description": "NQ Futures -0.85% après news Iran (guerre) et résultats Sangamo Therapeutics en dessous des attentes. VIX à 30.61 (+1.45%).",
     "biais": "baissier",
-    "conviction": "forte",
-    "contexte_macro": "VIX > 30 et tensions Iran-US pèsent sur les marchés. Tech en correction après forte hausse récente."
+    "conviction": "modérée",
+    "contexte_macro": "Guerre Iranienne en cours, résultats tech décevants aux US. Sentiment global neutre."
   },
   "plan_actions": [
     {
-      "heure": "22h00",
-      "titre": "PUT NQ Futures ×15 (Turbo BEST SG)",
+      "heure": "23h10",
+      "titre": "PUT NQ Futures ×18",
       "sens": "PUT",
       "mise": "2000 €",
-      "levier": 15,
-      "strike_ko": "Strike 23200 / KO 23500",
+      "levier": 18,
+      "strike_ko": "Strike 23000 / KO 23500",
       "gain_cible": "+25% si NQ -1.2%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 22h00–22h15. Stop mental -40%.",
-      "urgence": "haute"
-    },
-    {
-      "heure": "22h15",
-      "titre": "PUT CAC40 ×12 (Turbo BEST SG)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 12,
-      "strike_ko": "Strike 7850 / KO 7900",
-      "gain_cible": "+20% si CAC40 -0.8%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée 22h15–22h30. Stop mental -40%.",
+      "note": "Entrée 23h10–23h30. Stop mental -40%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
       "label": "Support NQ",
-      "prix": 22950,
+      "prix": 22900,
       "type": "support",
-      "action": "Achat agressif si testé",
+      "action": "Entrée PUT confirmée",
       "couleur": "bear"
     },
     {
-      "label": "Résistance CAC40",
-      "prix": 7850,
+      "label": "Résistance NQ",
+      "prix": 23300,
       "type": "resistance",
-      "action": "Vente si testée",
-      "couleur": "bear"
-    },
-    {
-      "label": "KO PUT NQ",
-      "prix": 23500,
-      "type": "barrière",
-      "action": "Sortie immédiate si dépassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "KO PUT CAC",
-      "prix": 7900,
-      "type": "barrière",
-      "action": "Sortie immédiate si dépassé",
+      "action": "Sortie si dépassé",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Suivre l'évolution des tensions Iran-US",
-    "Surveiller le VIX (niveau >30)",
-    "Attention aux news géopolitiques soudaines"
+    "News Iran en cours (8min)",
+    "Résultats Sangamo Therapeutics (10min)"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
-    "Turbos NQ/indices → cotent jusqu'à 22h30 CET"
+    "Indices US → clôture possible 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "23 098",
-      "chg": "-0.87%",
+      "valeur": "23 102",
+      "chg": "-0.85%",
       "dir": "dn"
     },
     "cac40": {
@@ -84,18 +56,18 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$108.0",
-      "chg": "+0.14%",
+      "valeur": "$108.8",
+      "chg": "+0.84%",
       "dir": "up"
     },
     "vix": {
-      "valeur": "30.8",
-      "chg": "-0.80%",
+      "valeur": "30.6",
+      "chg": "-1.45%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 538.40",
-      "chg": "+0.23%",
+      "valeur": "$4540.40",
+      "chg": "+0.27%",
       "dir": "up"
     },
     "eurusd": {
@@ -104,14 +76,14 @@
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.342%",
+      "valeur": "4.342",
       "chg": "-2.21%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher (session européenne déjà clôturée).",
-  "edition": "21h59 CET",
+  "pea_note": "PEA — Hors session. Focus sur indices US.",
+  "edition": "23h09 CET",
   "mode": "news_flash",
-  "timestamp": "2026-03-30T21:59:30.419948+02:00",
+  "timestamp": "2026-03-30T23:09:30.556544+02:00",
   "date_fr": "Lundi 30 mars 2026"
 }
