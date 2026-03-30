@@ -1,109 +1,110 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier marqué — VIX en forte hausse, NQ en correction",
-    "description": "NQ Futures chute de -2.39% sur fond de tensions géopolitiques et de prudence macro. VIX explose à 31.36 (+14.45%), reflétant une aversion au risque accrue.",
-    "biais": "baissier",
-    "conviction": "forte",
-    "contexte_macro": "Marchés actions en correction après une semaine volatile. Le secteur tech, leader de la hausse récente, subit des prises de bénéfices. L'or et le Brent résistent grâce à des facteurs géopolitiques."
+    "titre": "Biais haussier sur NQ — Tech/IA et or en soutien",
+    "description": "NQ Futures +0.67% malgré VIX à 30.73. Or +0.87% et Brent stable à 107.47. Sentiment global légèrement positif (+0.05) malgré tensions géopolitiques.",
+    "biais": "haussier",
+    "conviction": "modérée",
+    "contexte_macro": "Les valeurs tech/IA tirent le Nasdaq après des annonces positives sur l'IA générative. L'or reste un actif refuge malgré la hausse des taux US."
   },
   "plan_actions": [
     {
-      "heure": "21h10",
-      "titre": "PUT NQ Futures ×18",
-      "sens": "PUT",
-      "mise": "1200 €",
+      "heure": "13h40",
+      "titre": "CALL NQ Futures ×18",
+      "sens": "CALL",
+      "mise": "2000 €",
       "levier": 18,
-      "strike_ko": "Strike 23000 / KO 24000",
-      "gain_cible": "+35% si NQ -1.5%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 21h10–21h30. Stop mental -40%. Levier réduit en raison du VIX > 25.",
-      "urgence": "haute"
+      "strike_ko": "Strike 23200 / KO 22800",
+      "gain_cible": "+25% si NQ +1%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée 13h40–14h00. Stop mental -40%.",
+      "urgence": "normale"
     },
     {
-      "heure": "21h15",
-      "titre": "PUT CAC40 ×15",
+      "heure": "14h15",
+      "titre": "PUT GOLD ×12",
       "sens": "PUT",
-      "mise": "800 €",
-      "levier": 15,
-      "strike_ko": "Strike 7650 / KO 7750",
-      "gain_cible": "+28% si CAC -1%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée 21h15–21h30. Stop mental -40%.",
+      "mise": "1000 €",
+      "levier": 12,
+      "strike_ko": "Strike 4550 / KO 4600",
+      "gain_cible": "+30% si Gold -1%",
+      "plateforme": "sgbourse.fr → Or → PUT BEST",
+      "note": "Entrée si Gold casse 4560. Stop mental -40%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Support NQ",
-      "prix": 23000,
-      "type": "support",
-      "action": "Entrée PUT confirmée si cassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance CAC40",
-      "prix": 7800,
+      "label": "Résistance NQ",
+      "prix": 23600,
       "type": "resistance",
       "action": "TP1 si atteint",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support NQ",
+      "prix": 23300,
+      "type": "support",
+      "action": "Stop loss si cassé",
       "couleur": "bear"
     },
     {
-      "label": "Seuil VIX",
-      "prix": 30,
+      "label": "Seuil Or",
+      "prix": 4560,
       "type": "current",
-      "action": "Surveillance accrue",
+      "action": "Entrée PUT si cassé",
       "couleur": "amber"
     }
   ],
   "alertes": [
-    "VIX > 30 — Risque de gap baissier demain matin",
-    "NQ Futures proche de son KO PUT (24000) — vigilance accrue"
+    "Flash géopolitique sur le pétrole à 15h",
+    "Résultats Asda à 15h30 (UK)",
+    "Annonce Truist sur PODD à 16h"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
-    "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ → suivi jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "23 327",
-      "chg": "-2.39%",
-      "dir": "dn"
+      "valeur": "23 456",
+      "chg": "+0.67%",
+      "dir": "up"
     },
     "cac40": {
-      "valeur": "7 702",
-      "chg": "-0.88%",
-      "dir": "dn"
+      "valeur": "7 733",
+      "chg": "+0.43%",
+      "dir": "up"
     },
     "brent": {
-      "valeur": "$105.8",
-      "chg": "+4.85%",
-      "dir": "up"
+      "valeur": "$107.5",
+      "chg": "-0.34%",
+      "dir": "dn"
     },
     "vix": {
-      "valeur": "31.4",
-      "chg": "+14.45%",
-      "dir": "up"
+      "valeur": "30.7",
+      "chg": "-1.06%",
+      "dir": "dn"
     },
     "gold": {
-      "valeur": "4 545.80",
-      "chg": "+2.57%",
+      "valeur": "4567.60",
+      "chg": "+0.87%",
+      "dir": "up"
+    },
+    "us10y": {
+      "valeur": "4.44%",
+      "chg": "+0.54%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1521",
+      "valeur": "1.1494",
       "chg": "-0.14%",
       "dir": "dn"
-    },
-    "us10y": {
-      "valeur": "4.44",
-      "chg": "+0.54%",
-      "dir": "up"
     }
   },
-  "pea_note": "PEA — Fermé. Aucun trade possible.",
-  "edition": "21h05 CET",
+  "pea_note": "PEA — Ne pas toucher. Focus sur NQ et Or.",
+  "edition": "13h36 CET",
   "mode": "news_flash",
-  "timestamp": "2026-03-27T21:05:11.997966+01:00",
-  "date_fr": "Vendredi 27 mars 2026"
+  "timestamp": "2026-03-30T13:36:44.495389+02:00",
+  "date_fr": "Lundi 30 mars 2026"
 }
