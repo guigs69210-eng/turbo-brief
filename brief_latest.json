@@ -1,110 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier sur NQ — Tech/IA et or en soutien",
-    "description": "NQ Futures +0.67% malgré VIX à 30.73. Or +0.87% et Brent stable à 107.47. Sentiment global légèrement positif (+0.05) malgré tensions géopolitiques.",
-    "biais": "haussier",
-    "conviction": "modérée",
-    "contexte_macro": "Les valeurs tech/IA tirent le Nasdaq après des annonces positives sur l'IA générative. L'or reste un actif refuge malgré la hausse des taux US."
+    "titre": "Clôture Paris — 18:13",
+    "description": "NQ: 23339 (+0.17%) · CAC: 7772 (+0.94%)",
+    "biais": "neutre",
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "13h40",
-      "titre": "CALL NQ Futures ×18",
-      "sens": "CALL",
-      "mise": "2000 €",
-      "levier": 18,
-      "strike_ko": "Strike 23200 / KO 22800",
-      "gain_cible": "+25% si NQ +1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 13h40–14h00. Stop mental -40%.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "14h15",
-      "titre": "PUT GOLD ×12",
-      "sens": "PUT",
-      "mise": "1000 €",
-      "levier": 12,
-      "strike_ko": "Strike 4550 / KO 4600",
-      "gain_cible": "+30% si Gold -1%",
-      "plateforme": "sgbourse.fr → Or → PUT BEST",
-      "note": "Entrée si Gold casse 4560. Stop mental -40%.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Résistance NQ",
-      "prix": 23600,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    },
-    {
-      "label": "Support NQ",
-      "prix": 23300,
-      "type": "support",
-      "action": "Stop loss si cassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "Seuil Or",
-      "prix": 4560,
-      "type": "current",
-      "action": "Entrée PUT si cassé",
-      "couleur": "amber"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Flash géopolitique sur le pétrole à 15h",
-    "Résultats Asda à 15h30 (UK)",
-    "Annonce Truist sur PODD à 16h"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → suivi jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "23 456",
-      "chg": "+0.67%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "7 733",
-      "chg": "+0.43%",
-      "dir": "up"
-    },
-    "brent": {
-      "valeur": "$107.5",
-      "chg": "-0.34%",
-      "dir": "dn"
-    },
-    "vix": {
-      "valeur": "30.7",
-      "chg": "-1.06%",
-      "dir": "dn"
-    },
-    "gold": {
-      "valeur": "4567.60",
-      "chg": "+0.87%",
-      "dir": "up"
-    },
-    "us10y": {
-      "valeur": "4.44%",
-      "chg": "+0.54%",
-      "dir": "up"
-    },
-    "eurusd": {
-      "valeur": "1.1494",
-      "chg": "-0.14%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Ne pas toucher. Focus sur NQ et Or.",
-  "edition": "13h36 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-03-30T13:36:44.495389+02:00",
-  "date_fr": "Lundi 30 mars 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Monday 30 march 2026",
+  "edition": "18h13 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
