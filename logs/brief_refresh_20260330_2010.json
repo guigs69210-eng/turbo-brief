@@ -1,0 +1,352 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23207.5,
+        "prev_close": 23299.75,
+        "change_pct": -0.4,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7772.4502,
+        "prev_close": 7700.3301,
+        "change_pct": 0.94,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 30.7,
+        "prev_close": 31.06,
+        "change_pct": -1.16,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4545.8999,
+        "prev_close": 4528.1001,
+        "change_pct": 0.39,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.75,
+        "prev_close": 107.84,
+        "change_pct": -0.08,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1465,
+        "prev_close": 1.151,
+        "change_pct": -0.39,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.346,
+        "prev_close": 4.44,
+        "change_pct": -2.12,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6402.75,
+        "prev_close": 6409.25,
+        "change_pct": -0.1,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 227.55,
+        "prev_close": 227.45,
+        "change_pct": 0.04,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.65,
+        "prev_close": 455.75,
+        "change_pct": 1.73,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 176.38,
+        "prev_close": 173.08,
+        "change_pct": 1.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.92,
+        "prev_close": 81.21,
+        "change_pct": -0.36,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.993,
+        "prev_close": 5.876,
+        "change_pct": 1.99,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-30T18:10:20.576243+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Trump may ask Arab nations to help fund Iran war costs, White House says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-may-ask-arab-nations-to-help-fund-iran-war-costs-white-house-says-93CH-4588522",
+          "source": "investing_news",
+          "published": "2026-03-30T17:50:06+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "1c7d8f2a40f5"
+        },
+        {
+          "title": "ECB must respond quickly to signs of inflation drift, says Stournaras",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/ecb-must-respond-quickly-to-signs-of-inflation-drift-says-stournaras-4588521",
+          "source": "investing_news",
+          "published": "2026-03-30T17:49:20+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "2cb7c35e0390"
+        },
+        {
+          "title": "Fearing economic collapse after war, Iran cracks down on dissent",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/fearing-economic-collapse-after-war-iran-cracks-down-on-dissent-4588519",
+          "source": "investing_news",
+          "published": "2026-03-30T17:49:01+00:00",
+          "age_minutes": 21,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "e5507f06fa16"
+        },
+        {
+          "title": "Trump issues new warning to Tehran, Iran calls US peace proposals ’unrealistic’",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-calls-irans-current-leaders-very-reasonable-as-pakistan-prepares-to-host-talks-4586652",
+          "source": "investing_news",
+          "published": "2026-03-30T17:43:23+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c0b2b590fcbd"
+        },
+        {
+          "title": "Delaware judge accused of bias reassigns Musk cases",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/delaware-judge-accused-of-bias-reassigns-musk-cases-4588515",
+          "source": "investing_news",
+          "published": "2026-03-30T17:43:08+00:00",
+          "age_minutes": 27,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ccb715afbe62"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Trump may ask Arab nations to help fund Iran war costs, White House says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-may-ask-arab-nations-to-help-fund-iran-war-costs-white-house-says-93CH-4588522",
+          "source": "investing_news",
+          "published": "2026-03-30T17:50:06+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "1c7d8f2a40f5"
+        },
+        {
+          "title": "ECB must respond quickly to signs of inflation drift, says Stournaras",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/ecb-must-respond-quickly-to-signs-of-inflation-drift-says-stournaras-4588521",
+          "source": "investing_news",
+          "published": "2026-03-30T17:49:20+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "2cb7c35e0390"
+        },
+        {
+          "title": "Fearing economic collapse after war, Iran cracks down on dissent",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/fearing-economic-collapse-after-war-iran-cracks-down-on-dissent-4588519",
+          "source": "investing_news",
+          "published": "2026-03-30T17:49:01+00:00",
+          "age_minutes": 21,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "e5507f06fa16"
+        },
+        {
+          "title": "Trump issues new warning to Tehran, Iran calls US peace proposals ’unrealistic’",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-calls-irans-current-leaders-very-reasonable-as-pakistan-prepares-to-host-talks-4586652",
+          "source": "investing_news",
+          "published": "2026-03-30T17:43:23+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c0b2b590fcbd"
+        },
+        {
+          "title": "Delaware judge accused of bias reassigns Musk cases",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/delaware-judge-accused-of-bias-reassigns-musk-cases-4588515",
+          "source": "investing_news",
+          "published": "2026-03-30T17:43:08+00:00",
+          "age_minutes": 27,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ccb715afbe62"
+        }
+      ],
+      "sentiment": -0.31,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 8
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-30T18:10:17.573067+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-30T20:10:20.576544+02:00",
+    "context": {
+      "note": "",
+      "github_run": "66",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier fort — Tensions géopolitiques et inflation persistante",
+      "description": "NQ Futures -0.40% sur craintes de guerre Iran/USA. VIX à 30.7 (+1.16%) reflète une volatilité élevée. Or et CAC40 en divergence haussière.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Trump menace de faire financer la guerre en Iran par les pays arabes. La BCE doit réagir rapidement face aux signes d'inflation persistante selon Stournaras."
+    },
+    "plan_actions": [
+      {
+        "heure": "20h15",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 23000 / KO 23500",
+        "gain_cible": "+35% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 20h15–20h30. Stop mental -40%. Surveillance géopolitique active.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "20h20",
+        "titre": "CALL CAC40 ×15 (Warrant BNP)",
+        "sens": "CALL",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7700 / KO 7650",
+        "gain_cible": "+25% si CAC40 +0.8%",
+        "plateforme": "bnpparibas.net → CAC40 → CALL Warrant",
+        "note": "Divergence technique avec NQ. Stop mental -40%. Clôture obligatoire avant 22h CET.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23100,
+        "type": "support",
+        "action": "Entrée PUT confirmée si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7800,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "KO PUT NQ",
+        "prix": 23500,
+        "type": "current",
+        "action": "Surveillance stricte",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "Géopolitique Iran/USA — Risque de gap baissier demain matin",
+      "VIX > 30 — Volatilité élevée, éviter les positions longues sans stop strict"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → Clôture possible jusqu'à 22h CET",
+      "Éviter les positions longues sans stop strict en période de VIX > 30"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 208",
+        "chg": "-0.40%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 772",
+        "chg": "+0.94%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$107.8",
+        "chg": "-0.08%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "30.7",
+        "chg": "-1.16%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 545.90",
+        "chg": "+0.39%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1465",
+        "chg": "-0.39%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.346",
+        "chg": "-2.12%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Pas d'action applicable (session US).",
+    "edition": "20h10 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-30T20:10:25.997691+02:00",
+    "date_fr": "Lundi 30 mars 2026"
+  }
+}

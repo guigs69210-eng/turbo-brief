@@ -1,19 +1,109 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 18:40",
-    "description": "NQ: 23278 (-0.09%) · CAC: 7772 (+0.94%)",
-    "biais": "neutre",
-    "conviction": "faible"
+    "titre": "Biais baissier fort — Tensions géopolitiques et inflation persistante",
+    "description": "NQ Futures -0.40% sur craintes de guerre Iran/USA. VIX à 30.7 (+1.16%) reflète une volatilité élevée. Or et CAC40 en divergence haussière.",
+    "biais": "baissier",
+    "conviction": "forte",
+    "contexte_macro": "Trump menace de faire financer la guerre en Iran par les pays arabes. La BCE doit réagir rapidement face aux signes d'inflation persistante selon Stournaras."
   },
-  "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "plan_actions": [
+    {
+      "heure": "20h15",
+      "titre": "PUT NQ Futures ×18 (Turbo BEST)",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 18,
+      "strike_ko": "Strike 23000 / KO 23500",
+      "gain_cible": "+35% si NQ -1.2%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée 20h15–20h30. Stop mental -40%. Surveillance géopolitique active.",
+      "urgence": "haute"
+    },
+    {
+      "heure": "20h20",
+      "titre": "CALL CAC40 ×15 (Warrant BNP)",
+      "sens": "CALL",
+      "mise": "800 €",
+      "levier": 15,
+      "strike_ko": "Strike 7700 / KO 7650",
+      "gain_cible": "+25% si CAC40 +0.8%",
+      "plateforme": "bnpparibas.net → CAC40 → CALL Warrant",
+      "note": "Divergence technique avec NQ. Stop mental -40%. Clôture obligatoire avant 22h CET.",
+      "urgence": "normale"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Monday 30 march 2026",
-  "edition": "18h40 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "niveaux_cles": [
+    {
+      "label": "Support NQ",
+      "prix": 23100,
+      "type": "support",
+      "action": "Entrée PUT confirmée si cassé",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 7800,
+      "type": "resistance",
+      "action": "TP1 si atteint",
+      "couleur": "bull"
+    },
+    {
+      "label": "KO PUT NQ",
+      "prix": 23500,
+      "type": "current",
+      "action": "Surveillance stricte",
+      "couleur": "amber"
+    }
+  ],
+  "alertes": [
+    "Géopolitique Iran/USA — Risque de gap baissier demain matin",
+    "VIX > 30 — Volatilité élevée, éviter les positions longues sans stop strict"
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Turbos NQ → Clôture possible jusqu'à 22h CET",
+    "Éviter les positions longues sans stop strict en période de VIX > 30"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "23 208",
+      "chg": "-0.40%",
+      "dir": "dn"
+    },
+    "cac40": {
+      "valeur": "7 772",
+      "chg": "+0.94%",
+      "dir": "up"
+    },
+    "brent": {
+      "valeur": "$107.8",
+      "chg": "-0.08%",
+      "dir": "dn"
+    },
+    "vix": {
+      "valeur": "30.7",
+      "chg": "-1.16%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "$4 545.90",
+      "chg": "+0.39%",
+      "dir": "up"
+    },
+    "eurusd": {
+      "valeur": "1.1465",
+      "chg": "-0.39%",
+      "dir": "dn"
+    },
+    "us10y": {
+      "valeur": "4.346",
+      "chg": "-2.12%",
+      "dir": "dn"
+    }
+  },
+  "pea_note": "PEA — Pas d'action applicable (session US).",
+  "edition": "20h10 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-03-30T20:10:25.997691+02:00",
+  "date_fr": "Lundi 30 mars 2026"
 }
