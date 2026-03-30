@@ -1,0 +1,308 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23097.75,
+        "prev_close": 23299.75,
+        "change_pct": -0.87,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7772.4502,
+        "prev_close": 7700.3301,
+        "change_pct": 0.94,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 30.81,
+        "prev_close": 31.06,
+        "change_pct": -0.8,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4538.3999,
+        "prev_close": 4528.1001,
+        "change_pct": 0.23,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.99,
+        "prev_close": 107.84,
+        "change_pct": 0.14,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1461,
+        "prev_close": 1.151,
+        "change_pct": -0.42,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.342,
+        "prev_close": 4.44,
+        "change_pct": -2.21,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6378.5,
+        "prev_close": 6409.25,
+        "change_pct": -0.48,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 227.55,
+        "prev_close": 227.45,
+        "change_pct": 0.04,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.65,
+        "prev_close": 455.75,
+        "change_pct": 1.73,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 176.38,
+        "prev_close": 173.08,
+        "change_pct": 1.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.92,
+        "prev_close": 81.21,
+        "change_pct": -0.36,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.993,
+        "prev_close": 5.876,
+        "change_pct": 1.99,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-30T19:59:24.881401+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Trump issues new warning to Tehran, Iran calls US peace proposals ’unrealistic’",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-calls-irans-current-leaders-very-reasonable-as-pakistan-prepares-to-host-talks-4586652",
+          "source": "investing_news",
+          "published": "2026-03-30T19:24:46+00:00",
+          "age_minutes": 34,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c0b2b590fcbd"
+        },
+        {
+          "title": "Dauch stock holds at Hold as Stifel cites GM production boost",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/dauch-stock-holds-at-hold-as-stifel-cites-gm-production-boost-93CH-4588595",
+          "source": "investing_news",
+          "published": "2026-03-30T19:39:28+00:00",
+          "age_minutes": 19,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1d713566ea01"
+        },
+        {
+          "title": "BridgeBio reports sustained mortality benefits for acoramidis at 54 months",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/bridgebio-reports-sustained-mortality-benefits-for-acoramidis-at-54-months-93CH-4588594",
+          "source": "investing_news",
+          "published": "2026-03-30T19:37:30+00:00",
+          "age_minutes": 21,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "cd5e81d0ce2e"
+        },
+        {
+          "title": "Wingstop stock hits 52-week low at $153.14 as shares tumble",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/wingstop-stock-hits-52week-low-at-15314-as-shares-tumble-93CH-4588593",
+          "source": "investing_news",
+          "published": "2026-03-30T19:34:47+00:00",
+          "age_minutes": 24,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1e7001cd0f5b"
+        },
+        {
+          "title": "Carlyle Group plans defense fund amid military spending - Bloomberg",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/carlyle-group-plans-defense-fund-amid-military-spending--bloomberg-93CH-4588592",
+          "source": "investing_news",
+          "published": "2026-03-30T19:33:11+00:00",
+          "age_minutes": 26,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "b34925ff3b00"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Trump issues new warning to Tehran, Iran calls US peace proposals ’unrealistic’",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-calls-irans-current-leaders-very-reasonable-as-pakistan-prepares-to-host-talks-4586652",
+          "source": "investing_news",
+          "published": "2026-03-30T19:24:46+00:00",
+          "age_minutes": 34,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c0b2b590fcbd"
+        }
+      ],
+      "sentiment": 0.08,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 5
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-03-30T19:59:20.770816+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-30T21:59:24.881714+02:00",
+    "context": {
+      "note": "",
+      "github_run": "67",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier fort — Tensions géopolitiques et VIX élevé",
+      "description": "NQ Futures en baisse (-0.87%) à 23097.75, VIX à 30.81 (+volatilité). Trump menace Téhéran, tensions géopolitiques persistantes.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "VIX > 30 et tensions Iran-US pèsent sur les marchés. Tech en correction après forte hausse récente."
+    },
+    "plan_actions": [
+      {
+        "heure": "22h00",
+        "titre": "PUT NQ Futures ×15 (Turbo BEST SG)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 15,
+        "strike_ko": "Strike 23200 / KO 23500",
+        "gain_cible": "+25% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 22h00–22h15. Stop mental -40%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "22h15",
+        "titre": "PUT CAC40 ×12 (Turbo BEST SG)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 12,
+        "strike_ko": "Strike 7850 / KO 7900",
+        "gain_cible": "+20% si CAC40 -0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 22h15–22h30. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 22950,
+        "type": "support",
+        "action": "Achat agressif si testé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7850,
+        "type": "resistance",
+        "action": "Vente si testée",
+        "couleur": "bear"
+      },
+      {
+        "label": "KO PUT NQ",
+        "prix": 23500,
+        "type": "barrière",
+        "action": "Sortie immédiate si dépassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "KO PUT CAC",
+        "prix": 7900,
+        "type": "barrière",
+        "action": "Sortie immédiate si dépassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Suivre l'évolution des tensions Iran-US",
+      "Surveiller le VIX (niveau >30)",
+      "Attention aux news géopolitiques soudaines"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+      "Turbos NQ/indices → cotent jusqu'à 22h30 CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 098",
+        "chg": "-0.87%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 772",
+        "chg": "+0.94%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$108.0",
+        "chg": "+0.14%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "30.8",
+        "chg": "-0.80%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 538.40",
+        "chg": "+0.23%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1461",
+        "chg": "-0.42%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.342%",
+        "chg": "-2.21%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher (session européenne déjà clôturée).",
+    "edition": "21h59 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-30T21:59:30.419948+02:00",
+    "date_fr": "Lundi 30 mars 2026"
+  }
+}

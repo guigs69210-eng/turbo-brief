@@ -1,73 +1,81 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier fort — Tensions géopolitiques et inflation persistante",
-    "description": "NQ Futures -0.40% sur craintes de guerre Iran/USA. VIX à 30.7 (+1.16%) reflète une volatilité élevée. Or et CAC40 en divergence haussière.",
+    "titre": "Biais baissier fort — Tensions géopolitiques et VIX élevé",
+    "description": "NQ Futures en baisse (-0.87%) à 23097.75, VIX à 30.81 (+volatilité). Trump menace Téhéran, tensions géopolitiques persistantes.",
     "biais": "baissier",
     "conviction": "forte",
-    "contexte_macro": "Trump menace de faire financer la guerre en Iran par les pays arabes. La BCE doit réagir rapidement face aux signes d'inflation persistante selon Stournaras."
+    "contexte_macro": "VIX > 30 et tensions Iran-US pèsent sur les marchés. Tech en correction après forte hausse récente."
   },
   "plan_actions": [
     {
-      "heure": "20h15",
-      "titre": "PUT NQ Futures ×18 (Turbo BEST)",
+      "heure": "22h00",
+      "titre": "PUT NQ Futures ×15 (Turbo BEST SG)",
       "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 18,
-      "strike_ko": "Strike 23000 / KO 23500",
-      "gain_cible": "+35% si NQ -1.2%",
+      "mise": "2000 €",
+      "levier": 15,
+      "strike_ko": "Strike 23200 / KO 23500",
+      "gain_cible": "+25% si NQ -1.2%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 20h15–20h30. Stop mental -40%. Surveillance géopolitique active.",
+      "note": "Entrée 22h00–22h15. Stop mental -40%.",
       "urgence": "haute"
     },
     {
-      "heure": "20h20",
-      "titre": "CALL CAC40 ×15 (Warrant BNP)",
-      "sens": "CALL",
-      "mise": "800 €",
-      "levier": 15,
-      "strike_ko": "Strike 7700 / KO 7650",
-      "gain_cible": "+25% si CAC40 +0.8%",
-      "plateforme": "bnpparibas.net → CAC40 → CALL Warrant",
-      "note": "Divergence technique avec NQ. Stop mental -40%. Clôture obligatoire avant 22h CET.",
+      "heure": "22h15",
+      "titre": "PUT CAC40 ×12 (Turbo BEST SG)",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 12,
+      "strike_ko": "Strike 7850 / KO 7900",
+      "gain_cible": "+20% si CAC40 -0.8%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "Entrée 22h15–22h30. Stop mental -40%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
       "label": "Support NQ",
-      "prix": 23100,
+      "prix": 22950,
       "type": "support",
-      "action": "Entrée PUT confirmée si cassé",
+      "action": "Achat agressif si testé",
       "couleur": "bear"
     },
     {
       "label": "Résistance CAC40",
-      "prix": 7800,
+      "prix": 7850,
       "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
+      "action": "Vente si testée",
+      "couleur": "bear"
     },
     {
       "label": "KO PUT NQ",
       "prix": 23500,
-      "type": "current",
-      "action": "Surveillance stricte",
-      "couleur": "amber"
+      "type": "barrière",
+      "action": "Sortie immédiate si dépassé",
+      "couleur": "bear"
+    },
+    {
+      "label": "KO PUT CAC",
+      "prix": 7900,
+      "type": "barrière",
+      "action": "Sortie immédiate si dépassé",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "Géopolitique Iran/USA — Risque de gap baissier demain matin",
-    "VIX > 30 — Volatilité élevée, éviter les positions longues sans stop strict"
+    "Suivre l'évolution des tensions Iran-US",
+    "Surveiller le VIX (niveau >30)",
+    "Attention aux news géopolitiques soudaines"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Turbos NQ → Clôture possible jusqu'à 22h CET",
-    "Éviter les positions longues sans stop strict en période de VIX > 30"
+    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+    "Turbos NQ/indices → cotent jusqu'à 22h30 CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "23 208",
-      "chg": "-0.40%",
+      "valeur": "23 098",
+      "chg": "-0.87%",
       "dir": "dn"
     },
     "cac40": {
@@ -76,34 +84,34 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$107.8",
-      "chg": "-0.08%",
-      "dir": "dn"
+      "valeur": "$108.0",
+      "chg": "+0.14%",
+      "dir": "up"
     },
     "vix": {
-      "valeur": "30.7",
-      "chg": "-1.16%",
+      "valeur": "30.8",
+      "chg": "-0.80%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 545.90",
-      "chg": "+0.39%",
+      "valeur": "$4 538.40",
+      "chg": "+0.23%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1465",
-      "chg": "-0.39%",
+      "valeur": "1.1461",
+      "chg": "-0.42%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.346",
-      "chg": "-2.12%",
+      "valeur": "4.342%",
+      "chg": "-2.21%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Pas d'action applicable (session US).",
-  "edition": "20h10 CET",
+  "pea_note": "PEA — Ne pas toucher (session européenne déjà clôturée).",
+  "edition": "21h59 CET",
   "mode": "news_flash",
-  "timestamp": "2026-03-30T20:10:25.997691+02:00",
+  "timestamp": "2026-03-30T21:59:30.419948+02:00",
   "date_fr": "Lundi 30 mars 2026"
 }
