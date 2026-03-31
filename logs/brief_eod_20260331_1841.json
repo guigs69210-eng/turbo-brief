@@ -1,0 +1,221 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23545.25,
+        "prev_close": 23320.25,
+        "change_pct": 0.96,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7816.9399,
+        "prev_close": 7760.1201,
+        "change_pct": 0.73,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 27.18,
+        "prev_close": 30.61,
+        "change_pct": -11.21,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4648.7002,
+        "prev_close": 4584.8999,
+        "change_pct": 1.39,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.56,
+        "prev_close": 107.35,
+        "change_pct": 0.2,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1557,
+        "prev_close": 1.1464,
+        "change_pct": 0.81,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.327,
+        "prev_close": 4.342,
+        "change_pct": -0.35,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6487.25,
+        "prev_close": 6444.0,
+        "change_pct": 0.67,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.1,
+        "prev_close": 226.95,
+        "change_pct": 0.95,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.1,
+        "prev_close": 463.0,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 177.92,
+        "prev_close": 176.1,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.99,
+        "prev_close": 80.47,
+        "change_pct": 0.65,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.059,
+        "prev_close": 6.008,
+        "change_pct": 0.85,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-31T16:41:23.118491+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Reading Int B earnings missed by $0.01, revenue fell short of estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/reading-int-b-earnings-missed-by-001-revenue-fell-short-of-estimates-4591039",
+          "source": "investing_news",
+          "published": "2026-03-31T16:14:21+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c06b979ed0f1"
+        },
+        {
+          "title": "Reading Int earnings missed by $0.01, revenue fell short of estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/reading-int-earnings-missed-by-001-revenue-fell-short-of-estimates-4591038",
+          "source": "investing_news",
+          "published": "2026-03-31T16:14:21+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "92d3bda1c0c0"
+        },
+        {
+          "title": "The Mosaic Company (MOS) Declined on Mixed Earnings Despite Tight Phosphate Market Outlook",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mosaic-company-mos-declined-mixed-161404456.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T16:12:26+00:00",
+          "age_minutes": 28,
+          "urgency": "medium",
+          "sentiment": -1.0,
+          "id": "129757492260"
+        },
+        {
+          "title": "Stablecoins expected to grow five-fold to $2tn by 2028. Here’s what’s super-charging the growth",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/stablecoins-expected-grow-five-fold-162212273.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T16:22:12+00:00",
+          "age_minutes": 19,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "241310cf823b"
+        },
+        {
+          "title": "Form 6K TRANSALTA CORP For: 31 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-6k-transalta-corp-for-31-march-93CH-4591046",
+          "source": "investing_news",
+          "published": "2026-03-31T16:20:42+00:00",
+          "age_minutes": 20,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "b492126664eb"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Reading Int B earnings missed by $0.01, revenue fell short of estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/reading-int-b-earnings-missed-by-001-revenue-fell-short-of-estimates-4591039",
+          "source": "investing_news",
+          "published": "2026-03-31T16:14:21+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "c06b979ed0f1"
+        },
+        {
+          "title": "Reading Int earnings missed by $0.01, revenue fell short of estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/reading-int-earnings-missed-by-001-revenue-fell-short-of-estimates-4591038",
+          "source": "investing_news",
+          "published": "2026-03-31T16:14:21+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "92d3bda1c0c0"
+        }
+      ],
+      "sentiment": 0.05,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 7
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-03-31T16:41:19.396480+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-03-31T18:41:23.118825+02:00",
+    "context": {
+      "note": "",
+      "github_run": "71",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:41",
+      "description": "NQ: 23545 (+0.96%) · CAC: 7817 (+0.73%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Tuesday 31 march 2026",
+    "edition": "18h41 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}
