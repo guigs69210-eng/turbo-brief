@@ -1,0 +1,284 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23768.5,
+        "prev_close": 23320.25,
+        "change_pct": 1.92,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7816.9399,
+        "prev_close": 7760.1201,
+        "change_pct": 0.73,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 26.36,
+        "prev_close": 30.61,
+        "change_pct": -13.88,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4686.1001,
+        "prev_close": 4584.8999,
+        "change_pct": 2.21,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 104.76,
+        "prev_close": 107.35,
+        "change_pct": -2.41,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.155,
+        "prev_close": 1.1464,
+        "change_pct": 0.75,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.311,
+        "prev_close": 4.342,
+        "change_pct": -0.71,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6532.75,
+        "prev_close": 6444.0,
+        "change_pct": 1.38,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.1,
+        "prev_close": 226.95,
+        "change_pct": 0.95,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.1,
+        "prev_close": 463.0,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 177.92,
+        "prev_close": 176.1,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.99,
+        "prev_close": 80.47,
+        "change_pct": 0.65,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.059,
+        "prev_close": 6.008,
+        "change_pct": 0.85,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-31T18:10:12.408475+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Form 8K Federal Home Loan Bank of Des Moines For: 31 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-federal-home-loan-bank-of-des-moines-for-31-march-93CH-4591163",
+          "source": "investing_news",
+          "published": "2026-03-31T17:50:49+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "2e7e947a87d0"
+        },
+        {
+          "title": "Chery aims to start production at South African plant by end of 2027",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/chery-aims-to-start-production-at-south-african-plant-by-end-of-2027-93CH-4591167",
+          "source": "investing_news",
+          "published": "2026-03-31T17:52:50+00:00",
+          "age_minutes": 17,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "925302a79710"
+        },
+        {
+          "title": "Form 8K Kennedy Lewis Capital Company For: 31 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-kennedy-lewis-capital-company-for-31-march-93CH-4591166",
+          "source": "investing_news",
+          "published": "2026-03-31T17:51:21+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "13ece993480e"
+        },
+        {
+          "title": "Form 8K Invesco Commercial Real Estate Finance Trust For: 31 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-invesco-commercial-real-estate-finance-trust-for-31-march-93CH-4591165",
+          "source": "investing_news",
+          "published": "2026-03-31T17:50:55+00:00",
+          "age_minutes": 19,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "8243d43b5722"
+        },
+        {
+          "title": "Form 8K Exeter Automobile Receivables Trust 2026-2 For: 31 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-exeter-automobile-receivables-trust-20262-for-31-march-93CH-4591164",
+          "source": "investing_news",
+          "published": "2026-03-31T17:50:51+00:00",
+          "age_minutes": 19,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "0bde7d13a140"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Form 8K Federal Home Loan Bank of Des Moines For: 31 March",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-federal-home-loan-bank-of-des-moines-for-31-march-93CH-4591163",
+          "source": "investing_news",
+          "published": "2026-03-31T17:50:49+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "2e7e947a87d0"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 4
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-31T18:10:07.613268+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-31T20:10:12.408756+02:00",
+    "context": {
+      "note": "",
+      "github_run": "72",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Rebond technique NQ post-FOMC — Sentiment risk-on",
+      "description": "NQ Futures +1.92% malgré un VIX en baisse (-13.88%) et Brent en repli (-2.41%). Gold en hausse (+2.21%) sur achats refuges.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Marchés actions soutenus par un rebond des valeurs tech après une semaine volatile. Géopolitique énergie en toile de fond."
+    },
+    "plan_actions": [
+      {
+        "heure": "20h15",
+        "titre": "CALL NQ Futures ×18 (BEST)",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 23500 / KO 23000",
+        "gain_cible": "+25% si NQ +1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 20h15–20h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24000,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23500,
+        "type": "support",
+        "action": "Stop KO ou repli",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Flash 8K Federal Home Loan Bank — surveiller impact sectoriel (immobilier) dans les 30min",
+      "Niveau VIX à 26.36 — risque de pullback si VIX remonte >28"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 768",
+        "chg": "+1.92%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 817",
+        "chg": "+0.73%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$104.8",
+        "chg": "-2.41%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "26.4",
+        "chg": "-13.88%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4686.10",
+        "chg": "+2.21%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.155",
+        "chg": "+0.75%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.311",
+        "chg": "-0.71%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Fermé (20h10 CET).",
+    "edition": "20h10 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-31T20:10:16.856920+02:00",
+    "date_fr": "Mardi 31 mars 2026"
+  }
+}
