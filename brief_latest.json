@@ -1,47 +1,53 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier modéré — Marchés résilients malgré tensions géopolitiques",
-    "description": "NQ Futures +2.42% en clôture US, VIX en forte baisse (-16.56%). Gold et CAC40 en hausse. Sentiment global légèrement négatif (-0.18) mais marché actions résilient.",
-    "biais": "haussier",
-    "conviction": "modérée",
-    "contexte_macro": "Les marchés actions résistent malgré les tensions géopolitiques (Amnesty, politiques de prix Trump) et les incertitudes sur les lancements européens des laboratoires."
+    "titre": "Biais baissier géopolitique — Risque de conflit Iran-US",
+    "description": "NQ 23910 (+2.53%), VIX 25.25 (-17.51%). Tensions Iran-US en hausse après menaces de Téhéran. Gold +2.46% en fuite vers la sécurité.",
+    "biais": "baissier",
+    "conviction": "forte",
+    "contexte_macro": "Guerre Iran-US à un tournant. Gold en hausse de 2.5% reflétant l'aversion au risque. VIX en baisse mais contexte géopolitique dominant."
   },
-  "plan_actions": [],
+  "plan_actions": [
+    {
+      "heure": "23h05",
+      "titre": "PUT NQ Futures ×18 (Turbo BEST SG Bourse)",
+      "sens": "PUT",
+      "mise": "2000 €",
+      "levier": 18,
+      "strike_ko": "Strike 23500 / KO 24200",
+      "gain_cible": "+35% si NQ -1.5%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée immédiate. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "haute"
+    }
+  ],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ Futures",
-      "prix": 24000,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    },
-    {
-      "label": "Support NQ Futures",
-      "prix": 23700,
+      "label": "Support NQ",
+      "prix": 23600,
       "type": "support",
-      "action": "Stop loss si cassé",
+      "action": "Entrée PUT si cassé",
       "couleur": "bear"
     },
     {
-      "label": "CAC40 Résistance",
-      "prix": 7850,
+      "label": "Résistance NQ",
+      "prix": 24200,
       "type": "resistance",
-      "action": "Prise de profit partielle si test",
-      "couleur": "bull"
+      "action": "KO PUT si cassé",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "News géopolitique (Amnesty) à surveiller pour impact sur les marchés européens demain.",
-    "Politiques de prix Trump sur les médicaments à suivre pour les valeurs européennes."
+    "Suivre l'évolution des tensions Iran-US en temps réel",
+    "Surveiller le Gold pour confirmation du sentiment risque"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Turbos NQ/indices → clôture possible jusqu'à 22h CET"
+    "Turbos NQ → cotent jusqu'à 22h CET (session US close)"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "23 885",
-      "chg": "+2.42%",
+      "valeur": "23 911",
+      "chg": "+2.53%",
       "dir": "up"
     },
     "cac40": {
@@ -50,23 +56,23 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$104.5",
-      "chg": "-2.62%",
+      "valeur": "$103.3",
+      "chg": "-3.74%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.5",
-      "chg": "-16.56%",
+      "valeur": "25.2",
+      "chg": "-17.51%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "4 707.5",
-      "chg": "+2.67%",
+      "valeur": "4 697.90",
+      "chg": "+2.46%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1554",
-      "chg": "+0.79%",
+      "valeur": "1.1557",
+      "chg": "+0.81%",
       "dir": "up"
     },
     "us10y": {
@@ -75,9 +81,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Pas d'actions françaises à trader ce soir (clôture obligatoire 17h30).",
-  "edition": "21:45 CET",
-  "mode": "normal",
-  "timestamp": "2026-03-31T21:45:08.178574+02:00",
+  "pea_note": "PEA — Hors session. Pas d'actions FR à trader.",
+  "edition": "23h00 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-03-31T23:00:12.885328+02:00",
   "date_fr": "Mardi 31 mars 2026"
 }

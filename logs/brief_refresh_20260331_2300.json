@@ -1,0 +1,291 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23910.75,
+        "prev_close": 23320.25,
+        "change_pct": 2.53,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7816.9399,
+        "prev_close": 7760.1201,
+        "change_pct": 0.73,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.25,
+        "prev_close": 30.61,
+        "change_pct": -17.51,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4697.8999,
+        "prev_close": 4584.8999,
+        "change_pct": 2.46,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 103.33,
+        "prev_close": 107.35,
+        "change_pct": -3.74,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1557,
+        "prev_close": 1.1464,
+        "change_pct": 0.81,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.311,
+        "prev_close": 4.342,
+        "change_pct": -0.71,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6569.25,
+        "prev_close": 6444.0,
+        "change_pct": 1.94,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.1,
+        "prev_close": 226.95,
+        "change_pct": 0.95,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.1,
+        "prev_close": 463.0,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 177.92,
+        "prev_close": 176.1,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.99,
+        "prev_close": 80.47,
+        "change_pct": 0.65,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.059,
+        "prev_close": 6.008,
+        "change_pct": 0.85,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-31T21:00:08.322940+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "US says Iran war at decisive moment, Tehran threatens US businesses in region",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/giant-oil-tanker-off-dubai-hit-by-iranian-strike-trump-threatens-to-obliterate-iran-energy-oil-plants-4589119",
+          "source": "investing_news",
+          "published": "2026-03-31T20:55:54+00:00",
+          "age_minutes": 4,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f4e3edf330d5"
+        },
+        {
+          "title": "Factbox-How many people have been killed in the Iran war?",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxhow-many-people-have-been-killed-in-the-usisraeli-war-on-iran-4586333",
+          "source": "investing_news",
+          "published": "2026-03-31T20:54:59+00:00",
+          "age_minutes": 5,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "32e48f9585d1"
+        },
+        {
+          "title": "World Bank approves $2 billion loan for Turkey’s new railway project",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/world-bank-approves-2-billion-loan-for-turkeys-new-railway-project-4591607",
+          "source": "investing_news",
+          "published": "2026-03-31T20:55:38+00:00",
+          "age_minutes": 4,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "aa6c57ab9188"
+        },
+        {
+          "title": "Rallybio chief medical officer departs as company announces leadership change",
+          "summary": "",
+          "url": "https://www.investing.com/news/sec-filings/rallybio-chief-medical-officer-departs-as-company-announces-leadership-change-93CH-4591606",
+          "source": "investing_news",
+          "published": "2026-03-31T20:55:36+00:00",
+          "age_minutes": 4,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "4fe580f1a227"
+        },
+        {
+          "title": "Barclays maintains Snowflake stock rating after CRO change",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/barclays-maintains-snowflake-stock-rating-after-cro-change-93CH-4591603",
+          "source": "investing_news",
+          "published": "2026-03-31T20:54:54+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a73425e61ef2"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "US says Iran war at decisive moment, Tehran threatens US businesses in region",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/giant-oil-tanker-off-dubai-hit-by-iranian-strike-trump-threatens-to-obliterate-iran-energy-oil-plants-4589119",
+          "source": "investing_news",
+          "published": "2026-03-31T20:55:54+00:00",
+          "age_minutes": 4,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f4e3edf330d5"
+        },
+        {
+          "title": "Factbox-How many people have been killed in the Iran war?",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxhow-many-people-have-been-killed-in-the-usisraeli-war-on-iran-4586333",
+          "source": "investing_news",
+          "published": "2026-03-31T20:54:59+00:00",
+          "age_minutes": 5,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "32e48f9585d1"
+        }
+      ],
+      "sentiment": -0.08,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 4
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 3
+        }
+      ],
+      "scanned_at": "2026-03-31T21:00:05.765656+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-31T23:00:08.323235+02:00",
+    "context": {
+      "note": "",
+      "github_run": "74",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier géopolitique — Risque de conflit Iran-US",
+      "description": "NQ 23910 (+2.53%), VIX 25.25 (-17.51%). Tensions Iran-US en hausse après menaces de Téhéran. Gold +2.46% en fuite vers la sécurité.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Guerre Iran-US à un tournant. Gold en hausse de 2.5% reflétant l'aversion au risque. VIX en baisse mais contexte géopolitique dominant."
+    },
+    "plan_actions": [
+      {
+        "heure": "23h05",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST SG Bourse)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 23500 / KO 24200",
+        "gain_cible": "+35% si NQ -1.5%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée immédiate. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "haute"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23600,
+        "type": "support",
+        "action": "Entrée PUT si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 24200,
+        "type": "resistance",
+        "action": "KO PUT si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Suivre l'évolution des tensions Iran-US en temps réel",
+      "Surveiller le Gold pour confirmation du sentiment risque"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET (session US close)"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 911",
+        "chg": "+2.53%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 817",
+        "chg": "+0.73%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$103.3",
+        "chg": "-3.74%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.2",
+        "chg": "-17.51%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4 697.90",
+        "chg": "+2.46%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1557",
+        "chg": "+0.81%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.311",
+        "chg": "-0.71%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Hors session. Pas d'actions FR à trader.",
+    "edition": "23h00 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-31T23:00:12.885328+02:00",
+    "date_fr": "Mardi 31 mars 2026"
+  }
+}
