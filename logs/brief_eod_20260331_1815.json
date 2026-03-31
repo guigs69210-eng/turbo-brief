@@ -1,0 +1,214 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23493.0,
+        "prev_close": 23320.25,
+        "change_pct": 0.74,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7816.9399,
+        "prev_close": 7760.1201,
+        "change_pct": 0.73,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 27.76,
+        "prev_close": 30.61,
+        "change_pct": -9.31,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4644.2002,
+        "prev_close": 4584.8999,
+        "change_pct": 1.29,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.21,
+        "prev_close": 107.35,
+        "change_pct": -0.13,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1523,
+        "prev_close": 1.1464,
+        "change_pct": 0.52,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.328,
+        "prev_close": 4.342,
+        "change_pct": -0.32,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6476.25,
+        "prev_close": 6444.0,
+        "change_pct": 0.5,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.1,
+        "prev_close": 226.95,
+        "change_pct": 0.95,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.1,
+        "prev_close": 463.0,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 177.92,
+        "prev_close": 176.1,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.99,
+        "prev_close": 80.47,
+        "change_pct": 0.65,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.059,
+        "prev_close": 6.008,
+        "change_pct": 0.85,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-31T16:15:38.645212+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Warren Buffett will not commit to more donations to Gates Foundation",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/warren-buffett-will-not-commit-to-more-donations-to-gates-foundation-4590991",
+          "source": "investing_news",
+          "published": "2026-03-31T15:49:09+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "0064a83c3f16"
+        },
+        {
+          "title": "FactSet Research Systems Q2 Earnings Call Highlights",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/factset-research-systems-q2-earnings-160854245.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T16:08:54+00:00",
+          "age_minutes": 6,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "3182a5db870a"
+        },
+        {
+          "title": "Flag Ship Acquisition Q4 Earnings Call Highlights",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/flag-ship-acquisition-q4-earnings-160854466.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T16:08:54+00:00",
+          "age_minutes": 6,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "1e2d553c639d"
+        },
+        {
+          "title": "Stock Market Today: Dow, Nasdaq Climb On Trump's Words; Biotech Soars (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-iran-war-oil-prices-climb/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T15:55:58+00:00",
+          "age_minutes": 19,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "dfc26359d896"
+        },
+        {
+          "title": "Why is Merck & Co. (MRK) One of the Best Affordable Stocks to Buy With Good Earnings Growth?",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-merck-co-mrk-one-153059603.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T15:30:59+00:00",
+          "age_minutes": 44,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "fbe0d69cc80a"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Warren Buffett will not commit to more donations to Gates Foundation",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/warren-buffett-will-not-commit-to-more-donations-to-gates-foundation-4590991",
+          "source": "investing_news",
+          "published": "2026-03-31T15:49:09+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "0064a83c3f16"
+        }
+      ],
+      "sentiment": 0.15,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 18
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-31T16:15:36.144396+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-03-31T18:15:38.645430+02:00",
+    "context": {
+      "note": "",
+      "github_run": "70",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:15",
+      "description": "NQ: 23493 (+0.74%) · CAC: 7817 (+0.73%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Tuesday 31 march 2026",
+    "edition": "18h15 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}

@@ -1,109 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à baissier — Tensions géopolitiques et coûts de guerre",
-    "description": "NQ Futures en légère baisse (-0.03%) malgré un CAC40 haussier (+0.70%). Brent stable (+0.37%) mais tensions géopolitiques persistantes (Iran, Hormuz). VIX élevé à 28.96 malgré une baisse récente.",
+    "titre": "Clôture Paris — 18:15",
+    "description": "NQ: 23493 (+0.74%) · CAC: 7817 (+0.73%)",
     "biais": "neutre",
-    "conviction": "modérée",
-    "contexte_macro": "Coûts de guerre en hausse aux États-Unis (+4$/gallon essence) et incertitudes géopolitiques (Iran) pèsent sur les marchés. Les actions tech restent sous pression malgré les déclarations de Trump sur la fin du conflit à Hormuz."
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "12h45",
-      "titre": "PUT CAC40 ×18 — Strike 7850 / KO 7950",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 18,
-      "strike_ko": "Strike 7850 / KO 7950",
-      "gain_cible": "+28% si CAC40 -1.2%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée 12h45–13h00. Stop mental -40%. Cible partielle à +15% si mouvement rapide.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "12h50",
-      "titre": "CALL NQ Futures ×15 — Strike 23200 / KO 22900",
-      "sens": "CALL",
-      "mise": "1000 €",
-      "levier": 15,
-      "strike_ko": "Strike 23200 / KO 22900",
-      "gain_cible": "+25% si NQ +1.1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 12h50–13h10. Stop mental -40%. À éviter si NQ casse 23100.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Support NQ",
-      "prix": 23100,
-      "type": "support",
-      "action": "Entrée CALL si rebond",
-      "couleur": "bull"
-    },
-    {
-      "label": "Résistance CAC40",
-      "prix": 7900,
-      "type": "resistance",
-      "action": "Sortie PUT si atteinte",
-      "couleur": "bear"
-    },
-    {
-      "label": "KO PUT CAC40",
-      "prix": 7950,
-      "type": "KO",
-      "action": "Sortie immédiate",
-      "couleur": "bear"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Surveillance US10Y : risque de hausse si tensions géopolitiques s'aggravent",
-    "Attention aux annonces sur les coûts énergétiques dans l'après-midi"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → suivi jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "23 314",
-      "chg": "-0.03%",
-      "dir": "dn"
-    },
-    "cac40": {
-      "valeur": "7 815",
-      "chg": "+0.70%",
-      "dir": "up"
-    },
-    "brent": {
-      "valeur": "$107.8",
-      "chg": "+0.37%",
-      "dir": "up"
-    },
-    "vix": {
-      "valeur": "29.0",
-      "chg": "-5.39%",
-      "dir": "dn"
-    },
-    "us10y": {
-      "valeur": "4.342",
-      "chg": "-2.21%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.1469",
-      "chg": "+0.05%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "4 589.90",
-      "chg": "+0.11%",
-      "dir": "up"
-    }
-  },
-  "pea_note": "PEA — Pas d'actions françaises dans les plans actuels.",
-  "edition": "12h40 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-03-31T12:40:53.902250+02:00",
-  "date_fr": "Mardi 31 mars 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Tuesday 31 march 2026",
+  "edition": "18h15 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
