@@ -1,0 +1,319 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23313.75,
+        "prev_close": 23320.25,
+        "change_pct": -0.03,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7814.5298,
+        "prev_close": 7760.1201,
+        "change_pct": 0.7,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 28.96,
+        "prev_close": 30.61,
+        "change_pct": -5.39,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4589.8999,
+        "prev_close": 4584.8999,
+        "change_pct": 0.11,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.75,
+        "prev_close": 107.35,
+        "change_pct": 0.37,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1469,
+        "prev_close": 1.1464,
+        "change_pct": 0.05,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.342,
+        "prev_close": 4.44,
+        "change_pct": -2.21,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6441.25,
+        "prev_close": 6444.0,
+        "change_pct": -0.04,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 228.45,
+        "prev_close": 226.95,
+        "change_pct": 0.66,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 462.1,
+        "prev_close": 463.0,
+        "change_pct": -0.19,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 178.24,
+        "prev_close": 176.1,
+        "change_pct": 1.22,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 81.85,
+        "prev_close": 80.47,
+        "change_pct": 1.71,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 5.991,
+        "prev_close": 6.008,
+        "change_pct": -0.28,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-03-31T10:40:48.377638+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Analysis-Treasury market's next test: rising war costs",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/analysis-treasury-markets-next-test-100526857.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T10:05:26+00:00",
+          "age_minutes": 35,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f9dd48b88bce"
+        },
+        {
+          "title": "US gas prices top $4 a gallon for first time since 2022 as Iran war drags on",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/us-gas-prices-top-4-a-gallon-for-first-time-since-2022-as-iran-war-drags-on-100213651.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T10:02:13+00:00",
+          "age_minutes": 38,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "2fffcb2957cc"
+        },
+        {
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise after Trump remarks on ending war with Hormuz closed",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-after-trump-remarks-on-ending-war-with-hormuz-closed-230141471.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-30T23:01:41+00:00",
+          "age_minutes": 699,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "440095bde0c7"
+        },
+        {
+          "title": "Wolfe Research sees S&P 500 downside to 18x earnings on risks",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/wolfe-research-sees-sp-500-downside-to-18x-earnings-on-risks-93CH-4589780",
+          "source": "investing_news",
+          "published": "2026-03-31T10:36:50+00:00",
+          "age_minutes": 3,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "776014b93a4a"
+        },
+        {
+          "title": "McCormick&Co earnings beat by $0.05, revenue topped estimates",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/mccormickco-earnings-beat-by-005-revenue-topped-estimates-4589777",
+          "source": "investing_news",
+          "published": "2026-03-31T10:35:29+00:00",
+          "age_minutes": 5,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "42f44f36cbd8"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Analysis-Treasury market's next test: rising war costs",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/analysis-treasury-markets-next-test-100526857.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T10:05:26+00:00",
+          "age_minutes": 35,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f9dd48b88bce"
+        },
+        {
+          "title": "US gas prices top $4 a gallon for first time since 2022 as Iran war drags on",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/us-gas-prices-top-4-a-gallon-for-first-time-since-2022-as-iran-war-drags-on-100213651.html",
+          "source": "yahoo_finance",
+          "published": "2026-03-31T10:02:13+00:00",
+          "age_minutes": 38,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "2fffcb2957cc"
+        }
+      ],
+      "sentiment": 0.08,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 13
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 8
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 4
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-31T10:40:46.186713+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-31T12:40:48.377867+02:00",
+    "context": {
+      "note": "",
+      "github_run": "69",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à baissier — Tensions géopolitiques et coûts de guerre",
+      "description": "NQ Futures en légère baisse (-0.03%) malgré un CAC40 haussier (+0.70%). Brent stable (+0.37%) mais tensions géopolitiques persistantes (Iran, Hormuz). VIX élevé à 28.96 malgré une baisse récente.",
+      "biais": "neutre",
+      "conviction": "modérée",
+      "contexte_macro": "Coûts de guerre en hausse aux États-Unis (+4$/gallon essence) et incertitudes géopolitiques (Iran) pèsent sur les marchés. Les actions tech restent sous pression malgré les déclarations de Trump sur la fin du conflit à Hormuz."
+    },
+    "plan_actions": [
+      {
+        "heure": "12h45",
+        "titre": "PUT CAC40 ×18 — Strike 7850 / KO 7950",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 7850 / KO 7950",
+        "gain_cible": "+28% si CAC40 -1.2%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 12h45–13h00. Stop mental -40%. Cible partielle à +15% si mouvement rapide.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "12h50",
+        "titre": "CALL NQ Futures ×15 — Strike 23200 / KO 22900",
+        "sens": "CALL",
+        "mise": "1000 €",
+        "levier": 15,
+        "strike_ko": "Strike 23200 / KO 22900",
+        "gain_cible": "+25% si NQ +1.1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 12h50–13h10. Stop mental -40%. À éviter si NQ casse 23100.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23100,
+        "type": "support",
+        "action": "Entrée CALL si rebond",
+        "couleur": "bull"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7900,
+        "type": "resistance",
+        "action": "Sortie PUT si atteinte",
+        "couleur": "bear"
+      },
+      {
+        "label": "KO PUT CAC40",
+        "prix": 7950,
+        "type": "KO",
+        "action": "Sortie immédiate",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveillance US10Y : risque de hausse si tensions géopolitiques s'aggravent",
+      "Attention aux annonces sur les coûts énergétiques dans l'après-midi"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → suivi jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 314",
+        "chg": "-0.03%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 815",
+        "chg": "+0.70%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$107.8",
+        "chg": "+0.37%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "29.0",
+        "chg": "-5.39%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.342",
+        "chg": "-2.21%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1469",
+        "chg": "+0.05%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "4 589.90",
+        "chg": "+0.11%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises dans les plans actuels.",
+    "edition": "12h40 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-03-31T12:40:53.902250+02:00",
+    "date_fr": "Mardi 31 mars 2026"
+  }
+}
