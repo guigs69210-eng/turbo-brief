@@ -1,0 +1,289 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23885.0,
+        "prev_close": 23320.25,
+        "change_pct": 2.42,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7816.9399,
+        "prev_close": 7760.1201,
+        "change_pct": 0.73,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.54,
+        "prev_close": 30.61,
+        "change_pct": -16.56,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4707.5,
+        "prev_close": 4584.8999,
+        "change_pct": 2.67,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 104.54,
+        "prev_close": 107.35,
+        "change_pct": -2.62,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1554,
+        "prev_close": 1.1464,
+        "change_pct": 0.79,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.311,
+        "prev_close": 4.342,
+        "change_pct": -0.71,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6565.75,
+        "prev_close": 6444.0,
+        "change_pct": 1.89,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 229.1,
+        "prev_close": 226.95,
+        "change_pct": 0.95,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 463.1,
+        "prev_close": 463.0,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 177.92,
+        "prev_close": 176.1,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 80.99,
+        "prev_close": 80.47,
+        "change_pct": 0.65,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.059,
+        "prev_close": 6.008,
+        "change_pct": 0.85,
+        "direction": "up"
+      },
+      "fetched_at": "2026-03-31T19:45:04.263041+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Drugmakers delay some European launches with a wary eye on Trump’s pricing policies",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/drugmakers-delay-some-european-launches-with-a-wary-eye-on-trumps-pricing-policies-4589156",
+          "source": "investing_news",
+          "published": "2026-03-31T19:25:30+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "8c2267054bf6"
+        },
+        {
+          "title": "Soccer-Amnesty warns of ’huge’ human rights risks at 2026 World Cup",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/socceramnesty-warns-of-huge-human-rights-risks-at-2026-world-cup-4591267",
+          "source": "investing_news",
+          "published": "2026-03-31T19:18:31+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b3e34aaacd21"
+        },
+        {
+          "title": "Oppenheimer raises Palvella Therapeutics price target on valuation",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/oppenheimer-raises-palvella-therapeutics-price-target-on-valuation-93CH-4591273",
+          "source": "investing_news",
+          "published": "2026-03-31T19:27:41+00:00",
+          "age_minutes": 17,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "caa95ef4cb7f"
+        },
+        {
+          "title": "Pentagon declines to reaffirm NATO’s collective defense, says up to Trump",
+          "summary": "",
+          "url": "https://www.investing.com/news/politics-news/pentagon-declines-to-reaffirm-natos-collective-defense-says-up-to-trump-4590915",
+          "source": "investing_news",
+          "published": "2026-03-31T19:24:37+00:00",
+          "age_minutes": 20,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "7e419e5353cd"
+        },
+        {
+          "title": "Wells Royce a., Nexstar media director, sells $175,527 in NXST stock",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/wells-royce-a-nexstar-media-director-sells-175527-in-nxst-stock-93CH-4591271",
+          "source": "investing_news",
+          "published": "2026-03-31T19:22:18+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "7a6338a9f675"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Drugmakers delay some European launches with a wary eye on Trump’s pricing policies",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/drugmakers-delay-some-european-launches-with-a-wary-eye-on-trumps-pricing-policies-4589156",
+          "source": "investing_news",
+          "published": "2026-03-31T19:25:30+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "8c2267054bf6"
+        },
+        {
+          "title": "Soccer-Amnesty warns of ’huge’ human rights risks at 2026 World Cup",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/socceramnesty-warns-of-huge-human-rights-risks-at-2026-world-cup-4591267",
+          "source": "investing_news",
+          "published": "2026-03-31T19:18:31+00:00",
+          "age_minutes": 26,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b3e34aaacd21"
+        }
+      ],
+      "sentiment": -0.18,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 4
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-03-31T19:44:59.778445+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-03-31T21:45:04.263259+02:00",
+    "context": {
+      "note": "",
+      "github_run": "73",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier modéré — Marchés résilients malgré tensions géopolitiques",
+      "description": "NQ Futures +2.42% en clôture US, VIX en forte baisse (-16.56%). Gold et CAC40 en hausse. Sentiment global légèrement négatif (-0.18) mais marché actions résilient.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Les marchés actions résistent malgré les tensions géopolitiques (Amnesty, politiques de prix Trump) et les incertitudes sur les lancements européens des laboratoires."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24000,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ Futures",
+        "prix": 23700,
+        "type": "support",
+        "action": "Stop loss si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "CAC40 Résistance",
+        "prix": 7850,
+        "type": "resistance",
+        "action": "Prise de profit partielle si test",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "News géopolitique (Amnesty) à surveiller pour impact sur les marchés européens demain.",
+      "Politiques de prix Trump sur les médicaments à suivre pour les valeurs européennes."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ/indices → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 885",
+        "chg": "+2.42%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 817",
+        "chg": "+0.73%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$104.5",
+        "chg": "-2.62%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.5",
+        "chg": "-16.56%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4 707.5",
+        "chg": "+2.67%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1554",
+        "chg": "+0.79%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.311",
+        "chg": "-0.71%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises à trader ce soir (clôture obligatoire 17h30).",
+    "edition": "21:45 CET",
+    "mode": "normal",
+    "timestamp": "2026-03-31T21:45:08.178574+02:00",
+    "date_fr": "Mardi 31 mars 2026"
+  }
+}

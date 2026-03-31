@@ -1,53 +1,47 @@
 {
   "signal_du_jour": {
-    "titre": "Rebond technique NQ post-FOMC — Sentiment risk-on",
-    "description": "NQ Futures +1.92% malgré un VIX en baisse (-13.88%) et Brent en repli (-2.41%). Gold en hausse (+2.21%) sur achats refuges.",
+    "titre": "Biais haussier modéré — Marchés résilients malgré tensions géopolitiques",
+    "description": "NQ Futures +2.42% en clôture US, VIX en forte baisse (-16.56%). Gold et CAC40 en hausse. Sentiment global légèrement négatif (-0.18) mais marché actions résilient.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Marchés actions soutenus par un rebond des valeurs tech après une semaine volatile. Géopolitique énergie en toile de fond."
+    "contexte_macro": "Les marchés actions résistent malgré les tensions géopolitiques (Amnesty, politiques de prix Trump) et les incertitudes sur les lancements européens des laboratoires."
   },
-  "plan_actions": [
-    {
-      "heure": "20h15",
-      "titre": "CALL NQ Futures ×18 (BEST)",
-      "sens": "CALL",
-      "mise": "2000 €",
-      "levier": 18,
-      "strike_ko": "Strike 23500 / KO 23000",
-      "gain_cible": "+25% si NQ +1.2%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 20h15–20h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
-      "urgence": "normale"
-    }
-  ],
+  "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ",
+      "label": "Résistance NQ Futures",
       "prix": 24000,
       "type": "resistance",
       "action": "TP1 si atteint",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ",
-      "prix": 23500,
+      "label": "Support NQ Futures",
+      "prix": 23700,
       "type": "support",
-      "action": "Stop KO ou repli",
+      "action": "Stop loss si cassé",
       "couleur": "bear"
+    },
+    {
+      "label": "CAC40 Résistance",
+      "prix": 7850,
+      "type": "resistance",
+      "action": "Prise de profit partielle si test",
+      "couleur": "bull"
     }
   ],
   "alertes": [
-    "Flash 8K Federal Home Loan Bank — surveiller impact sectoriel (immobilier) dans les 30min",
-    "Niveau VIX à 26.36 — risque de pullback si VIX remonte >28"
+    "News géopolitique (Amnesty) à surveiller pour impact sur les marchés européens demain.",
+    "Politiques de prix Trump sur les médicaments à suivre pour les valeurs européennes."
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Turbos NQ → cotent jusqu'à 22h CET"
+    "Turbos NQ/indices → clôture possible jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "23 768",
-      "chg": "+1.92%",
+      "valeur": "23 885",
+      "chg": "+2.42%",
       "dir": "up"
     },
     "cac40": {
@@ -56,23 +50,23 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$104.8",
-      "chg": "-2.41%",
+      "valeur": "$104.5",
+      "chg": "-2.62%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "26.4",
-      "chg": "-13.88%",
+      "valeur": "25.5",
+      "chg": "-16.56%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4686.10",
-      "chg": "+2.21%",
+      "valeur": "4 707.5",
+      "chg": "+2.67%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.155",
-      "chg": "+0.75%",
+      "valeur": "1.1554",
+      "chg": "+0.79%",
       "dir": "up"
     },
     "us10y": {
@@ -81,9 +75,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Fermé (20h10 CET).",
-  "edition": "20h10 CET",
+  "pea_note": "PEA — Pas d'actions françaises à trader ce soir (clôture obligatoire 17h30).",
+  "edition": "21:45 CET",
   "mode": "normal",
-  "timestamp": "2026-03-31T20:10:16.856920+02:00",
+  "timestamp": "2026-03-31T21:45:08.178574+02:00",
   "date_fr": "Mardi 31 mars 2026"
 }
