@@ -1,0 +1,225 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24320.0,
+        "prev_close": 23980.0,
+        "change_pct": 1.42,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7981.27,
+        "prev_close": 7811.1401,
+        "change_pct": 2.18,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.56,
+        "prev_close": 25.27,
+        "change_pct": -6.77,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4817.0,
+        "prev_close": 4707.0,
+        "change_pct": 2.34,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 101.94,
+        "prev_close": 105.22,
+        "change_pct": -3.12,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.161,
+        "prev_close": 1.1562,
+        "change_pct": 0.42,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.303,
+        "prev_close": 4.311,
+        "change_pct": -0.19,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6647.75,
+        "prev_close": 6580.0,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 239.95,
+        "prev_close": 228.3,
+        "change_pct": 5.1,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.1,
+        "prev_close": 463.05,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.0,
+        "prev_close": 178.38,
+        "change_pct": 0.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 85.38,
+        "prev_close": 80.86,
+        "change_pct": 5.59,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.322,
+        "prev_close": 6.072,
+        "change_pct": 4.12,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-01T16:12:44.950617+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "US Vice President Vance spoke to intermediaries about Iran conflict as recently as Tuesday, source says",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/us-vp-vance-spoke-to-intermediaries-about-iran-conflict-as-recently-as-tuesday-source-says-4593619",
+          "source": "investing_news",
+          "published": "2026-04-01T16:03:15+00:00",
+          "age_minutes": 9,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "013f8bb963fd"
+        },
+        {
+          "title": "Greg Abel’s First Big Move as Berkshire CEO Had Warren Buffett’s Personal Approval",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-first-big-move-155541352.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T15:55:41+00:00",
+          "age_minutes": 17,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b9f8ff8e8660"
+        },
+        {
+          "title": "Stock market today: Dow S&P 500, Nasdaq climb as deescalation talk in Iran extends rally",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-climb-as-deescalation-talk-in-iran-extends-rally-133208948.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T13:32:08+00:00",
+          "age_minutes": 160,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "1216bf915f2a"
+        },
+        {
+          "title": "Germany stocks higher at close of trade; DAX up 2.62%",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/germany-stocks-higher-at-close-of-trade-dax-up-262-4593692",
+          "source": "investing_news",
+          "published": "2026-04-01T16:06:49+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "c012053de906"
+        },
+        {
+          "title": "Explainer-From filing to first trade: Inside the US IPO process",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/explainerfrom-filing-to-first-trade-inside-the-us-ipo-process-4593640",
+          "source": "investing_news",
+          "published": "2026-04-01T16:06:41+00:00",
+          "age_minutes": 6,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "f8c9cb800b6a"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "US Vice President Vance spoke to intermediaries about Iran conflict as recently as Tuesday, source says",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/us-vp-vance-spoke-to-intermediaries-about-iran-conflict-as-recently-as-tuesday-source-says-4593619",
+          "source": "investing_news",
+          "published": "2026-04-01T16:03:15+00:00",
+          "age_minutes": 9,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "013f8bb963fd"
+        },
+        {
+          "title": "Greg Abel’s First Big Move as Berkshire CEO Had Warren Buffett’s Personal Approval",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-first-big-move-155541352.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T15:55:41+00:00",
+          "age_minutes": 17,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b9f8ff8e8660"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 12
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 5
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-01T16:12:41.292431+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-04-01T18:12:44.950912+02:00",
+    "context": {
+      "note": "",
+      "github_run": "76",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:12",
+      "description": "NQ: 24320 (+1.42%) · CAC: 7981 (+2.18%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Wednesday 01 april 2026",
+    "edition": "18h12 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}

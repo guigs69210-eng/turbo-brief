@@ -1,90 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à légèrement baissier — Iran tensions en baisse",
-    "description": "NQ 24071.5 (+0.38%), VIX 24.83 (-1.74%). Brent recule -1.68% sur espoirs d'apaisement géopolitique. Trump annonce un discours sur la guerre en Iran.",
+    "titre": "Clôture Paris — 18:12",
+    "description": "NQ: 24320 (+1.42%) · CAC: 7981 (+2.18%)",
     "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Trump s'exprime sur l'Iran en soirée. Marché du pétrole en baisse malgré les tensions. Tech et énergie sous pression."
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "12h45",
-      "titre": "PUT NQ Futures ×18 (Turbo BEST)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 18,
-      "strike_ko": "Strike 23800 / KO 24300",
-      "gain_cible": "+28% si NQ -1.2%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 12h45–13h15. Stop mental -40%. Surveillance Trump 19h CET.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Support NQ",
-      "prix": 23950,
-      "type": "support",
-      "action": "Entrée PUT confirmée",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance NQ",
-      "prix": 24200,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Trump discours Iran 19h CET — risque de volatilité accrue",
-    "Brent sous 104$ — surveillance pétrole"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbo NQ → suivi jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 072",
-      "chg": "+0.38%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "7 941",
-      "chg": "+1.66%",
-      "dir": "up"
-    },
-    "brent": {
-      "valeur": "$103.5",
-      "chg": "-1.68%",
-      "dir": "dn"
-    },
-    "vix": {
-      "valeur": "24.8",
-      "chg": "-1.74%",
-      "dir": "dn"
-    },
-    "gold": {
-      "valeur": "$4 756.10",
-      "chg": "+1.04%",
-      "dir": "up"
-    },
-    "eurusd": {
-      "valeur": "1.1602",
-      "chg": "+0.35%",
-      "dir": "up"
-    },
-    "us10y": {
-      "valeur": "4.311",
-      "chg": "-0.71%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Ne pas toucher. Focus sur NQ et indices US.",
-  "edition": "12h43 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-04-01T12:43:12.799732+02:00",
-  "date_fr": "Mercredi 1 avril 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Wednesday 01 april 2026",
+  "edition": "18h12 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
