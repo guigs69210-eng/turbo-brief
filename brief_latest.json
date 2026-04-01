@@ -1,22 +1,22 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier post-sanctions Venezuela — Or en rebond",
-    "description": "NQ Futures +0.96% après levée des sanctions US sur le Venezuela. Or +1.67% sur espoirs de cessez-le-feu Iranien. VIX en baisse à 24.55.",
+    "titre": "Rebond technique NQ post-FOMC — biais haussier modéré",
+    "description": "NQ Futures +0.89% après une séance de consolidation post-FOMC. VIX en baisse (-2.89%) mais reste élevé (24.54). Tech/IA en tête des gains sectoriels.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Levée des sanctions US sur le Venezuela stimule les marchés actions et matières premières. L'or rebondit après un mois de mars historique."
+    "contexte_macro": "Rebond technique sur les indices US après une semaine de volatilité post-FOMC. Les marchés anticipent une stabilisation des taux jusqu'au 7 mai."
   },
   "plan_actions": [
     {
-      "heure": "22h05",
-      "titre": "CALL NQ Futures ×18",
+      "heure": "23h10 CET",
+      "titre": "CALL NQ Futures ×18 (Turbo BEST)",
       "sens": "CALL",
       "mise": "2000 €",
       "levier": 18,
       "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1.2%",
+      "gain_cible": "+28% si NQ +1.2%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 22h05–22h30. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
+      "note": "Entrée 23h10–23h30. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
       "urgence": "normale"
     }
   ],
@@ -30,24 +30,24 @@
     },
     {
       "label": "Support NQ",
-      "prix": 24000,
+      "prix": 23800,
       "type": "support",
       "action": "Stop KO si cassé",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Suivre l'évolution de l'or (GOLD) et du Brent (BRENT) pour confirmation du biais haussier."
+    "Surveillance du VIX en cas de rebond au-dessus de 26",
+    "Attention aux news géopolitiques (Iran, Ukraine) en prévision du week-end"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → cotent jusqu'à 22h30 CET"
+    "Turbos NQ → cotent jusqu'à 22h CET (déjà clôturé)"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 209",
-      "chg": "+0.96%",
+      "valeur": "24 194",
+      "chg": "+0.89%",
       "dir": "up"
     },
     "cac40": {
@@ -56,34 +56,34 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$100.8",
-      "chg": "-4.18%",
+      "valeur": "$100.3",
+      "chg": "-4.66%",
+      "dir": "dn"
+    },
+    "vix": {
+      "valeur": "24.5",
+      "chg": "-2.89%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 785.70",
-      "chg": "+1.67%",
+      "valeur": "4782.90",
+      "chg": "+1.61%",
       "dir": "up"
     },
-    "vix": {
-      "valeur": "24.6",
-      "chg": "-2.85%",
-      "dir": "dn"
-    },
     "eurusd": {
-      "valeur": "1.1589",
-      "chg": "+0.23%",
+      "valeur": "1.1592",
+      "chg": "+0.26%",
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4.319%",
+      "valeur": "4.319",
       "chg": "+0.19%",
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Ne pas toucher.",
-  "edition": "22h01 CET",
+  "pea_note": "PEA — Fermé pour la journée.",
+  "edition": "23:08 CET",
   "mode": "normal",
-  "timestamp": "2026-04-01T22:01:15.221414+02:00",
+  "timestamp": "2026-04-01T23:08:16.740583+02:00",
   "date_fr": "Mercredi 1 avril 2026"
 }

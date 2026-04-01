@@ -1,0 +1,264 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24194.25,
+        "prev_close": 23980.0,
+        "change_pct": 0.89,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7981.27,
+        "prev_close": 7811.1401,
+        "change_pct": 2.18,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.54,
+        "prev_close": 25.27,
+        "change_pct": -2.89,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4782.8999,
+        "prev_close": 4707.0,
+        "change_pct": 1.61,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 100.32,
+        "prev_close": 105.22,
+        "change_pct": -4.66,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1592,
+        "prev_close": 1.1562,
+        "change_pct": 0.26,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.319,
+        "prev_close": 4.311,
+        "change_pct": 0.19,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6619.25,
+        "prev_close": 6580.0,
+        "change_pct": 0.6,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 239.95,
+        "prev_close": 228.3,
+        "change_pct": 5.1,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.1,
+        "prev_close": 463.05,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.0,
+        "prev_close": 178.38,
+        "change_pct": 0.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 85.38,
+        "prev_close": 80.86,
+        "change_pct": 5.59,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.322,
+        "prev_close": 6.072,
+        "change_pct": 4.12,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-01T21:08:05.908480+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Sword-wielding Massachusetts man arrested over threats to Trump, FBI says",
+          "summary": "",
+          "url": "https://www.investing.com/news/politics-news/swordwielding-massachusetts-man-arrested-over-threats-to-trump-fbi-says-4594153",
+          "source": "investing_news",
+          "published": "2026-04-01T20:55:09+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "838c0ed6755b"
+        },
+        {
+          "title": "US Congress to pass bills to fully fund Homeland Security, Republican leaders say",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-says-he-is-working-with-johnson-thune-to-fund-immigration-agents-4593776",
+          "source": "investing_news",
+          "published": "2026-04-01T20:54:52+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "70dee8dab3c9"
+        },
+        {
+          "title": "Advanced flower capital (AFCG) president buys $19,600 in stock",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/advanced-flower-capital-afcg-president-buys-19600-in-stock-93CH-4594226",
+          "source": "investing_news",
+          "published": "2026-04-01T20:52:00+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "6a60628cab5a"
+        },
+        {
+          "title": "Aldeyra Therapeutics repays $15 million Hercules loan and ends credit facility",
+          "summary": "",
+          "url": "https://www.investing.com/news/sec-filings/aldeyra-therapeutics-repays-15-million-hercules-loan-and-ends-credit-facility-93CH-4594225",
+          "source": "investing_news",
+          "published": "2026-04-01T20:51:34+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "5e97e4bebcbe"
+        },
+        {
+          "title": "Form DEF 14A ALERUS FINANCIAL CORPORATION For: 1 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-def-14a-alerus-financial-corporation-for-1-april-93CH-4594224",
+          "source": "investing_news",
+          "published": "2026-04-01T20:51:28+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a08d246e8e2b"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-01T21:08:03.608015+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-01T23:08:05.908762+02:00",
+    "context": {
+      "note": "",
+      "github_run": "80",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Rebond technique NQ post-FOMC — biais haussier modéré",
+      "description": "NQ Futures +0.89% après une séance de consolidation post-FOMC. VIX en baisse (-2.89%) mais reste élevé (24.54). Tech/IA en tête des gains sectoriels.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Rebond technique sur les indices US après une semaine de volatilité post-FOMC. Les marchés anticipent une stabilisation des taux jusqu'au 7 mai."
+    },
+    "plan_actions": [
+      {
+        "heure": "23h10 CET",
+        "titre": "CALL NQ Futures ×18 (Turbo BEST)",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+28% si NQ +1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 23h10–23h30. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23800,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveillance du VIX en cas de rebond au-dessus de 26",
+      "Attention aux news géopolitiques (Iran, Ukraine) en prévision du week-end"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET (déjà clôturé)"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 194",
+        "chg": "+0.89%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 981",
+        "chg": "+2.18%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$100.3",
+        "chg": "-4.66%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.5",
+        "chg": "-2.89%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4782.90",
+        "chg": "+1.61%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1592",
+        "chg": "+0.26%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.319",
+        "chg": "+0.19%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Fermé pour la journée.",
+    "edition": "23:08 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-01T23:08:16.740583+02:00",
+    "date_fr": "Mercredi 1 avril 2026"
+  }
+}
