@@ -1,0 +1,291 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24209.25,
+        "prev_close": 23980.0,
+        "change_pct": 0.96,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7981.27,
+        "prev_close": 7811.1401,
+        "change_pct": 2.18,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.55,
+        "prev_close": 25.27,
+        "change_pct": -2.85,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4785.7002,
+        "prev_close": 4707.0,
+        "change_pct": 1.67,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 100.82,
+        "prev_close": 105.22,
+        "change_pct": -4.18,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1589,
+        "prev_close": 1.1562,
+        "change_pct": 0.23,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.319,
+        "prev_close": 4.311,
+        "change_pct": 0.19,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6620.5,
+        "prev_close": 6580.0,
+        "change_pct": 0.62,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 239.95,
+        "prev_close": 228.3,
+        "change_pct": 5.1,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.1,
+        "prev_close": 463.05,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.0,
+        "prev_close": 178.38,
+        "change_pct": 0.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 85.38,
+        "prev_close": 80.86,
+        "change_pct": 5.59,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.322,
+        "prev_close": 6.072,
+        "change_pct": 4.12,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-01T20:01:10.563299+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "US lifts sanctions on Venezuela’s interim president",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/us-lifts-sanctions-on-venezuelas-interim-president-4593962",
+          "source": "investing_news",
+          "published": "2026-04-01T19:54:30+00:00",
+          "age_minutes": 6,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "e6f2cc0ef034"
+        },
+        {
+          "title": "Gold rebounds after worst month since 2008 as Trump says Iran asked for ceasefire",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/gold-rises-for-4th-straight-day-as-trump-signals-possible-iran-war-exit-4591974",
+          "source": "investing_news",
+          "published": "2026-04-01T19:53:47+00:00",
+          "age_minutes": 7,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "1519ed28f554"
+        },
+        {
+          "title": "Rodkin, director at Simon Property, acquires $42,641 in shares",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/rodkin-director-at-simon-property-acquires-42641-in-shares-93CH-4593964",
+          "source": "investing_news",
+          "published": "2026-04-01T19:55:24+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "dede73610273"
+        },
+        {
+          "title": "Leerink reiterates Eli Lilly stock rating on obesity drug approval",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/leerink-reiterates-eli-lilly-stock-rating-on-obesity-drug-approval-93CH-4593963",
+          "source": "investing_news",
+          "published": "2026-04-01T19:55:01+00:00",
+          "age_minutes": 6,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "fbc169939679"
+        },
+        {
+          "title": "Mid Penn Bancorp director Evans buys $10,001 in shares",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/mid-penn-bancorp-director-evans-buys-10001-in-shares-93CH-4593961",
+          "source": "investing_news",
+          "published": "2026-04-01T19:52:08+00:00",
+          "age_minutes": 8,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "bf1230093d8e"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "US lifts sanctions on Venezuela’s interim president",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/us-lifts-sanctions-on-venezuelas-interim-president-4593962",
+          "source": "investing_news",
+          "published": "2026-04-01T19:54:30+00:00",
+          "age_minutes": 6,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "e6f2cc0ef034"
+        },
+        {
+          "title": "Gold rebounds after worst month since 2008 as Trump says Iran asked for ceasefire",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/gold-rises-for-4th-straight-day-as-trump-signals-possible-iran-war-exit-4591974",
+          "source": "investing_news",
+          "published": "2026-04-01T19:53:47+00:00",
+          "age_minutes": 7,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "1519ed28f554"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-01T20:01:07.892610+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-01T22:01:10.563540+02:00",
+    "context": {
+      "note": "",
+      "github_run": "79",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier post-sanctions Venezuela — Or en rebond",
+      "description": "NQ Futures +0.96% après levée des sanctions US sur le Venezuela. Or +1.67% sur espoirs de cessez-le-feu Iranien. VIX en baisse à 24.55.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Levée des sanctions US sur le Venezuela stimule les marchés actions et matières premières. L'or rebondit après un mois de mars historique."
+    },
+    "plan_actions": [
+      {
+        "heure": "22h05",
+        "titre": "CALL NQ Futures ×18",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 22h05–22h30. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24000,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Suivre l'évolution de l'or (GOLD) et du Brent (BRENT) pour confirmation du biais haussier."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → cotent jusqu'à 22h30 CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 209",
+        "chg": "+0.96%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 981",
+        "chg": "+2.18%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$100.8",
+        "chg": "-4.18%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 785.70",
+        "chg": "+1.67%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "24.6",
+        "chg": "-2.85%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1589",
+        "chg": "+0.23%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.319%",
+        "chg": "+0.19%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher.",
+    "edition": "22h01 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-01T22:01:15.221414+02:00",
+    "date_fr": "Mercredi 1 avril 2026"
+  }
+}

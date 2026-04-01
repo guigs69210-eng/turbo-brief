@@ -1,34 +1,22 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier modéré — Coordination géopolitique et données macro positives",
-    "description": "NQ Futures +1.34% malgré Brent -4.84%. VIX en forte baisse (-6.21%) à 23.7. Sentiment global légèrement négatif (-0.18).",
+    "titre": "Biais haussier post-sanctions Venezuela — Or en rebond",
+    "description": "NQ Futures +0.96% après levée des sanctions US sur le Venezuela. Or +1.67% sur espoirs de cessez-le-feu Iranien. VIX en baisse à 24.55.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "IEA, IMF et Banque Mondiale coordonnent une réponse à l'impact de la guerre au Moyen-Orient. US10Y en légère hausse (+0.09%)."
+    "contexte_macro": "Levée des sanctions US sur le Venezuela stimule les marchés actions et matières premières. L'or rebondit après un mois de mars historique."
   },
   "plan_actions": [
     {
-      "heure": "20:10",
-      "titre": "CALL NQ Futures ×18 (BEST)",
+      "heure": "22h05",
+      "titre": "CALL NQ Futures ×18",
       "sens": "CALL",
-      "mise": "1200 €",
+      "mise": "2000 €",
       "levier": 18,
       "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1%",
+      "gain_cible": "+25% si NQ +1.2%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 20:10–20:30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "20:15",
-      "titre": "PUT GOLD ×15 (BNP)",
-      "sens": "PUT",
-      "mise": "800 €",
-      "levier": 15,
-      "strike_ko": "Strike 4750 / KO 4850",
-      "gain_cible": "+30% si Gold -1%",
-      "plateforme": "bnpparibas.net → Or → PUT BEST",
-      "note": "Entrée 20:15–20:45. Stop mental -40%.",
+      "note": "Entrée 22h05–22h30. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
       "urgence": "normale"
     }
   ],
@@ -41,25 +29,25 @@
       "couleur": "bull"
     },
     {
-      "label": "Support Gold",
-      "prix": 4780,
+      "label": "Support NQ",
+      "prix": 24000,
       "type": "support",
-      "action": "Stop KO si percé",
+      "action": "Stop KO si cassé",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "News géopolitique majeure à 20h30 CET",
-    "Form 13G Warner Music Group à surveiller"
+    "Suivre l'évolution de l'or (GOLD) et du Brent (BRENT) pour confirmation du biais haussier."
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Turbos NQ → cotent jusqu'à 22h CET"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ → cotent jusqu'à 22h30 CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 302",
-      "chg": "+1.34%",
+      "valeur": "24 209",
+      "chg": "+0.96%",
       "dir": "up"
     },
     "cac40": {
@@ -68,34 +56,34 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$100.1",
-      "chg": "-4.84%",
+      "valeur": "$100.8",
+      "chg": "-4.18%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "4 807.0",
-      "chg": "+2.12%",
+      "valeur": "$4 785.70",
+      "chg": "+1.67%",
       "dir": "up"
     },
     "vix": {
-      "valeur": "23.7",
-      "chg": "-6.21%",
+      "valeur": "24.6",
+      "chg": "-2.85%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1596",
-      "chg": "+0.29%",
+      "valeur": "1.1589",
+      "chg": "+0.23%",
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4.315",
-      "chg": "+0.09%",
+      "valeur": "4.319%",
+      "chg": "+0.19%",
       "dir": "up"
     }
   },
   "pea_note": "PEA — Ne pas toucher.",
-  "edition": "20:05 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-04-01T20:05:27.020072+02:00",
+  "edition": "22h01 CET",
+  "mode": "normal",
+  "timestamp": "2026-04-01T22:01:15.221414+02:00",
   "date_fr": "Mercredi 1 avril 2026"
 }
