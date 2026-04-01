@@ -1,0 +1,251 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24309.75,
+        "prev_close": 23980.0,
+        "change_pct": 1.38,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7981.27,
+        "prev_close": 7811.1401,
+        "change_pct": 2.18,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.7,
+        "prev_close": 25.27,
+        "change_pct": -6.21,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4805.8999,
+        "prev_close": 4707.0,
+        "change_pct": 2.1,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 101.96,
+        "prev_close": 105.22,
+        "change_pct": -3.1,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1612,
+        "prev_close": 1.1562,
+        "change_pct": 0.43,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.309,
+        "prev_close": 4.311,
+        "change_pct": -0.05,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6641.75,
+        "prev_close": 6580.0,
+        "change_pct": 0.94,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 239.95,
+        "prev_close": 228.3,
+        "change_pct": 5.1,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.1,
+        "prev_close": 463.05,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.0,
+        "prev_close": 178.38,
+        "change_pct": 0.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 85.38,
+        "prev_close": 80.86,
+        "change_pct": 5.59,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.322,
+        "prev_close": 6.072,
+        "change_pct": 4.12,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-01T16:35:25.907830+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Exclusive-Bank of England’s Bailey says investors should not count on UK rate hikes",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/exclusivebank-of-englands-bailey-says-markets-still-ahead-of-themselves-in-pricing-rate-hikes-4593065",
+          "source": "investing_news",
+          "published": "2026-04-01T16:20:17+00:00",
+          "age_minutes": 15,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "527d29f019b6"
+        },
+        {
+          "title": "Fed’s Musalem says monetary policy well positioned amid economic uncertainty",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/feds-musalem-says-monetary-policy-well-positioned-amid-economic-uncertainty-4593286",
+          "source": "investing_news",
+          "published": "2026-04-01T16:26:12+00:00",
+          "age_minutes": 9,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "980deead9c7e"
+        },
+        {
+          "title": "BNP Paribas Exane cuts Restoration Hardware stock price target on margin pressure",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/bnp-paribas-exane-cuts-restoration-hardware-stock-price-target-on-margin-pressure-93CH-4593715",
+          "source": "investing_news",
+          "published": "2026-04-01T16:19:03+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "401c6d386f35"
+        },
+        {
+          "title": "Stock Market Today: Dow Higher On Trump's War Comments; Eli Lilly Soars (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-jobs-data-nike-stock/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T15:57:27+00:00",
+          "age_minutes": 37,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "da997c631ce3"
+        },
+        {
+          "title": "Stock market today: Dow S&P 500, Nasdaq climb as deescalation talk in Iran extends rally",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-climb-as-deescalation-talk-in-iran-extends-rally-133208948.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T13:32:08+00:00",
+          "age_minutes": 183,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "1216bf915f2a"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Exclusive-Bank of England’s Bailey says investors should not count on UK rate hikes",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/exclusivebank-of-englands-bailey-says-markets-still-ahead-of-themselves-in-pricing-rate-hikes-4593065",
+          "source": "investing_news",
+          "published": "2026-04-01T16:20:17+00:00",
+          "age_minutes": 15,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "527d29f019b6"
+        },
+        {
+          "title": "Fed’s Musalem says monetary policy well positioned amid economic uncertainty",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/feds-musalem-says-monetary-policy-well-positioned-amid-economic-uncertainty-4593286",
+          "source": "investing_news",
+          "published": "2026-04-01T16:26:12+00:00",
+          "age_minutes": 9,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "980deead9c7e"
+        },
+        {
+          "title": "BNP Paribas Exane cuts Restoration Hardware stock price target on margin pressure",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/bnp-paribas-exane-cuts-restoration-hardware-stock-price-target-on-margin-pressure-93CH-4593715",
+          "source": "investing_news",
+          "published": "2026-04-01T16:19:03+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "401c6d386f35"
+        },
+        {
+          "title": "Stock Market Today: Dow Higher On Trump's War Comments; Eli Lilly Soars (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-jobs-data-nike-stock/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T15:57:27+00:00",
+          "age_minutes": 37,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "da997c631ce3"
+        }
+      ],
+      "sentiment": 0.05,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 12
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 3
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-01T16:35:22.724105+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-04-01T18:35:25.908067+02:00",
+    "context": {
+      "note": "",
+      "github_run": "77",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:35",
+      "description": "NQ: 24310 (+1.38%) · CAC: 7981 (+2.18%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Wednesday 01 april 2026",
+    "edition": "18h35 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}
