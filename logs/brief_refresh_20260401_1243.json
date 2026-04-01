@@ -1,0 +1,285 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24071.5,
+        "prev_close": 23980.0,
+        "change_pct": 0.38,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7941.1299,
+        "prev_close": 7811.1401,
+        "change_pct": 1.66,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.83,
+        "prev_close": 25.27,
+        "change_pct": -1.74,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4756.1001,
+        "prev_close": 4707.0,
+        "change_pct": 1.04,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 103.45,
+        "prev_close": 105.22,
+        "change_pct": -1.68,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1602,
+        "prev_close": 1.1562,
+        "change_pct": 0.35,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.311,
+        "prev_close": 4.342,
+        "change_pct": -0.71,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6602.75,
+        "prev_close": 6580.0,
+        "change_pct": 0.35,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 235.65,
+        "prev_close": 228.3,
+        "change_pct": 3.22,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 466.9,
+        "prev_close": 463.05,
+        "change_pct": 0.83,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 179.46,
+        "prev_close": 178.38,
+        "change_pct": 0.61,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.45,
+        "prev_close": 80.86,
+        "change_pct": 4.44,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.26,
+        "prev_close": 6.072,
+        "change_pct": 3.1,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-01T10:43:08.542518+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Dow Jones Futures Rise, Oil Prices Fall; Trump To Speak To Nation On Iran War",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-war-exit-oil-prices-sandisk-stock/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T10:26:22+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -0.3333333333333333,
+          "id": "5b646cac5730"
+        },
+        {
+          "title": "Oil drops over 3% as Middle East tensions show signs of easing",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/oil-drops-over-3-middle-103437089.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T10:34:37+00:00",
+          "age_minutes": 8,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "35e36f5d0711"
+        },
+        {
+          "title": "Mercedes-Benz to invest $4bn in Alabama plant",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/mercedes-benz-invest-4bn-alabama-103146703.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T10:31:46+00:00",
+          "age_minutes": 11,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "98ffc33fa397"
+        },
+        {
+          "title": "What High-Income Earners Can Do to Pay Less in Taxes",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/high-income-earners-pay-less-103003359.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T10:30:03+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "2ff8b866300b"
+        },
+        {
+          "title": "Qover raises $12m, surpasses $100m total funding",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/qover-raises-12m-surpasses-100m-102947857.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T10:29:47+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1185a3a8a815"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Dow Jones Futures Rise, Oil Prices Fall; Trump To Speak To Nation On Iran War",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-war-exit-oil-prices-sandisk-stock/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-01T10:26:22+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -0.3333333333333333,
+          "id": "5b646cac5730"
+        }
+      ],
+      "sentiment": -0.1,
+      "themes": [
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 5
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 4
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 4
+        }
+      ],
+      "scanned_at": "2026-04-01T10:43:04.273996+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-01T12:43:08.542801+02:00",
+    "context": {
+      "note": "",
+      "github_run": "75",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à légèrement baissier — Iran tensions en baisse",
+      "description": "NQ 24071.5 (+0.38%), VIX 24.83 (-1.74%). Brent recule -1.68% sur espoirs d'apaisement géopolitique. Trump annonce un discours sur la guerre en Iran.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Trump s'exprime sur l'Iran en soirée. Marché du pétrole en baisse malgré les tensions. Tech et énergie sous pression."
+    },
+    "plan_actions": [
+      {
+        "heure": "12h45",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 23800 / KO 24300",
+        "gain_cible": "+28% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 12h45–13h15. Stop mental -40%. Surveillance Trump 19h CET.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 23950,
+        "type": "support",
+        "action": "Entrée PUT confirmée",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 24200,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Trump discours Iran 19h CET — risque de volatilité accrue",
+      "Brent sous 104$ — surveillance pétrole"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbo NQ → suivi jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 072",
+        "chg": "+0.38%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 941",
+        "chg": "+1.66%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$103.5",
+        "chg": "-1.68%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.8",
+        "chg": "-1.74%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 756.10",
+        "chg": "+1.04%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1602",
+        "chg": "+0.35%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.311",
+        "chg": "-0.71%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur NQ et indices US.",
+    "edition": "12h43 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-01T12:43:12.799732+02:00",
+    "date_fr": "Mercredi 1 avril 2026"
+  }
+}
