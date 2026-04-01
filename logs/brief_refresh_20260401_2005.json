@@ -1,0 +1,307 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24301.5,
+        "prev_close": 23980.0,
+        "change_pct": 1.34,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7981.27,
+        "prev_close": 7811.1401,
+        "change_pct": 2.18,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.7,
+        "prev_close": 25.27,
+        "change_pct": -6.21,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4807.0,
+        "prev_close": 4707.0,
+        "change_pct": 2.12,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 100.13,
+        "prev_close": 105.22,
+        "change_pct": -4.84,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1596,
+        "prev_close": 1.1562,
+        "change_pct": 0.29,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.315,
+        "prev_close": 4.311,
+        "change_pct": 0.09,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6644.0,
+        "prev_close": 6580.0,
+        "change_pct": 0.97,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 239.95,
+        "prev_close": 228.3,
+        "change_pct": 5.1,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.1,
+        "prev_close": 463.05,
+        "change_pct": 1.74,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.0,
+        "prev_close": 178.38,
+        "change_pct": 0.91,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 85.38,
+        "prev_close": 80.86,
+        "change_pct": 5.59,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.322,
+        "prev_close": 6.072,
+        "change_pct": 4.12,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-01T18:05:22.032819+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "IEA, IMF and World Bank to coordinate response to Middle East war’s impact",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/iea-imf-and-world-bank-to-coordinate-response-to-middle-east-wars-impact-4593825",
+          "source": "investing_news",
+          "published": "2026-04-01T17:48:39+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "0b5642cbdb96"
+        },
+        {
+          "title": "Form 13G Warner Music Group Corp. For: 1 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-warner-music-group-corp-for-1-april-93CH-4593822",
+          "source": "investing_news",
+          "published": "2026-04-01T17:45:35+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "4055f9dddd72"
+        },
+        {
+          "title": "Top Luxury Stocks to Watch Into Q1 Earnings, UBS Says",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/top-luxury-stocks-to-watch-into-q1-earnings-ubs-says-93CH-4593830",
+          "source": "investing_news",
+          "published": "2026-04-01T17:56:53+00:00",
+          "age_minutes": 8,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "b0ac9e1acddf"
+        },
+        {
+          "title": "US mortgage rates jump to 6.57%, highest since August, MBA says",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/us-mortgage-rates-jump-to-657-highest-since-august-mba-says-4592699",
+          "source": "investing_news",
+          "published": "2026-04-01T17:54:29+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "5a27a7409024"
+        },
+        {
+          "title": "Form 144 Amalgamated Financial Corp. For: 1 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-144-amalgamated-financial-corp-for-1-april-93CH-4593827",
+          "source": "investing_news",
+          "published": "2026-04-01T17:51:43+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "19e25290fb4b"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "IEA, IMF and World Bank to coordinate response to Middle East war’s impact",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/iea-imf-and-world-bank-to-coordinate-response-to-middle-east-wars-impact-4593825",
+          "source": "investing_news",
+          "published": "2026-04-01T17:48:39+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "0b5642cbdb96"
+        },
+        {
+          "title": "Form 13G Warner Music Group Corp. For: 1 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-warner-music-group-corp-for-1-april-93CH-4593822",
+          "source": "investing_news",
+          "published": "2026-04-01T17:45:35+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "4055f9dddd72"
+        }
+      ],
+      "sentiment": -0.18,
+      "themes": [
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 2
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-01T18:05:19.031042+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-01T20:05:22.033092+02:00",
+    "context": {
+      "note": "",
+      "github_run": "78",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier modéré — Coordination géopolitique et données macro positives",
+      "description": "NQ Futures +1.34% malgré Brent -4.84%. VIX en forte baisse (-6.21%) à 23.7. Sentiment global légèrement négatif (-0.18).",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "IEA, IMF et Banque Mondiale coordonnent une réponse à l'impact de la guerre au Moyen-Orient. US10Y en légère hausse (+0.09%)."
+    },
+    "plan_actions": [
+      {
+        "heure": "20:10",
+        "titre": "CALL NQ Futures ×18 (BEST)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 20:10–20:30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "20:15",
+        "titre": "PUT GOLD ×15 (BNP)",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 4750 / KO 4850",
+        "gain_cible": "+30% si Gold -1%",
+        "plateforme": "bnpparibas.net → Or → PUT BEST",
+        "note": "Entrée 20:15–20:45. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support Gold",
+        "prix": 4780,
+        "type": "support",
+        "action": "Stop KO si percé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "News géopolitique majeure à 20h30 CET",
+      "Form 13G Warner Music Group à surveiller"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 302",
+        "chg": "+1.34%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 981",
+        "chg": "+2.18%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$100.1",
+        "chg": "-4.84%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4 807.0",
+        "chg": "+2.12%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.7",
+        "chg": "-6.21%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1596",
+        "chg": "+0.29%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.315",
+        "chg": "+0.09%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher.",
+    "edition": "20:05 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-01T20:05:27.020072+02:00",
+    "date_fr": "Mercredi 1 avril 2026"
+  }
+}

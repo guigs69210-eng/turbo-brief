@@ -1,19 +1,101 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 18:35",
-    "description": "NQ: 24310 (+1.38%) · CAC: 7981 (+2.18%)",
-    "biais": "neutre",
-    "conviction": "faible"
+    "titre": "Biais haussier modéré — Coordination géopolitique et données macro positives",
+    "description": "NQ Futures +1.34% malgré Brent -4.84%. VIX en forte baisse (-6.21%) à 23.7. Sentiment global légèrement négatif (-0.18).",
+    "biais": "haussier",
+    "conviction": "modérée",
+    "contexte_macro": "IEA, IMF et Banque Mondiale coordonnent une réponse à l'impact de la guerre au Moyen-Orient. US10Y en légère hausse (+0.09%)."
   },
-  "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "plan_actions": [
+    {
+      "heure": "20:10",
+      "titre": "CALL NQ Futures ×18 (BEST)",
+      "sens": "CALL",
+      "mise": "1200 €",
+      "levier": 18,
+      "strike_ko": "Strike 24000 / KO 23500",
+      "gain_cible": "+25% si NQ +1%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée 20:10–20:30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "20:15",
+      "titre": "PUT GOLD ×15 (BNP)",
+      "sens": "PUT",
+      "mise": "800 €",
+      "levier": 15,
+      "strike_ko": "Strike 4750 / KO 4850",
+      "gain_cible": "+30% si Gold -1%",
+      "plateforme": "bnpparibas.net → Or → PUT BEST",
+      "note": "Entrée 20:15–20:45. Stop mental -40%.",
+      "urgence": "normale"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Wednesday 01 april 2026",
-  "edition": "18h35 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "niveaux_cles": [
+    {
+      "label": "Résistance NQ",
+      "prix": 24500,
+      "type": "resistance",
+      "action": "TP1 si atteint",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support Gold",
+      "prix": 4780,
+      "type": "support",
+      "action": "Stop KO si percé",
+      "couleur": "bear"
+    }
+  ],
+  "alertes": [
+    "News géopolitique majeure à 20h30 CET",
+    "Form 13G Warner Music Group à surveiller"
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Turbos NQ → cotent jusqu'à 22h CET"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "24 302",
+      "chg": "+1.34%",
+      "dir": "up"
+    },
+    "cac40": {
+      "valeur": "7 981",
+      "chg": "+2.18%",
+      "dir": "up"
+    },
+    "brent": {
+      "valeur": "$100.1",
+      "chg": "-4.84%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "4 807.0",
+      "chg": "+2.12%",
+      "dir": "up"
+    },
+    "vix": {
+      "valeur": "23.7",
+      "chg": "-6.21%",
+      "dir": "dn"
+    },
+    "eurusd": {
+      "valeur": "1.1596",
+      "chg": "+0.29%",
+      "dir": "up"
+    },
+    "us10y": {
+      "valeur": "4.315",
+      "chg": "+0.09%",
+      "dir": "up"
+    }
+  },
+  "pea_note": "PEA — Ne pas toucher.",
+  "edition": "20:05 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-04-01T20:05:27.020072+02:00",
+  "date_fr": "Mercredi 1 avril 2026"
 }
