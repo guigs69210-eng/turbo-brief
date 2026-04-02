@@ -1,0 +1,263 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24143.25,
+        "prev_close": 23821.5,
+        "change_pct": 1.35,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.91,
+        "prev_close": 24.53,
+        "change_pct": 1.55,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4693.5,
+        "prev_close": 4707.1001,
+        "change_pct": -0.29,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.55,
+        "prev_close": 106.85,
+        "change_pct": 1.59,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1542,
+        "prev_close": 1.1594,
+        "change_pct": -0.45,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6606.75,
+        "prev_close": 6537.25,
+        "change_pct": 1.06,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-02T19:38:57.062939+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "US agencies to monitor drinking water for microplastics, pharmaceuticals",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/us-agencies-to-monitor-drinking-water-for-microplastics-pharmaceuticals-4596189",
+          "source": "investing_news",
+          "published": "2026-04-02T19:24:51+00:00",
+          "age_minutes": 14,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "233d8a17ba2b"
+        },
+        {
+          "title": "Planning commission approves Trump’s White House ballroom project",
+          "summary": "",
+          "url": "https://www.investing.com/news/politics-news/washington-planning-commission-to-vote-thursday-on-trumps-ballroom-project-4594944",
+          "source": "investing_news",
+          "published": "2026-04-02T19:24:32+00:00",
+          "age_minutes": 14,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "142b65089884"
+        },
+        {
+          "title": "Ceco Environmental amends credit agreement, expands revolving facility to $740 million",
+          "summary": "",
+          "url": "https://www.investing.com/news/sec-filings/ceco-environmental-amends-credit-agreement-expands-revolving-facility-to-740-million-93CH-4596257",
+          "source": "investing_news",
+          "published": "2026-04-02T19:23:11+00:00",
+          "age_minutes": 15,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "cf26e4b6a2d1"
+        },
+        {
+          "title": "Form 6K MAYFAIR GOLD CORP. For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-6k-mayfair-gold-corp-for-2-april-93CH-4596256",
+          "source": "investing_news",
+          "published": "2026-04-02T19:20:53+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "0060354c4e3b"
+        },
+        {
+          "title": "Form 8K CECO Environmental Corp For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-ceco-environmental-corp-for-2-april-93CH-4596255",
+          "source": "investing_news",
+          "published": "2026-04-02T19:20:41+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "0a005f667899"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": -0.09,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-02T19:38:53.627360+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-02T21:38:57.063147+02:00",
+    "context": {
+      "note": "",
+      "github_run": "85",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier sur NQ — Tech/IA en surperformance",
+      "description": "NQ Futures +1.35% malgré VIX en hausse (+1.55%). Sentiment global légèrement négatif (-0.09) mais thèmes Tech/IA dominants.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Brent en hausse (+1.59%) et US10Y en légère baisse (-0.14%), contexte global favorable aux actifs risqués."
+    },
+    "plan_actions": [
+      {
+        "heure": "21h40",
+        "titre": "CALL NQ Futures ×18",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 21h40–22h00. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24300,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23800,
+        "type": "support",
+        "action": "Stop mental si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveillance EURUSD (1.1542) et Brent (108.55) pour volatilité accrue."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 143",
+        "chg": "+1.35%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$108.5",
+        "chg": "+1.59%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "24.9",
+        "chg": "+1.55%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4693.5",
+        "chg": "-0.29%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1542",
+        "chg": "-0.45%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.313",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Non applicable (NQ Futures).",
+    "edition": "21h38 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-02T21:39:00.965227+02:00",
+    "date_fr": "Jeudi 2 avril 2026"
+  }
+}
