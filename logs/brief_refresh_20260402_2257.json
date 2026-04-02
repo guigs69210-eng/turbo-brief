@@ -1,0 +1,263 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24219.25,
+        "prev_close": 23821.5,
+        "change_pct": 1.67,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.87,
+        "prev_close": 24.53,
+        "change_pct": -2.69,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4696.7002,
+        "prev_close": 4707.1001,
+        "change_pct": -0.22,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.93,
+        "prev_close": 106.85,
+        "change_pct": 1.95,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1542,
+        "prev_close": 1.1594,
+        "change_pct": -0.45,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6625.25,
+        "prev_close": 6537.25,
+        "change_pct": 1.35,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-02T20:57:50.203097+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Form 10Q Iron Horse Acq II Corp For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-10q-iron-horse-acq-ii-corp-for-2-april-93CH-4596496",
+          "source": "investing_news",
+          "published": "2026-04-02T20:45:45+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "2981aa13705a"
+        },
+        {
+          "title": "Form 13G Xanadu Quantum Technologies Ltd For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-xanadu-quantum-technologies-ltd-for-2-april-93CH-4596495",
+          "source": "investing_news",
+          "published": "2026-04-02T20:45:43+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "9ac7bfa23463"
+        },
+        {
+          "title": "Form 13G LAUNCHPAD CADENZA ACQUISITION CORP I For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-launchpad-cadenza-acquisition-corp-i-for-2-april-93CH-4596494",
+          "source": "investing_news",
+          "published": "2026-04-02T20:45:37+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "2dc0effa6667"
+        },
+        {
+          "title": "Form 13F Ares Financial Consulting For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13f-ares-financial-consulting-for-2-april-93CH-4596493",
+          "source": "investing_news",
+          "published": "2026-04-02T20:45:37+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "09eff445df7a"
+        },
+        {
+          "title": "Weatherford plans to redomicile parent company to Texas from Ireland",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/weatherford-plans-to-redomicile-parent-company-to-texas-from-ireland-93CH-4596492",
+          "source": "investing_news",
+          "published": "2026-04-02T20:45:00+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "281cdb3bf16d"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-02T20:57:45.924522+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-02T22:57:50.203308+02:00",
+    "context": {
+      "note": "",
+      "github_run": "86",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier sur NQ — Tech/IA en surperformance",
+      "description": "NQ Futures +1.67% en clôture, VIX en baisse à 23.87. Sentiment global neutre malgré les publications mineures.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Les valeurs Tech/IA tirent le marché après des publications 10Q/13G mineures mais positives."
+    },
+    "plan_actions": [
+      {
+        "heure": "22h57",
+        "titre": "CALL NQ Futures ×18 (PEA impossible)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 24200 / KO 23800",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "vontobel.com → Nasdaq 100 Futures → CALL Turbo",
+        "note": "Entrée immédiate avant clôture US. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24000,
+        "type": "support",
+        "action": "Stop mental ajusté si cassé",
+        "couleur": "bull"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Surveiller la clôture US à 22h30 CET pour confirmation du biais haussier."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 219",
+        "chg": "+1.67%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$108.9",
+        "chg": "+1.95%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.9",
+        "chg": "-2.69%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 696.70",
+        "chg": "-0.22%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1542",
+        "chg": "-0.45%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.313",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Aucun trade possible sur NQ. Turbos uniquement sur actions FR.",
+    "edition": "22h57 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-02T22:57:54.262569+02:00",
+    "date_fr": "Jeudi 2 avril 2026"
+  }
+}
