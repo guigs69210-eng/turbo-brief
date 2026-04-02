@@ -1,0 +1,304 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24143.5,
+        "prev_close": 23821.5,
+        "change_pct": 1.35,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7948.3101,
+        "prev_close": 7975.3501,
+        "change_pct": -0.34,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.22,
+        "prev_close": 24.53,
+        "change_pct": 2.81,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4697.0,
+        "prev_close": 4707.1001,
+        "change_pct": -0.21,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.15,
+        "prev_close": 106.85,
+        "change_pct": 0.28,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1553,
+        "prev_close": 1.1594,
+        "change_pct": -0.36,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.301,
+        "prev_close": 4.319,
+        "change_pct": -0.42,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6609.5,
+        "prev_close": 6537.25,
+        "change_pct": 1.11,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 235.1,
+        "prev_close": 239.45,
+        "change_pct": -1.82,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 469.65,
+        "prev_close": 470.95,
+        "change_pct": -0.28,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.62,
+        "prev_close": 179.48,
+        "change_pct": 0.64,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 82.94,
+        "prev_close": 85.12,
+        "change_pct": -2.56,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.583,
+        "prev_close": 6.309,
+        "change_pct": 4.34,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-02T15:44:22.590172+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Factbox-Global companies delay IPOs and slash dividends as Middle East conflict rattles markets",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxglobal-companies-delay-ipos-and-slash-dividends-as-middle-east-conflict-rattles-markets-4595282",
+          "source": "investing_news",
+          "published": "2026-04-02T15:30:32+00:00",
+          "age_minutes": 13,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "a6475a99101c"
+        },
+        {
+          "title": "BofA Upgrades Vale Amid Iran Conflict Selloff",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-upgrades-vale-amid-iran-152145829.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T15:21:45+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "b646a05d13f2"
+        },
+        {
+          "title": "Here's Why Intel Stock Is a Buy Before Earnings",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-intel-stock-buy-152600610.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T15:26:00+00:00",
+          "age_minutes": 18,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "361a50a4e69b"
+        },
+        {
+          "title": "Form 13G Trade Desk For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-trade-desk-for-2-april-93CH-4596005",
+          "source": "investing_news",
+          "published": "2026-04-02T15:31:05+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1fa50e886816"
+        },
+        {
+          "title": "Form 144 HERSHEY CO For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-144-hershey-co-for-2-april-93CH-4596004",
+          "source": "investing_news",
+          "published": "2026-04-02T15:31:05+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "613e7b1f01c1"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Factbox-Global companies delay IPOs and slash dividends as Middle East conflict rattles markets",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/factboxglobal-companies-delay-ipos-and-slash-dividends-as-middle-east-conflict-rattles-markets-4595282",
+          "source": "investing_news",
+          "published": "2026-04-02T15:30:32+00:00",
+          "age_minutes": 13,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "a6475a99101c"
+        },
+        {
+          "title": "BofA Upgrades Vale Amid Iran Conflict Selloff",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-upgrades-vale-amid-iran-152145829.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T15:21:45+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "b646a05d13f2"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 6
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 4
+        }
+      ],
+      "scanned_at": "2026-04-02T15:44:20.044706+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-02T17:44:22.590387+02:00",
+    "context": {
+      "note": "",
+      "github_run": "82",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Fin de session mitigée — Conflit Moyen-Orient pèse sur les IPOs et dividendes",
+      "description": "NQ Futures +1.35% malgré tensions géopolitiques. CAC40 en léger retrait (-0.34%). VIX en hausse (+2.81%) reflétant incertitudes.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Conflit au Moyen-Orient perturbe les marchés actions et les décisions d'IPO. Tech/IA reste un thème porteur malgré le contexte."
+    },
+    "plan_actions": [
+      {
+        "heure": "17:45",
+        "titre": "Clôture positions FR avant 17h30",
+        "sens": "NEUTRAL",
+        "mise": "0 €",
+        "levier": 0,
+        "strike_ko": "N/A",
+        "gain_cible": "N/A",
+        "plateforme": "Toutes",
+        "note": "Clôture obligatoire des actions FR et turbos BEST avant 17h30 CET.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "17:45",
+        "titre": "Gestion des positions NQ après clôture US",
+        "sens": "CALL",
+        "mise": "0 €",
+        "levier": 0,
+        "strike_ko": "N/A",
+        "gain_cible": "N/A",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Surveillance des positions NQ jusqu'à 22h CET. Stop mental -40% maintenu.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ Futures",
+        "prix": 24000,
+        "type": "support",
+        "action": "Surveillance",
+        "couleur": "blue"
+      },
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Clôture obligatoire des positions FR avant 17h30 CET",
+      "Surveillance des turbos NQ jusqu'à 22h CET"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 144",
+        "chg": "+1.35%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 948",
+        "chg": "-0.34%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$107.2",
+        "chg": "+0.28%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "25.2",
+        "chg": "+2.81%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 697.0",
+        "chg": "-0.21%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1553",
+        "chg": "-0.36%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.301",
+        "chg": "-0.42%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Aucune action requise avant clôture.",
+    "edition": "17:44 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-02T17:44:27.321089+02:00",
+    "date_fr": "Jeudi 2 avril 2026"
+  }
+}
