@@ -1,0 +1,338 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24080.5,
+        "prev_close": 23821.5,
+        "change_pct": 1.09,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.6,
+        "prev_close": 24.53,
+        "change_pct": 4.36,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4678.0,
+        "prev_close": 4707.1001,
+        "change_pct": -0.62,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.93,
+        "prev_close": 106.85,
+        "change_pct": 1.95,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1542,
+        "prev_close": 1.1594,
+        "change_pct": -0.45,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.309,
+        "prev_close": 4.319,
+        "change_pct": -0.23,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6594.75,
+        "prev_close": 6537.25,
+        "change_pct": 0.88,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-02T18:01:56.927463+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Form 8K FEDERAL HOME LOAN BANK OF CHICAGO For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-federal-home-loan-bank-of-chicago-for-2-april-93CH-4596161",
+          "source": "investing_news",
+          "published": "2026-04-02T17:50:46+00:00",
+          "age_minutes": 11,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "c25fef0c44bb"
+        },
+        {
+          "title": "Veteran Wall Street firm sends Micron stock a blunt warning",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/veteran-wall-street-firm-sends-173600641.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T17:36:00+00:00",
+          "age_minutes": 25,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "72d8338d05c4"
+        },
+        {
+          "title": "Stock Market Rebounds Even As Oil Prices Skyrocket On Trump's Iran War Comments; Tesla, SpaceX, Eli Lilly In Focus: Weekly Review",
+          "summary": "",
+          "url": "https://www.investors.com/news/stock-market-oil-prices-skyrocket-trump-iran-war-comments-tesla-spacex-eli-lilly/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T17:09:26+00:00",
+          "age_minutes": 52,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "3ad3bd94779d"
+        },
+        {
+          "title": "Horizon Kinetics buys Texas Pacific Land (TPL) share for $454",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/horizon-kinetics-buys-texas-pacific-land-tpl-share-for-454-93CH-4596163",
+          "source": "investing_news",
+          "published": "2026-04-02T17:52:46+00:00",
+          "age_minutes": 9,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "2081c7a1e5b9"
+        },
+        {
+          "title": "Hedge funds sell global stocks at fastest pace in 13 years",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/hedge-funds-sell-global-stocks-at-fastest-pace-in-13-years-4596162",
+          "source": "investing_news",
+          "published": "2026-04-02T17:51:23+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "10b021179f36"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Form 8K FEDERAL HOME LOAN BANK OF CHICAGO For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-federal-home-loan-bank-of-chicago-for-2-april-93CH-4596161",
+          "source": "investing_news",
+          "published": "2026-04-02T17:50:46+00:00",
+          "age_minutes": 11,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "c25fef0c44bb"
+        },
+        {
+          "title": "Veteran Wall Street firm sends Micron stock a blunt warning",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/veteran-wall-street-firm-sends-173600641.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T17:36:00+00:00",
+          "age_minutes": 25,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "72d8338d05c4"
+        },
+        {
+          "title": "Stock Market Rebounds Even As Oil Prices Skyrocket On Trump's Iran War Comments; Tesla, SpaceX, Eli Lilly In Focus: Weekly Review",
+          "summary": "",
+          "url": "https://www.investors.com/news/stock-market-oil-prices-skyrocket-trump-iran-war-comments-tesla-spacex-eli-lilly/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T17:09:26+00:00",
+          "age_minutes": 52,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "3ad3bd94779d"
+        }
+      ],
+      "sentiment": 0.02,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 8
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-02T18:01:53.483017+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-02T20:01:56.927695+02:00",
+    "context": {
+      "note": "",
+      "github_run": "84",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Rebond technique NQ malgré tensions géopolitiques — Volatilité élevée",
+      "description": "NQ Futures +1.09% malgré hausse du VIX (+4.36%) et tensions sur l'Iran. Micron en alerte après avertissement d'un acteur majeur. FED HOLD hawkish du 18/03 toujours en mémoire.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Rebond des techs sur Micron et Tesla. Pétrole en hausse (+1.95%) sur commentaires géopolitiques. Marché hésitant avec VIX élevé."
+    },
+    "plan_actions": [
+      {
+        "heure": "20:05",
+        "titre": "CALL NQ Futures ×18 (Turbo BEST)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23600",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 20:05–20:20. Stop mental -40%. VIX >25 → levier réduit à ×18.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "20:10",
+        "titre": "PUT CAC40 ×15 (Turbo BEST)",
+        "sens": "PUT",
+        "mise": "800 €",
+        "levier": 15,
+        "strike_ko": "Strike 7950 / KO 8050",
+        "gain_cible": "+30% si CAC40 -0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 20:10–20:30. CAC40 en légère baisse (-0.16%). Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24200,
+        "type": "resistance",
+        "action": "TP1 si atteint → sortir 50%, stop à +10%",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23900,
+        "type": "support",
+        "action": "KO si cassé → sortie immédiate",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7980,
+        "type": "resistance",
+        "action": "TP1 si atteint → sortir 50%, stop à +10%",
+        "couleur": "bear"
+      },
+      {
+        "label": "Support CAC40",
+        "prix": 7940,
+        "type": "support",
+        "action": "KO si cassé → sortie immédiate",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Form 8K FEDERAL HOME LOAN BANK OF CHICAGO — 11min",
+      "Avertissement Micron — 25min",
+      "Commentaires géopolitiques sur l'Iran — risque de volatilité accrue"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → clôture possible jusqu'à 22h CET",
+      "VIX >25 → levier max ×18"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 080",
+        "chg": "+1.09%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$108.9",
+        "chg": "+1.95%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "25.6",
+        "chg": "+4.36%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 678.0",
+        "chg": "-0.62%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1542",
+        "chg": "-0.45%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.309",
+        "chg": "-0.23%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Non applicable (NQ Futures).",
+    "edition": "20:01 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-02T20:02:04.517839+02:00",
+    "date_fr": "Jeudi 2 avril 2026"
+  }
+}
