@@ -1,0 +1,284 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 23784.75,
+        "prev_close": 23821.5,
+        "change_pct": -0.15,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7889.7202,
+        "prev_close": 7975.3501,
+        "change_pct": -1.07,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 26.87,
+        "prev_close": 24.53,
+        "change_pct": 9.54,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4642.0,
+        "prev_close": 4707.1001,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.61,
+        "prev_close": 106.85,
+        "change_pct": 1.65,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1519,
+        "prev_close": 1.1594,
+        "change_pct": -0.65,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.319,
+        "prev_close": 4.311,
+        "change_pct": 0.19,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6529.75,
+        "prev_close": 6537.25,
+        "change_pct": -0.11,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 230.25,
+        "prev_close": 239.45,
+        "change_pct": -3.84,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 466.1,
+        "prev_close": 470.95,
+        "change_pct": -1.03,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 178.88,
+        "prev_close": 179.48,
+        "change_pct": -0.33,
+        "direction": "dn"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 82.78,
+        "prev_close": 85.12,
+        "change_pct": -2.75,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.413,
+        "prev_close": 6.309,
+        "change_pct": 1.65,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-02T10:38:56.354099+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Inovio Pharmaceuticals suspends at-the-market offering prospectus",
+          "summary": "",
+          "url": "https://www.investing.com/news/sec-filings/inovio-pharmaceuticals-suspends-atthemarket-offering-prospectus-93CH-4595044",
+          "source": "investing_news",
+          "published": "2026-04-02T10:35:24+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "88f6e035dda6"
+        },
+        {
+          "title": "Form DEF 14A Accendra Health For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-def-14a-accendra-health-for-2-april-93CH-4595040",
+          "source": "investing_news",
+          "published": "2026-04-02T10:33:26+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "70aa6aac7a20"
+        },
+        {
+          "title": "Form DEF 14A Ally Financial Inc For: 2 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-def-14a-ally-financial-inc-for-2-april-93CH-4595039",
+          "source": "investing_news",
+          "published": "2026-04-02T10:33:22+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "f3991b549d02"
+        },
+        {
+          "title": "BofA raises Ovintiv stock price target to $68 on asset sales",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/bofa-raises-ovintiv-stock-price-target-to-68-on-asset-sales-93CH-4595038",
+          "source": "investing_news",
+          "published": "2026-04-02T10:33:12+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "3abb85d7ffc9"
+        },
+        {
+          "title": "Evercore ISI lowers ConAgra stock price target to $18 on EPS trim",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/evercore-isi-lowers-conagra-stock-price-target-to-18-on-eps-trim-93CH-4595037",
+          "source": "investing_news",
+          "published": "2026-04-02T10:33:04+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "3f201eff60dc"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.1,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-02T10:38:53.188736+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-02T12:38:56.354307+02:00",
+    "context": {
+      "note": "",
+      "github_run": "81",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Tech sous pression, VIX en hausse",
+      "description": "NQ Futures -0.15% à 23784.75, CAC40 -1.07% à 7889.72. VIX explose à 26.87 (+9.54%) reflétant une aversion au risque accrue.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Les valeurs tech et IA reculent après des prises de bénéfices. Le Brent rebondit (+1.65%) mais reste sous pression macro."
+    },
+    "plan_actions": [
+      {
+        "heure": "12h40",
+        "titre": "PUT CAC40 ×18 BEST SG",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 7800 / KO 8000",
+        "gain_cible": "+35% si CAC40 -1.2%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 12h40–13h00. Stop mental -40%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "12h45",
+        "titre": "PUT NQ Futures ×15 Vontobel",
+        "sens": "PUT",
+        "mise": "1800 €",
+        "levier": 15,
+        "strike_ko": "Strike 23500 / KO 24200",
+        "gain_cible": "+28% si NQ -1.0%",
+        "plateforme": "vontobel.com → Nasdaq 100 → PUT",
+        "note": "Entrée 12h45–13h10. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support CAC40",
+        "prix": 7800,
+        "type": "support",
+        "action": "Achat PUT si test",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 24200,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bear"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23500,
+        "type": "support",
+        "action": "Stop KO PUT",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "VIX > 25 → levier max ×20",
+      "CAC40 proche KO PUT (8000)"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbo PUT CAC40 : KO si CAC40 > 8000"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "23 785",
+        "chg": "-0.15%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "7 890",
+        "chg": "-1.07%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$108.6",
+        "chg": "+1.65%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "26.9",
+        "chg": "+9.54%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "4 642.0",
+        "chg": "-1.38%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1519",
+        "chg": "-0.65%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.319",
+        "chg": "+0.19%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Turbos uniquement.",
+    "edition": "12h38 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-02T12:39:01.813604+02:00",
+    "date_fr": "Jeudi 2 avril 2026"
+  }
+}
