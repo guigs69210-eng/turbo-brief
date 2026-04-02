@@ -1,102 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Fin de session mitigée — Conflit Moyen-Orient pèse sur les IPOs et dividendes",
-    "description": "NQ Futures +1.35% malgré tensions géopolitiques. CAC40 en léger retrait (-0.34%). VIX en hausse (+2.81%) reflétant incertitudes.",
+    "titre": "Clôture Paris — 18:35",
+    "description": "NQ: 24072 (+1.05%) · CAC: 7962 (-0.16%)",
     "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Conflit au Moyen-Orient perturbe les marchés actions et les décisions d'IPO. Tech/IA reste un thème porteur malgré le contexte."
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "17:45",
-      "titre": "Clôture positions FR avant 17h30",
-      "sens": "NEUTRAL",
-      "mise": "0 €",
-      "levier": 0,
-      "strike_ko": "N/A",
-      "gain_cible": "N/A",
-      "plateforme": "Toutes",
-      "note": "Clôture obligatoire des actions FR et turbos BEST avant 17h30 CET.",
-      "urgence": "haute"
-    },
-    {
-      "heure": "17:45",
-      "titre": "Gestion des positions NQ après clôture US",
-      "sens": "CALL",
-      "mise": "0 €",
-      "levier": 0,
-      "strike_ko": "N/A",
-      "gain_cible": "N/A",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Surveillance des positions NQ jusqu'à 22h CET. Stop mental -40% maintenu.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Support NQ Futures",
-      "prix": 24000,
-      "type": "support",
-      "action": "Surveillance",
-      "couleur": "blue"
-    },
-    {
-      "label": "Résistance NQ Futures",
-      "prix": 24500,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Clôture obligatoire des positions FR avant 17h30 CET",
-    "Surveillance des turbos NQ jusqu'à 22h CET"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ/indices → cotent jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 144",
-      "chg": "+1.35%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "7 948",
-      "chg": "-0.34%",
-      "dir": "dn"
-    },
-    "brent": {
-      "valeur": "$107.2",
-      "chg": "+0.28%",
-      "dir": "up"
-    },
-    "vix": {
-      "valeur": "25.2",
-      "chg": "+2.81%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "$4 697.0",
-      "chg": "-0.21%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.1553",
-      "chg": "-0.36%",
-      "dir": "dn"
-    },
-    "us10y": {
-      "valeur": "4.301",
-      "chg": "-0.42%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Aucune action requise avant clôture.",
-  "edition": "17:44 CET",
-  "mode": "normal",
-  "timestamp": "2026-04-02T17:44:27.321089+02:00",
-  "date_fr": "Jeudi 2 avril 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Thursday 02 april 2026",
+  "edition": "18h35 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }

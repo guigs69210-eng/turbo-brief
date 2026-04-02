@@ -1,0 +1,262 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24071.5,
+        "prev_close": 23821.5,
+        "change_pct": 1.05,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.94,
+        "prev_close": 24.53,
+        "change_pct": 5.75,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4677.0,
+        "prev_close": 4707.1001,
+        "change_pct": -0.64,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 107.86,
+        "prev_close": 106.85,
+        "change_pct": 0.95,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1547,
+        "prev_close": 1.1594,
+        "change_pct": -0.4,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.307,
+        "prev_close": 4.319,
+        "change_pct": -0.28,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6589.75,
+        "prev_close": 6537.25,
+        "change_pct": 0.8,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-02T16:35:07.216412+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "ECB’s Villeroy says it is too soon to say when rates could rise",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/ecbs-villeroy-says-it-is-too-soon-to-say-when-rates-could-rise-4596077",
+          "source": "investing_news",
+          "published": "2026-04-02T16:18:41+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "e2ad4576edd9"
+        },
+        {
+          "title": "European stocks mostly lower as Trump vows Iran escalation; oil surges",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/europe-stocks-open-lower-as-trump-vows-fresh-iran-strikes-oil-surges-4594710",
+          "source": "investing_news",
+          "published": "2026-04-02T16:15:05+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "8942078b125c"
+        },
+        {
+          "title": "Dow falls as oil surges on Trump speech to 'hit Iran extremely hard'",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/nasdaq-set-fall-oil-surges-112000070.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T16:08:00+00:00",
+          "age_minutes": 27,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "76592928d57c"
+        },
+        {
+          "title": "Iran War Fuels Defense Contracts. Analysts Divided On RTX Stock.",
+          "summary": "",
+          "url": "https://www.investors.com/news/rtx-stock-iran-war-middle-east-defense-contractors-dod-trump/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T16:05:43+00:00",
+          "age_minutes": 29,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "5d0f4893f8f9"
+        },
+        {
+          "title": "Walmart-related recession indicator is at its highest point since the 2008 financial crisis",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/articles/walmart-related-recession-indicator-highest-154333429.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T15:43:33+00:00",
+          "age_minutes": 51,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "18c3389a493f"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "ECB’s Villeroy says it is too soon to say when rates could rise",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/ecbs-villeroy-says-it-is-too-soon-to-say-when-rates-could-rise-4596077",
+          "source": "investing_news",
+          "published": "2026-04-02T16:18:41+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "e2ad4576edd9"
+        },
+        {
+          "title": "European stocks mostly lower as Trump vows Iran escalation; oil surges",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/europe-stocks-open-lower-as-trump-vows-fresh-iran-strikes-oil-surges-4594710",
+          "source": "investing_news",
+          "published": "2026-04-02T16:15:05+00:00",
+          "age_minutes": 19,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "8942078b125c"
+        },
+        {
+          "title": "Dow falls as oil surges on Trump speech to 'hit Iran extremely hard'",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/commodities/articles/nasdaq-set-fall-oil-surges-112000070.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T16:08:00+00:00",
+          "age_minutes": 27,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "76592928d57c"
+        },
+        {
+          "title": "Iran War Fuels Defense Contracts. Analysts Divided On RTX Stock.",
+          "summary": "",
+          "url": "https://www.investors.com/news/rtx-stock-iran-war-middle-east-defense-contractors-dod-trump/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T16:05:43+00:00",
+          "age_minutes": 29,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "5d0f4893f8f9"
+        },
+        {
+          "title": "Walmart-related recession indicator is at its highest point since the 2008 financial crisis",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/articles/walmart-related-recession-indicator-highest-154333429.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-02T15:43:33+00:00",
+          "age_minutes": 51,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "18c3389a493f"
+        }
+      ],
+      "sentiment": -0.05,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 12
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 7
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 3
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-02T16:35:04.630469+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-04-02T18:35:07.216677+02:00",
+    "context": {
+      "note": "",
+      "github_run": "83",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:35",
+      "description": "NQ: 24072 (+1.05%) · CAC: 7962 (-0.16%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Thursday 02 april 2026",
+    "edition": "18h35 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}
