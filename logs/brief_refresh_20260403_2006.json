@@ -1,0 +1,337 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24129.75,
+        "prev_close": 23821.5,
+        "change_pct": 1.29,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.87,
+        "prev_close": 24.53,
+        "change_pct": -2.69,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4651.5,
+        "prev_close": 4707.1001,
+        "change_pct": -1.18,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.03,
+        "prev_close": 106.85,
+        "change_pct": 2.04,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1523,
+        "prev_close": 1.1543,
+        "change_pct": -0.17,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6603.75,
+        "prev_close": 6537.25,
+        "change_pct": 1.02,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-03T18:06:01.931684+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Trump proposes \"historic\" defense spending budget, eyes 10% cut to other federal programs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trumps-budget-proposes-10-cut-in-discretionary-spending-increased-defense-spending-4597081",
+          "source": "investing_news",
+          "published": "2026-04-03T17:48:26+00:00",
+          "age_minutes": 17,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "aa61305171b9"
+        },
+        {
+          "title": "US labor market posts largest jobs gain in 15 months, but clouds brewing from Iran war",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/us-employment-growth-rebounded-in-march-unemployment-rate-falls-to-43-4597054",
+          "source": "investing_news",
+          "published": "2026-04-03T17:37:08+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "7a6910d1c95b"
+        },
+        {
+          "title": "US judge upholds block on subpoenas to Fed’s Powell, teeing up likely appeal",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/us-judge-upholds-block-on-subpoenas-to-feds-powell-teeing-up-likely-appeal-4597168",
+          "source": "investing_news",
+          "published": "2026-04-03T17:36:53+00:00",
+          "age_minutes": 29,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "243d8a077199"
+        },
+        {
+          "title": "Federal Reserve Chairman Jerome Powell Just Delivered Fantastic News for Stock Market Investors",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/federal-chairman-jerome-powell-just-173500495.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T17:35:00+00:00",
+          "age_minutes": 30,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "1941c2cdccf2"
+        },
+        {
+          "title": "TSA Delays, Short Squeeze — What Sent These Two Stocks Soaring?",
+          "summary": "",
+          "url": "https://www.investors.com/news/tsa-delays-car-rentals-hertz-avis-budget-airports-air-travel-spring-break/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T17:12:50+00:00",
+          "age_minutes": 53,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "320a515c98e0"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Trump proposes \"historic\" defense spending budget, eyes 10% cut to other federal programs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trumps-budget-proposes-10-cut-in-discretionary-spending-increased-defense-spending-4597081",
+          "source": "investing_news",
+          "published": "2026-04-03T17:48:26+00:00",
+          "age_minutes": 17,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "aa61305171b9"
+        },
+        {
+          "title": "US labor market posts largest jobs gain in 15 months, but clouds brewing from Iran war",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/us-employment-growth-rebounded-in-march-unemployment-rate-falls-to-43-4597054",
+          "source": "investing_news",
+          "published": "2026-04-03T17:37:08+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "7a6910d1c95b"
+        },
+        {
+          "title": "US judge upholds block on subpoenas to Fed’s Powell, teeing up likely appeal",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/us-judge-upholds-block-on-subpoenas-to-feds-powell-teeing-up-likely-appeal-4597168",
+          "source": "investing_news",
+          "published": "2026-04-03T17:36:53+00:00",
+          "age_minutes": 29,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "243d8a077199"
+        },
+        {
+          "title": "Federal Reserve Chairman Jerome Powell Just Delivered Fantastic News for Stock Market Investors",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/federal-chairman-jerome-powell-just-173500495.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T17:35:00+00:00",
+          "age_minutes": 30,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "1941c2cdccf2"
+        },
+        {
+          "title": "TSA Delays, Short Squeeze — What Sent These Two Stocks Soaring?",
+          "summary": "",
+          "url": "https://www.investors.com/news/tsa-delays-car-rentals-hertz-avis-budget-airports-air-travel-spring-break/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T17:12:50+00:00",
+          "age_minutes": 53,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "320a515c98e0"
+        },
+        {
+          "title": "Coinbase Stock Scores Weekly Win Even As War-Truce Hopes Dim; Is Coinbase Stock A Buy Now?",
+          "summary": "",
+          "url": "https://www.investors.com/research/coinbase-coin-stock-april-2026/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T16:35:27+00:00",
+          "age_minutes": 90,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "a395a69c9dad"
+        }
+      ],
+      "sentiment": -0.15,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 9
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 5
+        },
+        {
+          "theme": "Macro US",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-03T18:05:59.163535+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-03T20:06:01.932021+02:00",
+    "context": {
+      "note": "",
+      "github_run": "91",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à léger haussier — Sentiment mitigé post-news",
+      "description": "NQ Futures +1.29% malgré CAC40 -0.16%. Trump propose un budget défense record avec coupes fédérales. Gold et EURUSD en baisse.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Marchés actions US en hausse sur les gains d'emploi record, mais tensions géopolitiques (Iran) et incertitudes budgétaires pèsent sur l'euro et l'or."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24300,
+        "type": "resistance",
+        "action": "Surveillance TP1",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ Futures",
+        "prix": 23900,
+        "type": "support",
+        "action": "Stop mental -40% si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8000,
+        "type": "resistance",
+        "action": "Rejet possible",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "News géopolitique Iran à surveiller (risque de rebond)",
+      "Budget fédéral US : impact potentiel sur les marchés lundi"
+    ],
+    "regles_session": [
+      "Session US terminée — pas d'actions obligatoires",
+      "Turbo NQ : clôture possible avant 22h CET si position ouverte"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 130",
+        "chg": "+1.29%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.0",
+        "chg": "+2.04%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.9",
+        "chg": "-2.69%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 651.5",
+        "chg": "-1.18%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1523",
+        "chg": "-0.17%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.313",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions en cours. Session terminée.",
+    "edition": "20:06 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-03T20:06:05.887509+02:00",
+    "date_fr": "Vendredi 3 avril 2026"
+  }
+}

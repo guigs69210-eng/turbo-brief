@@ -1,47 +1,42 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à léger biais haussier — Tech et énergie en tête",
-    "description": "NQ Futures +1.29% malgré CAC40 en léger retrait (-0.16%). VIX à 23.87 (-2.69%). Brent rebondit à +2.04%.",
+    "titre": "Biais neutre à léger haussier — Sentiment mitigé post-news",
+    "description": "NQ Futures +1.29% malgré CAC40 -0.16%. Trump propose un budget défense record avec coupes fédérales. Gold et EURUSD en baisse.",
     "biais": "neutre",
-    "conviction": "modérée",
-    "contexte_macro": "Marchés actions soutenus par les valeurs tech et l'énergie. Pas de catalyseur majeur aujourd'hui."
+    "conviction": "faible",
+    "contexte_macro": "Marchés actions US en hausse sur les gains d'emploi record, mais tensions géopolitiques (Iran) et incertitudes budgétaires pèsent sur l'euro et l'or."
   },
-  "plan_actions": [
-    {
-      "heure": "19h10",
-      "titre": "CALL NQ Futures ×18 (BEST SG Bourse)",
-      "sens": "CALL",
-      "mise": "2000 €",
-      "levier": 18,
-      "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 19h10–19h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
-      "urgence": "normale"
-    }
-  ],
+  "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ",
+      "label": "Résistance NQ Futures",
       "prix": 24300,
       "type": "resistance",
-      "action": "TP1 si atteint",
+      "action": "Surveillance TP1",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ",
+      "label": "Support NQ Futures",
       "prix": 23900,
       "type": "support",
-      "action": "Stop KO si cassé",
+      "action": "Stop mental -40% si cassé",
       "couleur": "bear"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 8000,
+      "type": "resistance",
+      "action": "Rejet possible",
+      "couleur": "amber"
     }
   ],
   "alertes": [
-    "Coinbase news à 19h30 CET — surveiller réaction"
+    "News géopolitique Iran à surveiller (risque de rebond)",
+    "Budget fédéral US : impact potentiel sur les marchés lundi"
   ],
   "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "NQ Futures → clôture possible jusqu'à 22h CET"
+    "Session US terminée — pas d'actions obligatoires",
+    "Turbo NQ : clôture possible avant 22h CET si position ouverte"
   ],
   "market_strip": {
     "nq": {
@@ -70,19 +65,19 @@
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1522",
-      "chg": "-0.18%",
+      "valeur": "1.1523",
+      "chg": "-0.17%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.313%",
+      "valeur": "4.313",
       "chg": "-0.14%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Non applicable (NQ Futures).",
-  "edition": "19h05 CET",
+  "pea_note": "PEA — Pas d'actions en cours. Session terminée.",
+  "edition": "20:06 CET",
   "mode": "normal",
-  "timestamp": "2026-04-03T19:05:44.254787+02:00",
+  "timestamp": "2026-04-03T20:06:05.887509+02:00",
   "date_fr": "Vendredi 3 avril 2026"
 }
