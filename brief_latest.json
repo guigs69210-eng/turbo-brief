@@ -1,42 +1,67 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à léger haussier — Sentiment mitigé post-news",
-    "description": "NQ Futures +1.29% malgré CAC40 -0.16%. Trump propose un budget défense record avec coupes fédérales. Gold et EURUSD en baisse.",
-    "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Marchés actions US en hausse sur les gains d'emploi record, mais tensions géopolitiques (Iran) et incertitudes budgétaires pèsent sur l'euro et l'or."
+    "titre": "Biais haussier modéré — Tech/IA en surperformance malgré news négatives",
+    "description": "NQ Futures +1.29% malgré une news négative sur Arrive AI. CAC40 stable (-0.16%). VIX en baisse à 23.87.",
+    "biais": "haussier",
+    "conviction": "modérée",
+    "contexte_macro": "Les indices US résistent malgré des tensions réglementaires sur les valeurs tech. Le Brent rebondit (+2.04%) sur des craintes géopolitiques."
   },
-  "plan_actions": [],
+  "plan_actions": [
+    {
+      "heure": "22h05",
+      "titre": "PUT CAC40 ×18 (Turbo BEST SG Bourse)",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 18,
+      "strike_ko": "Strike 8000 / KO 8100",
+      "gain_cible": "+25% si CAC40 -0.8%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "Entrée 22h05–22h30. Stop mental -40%. Clôture obligatoire avant 22h30 pour action FR.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "22h10",
+      "titre": "CALL NQ Futures ×15 (Turbo Vontobel)",
+      "sens": "CALL",
+      "mise": "1800 €",
+      "levier": 15,
+      "strike_ko": "Strike 24000 / KO 23500",
+      "gain_cible": "+30% si NQ +1.2%",
+      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
+      "note": "Entrée 22h10–22h45. Stop mental -40%.",
+      "urgence": "normale"
+    }
+  ],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ Futures",
-      "prix": 24300,
-      "type": "resistance",
-      "action": "Surveillance TP1",
+      "label": "Support NQ",
+      "prix": 24000,
+      "type": "support",
+      "action": "Entrée CALL si rebond",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ Futures",
-      "prix": 23900,
-      "type": "support",
-      "action": "Stop mental -40% si cassé",
+      "label": "Résistance CAC40",
+      "prix": 7980,
+      "type": "resistance",
+      "action": "Sortie PUT si cassé",
       "couleur": "bear"
     },
     {
-      "label": "Résistance CAC40",
-      "prix": 8000,
-      "type": "resistance",
-      "action": "Rejet possible",
-      "couleur": "amber"
+      "label": "KO PUT CAC40",
+      "prix": 8100,
+      "type": "ko",
+      "action": "Sortie immédiate",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "News géopolitique Iran à surveiller (risque de rebond)",
-    "Budget fédéral US : impact potentiel sur les marchés lundi"
+    "News Arrive AI à surveiller en pré-ouverture US",
+    "Form PRE 14A CHOICE HOTELS — potentiel mouvement à l'ouverture"
   ],
   "regles_session": [
-    "Session US terminée — pas d'actions obligatoires",
-    "Turbo NQ : clôture possible avant 22h CET si position ouverte"
+    "Stop mental −40% = sortie immédiate",
+    "Actions FR → clôture obligatoire 22h30 CET"
   ],
   "market_strip": {
     "nq": {
@@ -65,19 +90,19 @@
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1523",
-      "chg": "-0.17%",
+      "valeur": "1.1519",
+      "chg": "-0.21%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.313",
+      "valeur": "4.313%",
       "chg": "-0.14%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Pas d'actions en cours. Session terminée.",
-  "edition": "20:06 CET",
+  "pea_note": "PEA — Ne pas toucher. Clôture des positions avant 22h30 CET.",
+  "edition": "22h03 CET",
   "mode": "normal",
-  "timestamp": "2026-04-03T20:06:05.887509+02:00",
+  "timestamp": "2026-04-03T22:04:02.661064+02:00",
   "date_fr": "Vendredi 3 avril 2026"
 }
