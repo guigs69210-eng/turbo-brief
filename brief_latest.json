@@ -1,52 +1,55 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier sur NQ — Tech/IA en surperformance",
-    "description": "NQ Futures +1.67% en clôture, VIX en baisse à 23.87. Sentiment global neutre malgré les publications mineures.",
+    "titre": "Biais haussier sur NQ — Tech et géopolitique en soutien",
+    "description": "NQ Futures +1.35% malgré CAC40 en léger recul. Tensions géopolitiques (Iran) et rebond des valeurs tech/IA soutiennent l'indice américain.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Les valeurs Tech/IA tirent le marché après des publications 10Q/13G mineures mais positives."
+    "contexte_macro": "Guerre en Iran en escalade, prix de l'aluminium en baisse en Chine, or en léger recul. Sentiment global stable."
   },
   "plan_actions": [
     {
-      "heure": "22h57",
-      "titre": "CALL NQ Futures ×18 (PEA impossible)",
+      "heure": "12:15",
+      "titre": "CALL NQ Futures ×18",
       "sens": "CALL",
-      "mise": "1200 €",
+      "mise": "2000 €",
       "levier": 18,
-      "strike_ko": "Strike 24200 / KO 23800",
+      "strike_ko": "Strike 24000 / KO 23500",
       "gain_cible": "+25% si NQ +1%",
-      "plateforme": "vontobel.com → Nasdaq 100 Futures → CALL Turbo",
-      "note": "Entrée immédiate avant clôture US. Stop mental -40%.",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée 12:15–12:30. Stop mental -40%. TP1 à +25% → sortir 50%, stop à +10%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Support NQ",
-      "prix": 24000,
-      "type": "support",
-      "action": "Stop mental ajusté si cassé",
-      "couleur": "bull"
-    },
-    {
       "label": "Résistance NQ",
-      "prix": 24500,
+      "prix": 24200,
       "type": "resistance",
       "action": "TP1 si atteint",
       "couleur": "bull"
+    },
+    {
+      "label": "Support NQ",
+      "prix": 23900,
+      "type": "support",
+      "action": "Stop KO si cassé",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "Surveiller la clôture US à 22h30 CET pour confirmation du biais haussier."
+    "Surveillance Iran 15h ET",
+    "Aluminium Chine à 12h45 ET",
+    "News US10Y 14h ET"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ → clôture possible jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 219",
-      "chg": "+1.67%",
+      "valeur": "24 144",
+      "chg": "+1.35%",
       "dir": "up"
     },
     "cac40": {
@@ -55,8 +58,8 @@
       "dir": "dn"
     },
     "brent": {
-      "valeur": "$108.9",
-      "chg": "+1.95%",
+      "valeur": "$109.0",
+      "chg": "+2.04%",
       "dir": "up"
     },
     "vix": {
@@ -65,14 +68,14 @@
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 696.70",
-      "chg": "-0.22%",
+      "valeur": "$4651.5",
+      "chg": "-1.18%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1542",
-      "chg": "-0.45%",
-      "dir": "dn"
+      "valeur": "1.1547",
+      "chg": "+0.03%",
+      "dir": "up"
     },
     "us10y": {
       "valeur": "4.313",
@@ -80,9 +83,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Aucun trade possible sur NQ. Turbos uniquement sur actions FR.",
-  "edition": "22h57 CET",
+  "pea_note": "PEA — Ne pas toucher. Focus sur NQ Futures.",
+  "edition": "12:07 CET",
   "mode": "normal",
-  "timestamp": "2026-04-02T22:57:54.262569+02:00",
-  "date_fr": "Jeudi 2 avril 2026"
+  "timestamp": "2026-04-03T12:07:30.903978+02:00",
+  "date_fr": "Vendredi 3 avril 2026"
 }

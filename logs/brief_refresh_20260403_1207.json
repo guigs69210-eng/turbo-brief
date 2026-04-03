@@ -1,0 +1,308 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24143.5,
+        "prev_close": 23821.5,
+        "change_pct": 1.35,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.87,
+        "prev_close": 24.53,
+        "change_pct": -2.69,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4651.5,
+        "prev_close": 4707.1001,
+        "change_pct": -1.18,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.03,
+        "prev_close": 106.85,
+        "change_pct": 2.04,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1547,
+        "prev_close": 1.1543,
+        "change_pct": 0.03,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6604.5,
+        "prev_close": 6537.25,
+        "change_pct": 1.03,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-03T10:07:26.194633+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "World food price rise set to continue if Iran war lasts, FAO says",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/world-food-prices-extend-rise-in-march-united-nations-fao-says-4596882",
+          "source": "investing_news",
+          "published": "2026-04-03T10:00:28+00:00",
+          "age_minutes": 6,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "c8d6ca2227d0"
+        },
+        {
+          "title": "Aluminium futures dropin China amid stronger dollar and recession fears",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/aluminium-futures-dropin-china-amid-stronger-dollar-and-recession-fears-93CH-4596886",
+          "source": "investing_news",
+          "published": "2026-04-03T09:41:54+00:00",
+          "age_minutes": 25,
+          "urgency": "high",
+          "sentiment": -0.3333333333333333,
+          "id": "766ae3d5798a"
+        },
+        {
+          "title": "Iran mobilizes for ground war as Trump issues fresh threats",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-warns-of-strikes-on-iran-power-plants-bridges-in-new-post-4596855",
+          "source": "investing_news",
+          "published": "2026-04-03T09:22:54+00:00",
+          "age_minutes": 44,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "30d1dea5eed8"
+        },
+        {
+          "title": "These 10 stocks are poised for earnings surprises in April: Morgan Stanley",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/these-10-stocks-are-poised-for-earnings-surprises-in-april-morgan-stanley-4596888",
+          "source": "investing_news",
+          "published": "2026-04-03T09:52:04+00:00",
+          "age_minutes": 15,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "1d5080823f3b"
+        },
+        {
+          "title": "Selloff in this sector is seen as a buying opportunity: UBS",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/selloff-in-this-sector-is-seen-as-a-buying-opportunity-4596884",
+          "source": "investing_news",
+          "published": "2026-04-03T09:51:44+00:00",
+          "age_minutes": 15,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1b92afce2f53"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "World food price rise set to continue if Iran war lasts, FAO says",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/world-food-prices-extend-rise-in-march-united-nations-fao-says-4596882",
+          "source": "investing_news",
+          "published": "2026-04-03T10:00:28+00:00",
+          "age_minutes": 6,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "c8d6ca2227d0"
+        },
+        {
+          "title": "Aluminium futures dropin China amid stronger dollar and recession fears",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/aluminium-futures-dropin-china-amid-stronger-dollar-and-recession-fears-93CH-4596886",
+          "source": "investing_news",
+          "published": "2026-04-03T09:41:54+00:00",
+          "age_minutes": 25,
+          "urgency": "high",
+          "sentiment": -0.3333333333333333,
+          "id": "766ae3d5798a"
+        },
+        {
+          "title": "Iran mobilizes for ground war as Trump issues fresh threats",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trump-warns-of-strikes-on-iran-power-plants-bridges-in-new-post-4596855",
+          "source": "investing_news",
+          "published": "2026-04-03T09:22:54+00:00",
+          "age_minutes": 44,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "30d1dea5eed8"
+        }
+      ],
+      "sentiment": -0.03,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 7
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 1
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-03T10:07:22.404272+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-03T12:07:26.194837+02:00",
+    "context": {
+      "note": "",
+      "github_run": "87",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier sur NQ — Tech et géopolitique en soutien",
+      "description": "NQ Futures +1.35% malgré CAC40 en léger recul. Tensions géopolitiques (Iran) et rebond des valeurs tech/IA soutiennent l'indice américain.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Guerre en Iran en escalade, prix de l'aluminium en baisse en Chine, or en léger recul. Sentiment global stable."
+    },
+    "plan_actions": [
+      {
+        "heure": "12:15",
+        "titre": "CALL NQ Futures ×18",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 12:15–12:30. Stop mental -40%. TP1 à +25% → sortir 50%, stop à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24200,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23900,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveillance Iran 15h ET",
+      "Aluminium Chine à 12h45 ET",
+      "News US10Y 14h ET"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 144",
+        "chg": "+1.35%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.0",
+        "chg": "+2.04%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.9",
+        "chg": "-2.69%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4651.5",
+        "chg": "-1.18%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1547",
+        "chg": "+0.03%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.313",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur NQ Futures.",
+    "edition": "12:07 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-03T12:07:30.903978+02:00",
+    "date_fr": "Vendredi 3 avril 2026"
+  }
+}
