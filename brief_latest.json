@@ -1,49 +1,36 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier modéré — Fin de semaine avec momentum tech",
-    "description": "NQ Futures +1.29% en clôture, VIX en baisse à 23.87. Trump propose une hausse massive des dépenses militaires (+10% de réduction ailleurs).",
-    "biais": "haussier",
-    "conviction": "modérée",
-    "contexte_macro": "Les marchés actions restent soutenus par les anticipations de croissance tech. Le Brent rebondit (+2.04%) mais l'or recule (-1.18%)."
+    "titre": "Clôture hebdomadaire — Profit taking sur NQ, biais neutre",
+    "description": "NQ Futures +1.29% en séance, CAC40 stable (-0.16%). VIX en baisse à 23.87. Gold et Brent en légère baisse.",
+    "biais": "neutre",
+    "conviction": "faible",
+    "contexte_macro": "Marchés actions US en légère hausse malgré un rapport sur l'emploi décevant. Tech et énergie en tête des thèmes dominants."
   },
-  "plan_actions": [
-    {
-      "heure": "17:05",
-      "titre": "CALL CAC40 ×15 (PEA)",
-      "sens": "CALL",
-      "mise": "1200 €",
-      "levier": 15,
-      "strike_ko": "Strike 7950 / KO 7800",
-      "gain_cible": "+25% si CAC40 > 7980",
-      "plateforme": "sgbourse.fr → CAC40 → CALL BEST PEA",
-      "note": "Entrée immédiate. Stop mental -40%. Clôture obligatoire avant 17h30.",
-      "urgence": "normale"
-    }
-  ],
+  "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Support CAC40",
-      "prix": 7900,
+      "label": "Support NQ Futures",
+      "prix": 24000,
       "type": "support",
-      "action": "Achat renforcé si test",
-      "couleur": "bull"
+      "action": "Surveiller en clôture",
+      "couleur": "bear"
     },
     {
-      "label": "Résistance CAC40",
-      "prix": 8000,
+      "label": "Résistance NQ Futures",
+      "prix": 24300,
       "type": "resistance",
-      "action": "TP1 si atteint",
+      "action": "Potentiel rejet",
       "couleur": "bull"
     }
   ],
   "alertes": [
-    "Clôture CAC40 à 17h30 — sortie obligatoire",
-    "Surveillance des news macro en fin de session US"
+    "Clôture obligatoire CAC40 à 17h30 CET",
+    "NQ Futures cotent jusqu'à 22h CET — surveiller les mouvements tardifs"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
     "Actions FR → clôture obligatoire 17h30",
-    "Ne pas maintenir de positions overnight en PEA"
+    "Turbos NQ/indices → clôture avant 22h CET"
   ],
   "market_strip": {
     "nq": {
@@ -82,9 +69,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Clôture obligatoire avant 17h30. Pas de maintien overnight.",
-  "edition": "17:04 CET",
+  "pea_note": "PEA — Clôture des positions actions FR avant 17h30 CET.",
+  "edition": "17h30 CET",
   "mode": "normal",
-  "timestamp": "2026-04-03T17:04:45.006931+02:00",
+  "timestamp": "2026-04-03T17:30:58.353728+02:00",
   "date_fr": "Vendredi 3 avril 2026"
 }

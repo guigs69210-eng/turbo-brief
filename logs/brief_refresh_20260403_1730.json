@@ -1,0 +1,264 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24129.75,
+        "prev_close": 23821.5,
+        "change_pct": 1.29,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.87,
+        "prev_close": 24.53,
+        "change_pct": -2.69,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4651.5,
+        "prev_close": 4707.1001,
+        "change_pct": -1.18,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.03,
+        "prev_close": 106.85,
+        "change_pct": 2.04,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1527,
+        "prev_close": 1.1543,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6603.75,
+        "prev_close": 6537.25,
+        "change_pct": 1.02,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-03T15:30:50.824709+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Dow Jones Futures Fall On Jobs Report Stunner; Stock Market Hasn't Done This Yet",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-tesla-jobs-report/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T15:18:30+00:00",
+          "age_minutes": 12,
+          "urgency": "medium",
+          "sentiment": -1.0,
+          "id": "efd5bde7f1d1"
+        },
+        {
+          "title": "Meta Platforms (META) Slid on Mixed Quarterly Results",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-slid-mixed-131745101.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T13:17:45+00:00",
+          "age_minutes": 133,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "cb736ce998e6"
+        },
+        {
+          "title": "Investment Firm Crumly Dumped Shares of TDIV Worth $3.4 Million. Should Investors Avoid the ETF?",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/investment-firm-crumly-dumped-shares-151700851.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T15:17:00+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "48a255869209"
+        },
+        {
+          "title": "Form 13F Torrington Savings Bank For: 3 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13f-torrington-savings-bank-for-3-april-93CH-4597130",
+          "source": "investing_news",
+          "published": "2026-04-03T15:15:47+00:00",
+          "age_minutes": 15,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "9d0595b2da3f"
+        },
+        {
+          "title": "The 4 Top ETFs For Retirees To Buy And Hold",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/options/articles/4-top-etfs-retirees-buy-151526655.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T15:15:26+00:00",
+          "age_minutes": 15,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "040c7a799829"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": -0.05,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 9
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 3
+        },
+        {
+          "theme": "Macro US",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-03T15:30:48.996698+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-03T17:30:50.824910+02:00",
+    "context": {
+      "note": "",
+      "github_run": "89",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture hebdomadaire — Profit taking sur NQ, biais neutre",
+      "description": "NQ Futures +1.29% en séance, CAC40 stable (-0.16%). VIX en baisse à 23.87. Gold et Brent en légère baisse.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Marchés actions US en légère hausse malgré un rapport sur l'emploi décevant. Tech et énergie en tête des thèmes dominants."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ Futures",
+        "prix": 24000,
+        "type": "support",
+        "action": "Surveiller en clôture",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24300,
+        "type": "resistance",
+        "action": "Potentiel rejet",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Clôture obligatoire CAC40 à 17h30 CET",
+      "NQ Futures cotent jusqu'à 22h CET — surveiller les mouvements tardifs"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ/indices → clôture avant 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 130",
+        "chg": "+1.29%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.0",
+        "chg": "+2.04%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.9",
+        "chg": "-2.69%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 651.5",
+        "chg": "-1.18%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1527",
+        "chg": "-0.14%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.313",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Clôture des positions actions FR avant 17h30 CET.",
+    "edition": "17h30 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-03T17:30:58.353728+02:00",
+    "date_fr": "Vendredi 3 avril 2026"
+  }
+}
