@@ -1,0 +1,281 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24129.75,
+        "prev_close": 23821.5,
+        "change_pct": 1.29,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.87,
+        "prev_close": 24.53,
+        "change_pct": -2.69,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4651.5,
+        "prev_close": 4707.1001,
+        "change_pct": -1.18,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.03,
+        "prev_close": 106.85,
+        "change_pct": 2.04,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1527,
+        "prev_close": 1.1543,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6603.75,
+        "prev_close": 6537.25,
+        "change_pct": 1.02,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-03T15:04:40.340727+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Trump’s budget proposes massive defense spending with 10% cut to other federal programs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trumps-budget-proposes-10-cut-in-discretionary-spending-increased-defense-spending-4597081",
+          "source": "investing_news",
+          "published": "2026-04-03T15:01:06+00:00",
+          "age_minutes": 3,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "a0659051a8cc"
+        },
+        {
+          "title": "Form 13G Lantern Pharma Inc. For: 3 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-lantern-pharma-inc-for-3-april-93CH-4597122",
+          "source": "investing_news",
+          "published": "2026-04-03T15:00:58+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "ae98fbccd19e"
+        },
+        {
+          "title": "Form 13F Investors Research Corp For: 3 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13f-investors-research-corp-for-3-april-93CH-4597121",
+          "source": "investing_news",
+          "published": "2026-04-03T15:00:54+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "66f11aa65405"
+        },
+        {
+          "title": "Dem senators query gov’t watchdogs over well-timed Wall Street bets",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/dem-senators-query-govt-watchdogs-over-welltimed-wall-street-bets-4596456",
+          "source": "investing_news",
+          "published": "2026-04-03T15:00:51+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "0b15799970c7"
+        },
+        {
+          "title": "China’s Space Pioneer says reusable rocket’s maiden flight fails",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/chinas-space-pioneer-says-reusable-rockets-maiden-flight-fails-4597120",
+          "source": "investing_news",
+          "published": "2026-04-03T14:54:32+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "80c174087f68"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Trump’s budget proposes massive defense spending with 10% cut to other federal programs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trumps-budget-proposes-10-cut-in-discretionary-spending-increased-defense-spending-4597081",
+          "source": "investing_news",
+          "published": "2026-04-03T15:01:06+00:00",
+          "age_minutes": 3,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "a0659051a8cc"
+        }
+      ],
+      "sentiment": 0.06,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 4
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-03T15:04:37.365514+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-03T17:04:40.341003+02:00",
+    "context": {
+      "note": "",
+      "github_run": "88",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier modéré — Fin de semaine avec momentum tech",
+      "description": "NQ Futures +1.29% en clôture, VIX en baisse à 23.87. Trump propose une hausse massive des dépenses militaires (+10% de réduction ailleurs).",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Les marchés actions restent soutenus par les anticipations de croissance tech. Le Brent rebondit (+2.04%) mais l'or recule (-1.18%)."
+    },
+    "plan_actions": [
+      {
+        "heure": "17:05",
+        "titre": "CALL CAC40 ×15 (PEA)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 7950 / KO 7800",
+        "gain_cible": "+25% si CAC40 > 7980",
+        "plateforme": "sgbourse.fr → CAC40 → CALL BEST PEA",
+        "note": "Entrée immédiate. Stop mental -40%. Clôture obligatoire avant 17h30.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support CAC40",
+        "prix": 7900,
+        "type": "support",
+        "action": "Achat renforcé si test",
+        "couleur": "bull"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8000,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Clôture CAC40 à 17h30 — sortie obligatoire",
+      "Surveillance des news macro en fin de session US"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Ne pas maintenir de positions overnight en PEA"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 130",
+        "chg": "+1.29%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.0",
+        "chg": "+2.04%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.9",
+        "chg": "-2.69%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 651.5",
+        "chg": "-1.18%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1527",
+        "chg": "-0.14%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.313",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Clôture obligatoire avant 17h30. Pas de maintien overnight.",
+    "edition": "17:04 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-03T17:04:45.006931+02:00",
+    "date_fr": "Vendredi 3 avril 2026"
+  }
+}

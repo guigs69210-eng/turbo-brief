@@ -1,55 +1,54 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier sur NQ — Tech et géopolitique en soutien",
-    "description": "NQ Futures +1.35% malgré CAC40 en léger recul. Tensions géopolitiques (Iran) et rebond des valeurs tech/IA soutiennent l'indice américain.",
+    "titre": "Biais haussier modéré — Fin de semaine avec momentum tech",
+    "description": "NQ Futures +1.29% en clôture, VIX en baisse à 23.87. Trump propose une hausse massive des dépenses militaires (+10% de réduction ailleurs).",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Guerre en Iran en escalade, prix de l'aluminium en baisse en Chine, or en léger recul. Sentiment global stable."
+    "contexte_macro": "Les marchés actions restent soutenus par les anticipations de croissance tech. Le Brent rebondit (+2.04%) mais l'or recule (-1.18%)."
   },
   "plan_actions": [
     {
-      "heure": "12:15",
-      "titre": "CALL NQ Futures ×18",
+      "heure": "17:05",
+      "titre": "CALL CAC40 ×15 (PEA)",
       "sens": "CALL",
-      "mise": "2000 €",
-      "levier": 18,
-      "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 12:15–12:30. Stop mental -40%. TP1 à +25% → sortir 50%, stop à +10%.",
+      "mise": "1200 €",
+      "levier": 15,
+      "strike_ko": "Strike 7950 / KO 7800",
+      "gain_cible": "+25% si CAC40 > 7980",
+      "plateforme": "sgbourse.fr → CAC40 → CALL BEST PEA",
+      "note": "Entrée immédiate. Stop mental -40%. Clôture obligatoire avant 17h30.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ",
-      "prix": 24200,
-      "type": "resistance",
-      "action": "TP1 si atteint",
+      "label": "Support CAC40",
+      "prix": 7900,
+      "type": "support",
+      "action": "Achat renforcé si test",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ",
-      "prix": 23900,
-      "type": "support",
-      "action": "Stop KO si cassé",
-      "couleur": "bear"
+      "label": "Résistance CAC40",
+      "prix": 8000,
+      "type": "resistance",
+      "action": "TP1 si atteint",
+      "couleur": "bull"
     }
   ],
   "alertes": [
-    "Surveillance Iran 15h ET",
-    "Aluminium Chine à 12h45 ET",
-    "News US10Y 14h ET"
+    "Clôture CAC40 à 17h30 — sortie obligatoire",
+    "Surveillance des news macro en fin de session US"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
     "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → clôture possible jusqu'à 22h CET"
+    "Ne pas maintenir de positions overnight en PEA"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 144",
-      "chg": "+1.35%",
+      "valeur": "24 130",
+      "chg": "+1.29%",
       "dir": "up"
     },
     "cac40": {
@@ -68,14 +67,14 @@
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4651.5",
+      "valeur": "$4 651.5",
       "chg": "-1.18%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1547",
-      "chg": "+0.03%",
-      "dir": "up"
+      "valeur": "1.1527",
+      "chg": "-0.14%",
+      "dir": "dn"
     },
     "us10y": {
       "valeur": "4.313",
@@ -83,9 +82,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Focus sur NQ Futures.",
-  "edition": "12:07 CET",
+  "pea_note": "PEA — Clôture obligatoire avant 17h30. Pas de maintien overnight.",
+  "edition": "17:04 CET",
   "mode": "normal",
-  "timestamp": "2026-04-03T12:07:30.903978+02:00",
+  "timestamp": "2026-04-03T17:04:45.006931+02:00",
   "date_fr": "Vendredi 3 avril 2026"
 }
