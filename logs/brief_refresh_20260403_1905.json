@@ -1,0 +1,320 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24129.75,
+        "prev_close": 23821.5,
+        "change_pct": 1.29,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 23.87,
+        "prev_close": 24.53,
+        "change_pct": -2.69,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4651.5,
+        "prev_close": 4707.1001,
+        "change_pct": -1.18,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.03,
+        "prev_close": 106.85,
+        "change_pct": 2.04,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1522,
+        "prev_close": 1.1543,
+        "change_pct": -0.18,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6603.75,
+        "prev_close": 6537.25,
+        "change_pct": 1.02,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-03T17:05:40.015405+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Coinbase Stock Scores Weekly Win Even As War-Truce Hopes Dim; Is Coinbase Stock A Buy Now?",
+          "summary": "",
+          "url": "https://www.investors.com/research/coinbase-coin-stock-april-2026/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T16:35:27+00:00",
+          "age_minutes": 30,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "a395a69c9dad"
+        },
+        {
+          "title": "Stronger, broader hiring could ease Fed job market worries",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/stronger-broader-hiring-could-ease-fed-job-market-worries-4597162",
+          "source": "investing_news",
+          "published": "2026-04-03T16:31:07+00:00",
+          "age_minutes": 34,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "d01f10f4cfb6"
+        },
+        {
+          "title": "Trump proposes \"historic\" defense spending budget, eyes 10% cut to other federal programs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trumps-budget-proposes-10-cut-in-discretionary-spending-increased-defense-spending-4597081",
+          "source": "investing_news",
+          "published": "2026-04-03T16:30:47+00:00",
+          "age_minutes": 34,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "aa61305171b9"
+        },
+        {
+          "title": "Oracle Corporation (ORCL) Well Protected from AI Disruption on Software: Bernstein",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-corporation-orcl-well-protected-154527808.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T15:45:27+00:00",
+          "age_minutes": 80,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "dac9646b78dc"
+        },
+        {
+          "title": "Is Upstart Stock a Millionaire Maker?",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/upstart-stock-millionaire-maker-165000605.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T16:50:00+00:00",
+          "age_minutes": 15,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "39d0e64c9da0"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Coinbase Stock Scores Weekly Win Even As War-Truce Hopes Dim; Is Coinbase Stock A Buy Now?",
+          "summary": "",
+          "url": "https://www.investors.com/research/coinbase-coin-stock-april-2026/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T16:35:27+00:00",
+          "age_minutes": 30,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "a395a69c9dad"
+        },
+        {
+          "title": "Stronger, broader hiring could ease Fed job market worries",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/stronger-broader-hiring-could-ease-fed-job-market-worries-4597162",
+          "source": "investing_news",
+          "published": "2026-04-03T16:31:07+00:00",
+          "age_minutes": 34,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "d01f10f4cfb6"
+        },
+        {
+          "title": "Trump proposes \"historic\" defense spending budget, eyes 10% cut to other federal programs",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/trumps-budget-proposes-10-cut-in-discretionary-spending-increased-defense-spending-4597081",
+          "source": "investing_news",
+          "published": "2026-04-03T16:30:47+00:00",
+          "age_minutes": 34,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "aa61305171b9"
+        },
+        {
+          "title": "Oracle Corporation (ORCL) Well Protected from AI Disruption on Software: Bernstein",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-corporation-orcl-well-protected-154527808.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-03T15:45:27+00:00",
+          "age_minutes": 80,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "dac9646b78dc"
+        }
+      ],
+      "sentiment": 0.1,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 14
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 4
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-03T17:05:36.995223+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-03T19:05:40.015738+02:00",
+    "context": {
+      "note": "",
+      "github_run": "90",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à léger biais haussier — Tech et énergie en tête",
+      "description": "NQ Futures +1.29% malgré CAC40 en léger retrait (-0.16%). VIX à 23.87 (-2.69%). Brent rebondit à +2.04%.",
+      "biais": "neutre",
+      "conviction": "modérée",
+      "contexte_macro": "Marchés actions soutenus par les valeurs tech et l'énergie. Pas de catalyseur majeur aujourd'hui."
+    },
+    "plan_actions": [
+      {
+        "heure": "19h10",
+        "titre": "CALL NQ Futures ×18 (BEST SG Bourse)",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 19h10–19h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24300,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 23900,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Coinbase news à 19h30 CET — surveiller réaction"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "NQ Futures → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 130",
+        "chg": "+1.29%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.0",
+        "chg": "+2.04%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "23.9",
+        "chg": "-2.69%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 651.5",
+        "chg": "-1.18%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1522",
+        "chg": "-0.18%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.313%",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Non applicable (NQ Futures).",
+    "edition": "19h05 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-03T19:05:44.254787+02:00",
+    "date_fr": "Vendredi 3 avril 2026"
+  }
+}

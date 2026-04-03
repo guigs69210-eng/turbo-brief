@@ -1,36 +1,47 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture hebdomadaire — Profit taking sur NQ, biais neutre",
-    "description": "NQ Futures +1.29% en séance, CAC40 stable (-0.16%). VIX en baisse à 23.87. Gold et Brent en légère baisse.",
+    "titre": "Biais neutre à léger biais haussier — Tech et énergie en tête",
+    "description": "NQ Futures +1.29% malgré CAC40 en léger retrait (-0.16%). VIX à 23.87 (-2.69%). Brent rebondit à +2.04%.",
     "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Marchés actions US en légère hausse malgré un rapport sur l'emploi décevant. Tech et énergie en tête des thèmes dominants."
+    "conviction": "modérée",
+    "contexte_macro": "Marchés actions soutenus par les valeurs tech et l'énergie. Pas de catalyseur majeur aujourd'hui."
   },
-  "plan_actions": [],
+  "plan_actions": [
+    {
+      "heure": "19h10",
+      "titre": "CALL NQ Futures ×18 (BEST SG Bourse)",
+      "sens": "CALL",
+      "mise": "2000 €",
+      "levier": 18,
+      "strike_ko": "Strike 24000 / KO 23500",
+      "gain_cible": "+25% si NQ +1%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée 19h10–19h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "normale"
+    }
+  ],
   "niveaux_cles": [
     {
-      "label": "Support NQ Futures",
-      "prix": 24000,
-      "type": "support",
-      "action": "Surveiller en clôture",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance NQ Futures",
+      "label": "Résistance NQ",
       "prix": 24300,
       "type": "resistance",
-      "action": "Potentiel rejet",
+      "action": "TP1 si atteint",
       "couleur": "bull"
+    },
+    {
+      "label": "Support NQ",
+      "prix": 23900,
+      "type": "support",
+      "action": "Stop KO si cassé",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "Clôture obligatoire CAC40 à 17h30 CET",
-    "NQ Futures cotent jusqu'à 22h CET — surveiller les mouvements tardifs"
+    "Coinbase news à 19h30 CET — surveiller réaction"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ/indices → clôture avant 22h CET"
+    "NQ Futures → clôture possible jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
@@ -59,19 +70,19 @@
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1527",
-      "chg": "-0.14%",
+      "valeur": "1.1522",
+      "chg": "-0.18%",
       "dir": "dn"
     },
     "us10y": {
-      "valeur": "4.313",
+      "valeur": "4.313%",
       "chg": "-0.14%",
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Clôture des positions actions FR avant 17h30 CET.",
-  "edition": "17h30 CET",
+  "pea_note": "PEA — Non applicable (NQ Futures).",
+  "edition": "19h05 CET",
   "mode": "normal",
-  "timestamp": "2026-04-03T17:30:58.353728+02:00",
+  "timestamp": "2026-04-03T19:05:44.254787+02:00",
   "date_fr": "Vendredi 3 avril 2026"
 }
