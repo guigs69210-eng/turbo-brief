@@ -1,0 +1,307 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24288.0,
+        "prev_close": 24212.25,
+        "change_pct": 0.31,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.6,
+        "prev_close": 23.9,
+        "change_pct": 2.93,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4685.8999,
+        "prev_close": 4666.2998,
+        "change_pct": 0.42,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 110.45,
+        "prev_close": 109.78,
+        "change_pct": 0.61,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1549,
+        "prev_close": 1.1522,
+        "change_pct": 0.23,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.343,
+        "prev_close": 4.313,
+        "change_pct": 0.7,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6636.0,
+        "prev_close": 6612.25,
+        "change_pct": 0.36,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-06T17:34:53.782480+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Israeli airstrike kills at least 10 near Gaza school as ceasefire strains",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/israeli-airstrike-kills-at-least-10-near-gaza-school-as-ceasefire-strains-4598932",
+          "source": "investing_news",
+          "published": "2026-04-06T17:18:35+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "6c3f0e75dd29"
+        },
+        {
+          "title": "US service sector cools in March, inflation heating up amid Iran war",
+          "summary": "",
+          "url": "https://www.investing.com/news/economic-indicators/us-service-sector-cools-in-march-price-paid-measure-highest-in-312-years-4598792",
+          "source": "investing_news",
+          "published": "2026-04-06T17:12:38+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "3498cb4601d7"
+        },
+        {
+          "title": "Iran rejects ceasefire as deadline nears on Trump ’hell’ ultimatum",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-vows-hell-for-iran-if-strait-stays-shut-says-a-deal-is-possible-4597686",
+          "source": "investing_news",
+          "published": "2026-04-06T17:06:40+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "16c21bbef1ec"
+        },
+        {
+          "title": "Goldman Sachs spots Nvidia-linked shift not seen in 13 years",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-spots-nvidia-linked-171759090.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T17:17:59+00:00",
+          "age_minutes": 16,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a68ba176ea97"
+        },
+        {
+          "title": "Stocks hit session lows as Trump says Iran can be ’taken out’ on Tuesday night",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-dip-after-trump-gives-iran-tue-deadline-to-open-hormuz-4597675",
+          "source": "investing_news",
+          "published": "2026-04-06T17:16:44+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "bfaa813a150c"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Israeli airstrike kills at least 10 near Gaza school as ceasefire strains",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/israeli-airstrike-kills-at-least-10-near-gaza-school-as-ceasefire-strains-4598932",
+          "source": "investing_news",
+          "published": "2026-04-06T17:18:35+00:00",
+          "age_minutes": 16,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "6c3f0e75dd29"
+        },
+        {
+          "title": "US service sector cools in March, inflation heating up amid Iran war",
+          "summary": "",
+          "url": "https://www.investing.com/news/economic-indicators/us-service-sector-cools-in-march-price-paid-measure-highest-in-312-years-4598792",
+          "source": "investing_news",
+          "published": "2026-04-06T17:12:38+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "3498cb4601d7"
+        },
+        {
+          "title": "Iran rejects ceasefire as deadline nears on Trump ’hell’ ultimatum",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-vows-hell-for-iran-if-strait-stays-shut-says-a-deal-is-possible-4597686",
+          "source": "investing_news",
+          "published": "2026-04-06T17:06:40+00:00",
+          "age_minutes": 28,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "16c21bbef1ec"
+        }
+      ],
+      "sentiment": -0.1,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 11
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-06T17:34:47.842284+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-06T19:34:53.782688+02:00",
+    "context": {
+      "note": "",
+      "github_run": "96",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier géopolitique — Tensions Iran/Israël en escalade",
+      "description": "NQ Futures 24288 (+0.31%), VIX 24.6 (+2.93%). Gold +0.42% sur craintes géopolitiques. CAC40 en légère baisse (-0.16%).",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Escalade des tensions au Moyen-Orient avec frappes israéliennes et ultimatum de Trump sur l'Iran. Marchés actions sous pression malgré la hausse du Brent."
+    },
+    "plan_actions": [
+      {
+        "heure": "19h35",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST SG Bourse)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 24500",
+        "gain_cible": "+25% si NQ -1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée immédiate. Stop mental -40%. Cible TP1 à +25% (sortir 50%, stop à +10%).",
+        "urgence": "haute"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24000,
+        "type": "support",
+        "action": "Entrée PUT confirmée",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 24600,
+        "type": "resistance",
+        "action": "Risque de rebond baissier",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Événement géopolitique majeur en cours — surveiller réactions des marchés US après 20h CET",
+      "Attention aux gaps overnight sur indices US"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+      "Turbo NQ → peut être conservé jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 288",
+        "chg": "+0.31%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$110.5",
+        "chg": "+0.61%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "24.6",
+        "chg": "+2.93%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 685.90",
+        "chg": "+0.42%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1549",
+        "chg": "+0.23%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.343%",
+        "chg": "+0.70%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises en portefeuille. Turbo NQ uniquement.",
+    "edition": "19h34 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-06T19:34:59.001308+02:00",
+    "date_fr": "Lundi 6 avril 2026"
+  }
+}
