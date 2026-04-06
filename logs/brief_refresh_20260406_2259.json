@@ -1,0 +1,267 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24341.75,
+        "prev_close": 24212.25,
+        "change_pct": 0.53,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.17,
+        "prev_close": 23.9,
+        "change_pct": 1.13,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4678.6001,
+        "prev_close": 4666.2998,
+        "change_pct": 0.26,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.56,
+        "prev_close": 109.78,
+        "change_pct": -0.2,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1546,
+        "prev_close": 1.1522,
+        "change_pct": 0.21,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.335,
+        "prev_close": 4.313,
+        "change_pct": 0.51,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6649.0,
+        "prev_close": 6612.25,
+        "change_pct": 0.56,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-06T20:58:59.339478+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "JPMorgan has a stark message on the next Fed rate cut",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/jpmorgan-stark-message-next-fed-180300978.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T18:03:00+00:00",
+          "age_minutes": 175,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "978f59c4c8d6"
+        },
+        {
+          "title": "Clear Street raises Protagonist Therapeutics price target on drug potential",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/clear-street-raises-protagonist-therapeutics-price-target-on-drug-potential-93CH-4599330",
+          "source": "investing_news",
+          "published": "2026-04-06T20:55:59+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a04c2b9a9dba"
+        },
+        {
+          "title": "TD Synnex CFO Jordan sells $611k in company stock",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/td-synnex-cfo-jordan-sells-611k-in-company-stock-93CH-4599329",
+          "source": "investing_news",
+          "published": "2026-04-06T20:55:52+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "b4d339b1bbd2"
+        },
+        {
+          "title": "Mativ Holdings amends credit agreement with $894.9 million in new facilities",
+          "summary": "",
+          "url": "https://www.investing.com/news/sec-filings/mativ-holdings-amends-credit-agreement-with-8949-million-in-new-facilities-93CH-4599328",
+          "source": "investing_news",
+          "published": "2026-04-06T20:55:32+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "85ba7b7f0587"
+        },
+        {
+          "title": "Jefferies raises Cheniere Energy stock price target to $330 on EBITDA beat",
+          "summary": "",
+          "url": "https://www.investing.com/news/analyst-ratings/jefferies-raises-cheniere-energy-stock-price-target-to-330-on-ebitda-beat-93CH-4599327",
+          "source": "investing_news",
+          "published": "2026-04-06T20:55:32+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 1.0,
+          "id": "e50b12871a15"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.14,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 3
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-06T20:58:55.538347+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-06T22:58:59.339707+02:00",
+    "context": {
+      "note": "",
+      "github_run": "98",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à léger biais haussier — Tech et énergie en tête",
+      "description": "NQ Futures +0.53% malgré CAC40 -0.16%. VIX stable à 24.17. JPMorgan alerte sur les prochaines baisses de taux de la Fed.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Marchés actions soutenus par les valeurs tech et énergie. Sentiment global légèrement positif malgré les incertitudes sur la politique monétaire."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ Futures",
+        "prix": 24200,
+        "type": "support",
+        "action": "Stop loss si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8000,
+        "type": "resistance",
+        "action": "Vente si test",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "[CRITICAL] JPMorgan sur les prochaines baisses de taux de la Fed — impact potentiel demain",
+      "News géopolitique/énergie à surveiller (Brent stable)"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "NQ Futures → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 342",
+        "chg": "+0.53%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.6",
+        "chg": "-0.20%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.2",
+        "chg": "+1.13%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4678.6001",
+        "chg": "+0.26%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1546",
+        "chg": "+0.21%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.335",
+        "chg": "+0.51%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Marché US ouvert demain.",
+    "edition": "22:58 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-06T22:59:03.288722+02:00",
+    "date_fr": "Lundi 6 avril 2026"
+  }
+}

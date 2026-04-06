@@ -1,54 +1,48 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre — JPMorgan alerte sur les prochaines baisses de taux Fed",
-    "description": "NQ Futures +0.52%, VIX en hausse à 24.48 (+2.43%). JPMorgan met en garde contre un possible durcissement des conditions monétaires malgré les anticipations de baisses de taux.",
+    "titre": "Biais neutre à léger biais haussier — Tech et énergie en tête",
+    "description": "NQ Futures +0.53% malgré CAC40 -0.16%. VIX stable à 24.17. JPMorgan alerte sur les prochaines baisses de taux de la Fed.",
     "biais": "neutre",
-    "conviction": "modérée",
-    "contexte_macro": "Marchés en attente des prochaines données économiques US. Sentiment global stable malgré les alertes de JPMorgan sur la politique monétaire."
+    "conviction": "faible",
+    "contexte_macro": "Marchés actions soutenus par les valeurs tech et énergie. Sentiment global légèrement positif malgré les incertitudes sur la politique monétaire."
   },
-  "plan_actions": [
-    {
-      "heure": "22h00",
-      "titre": "PUT NQ Futures ×18 (Turbo BEST SG)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 18,
-      "strike_ko": "Strike 24000 / KO 24600",
-      "gain_cible": "+28% si NQ -1.2%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 22h00–22h15. Stop mental -40%. Surveillance VIX >25 → levier max ×18.",
-      "urgence": "normale"
-    }
-  ],
+  "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Support NQ",
-      "prix": 24200,
-      "type": "support",
-      "action": "Entrée PUT si cassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance NQ",
+      "label": "Résistance NQ Futures",
       "prix": 24500,
       "type": "resistance",
       "action": "TP1 si atteint",
       "couleur": "bull"
+    },
+    {
+      "label": "Support NQ Futures",
+      "prix": 24200,
+      "type": "support",
+      "action": "Stop loss si cassé",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 8000,
+      "type": "resistance",
+      "action": "Vente si test",
+      "couleur": "bear"
     }
   ],
   "alertes": [
-    "JPMorgan alerte sur Fed — surveillance 22h30 CET",
-    "Données US ISM Services à 22h00 CET"
+    "[CRITICAL] JPMorgan sur les prochaines baisses de taux de la Fed — impact potentiel demain",
+    "News géopolitique/énergie à surveiller (Brent stable)"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
     "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → cotent jusqu'à 22h CET"
+    "NQ Futures → clôture possible jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 339",
-      "chg": "+0.52%",
+      "valeur": "24 342",
+      "chg": "+0.53%",
       "dir": "up"
     },
     "cac40": {
@@ -57,18 +51,18 @@
       "dir": "dn"
     },
     "brent": {
-      "valeur": "$109.8",
-      "chg": "-0.01%",
+      "valeur": "$109.6",
+      "chg": "-0.20%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "24.5",
-      "chg": "+2.43%",
+      "valeur": "24.2",
+      "chg": "+1.13%",
       "dir": "up"
     },
     "gold": {
-      "valeur": "$4 678.70",
-      "chg": "+0.27%",
+      "valeur": "$4678.6001",
+      "chg": "+0.26%",
       "dir": "up"
     },
     "eurusd": {
@@ -77,14 +71,14 @@
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4.335%",
+      "valeur": "4.335",
       "chg": "+0.51%",
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Ne pas toucher. Focus sur NQ Futures.",
-  "edition": "21:43 CET",
+  "pea_note": "PEA — Ne pas toucher. Marché US ouvert demain.",
+  "edition": "22:58 CET",
   "mode": "normal",
-  "timestamp": "2026-04-06T21:43:12.005191+02:00",
+  "timestamp": "2026-04-06T22:59:03.288722+02:00",
   "date_fr": "Lundi 6 avril 2026"
 }
