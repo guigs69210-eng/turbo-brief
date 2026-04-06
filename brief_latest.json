@@ -1,54 +1,54 @@
 {
   "signal_du_jour": {
-    "titre": "Biais baissier géopolitique — Tensions Iran/Israël en escalade",
-    "description": "NQ Futures 24288 (+0.31%), VIX 24.6 (+2.93%). Gold +0.42% sur craintes géopolitiques. CAC40 en légère baisse (-0.16%).",
-    "biais": "baissier",
-    "conviction": "forte",
-    "contexte_macro": "Escalade des tensions au Moyen-Orient avec frappes israéliennes et ultimatum de Trump sur l'Iran. Marchés actions sous pression malgré la hausse du Brent."
+    "titre": "Biais neutre — JPMorgan alerte sur les prochaines baisses de taux Fed",
+    "description": "NQ Futures +0.52%, VIX en hausse à 24.48 (+2.43%). JPMorgan met en garde contre un possible durcissement des conditions monétaires malgré les anticipations de baisses de taux.",
+    "biais": "neutre",
+    "conviction": "modérée",
+    "contexte_macro": "Marchés en attente des prochaines données économiques US. Sentiment global stable malgré les alertes de JPMorgan sur la politique monétaire."
   },
   "plan_actions": [
     {
-      "heure": "19h35",
-      "titre": "PUT NQ Futures ×18 (Turbo BEST SG Bourse)",
+      "heure": "22h00",
+      "titre": "PUT NQ Futures ×18 (Turbo BEST SG)",
       "sens": "PUT",
-      "mise": "2000 €",
+      "mise": "1200 €",
       "levier": 18,
-      "strike_ko": "Strike 24000 / KO 24500",
-      "gain_cible": "+25% si NQ -1%",
+      "strike_ko": "Strike 24000 / KO 24600",
+      "gain_cible": "+28% si NQ -1.2%",
       "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée immédiate. Stop mental -40%. Cible TP1 à +25% (sortir 50%, stop à +10%).",
-      "urgence": "haute"
+      "note": "Entrée 22h00–22h15. Stop mental -40%. Surveillance VIX >25 → levier max ×18.",
+      "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
       "label": "Support NQ",
-      "prix": 24000,
+      "prix": 24200,
       "type": "support",
-      "action": "Entrée PUT confirmée",
+      "action": "Entrée PUT si cassé",
       "couleur": "bear"
     },
     {
       "label": "Résistance NQ",
-      "prix": 24600,
+      "prix": 24500,
       "type": "resistance",
-      "action": "Risque de rebond baissier",
-      "couleur": "bear"
+      "action": "TP1 si atteint",
+      "couleur": "bull"
     }
   ],
   "alertes": [
-    "Événement géopolitique majeur en cours — surveiller réactions des marchés US après 20h CET",
-    "Attention aux gaps overnight sur indices US"
+    "JPMorgan alerte sur Fed — surveillance 22h30 CET",
+    "Données US ISM Services à 22h00 CET"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
-    "Turbo NQ → peut être conservé jusqu'à 22h CET"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ → cotent jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 288",
-      "chg": "+0.31%",
+      "valeur": "24 339",
+      "chg": "+0.52%",
       "dir": "up"
     },
     "cac40": {
@@ -57,34 +57,34 @@
       "dir": "dn"
     },
     "brent": {
-      "valeur": "$110.5",
-      "chg": "+0.61%",
-      "dir": "up"
+      "valeur": "$109.8",
+      "chg": "-0.01%",
+      "dir": "dn"
     },
     "vix": {
-      "valeur": "24.6",
-      "chg": "+2.93%",
+      "valeur": "24.5",
+      "chg": "+2.43%",
       "dir": "up"
     },
     "gold": {
-      "valeur": "$4 685.90",
-      "chg": "+0.42%",
+      "valeur": "$4 678.70",
+      "chg": "+0.27%",
       "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1549",
-      "chg": "+0.23%",
+      "valeur": "1.1546",
+      "chg": "+0.21%",
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4.343%",
-      "chg": "+0.70%",
+      "valeur": "4.335%",
+      "chg": "+0.51%",
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Pas d'actions françaises en portefeuille. Turbo NQ uniquement.",
-  "edition": "19h34 CET",
-  "mode": "news_flash",
-  "timestamp": "2026-04-06T19:34:59.001308+02:00",
+  "pea_note": "PEA — Ne pas toucher. Focus sur NQ Futures.",
+  "edition": "21:43 CET",
+  "mode": "normal",
+  "timestamp": "2026-04-06T21:43:12.005191+02:00",
   "date_fr": "Lundi 6 avril 2026"
 }

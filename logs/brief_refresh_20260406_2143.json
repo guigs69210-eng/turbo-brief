@@ -1,0 +1,281 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24338.75,
+        "prev_close": 24212.25,
+        "change_pct": 0.52,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.48,
+        "prev_close": 23.9,
+        "change_pct": 2.43,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4678.7002,
+        "prev_close": 4666.2998,
+        "change_pct": 0.27,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 109.77,
+        "prev_close": 109.78,
+        "change_pct": -0.01,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1546,
+        "prev_close": 1.1522,
+        "change_pct": 0.21,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.335,
+        "prev_close": 4.313,
+        "change_pct": 0.51,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6645.0,
+        "prev_close": 6612.25,
+        "change_pct": 0.5,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-06T19:43:07.334276+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "JPMorgan has a stark message on the next Fed rate cut",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/jpmorgan-stark-message-next-fed-180300978.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T18:03:00+00:00",
+          "age_minutes": 100,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "978f59c4c8d6"
+        },
+        {
+          "title": "Form 144 Snowflake Inc. For: 6 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-144-snowflake-inc-for-6-april-93CH-4599050",
+          "source": "investing_news",
+          "published": "2026-04-06T19:33:10+00:00",
+          "age_minutes": 9,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "fc37fa7fd782"
+        },
+        {
+          "title": "1st Franklin Financial appoints Sharon Mancero to board and audit committee",
+          "summary": "",
+          "url": "https://www.investing.com/news/sec-filings/1st-franklin-financial-appoints-sharon-mancero-to-board-and-audit-committee-93CH-4599049",
+          "source": "investing_news",
+          "published": "2026-04-06T19:32:28+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "98179d797aa5"
+        },
+        {
+          "title": "Form 13F Washington Trust Advisors For: 6 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13f-washington-trust-advisors-for-6-april-93CH-4599048",
+          "source": "investing_news",
+          "published": "2026-04-06T19:31:10+00:00",
+          "age_minutes": 11,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "3380054b43c9"
+        },
+        {
+          "title": "Form 8K Sculptor Diversified Real Estate Income Trust For: 6 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-sculptor-diversified-real-estate-income-trust-for-6-april-93CH-4599047",
+          "source": "investing_news",
+          "published": "2026-04-06T19:31:00+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "9d43b2fe6ce8"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "JPMorgan has a stark message on the next Fed rate cut",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/jpmorgan-stark-message-next-fed-180300978.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T18:03:00+00:00",
+          "age_minutes": 100,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "978f59c4c8d6"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-06T19:43:04.190379+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-06T21:43:07.334545+02:00",
+    "context": {
+      "note": "",
+      "github_run": "97",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre — JPMorgan alerte sur les prochaines baisses de taux Fed",
+      "description": "NQ Futures +0.52%, VIX en hausse à 24.48 (+2.43%). JPMorgan met en garde contre un possible durcissement des conditions monétaires malgré les anticipations de baisses de taux.",
+      "biais": "neutre",
+      "conviction": "modérée",
+      "contexte_macro": "Marchés en attente des prochaines données économiques US. Sentiment global stable malgré les alertes de JPMorgan sur la politique monétaire."
+    },
+    "plan_actions": [
+      {
+        "heure": "22h00",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST SG)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 24600",
+        "gain_cible": "+28% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 22h00–22h15. Stop mental -40%. Surveillance VIX >25 → levier max ×18.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24200,
+        "type": "support",
+        "action": "Entrée PUT si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 24500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "JPMorgan alerte sur Fed — surveillance 22h30 CET",
+      "Données US ISM Services à 22h00 CET"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 339",
+        "chg": "+0.52%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$109.8",
+        "chg": "-0.01%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.5",
+        "chg": "+2.43%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 678.70",
+        "chg": "+0.27%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1546",
+        "chg": "+0.21%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.335%",
+        "chg": "+0.51%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur NQ Futures.",
+    "edition": "21:43 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-06T21:43:12.005191+02:00",
+    "date_fr": "Lundi 6 avril 2026"
+  }
+}
