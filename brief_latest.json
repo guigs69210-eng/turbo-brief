@@ -1,90 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Session de clôture — Biais neutre à léger baissier sur CAC40",
-    "description": "CAC40 en légère baisse (-0.16%) malgré un NQ Futures haussier (+0.42%). VIX en hausse (+1.63%) reflétant une volatilité accrue. Brent stable malgré tensions géopolitiques.",
+    "titre": "Clôture Paris — 18:02",
+    "description": "NQ: 24320 (+0.45%) · CAC: 7962 (-0.16%)",
     "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Marchés en attente de données macro US demain. Tensions géopolitiques persistantes au Moyen-Orient mais sans impact immédiat sur les indices européens."
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "17:10",
-      "titre": "Sortie des positions ouvertes CAC40",
-      "sens": "CALL|PUT",
-      "mise": "N/A",
-      "levier": 0,
-      "strike_ko": "N/A",
-      "gain_cible": "Clôture obligatoire avant 17h30",
-      "plateforme": "N/A",
-      "note": "Clôturer toutes les positions sur actions FR et indices européens avant 17h30 CET.",
-      "urgence": "haute"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Support CAC40",
-      "prix": 7950,
-      "type": "support",
-      "action": "Surveiller en clôture",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance CAC40",
-      "prix": 8000,
-      "type": "resistance",
-      "action": "Potentiel rebond si cassé",
-      "couleur": "bull"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Clôture obligatoire des positions FR avant 17h30 CET",
-    "Surveillance des news géopolitiques en soirée (Moyen-Orient)"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ/indices → cotent jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 314",
-      "chg": "+0.42%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "7 962",
-      "chg": "-0.16%",
-      "dir": "dn"
-    },
-    "brent": {
-      "valeur": "$108.8",
-      "chg": "-0.88%",
-      "dir": "dn"
-    },
-    "vix": {
-      "valeur": "24.3",
-      "chg": "+1.63%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "$4 710.20",
-      "chg": "+0.94%",
-      "dir": "up"
-    },
-    "eurusd": {
-      "valeur": "1.1545",
-      "chg": "+0.20%",
-      "dir": "up"
-    },
-    "us10y": {
-      "valeur": "4.335",
-      "chg": "+0.51%",
-      "dir": "up"
-    }
-  },
-  "pea_note": "PEA — Clôturer toutes les positions avant 17h30 CET.",
-  "edition": "17:09 CET",
-  "mode": "normal",
-  "timestamp": "2026-04-06T17:09:30.205173+02:00",
-  "date_fr": "Lundi 6 avril 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Monday 06 april 2026",
+  "edition": "18h02 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
