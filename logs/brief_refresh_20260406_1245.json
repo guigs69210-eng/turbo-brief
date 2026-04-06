@@ -1,0 +1,337 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24347.75,
+        "prev_close": 24212.25,
+        "change_pct": 0.56,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.84,
+        "prev_close": 23.9,
+        "change_pct": 3.93,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4716.2998,
+        "prev_close": 4666.2998,
+        "change_pct": 1.07,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.1,
+        "prev_close": 109.78,
+        "change_pct": -1.53,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1555,
+        "prev_close": 1.1522,
+        "change_pct": 0.29,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.313,
+        "prev_close": 4.319,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6638.5,
+        "prev_close": 6612.25,
+        "change_pct": 0.4,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-06T10:45:32.678929+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "US, Iran weigh peace plan as Trump’s ’hell’ warning nears deadline",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-vows-hell-for-iran-if-strait-stays-shut-says-a-deal-is-possible-4597686",
+          "source": "investing_news",
+          "published": "2026-04-06T10:42:49+00:00",
+          "age_minutes": 2,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ed9e2e4290dd"
+        },
+        {
+          "title": "Bank of Japan Warns Iran War Could Depress Economy",
+          "summary": "",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-06-2026/card/bank-of-japan-warns-iran-war-could-depress-economy-SmgSKDJoBZs99kYGcMWg?siteid=yhoof2&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T10:24:33+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "3a9d11b1c7f1"
+        },
+        {
+          "title": "JPMorgan's Dimon warns Iran war may drive inflation and interest rates higher",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/jpmorgans-dimon-warns-iran-war-100501443.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T10:05:01+00:00",
+          "age_minutes": 40,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "78fc02e1175a"
+        },
+        {
+          "title": "Jamie Dimon highlights Iran War, private credit, and AI-driven job losses as major US risks in his annual letter",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/jamie-dimon-highlights-iran-war-private-credit-and-ai-driven-job-losses-as-major-us-risks-in-his-annual-letter-100130113.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T10:01:30+00:00",
+          "age_minutes": 43,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "52c32841aec6"
+        },
+        {
+          "title": "Maximus declares $0.33 quarterly dividend payable June 1",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/maximus-declares-033-quarterly-dividend-payable-june-1-93CH-4597987",
+          "source": "investing_news",
+          "published": "2026-04-06T10:41:11+00:00",
+          "age_minutes": 4,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "a5951dc8d9fa"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "US, Iran weigh peace plan as Trump’s ’hell’ warning nears deadline",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/trump-vows-hell-for-iran-if-strait-stays-shut-says-a-deal-is-possible-4597686",
+          "source": "investing_news",
+          "published": "2026-04-06T10:42:49+00:00",
+          "age_minutes": 2,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ed9e2e4290dd"
+        },
+        {
+          "title": "Bank of Japan Warns Iran War Could Depress Economy",
+          "summary": "",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-06-2026/card/bank-of-japan-warns-iran-war-could-depress-economy-SmgSKDJoBZs99kYGcMWg?siteid=yhoof2&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T10:24:33+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "3a9d11b1c7f1"
+        },
+        {
+          "title": "JPMorgan's Dimon warns Iran war may drive inflation and interest rates higher",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/jpmorgans-dimon-warns-iran-war-100501443.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T10:05:01+00:00",
+          "age_minutes": 40,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "78fc02e1175a"
+        },
+        {
+          "title": "Jamie Dimon highlights Iran War, private credit, and AI-driven job losses as major US risks in his annual letter",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/jamie-dimon-highlights-iran-war-private-credit-and-ai-driven-job-losses-as-major-us-risks-in-his-annual-letter-100130113.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T10:01:30+00:00",
+          "age_minutes": 43,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "52c32841aec6"
+        }
+      ],
+      "sentiment": -0.3,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 12
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 8
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 5
+        }
+      ],
+      "scanned_at": "2026-04-06T10:45:29.257900+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-06T12:45:32.679184+02:00",
+    "context": {
+      "note": "",
+      "github_run": "93",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — Tensions Iran/US et inflation",
+      "description": "NQ Futures +0.56% malgré tensions géopolitiques majeures (Iran/US) et inflation attendue. VIX à 24.84 (+3.93%) reflète l'incertitude.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Risque géopolitique élevé (Iran) et inflation anticipée pourraient peser sur les marchés. JPMorgan alerte sur les conséquences économiques d'un conflit."
+    },
+    "plan_actions": [
+      {
+        "heure": "12h50",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST SG Bourse)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24500 / KO 25000",
+        "gain_cible": "+35% si NQ -1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 12h50–13h10. Stop mental -40%. Cible partielle à +25% (sortir 50%).",
+        "urgence": "haute"
+      },
+      {
+        "heure": "13h00",
+        "titre": "PUT CAC40 ×15 (Turbo BEST SG Bourse)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 7950 / KO 8000",
+        "gain_cible": "+28% si CAC40 -0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+        "note": "Entrée 13h00–13h20. Stop mental -40%. Cible partielle à +25%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24200,
+        "type": "support",
+        "action": "Entrée PUT confirmée si cassure",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7980,
+        "type": "resistance",
+        "action": "Validation PUT si rejet",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil VIX critique",
+        "prix": 26,
+        "type": "seuil",
+        "action": "Réduire levier si dépassé",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "Suivre l'évolution des négociations Iran/US (flash news 15h ET)",
+      "Surveiller la réaction du Brent après les annonces géopolitiques"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 348",
+        "chg": "+0.56%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$108.1",
+        "chg": "-1.53%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.8",
+        "chg": "+3.93%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 716.30",
+        "chg": "+1.07%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1555",
+        "chg": "+0.29%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.313%",
+        "chg": "-0.14%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises dans les plans actuels.",
+    "edition": "12h45 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-06T12:45:39.803243+02:00",
+    "date_fr": "Lundi 6 avril 2026"
+  }
+}
