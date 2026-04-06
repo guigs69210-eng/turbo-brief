@@ -1,0 +1,318 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24314.5,
+        "prev_close": 24212.25,
+        "change_pct": 0.42,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7962.3901,
+        "prev_close": 7975.3501,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.29,
+        "prev_close": 23.9,
+        "change_pct": 1.63,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4710.2002,
+        "prev_close": 4666.2998,
+        "change_pct": 0.94,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 108.81,
+        "prev_close": 109.78,
+        "change_pct": -0.88,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1545,
+        "prev_close": 1.1522,
+        "change_pct": 0.2,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.335,
+        "prev_close": 4.313,
+        "change_pct": 0.51,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6640.0,
+        "prev_close": 6612.25,
+        "change_pct": 0.42,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.15,
+        "prev_close": 239.45,
+        "change_pct": -1.38,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 471.05,
+        "prev_close": 470.95,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 180.52,
+        "prev_close": 179.48,
+        "change_pct": 0.58,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.3,
+        "prev_close": 85.12,
+        "change_pct": -2.14,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.58,
+        "prev_close": 6.309,
+        "change_pct": 4.3,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-06T15:09:25.609232+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Best Petrochemical Stocks to Buy Amid Middle East Conflict",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/best-petrochemical-stocks-to-buy-amid-middle-east-conflict-93CH-4598842",
+          "source": "investing_news",
+          "published": "2026-04-06T15:04:34+00:00",
+          "age_minutes": 4,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "26a64dd7a390"
+        },
+        {
+          "title": "Exclusive-Iraq could restore oil exports to pre-war level within a week if Hormuz reopens, Basra Oil chief says",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/exclusiveiraq-could-restore-oil-exports-to-prewar-level-within-a-week-if-hormuz-reopens-basra-oil-chief-says-4598837",
+          "source": "investing_news",
+          "published": "2026-04-06T14:54:38+00:00",
+          "age_minutes": 14,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "dceaffef3c56"
+        },
+        {
+          "title": "Consumer hardware trade in danger as Iran war triggers memory chip pricing explosion",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/consumer-hardware-trade-in-danger-as-iran-war-triggers-memory-chip-pricing-explosion-144857982.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T14:48:57+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f22ffce392dd"
+        },
+        {
+          "title": "Goldman Sachs' blunt warning to laid-off tech workers: It will take time and earnings loss to find a new job",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/goldman-sachs-blunt-warning-to-laid-off-tech-workers-it-will-take-time-and-earnings-loss-to-find-a-new-job-143808064.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T14:38:08+00:00",
+          "age_minutes": 31,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "a8e6aa76d68b"
+        },
+        {
+          "title": "Earnings call transcript: Koil Energy’s Q4 2025 earnings show mixed results",
+          "summary": "",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-koil-energys-q4-2025-earnings-show-mixed-results-93CH-4598844",
+          "source": "investing_news",
+          "published": "2026-04-06T15:05:26+00:00",
+          "age_minutes": 3,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "f946ffd217cf"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Best Petrochemical Stocks to Buy Amid Middle East Conflict",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/best-petrochemical-stocks-to-buy-amid-middle-east-conflict-93CH-4598842",
+          "source": "investing_news",
+          "published": "2026-04-06T15:04:34+00:00",
+          "age_minutes": 4,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "26a64dd7a390"
+        },
+        {
+          "title": "Exclusive-Iraq could restore oil exports to pre-war level within a week if Hormuz reopens, Basra Oil chief says",
+          "summary": "",
+          "url": "https://www.investing.com/news/commodities-news/exclusiveiraq-could-restore-oil-exports-to-prewar-level-within-a-week-if-hormuz-reopens-basra-oil-chief-says-4598837",
+          "source": "investing_news",
+          "published": "2026-04-06T14:54:38+00:00",
+          "age_minutes": 14,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "dceaffef3c56"
+        },
+        {
+          "title": "Consumer hardware trade in danger as Iran war triggers memory chip pricing explosion",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/consumer-hardware-trade-in-danger-as-iran-war-triggers-memory-chip-pricing-explosion-144857982.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T14:48:57+00:00",
+          "age_minutes": 20,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "f22ffce392dd"
+        },
+        {
+          "title": "Goldman Sachs' blunt warning to laid-off tech workers: It will take time and earnings loss to find a new job",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/goldman-sachs-blunt-warning-to-laid-off-tech-workers-it-will-take-time-and-earnings-loss-to-find-a-new-job-143808064.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T14:38:08+00:00",
+          "age_minutes": 31,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "a8e6aa76d68b"
+        }
+      ],
+      "sentiment": 0.05,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 11
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 9
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-06T15:09:22.914036+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-06T17:09:25.609526+02:00",
+    "context": {
+      "note": "",
+      "github_run": "94",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Session de clôture — Biais neutre à léger baissier sur CAC40",
+      "description": "CAC40 en légère baisse (-0.16%) malgré un NQ Futures haussier (+0.42%). VIX en hausse (+1.63%) reflétant une volatilité accrue. Brent stable malgré tensions géopolitiques.",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Marchés en attente de données macro US demain. Tensions géopolitiques persistantes au Moyen-Orient mais sans impact immédiat sur les indices européens."
+    },
+    "plan_actions": [
+      {
+        "heure": "17:10",
+        "titre": "Sortie des positions ouvertes CAC40",
+        "sens": "CALL|PUT",
+        "mise": "N/A",
+        "levier": 0,
+        "strike_ko": "N/A",
+        "gain_cible": "Clôture obligatoire avant 17h30",
+        "plateforme": "N/A",
+        "note": "Clôturer toutes les positions sur actions FR et indices européens avant 17h30 CET.",
+        "urgence": "haute"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support CAC40",
+        "prix": 7950,
+        "type": "support",
+        "action": "Surveiller en clôture",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8000,
+        "type": "resistance",
+        "action": "Potentiel rebond si cassé",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Clôture obligatoire des positions FR avant 17h30 CET",
+      "Surveillance des news géopolitiques en soirée (Moyen-Orient)"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 314",
+        "chg": "+0.42%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 962",
+        "chg": "-0.16%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$108.8",
+        "chg": "-0.88%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.3",
+        "chg": "+1.63%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 710.20",
+        "chg": "+0.94%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1545",
+        "chg": "+0.20%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.335",
+        "chg": "+0.51%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Clôturer toutes les positions avant 17h30 CET.",
+    "edition": "17:09 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-06T17:09:30.205173+02:00",
+    "date_fr": "Lundi 6 avril 2026"
+  }
+}
