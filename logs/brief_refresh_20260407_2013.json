@@ -1,0 +1,315 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24226.25,
+        "prev_close": 24223.5,
+        "change_pct": 0.01,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7908.7402,
+        "prev_close": 7946.9199,
+        "change_pct": -0.48,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 26.59,
+        "prev_close": 24.15,
+        "change_pct": 10.1,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4704.7998,
+        "prev_close": 4674.8999,
+        "change_pct": 0.64,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 110.05,
+        "prev_close": 111.49,
+        "change_pct": -1.29,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1582,
+        "prev_close": 1.1546,
+        "change_pct": 0.31,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.353,
+        "prev_close": 4.335,
+        "change_pct": 0.42,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6629.5,
+        "prev_close": 6622.75,
+        "change_pct": 0.1,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 233.25,
+        "prev_close": 235.25,
+        "change_pct": -0.85,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 466.85,
+        "prev_close": 469.6,
+        "change_pct": -0.59,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 181.5,
+        "prev_close": 180.52,
+        "change_pct": 0.54,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.72,
+        "prev_close": 82.97,
+        "change_pct": 0.9,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.324,
+        "prev_close": 6.594,
+        "change_pct": -4.09,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-04-07T18:13:20.834595+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Form 8K Federal Home Loan Bank of New York For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-federal-home-loan-bank-of-new-york-for-7-april-93CH-4601198",
+          "source": "investing_news",
+          "published": "2026-04-07T17:50:48+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "45decdb79a17"
+        },
+        {
+          "title": "BofA forecasts March US CPI to jump 0.9% on energy surge",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/bofa-forecasts-march-us-cpi-to-jump-09-on-energy-surge-93CH-4601195",
+          "source": "investing_news",
+          "published": "2026-04-07T17:49:27+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "ae45ca52d899"
+        },
+        {
+          "title": "Apple’s foldable iPhone faces engineering snags, potential shipment delays, Nikkei Asia reports",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/apples-foldable-iphone-encounters-engineering-snags-faces-potential-shipment-delays-nikkei-asia-reports-4599594",
+          "source": "investing_news",
+          "published": "2026-04-07T17:54:26+00:00",
+          "age_minutes": 18,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "73824cdf7968"
+        },
+        {
+          "title": "Mission Produce stock hits 52-week high at 15.03 USD",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/mission-produce-stock-hits-52week-high-at-1503-usd-93CH-4601197",
+          "source": "investing_news",
+          "published": "2026-04-07T17:50:26+00:00",
+          "age_minutes": 22,
+          "urgency": "low",
+          "sentiment": -1.0,
+          "id": "913444524e54"
+        },
+        {
+          "title": "Form 13G SANDISK CORP/DE For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13g-sandisk-corpde-for-7-april-93CH-4601196",
+          "source": "investing_news",
+          "published": "2026-04-07T17:49:49+00:00",
+          "age_minutes": 23,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a9722770492b"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Form 8K Federal Home Loan Bank of New York For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-federal-home-loan-bank-of-new-york-for-7-april-93CH-4601198",
+          "source": "investing_news",
+          "published": "2026-04-07T17:50:48+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "45decdb79a17"
+        },
+        {
+          "title": "BofA forecasts March US CPI to jump 0.9% on energy surge",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/bofa-forecasts-march-us-cpi-to-jump-09-on-energy-surge-93CH-4601195",
+          "source": "investing_news",
+          "published": "2026-04-07T17:49:27+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "ae45ca52d899"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 4
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 2
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-07T18:13:17.227615+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-07T20:13:20.834817+02:00",
+    "context": {
+      "note": "",
+      "github_run": "102",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier renforcé — VIX en hausse, CPI attendu en hausse",
+      "description": "NQ Futures stables (+0.01%), VIX à 26.59 (+10.10%) reflétant une volatilité accrue. CAC40 en léger repli (-0.48%). Brent recule (-1.29%) malgré tensions géopolitiques.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Le marché anticipe un CPI US élevé en mars (+0.9%), alimentant les craintes de maintien des taux élevés. La hausse du VIX suggère une aversion au risque persistante."
+    },
+    "plan_actions": [
+      {
+        "heure": "20h15",
+        "titre": "PUT NQ Futures ×15 (Turbo BEST)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 15,
+        "strike_ko": "Strike 24200 / KO 24500",
+        "gain_cible": "+25% si NQ -1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 20h15–20h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "20h30",
+        "titre": "PUT CAC40 ×12 (Warrant BNP)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 12,
+        "strike_ko": "Strike 7900 / KO 8000",
+        "gain_cible": "+20% si CAC40 -0.5%",
+        "plateforme": "bnpparibas.net → CAC40 → PUT Warrant",
+        "note": "Entrée 20h30–20h45. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24100,
+        "type": "support",
+        "action": "Achat agressif si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 7950,
+        "type": "resistance",
+        "action": "Vente si testé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil VIX",
+        "prix": 27,
+        "type": "current",
+        "action": "Surveillance accrue si dépassé",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "CPI US mars à 20h30 CET — risque de forte volatilité",
+      "Form 8K Federal Home Loan Bank — impact sectoriel possible"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → cotent jusqu'à 22h CET",
+      "Actions FR → clôture obligatoire avant 17h30 (déjà passée)"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 226",
+        "chg": "+0.01%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 909",
+        "chg": "-0.48%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$110.0",
+        "chg": "-1.29%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "26.6",
+        "chg": "+10.10%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 704.80",
+        "chg": "+0.64%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1582",
+        "chg": "+0.31%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.353%",
+        "chg": "+0.42%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher (clôture déjà effectuée).",
+    "edition": "20h13 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-07T20:13:26.790051+02:00",
+    "date_fr": "Mardi 7 avril 2026"
+  }
+}

@@ -1,19 +1,109 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 18:39",
-    "description": "NQ: 24192 (-0.13%) · CAC: 7909 (-0.48%)",
-    "biais": "neutre",
-    "conviction": "faible"
+    "titre": "Biais baissier renforcé — VIX en hausse, CPI attendu en hausse",
+    "description": "NQ Futures stables (+0.01%), VIX à 26.59 (+10.10%) reflétant une volatilité accrue. CAC40 en léger repli (-0.48%). Brent recule (-1.29%) malgré tensions géopolitiques.",
+    "biais": "baissier",
+    "conviction": "forte",
+    "contexte_macro": "Le marché anticipe un CPI US élevé en mars (+0.9%), alimentant les craintes de maintien des taux élevés. La hausse du VIX suggère une aversion au risque persistante."
   },
-  "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "plan_actions": [
+    {
+      "heure": "20h15",
+      "titre": "PUT NQ Futures ×15 (Turbo BEST)",
+      "sens": "PUT",
+      "mise": "2000 €",
+      "levier": 15,
+      "strike_ko": "Strike 24200 / KO 24500",
+      "gain_cible": "+25% si NQ -1%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+      "note": "Entrée 20h15–20h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "haute"
+    },
+    {
+      "heure": "20h30",
+      "titre": "PUT CAC40 ×12 (Warrant BNP)",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 12,
+      "strike_ko": "Strike 7900 / KO 8000",
+      "gain_cible": "+20% si CAC40 -0.5%",
+      "plateforme": "bnpparibas.net → CAC40 → PUT Warrant",
+      "note": "Entrée 20h30–20h45. Stop mental -40%.",
+      "urgence": "normale"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Tuesday 07 april 2026",
-  "edition": "18h39 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "niveaux_cles": [
+    {
+      "label": "Support NQ",
+      "prix": 24100,
+      "type": "support",
+      "action": "Achat agressif si cassé",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 7950,
+      "type": "resistance",
+      "action": "Vente si testé",
+      "couleur": "bear"
+    },
+    {
+      "label": "Seuil VIX",
+      "prix": 27,
+      "type": "current",
+      "action": "Surveillance accrue si dépassé",
+      "couleur": "amber"
+    }
+  ],
+  "alertes": [
+    "CPI US mars à 20h30 CET — risque de forte volatilité",
+    "Form 8K Federal Home Loan Bank — impact sectoriel possible"
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Turbos NQ → cotent jusqu'à 22h CET",
+    "Actions FR → clôture obligatoire avant 17h30 (déjà passée)"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "24 226",
+      "chg": "+0.01%",
+      "dir": "up"
+    },
+    "cac40": {
+      "valeur": "7 909",
+      "chg": "-0.48%",
+      "dir": "dn"
+    },
+    "brent": {
+      "valeur": "$110.0",
+      "chg": "-1.29%",
+      "dir": "dn"
+    },
+    "vix": {
+      "valeur": "26.6",
+      "chg": "+10.10%",
+      "dir": "up"
+    },
+    "gold": {
+      "valeur": "$4 704.80",
+      "chg": "+0.64%",
+      "dir": "up"
+    },
+    "eurusd": {
+      "valeur": "1.1582",
+      "chg": "+0.31%",
+      "dir": "up"
+    },
+    "us10y": {
+      "valeur": "4.353%",
+      "chg": "+0.42%",
+      "dir": "up"
+    }
+  },
+  "pea_note": "PEA — Ne pas toucher (clôture déjà effectuée).",
+  "edition": "20h13 CET",
+  "mode": "news_flash",
+  "timestamp": "2026-04-07T20:13:26.790051+02:00",
+  "date_fr": "Mardi 7 avril 2026"
 }
