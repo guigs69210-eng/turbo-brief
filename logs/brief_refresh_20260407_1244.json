@@ -1,0 +1,352 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24318.0,
+        "prev_close": 24223.5,
+        "change_pct": 0.39,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8040.2002,
+        "prev_close": 7946.9199,
+        "change_pct": 1.17,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 24.61,
+        "prev_close": 24.15,
+        "change_pct": 1.9,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4694.2002,
+        "prev_close": 4674.8999,
+        "change_pct": 0.41,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 110.15,
+        "prev_close": 111.49,
+        "change_pct": -1.2,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1557,
+        "prev_close": 1.1546,
+        "change_pct": 0.09,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.335,
+        "prev_close": 4.313,
+        "change_pct": 0.51,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6646.25,
+        "prev_close": 6622.75,
+        "change_pct": 0.35,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 236.45,
+        "prev_close": 235.25,
+        "change_pct": 0.51,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 478.1,
+        "prev_close": 469.6,
+        "change_pct": 1.81,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 182.64,
+        "prev_close": 180.52,
+        "change_pct": 1.17,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 84.56,
+        "prev_close": 82.97,
+        "change_pct": 1.92,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.585,
+        "prev_close": 6.594,
+        "change_pct": -0.14,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-04-07T10:44:01.444544+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "JPMorgan has a stark message on the next Fed rate cut",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/jpmorgan-stark-message-next-fed-180300978.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-06T18:03:00+00:00",
+          "age_minutes": 1000,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "978f59c4c8d6"
+        },
+        {
+          "title": "Australia, China to boost energy security cooperation amid Iran conflict",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/australia-china-to-boost-energy-security-cooperation-amid-iran-conflict-93CH-4600050",
+          "source": "investing_news",
+          "published": "2026-04-07T10:37:38+00:00",
+          "age_minutes": 6,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "cfc0413848f2"
+        },
+        {
+          "title": "Defiant Iran rejects ceasefire as clock ticks down on Trump threat to unleash ’hell’",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/iran-defiant-on-eve-of-trumps-ceasefire-deadline-4599604",
+          "source": "investing_news",
+          "published": "2026-04-07T10:36:30+00:00",
+          "age_minutes": 7,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "c6bfbdafc8de"
+        },
+        {
+          "title": "Morning Brief: A sharp warning from Goldman Sachs",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/morning-brief-a-sharp-warning-from-goldman-sachs-100056994.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-07T10:00:56+00:00",
+          "age_minutes": 43,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ea315200456a"
+        },
+        {
+          "title": "Americans are uniquely vulnerable to Iran war volatility after years of buying stocks",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/americans-are-uniquely-vulnerable-to-iran-war-volatility-after-years-of-buying-stocks-100044862.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-07T10:00:44+00:00",
+          "age_minutes": 43,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "07eb24dd86e5"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Australia, China to boost energy security cooperation amid Iran conflict",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/australia-china-to-boost-energy-security-cooperation-amid-iran-conflict-93CH-4600050",
+          "source": "investing_news",
+          "published": "2026-04-07T10:37:38+00:00",
+          "age_minutes": 6,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "cfc0413848f2"
+        },
+        {
+          "title": "Defiant Iran rejects ceasefire as clock ticks down on Trump threat to unleash ’hell’",
+          "summary": "",
+          "url": "https://www.investing.com/news/world-news/iran-defiant-on-eve-of-trumps-ceasefire-deadline-4599604",
+          "source": "investing_news",
+          "published": "2026-04-07T10:36:30+00:00",
+          "age_minutes": 7,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "c6bfbdafc8de"
+        },
+        {
+          "title": "Morning Brief: A sharp warning from Goldman Sachs",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/morning-brief-a-sharp-warning-from-goldman-sachs-100056994.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-07T10:00:56+00:00",
+          "age_minutes": 43,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ea315200456a"
+        },
+        {
+          "title": "Americans are uniquely vulnerable to Iran war volatility after years of buying stocks",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/americans-are-uniquely-vulnerable-to-iran-war-volatility-after-years-of-buying-stocks-100044862.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-07T10:00:44+00:00",
+          "age_minutes": 43,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "07eb24dd86e5"
+        },
+        {
+          "title": "Electric cars look tempting as gas prices skyrocket from the Iran war. Should you switch to an EV or wait it out?",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/energy/articles/electric-cars-look-tempting-gas-093000910.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-07T09:30:00+00:00",
+          "age_minutes": 73,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "0edf4df41013"
+        }
+      ],
+      "sentiment": -0.1,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 10
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 7
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 5
+        },
+        {
+          "theme": "Macro US",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-07T10:43:58.862629+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-07T12:44:01.444829+02:00",
+    "context": {
+      "note": "",
+      "github_run": "99",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais baissier géopolitique — Tensions Iran/Trump en hausse",
+      "description": "NQ 24318 (+0.39%), VIX 24.61 (+1.90%). Brent recule -1.2% malgré tensions géopolitiques. JPMorgan met en garde sur les prochains cuts de la Fed.",
+      "biais": "baissier",
+      "conviction": "forte",
+      "contexte_macro": "Tensions Iran/Trump alimentent la volatilité. Goldman Sachs et JPMorgan alertent sur les risques de correction boursière liée à la géopolitique."
+    },
+    "plan_actions": [
+      {
+        "heure": "12h45",
+        "titre": "PUT NQ Futures ×18 (Turbo BEST SG)",
+        "sens": "PUT",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 24600",
+        "gain_cible": "+25% si NQ -1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 12h45–13h00. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "haute"
+      },
+      {
+        "heure": "12h50",
+        "titre": "PUT CAC40 ×15 (Warrant BNP)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 8000 / KO 8100",
+        "gain_cible": "+20% si CAC40 -0.8%",
+        "plateforme": "sgbourse.fr → CAC40 → PUT Warrant BNP",
+        "note": "Entrée 12h50–13h10. Stop mental -40%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24200,
+        "type": "support",
+        "action": "Entrée PUT renforcée si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8100,
+        "type": "resistance",
+        "action": "KO PUT si dépassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Seuil psychologique NQ",
+        "prix": 24000,
+        "type": "support",
+        "action": "Risque KO PUT si testé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "16h: JPMorgan alerte sur Fed — risque de correction",
+      "16h30: Publication des stocks US — volatilité attendue"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ → clôture possible 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 318",
+        "chg": "+0.39%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "8 040",
+        "chg": "+1.17%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$110.2",
+        "chg": "-1.20%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "24.6",
+        "chg": "+1.90%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 694.20",
+        "chg": "+0.41%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1557",
+        "chg": "+0.09%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.335%",
+        "chg": "+0.51%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur CAC40 (Warrant BNP).",
+    "edition": "12h44 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-07T12:44:07.235490+02:00",
+    "date_fr": "Mardi 7 avril 2026"
+  }
+}
