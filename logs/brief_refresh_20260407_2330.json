@@ -1,0 +1,265 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 24399.25,
+        "prev_close": 24223.5,
+        "change_pct": 0.73,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 7908.7402,
+        "prev_close": 7946.9199,
+        "change_pct": -0.48,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 25.78,
+        "prev_close": 24.15,
+        "change_pct": 6.75,
+        "direction": "up"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4733.2998,
+        "prev_close": 4674.8999,
+        "change_pct": 1.25,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 105.47,
+        "prev_close": 111.49,
+        "change_pct": -5.4,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1601,
+        "prev_close": 1.1546,
+        "change_pct": 0.48,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.343,
+        "prev_close": 4.335,
+        "change_pct": 0.18,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6663.5,
+        "prev_close": 6622.75,
+        "change_pct": 0.62,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 233.25,
+        "prev_close": 235.25,
+        "change_pct": -0.85,
+        "direction": "dn"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 466.85,
+        "prev_close": 469.6,
+        "change_pct": -0.59,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 181.5,
+        "prev_close": 180.52,
+        "change_pct": 0.54,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 83.72,
+        "prev_close": 82.97,
+        "change_pct": 0.9,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.324,
+        "prev_close": 6.594,
+        "change_pct": -4.09,
+        "direction": "dn"
+      },
+      "fetched_at": "2026-04-07T21:30:53.829261+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Form 8K FreeCast For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-freecast-for-7-april-93CH-4601526",
+          "source": "investing_news",
+          "published": "2026-04-07T20:40:47+00:00",
+          "age_minutes": 50,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "dcb09a6e7a56"
+        },
+        {
+          "title": "Form 8K American Healthcare REIT Inc For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-american-healthcare-reit-inc-for-7-april-93CH-4601525",
+          "source": "investing_news",
+          "published": "2026-04-07T20:40:45+00:00",
+          "age_minutes": 50,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "d33af2dfe8e0"
+        },
+        {
+          "title": "Form 8K NABORS INDUSTRIES LTD. For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-nabors-industries-ltd-for-7-april-93CH-4601524",
+          "source": "investing_news",
+          "published": "2026-04-07T20:40:41+00:00",
+          "age_minutes": 50,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "80dd2fae3dff"
+        },
+        {
+          "title": "Form 8K KPET Ultra Paceline Corporation For: 7 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-kpet-ultra-paceline-corporation-for-7-april-93CH-4601523",
+          "source": "investing_news",
+          "published": "2026-04-07T20:40:39+00:00",
+          "age_minutes": 50,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "80443c27031a"
+        },
+        {
+          "title": "United Therapeutics CEO Rothblatt sells $5.3 million in UTHR stock",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/united-therapeutics-ceo-rothblatt-sells-53-million-in-uthr-stock-93CH-4601522",
+          "source": "investing_news",
+          "published": "2026-04-07T20:40:15+00:00",
+          "age_minutes": 50,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "3522be96abcf"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 3
+        }
+      ],
+      "scanned_at": "2026-04-07T21:30:51.115557+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-07T23:30:53.829554+02:00",
+    "context": {
+      "note": "",
+      "github_run": "104",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier sur NQ — Sentiment Tech/IA intact malgré VIX élevé",
+      "description": "NQ Futures +0.73% en clôture US, VIX à 25.78 (+6.75%). Gold et Brent en divergence haussière. CAC40 en léger repli (-0.48%).",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Les marchés restent portés par l'optimisme sur l'IA et les résultats tech, malgré un VIX élevé reflétant une volatilité persistante."
+    },
+    "plan_actions": [
+      {
+        "heure": "23h35",
+        "titre": "CALL NQ Futures ×18 (BEST SG Bourse)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 18,
+        "strike_ko": "Strike 24000 / KO 23500",
+        "gain_cible": "+25% si NQ +1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 23h35–23h45. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 24800,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24000,
+        "type": "support",
+        "action": "Stop KO",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveiller l'ouverture Asie (00h00 CET) pour confirmation du biais haussier.",
+      "VIX > 25 → levier max ×18 autorisé."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+      "NQ → cotations jusqu'à 22h CET (déjà passées)"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "24 399",
+        "chg": "+0.73%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "7 909",
+        "chg": "-0.48%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$105.5",
+        "chg": "-5.40%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "25.8",
+        "chg": "+6.75%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 733.30",
+        "chg": "+1.25%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1601",
+        "chg": "+0.48%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.343%",
+        "chg": "+0.18%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions FR en portefeuille.",
+    "edition": "23h30 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-07T23:30:58.546958+02:00",
+    "date_fr": "Mardi 7 avril 2026"
+  }
+}
