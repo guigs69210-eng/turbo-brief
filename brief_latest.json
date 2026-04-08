@@ -1,79 +1,105 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier sur NQ — Sentiment Tech/IA intact malgré VIX élevé",
-    "description": "NQ Futures +0.73% en clôture US, VIX à 25.78 (+6.75%). Gold et Brent en divergence haussière. CAC40 en léger repli (-0.48%).",
+    "titre": "Biais haussier modéré — Tech et énergie en tête",
+    "description": "NQ Futures +0.34%, CAC40 +4.57% sur rebond tech et énergie. VIX en chute à 20.59 (-20%). Brent stable à -0.59%.",
     "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Les marchés restent portés par l'optimisme sur l'IA et les résultats tech, malgré un VIX élevé reflétant une volatilité persistante."
+    "contexte_macro": "Rebond des valeurs tech et énergie après publication de contrats miniers et analyses sur les taux. Sentiment global légèrement négatif mais marché actions résilient."
   },
   "plan_actions": [
     {
-      "heure": "23h35",
-      "titre": "CALL NQ Futures ×18 (BEST SG Bourse)",
+      "heure": "13h20",
+      "titre": "CALL CAC40 ×15 (Turbo BEST SG)",
       "sens": "CALL",
       "mise": "1200 €",
+      "levier": 15,
+      "strike_ko": "Strike 8300 / KO 8200",
+      "gain_cible": "+25% si CAC40 +1.2%",
+      "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
+      "note": "Entrée 13h20–13h40. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "13h30",
+      "titre": "CALL NQ Futures ×18 (Turbo Vontobel)",
+      "sens": "CALL",
+      "mise": "1800 €",
       "levier": 18,
-      "strike_ko": "Strike 24000 / KO 23500",
-      "gain_cible": "+25% si NQ +1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
-      "note": "Entrée 23h35–23h45. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "strike_ko": "Strike 25200 / KO 24800",
+      "gain_cible": "+30% si NQ +1.8%",
+      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
+      "note": "Entrée 13h30–13h50. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
       "urgence": "normale"
     }
   ],
   "niveaux_cles": [
     {
+      "label": "Résistance CAC40",
+      "prix": 8350,
+      "type": "resistance",
+      "action": "TP1 si atteint",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support CAC40",
+      "prix": 8200,
+      "type": "support",
+      "action": "Stop KO si cassé",
+      "couleur": "bear"
+    },
+    {
       "label": "Résistance NQ",
-      "prix": 24800,
+      "prix": 25400,
       "type": "resistance",
       "action": "TP1 si atteint",
       "couleur": "bull"
     },
     {
       "label": "Support NQ",
-      "prix": 24000,
+      "prix": 24900,
       "type": "support",
-      "action": "Stop KO",
+      "action": "Stop KO si cassé",
       "couleur": "bear"
     }
   ],
   "alertes": [
-    "Surveiller l'ouverture Asie (00h00 CET) pour confirmation du biais haussier.",
-    "VIX > 25 → levier max ×18 autorisé."
+    "Core Lithium awards contract — surveiller les valeurs minières européennes",
+    "Analyse Fed Goolsbee — risque de choc pétrolier à surveiller"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
-    "NQ → cotations jusqu'à 22h CET (déjà passées)"
+    "Actions FR → clôture obligatoire 17h30",
+    "NQ → clôture possible jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "24 399",
-      "chg": "+0.73%",
+      "valeur": "25 188",
+      "chg": "+0.34%",
       "dir": "up"
     },
     "cac40": {
-      "valeur": "7 909",
-      "chg": "-0.48%",
-      "dir": "dn"
+      "valeur": "8 263",
+      "chg": "+4.57%",
+      "dir": "up"
     },
     "brent": {
-      "valeur": "$105.5",
-      "chg": "-5.40%",
+      "valeur": "$94.1",
+      "chg": "-0.59%",
       "dir": "dn"
     },
     "vix": {
-      "valeur": "25.8",
-      "chg": "+6.75%",
-      "dir": "up"
+      "valeur": "20.6",
+      "chg": "-20.01%",
+      "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 733.30",
-      "chg": "+1.25%",
-      "dir": "up"
+      "valeur": "$4 811.60",
+      "chg": "-0.34%",
+      "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1601",
-      "chg": "+0.48%",
+      "valeur": "1.17",
+      "chg": "+0.28%",
       "dir": "up"
     },
     "us10y": {
@@ -82,9 +108,9 @@
       "dir": "up"
     }
   },
-  "pea_note": "PEA — Pas d'actions FR en portefeuille.",
-  "edition": "23h30 CET",
+  "pea_note": "PEA — Ne pas toucher. Focus sur CAC40 uniquement.",
+  "edition": "13h17 CET",
   "mode": "normal",
-  "timestamp": "2026-04-07T23:30:58.546958+02:00",
-  "date_fr": "Mardi 7 avril 2026"
+  "timestamp": "2026-04-08T13:17:27.647025+02:00",
+  "date_fr": "Mercredi 8 avril 2026"
 }

@@ -1,0 +1,333 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25188.25,
+        "prev_close": 25102.5,
+        "change_pct": 0.34,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8262.6299,
+        "prev_close": 7901.8799,
+        "change_pct": 4.57,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 20.59,
+        "prev_close": 25.74,
+        "change_pct": -20.01,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4811.6001,
+        "prev_close": 4828.2002,
+        "change_pct": -0.34,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 94.14,
+        "prev_close": 94.7,
+        "change_pct": -0.59,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.17,
+        "prev_close": 1.1667,
+        "change_pct": 0.28,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.343,
+        "prev_close": 4.335,
+        "change_pct": 0.18,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6830.25,
+        "prev_close": 6815.25,
+        "change_pct": 0.22,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 254.25,
+        "prev_close": 232.7,
+        "change_pct": 9.26,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 500.5,
+        "prev_close": 466.9,
+        "change_pct": 7.2,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 182.28,
+        "prev_close": 181.3,
+        "change_pct": 0.54,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 90.44,
+        "prev_close": 83.33,
+        "change_pct": 8.53,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.835,
+        "prev_close": 6.321,
+        "change_pct": 8.13,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-08T11:17:21.500338+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Core Lithium awards contract for Finniss project",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/energy/articles/core-lithium-awards-contract-finniss-110344186.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T11:03:44+00:00",
+          "age_minutes": 13,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b80c2e5e1c5b"
+        },
+        {
+          "title": "Analysis-Why the bond market won’t bounce back to pre-war levels",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/analysiswhy-the-bond-market-wont-bounce-back-to-prewar-levels-4602525",
+          "source": "investing_news",
+          "published": "2026-04-08T10:54:37+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "1dadfa77c178"
+        },
+        {
+          "title": "Morning Brief: Chicago Fed's Goolsbee 'nervous' about impact of oil shock on economy",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/morning-brief-chicago-feds-goolsbee-nervous-about-impact-of-oil-shock-on-economy-100030121.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T10:00:30+00:00",
+          "age_minutes": 76,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "7c2b83c75485"
+        },
+        {
+          "title": "Dow Jones Futures Spike 1,200 Points, Oil Prices Dive On Trump-Iran Cease-Fire; What To Do Now",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-war-deadline-oil-prices-apple-tesla-slump/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T10:59:10+00:00",
+          "age_minutes": 18,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "7fdb89084e9f"
+        },
+        {
+          "title": "RPM International surges nearly 10% on earnings beat, strong guidance",
+          "summary": "",
+          "url": "https://www.investing.com/news/earnings/rpm-international-surges-nearly-10-on-earnings-beat-strong-guidance-93CH-4602589",
+          "source": "investing_news",
+          "published": "2026-04-08T10:53:47+00:00",
+          "age_minutes": 23,
+          "urgency": "medium",
+          "sentiment": 1.0,
+          "id": "a203c6c7c77f"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Core Lithium awards contract for Finniss project",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/energy/articles/core-lithium-awards-contract-finniss-110344186.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T11:03:44+00:00",
+          "age_minutes": 13,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "b80c2e5e1c5b"
+        },
+        {
+          "title": "Analysis-Why the bond market won’t bounce back to pre-war levels",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/analysiswhy-the-bond-market-wont-bounce-back-to-prewar-levels-4602525",
+          "source": "investing_news",
+          "published": "2026-04-08T10:54:37+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "1dadfa77c178"
+        },
+        {
+          "title": "Morning Brief: Chicago Fed's Goolsbee 'nervous' about impact of oil shock on economy",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/morning-brief-chicago-feds-goolsbee-nervous-about-impact-of-oil-shock-on-economy-100030121.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T10:00:30+00:00",
+          "age_minutes": 76,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "7c2b83c75485"
+        }
+      ],
+      "sentiment": -0.1,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 9
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 6
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 5
+        }
+      ],
+      "scanned_at": "2026-04-08T11:17:18.984788+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-08T13:17:21.500580+02:00",
+    "context": {
+      "note": "",
+      "github_run": "105",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier modéré — Tech et énergie en tête",
+      "description": "NQ Futures +0.34%, CAC40 +4.57% sur rebond tech et énergie. VIX en chute à 20.59 (-20%). Brent stable à -0.59%.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Rebond des valeurs tech et énergie après publication de contrats miniers et analyses sur les taux. Sentiment global légèrement négatif mais marché actions résilient."
+    },
+    "plan_actions": [
+      {
+        "heure": "13h20",
+        "titre": "CALL CAC40 ×15 (Turbo BEST SG)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 8300 / KO 8200",
+        "gain_cible": "+25% si CAC40 +1.2%",
+        "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
+        "note": "Entrée 13h20–13h40. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "13h30",
+        "titre": "CALL NQ Futures ×18 (Turbo Vontobel)",
+        "sens": "CALL",
+        "mise": "1800 €",
+        "levier": 18,
+        "strike_ko": "Strike 25200 / KO 24800",
+        "gain_cible": "+30% si NQ +1.8%",
+        "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
+        "note": "Entrée 13h30–13h50. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance CAC40",
+        "prix": 8350,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support CAC40",
+        "prix": 8200,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 25400,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24900,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Core Lithium awards contract — surveiller les valeurs minières européennes",
+      "Analyse Fed Goolsbee — risque de choc pétrolier à surveiller"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "NQ → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "25 188",
+        "chg": "+0.34%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "8 263",
+        "chg": "+4.57%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$94.1",
+        "chg": "-0.59%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "20.6",
+        "chg": "-20.01%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 811.60",
+        "chg": "-0.34%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.17",
+        "chg": "+0.28%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.343%",
+        "chg": "+0.18%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher. Focus sur CAC40 uniquement.",
+    "edition": "13h17 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-08T13:17:27.647025+02:00",
+    "date_fr": "Mercredi 8 avril 2026"
+  }
+}
