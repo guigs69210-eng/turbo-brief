@@ -1,116 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier modéré — Tech et énergie en tête",
-    "description": "NQ Futures +0.34%, CAC40 +4.57% sur rebond tech et énergie. VIX en chute à 20.59 (-20%). Brent stable à -0.59%.",
-    "biais": "haussier",
-    "conviction": "modérée",
-    "contexte_macro": "Rebond des valeurs tech et énergie après publication de contrats miniers et analyses sur les taux. Sentiment global légèrement négatif mais marché actions résilient."
+    "titre": "Clôture Paris — 18:42",
+    "description": "NQ: 25103 (—) · CAC: 8264 (+4.58%)",
+    "biais": "neutre",
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "13h20",
-      "titre": "CALL CAC40 ×15 (Turbo BEST SG)",
-      "sens": "CALL",
-      "mise": "1200 €",
-      "levier": 15,
-      "strike_ko": "Strike 8300 / KO 8200",
-      "gain_cible": "+25% si CAC40 +1.2%",
-      "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
-      "note": "Entrée 13h20–13h40. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "13h30",
-      "titre": "CALL NQ Futures ×18 (Turbo Vontobel)",
-      "sens": "CALL",
-      "mise": "1800 €",
-      "levier": 18,
-      "strike_ko": "Strike 25200 / KO 24800",
-      "gain_cible": "+30% si NQ +1.8%",
-      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
-      "note": "Entrée 13h30–13h50. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Résistance CAC40",
-      "prix": 8350,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    },
-    {
-      "label": "Support CAC40",
-      "prix": 8200,
-      "type": "support",
-      "action": "Stop KO si cassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance NQ",
-      "prix": 25400,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    },
-    {
-      "label": "Support NQ",
-      "prix": 24900,
-      "type": "support",
-      "action": "Stop KO si cassé",
-      "couleur": "bear"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Core Lithium awards contract — surveiller les valeurs minières européennes",
-    "Analyse Fed Goolsbee — risque de choc pétrolier à surveiller"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "NQ → clôture possible jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "25 188",
-      "chg": "+0.34%",
-      "dir": "up"
-    },
-    "cac40": {
-      "valeur": "8 263",
-      "chg": "+4.57%",
-      "dir": "up"
-    },
-    "brent": {
-      "valeur": "$94.1",
-      "chg": "-0.59%",
-      "dir": "dn"
-    },
-    "vix": {
-      "valeur": "20.6",
-      "chg": "-20.01%",
-      "dir": "dn"
-    },
-    "gold": {
-      "valeur": "$4 811.60",
-      "chg": "-0.34%",
-      "dir": "dn"
-    },
-    "eurusd": {
-      "valeur": "1.17",
-      "chg": "+0.28%",
-      "dir": "up"
-    },
-    "us10y": {
-      "valeur": "4.343%",
-      "chg": "+0.18%",
-      "dir": "up"
-    }
-  },
-  "pea_note": "PEA — Ne pas toucher. Focus sur CAC40 uniquement.",
-  "edition": "13h17 CET",
-  "mode": "normal",
-  "timestamp": "2026-04-08T13:17:27.647025+02:00",
-  "date_fr": "Mercredi 8 avril 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Wednesday 08 april 2026",
+  "edition": "18h42 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }

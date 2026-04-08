@@ -1,0 +1,236 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25103.0,
+        "prev_close": 25102.5,
+        "change_pct": 0.0,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8263.8701,
+        "prev_close": 7901.8799,
+        "change_pct": 4.58,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 20.99,
+        "prev_close": 25.74,
+        "change_pct": -18.45,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4776.1001,
+        "prev_close": 4828.2002,
+        "change_pct": -1.08,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 95.02,
+        "prev_close": 94.7,
+        "change_pct": 0.34,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1685,
+        "prev_close": 1.1667,
+        "change_pct": 0.15,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.273,
+        "prev_close": 4.343,
+        "change_pct": -1.61,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6816.75,
+        "prev_close": 6815.25,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 255.95,
+        "prev_close": 232.7,
+        "change_pct": 9.99,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 498.85,
+        "prev_close": 466.9,
+        "change_pct": 6.84,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 183.44,
+        "prev_close": 181.3,
+        "change_pct": 1.18,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.98,
+        "prev_close": 83.33,
+        "change_pct": 7.98,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.714,
+        "prev_close": 6.321,
+        "change_pct": 6.22,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-08T16:42:28.200093+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Dollar heads for worst day since April after U.S. and Iran agree to ceasefire",
+          "summary": "",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-rallies-on-usiran-ceasefire-rbnz-holds-rates-rbi-decision-ahead-4601907",
+          "source": "investing_news",
+          "published": "2026-04-08T16:20:01+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "e2d00d40f1e7"
+        },
+        {
+          "title": "Stock Market Today: Dow Surges 1,200 Points As Fed Minutes Loom; Amazon Jumps (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-iran-ceasefire/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T16:10:40+00:00",
+          "age_minutes": 31,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "072854043eda"
+        },
+        {
+          "title": "Wall Street jumps to near one-month highs after US-Iran ceasefire",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-jumps-near-one-160351408.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T16:03:51+00:00",
+          "age_minutes": 38,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "03587ee9c65f"
+        },
+        {
+          "title": "US-Iran ceasefire sends investors back to their most beloved stocks",
+          "summary": "",
+          "url": "https://finance.yahoo.com/news/us-iran-ceasefire-sends-investors-back-to-their-most-beloved-stocks-121458822.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T12:14:58+00:00",
+          "age_minutes": 267,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "33be14dc0406"
+        },
+        {
+          "title": "Morgan Stanley predicts bull market for Indian stocks",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-predicts-bull-market-for-indian-stocks-93CH-4603641",
+          "source": "investing_news",
+          "published": "2026-04-08T16:27:28+00:00",
+          "age_minutes": 14,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "1cfdb485418b"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Dollar heads for worst day since April after U.S. and Iran agree to ceasefire",
+          "summary": "",
+          "url": "https://www.investing.com/news/forex-news/asia-fx-rallies-on-usiran-ceasefire-rbnz-holds-rates-rbi-decision-ahead-4601907",
+          "source": "investing_news",
+          "published": "2026-04-08T16:20:01+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "e2d00d40f1e7"
+        },
+        {
+          "title": "Stock Market Today: Dow Surges 1,200 Points As Fed Minutes Loom; Amazon Jumps (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-iran-ceasefire/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T16:10:40+00:00",
+          "age_minutes": 31,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "072854043eda"
+        },
+        {
+          "title": "Wall Street jumps to near one-month highs after US-Iran ceasefire",
+          "summary": "",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-jumps-near-one-160351408.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-08T16:03:51+00:00",
+          "age_minutes": 38,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "03587ee9c65f"
+        }
+      ],
+      "sentiment": 0.15,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 10
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 3
+        }
+      ],
+      "scanned_at": "2026-04-08T16:42:23.983089+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-04-08T18:42:28.200288+02:00",
+    "context": {
+      "note": "",
+      "github_run": "106",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:42",
+      "description": "NQ: 25103 (—) · CAC: 8264 (+4.58%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Wednesday 08 april 2026",
+    "edition": "18h42 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}
