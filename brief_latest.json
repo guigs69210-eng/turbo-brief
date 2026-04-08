@@ -1,7 +1,7 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 18:42",
-    "description": "NQ: 25103 (—) · CAC: 8264 (+4.58%)",
+    "titre": "Clôture Paris — 18:46",
+    "description": "NQ: 25112 (+0.04%) · CAC: 8264 (+4.58%)",
     "biais": "neutre",
     "conviction": "faible"
   },
@@ -13,7 +13,7 @@
   "regles_session": [],
   "market_strip": {},
   "date_fr": "Wednesday 08 april 2026",
-  "edition": "18h42 CET",
+  "edition": "18h46 CET",
   "mode": "eod",
   "trigger": "eod"
 }
