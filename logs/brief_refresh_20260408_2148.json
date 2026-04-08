@@ -1,0 +1,307 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25004.0,
+        "prev_close": 25102.5,
+        "change_pct": -0.39,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8263.8701,
+        "prev_close": 7901.8799,
+        "change_pct": 4.58,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 21.41,
+        "prev_close": 25.74,
+        "change_pct": -16.82,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4747.2002,
+        "prev_close": 4828.2002,
+        "change_pct": -1.68,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 96.41,
+        "prev_close": 94.7,
+        "change_pct": 1.81,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1666,
+        "prev_close": 1.1667,
+        "change_pct": -0.01,
+        "direction": "dn"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.291,
+        "prev_close": 4.343,
+        "change_pct": -1.2,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6811.5,
+        "prev_close": 6815.25,
+        "change_pct": -0.06,
+        "direction": "dn"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 255.95,
+        "prev_close": 232.7,
+        "change_pct": 9.99,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 498.85,
+        "prev_close": 466.9,
+        "change_pct": 6.84,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 183.44,
+        "prev_close": 181.3,
+        "change_pct": 1.18,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.98,
+        "prev_close": 83.33,
+        "change_pct": 7.98,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.714,
+        "prev_close": 6.321,
+        "change_pct": 6.22,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-08T19:48:32.555956+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Dollar falls as US-Iran ceasefire sparks relief rally for risk assets",
+          "summary": "",
+          "url": "https://www.investing.com/news/forex-news/dollar-drops-as-trump-ceasefire-prompts-riskon-turn-for-markets-4601853",
+          "source": "investing_news",
+          "published": "2026-04-08T19:24:30+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 0.5,
+          "id": "dc612fac27ec"
+        },
+        {
+          "title": "Veeva Systems stock hits 52-week low at $168.10",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/veeva-systems-stock-hits-52week-low-at-16810-93CH-4603825",
+          "source": "investing_news",
+          "published": "2026-04-08T19:25:07+00:00",
+          "age_minutes": 23,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "e0e4bd8f0fd1"
+        },
+        {
+          "title": "US banks could release $320 billion in capital with new draft rules, analysts say",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/us-banks-could-release-320-billion-in-capital-with-new-draft-rules-analysts-say-4603821",
+          "source": "investing_news",
+          "published": "2026-04-08T19:18:33+00:00",
+          "age_minutes": 29,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "aa4101d9d26b"
+        },
+        {
+          "title": "Form 144 Serve Robotics Inc. /DE/ For: 8 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-144-serve-robotics-inc-de-for-8-april-93CH-4603820",
+          "source": "investing_news",
+          "published": "2026-04-08T19:18:16+00:00",
+          "age_minutes": 30,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "3dff80f29a7c"
+        },
+        {
+          "title": "Form 13F Shore Point Advisors For: 8 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13f-shore-point-advisors-for-8-april-93CH-4603819",
+          "source": "investing_news",
+          "published": "2026-04-08T19:17:03+00:00",
+          "age_minutes": 31,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "15cc994fd40b"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Dollar falls as US-Iran ceasefire sparks relief rally for risk assets",
+          "summary": "",
+          "url": "https://www.investing.com/news/forex-news/dollar-drops-as-trump-ceasefire-prompts-riskon-turn-for-markets-4601853",
+          "source": "investing_news",
+          "published": "2026-04-08T19:24:30+00:00",
+          "age_minutes": 23,
+          "urgency": "high",
+          "sentiment": 0.5,
+          "id": "dc612fac27ec"
+        }
+      ],
+      "sentiment": 0.04,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 2
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-08T19:48:29.400989+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-08T21:48:32.556244+02:00",
+    "context": {
+      "note": "",
+      "github_run": "108",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier modéré — Ceasefire US-Iran booste les actifs risqués",
+      "description": "NQ Futures 25004 (-0.39%), VIX 21.41 (-16.82%). Le dollar recule après l'annonce d'un cessez-le-feu US-Iran, soutenant les marchés actions et matières premières.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Le cessez-le-feu US-Iran réduit les tensions géopolitiques, soutenant les actifs risqués. Le VIX en forte baisse confirme un retour de l'appétit pour le risque."
+    },
+    "plan_actions": [
+      {
+        "heure": "21h50",
+        "titre": "CALL NQ Futures ×18 (BEST)",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 24800 / KO 24300",
+        "gain_cible": "+25% si NQ +1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 21h50–22h10. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      },
+      {
+        "heure": "21h55",
+        "titre": "CALL CAC40 ×15 (BEST)",
+        "sens": "CALL",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 8200 / KO 8100",
+        "gain_cible": "+30% si CAC40 +1.5%",
+        "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
+        "note": "Entrée 21h55–22h15. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24850,
+        "type": "support",
+        "action": "Achat renforcé si test",
+        "couleur": "bull"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 25200,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support CAC40",
+        "prix": 8200,
+        "type": "support",
+        "action": "Achat renforcé si test",
+        "couleur": "bull"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8350,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      }
+    ],
+    "alertes": [
+      "Suivre l'évolution du dollar et des matières premières après l'annonce du ceasefire.",
+      "Surveiller les volumes sur NQ et CAC40 en début de session US."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ/indices → cotent jusqu'à 22h CET",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "25 004",
+        "chg": "-0.39%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "8 264",
+        "chg": "+4.58%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$96.4",
+        "chg": "+1.81%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "21.4",
+        "chg": "-16.82%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1666",
+        "chg": "-0.01%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4747.20",
+        "chg": "-1.68%",
+        "dir": "dn"
+      },
+      "us10y": {
+        "valeur": "4.291",
+        "chg": "-1.20%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Ne pas toucher (session européenne déjà clôturée).",
+    "edition": "21:48 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-08T21:48:38.634098+02:00",
+    "date_fr": "Mercredi 8 avril 2026"
+  }
+}

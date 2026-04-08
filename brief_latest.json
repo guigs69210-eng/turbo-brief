@@ -1,19 +1,116 @@
 {
   "signal_du_jour": {
-    "titre": "Clôture Paris — 18:46",
-    "description": "NQ: 25112 (+0.04%) · CAC: 8264 (+4.58%)",
-    "biais": "neutre",
-    "conviction": "faible"
+    "titre": "Biais haussier modéré — Ceasefire US-Iran booste les actifs risqués",
+    "description": "NQ Futures 25004 (-0.39%), VIX 21.41 (-16.82%). Le dollar recule après l'annonce d'un cessez-le-feu US-Iran, soutenant les marchés actions et matières premières.",
+    "biais": "haussier",
+    "conviction": "modérée",
+    "contexte_macro": "Le cessez-le-feu US-Iran réduit les tensions géopolitiques, soutenant les actifs risqués. Le VIX en forte baisse confirme un retour de l'appétit pour le risque."
   },
-  "plan_actions": [],
-  "niveaux_cles": [],
-  "alertes": [
-    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+  "plan_actions": [
+    {
+      "heure": "21h50",
+      "titre": "CALL NQ Futures ×18 (BEST)",
+      "sens": "CALL",
+      "mise": "2000 €",
+      "levier": 18,
+      "strike_ko": "Strike 24800 / KO 24300",
+      "gain_cible": "+25% si NQ +1.2%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée 21h50–22h10. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "21h55",
+      "titre": "CALL CAC40 ×15 (BEST)",
+      "sens": "CALL",
+      "mise": "1200 €",
+      "levier": 15,
+      "strike_ko": "Strike 8200 / KO 8100",
+      "gain_cible": "+30% si CAC40 +1.5%",
+      "plateforme": "sgbourse.fr → CAC40 → CALL BEST",
+      "note": "Entrée 21h55–22h15. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "normale"
+    }
   ],
-  "regles_session": [],
-  "market_strip": {},
-  "date_fr": "Wednesday 08 april 2026",
-  "edition": "18h46 CET",
-  "mode": "eod",
-  "trigger": "eod"
+  "niveaux_cles": [
+    {
+      "label": "Support NQ",
+      "prix": 24850,
+      "type": "support",
+      "action": "Achat renforcé si test",
+      "couleur": "bull"
+    },
+    {
+      "label": "Résistance NQ",
+      "prix": 25200,
+      "type": "resistance",
+      "action": "TP1 si atteint",
+      "couleur": "bull"
+    },
+    {
+      "label": "Support CAC40",
+      "prix": 8200,
+      "type": "support",
+      "action": "Achat renforcé si test",
+      "couleur": "bull"
+    },
+    {
+      "label": "Résistance CAC40",
+      "prix": 8350,
+      "type": "resistance",
+      "action": "TP1 si atteint",
+      "couleur": "bull"
+    }
+  ],
+  "alertes": [
+    "Suivre l'évolution du dollar et des matières premières après l'annonce du ceasefire.",
+    "Surveiller les volumes sur NQ et CAC40 en début de session US."
+  ],
+  "regles_session": [
+    "Stop mental −40% = sortie immédiate",
+    "Turbos NQ/indices → cotent jusqu'à 22h CET",
+    "Actions FR → clôture obligatoire 17h30 (déjà passée)"
+  ],
+  "market_strip": {
+    "nq": {
+      "valeur": "25 004",
+      "chg": "-0.39%",
+      "dir": "dn"
+    },
+    "cac40": {
+      "valeur": "8 264",
+      "chg": "+4.58%",
+      "dir": "up"
+    },
+    "brent": {
+      "valeur": "$96.4",
+      "chg": "+1.81%",
+      "dir": "up"
+    },
+    "vix": {
+      "valeur": "21.4",
+      "chg": "-16.82%",
+      "dir": "dn"
+    },
+    "eurusd": {
+      "valeur": "1.1666",
+      "chg": "-0.01%",
+      "dir": "dn"
+    },
+    "gold": {
+      "valeur": "$4747.20",
+      "chg": "-1.68%",
+      "dir": "dn"
+    },
+    "us10y": {
+      "valeur": "4.291",
+      "chg": "-1.20%",
+      "dir": "dn"
+    }
+  },
+  "pea_note": "PEA — Ne pas toucher (session européenne déjà clôturée).",
+  "edition": "21:48 CET",
+  "mode": "normal",
+  "timestamp": "2026-04-08T21:48:38.634098+02:00",
+  "date_fr": "Mercredi 8 avril 2026"
 }
