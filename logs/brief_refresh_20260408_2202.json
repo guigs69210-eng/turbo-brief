@@ -1,0 +1,269 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25039.5,
+        "prev_close": 25102.5,
+        "change_pct": -0.25,
+        "direction": "dn"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8263.8701,
+        "prev_close": 7901.8799,
+        "change_pct": 4.58,
+        "direction": "up"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 21.39,
+        "prev_close": 25.74,
+        "change_pct": -16.9,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4753.7002,
+        "prev_close": 4828.2002,
+        "change_pct": -1.54,
+        "direction": "dn"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 96.43,
+        "prev_close": 94.7,
+        "change_pct": 1.83,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1671,
+        "prev_close": 1.1667,
+        "change_pct": 0.04,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.291,
+        "prev_close": 4.343,
+        "change_pct": -1.2,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6816.75,
+        "prev_close": 6815.25,
+        "change_pct": 0.02,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 255.95,
+        "prev_close": 232.7,
+        "change_pct": 9.99,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 498.85,
+        "prev_close": 466.9,
+        "change_pct": 6.84,
+        "direction": "up"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 183.44,
+        "prev_close": 181.3,
+        "change_pct": 1.18,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.98,
+        "prev_close": 83.33,
+        "change_pct": 7.98,
+        "direction": "up"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.714,
+        "prev_close": 6.321,
+        "change_pct": 6.22,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-08T20:01:55.822210+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Caseys General Stores stock hits all-time high at 758.35 USD",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/caseys-general-stores-stock-hits-alltime-high-at-75835-usd-93CH-4603865",
+          "source": "investing_news",
+          "published": "2026-04-08T19:51:51+00:00",
+          "age_minutes": 9,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "be9d41bfb958"
+        },
+        {
+          "title": "Form 8K VIRGINIA ELECTRIC & POWER CO For: 8 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-virginia-electric--power-co-for-8-april-93CH-4603863",
+          "source": "investing_news",
+          "published": "2026-04-08T19:50:54+00:00",
+          "age_minutes": 10,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "46eec82e1dff"
+        },
+        {
+          "title": "Form 8K Dominion Energy Inc For: 8 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-8k-dominion-energy-inc-for-8-april-93CH-4603862",
+          "source": "investing_news",
+          "published": "2026-04-08T19:50:39+00:00",
+          "age_minutes": 11,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "77c873955707"
+        },
+        {
+          "title": "Bhaskar Menon buys Better Home & Finance (BETR) shares worth $20,139",
+          "summary": "",
+          "url": "https://www.investing.com/news/insider-trading-news/bhaskar-menon-buys-better-home--finance-betr-shares-worth-20139-93CH-4603861",
+          "source": "investing_news",
+          "published": "2026-04-08T19:49:33+00:00",
+          "age_minutes": 12,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "767dba2fdf4e"
+        },
+        {
+          "title": "Form 144 DORIAN LPG LTD. For: 8 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-144-dorian-lpg-ltd-for-8-april-93CH-4603860",
+          "source": "investing_news",
+          "published": "2026-04-08T19:48:27+00:00",
+          "age_minutes": 13,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "2e701f37850b"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-08T20:01:49.908732+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-08T22:01:55.822510+02:00",
+    "context": {
+      "note": "",
+      "github_run": "109",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre à léger baissier — Tech en correction, énergie en hausse",
+      "description": "NQ Futures -0.25% après une journée volatile. CAC40 +4.58% porté par les valeurs bancaires et technologiques européennes. VIX en forte baisse (-16.90%).",
+      "biais": "neutre",
+      "conviction": "faible",
+      "contexte_macro": "Marché actions US en légère correction technique après des gains récents. Pétrole en hausse (+1.83%) sur tensions géopolitiques persistantes."
+    },
+    "plan_actions": [
+      {
+        "heure": "22h05",
+        "titre": "PUT NQ Futures ×15 (session US)",
+        "sens": "PUT",
+        "mise": "1200 €",
+        "levier": 15,
+        "strike_ko": "Strike 25000 / KO 25500",
+        "gain_cible": "+25% si NQ -1%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
+        "note": "Entrée 22h05–22h30. Stop mental -40%. Cible TP1 à +25% (sortir 50%, stop déplacé à +10%).",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Support NQ",
+        "prix": 24800,
+        "type": "support",
+        "action": "Achat PUT si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance NQ",
+        "prix": 25200,
+        "type": "resistance",
+        "action": "Prise de profit PUT",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveiller la réaction de NQ après 22h30 (nouvelles géopolitiques possibles)",
+      "Attention à la liquidité réduite en fin de session US"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30 (déjà passée)",
+      "Turbos NQ → cotent jusqu'à 22h CET (session US) — sortie avant 22h30"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "25 040",
+        "chg": "-0.25%",
+        "dir": "dn"
+      },
+      "cac40": {
+        "valeur": "8 264",
+        "chg": "+4.58%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$96.4",
+        "chg": "+1.83%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "21.4",
+        "chg": "-16.90%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "$4 753.70",
+        "chg": "-1.54%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1671",
+        "chg": "+0.04%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.291",
+        "chg": "-1.20%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Session européenne terminée. Aucune action requise.",
+    "edition": "22h01 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-08T22:02:01.515205+02:00",
+    "date_fr": "Mercredi 8 avril 2026"
+  }
+}
