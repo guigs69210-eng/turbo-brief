@@ -1,53 +1,39 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à léger baissier — Tech en correction, énergie en hausse",
-    "description": "NQ Futures -0.25% après une journée volatile. CAC40 +4.58% porté par les valeurs bancaires et technologiques européennes. VIX en forte baisse (-16.90%).",
-    "biais": "neutre",
-    "conviction": "faible",
-    "contexte_macro": "Marché actions US en légère correction technique après des gains récents. Pétrole en hausse (+1.83%) sur tensions géopolitiques persistantes."
+    "titre": "Biais haussier modéré — Tech et IA en tête",
+    "description": "NQ Futures à 25039 (-0.25%) en légère correction après une séance haussière. VIX en forte baisse (-18.26%) reflétant un apaisement des craintes macro.",
+    "biais": "haussier",
+    "conviction": "modérée",
+    "contexte_macro": "Les valeurs Tech et IA restent les moteurs de la hausse malgré un léger repli en fin de session. Sentiment global stable."
   },
-  "plan_actions": [
-    {
-      "heure": "22h05",
-      "titre": "PUT NQ Futures ×15 (session US)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 15,
-      "strike_ko": "Strike 25000 / KO 25500",
-      "gain_cible": "+25% si NQ -1%",
-      "plateforme": "sgbourse.fr → Nasdaq 100 → PUT BEST",
-      "note": "Entrée 22h05–22h30. Stop mental -40%. Cible TP1 à +25% (sortir 50%, stop déplacé à +10%).",
-      "urgence": "normale"
-    }
-  ],
+  "plan_actions": [],
   "niveaux_cles": [
     {
-      "label": "Support NQ",
-      "prix": 24800,
+      "label": "Support NQ Futures",
+      "prix": 24950,
       "type": "support",
-      "action": "Achat PUT si cassé",
-      "couleur": "bear"
+      "action": "Entrée CALL possible si rebond",
+      "couleur": "bull"
     },
     {
-      "label": "Résistance NQ",
+      "label": "Résistance NQ Futures",
       "prix": 25200,
       "type": "resistance",
-      "action": "Prise de profit PUT",
-      "couleur": "bear"
+      "action": "TP1 si atteint",
+      "couleur": "bull"
     }
   ],
   "alertes": [
-    "Surveiller la réaction de NQ après 22h30 (nouvelles géopolitiques possibles)",
-    "Attention à la liquidité réduite en fin de session US"
+    "Form 144 PALO ALTO NETWORKS et CRINETICS PHARMACEUTICALS — surveillance des volumes en préouverture."
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30 (déjà passée)",
-    "Turbos NQ → cotent jusqu'à 22h CET (session US) — sortie avant 22h30"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ/indices → cotent jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "25 040",
+      "valeur": "25 039",
       "chg": "-0.25%",
       "dir": "dn"
     },
@@ -57,24 +43,24 @@
       "dir": "up"
     },
     "brent": {
-      "valeur": "$96.4",
-      "chg": "+1.83%",
+      "valeur": "$96.3",
+      "chg": "+1.65%",
       "dir": "up"
     },
     "vix": {
-      "valeur": "21.4",
-      "chg": "-16.90%",
+      "valeur": "21.0",
+      "chg": "-18.26%",
       "dir": "dn"
     },
     "gold": {
-      "valeur": "$4 753.70",
-      "chg": "-1.54%",
+      "valeur": "4 745",
+      "chg": "-1.72%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1671",
-      "chg": "+0.04%",
-      "dir": "up"
+      "valeur": "1.1666",
+      "chg": "-0.01%",
+      "dir": "dn"
     },
     "us10y": {
       "valeur": "4.291",
@@ -82,9 +68,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Session européenne terminée. Aucune action requise.",
-  "edition": "22h01 CET",
+  "pea_note": "PEA — Ne pas toucher.",
+  "edition": "23:30 CET",
   "mode": "normal",
-  "timestamp": "2026-04-08T22:02:01.515205+02:00",
+  "timestamp": "2026-04-08T23:30:04.897107+02:00",
   "date_fr": "Mercredi 8 avril 2026"
 }
