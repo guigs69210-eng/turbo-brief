@@ -1,0 +1,328 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25231.75,
+        "prev_close": 25016.5,
+        "change_pct": 0.86,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8245.7998,
+        "prev_close": 8258.1797,
+        "change_pct": -0.15,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 19.74,
+        "prev_close": 21.04,
+        "change_pct": -6.18,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4816.5,
+        "prev_close": 4735.0,
+        "change_pct": 1.72,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 94.96,
+        "prev_close": 96.62,
+        "change_pct": -1.72,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1723,
+        "prev_close": 1.1666,
+        "change_pct": 0.49,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.261,
+        "prev_close": 4.291,
+        "change_pct": -0.7,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6869.75,
+        "prev_close": 6809.75,
+        "change_pct": 0.88,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 256.1,
+        "prev_close": 255.25,
+        "change_pct": 0.33,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 483.95,
+        "prev_close": 499.6,
+        "change_pct": -3.13,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 187.18,
+        "prev_close": 183.46,
+        "change_pct": 2.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.49,
+        "prev_close": 89.63,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.717,
+        "prev_close": 6.715,
+        "change_pct": 0.03,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-09T17:35:40.833363+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Forget Rate Cuts. The Fed Might End Up Hiking Rates This Year.",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/forget-rate-cuts-fed-might-171300354.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:13:00+00:00",
+          "age_minutes": 22,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "76366717c379"
+        },
+        {
+          "title": "US Republicans block bid to rein in Trump Iran war powers",
+          "summary": "",
+          "url": "https://www.investing.com/news/politics-news/us-republicans-block-bid-to-rein-in-trump-iran-war-powers-4606343",
+          "source": "investing_news",
+          "published": "2026-04-09T17:25:29+00:00",
+          "age_minutes": 10,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ad3970157131"
+        },
+        {
+          "title": "McKinsey to contribute $125 million to Purdue bankruptcy over opioid sales advice",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/mckinsey-contribute-125-million-purdue-171125646.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:21:01+00:00",
+          "age_minutes": 14,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "7b2b4b06e9d0"
+        },
+        {
+          "title": "Defense Stock Flashes Strength Amid Ceasefire Chaos",
+          "summary": "",
+          "url": "https://www.investors.com/research/defense-stock-curtiss-wright-cw/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:12:59+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "0087718a37a1"
+        },
+        {
+          "title": "Stock Market Today: Dow Rises Despite Hot Inflation Data; Chip Plays Lead Gains (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-coreweave-crwv-stock/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:00:29+00:00",
+          "age_minutes": 35,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "ac6aa5d3893c"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Forget Rate Cuts. The Fed Might End Up Hiking Rates This Year.",
+          "summary": "",
+          "url": "https://finance.yahoo.com/economy/policy/articles/forget-rate-cuts-fed-might-171300354.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:13:00+00:00",
+          "age_minutes": 22,
+          "urgency": "critical",
+          "sentiment": 0.0,
+          "id": "76366717c379"
+        },
+        {
+          "title": "US Republicans block bid to rein in Trump Iran war powers",
+          "summary": "",
+          "url": "https://www.investing.com/news/politics-news/us-republicans-block-bid-to-rein-in-trump-iran-war-powers-4606343",
+          "source": "investing_news",
+          "published": "2026-04-09T17:25:29+00:00",
+          "age_minutes": 10,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "ad3970157131"
+        },
+        {
+          "title": "McKinsey to contribute $125 million to Purdue bankruptcy over opioid sales advice",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/healthcare/articles/mckinsey-contribute-125-million-purdue-171125646.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:21:01+00:00",
+          "age_minutes": 14,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "7b2b4b06e9d0"
+        },
+        {
+          "title": "Defense Stock Flashes Strength Amid Ceasefire Chaos",
+          "summary": "",
+          "url": "https://www.investors.com/research/defense-stock-curtiss-wright-cw/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:12:59+00:00",
+          "age_minutes": 22,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "0087718a37a1"
+        },
+        {
+          "title": "Stock Market Today: Dow Rises Despite Hot Inflation Data; Chip Plays Lead Gains (Live Coverage)",
+          "summary": "",
+          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-coreweave-crwv-stock/?src=A00220&yptr=yahoo",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T17:00:29+00:00",
+          "age_minutes": 35,
+          "urgency": "high",
+          "sentiment": 1.0,
+          "id": "ac6aa5d3893c"
+        }
+      ],
+      "sentiment": 0.15,
+      "themes": [
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 7
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 3
+        }
+      ],
+      "scanned_at": "2026-04-09T17:35:38.243848+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-09T19:35:40.833687+02:00",
+    "context": {
+      "note": "",
+      "github_run": "113",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier technique — NQ en surperformance malgré tensions géopolitiques",
+      "description": "NQ Futures +0.86% à 25231.75, VIX en chute à 19.74 (-6.18%). Défense et tech tirent l'indice malgré blocage républicain sur les pouvoirs de guerre en Iran.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "NQ résiste à la baisse du Brent (-1.72%) et à la hausse des taux US (-0.70% sur 10Y). Sentiment global légèrement positif (+0.15)."
+    },
+    "plan_actions": [
+      {
+        "heure": "19h40",
+        "titre": "CALL NQ Futures ×18 (PEA non applicable)",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 25000 / KO 24500",
+        "gain_cible": "+25% si NQ +1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 19h40–20h00. Stop mental -40%. TP1 à +25% → sortir 50%, déplacer stop à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 25500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24900,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Défense et tech en surperformance — surveiller les publications de résultats après-vente",
+      "Blocage républicain sur Iran : risque de volatilité accrue en fin de session US"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Turbos NQ → clôture possible jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "25 232",
+        "chg": "+0.86%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "8 246",
+        "chg": "-0.15%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$95.0",
+        "chg": "-1.72%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "19.7",
+        "chg": "-6.18%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4816.5",
+        "chg": "+1.72%",
+        "dir": "up"
+      },
+      "eurusd": {
+        "valeur": "1.1723",
+        "chg": "+0.49%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.261",
+        "chg": "-0.70%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Non applicable (NQ Futures).",
+    "edition": "19h35 CET",
+    "mode": "news_flash",
+    "timestamp": "2026-04-09T19:35:45.449774+02:00",
+    "date_fr": "Jeudi 9 avril 2026"
+  }
+}
