@@ -2,12 +2,8 @@ name: Turbo Brief Auto
 
 on:
   schedule:
-    - cron: '50 7 * * 1-5'
-    - cron: '20 12 * * 1-5'
-    - cron: '20 13 * * 1-5'
-    - cron: '20 15 * * 1-5'
-    - cron: '45 16 * * 1-5'
-    - cron: '0 19 * * 1-5'
+    - cron: '50 7 * * 1-5'   # 09h50 Paris — ouverture
+    - cron: '20 12 * * 1-5'  # 14h20 Paris — ouverture US
   workflow_dispatch:
     inputs:
       trigger:
