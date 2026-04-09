@@ -1,0 +1,269 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25246.0,
+        "prev_close": 25016.5,
+        "change_pct": 0.92,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8245.7998,
+        "prev_close": 8258.1797,
+        "change_pct": -0.15,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 19.45,
+        "prev_close": 21.04,
+        "change_pct": -7.56,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4791.5,
+        "prev_close": 4735.0,
+        "change_pct": 1.19,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 97.35,
+        "prev_close": 96.62,
+        "change_pct": 0.76,
+        "direction": "up"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1701,
+        "prev_close": 1.1666,
+        "change_pct": 0.3,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.293,
+        "prev_close": 4.291,
+        "change_pct": 0.05,
+        "direction": "up"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6864.0,
+        "prev_close": 6809.75,
+        "change_pct": 0.8,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 256.1,
+        "prev_close": 255.25,
+        "change_pct": 0.33,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 483.95,
+        "prev_close": 499.6,
+        "change_pct": -3.13,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 187.18,
+        "prev_close": 183.46,
+        "change_pct": 2.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.49,
+        "prev_close": 89.63,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.717,
+        "prev_close": 6.715,
+        "change_pct": 0.03,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-09T20:08:04.081086+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Mercedes-Benz USA reports Q1 sales of 78,500 vehicles",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/mercedesbenz-usa-reports-q1-sales-of-78500-vehicles-93CH-4606495",
+          "source": "investing_news",
+          "published": "2026-04-09T20:05:05+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "394746e0aa93"
+        },
+        {
+          "title": "BayCom names new CEO, executive team in leadership overhaul",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/baycom-names-new-ceo-executive-team-in-leadership-overhaul-93CH-4606494",
+          "source": "investing_news",
+          "published": "2026-04-09T20:05:05+00:00",
+          "age_minutes": 2,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "cd31d7aabfa4"
+        },
+        {
+          "title": "Smart Sand declares $0.10 special dividend, payable May 5",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/smart-sand-declares-010-special-dividend-payable-may-5-93CH-4606492",
+          "source": "investing_news",
+          "published": "2026-04-09T20:04:55+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "a2958917ebd4"
+        },
+        {
+          "title": "Form 13D/A Maase Inc. For: 9 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-13da-maase-inc-for-9-april-93CH-4606489",
+          "source": "investing_news",
+          "published": "2026-04-09T20:03:19+00:00",
+          "age_minutes": 4,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "fc3d106dd0e7"
+        },
+        {
+          "title": "Seneca Foods stock hits all-time high at 164.25 USD",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/seneca-foods-stock-hits-alltime-high-at-16425-usd-93CH-4606485",
+          "source": "investing_news",
+          "published": "2026-04-09T20:01:45+00:00",
+          "age_minutes": 6,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "6e10319b1d92"
+        }
+      ],
+      "flash_alerts": [],
+      "sentiment": -0.14,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 3
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-09T20:08:01.516801+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-09T22:08:04.081367+02:00",
+    "context": {
+      "note": "",
+      "github_run": "115",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais haussier modéré — Tech et or en hausse, CAC40 en retrait",
+      "description": "NQ Futures +0.92% sur momentum tech/IA. VIX en chute à 19.45 (-7.56%). Brent et or en progression.",
+      "biais": "haussier",
+      "conviction": "modérée",
+      "contexte_macro": "Les marchés actions US prolongent leur rebond post-FOMC hawkish de mars. L'or et le Brent bénéficient d'un dollar faible."
+    },
+    "plan_actions": [
+      {
+        "heure": "22h10",
+        "titre": "CALL NQ Futures ×18 (Turbo BEST)",
+        "sens": "CALL",
+        "mise": "2000 €",
+        "levier": 18,
+        "strike_ko": "Strike 25000 / KO 24500",
+        "gain_cible": "+25% si NQ +1.2%",
+        "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+        "note": "Entrée 22h10–22h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+        "urgence": "normale"
+      }
+    ],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ",
+        "prix": 25500,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ",
+        "prix": 24800,
+        "type": "support",
+        "action": "Stop KO si cassé",
+        "couleur": "bear"
+      }
+    ],
+    "alertes": [
+      "Surveiller la clôture du CAC40 à 17h30 (déjà passée).",
+      "Attention aux mouvements brutaux sur l'or (4791.5 +1.19%) en fin de session US."
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "Actions FR → clôture obligatoire 17h30",
+      "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "25 246",
+        "chg": "+0.92%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "8 246",
+        "chg": "-0.15%",
+        "dir": "dn"
+      },
+      "brent": {
+        "valeur": "$97.3",
+        "chg": "+0.76%",
+        "dir": "up"
+      },
+      "gold": {
+        "valeur": "$4 791.5",
+        "chg": "+1.19%",
+        "dir": "up"
+      },
+      "vix": {
+        "valeur": "19.4",
+        "chg": "-7.56%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1701",
+        "chg": "+0.30%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.293%",
+        "chg": "+0.05%",
+        "dir": "up"
+      }
+    },
+    "pea_note": "PEA — Aucun position ouverte. Pas de trading sur actions FR ce soir.",
+    "edition": "22h10 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-09T22:08:08.720636+02:00",
+    "date_fr": "Jeudi 9 avril 2026"
+  }
+}

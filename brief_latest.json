@@ -1,47 +1,54 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre — Inflation mexicaine et CPI US en focus",
-    "description": "NQ Futures +0.67% malgré CAC40 -0.15%. VIX en chute à 19.75 (-6.13%). Gold +1.65% sur tensions géopolitiques.",
-    "biais": "neutre",
+    "titre": "Biais haussier modéré — Tech et or en hausse, CAC40 en retrait",
+    "description": "NQ Futures +0.92% sur momentum tech/IA. VIX en chute à 19.45 (-7.56%). Brent et or en progression.",
+    "biais": "haussier",
     "conviction": "modérée",
-    "contexte_macro": "Inflation mexicaine en forte hausse en mars, alimentant les débats au sein de la banque centrale. CPI US attendu vendredi, impact potentiel sur les anticipations Fed."
+    "contexte_macro": "Les marchés actions US prolongent leur rebond post-FOMC hawkish de mars. L'or et le Brent bénéficient d'un dollar faible."
   },
-  "plan_actions": [],
+  "plan_actions": [
+    {
+      "heure": "22h10",
+      "titre": "CALL NQ Futures ×18 (Turbo BEST)",
+      "sens": "CALL",
+      "mise": "2000 €",
+      "levier": 18,
+      "strike_ko": "Strike 25000 / KO 24500",
+      "gain_cible": "+25% si NQ +1.2%",
+      "plateforme": "sgbourse.fr → Nasdaq 100 → CALL BEST",
+      "note": "Entrée 22h10–22h30. Stop mental -40%. TP1 à +25% → sortir 50%, stop déplacé à +10%.",
+      "urgence": "normale"
+    }
+  ],
   "niveaux_cles": [
     {
-      "label": "Résistance NQ Futures",
-      "prix": 25300,
+      "label": "Résistance NQ",
+      "prix": 25500,
       "type": "resistance",
       "action": "TP1 si atteint",
       "couleur": "bull"
     },
     {
-      "label": "Support NQ Futures",
-      "prix": 24900,
+      "label": "Support NQ",
+      "prix": 24800,
       "type": "support",
-      "action": "Stop mental -40% si cassé",
+      "action": "Stop KO si cassé",
       "couleur": "bear"
-    },
-    {
-      "label": "Résistance CAC40",
-      "prix": 8300,
-      "type": "resistance",
-      "action": "Sortie partielle si test",
-      "couleur": "amber"
     }
   ],
   "alertes": [
-    "CPI US vendredi 10h30 CET — volatilité attendue",
-    "Mexique inflation — surveiller les réactions des marchés émergents"
+    "Surveiller la clôture du CAC40 à 17h30 (déjà passée).",
+    "Attention aux mouvements brutaux sur l'or (4791.5 +1.19%) en fin de session US."
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
-    "NQ Futures → clôture possible 22h CET"
+    "Actions FR → clôture obligatoire 17h30",
+    "Turbos NQ/indices → cotent jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "25 183",
-      "chg": "+0.67%",
+      "valeur": "25 246",
+      "chg": "+0.92%",
       "dir": "up"
     },
     "cac40": {
@@ -49,35 +56,35 @@
       "chg": "-0.15%",
       "dir": "dn"
     },
-    "gold": {
-      "valeur": "4813.30",
-      "chg": "+1.65%",
+    "brent": {
+      "valeur": "$97.3",
+      "chg": "+0.76%",
       "dir": "up"
     },
-    "brent": {
-      "valeur": "$95.5",
-      "chg": "-1.16%",
-      "dir": "dn"
+    "gold": {
+      "valeur": "$4 791.5",
+      "chg": "+1.19%",
+      "dir": "up"
     },
     "vix": {
-      "valeur": "19.8",
-      "chg": "-6.13%",
+      "valeur": "19.4",
+      "chg": "-7.56%",
       "dir": "dn"
     },
     "eurusd": {
-      "valeur": "1.1707",
-      "chg": "+0.35%",
+      "valeur": "1.1701",
+      "chg": "+0.30%",
       "dir": "up"
     },
     "us10y": {
-      "valeur": "4.275",
-      "chg": "-0.37%",
-      "dir": "dn"
+      "valeur": "4.293%",
+      "chg": "+0.05%",
+      "dir": "up"
     }
   },
-  "pea_note": "PEA — Pas d'actions françaises en session. Focus sur NQ Futures.",
-  "edition": "20:15 CET",
+  "pea_note": "PEA — Aucun position ouverte. Pas de trading sur actions FR ce soir.",
+  "edition": "22h10 CET",
   "mode": "normal",
-  "timestamp": "2026-04-09T20:16:03.079883+02:00",
+  "timestamp": "2026-04-09T22:08:08.720636+02:00",
   "date_fr": "Jeudi 9 avril 2026"
 }
