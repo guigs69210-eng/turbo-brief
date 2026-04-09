@@ -1,0 +1,289 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25183.25,
+        "prev_close": 25016.5,
+        "change_pct": 0.67,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8245.7998,
+        "prev_close": 8258.1797,
+        "change_pct": -0.15,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 19.75,
+        "prev_close": 21.04,
+        "change_pct": -6.13,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4813.2998,
+        "prev_close": 4735.0,
+        "change_pct": 1.65,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 95.5,
+        "prev_close": 96.62,
+        "change_pct": -1.16,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1707,
+        "prev_close": 1.1666,
+        "change_pct": 0.35,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.275,
+        "prev_close": 4.291,
+        "change_pct": -0.37,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6860.5,
+        "prev_close": 6809.75,
+        "change_pct": 0.75,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 256.1,
+        "prev_close": 255.25,
+        "change_pct": 0.33,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 483.95,
+        "prev_close": 499.6,
+        "change_pct": -3.13,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 187.18,
+        "prev_close": 183.46,
+        "change_pct": 2.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.49,
+        "prev_close": 89.63,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.717,
+        "prev_close": 6.715,
+        "change_pct": 0.03,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-09T18:15:59.116277+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "Mexico inflation spikes in March, fueling debate within divided central bank",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/mexico-inflation-spikes-in-march-fueling-debate-within-divided-central-bank-4606401",
+          "source": "investing_news",
+          "published": "2026-04-09T18:12:52+00:00",
+          "age_minutes": 3,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "588604d5031c"
+        },
+        {
+          "title": "CPI inflation data highlights economic calendar for Friday",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/cpi-inflation-data-highlights-economic-calendar-for-friday-93CH-4606391",
+          "source": "investing_news",
+          "published": "2026-04-09T18:00:33+00:00",
+          "age_minutes": 15,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "4ed3d03fb34c"
+        },
+        {
+          "title": "Form 144 Strategy Inc For: 9 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-144-strategy-inc-for-9-april-93CH-4606400",
+          "source": "investing_news",
+          "published": "2026-04-09T18:12:32+00:00",
+          "age_minutes": 3,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "e26782197324"
+        },
+        {
+          "title": "Form 6K Solaris Resources Inc For: 9 April",
+          "summary": "",
+          "url": "https://www.investing.com/news/filings/form-6k-solaris-resourcesinc-for-9-april-93CH-4606399",
+          "source": "investing_news",
+          "published": "2026-04-09T18:10:40+00:00",
+          "age_minutes": 5,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "5db16cf2f84c"
+        },
+        {
+          "title": "Bill Com Holdings stock hits 52-week low at $35.45",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/bill-com-holdings-stock-hits-52week-low-at-3545-93CH-4606398",
+          "source": "investing_news",
+          "published": "2026-04-09T18:06:37+00:00",
+          "age_minutes": 9,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "92d35baf5ed5"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "Mexico inflation spikes in March, fueling debate within divided central bank",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/mexico-inflation-spikes-in-march-fueling-debate-within-divided-central-bank-4606401",
+          "source": "investing_news",
+          "published": "2026-04-09T18:12:52+00:00",
+          "age_minutes": 3,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "588604d5031c"
+        },
+        {
+          "title": "CPI inflation data highlights economic calendar for Friday",
+          "summary": "",
+          "url": "https://www.investing.com/news/stock-market-news/cpi-inflation-data-highlights-economic-calendar-for-friday-93CH-4606391",
+          "source": "investing_news",
+          "published": "2026-04-09T18:00:33+00:00",
+          "age_minutes": 15,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "4ed3d03fb34c"
+        }
+      ],
+      "sentiment": 0.0,
+      "themes": [
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 4
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 2
+        },
+        {
+          "theme": "Tech / IA",
+          "count": 2
+        }
+      ],
+      "scanned_at": "2026-04-09T18:15:55.862225+00:00",
+      "mode": "flash"
+    },
+    "trigger": "refresh",
+    "timestamp": "2026-04-09T20:15:59.116524+02:00",
+    "context": {
+      "note": "",
+      "github_run": "114",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Biais neutre — Inflation mexicaine et CPI US en focus",
+      "description": "NQ Futures +0.67% malgré CAC40 -0.15%. VIX en chute à 19.75 (-6.13%). Gold +1.65% sur tensions géopolitiques.",
+      "biais": "neutre",
+      "conviction": "modérée",
+      "contexte_macro": "Inflation mexicaine en forte hausse en mars, alimentant les débats au sein de la banque centrale. CPI US attendu vendredi, impact potentiel sur les anticipations Fed."
+    },
+    "plan_actions": [],
+    "niveaux_cles": [
+      {
+        "label": "Résistance NQ Futures",
+        "prix": 25300,
+        "type": "resistance",
+        "action": "TP1 si atteint",
+        "couleur": "bull"
+      },
+      {
+        "label": "Support NQ Futures",
+        "prix": 24900,
+        "type": "support",
+        "action": "Stop mental -40% si cassé",
+        "couleur": "bear"
+      },
+      {
+        "label": "Résistance CAC40",
+        "prix": 8300,
+        "type": "resistance",
+        "action": "Sortie partielle si test",
+        "couleur": "amber"
+      }
+    ],
+    "alertes": [
+      "CPI US vendredi 10h30 CET — volatilité attendue",
+      "Mexique inflation — surveiller les réactions des marchés émergents"
+    ],
+    "regles_session": [
+      "Stop mental −40% = sortie immédiate",
+      "NQ Futures → clôture possible 22h CET"
+    ],
+    "market_strip": {
+      "nq": {
+        "valeur": "25 183",
+        "chg": "+0.67%",
+        "dir": "up"
+      },
+      "cac40": {
+        "valeur": "8 246",
+        "chg": "-0.15%",
+        "dir": "dn"
+      },
+      "gold": {
+        "valeur": "4813.30",
+        "chg": "+1.65%",
+        "dir": "up"
+      },
+      "brent": {
+        "valeur": "$95.5",
+        "chg": "-1.16%",
+        "dir": "dn"
+      },
+      "vix": {
+        "valeur": "19.8",
+        "chg": "-6.13%",
+        "dir": "dn"
+      },
+      "eurusd": {
+        "valeur": "1.1707",
+        "chg": "+0.35%",
+        "dir": "up"
+      },
+      "us10y": {
+        "valeur": "4.275",
+        "chg": "-0.37%",
+        "dir": "dn"
+      }
+    },
+    "pea_note": "PEA — Pas d'actions françaises en session. Focus sur NQ Futures.",
+    "edition": "20:15 CET",
+    "mode": "normal",
+    "timestamp": "2026-04-09T20:16:03.079883+02:00",
+    "date_fr": "Jeudi 9 avril 2026"
+  }
+}
