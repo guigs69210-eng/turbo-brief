@@ -1,66 +1,106 @@
 {
   "signal_du_jour": {
-    "titre": "Biais haussier modéré — Tech et IA en tête",
-    "description": "NQ Futures à 25039 (-0.25%) en légère correction après une séance haussière. VIX en forte baisse (-18.26%) reflétant un apaisement des craintes macro.",
-    "biais": "haussier",
+    "titre": "Biais neutre à léger baissier — Tech sous pression après Simply Good Foods",
+    "description": "NQ Futures en légère baisse (-0.13%) après un rebond initial. CAC40 chute (-0.87%) sur tensions sectorielles. VIX en hausse (+2.33%) mais reste sous 25.",
+    "biais": "neutre",
     "conviction": "modérée",
-    "contexte_macro": "Les valeurs Tech et IA restent les moteurs de la hausse malgré un léger repli en fin de session. Sentiment global stable."
+    "contexte_macro": "Marchés tech volatils après publication de Simply Good Foods. Sentiment global légèrement positif (+0.17) mais sectoriel mitigé."
   },
-  "plan_actions": [],
+  "plan_actions": [
+    {
+      "heure": "13h20",
+      "titre": "PUT CAC40 ×18 (Turbo BEST SG)",
+      "sens": "PUT",
+      "mise": "1200 €",
+      "levier": 18,
+      "strike_ko": "Strike 8200 / KO 8300",
+      "gain_cible": "+28% si CAC40 -1%",
+      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
+      "note": "Entrée 13h20–13h40. Stop mental -40%. Cible TP1 si CAC40 touche 8100.",
+      "urgence": "normale"
+    },
+    {
+      "heure": "13h30",
+      "titre": "CALL NQ Futures ×15 (Turbo Vontobel)",
+      "sens": "CALL",
+      "mise": "1800 €",
+      "levier": 15,
+      "strike_ko": "Strike 24800 / KO 24300",
+      "gain_cible": "+22% si NQ +1%",
+      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
+      "note": "Entrée 13h30–13h50. Stop mental -40%. Cible TP1 si NQ touche 25100.",
+      "urgence": "normale"
+    }
+  ],
   "niveaux_cles": [
     {
-      "label": "Support NQ Futures",
-      "prix": 24950,
+      "label": "Support CAC40",
+      "prix": 8100,
       "type": "support",
-      "action": "Entrée CALL possible si rebond",
+      "action": "Entrée PUT si testé",
+      "couleur": "bear"
+    },
+    {
+      "label": "Résistance NQ",
+      "prix": 25100,
+      "type": "resistance",
+      "action": "TP1 si atteint",
       "couleur": "bull"
     },
     {
-      "label": "Résistance NQ Futures",
-      "prix": 25200,
-      "type": "resistance",
-      "action": "TP1 si atteint",
+      "label": "KO PUT CAC40",
+      "prix": 8300,
+      "type": "KO",
+      "action": "Sortie immédiate si dépassé",
+      "couleur": "bear"
+    },
+    {
+      "label": "KO CALL NQ",
+      "prix": 24300,
+      "type": "KO",
+      "action": "Sortie immédiate si dépassé",
       "couleur": "bull"
     }
   ],
   "alertes": [
-    "Form 144 PALO ALTO NETWORKS et CRINETICS PHARMACEUTICALS — surveillance des volumes en préouverture."
+    "Simply Good Foods en chute libre (-12%) — impact potentiel sur le secteur tech",
+    "VIX en hausse (+2.33%) — surveiller la volatilité intraday"
   ],
   "regles_session": [
     "Stop mental −40% = sortie immédiate",
     "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ/indices → cotent jusqu'à 22h CET"
+    "Turbos NQ → suivi jusqu'à 22h CET"
   ],
   "market_strip": {
     "nq": {
-      "valeur": "25 039",
-      "chg": "-0.25%",
+      "valeur": "24 985",
+      "chg": "-0.13%",
       "dir": "dn"
     },
     "cac40": {
-      "valeur": "8 264",
-      "chg": "+4.58%",
-      "dir": "up"
+      "valeur": "8 186",
+      "chg": "-0.87%",
+      "dir": "dn"
     },
     "brent": {
-      "valeur": "$96.3",
-      "chg": "+1.65%",
+      "valeur": "$98.6",
+      "chg": "+2.03%",
       "dir": "up"
     },
     "vix": {
-      "valeur": "21.0",
-      "chg": "-18.26%",
-      "dir": "dn"
+      "valeur": "21.5",
+      "chg": "+2.33%",
+      "dir": "up"
     },
     "gold": {
-      "valeur": "4 745",
-      "chg": "-1.72%",
-      "dir": "dn"
+      "valeur": "4 763.5",
+      "chg": "+0.60%",
+      "dir": "up"
     },
     "eurusd": {
-      "valeur": "1.1666",
-      "chg": "-0.01%",
-      "dir": "dn"
+      "valeur": "1.1682",
+      "chg": "+0.14%",
+      "dir": "up"
     },
     "us10y": {
       "valeur": "4.291",
@@ -68,9 +108,9 @@
       "dir": "dn"
     }
   },
-  "pea_note": "PEA — Ne pas toucher.",
-  "edition": "23:30 CET",
+  "pea_note": "PEA — Pas d'actions françaises dans les plans. Turbos uniquement.",
+  "edition": "13h18 CET",
   "mode": "normal",
-  "timestamp": "2026-04-08T23:30:04.897107+02:00",
-  "date_fr": "Mercredi 8 avril 2026"
+  "timestamp": "2026-04-09T13:18:22.495866+02:00",
+  "date_fr": "Jeudi 9 avril 2026"
 }
