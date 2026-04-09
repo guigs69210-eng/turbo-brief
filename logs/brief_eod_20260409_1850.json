@@ -1,0 +1,229 @@
+{
+  "raw": {
+    "market": {
+      "nq_futures": {
+        "symbol": "NQ=F",
+        "price": 25177.0,
+        "prev_close": 25016.5,
+        "change_pct": 0.64,
+        "direction": "up"
+      },
+      "cac40": {
+        "symbol": "^FCHI",
+        "price": 8245.7998,
+        "prev_close": 8258.1797,
+        "change_pct": -0.15,
+        "direction": "dn"
+      },
+      "vix": {
+        "symbol": "^VIX",
+        "price": 20.06,
+        "prev_close": 21.04,
+        "change_pct": -4.66,
+        "direction": "dn"
+      },
+      "gold": {
+        "symbol": "GC=F",
+        "price": 4813.2998,
+        "prev_close": 4735.0,
+        "change_pct": 1.65,
+        "direction": "up"
+      },
+      "brent": {
+        "symbol": "BZ=F",
+        "price": 95.63,
+        "prev_close": 96.62,
+        "change_pct": -1.02,
+        "direction": "dn"
+      },
+      "eurusd": {
+        "symbol": "EURUSD=X",
+        "price": 1.1712,
+        "prev_close": 1.1666,
+        "change_pct": 0.4,
+        "direction": "up"
+      },
+      "us10y": {
+        "symbol": "^TNX",
+        "price": 4.268,
+        "prev_close": 4.291,
+        "change_pct": -0.54,
+        "direction": "dn"
+      },
+      "sp500": {
+        "symbol": "ES=F",
+        "price": 6856.25,
+        "prev_close": 6809.75,
+        "change_pct": 0.68,
+        "direction": "up"
+      },
+      "schneider": {
+        "symbol": "SU.PA",
+        "price": 256.1,
+        "prev_close": 255.25,
+        "change_pct": 0.33,
+        "direction": "up"
+      },
+      "lvmh": {
+        "symbol": "MC.PA",
+        "price": 483.95,
+        "prev_close": 499.6,
+        "change_pct": -3.13,
+        "direction": "dn"
+      },
+      "airliquide": {
+        "symbol": "AI.PA",
+        "price": 187.18,
+        "prev_close": 183.46,
+        "change_pct": 2.03,
+        "direction": "up"
+      },
+      "bnpparibas": {
+        "symbol": "BNP.PA",
+        "price": 89.49,
+        "prev_close": 89.63,
+        "change_pct": -0.16,
+        "direction": "dn"
+      },
+      "stellantis": {
+        "symbol": "STLAM.MI",
+        "price": 6.717,
+        "prev_close": 6.715,
+        "change_pct": 0.03,
+        "direction": "up"
+      },
+      "fetched_at": "2026-04-09T16:50:47.259765+00:00",
+      "source": "yfinance"
+    },
+    "news": {
+      "articles": [
+        {
+          "title": "IMF’s Georgieva expects war to trigger demand for up to $50 billion in Fund support",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/imfs-georgieva-expects-war-to-trigger-demand-for-up-to-50-billion-in-fund-support-4606015",
+          "source": "investing_news",
+          "published": "2026-04-09T16:36:30+00:00",
+          "age_minutes": 14,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "5d04a73e48af"
+        },
+        {
+          "title": "US software stocks slump on renewed AI disruption jitters",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/us-software-stocks-fall-anthropics-152738477.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T15:27:38+00:00",
+          "age_minutes": 83,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "46ed11713cbb"
+        },
+        {
+          "title": "Mortgage rates fall on Iran ceasefire: Mortgage and refinance interest rates today",
+          "summary": "",
+          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-rates-fall-on-iran-ceasefire-mortgage-and-refinance-interest-rates-today-100000366.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T10:00:00+00:00",
+          "age_minutes": 410,
+          "urgency": "high",
+          "sentiment": 0.0,
+          "id": "b5956dfd4616"
+        },
+        {
+          "title": "Actelis Networks to be delisted from Nasdaq, moves to OTC",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/actelis-networks-to-be-delisted-from-nasdaq-moves-to-otc-93CH-4606293",
+          "source": "investing_news",
+          "published": "2026-04-09T16:37:42+00:00",
+          "age_minutes": 13,
+          "urgency": "medium",
+          "sentiment": 0.0,
+          "id": "e891b06652f9"
+        },
+        {
+          "title": "James Halstead grants 280,000 share options to executives",
+          "summary": "",
+          "url": "https://www.investing.com/news/company-news/james-halstead-grants-280000-share-options-to-executives-93CH-4606291",
+          "source": "investing_news",
+          "published": "2026-04-09T16:36:38+00:00",
+          "age_minutes": 14,
+          "urgency": "low",
+          "sentiment": 0.0,
+          "id": "487b1828205a"
+        }
+      ],
+      "flash_alerts": [
+        {
+          "title": "IMF’s Georgieva expects war to trigger demand for up to $50 billion in Fund support",
+          "summary": "",
+          "url": "https://www.investing.com/news/economy-news/imfs-georgieva-expects-war-to-trigger-demand-for-up-to-50-billion-in-fund-support-4606015",
+          "source": "investing_news",
+          "published": "2026-04-09T16:36:30+00:00",
+          "age_minutes": 14,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "5d04a73e48af"
+        },
+        {
+          "title": "US software stocks slump on renewed AI disruption jitters",
+          "summary": "",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/us-software-stocks-fall-anthropics-152738477.html",
+          "source": "yahoo_finance",
+          "published": "2026-04-09T15:27:38+00:00",
+          "age_minutes": 83,
+          "urgency": "high",
+          "sentiment": -1.0,
+          "id": "46ed11713cbb"
+        }
+      ],
+      "sentiment": -0.1,
+      "themes": [
+        {
+          "theme": "Tech / IA",
+          "count": 9
+        },
+        {
+          "theme": "Géopolitique / Énergie",
+          "count": 6
+        },
+        {
+          "theme": "Fed / Politique monétaire",
+          "count": 1
+        },
+        {
+          "theme": "Europe / CAC",
+          "count": 1
+        }
+      ],
+      "scanned_at": "2026-04-09T16:50:44.246164+00:00",
+      "mode": "flash"
+    },
+    "trigger": "eod",
+    "timestamp": "2026-04-09T18:50:47.260029+02:00",
+    "context": {
+      "note": "",
+      "github_run": "112",
+      "is_fomc": false
+    }
+  },
+  "brief": {
+    "signal_du_jour": {
+      "titre": "Clôture Paris — 18:50",
+      "description": "NQ: 25177 (+0.64%) · CAC: 8246 (-0.15%)",
+      "biais": "neutre",
+      "conviction": "faible"
+    },
+    "plan_actions": [],
+    "niveaux_cles": [],
+    "alertes": [
+      "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
+    ],
+    "regles_session": [],
+    "market_strip": {},
+    "date_fr": "Thursday 09 april 2026",
+    "edition": "18h50 CET",
+    "mode": "eod",
+    "trigger": "eod"
+  }
+}

@@ -1,116 +1,19 @@
 {
   "signal_du_jour": {
-    "titre": "Biais neutre à léger baissier — Tech sous pression après Simply Good Foods",
-    "description": "NQ Futures en légère baisse (-0.13%) après un rebond initial. CAC40 chute (-0.87%) sur tensions sectorielles. VIX en hausse (+2.33%) mais reste sous 25.",
+    "titre": "Clôture Paris — 18:50",
+    "description": "NQ: 25177 (+0.64%) · CAC: 8246 (-0.15%)",
     "biais": "neutre",
-    "conviction": "modérée",
-    "contexte_macro": "Marchés tech volatils après publication de Simply Good Foods. Sentiment global légèrement positif (+0.17) mais sectoriel mitigé."
+    "conviction": "faible"
   },
-  "plan_actions": [
-    {
-      "heure": "13h20",
-      "titre": "PUT CAC40 ×18 (Turbo BEST SG)",
-      "sens": "PUT",
-      "mise": "1200 €",
-      "levier": 18,
-      "strike_ko": "Strike 8200 / KO 8300",
-      "gain_cible": "+28% si CAC40 -1%",
-      "plateforme": "sgbourse.fr → CAC40 → PUT BEST",
-      "note": "Entrée 13h20–13h40. Stop mental -40%. Cible TP1 si CAC40 touche 8100.",
-      "urgence": "normale"
-    },
-    {
-      "heure": "13h30",
-      "titre": "CALL NQ Futures ×15 (Turbo Vontobel)",
-      "sens": "CALL",
-      "mise": "1800 €",
-      "levier": 15,
-      "strike_ko": "Strike 24800 / KO 24300",
-      "gain_cible": "+22% si NQ +1%",
-      "plateforme": "vontobel.com → Nasdaq 100 → CALL Turbo",
-      "note": "Entrée 13h30–13h50. Stop mental -40%. Cible TP1 si NQ touche 25100.",
-      "urgence": "normale"
-    }
-  ],
-  "niveaux_cles": [
-    {
-      "label": "Support CAC40",
-      "prix": 8100,
-      "type": "support",
-      "action": "Entrée PUT si testé",
-      "couleur": "bear"
-    },
-    {
-      "label": "Résistance NQ",
-      "prix": 25100,
-      "type": "resistance",
-      "action": "TP1 si atteint",
-      "couleur": "bull"
-    },
-    {
-      "label": "KO PUT CAC40",
-      "prix": 8300,
-      "type": "KO",
-      "action": "Sortie immédiate si dépassé",
-      "couleur": "bear"
-    },
-    {
-      "label": "KO CALL NQ",
-      "prix": 24300,
-      "type": "KO",
-      "action": "Sortie immédiate si dépassé",
-      "couleur": "bull"
-    }
-  ],
+  "plan_actions": [],
+  "niveaux_cles": [],
   "alertes": [
-    "Simply Good Foods en chute libre (-12%) — impact potentiel sur le secteur tech",
-    "VIX en hausse (+2.33%) — surveiller la volatilité intraday"
+    "Actions FR clôturées 17h30 — Turbos NQ cotent jusqu'à 22h"
   ],
-  "regles_session": [
-    "Stop mental −40% = sortie immédiate",
-    "Actions FR → clôture obligatoire 17h30",
-    "Turbos NQ → suivi jusqu'à 22h CET"
-  ],
-  "market_strip": {
-    "nq": {
-      "valeur": "24 985",
-      "chg": "-0.13%",
-      "dir": "dn"
-    },
-    "cac40": {
-      "valeur": "8 186",
-      "chg": "-0.87%",
-      "dir": "dn"
-    },
-    "brent": {
-      "valeur": "$98.6",
-      "chg": "+2.03%",
-      "dir": "up"
-    },
-    "vix": {
-      "valeur": "21.5",
-      "chg": "+2.33%",
-      "dir": "up"
-    },
-    "gold": {
-      "valeur": "4 763.5",
-      "chg": "+0.60%",
-      "dir": "up"
-    },
-    "eurusd": {
-      "valeur": "1.1682",
-      "chg": "+0.14%",
-      "dir": "up"
-    },
-    "us10y": {
-      "valeur": "4.291",
-      "chg": "-1.20%",
-      "dir": "dn"
-    }
-  },
-  "pea_note": "PEA — Pas d'actions françaises dans les plans. Turbos uniquement.",
-  "edition": "13h18 CET",
-  "mode": "normal",
-  "timestamp": "2026-04-09T13:18:22.495866+02:00",
-  "date_fr": "Jeudi 9 avril 2026"
+  "regles_session": [],
+  "market_strip": {},
+  "date_fr": "Thursday 09 april 2026",
+  "edition": "18h50 CET",
+  "mode": "eod",
+  "trigger": "eod"
 }
