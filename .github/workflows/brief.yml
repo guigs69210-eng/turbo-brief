@@ -21,6 +21,8 @@ jobs:
   brief:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,6 +35,22 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Process Telegram commands
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY:  ${{ github.repository }}
+        run: python telegram_bot.py --poll
+
+      - name: Commit updated portfolio if changed
+        run: |
+          git config user.name "turbo-bot"
+          git config user.email "bot@turbobrief.com"
+          git add report_data.json
+          git diff --cached --quiet || git commit -m "bot: update portfolio $(date +'%d/%m %H:%M')"
+          git push || true
 
       - name: Detect trigger
         id: trigger
@@ -51,10 +69,10 @@ jobs:
 
       - name: Run brief agent
         env:
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          MISTRAL_API_KEY:    ${{ secrets.MISTRAL_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BRIEF_TRIGGER: ${{ steps.trigger.outputs.type }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          BRIEF_TRIGGER:      ${{ steps.trigger.outputs.type }}
         run: python run_brief.py --trigger $BRIEF_TRIGGER
 
       - name: Upload artifacts
