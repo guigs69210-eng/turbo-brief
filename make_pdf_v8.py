@@ -136,58 +136,70 @@ def sc_color(k): return G if sd(k)=="up" else R if sd(k)=="dn" else INK3
 
 story = []
 
-# MASTHEAD
+biais   = signal.get("biais","neutre").lower()
+biais_c = G if "haussier" in biais else R if "baissier" in biais else A
+conv    = signal.get("conviction","--")
+biais_lbl = "HAUSSIER" if "haussier" in biais else "BAISSIER" if "baissier" in biais else "NEUTRE"
+
+# ── MASTHEAD ──
 mast = Table([[
-    P("<b>TURBO BRIEF</b>", sz=11, bold=True, color=INK),
-    P("Day Trading - Paris", sz=7, color=INK3, align=TA_CENTER),
-    P(f"{date_fr}  -  {edition}  -  Turbos 8h30-18h30", sz=6.5, color=INK4, align=TA_RIGHT),
-]], colWidths=[W*0.22, W*0.30, W*0.48])
+    P("<b>TURBO BRIEF</b>", sz=12, bold=True, color=INK),
+    P(f"<b>{biais_lbl}</b>", sz=10, bold=True, color=biais_c, align=TA_CENTER),
+    P(f"{date_fr}  ·  {edition}", sz=7, color=INK4, align=TA_RIGHT),
+]], colWidths=[W*0.25, W*0.35, W*0.40])
 mast.setStyle(TableStyle([
     ("LINEBELOW",(0,0),(-1,0),1.5,INK),
-    ("TOPPADDING",(0,0),(-1,-1),0),("BOTTOMPADDING",(0,0),(-1,-1),3),
+    ("TOPPADDING",(0,0),(-1,-1),0),("BOTTOMPADDING",(0,0),(-1,-1),4),
     ("VALIGN",(0,0),(-1,-1),"BOTTOM"),
 ]))
 story += [mast, SP(3)]
 
-# SIGNAL + STRIP
-biais   = signal.get("biais","neutre").lower()
-biais_c = G if "haussier" in biais else R if "baissier" in biais else A
-conv    = signal.get("conviction","--")
-
-strip_inner = [[]]
-for key, label in [("nq","NQ"),("cac40","CAC 40"),("vix","VIX"),("brent","Brent")]:
-    chg = strip.get(key,{}).get("chg","")
-    cc  = sc_color(key)
-    cell = Table([[
-        P(label, sz=5.5, color=INK4, align=TA_CENTER),
-        P(f"<b>{sv(key)}</b>", sz=10, bold=True, color=INK, align=TA_CENTER),
-        P(chg, sz=6.5, color=cc, align=TA_CENTER),
-    ]], colWidths=[W*0.105],
-    style=[("TOPPADDING",(0,0),(-1,-1),3),("BOTTOMPADDING",(0,0),(-1,-1),2),
-           ("LEFTPADDING",(0,0),(-1,-1),2),("RIGHTPADDING",(0,0),(-1,-1),2),
-           ("BOX",(0,0),(-1,-1),0.4,RULE),("BACKGROUND",(0,0),(-1,-1),W_BG),
-           ("VALIGN",(0,0),(-1,-1),"MIDDLE")])
-    strip_inner[0].append(cell)
-
-strip_tbl = Table(strip_inner, colWidths=[W*0.42])
-strip_tbl.setStyle(TableStyle([("TOPPADDING",(0,0),(-1,-1),0),("BOTTOMPADDING",(0,0),(-1,-1),0),
-    ("LEFTPADDING",(0,0),(-1,-1),0),("RIGHTPADDING",(0,0),(-1,-1),0)]))
-
-sig_inner = Table([[
+# ── SIGNAL (pleine largeur) ──
+sig_bloc = Table([[
     P(f"<b>{signal.get('titre','--')}</b>", sz=8, bold=True, color=biais_c),
-    P(signal.get("description","")[:130], sz=6.5, color=INK2),
-    P(f"Conviction: {conv}  -  {signal.get('contexte_macro','')[:90]}", sz=6, color=INK3),
-]], colWidths=[W*0.55],
-style=[("BOX",(0,0),(-1,-1),0.4,RULE),("BACKGROUND",(0,0),(-1,-1),W_BG),
-       ("TOPPADDING",(0,0),(-1,-1),3),("BOTTOMPADDING",(0,0),(-1,-1),2),
-       ("LEFTPADDING",(0,0),(-1,-1),6),("RIGHTPADDING",(0,0),(-1,-1),6),
-       ("VALIGN",(0,0),(-1,-1),"MIDDLE")])
+    P(signal.get("description","")[:160], sz=6.5, color=INK2),
+]], colWidths=[W*0.38, W*0.62])
+sig_bloc.setStyle(TableStyle([
+    ("BOX",(0,0),(-1,-1),0.4,RULE),("BACKGROUND",(0,0),(-1,-1),W_BG),
+    ("TOPPADDING",(0,0),(-1,-1),4),("BOTTOMPADDING",(0,0),(-1,-1),4),
+    ("LEFTPADDING",(0,0),(-1,-1),7),("RIGHTPADDING",(0,0),(-1,-1),7),
+    ("VALIGN",(0,0),(-1,-1),"MIDDLE"),
+]))
+story += [sig_bloc, SP(3)]
 
-sig_row = Table([[sig_inner, P(""), strip_tbl]], colWidths=[W*0.56, W*0.02, W*0.42])
-sig_row.setStyle(TableStyle([("TOPPADDING",(0,0),(-1,-1),0),("BOTTOMPADDING",(0,0),(-1,-1),0),
-    ("LEFTPADDING",(0,0),(-1,-1),0),("RIGHTPADDING",(0,0),(-1,-1),0),
-    ("VALIGN",(0,0),(-1,-1),"TOP")]))
-story += [sig_row, SP(4)]
+# ── TABLEAU MARCHÉS NARROW ──
+mkt_keys = [
+    ("nq",    "NQ"),
+    ("cac40", "CAC"),
+    ("vix",   "VIX"),
+    ("brent", "Brent"),
+    ("gold",  "Gold"),
+    ("eurusd","EUR/USD"),
+    ("us10y", "US 10Y"),
+]
+mkt_hdr = [P(label, sz=6, color=INK4, bold=True, align=TA_CENTER) for _, label in mkt_keys]
+mkt_val = []
+mkt_chg = []
+for key, _ in mkt_keys:
+    d   = strip.get(key, {})
+    val = d.get("valeur","--")
+    chg = d.get("chg","")
+    cc  = G if d.get("dir")=="up" else R if d.get("dir")=="dn" else INK3
+    mkt_val.append(P(f"<b>{val}</b>", sz=8, bold=True, color=INK, align=TA_CENTER))
+    mkt_chg.append(P(chg, sz=6.5, color=cc, align=TA_CENTER))
+
+col_w = W / len(mkt_keys)
+mkt_t = Table([mkt_hdr, mkt_val, mkt_chg], colWidths=[col_w]*len(mkt_keys))
+mkt_t.setStyle(TableStyle([
+    ("BOX",(0,0),(-1,-1),0.4,RULE),
+    ("INNERGRID",(0,0),(-1,-1),0.3,RULE2),
+    ("BACKGROUND",(0,0),(-1,0),W_BG),
+    ("TOPPADDING",(0,0),(-1,-1),3),("BOTTOMPADDING",(0,0),(-1,-1),3),
+    ("LEFTPADDING",(0,0),(-1,-1),3),("RIGHTPADDING",(0,0),(-1,-1),3),
+    ("VALIGN",(0,0),(-1,-1),"MIDDLE"),
+    ("LINEBELOW",(0,0),(-1,0),0.5,RULE),
+]))
+story += [mkt_t, SP(4)]
 
 # POSITIONS OUVERTES
 story += [SEC("Positions ouvertes", B), SP(2)]
@@ -324,6 +336,26 @@ if alertes:
     ]))
     story.append(al_t)
     story.append(SP(3))
+
+# NEWS MACRO TOP 5
+news_top5 = b.get("news_top5", [])
+if news_top5:
+    story += [SEC("News & Rationale — Top 5 drivers", B), SP(2)]
+    imp_map = {"Haussier":G, "Baissier":R, "Neutre":INK3}
+    news_hdr = [P(h, sz=6, color=INK3, bold=True, align=c) for h,c in [
+        ("SOURCE",TA_CENTER),("TITRE",TA_LEFT),("IMPACT",TA_CENTER),("RATIONALE",TA_LEFT)]]
+    news_rows = [news_hdr]
+    for n in news_top5[:5]:
+        imp_txt = n.get("impact","--")
+        imp_c   = next((v for k,v in imp_map.items() if k.lower() in imp_txt.lower()), INK3)
+        news_rows.append([
+            P(n.get("source","--")[:12], sz=6.5, color=INK3, align=TA_CENTER),
+            P(f"<b>{n.get('titre','--')[:55]}</b>", sz=6.5, color=INK2),
+            P(imp_txt[:18], sz=6.5, bold=True, color=imp_c, align=TA_CENTER),
+            P(n.get("raison","--")[:80], sz=6.5, color=INK3),
+        ])
+    story.append(T(news_rows, [W*0.10, W*0.30, W*0.12, W*0.48], pad=3))
+    story.append(SP(4))
 
 # FOOTER P1
 story += [HR(0.3),
