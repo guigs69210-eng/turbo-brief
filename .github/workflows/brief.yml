@@ -21,8 +21,6 @@ jobs:
   brief:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    permissions:
-      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -64,36 +62,5 @@ jobs:
         if: always()
         with:
           name: brief-${{ github.run_number }}
-          path: |
-            output/brief_latest.json
+          path: output/brief_latest.json
           retention-days: 7
-
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-          publish_branch: gh-pages
-          keep_files: true          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BRIEF_TRIGGER: ${{ steps.trigger.outputs.type }}
-        run: python run_brief.py --trigger $BRIEF_TRIGGER
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: brief-${{ github.run_number }}
-          path: |
-            output/brief_latest.json
-            output/turbo_brief_live.html
-          retention-days: 7
-
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
-          publish_branch: gh-pages
-          keep_files: true
