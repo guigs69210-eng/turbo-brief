@@ -68,7 +68,7 @@ async def send_telegram_pdf(brief: dict) -> bool:
     try:
         # 1. Générer le PDF via make_pdf_v7.py
         pdf_path = os.path.join(_BASE, "turbo_brief_daily.pdf")
-        make_pdf = os.path.join(_BASE, "make_pdf_v7.py")
+        make_pdf = os.path.join(_BASE, "make_pdf_v8.py")
 
         if not os.path.exists(make_pdf):
             log.warning(f"make_pdf_v7.py introuvable dans {_BASE}")
