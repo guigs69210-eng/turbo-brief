@@ -43,6 +43,8 @@ IMPORTANT SUR LES TURBOS :
 
 RÉPONSE : JSON strict uniquement, aucun texte avant/après, aucun backtick.
 
+IMPORTANT : Dans "news_top5", inclure les 5 news/events qui justifient le signal du jour. Chaque item doit avoir : titre (court), source, impact (Haussier/Baissier/Neutre NQ), raison (1 phrase expliquant pourquoi ça impacte le trade).
+
 {
   "signal_du_jour": {
     "titre": "Biais baissier conditionnel — Iran talks incertains",
@@ -85,6 +87,10 @@ RÉPONSE : JSON strict uniquement, aucun texte avant/après, aucun backtick.
     "brent": {"valeur": "$96.2",  "chg": "-3.58%", "dir": "dn"},
     "vix":   {"valeur": "25.9",   "chg": "-3.97%", "dir": "dn"}
   },
+  "news_top5": [
+    {"titre": "Titre article", "source": "Reuters", "impact": "Baissier NQ", "raison": "Pourquoi c impact le trade"},
+    {"titre": "...", "source": "...", "impact": "...", "raison": "..."}
+  ],
   "pea_note": "PEA — Ne pas toucher.",
   "edition": "09h00 CET",
   "mode": "normal|fomc|news_flash"
@@ -110,17 +116,27 @@ async def synthesize_brief(raw_data: dict, trigger_type) -> dict:
         "response_format": {"type": "json_object"},
     }
 
-    async with aiohttp.ClientSession() as session:
-        async with session.post(
-            MISTRAL_URL,
-            headers=headers,
-            json=payload,
-            timeout=aiohttp.ClientTimeout(total=30)
-        ) as resp:
-            if resp.status != 200:
-                body = await resp.text()
-                raise Exception(f"Mistral error {resp.status}: {body[:300]}")
-            data = await resp.json()
+    import asyncio as _asyncio
+    for attempt in range(3):
+        async with aiohttp.ClientSession() as session:
+            async with session.post(
+                MISTRAL_URL,
+                headers=headers,
+                json=payload,
+                timeout=aiohttp.ClientTimeout(total=45)
+            ) as resp:
+                if resp.status == 429:
+                    wait = 20 * (attempt + 1)
+                    log.warning(f"Mistral 429 rate limit — retry {attempt+1}/3 dans {wait}s")
+                    await _asyncio.sleep(wait)
+                    continue
+                if resp.status != 200:
+                    body = await resp.text()
+                    raise Exception(f"Mistral error {resp.status}: {body[:300]}")
+                data = await resp.json()
+                break
+    else:
+        raise Exception("Mistral 429 — rate limit dépassé après 3 tentatives")
 
     raw_response = data["choices"][0]["message"]["content"]
     log.info(f"Mistral répondu — {len(raw_response)} chars")
