@@ -18,15 +18,15 @@
     "change_pct_jour": 7.3
   },
   "cto_recap": {
-    "total_engage": 1595,
+    "total_engage": 0,
     "budget_total": 9500,
-    "reserve_dispo": 6343,
-    "nb_positions": 2,
+    "reserve_dispo": 7865.0,
+    "nb_positions": 0,
     "pnl_live_total": 10,
     "gain_potentiel_tp1": 738,
     "perte_max_stop": -638
   },
-  "pnl_live_total": 10,
+  "pnl_live_total": 0,
   "positions_ouvertes": [
     {
       "label": "CALL NQ Turbo Infini BEST (SG)",
@@ -43,10 +43,10 @@
       "sj_live": 24952,
       "heure_achat": "09h15 13/04",
       "mise_eur": 568,
-      "pnl_live_pct": 8.0,
-      "pnl_live_eur": 45,
+      "pnl_live_pct": 63.0,
+      "pnl_live_eur": 358.0,
       "ko_dist_live": 4.1,
-      "status": "OUVERT",
+      "status": "CLOTURE",
       "stop_turbo": 4.872,
       "tp1_turbo": 12.655,
       "tp2_turbo": 16.127,
@@ -58,7 +58,8 @@
       "stop_eur": -228,
       "tp1_eur": 318,
       "tp2_eur": 561,
-      "ko_dist_pct": 4.1
+      "ko_dist_pct": 4.1,
+      "heure_sortie": "07h57 14/04"
     },
     {
       "label": "PUT NQ Turbo Infini BEST (SG)",
@@ -75,10 +76,10 @@
       "sj_live": 24952,
       "heure_achat": "09h15 13/04",
       "mise_eur": 1027,
-      "pnl_live_pct": -3.4,
-      "pnl_live_eur": -35,
+      "pnl_live_pct": -42.0,
+      "pnl_live_eur": -431.0,
       "ko_dist_live": 4.8,
-      "status": "OUVERT",
+      "status": "CLOTURE",
       "stop_turbo": 6.486,
       "tp1_turbo": 15.233,
       "tp2_turbo": 18.705,
@@ -90,7 +91,8 @@
       "stop_eur": -411,
       "tp1_eur": 420,
       "tp2_eur": 751,
-      "ko_dist_pct": 4.8
+      "ko_dist_pct": 4.8,
+      "heure_sortie": "07h57 14/04"
     }
   ],
   "historique_trades": [
@@ -119,6 +121,24 @@
       "mise": 845,
       "pnl_pct": -49.8,
       "pnl_eur": -421,
+      "status": "CLOTURE"
+    },
+    {
+      "date": "14/04/2026 07h57",
+      "label": "CALL NQ Turbo Infini BEST (SG)",
+      "sens": "CALL",
+      "mise": 568,
+      "pnl_pct": 63.0,
+      "pnl_eur": 358.0,
+      "status": "CLOTURE"
+    },
+    {
+      "date": "14/04/2026 07h57",
+      "label": "PUT NQ Turbo Infini BEST (SG)",
+      "sens": "PUT",
+      "mise": 1027,
+      "pnl_pct": -42.0,
+      "pnl_eur": -431.0,
       "status": "CLOTURE"
     }
   ],
