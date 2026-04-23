@@ -970,16 +970,20 @@ function renderHero(){
   document.getElementById('h-nbopen').textContent = ouvertes.length;
 
   // Indices live
-  renderIndices(c.positions_ouvertes || [], cto.last_refresh);
+  renderIndices(c.positions_ouvertes || [], cto.last_refresh, cto.indices_live);
 }
 
-function renderIndices(allPositions, lastRefresh){
-  // Récupère les sj_live de chaque sous-jacent (dernière position open ou close récente)
+function renderIndices(allPositions, lastRefresh, indicesLive){
+  // Priorité 1 : cto.indices_live (refresh Python)
+  // Priorité 2 : fallback sur sj_live des positions ouvertes
   const latest = {};
+  if(indicesLive && typeof indicesLive === 'object'){
+    Object.entries(indicesLive).forEach(([k,v]) => { latest[k.toUpperCase()] = v; });
+  }
   allPositions.forEach(p => {
     if(p.sj_live && p.sous_jacent){
       const sj = p.sous_jacent.toUpperCase();
-      latest[sj] = p.sj_live;
+      if(!latest[sj]) latest[sj] = p.sj_live;
     }
   });
 
