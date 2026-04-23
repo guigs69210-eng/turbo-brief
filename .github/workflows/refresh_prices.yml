@@ -3,10 +3,9 @@ name: refresh-prices
 on:
   schedule:
     # Toutes les 15 min, 8h-19h Paris, lun-ven
-    # Paris = UTC+1 hiver / UTC+2 été
-    # On couvre 6h-18h UTC pour être safe sur les deux régimes
+    # Paris = UTC+1 hiver / UTC+2 été → on couvre 6h-18h UTC
     - cron: '*/15 6-18 * * 1-5'
-  workflow_dispatch:  # déclenchement manuel possible
+  workflow_dispatch:
 
 concurrency:
   group: refresh-prices
@@ -33,14 +32,9 @@ jobs:
         run: pip install --quiet yfinance
 
       - name: Refresh prices
-        id: refresh
-        run: |
-          python refresh_prices.py
-          echo "status=$?" >> $GITHUB_OUTPUT
-        continue-on-error: true
+        run: python refresh_prices.py
 
       - name: Commit & push if changed
-        if: steps.refresh.outputs.status == '0'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
