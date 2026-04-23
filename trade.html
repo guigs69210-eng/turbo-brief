@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#FBF7F0">
+<title>Turbo Brief — Trade Entry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:  #FBF7F0;
+  --cream2: #F3EDE2;
+  --cream3: #EAE2D5;
+  --border: #D6CCBC;
+  --ink:    #1A1612;
+  --ink2:   #3D3529;
+  --ink3:   #6B5F50;
+  --ink4:   #9E9285;
+  --bull:   #1A5C2E;
+  --bull-l: #EAF3E8;
+  --bear:   #8B1A1A;
+  --bear-l: #F8EAEA;
+  --amber:  #7A4F0A;
+  --amber-l:#FDF3DC;
+  --red-a:  #C0272D;
+  --mono: 'IBM Plex Mono', monospace;
+  --serif: 'Source Serif 4', Georgia, serif;
+  --display: 'Playfair Display', Georgia, serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body {
+  background: var(--cream);
+  min-height: 100vh;
+  font-family: var(--serif);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+body {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 14px 16px 40px;
+}
+
+/* ── MASTHEAD ── */
+.mast {
+  border-bottom: 3px double var(--ink);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+.mast-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.pub-title {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+.pub-tag {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 2.5px;
+  color: var(--ink4);
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.mast-date {
+  font-family: var(--serif);
+  font-size: 10px;
+  color: var(--ink3);
+  font-style: italic;
+  text-align: right;
+}
+.mast-edition {
+  font-family: var(--mono);
+  font-size: 8px;
+  color: var(--ink4);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ── TITLE ── */
+.title {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.subtitle {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink3);
+  margin-bottom: 18px;
+}
+
+/* ── MODE TOGGLE ── */
+.mode-toggle {
+  display: flex;
+  gap: 0;
+  margin-bottom: 16px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.mode-btn {
+  flex: 1;
+  padding: 11px 0;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: var(--cream);
+  color: var(--ink2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.mode-btn.on {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+/* ── SECTION ── */
+.sec-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0 8px;
+}
+.sec-label::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: var(--border);
+}
+
+/* ── SENS TOGGLE ── */
+.sens-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.sens-btn {
+  flex: 1;
+  padding: 14px 0;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1.5px solid var(--border);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--ink3);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.sens-btn.call.on {
+  background: var(--bull-l);
+  color: var(--bull);
+  border-color: var(--bull);
+}
+.sens-btn.put.on {
+  background: var(--bear-l);
+  color: var(--bear);
+  border-color: var(--bear);
+}
+
+/* ── QUICK CHIPS ── */
+.chips {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  margin-bottom: 12px;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  color: var(--ink2);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.chip.on {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+
+/* ── GRID INPUTS ── */
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.g1 { margin-bottom: 10px; }
+
+.fld label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink4);
+  margin-bottom: 4px;
+}
+.fld input, .fld select {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--ink);
+  padding: 10px 10px;
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  -webkit-appearance: none;
+}
+.fld input:focus, .fld select:focus {
+  border-color: var(--ink);
+  border-width: 1.5px;
+}
+.fld input::placeholder {
+  color: var(--ink4);
+  font-weight: 400;
+}
+
+/* ── CALC PREVIEW ── */
+.preview {
+  background: var(--ink);
+  border-radius: 2px;
+  padding: 12px 14px;
+  margin: 14px 0;
+  color: #fff;
+}
+.prev-title {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.prev-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 14px;
+}
+.prev-item {}
+.prev-lbl {
+  font-family: var(--mono);
+  font-size: 7.5px;
+  letter-spacing: 1px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.prev-val {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+.prev-val.g { color: #5BC87A; }
+.prev-val.r { color: #E87070; }
+.prev-val.a { color: #F4B53B; }
+
+/* ── SUBMIT ── */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--red-a);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: all 0.12s;
+}
+.submit-btn:active { transform: scale(0.98); }
+.submit-btn:disabled {
+  background: var(--ink4);
+  cursor: not-allowed;
+}
+
+/* ── HISTORIQUE ── */
+.hist-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+.hist-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.hist-title {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 600;
+}
+.hist-pnl {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+}
+.hist-meta {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink4);
+  letter-spacing: 0.5px;
+}
+
+/* ── TOAST ── */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--ink);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s;
+  z-index: 100;
+  max-width: 90%;
+  text-align: center;
+}
+.toast.on { transform: translateX(-50%) translateY(0); }
+.toast.err { background: var(--bear); }
+.toast.ok { background: var(--bull); }
+
+/* ── STATUS PANEL ── */
+.status-box {
+  background: var(--cream2);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.stat-row:not(:last-child) { border-bottom: 0.5px dashed var(--border); }
+.stat-lbl {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink4);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.stat-val {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.stat-val.g { color: var(--bull); }
+.stat-val.r { color: var(--bear); }
+
+/* ── TOKEN SETUP ── */
+.token-setup {
+  background: var(--amber-l);
+  border: 1px solid var(--amber);
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  color: var(--ink2);
+  line-height: 1.5;
+}
+.token-setup a { color: var(--amber); text-decoration: underline; }
+.token-setup input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 7px 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  border: 1px solid var(--amber);
+  border-radius: 2px;
+  background: #fff;
+}
+.token-btn {
+  font-family: var(--mono);
+  font-size: 9px;
+  padding: 5px 10px;
+  margin-top: 6px;
+  background: var(--amber);
+  color: var(--amber-l);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="mast">
+  <div class="mast-top">
+    <div>
+      <div class="pub-title">Turbo Brief</div>
+      <div class="pub-tag">Trade Entry · Paris</div>
+    </div>
+    <div>
+      <div class="mast-date" id="today">—</div>
+      <div class="mast-edition" id="now">—</div>
+    </div>
+  </div>
+</div>
+
+<!-- TOKEN SETUP (affiche si pas de token) -->
+<div id="token-setup" class="token-setup" style="display:none">
+  <strong>⚠ Setup requis</strong> — Colle ton GitHub Personal Access Token (scope: repo). 
+  <input type="password" id="gh-token" placeholder="github_pat_...">
+  <button class="token-btn" onclick="saveToken()">Enregistrer</button>
+</div>
+
+<!-- MODE TOGGLE -->
+<div class="mode-toggle">
+  <button class="mode-btn on" onclick="switchMode('open',this)">Ouvrir</button>
+  <button class="mode-btn" onclick="switchMode('close',this)">Fermer</button>
+  <button class="mode-btn" onclick="switchMode('journal',this)">Journal</button>
+</div>
+
+<!-- ═══════════ OPEN MODE ═══════════ -->
+<div id="m-open" class="mode">
+
+  <div class="title">Nouvelle position</div>
+  <div class="subtitle">Saisie rapide turbo infini BEST</div>
+
+  <!-- SENS -->
+  <div class="sec-label">Sens</div>
+  <div class="sens-row">
+    <button id="sens-call" class="sens-btn call on" onclick="setSens('CALL')">CALL ▲</button>
+    <button id="sens-put" class="sens-btn put" onclick="setSens('PUT')">PUT ▼</button>
+  </div>
+
+  <!-- SOUS-JACENT -->
+  <div class="sec-label">Sous-jacent</div>
+  <div class="chips" id="sj-chips"></div>
+  <div class="fld g1">
+    <input id="sj" type="text" placeholder="NQ, CAC40, SCHNEIDER..." oninput="calc()">
+  </div>
+
+  <!-- STRIKE / KO -->
+  <div class="sec-label">Strike / Barrière</div>
+  <div class="g2">
+    <div class="fld"><label>Strike</label>
+      <input id="strike" type="number" inputmode="decimal" step="0.01" placeholder="23942" oninput="calc()"></div>
+    <div class="fld"><label>KO / Barrière</label>
+      <input id="ko" type="number" inputmode="decimal" step="0.01" placeholder="23926" oninput="calc()"></div>
+  </div>
+
+  <!-- PARAMÈTRES TURBO -->
+  <div class="sec-label">Paramètres turbo</div>
+  <div class="g2">
+    <div class="fld"><label>Nb titres</label>
+      <input id="nb" type="number" inputmode="decimal" step="1" placeholder="70" oninput="calc()"></div>
+    <div class="fld"><label>PRU (€)</label>
+      <input id="pru" type="number" inputmode="decimal" step="0.01" placeholder="8.12" oninput="calc()"></div>
+  </div>
+  <div class="g3">
+    <div class="fld"><label>Parité</label>
+      <input id="parite" type="number" inputmode="decimal" step="1" value="100" oninput="calc()"></div>
+    <div class="fld"><label>SJ live</label>
+      <input id="sjlive" type="number" inputmode="decimal" step="0.01" placeholder="24952" oninput="calc()"></div>
+    <div class="fld"><label>Émetteur</label>
+      <select id="emet" onchange="calc()">
+        <option value="SG">SG</option>
+        <option value="BNP">BNP</option>
+        <option value="Vontobel">Vontobel</option>
+        <option value="Citi">Citi</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- PREVIEW -->
+  <div class="preview">
+    <div class="prev-title">⚡ Calcul live</div>
+    <div class="prev-grid">
+      <div class="prev-item">
+        <div class="prev-lbl">Mise</div>
+        <div class="prev-val" id="p-mise">—</div>
+      </div>
+      <div class="prev-item">
+        <div class="prev-lbl">Levier</div>
+        <div class="prev-val a" id="p-lev">—</div>
+      </div>
+      <div class="prev-item">
+        <div class="prev-lbl">VI live</div>
+        <div class="prev-val" id="p-vi">—</div>
+      </div>
+      <div class="prev-item">
+        <div class="prev-lbl">KO distance</div>
+        <div class="prev-val" id="p-ko">—</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="submit-btn" onclick="saveTrade()">Enregistrer la position</button>
+</div>
+
+<!-- ═══════════ CLOSE MODE ═══════════ -->
+<div id="m-close" class="mode" style="display:none">
+  <div class="title">Fermer position</div>
+  <div class="subtitle">Sélectionner et saisir prix de sortie</div>
+
+  <div id="open-positions">
+    <div class="subtitle" style="color:var(--ink4);font-style:italic">Aucune position ouverte. Synchronise depuis GitHub.</div>
+  </div>
+
+  <button class="submit-btn" style="background:var(--ink)" onclick="loadPositions()">Synchroniser positions</button>
+</div>
+
+<!-- ═══════════ JOURNAL MODE ═══════════ -->
+<div id="m-journal" class="mode" style="display:none">
+  <div class="title">Journal de trading</div>
+  <div class="subtitle">Historique complet des trades</div>
+
+  <!-- STATS -->
+  <div class="status-box">
+    <div class="stat-row">
+      <div class="stat-lbl">Réserve CTO</div>
+      <div class="stat-val g" id="j-reserve">—</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-lbl">Positions ouvertes</div>
+      <div class="stat-val" id="j-nbopen">—</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-lbl">P&L cumulé (mois)</div>
+      <div class="stat-val" id="j-pnl">—</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-lbl">Win rate</div>
+      <div class="stat-val" id="j-wr">—</div>
+    </div>
+  </div>
+
+  <div class="sec-label">Derniers trades</div>
+  <div id="journal-list">
+    <div class="subtitle" style="color:var(--ink4);font-style:italic">Synchronise pour afficher l'historique.</div>
+  </div>
+
+  <button class="submit-btn" style="background:var(--ink)" onclick="loadJournal()">Synchroniser journal</button>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast"></div>
+
+<script>
+// ── CONFIG ───────────────────────────────────────────────────────────────
+const REPO = 'guigs69210-eng/turbo-brief';
+const FILE = 'report_data.json';
+const FX   = 1.1521;
+
+const CHIPS = [
+  {l:'NQ Futures',   sj:'NQ',        strike:23942, ko:23926, parite:100, emet:'SG'},
+  {l:'CAC 40',        sj:'CAC40',     strike:7500,  ko:7520,  parite:10,  emet:'SG'},
+  {l:'Schneider',     sj:'SCHNEIDER', strike:200,   ko:198,   parite:10,  emet:'BNP'},
+  {l:'Thales',        sj:'THALES',    strike:248,   ko:246,   parite:10,  emet:'SG'},
+  {l:'LVMH',          sj:'LVMH',      strike:600,   ko:595,   parite:10,  emet:'BNP'},
+  {l:'Total Energies',sj:'TTE',       strike:60,    ko:59,    parite:1,   emet:'SG'},
+];
+
+let currentSens = 'CALL';
+let ghToken = localStorage.getItem('gh_token') || '';
+
+// ── INIT ─────────────────────────────────────────────────────────────────
+(function init(){
+  const d = new Date();
+  const jours = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  const mois  = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  document.getElementById('today').textContent = `${jours[d.getDay()]} ${d.getDate()} ${mois[d.getMonth()]} ${d.getFullYear()}`;
+  document.getElementById('now').textContent   = `Saisie ${String(d.getHours()).padStart(2,'0')}h${String(d.getMinutes()).padStart(2,'0')}`;
+
+  // Chips
+  const chipsEl = document.getElementById('sj-chips');
+  CHIPS.forEach(c=>{
+    const el = document.createElement('div');
+    el.className = 'chip';
+    el.textContent = c.l;
+    el.onclick = ()=>{
+      document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));
+      el.classList.add('on');
+      document.getElementById('sj').value     = c.sj;
+      document.getElementById('strike').value = c.strike;
+      document.getElementById('ko').value     = c.ko;
+      document.getElementById('parite').value = c.parite;
+      document.getElementById('emet').value   = c.emet;
+      calc();
+    };
+    chipsEl.appendChild(el);
+  });
+
+  // Token check
+  if(!ghToken){
+    document.getElementById('token-setup').style.display = 'block';
+  }
+
+  calc();
+})();
+
+// ── TOKEN ────────────────────────────────────────────────────────────────
+function saveToken(){
+  const t = document.getElementById('gh-token').value.trim();
+  if(t){
+    localStorage.setItem('gh_token', t);
+    ghToken = t;
+    document.getElementById('token-setup').style.display = 'none';
+    showToast('Token enregistré ✓', 'ok');
+  }
+}
+
+// ── MODE SWITCH ──────────────────────────────────────────────────────────
+function switchMode(m, btn){
+  ['open','close','journal'].forEach(x=>{
+    document.getElementById('m-'+x).style.display = (x===m ? 'block' : 'none');
+  });
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  if(m==='close')   loadPositions();
+  if(m==='journal') loadJournal();
+}
+
+// ── SENS ─────────────────────────────────────────────────────────────────
+function setSens(s){
+  currentSens = s;
+  document.getElementById('sens-call').classList.toggle('on', s==='CALL');
+  document.getElementById('sens-put').classList.toggle('on',  s==='PUT');
+  calc();
+}
+
+// ── CALCUL ───────────────────────────────────────────────────────────────
+function gv(id){ return parseFloat(document.getElementById(id).value) || 0; }
+
+function calc(){
+  const strike = gv('strike'), ko = gv('ko'), parite = gv('parite')||1;
+  const nb = gv('nb'), pru = gv('pru'), sjlive = gv('sjlive') || strike;
+  const sj = (document.getElementById('sj').value||'').toUpperCase();
+  const isUSD = sj.includes('NQ') || sj.includes('SPX') || sj.includes('DOW');
+  const fx = isUSD ? FX : 1;
+
+  const vi = currentSens==='CALL'
+    ? Math.max((sjlive-strike)/parite/fx, 0)
+    : Math.max((strike-sjlive)/parite/fx, 0);
+
+  const lev = vi > 0 ? Math.round(sjlive/(vi*parite*fx)*10)/10 : 0;
+  const mise = nb * pru;
+  const ko_dist = currentSens==='CALL'
+    ? (sjlive-ko)/sjlive*100
+    : (ko-sjlive)/sjlive*100;
+
+  document.getElementById('p-mise').textContent = mise ? mise.toFixed(0) + ' €' : '—';
+  document.getElementById('p-lev').textContent  = lev ? '×' + lev : '—';
+  document.getElementById('p-vi').textContent   = vi ? vi.toFixed(3) + ' €' : '—';
+  const koEl = document.getElementById('p-ko');
+  koEl.textContent = ko_dist ? ko_dist.toFixed(1) + '%' : '—';
+  koEl.className = 'prev-val ' + (ko_dist < 3 ? 'r' : ko_dist < 6 ? 'a' : 'g');
+}
+
+// ── SUBMIT ───────────────────────────────────────────────────────────────
+async function saveTrade(){
+  if(!ghToken){ showToast('Token GitHub requis', 'err'); return; }
+
+  const sj     = document.getElementById('sj').value.trim().toUpperCase();
+  const strike = gv('strike'), ko = gv('ko');
+  const nb     = gv('nb'), pru = gv('pru'), sjlive = gv('sjlive') || strike;
+  const parite = gv('parite')||1, emet = document.getElementById('emet').value;
+
+  if(!sj || !strike || !ko || !nb || !pru){
+    showToast('Remplis tous les champs requis', 'err'); return;
+  }
+
+  const btn = document.querySelector('#m-open .submit-btn');
+  btn.disabled = true; btn.textContent = 'Envoi en cours...';
+
+  try {
+    // 1. Lire le report_data.json actuel
+    const getRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+      headers: {
+        'Authorization': `Bearer ${ghToken}`,
+        'Accept': 'application/vnd.github+json',
+      }
+    });
+    if(!getRes.ok) throw new Error('GET failed: ' + getRes.status);
+    const fileData = await getRes.json();
+    const content = JSON.parse(atob(fileData.content.replace(/\s/g,'')));
+
+    // 2. Ajouter la position
+    const isUSD = sj.includes('NQ') || sj.includes('SPX');
+    const fx = isUSD ? FX : 1;
+    const vi = currentSens==='CALL'
+      ? Math.max((sjlive-strike)/parite/fx, 0)
+      : Math.max((strike-sjlive)/parite/fx, 0);
+    const lev = vi > 0 ? Math.round(sjlive/(vi*parite*fx)*10)/10 : 0;
+    const mise = nb * pru;
+    const ko_dist = currentSens==='CALL'
+      ? (sjlive-ko)/sjlive*100
+      : (ko-sjlive)/sjlive*100;
+
+    const now = new Date();
+    const newPos = {
+      label:         `${currentSens} ${sj} Turbo BEST (${emet})`,
+      sens:          currentSens,
+      sous_jacent:   sj,
+      isin:          `${emet} ${currentSens} ${sj} ${strike}`,
+      nb_titres:     nb,
+      prix_achat:    pru,
+      strike:        strike,
+      ko:            ko,
+      parite:        parite,
+      devise:        isUSD ? 'USD' : 'EUR',
+      levier:        lev,
+      emetteur:      emet,
+      sj_entree:     sjlive,
+      sj_live:       sjlive,
+      heure_achat:   `${String(now.getHours()).padStart(2,'0')}h${String(now.getMinutes()).padStart(2,'0')} ${String(now.getDate()).padStart(2,'0')}/${String(now.getMonth()+1).padStart(2,'0')}`,
+      mise_eur:      mise,
+      pnl_live_pct:  0,
+      pnl_live_eur:  0,
+      ko_dist_live:  ko_dist,
+      stop_turbo:    pru * 0.60,
+      tp1_turbo:     pru * 1.25,
+      tp2_turbo:     pru * 1.50,
+      status:        'OUVERT',
+    };
+
+    content.positions_ouvertes = content.positions_ouvertes || [];
+    content.positions_ouvertes.push(newPos);
+
+    // Update CTO
+    content.cto_recap = content.cto_recap || {};
+    const ouvertes = content.positions_ouvertes.filter(p => p.status==='OUVERT');
+    content.cto_recap.total_engage  = ouvertes.reduce((s,p)=>s+(p.mise_eur||0), 0);
+    content.cto_recap.nb_positions  = ouvertes.length;
+    content.cto_recap.reserve_dispo = Math.max(0, (content.cto_recap.reserve_dispo||0) - mise);
+
+    // 3. Push sur GitHub
+    const pushRes = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${ghToken}`,
+        'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message: `UI: open ${currentSens} ${sj} ×${lev}`,
+        content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))),
+        sha: fileData.sha,
+      })
+    });
+    if(!pushRes.ok) throw new Error('PUSH failed: ' + pushRes.status);
+
+    showToast(`Position ${currentSens} ${sj} enregistrée ✓`, 'ok');
+    // Reset form
+    ['sj','strike','ko','nb','pru','sjlive'].forEach(id=>document.getElementById(id).value='');
+    document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));
+    calc();
+  } catch(e){
+    console.error(e);
+    showToast('Erreur : ' + e.message, 'err');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Enregistrer la position';
+  }
+}
+
+// ── LOAD POSITIONS (Close mode) ──────────────────────────────────────────
+async function loadPositions(){
+  if(!ghToken){ showToast('Token requis', 'err'); return; }
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+      headers: {'Authorization': `Bearer ${ghToken}`}
+    });
+    const data = await res.json();
+    const content = JSON.parse(atob(data.content.replace(/\s/g,'')));
+    const positions = (content.positions_ouvertes||[]).filter(p => p.status==='OUVERT');
+
+    const host = document.getElementById('open-positions');
+    if(positions.length === 0){
+      host.innerHTML = '<div class="subtitle" style="color:var(--ink4);font-style:italic">Aucune position ouverte.</div>';
+      return;
+    }
+    host.innerHTML = positions.map((p,i)=>`
+      <div class="hist-card">
+        <div class="hist-head">
+          <div class="hist-title">${p.label||'—'}</div>
+          <div class="hist-pnl" style="color:var(--ink3)">${p.mise_eur||0}€</div>
+        </div>
+        <div class="hist-meta">
+          ${p.nb_titres}×${p.prix_achat}€ · Strike ${p.strike} · KO ${p.ko||'—'}
+          · entrée ${p.heure_achat||'—'}
+        </div>
+        <div style="display:flex;gap:8px;margin-top:8px;align-items:center">
+          <input id="close-prix-${i}" type="number" inputmode="decimal" step="0.01"
+            placeholder="Prix de sortie €"
+            style="flex:1;padding:8px 10px;border:1px solid var(--border);border-radius:2px;font-family:var(--mono);font-size:13px">
+          <button onclick="closePos(${i}, '${p.label}', ${p.prix_achat}, ${p.nb_titres}, ${p.mise_eur})"
+            style="padding:8px 14px;background:var(--ink);color:#fff;border:none;border-radius:2px;
+            font-family:var(--mono);font-size:11px;font-weight:600;cursor:pointer">FERMER</button>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) {
+    showToast('Erreur: ' + e.message, 'err');
+  }
+}
+
+async function closePos(idx, label, pru, nb, mise){
+  const prixSortie = parseFloat(document.getElementById(`close-prix-${idx}`).value);
+  if(!prixSortie){ showToast('Saisis le prix de sortie', 'err'); return; }
+
+  const pnl_eur = (prixSortie - pru) * nb;
+  const pnl_pct = (prixSortie - pru) / pru * 100;
+
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+      headers: {'Authorization': `Bearer ${ghToken}`}
+    });
+    const data = await res.json();
+    const content = JSON.parse(atob(data.content.replace(/\s/g,'')));
+
+    const positions = content.positions_ouvertes || [];
+    const ouvertes = positions.filter(p => p.status==='OUVERT');
+    const pos = ouvertes[idx];
+    if(!pos){ throw new Error('Position non trouvée'); }
+
+    pos.status        = 'CLOTURE';
+    pos.pnl_live_pct  = Math.round(pnl_pct*10)/10;
+    pos.pnl_live_eur  = Math.round(pnl_eur);
+    pos.prix_sortie   = prixSortie;
+    pos.heure_sortie  = new Date().toLocaleDateString('fr-FR');
+
+    // Historique
+    content.historique_trades = content.historique_trades || [];
+    content.historique_trades.push({
+      date: new Date().toLocaleString('fr-FR'),
+      label: pos.label,
+      sens: pos.sens,
+      mise: mise,
+      pnl_pct: Math.round(pnl_pct*10)/10,
+      pnl_eur: Math.round(pnl_eur),
+      status: pnl_eur <= -mise*0.95 ? 'KO' : 'CLOTURE',
+    });
+
+    // CTO update
+    const restantes = (content.positions_ouvertes||[]).filter(p => p.status==='OUVERT');
+    content.cto_recap.total_engage  = restantes.reduce((s,p)=>s+(p.mise_eur||0),0);
+    content.cto_recap.nb_positions  = restantes.length;
+    content.cto_recap.reserve_dispo = (content.cto_recap.reserve_dispo||0) + mise + pnl_eur;
+
+    await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${ghToken}`,
+        'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message: `UI: close ${label} ${pnl_pct>=0?'+':''}${pnl_pct.toFixed(1)}%`,
+        content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))),
+        sha: data.sha,
+      })
+    });
+
+    showToast(`Clôturé ${pnl_pct>=0?'+':''}${pnl_pct.toFixed(1)}% / ${pnl_eur>=0?'+':''}${Math.round(pnl_eur)}€`, pnl_eur>=0?'ok':'err');
+    loadPositions();
+  } catch(e) {
+    showToast('Erreur: ' + e.message, 'err');
+  }
+}
+
+// ── LOAD JOURNAL ─────────────────────────────────────────────────────────
+async function loadJournal(){
+  if(!ghToken){ showToast('Token requis', 'err'); return; }
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
+      headers: {'Authorization': `Bearer ${ghToken}`}
+    });
+    const data = await res.json();
+    const content = JSON.parse(atob(data.content.replace(/\s/g,'')));
+
+    const hist = content.historique_trades || [];
+    const ouvertes = (content.positions_ouvertes||[]).filter(p => p.status==='OUVERT');
+    const cto = content.cto_recap || {};
+
+    document.getElementById('j-reserve').textContent = (cto.reserve_dispo||0).toLocaleString('fr-FR') + '€';
+    document.getElementById('j-nbopen').textContent  = ouvertes.length;
+
+    const total = hist.reduce((s,h)=>s+(h.pnl_eur||0), 0);
+    const pnlEl = document.getElementById('j-pnl');
+    pnlEl.textContent = (total>=0?'+':'') + Math.round(total) + '€';
+    pnlEl.className = 'stat-val ' + (total>=0?'g':'r');
+
+    const wins = hist.filter(h=>h.pnl_eur>0).length;
+    const wr = hist.length > 0 ? Math.round(wins/hist.length*100) : 0;
+    document.getElementById('j-wr').textContent = wr + '% (' + wins + '/' + hist.length + ')';
+
+    const list = document.getElementById('journal-list');
+    if(hist.length === 0){
+      list.innerHTML = '<div class="subtitle" style="color:var(--ink4);font-style:italic">Aucun trade enregistré.</div>';
+      return;
+    }
+    list.innerHTML = hist.slice(-10).reverse().map(h=>{
+      const col = h.pnl_eur>=0 ? 'var(--bull)' : 'var(--bear)';
+      const emoji = h.status==='KO' ? '💀' : (h.pnl_eur>=0 ? '✅' : '🔴');
+      return `<div class="hist-card">
+        <div class="hist-head">
+          <div class="hist-title">${emoji} ${h.label}</div>
+          <div class="hist-pnl" style="color:${col}">${h.pnl_eur>=0?'+':''}${h.pnl_eur}€</div>
+        </div>
+        <div class="hist-meta">
+          ${h.date} · Mise ${h.mise}€ · ${h.pnl_pct>=0?'+':''}${h.pnl_pct}%
+        </div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    showToast('Erreur: ' + e.message, 'err');
+  }
+}
+
+// ── TOAST ────────────────────────────────────────────────────────────────
+function showToast(msg, type='ok'){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast on ' + type;
+  setTimeout(()=>{ t.classList.remove('on'); }, 2800);
+}
+</script>
+</body>
+</html>
