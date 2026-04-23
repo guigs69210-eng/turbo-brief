@@ -195,6 +195,18 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 
 .empty { text-align: center; padding: 32px 16px; color: var(--text-3); font-size: 13px; font-style: italic; }
 
+/* Live indices row */
+.indices-row { display: flex; gap: 6px; margin-bottom: 14px; align-items: center; flex-wrap: wrap; }
+.idx-tag { display: flex; align-items: center; gap: 6px; padding: 8px 11px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: all 0.15s; flex: 1; min-width: 0; }
+.idx-tag:active { transform: scale(0.96); background: var(--bg-hover); border-color: var(--accent); }
+.idx-tag.copied { background: var(--up-dim); border-color: var(--up); }
+.idx-lbl { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.03em; color: var(--text-3); text-transform: uppercase; }
+.idx-val { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; flex: 1; }
+.idx-copy { color: var(--text-4); flex-shrink: 0; }
+.idx-tag.copied .idx-copy { color: var(--up); }
+.idx-tag.copied .idx-lbl { color: var(--up); }
+.idx-refresh { font-family: var(--mono); font-size: 9px; color: var(--text-4); letter-spacing: 0.02em; white-space: nowrap; padding: 0 4px; }
+
 /* KO critical pulse */
 .ko-critical { animation: pulse 1.5s ease-in-out infinite; }
 @keyframes pulse {
@@ -303,6 +315,26 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
       <div class="mini-val" id="h-nbopen">—</div>
     </div>
   </div>
+</div>
+
+<!-- Live indices row -->
+<div class="indices-row">
+  <div class="idx-tag" onclick="copyIdx('NQ')">
+    <span class="idx-lbl">NQ</span>
+    <span class="idx-val" id="idx-nq">—</span>
+    <svg class="idx-copy" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+  </div>
+  <div class="idx-tag" onclick="copyIdx('SP500')">
+    <span class="idx-lbl">SP500</span>
+    <span class="idx-val" id="idx-sp500">—</span>
+    <svg class="idx-copy" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+  </div>
+  <div class="idx-tag" onclick="copyIdx('CAC40')">
+    <span class="idx-lbl">CAC40</span>
+    <span class="idx-val" id="idx-cac40">—</span>
+    <svg class="idx-copy" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+  </div>
+  <div class="idx-refresh" id="idx-refresh">—</div>
 </div>
 
 <div class="tabs">
@@ -936,6 +968,54 @@ function renderHero(){
 
   document.getElementById('h-cash').textContent = fmtEur(cto.reserve_dispo||0);
   document.getElementById('h-nbopen').textContent = ouvertes.length;
+
+  // Indices live
+  renderIndices(c.positions_ouvertes || [], cto.last_refresh);
+}
+
+function renderIndices(allPositions, lastRefresh){
+  // Récupère les sj_live de chaque sous-jacent (dernière position open ou close récente)
+  const latest = {};
+  allPositions.forEach(p => {
+    if(p.sj_live && p.sous_jacent){
+      const sj = p.sous_jacent.toUpperCase();
+      latest[sj] = p.sj_live;
+    }
+  });
+
+  const setIdx = (id, sj) => {
+    const el = document.getElementById(id);
+    const val = latest[sj];
+    el.textContent = val ? fmtNum(val) : '—';
+    el.parentElement.dataset.value = val || '';
+  };
+  setIdx('idx-nq',    'NQ');
+  setIdx('idx-sp500', 'SP500');
+  setIdx('idx-cac40', 'CAC40');
+
+  document.getElementById('idx-refresh').textContent = lastRefresh ? '↻ ' + lastRefresh.split(' ').slice(-1)[0] : '—';
+}
+
+function copyIdx(sj){
+  const idMap = {'NQ':'idx-nq','SP500':'idx-sp500','CAC40':'idx-cac40'};
+  const el = document.getElementById(idMap[sj]);
+  const val = el.textContent.replace(/\s/g,'');
+  if(!val || val === '—'){ showToast('Pas de cours dispo','err'); return; }
+
+  navigator.clipboard.writeText(val).then(() => {
+    const tag = el.parentElement;
+    tag.classList.add('copied');
+    showToast(`${sj} ${val} copié`, 'ok');
+    setTimeout(() => tag.classList.remove('copied'), 1200);
+
+    // Bonus : pré-remplir sjlive si on est sur Ouvrir
+    const openMode = document.getElementById('m-open');
+    if(openMode.classList.contains('on')){
+      const rawVal = val.replace(/\u202F|\u00A0/g,''); // remove narrow no-break spaces
+      document.getElementById('sjlive').value = parseFloat(rawVal);
+      calcPreview();
+    }
+  }).catch(e => showToast('Copie impossible','err'));
 }
 
 function renderPositions(){
