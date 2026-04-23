@@ -50,6 +50,9 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 .icon-btn { width: 36px; height: 36px; border-radius: 10px; background: var(--bg-card); border: 1px solid var(--border); display: grid; place-items: center; cursor: pointer; color: var(--text-2); transition: all 0.2s; }
 .icon-btn:active { transform: scale(0.94); }
 .icon-btn.spin svg { animation: spin 1s linear infinite; }
+.icon-btn.scan-btn { background: linear-gradient(135deg, var(--accent) 0%, #5B82E8 100%); color: white; border-color: var(--accent); box-shadow: 0 2px 10px rgba(143, 172, 255, 0.3); }
+.icon-btn.scan-btn:hover { box-shadow: 0 4px 14px rgba(143, 172, 255, 0.45); }
+.icon-btn.scan-btn.copied { background: linear-gradient(135deg, var(--up) 0%, #1FB88E 100%); border-color: var(--up); box-shadow: 0 2px 10px rgba(46, 227, 176, 0.4); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .hero { background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-raised) 100%); border: 1px solid var(--border); border-radius: 20px; padding: 18px; margin-bottom: 14px; position: relative; overflow: hidden; }
@@ -270,6 +273,11 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
     <div class="brand-sub">trade desk</div>
   </div>
   <div class="header-actions">
+    <button id="scan-btn" class="icon-btn scan-btn" onclick="copyScanData()" title="Claude Scan">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+      </svg>
+    </button>
     <button id="sync-btn" class="icon-btn" onclick="syncAll()" title="Sync">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
@@ -1339,6 +1347,82 @@ function showToast(msg, type='ok'){
   t.textContent = msg;
   t.className = 'toast on '+type;
   setTimeout(() => t.classList.remove('on'), 2800);
+}
+
+// ── Claude Scan : copie tout ce qu'il faut pour l'analyse ──────────────
+function copyScanData(){
+  if(!cachedData){
+    showToast('Sync d\'abord', 'err');
+    return;
+  }
+
+  const c = cachedData.content;
+  const cto = c.cto_recap || {};
+  const ouvertes = (c.positions_ouvertes || []).filter(p => p.status === 'OUVERT');
+
+  // Indices live
+  const idx = cto.indices_live || {};
+  const idxLines = [];
+  if(idx.NQ)    idxLines.push(`NQ ${idx.NQ.toLocaleString('fr-FR')}`);
+  if(idx.SP500) idxLines.push(`SP500 ${idx.SP500.toLocaleString('fr-FR')}`);
+  if(idx.CAC40) idxLines.push(`CAC40 ${idx.CAC40.toLocaleString('fr-FR')}`);
+
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('fr-FR') + ' ' + now.toLocaleTimeString('fr-FR', {hour:'2-digit',minute:'2-digit'});
+
+  // Build le texte
+  let txt = `scan\n\n`;
+  txt += `=== CONTEXTE ===\n`;
+  txt += `Date : ${dateStr}\n`;
+  txt += `Cash dispo : ${fmtEur(cto.reserve_dispo||0)}\n`;
+  txt += `P&L latent positions : ${fmtSign(cto.pnl_latent_eur||0)}\n`;
+
+  if(idxLines.length){
+    txt += `\n=== INDICES LIVE (yfinance, refresh ${cto.last_refresh || '—'}) ===\n`;
+    txt += idxLines.join('\n') + '\n';
+    if(cto.fx_eurusd) txt += `EUR/USD ${cto.fx_eurusd}\n`;
+  }
+
+  if(ouvertes.length){
+    txt += `\n=== POSITIONS OUVERTES (${ouvertes.length}) ===\n`;
+    ouvertes.forEach(p => {
+      txt += `\n• ${p.sens} ${p.sous_jacent} Strike ${p.strike} KO ${p.ko}\n`;
+      txt += `  ${p.nb_titres}T × PRU ${p.prix_achat}€ = mise ${fmtEur(p.mise_eur||0)}\n`;
+      txt += `  Levier ×${p.levier||'?'} · Parité ${p.parite||'?'} · ${p.devise||'EUR'}\n`;
+      txt += `  P&L live : ${fmtSign(p.pnl_live_eur||0)} (${(p.pnl_live_pct||0)>=0?'+':''}${(p.pnl_live_pct||0).toFixed(1)}%)\n`;
+      txt += `  KO dist : ${(p.ko_dist_live||0).toFixed(1)}%${(p.ko_dist_live||99)<3?' ⚠':''}\n`;
+      if(p.stop_turbo || p.tp1_turbo || p.tp2_turbo){
+        txt += `  Stop ${p.stop_turbo||'—'}€ · TP1 ${p.tp1_turbo||'—'}€ · TP2 ${p.tp2_turbo||'—'}€\n`;
+      }
+    });
+  } else {
+    txt += `\n=== POSITIONS OUVERTES ===\nFlat (aucune position)\n`;
+  }
+
+  txt += `\n=== DEMANDE ===\n`;
+  txt += `Fais-moi une analyse de qualité institutionnelle pour trader des turbos sur NQ / SP500 / CAC40 :\n`;
+  txt += `1. Régime de marché et 3 catalyseurs clés du jour (news, macro, techniques)\n`;
+  txt += `2. Analyse technique NQ / SP500 / CAC40 (niveaux pivot, supports, résistances)\n`;
+  txt += `3. Reco sur mes positions ouvertes : garder / alléger / sortir / ajuster stop\n`;
+  txt += `4. 1 à 5 recos de nouvelles opportunités avec :\n`;
+  txt += `   - Style (daily / momentum / swing)\n`;
+  txt += `   - Niveaux précis : entrée, strike, KO, levier cible\n`;
+  txt += `   - Mise suggérée (adaptée à mon cash dispo et au régime de marché)\n`;
+  txt += `   - TP1, TP2 (en niveau indice + prix turbo attendu)\n`;
+  txt += `   - Stop et invalidation de la thèse\n`;
+  txt += `   - Conviction 1/10 + rationale\n`;
+  txt += `5. Risk alerts majeurs du jour\n`;
+  txt += `\nSois direct, concret, priorise par conviction. Pas de blabla.\n`;
+
+  // Copie
+  navigator.clipboard.writeText(txt).then(() => {
+    const btn = document.getElementById('scan-btn');
+    btn.classList.add('copied');
+    showToast(`Copié — colle dans Claude.ai`, 'ok');
+    setTimeout(() => btn.classList.remove('copied'), 2000);
+  }).catch(e => {
+    showToast('Copie impossible : ' + e.message, 'err');
+  });
 }
 
 // ── Modal de confirmation ──────────────────────────────────────────────
