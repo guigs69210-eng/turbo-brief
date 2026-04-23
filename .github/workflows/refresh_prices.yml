@@ -1,0 +1,53 @@
+name: refresh-prices
+
+on:
+  schedule:
+    # Toutes les 15 min, 8h-19h Paris, lun-ven
+    # Paris = UTC+1 hiver / UTC+2 été
+    # On couvre 6h-18h UTC pour être safe sur les deux régimes
+    - cron: '*/15 6-18 * * 1-5'
+  workflow_dispatch:  # déclenchement manuel possible
+
+concurrency:
+  group: refresh-prices
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install yfinance
+        run: pip install --quiet yfinance
+
+      - name: Refresh prices
+        id: refresh
+        run: |
+          python refresh_prices.py
+          echo "status=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Commit & push if changed
+        if: steps.refresh.outputs.status == '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet report_data.json; then
+            echo "No changes to commit"
+          else
+            git add report_data.json
+            git commit -m "🔄 refresh prices live"
+            git push
+          fi
