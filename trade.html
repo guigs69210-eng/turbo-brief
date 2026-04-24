@@ -696,25 +696,33 @@ function setSens(s){
 
 function calcPreview(){
   const strike=gv('strike'), ko=gv('ko'), parite=gv('parite')||1;
-  const nb=gv('nb'), pru=gv('pru'), sjlive=gv('sjlive')||strike;
+  const nb=gv('nb'), pru=gv('pru');
+  const sjliveRaw = gv('sjlive');
+  const sjlive = sjliveRaw > 0 ? sjliveRaw : 0;  // pas de fallback sur strike
   const sj = (getV('sj')||'').toUpperCase();
   const isUSD = ['NQ','SPX','SP500','DOW','ES','YM'].some(k => sj.includes(k));
   const fx = isUSD ? FX : 1;
 
-  // Prix turbo live, levier & KO distance
-  const vi = sens==='CALL' ? Math.max((sjlive-strike)/parite/fx,0) : Math.max((strike-sjlive)/parite/fx,0);
-  const lev = vi>0 ? Math.round(sjlive/(vi*parite*fx)*10)/10 : 0;
+  // Prix turbo live (VI), levier & KO distance
+  const vi = (sjlive>0 && strike>0) ? (
+    sens==='CALL' ? Math.max((sjlive-strike)/parite/fx,0) : Math.max((strike-sjlive)/parite/fx,0)
+  ) : 0;
+  const lev = (vi>0 && sjlive>0) ? Math.round(sjlive/(vi*parite*fx)*10)/10 : 0;
   const mise = nb*pru;
-  const ko_dist = sens==='CALL' ? (sjlive-ko)/sjlive*100 : (ko-sjlive)/sjlive*100;
+  const ko_dist_raw = (sjlive>0 && ko>0) ? (sens==='CALL' ? (sjlive-ko)/sjlive*100 : (ko-sjlive)/sjlive*100) : 0;
+  const ko_dist = Math.abs(ko_dist_raw);
 
-  // Preview basique
-  document.getElementById('p-mise').textContent = mise ? fmtEur(mise) : '—';
-  document.getElementById('p-lev').textContent = lev ? '×'+lev : '—';
-  document.getElementById('p-vi').textContent = vi ? vi.toFixed(3)+' €' : '—';
+  // Preview basique — afficher seulement si valeurs valides
+  document.getElementById('p-mise').textContent = mise>0 ? fmtEur(mise) : '—';
+  document.getElementById('p-lev').textContent = lev>0 ? '×'+lev.toFixed(1) : '—';
+  document.getElementById('p-vi').textContent = vi>0 ? vi.toFixed(3)+' €' : '—';
   const koEl = document.getElementById('p-ko');
-  if(ko_dist){ koEl.textContent = ko_dist.toFixed(1)+'%';
+  if(sjlive>0 && ko>0){
+    koEl.textContent = ko_dist.toFixed(1)+'%';
     koEl.className = 'prev-val '+(ko_dist<3?'down':ko_dist<6?'amb':'up');
-  } else { koEl.textContent = '—'; koEl.className='prev-val'; }
+  } else {
+    koEl.textContent = '—'; koEl.className='prev-val';
+  }
 
   // Calcul TP1 / TP2 / STOP à partir des RR cibles
   if(!mise || !pru || !strike || !sjlive){
@@ -1015,7 +1023,12 @@ function renderHero(){
 // Calcule VI, P&L, KO dist live à partir des indices_live et du FX
 function computePositionLive(p, idxLive, fx){
   const sens = (p.sens || 'CALL').toUpperCase();
-  const sj = (p.sous_jacent || '').toUpperCase();
+  let sj = (p.sous_jacent || '').toUpperCase().replace(/\s+/g,'');
+  // Normalisation : accepter "CAC 40", "CAC40", "FR40" etc.
+  if(sj.includes('CAC') || sj.includes('FR40')) sj = 'CAC40';
+  if(sj.includes('NQ') || sj.includes('NASDAQ')) sj = 'NQ';
+  if(sj.includes('SP') || sj.includes('S&P') || sj.includes('SPX')) sj = 'SP500';
+
   const sjLive = idxLive[sj];
   if(!sjLive) return null;
 
@@ -1024,7 +1037,7 @@ function computePositionLive(p, idxLive, fx){
   const parite = parseFloat(p.parite) || 1;
   const nb = parseFloat(p.nb_titres || p.titres || p.quantite || p.nb) || 0;
   const pru = parseFloat(p.prix_achat || p.pru || p.prix_entree) || 0;
-  const isUSD = (p.devise === 'USD') || ['NQ','SPX','SP500','DOW','ES','YM'].some(k => sj.includes(k));
+  const isUSD = (p.devise === 'USD') || sj === 'NQ' || sj === 'SP500';
   const effFx = isUSD ? fx : 1;
 
   const vi = sens === 'CALL'
@@ -1107,7 +1120,8 @@ function renderPositions(){
     const live = computePositionLive(p, idxLive, fx);
     const pnlEur = live ? live.pnl_eur : (p.pnl_live_eur || 0);
     const pnlPct = live ? live.pnl_pct : (p.pnl_live_pct || 0);
-    const koDist = live ? live.ko_dist : (p.ko_dist_live || 99);
+    const koDistRaw = live ? live.ko_dist : (p.ko_dist_live || 99);
+    const koDist = Math.abs(koDistRaw);
     const viLive = live ? live.vi : null;
 
     const pnlCls = pnlEur >= 0 ? 'up' : 'dn';
