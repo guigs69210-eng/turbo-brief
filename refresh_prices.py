@@ -9,7 +9,15 @@ refresh_prices.py — met à jour les prix live dans report_data.json via yfinan
 import json
 import sys
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+try:
+    from zoneinfo import ZoneInfo
+    PARIS_TZ = ZoneInfo("Europe/Paris")
+except ImportError:
+    # Fallback Python < 3.9 : offset fixe UTC+2 (été) / UTC+1 (hiver)
+    # Approximation simple : on utilise UTC+2 qui couvre mars-octobre
+    PARIS_TZ = timezone(timedelta(hours=2))
 
 try:
     import yfinance as yf
@@ -169,7 +177,7 @@ def main():
         cto["pnl_latent_eur"] = 0
         cto["pnl_latent_pct"] = 0
 
-    cto["last_refresh"] = datetime.now().strftime("%d/%m/%Y %H:%M")
+    cto["last_refresh"] = datetime.now(PARIS_TZ).strftime("%d/%m/%Y %H:%M")
     data["cto_recap"] = cto
 
     with open(REPORT_FILE, "w", encoding="utf-8") as f:
