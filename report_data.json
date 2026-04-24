@@ -87,8 +87,8 @@
       "tp2_turbo": 13.425
     },
     {
-      "label": "CALL CAC40 8460 PUT Turbo BEST (SG)",
-      "sens": "CALL",
+      "label": "PUT CAC40 8460 PUT Turbo BEST (SG)",
+      "sens": "PUT",
       "sous_jacent": "CAC40 8460 PUT",
       "isin": "SG CALL CAC40 8460 PUT 8460",
       "nb_titres": 230,
