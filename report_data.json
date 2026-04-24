@@ -1,8 +1,8 @@
 {
   "date": "13 avril 2026",
   "heure": "09h50",
-  "signal": "NEUTRE — CALL/PUT NQ hedge",
-  "regime": "CEASEFIRE FRAGILE — BLOCKADE HORMUZ — EARNINGS Q1",
+  "signal": "NEUTRE â CALL/PUT NQ hedge",
+  "regime": "CEASEFIRE FRAGILE â BLOCKADE HORMUZ â EARNINGS Q1",
   "confiance": 45,
   "nasdaq_current": 26778,
   "nasdaq_change_pct": 0.8,
@@ -18,10 +18,10 @@
     "change_pct_jour": 7.3
   },
   "cto_recap": {
-    "total_engage": 1944,
+    "total_engage": 1420,
     "valeur_marche": 2262,
     "budget_total": 8439,
-    "reserve_dispo": 6202,
+    "reserve_dispo": 6857.2,
     "nb_positions": 2,
     "pnl_live_total": 318,
     "indices_live": {
@@ -41,10 +41,10 @@
       "sens": "CALL",
       "sous_jacent": "NQ Futures",
       "isin": "SG CALL NQ 25262",
-      "nb_titres": 90,
+      "nb_titres": 45,
       "prix_achat": 11.66,
-      "strike": 25262.0,
-      "ko": 25273.0,
+      "strike": 25262,
+      "ko": 25273,
       "parite": 100,
       "devise": "USD",
       "levier": 17.7,
@@ -52,7 +52,7 @@
       "sj_entree": 25262,
       "sj_live": 26778,
       "heure_achat": "17/04/2026",
-      "mise_eur": 1049,
+      "mise_eur": 525,
       "pnl_live_pct": 12.9,
       "pnl_live_eur": 135,
       "ko_dist_live": 5.6,
@@ -68,8 +68,8 @@
       "isin": "SG CALL NQ 25536",
       "nb_titres": 100,
       "prix_achat": 8.95,
-      "strike": 25536.0,
-      "ko": 25548.0,
+      "strike": 25536,
+      "ko": 25548,
       "parite": 100,
       "devise": "USD",
       "levier": 21.6,
@@ -90,7 +90,7 @@
   "historique_trades": [
     {
       "date": "24/03/2026",
-      "label": "CALL NQ ×22 Strike 23500",
+      "label": "CALL NQ Ã22 Strike 23500",
       "sens": "CALL",
       "mise": 1302,
       "pnl_pct": -100,
@@ -99,7 +99,7 @@
     },
     {
       "date": "24/03/2026",
-      "label": "CALL Thales ×13 Strike 236",
+      "label": "CALL Thales Ã13 Strike 236",
       "sens": "CALL",
       "mise": 1067,
       "pnl_pct": -100,
@@ -108,7 +108,7 @@
     },
     {
       "date": "24/03/2026",
-      "label": "PUT NQ ×26",
+      "label": "PUT NQ Ã26",
       "sens": "PUT",
       "mise": 845,
       "pnl_pct": -49.8,
@@ -116,8 +116,8 @@
       "status": "CLOTURE"
     },
     {
-      "date": "13/04→14/04/2026",
-      "label": "CALL NQ ×25 Strike 23942",
+      "date": "13/04â14/04/2026",
+      "label": "CALL NQ Ã25 Strike 23942",
       "sens": "CALL",
       "nb_titres": 70,
       "pru": 8.12,
@@ -128,8 +128,8 @@
       "status": "CLOTURE"
     },
     {
-      "date": "13/04→14/04/2026",
-      "label": "PUT NQ ×21 Strike 26155",
+      "date": "13/04â14/04/2026",
+      "label": "PUT NQ Ã21 Strike 26155",
       "sens": "PUT",
       "nb_titres": 95,
       "pru": 10.81,
@@ -140,7 +140,7 @@
       "status": "CLOTURE"
     },
     {
-      "date": "09/04→10/04/2026",
+      "date": "09/04â10/04/2026",
       "label": "CALL NQ Turbo 23991 (partiel)",
       "sens": "CALL",
       "nb_titres": 60,
@@ -153,7 +153,7 @@
       "turbo": "NASDQ23991TCIOPENS"
     },
     {
-      "date": "09/04→14/04/2026",
+      "date": "09/04â14/04/2026",
       "label": "CALL NQ Turbo 23991 (solde)",
       "sens": "CALL",
       "nb_titres": 70,
@@ -166,7 +166,7 @@
       "turbo": "NASDQ23991TCIOPENS"
     },
     {
-      "date": "13/04→14/04/2026",
+      "date": "13/04â14/04/2026",
       "label": "CALL NQ Turbo 26154",
       "sens": "CALL",
       "nb_titres": 95,
@@ -179,7 +179,7 @@
       "turbo": "NASDQ26154TCIOPENS"
     },
     {
-      "date": "15/04→16/04/2026",
+      "date": "15/04â16/04/2026",
       "label": "CALL NQ Turbo 24488",
       "sens": "CALL",
       "nb_titres": 85,
@@ -190,6 +190,16 @@
       "pnl_eur": 309,
       "status": "CLOTURE",
       "turbo": "NASDQ24488TCIOPENS"
+    },
+    {
+      "date": "24/04/2026 08:35:02",
+      "label": "CALL NQ Turbo 25262 (NASDQ25268TCIOPENS) (partiel 45/90)",
+      "sens": "CALL",
+      "mise": 525,
+      "pnl_pct": 24.9,
+      "pnl_eur": 131,
+      "status": "CLOTURE",
+      "partiel": true
     }
   ],
   "pea_positions": [
@@ -198,21 +208,21 @@
       "valeur_pea": 10000,
       "signal_jour": "Haussier",
       "signal_color": "GREEN",
-      "reco_pea": "Conserver — NQ en rebond"
+      "reco_pea": "Conserver â NQ en rebond"
     },
     {
       "nom": "LVMH",
       "valeur_pea": 6000,
       "signal_jour": "Neutre",
       "signal_color": "YELLOW",
-      "reco_pea": "Hold — luxe sous pression"
+      "reco_pea": "Hold â luxe sous pression"
     },
     {
       "nom": "Air Liquide",
       "valeur_pea": 4000,
       "signal_jour": "Positif",
       "signal_color": "GREEN",
-      "reco_pea": "Défensif — conserver"
+      "reco_pea": "DÃ©fensif â conserver"
     },
     {
       "nom": "BNP Paribas",
@@ -226,7 +236,7 @@
       "valeur_pea": 1000,
       "signal_jour": "Haussier",
       "signal_color": "GREEN",
-      "reco_pea": "IA/Énergie — fort"
+      "reco_pea": "IA/Ãnergie â fort"
     },
     {
       "nom": "Saint-Gobain + Stellantis",
@@ -236,7 +246,7 @@
       "reco_pea": "Tactique"
     }
   ],
-  "pea_note": "PEA 26 000€ — NE PAS TOUCHER.",
+  "pea_note": "PEA 26 000â¬ â NE PAS TOUCHER.",
   "fed": {
     "hold_prob": 100,
     "cut25_prob": 0,
@@ -252,26 +262,26 @@
     {
       "label": "Blockade Hormuz + escalade",
       "prob": 40,
-      "range": "24 000–24 500",
-      "action": "Tenir PUT NQ — TP 24 000"
+      "range": "24 000â24 500",
+      "action": "Tenir PUT NQ â TP 24 000"
     },
     {
       "label": "Talks reprennent sous 48h",
       "prob": 30,
-      "range": "25 200–26 000",
-      "action": "Tenir CALL — TP 25 400"
+      "range": "25 200â26 000",
+      "action": "Tenir CALL â TP 25 400"
     },
     {
       "label": "Statu quo range",
       "prob": 20,
-      "range": "24 600–25 200",
-      "action": "Attendre — les deux positions actives"
+      "range": "24 600â25 200",
+      "action": "Attendre â les deux positions actives"
     },
     {
       "label": "Ceasefire + rally",
       "prob": 10,
       "range": "26 000+",
-      "action": "Sortir PUT — renforcer CALL"
+      "action": "Sortir PUT â renforcer CALL"
     }
   ],
   "calendrier_jour": [
@@ -286,14 +296,14 @@
       "heure_paris": "20h30",
       "event": "CPI US Mars",
       "consensus": "+3.2% YoY",
-      "impact_nq": "Si > 3.5% → Fed hawkish → NQ -2%",
+      "impact_nq": "Si > 3.5% â Fed hawkish â NQ -2%",
       "importance": "HAUTE"
     },
     {
       "heure_paris": "Continu",
-      "event": "Blockade US Hormuz — J1",
-      "consensus": "Iran dénie",
-      "impact_nq": "±2% NQ par tweet Trump",
+      "event": "Blockade US Hormuz â J1",
+      "consensus": "Iran dÃ©nie",
+      "impact_nq": "Â±2% NQ par tweet Trump",
       "importance": "CRITIQUE"
     }
   ],
