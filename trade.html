@@ -113,6 +113,47 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 .prev-val.up { color: var(--up); } .prev-val.down { color: var(--down); } .prev-val.amb { color: var(--amber); }
 
 .submit { width: 100%; padding: 16px 0; font-family: var(--sans); font-size: 14px; font-weight: 600; background: linear-gradient(135deg, var(--accent) 0%, #5B82E8 100%); color: white; border: none; border-radius: 12px; cursor: pointer; margin-top: 4px; box-shadow: 0 4px 16px rgba(123, 158, 255, 0.25); transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+/* Import reco */
+.import-card { background: linear-gradient(135deg, rgba(143,172,255,0.08) 0%, rgba(123,158,255,0.03) 100%); border: 1px solid rgba(143,172,255,0.2); border-radius: 12px; padding: 12px; margin-bottom: 14px; }
+.import-title { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.reco-input { width: 100%; min-height: 56px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; color: var(--text); font-family: var(--mono); font-size: 11px; line-height: 1.4; resize: vertical; outline: none; transition: border-color 0.15s; }
+.reco-input:focus { border-color: var(--accent); }
+.reco-input::placeholder { color: var(--text-4); font-style: italic; }
+.import-btn { width: 100%; margin-top: 8px; padding: 10px; background: rgba(143,172,255,0.15); border: 1px solid rgba(143,172,255,0.3); border-radius: 8px; color: var(--accent); font-family: var(--sans); font-size: 12px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.15s; }
+.import-btn:hover, .import-btn:active { background: rgba(143,172,255,0.25); }
+
+/* Conviction slider */
+.conv-row { display: flex; align-items: center; gap: 14px; padding: 6px 4px; }
+#conv-slider { flex: 1; -webkit-appearance: none; appearance: none; height: 6px; background: var(--bg-card); border-radius: 3px; outline: none; border: 1px solid var(--border); }
+#conv-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); cursor: pointer; box-shadow: 0 2px 6px rgba(123,158,255,0.4); border: 2px solid var(--bg); }
+#conv-slider::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--accent); cursor: pointer; border: 2px solid var(--bg); }
+.conv-display { font-family: var(--mono); min-width: 56px; text-align: right; }
+.conv-display #conv-val { font-size: 24px; font-weight: 700; color: var(--accent); }
+.conv-max { font-size: 12px; color: var(--text-4); margin-left: 2px; }
+.conv-label { font-family: var(--mono); font-size: 10px; color: var(--text-3); text-align: center; margin-bottom: 6px; padding: 0 4px; }
+.conv-label.low { color: var(--down); }
+.conv-label.mid { color: var(--amber); }
+.conv-label.high { color: var(--up); }
+
+/* Checklist pre-trade */
+.checklist-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin: 10px 0 12px; }
+.checklist-title { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.checklist-score { margin-left: auto; font-size: 11px; padding: 2px 8px; border-radius: 8px; font-weight: 700; letter-spacing: 0.02em; }
+.checklist-score.ok { background: rgba(46,227,176,0.15); color: var(--up); }
+.checklist-score.warn { background: rgba(255,197,100,0.15); color: var(--amber); }
+.checklist-score.err { background: rgba(255,117,117,0.15); color: var(--down); }
+.checklist-items { display: flex; flex-direction: column; gap: 6px; }
+.ck-item { display: flex; align-items: center; gap: 8px; font-size: 12px; font-family: var(--sans); color: var(--text-2); line-height: 1.3; padding: 3px 0; }
+.ck-icon { width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; font-size: 11px; font-weight: 700; }
+.ck-icon.ok { background: rgba(46,227,176,0.2); color: var(--up); }
+.ck-icon.warn { background: rgba(255,197,100,0.2); color: var(--amber); }
+.ck-icon.err { background: rgba(255,117,117,0.2); color: var(--down); }
+.ck-detail { color: var(--text-4); font-size: 11px; margin-left: auto; font-family: var(--mono); }
+
+/* Submit button states */
+.submit.warn { background: linear-gradient(135deg, var(--amber) 0%, #E8A13A 100%); box-shadow: 0 4px 16px rgba(255,197,100,0.25); }
+.submit.err { background: linear-gradient(135deg, var(--down) 0%, #E05555 100%); box-shadow: 0 4px 16px rgba(255,117,117,0.25); }
 .submit:active { transform: scale(0.98); }
 .submit:disabled { opacity: 0.5; cursor: not-allowed; }
 
@@ -371,6 +412,20 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 
 <!-- OPEN -->
 <div id="m-open" class="mode on">
+  <!-- IMPORT RECO CLAUDE -->
+  <div class="import-card">
+    <div class="import-title">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Importer reco Claude
+    </div>
+    <textarea id="reco-input" class="reco-input" placeholder="Colle la ligne reco ici...
+Ex: CALL SP500 · Entrée 7151 · Strike 6700 · KO 6700 · TP1 7235 · TP2 7290 · SL 7075 · 1200€ · 8/10"></textarea>
+    <button class="import-btn" onclick="parseReco()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      Analyser & remplir
+    </button>
+  </div>
+
   <div class="sec-header"><div class="sec-title">Direction</div></div>
   <div class="dir-row">
     <button id="sens-call" class="dir-btn call on" onclick="setSens('CALL')">
@@ -479,9 +534,28 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
     </div>
   </div>
 
-  <button class="submit" onclick="saveTrade()">
+  <div class="sec-header"><div class="sec-title">Conviction</div></div>
+  <div class="conv-row">
+    <input id="conv-slider" type="range" min="1" max="10" value="7" oninput="updateConv()">
+    <div class="conv-display">
+      <span id="conv-val">7</span><span class="conv-max">/10</span>
+    </div>
+  </div>
+  <div id="conv-label" class="conv-label">Conviction moyenne</div>
+
+  <!-- PRE-TRADE CHECKLIST -->
+  <div class="checklist-card" id="checklist-card">
+    <div class="checklist-title">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      Checklist pre-trade
+      <span class="checklist-score" id="ck-score">—</span>
+    </div>
+    <div class="checklist-items" id="checklist-items"></div>
+  </div>
+
+  <button id="submit-btn" class="submit" onclick="saveTrade()">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-    Enregistrer la position
+    <span id="submit-label">Enregistrer la position</span>
   </button>
 </div>
 
@@ -644,6 +718,7 @@ let cachedData = null;
   });
   if(!ghToken) document.getElementById('token-setup').style.display = 'block';
   calcPreview();
+  updateConv();
   if(ghToken) setTimeout(syncAll, 400);
 })();
 
@@ -692,6 +767,114 @@ function setSens(s){
   document.getElementById('sens-call').classList.toggle('on', s==='CALL');
   document.getElementById('sens-put').classList.toggle('on', s==='PUT');
   calcPreview();
+}
+
+// Conviction slider (1-10)
+function updateConv(){
+  const v = parseInt(document.getElementById('conv-slider').value);
+  document.getElementById('conv-val').textContent = v;
+  const lbl = document.getElementById('conv-label');
+  if(v <= 5){ lbl.textContent = 'Conviction faible — mise réduite conseillée'; lbl.className = 'conv-label low'; }
+  else if(v <= 7){ lbl.textContent = 'Conviction moyenne'; lbl.className = 'conv-label mid'; }
+  else if(v <= 8){ lbl.textContent = 'Conviction forte'; lbl.className = 'conv-label high'; }
+  else { lbl.textContent = 'Conviction maximale — big bet OK'; lbl.className = 'conv-label high'; }
+  // Recalcule la checklist car seuil mise dépend de la conviction
+  calcPreview();
+}
+
+// Parse une ligne de reco Claude et remplit automatiquement le formulaire
+// Format attendu (flexible, ordre peu importe) :
+// CALL SP500 · Entrée 7151 · Strike 6700 · KO 6700 · TP1 7235 · TP2 7290 · SL 7075 · 1200€ · 8/10
+function parseReco(){
+  const txt = (document.getElementById('reco-input').value || '').trim();
+  if(!txt){ showToast('Colle une ligne reco d\'abord','err'); return; }
+
+  try {
+    // Normalise les séparateurs
+    const s = txt.replace(/[·•|]/g, '·').replace(/\s+/g, ' ');
+    const U = s.toUpperCase();
+
+    // 1. Sens CALL/PUT
+    let detectedSens = null;
+    if(/\bCALL\b/.test(U)) detectedSens = 'CALL';
+    else if(/\bPUT\b/.test(U)) detectedSens = 'PUT';
+
+    // 2. Sous-jacent
+    let sj = null;
+    if(/\b(NQ|NASDAQ)\b/.test(U)) sj = 'NQ';
+    else if(/\b(SP500|SPX|S&P500|S&P 500|SP ?500)\b/.test(U)) sj = 'SP500';
+    else if(/\b(CAC40|CAC ?40|FR40)\b/.test(U)) sj = 'CAC40';
+
+    // 3. Nombres nommés (regex précises : chiffres + éventuellement 1 espace de milliers)
+    const grab = (re) => {
+      const m = s.match(re);
+      if(!m) return null;
+      return parseFloat(m[1].replace(/\s/g,'').replace(',','.'));
+    };
+    // Pattern : soit "X XXX" (groupes de 3 avec espace) soit "XXXX" avec décimales
+    const NUM = '(\\d{1,3}(?:\\s\\d{3})+|\\d+(?:[.,]\\d+)?)';
+    const strike = grab(new RegExp('strike\\s*[:=]?\\s*' + NUM, 'i'));
+    const ko = grab(new RegExp('ko\\s*[:=]?\\s*' + NUM, 'i')) || grab(new RegExp('barri[èe]re\\s*[:=]?\\s*' + NUM, 'i'));
+    const entree = grab(new RegExp('entr[ée]e?\\s*[:=]?\\s*' + NUM, 'i'));
+    const tp1 = grab(new RegExp('tp1\\s*[:=]?\\s*' + NUM, 'i'));
+    const tp2 = grab(new RegExp('tp2\\s*[:=]?\\s*' + NUM, 'i'));
+    const sl = grab(new RegExp('sl\\s*[:=]?\\s*' + NUM, 'i')) || grab(new RegExp('stop\\s*[:=]?\\s*' + NUM, 'i'));
+    const mise = grab(new RegExp(NUM + '\\s*€', 'i')) || grab(new RegExp('mise\\s*[:=]?\\s*' + NUM, 'i'));
+    const convM = s.match(/(\d+(?:\.\d+)?)\s*\/\s*10/);
+    const conviction = convM ? parseFloat(convM[1]) : null;
+
+    // Résumé des champs détectés
+    const found = [];
+    const missing = [];
+    if(detectedSens){ found.push('Sens'); setSens(detectedSens); } else missing.push('Sens');
+    if(sj){ found.push('Sous-jacent'); sv('sj', sj); } else missing.push('Sous-jacent');
+    if(strike){ found.push('Strike'); sv('strike', strike); } else missing.push('Strike');
+    if(ko){ found.push('KO'); sv('ko', ko); } else missing.push('KO');
+    if(entree){ found.push('Entrée'); sv('sjlive', entree); }
+
+    // Pré-remplit parité selon SJ (défaut courant chez SG/BNP sur indices)
+    const pariteSel = document.getElementById('parite');
+    if(sj === 'NQ' || sj === 'SP500' || sj === 'CAC40') pariteSel.value = '100';
+
+    // Calcul VI théorique pour estimer un nb_titres cible
+    const fxVal = (cachedData?.content?.cto_recap?.fx_eurusd) || 1.17;
+    const parite = parseFloat(pariteSel.value) || 1;
+    const isUSD = (sj === 'NQ' || sj === 'SP500');
+    const fx = isUSD ? fxVal : 1;
+    let prixEstime = 0;
+    if(detectedSens && entree && strike){
+      const vi = detectedSens === 'CALL' ? Math.max((entree-strike)/parite/fx,0) : Math.max((strike-entree)/parite/fx,0);
+      prixEstime = vi * (detectedSens === 'PUT' ? 1.25 : 1.05); // prime estimée
+    }
+
+    // Mise → suggérer un nb_titres
+    if(mise > 0 && prixEstime > 0){
+      const nbSugg = Math.floor(mise / prixEstime);
+      sv('nb', nbSugg);
+      sv('pru', prixEstime.toFixed(2));
+      found.push(`Mise ${mise}€ → ~${nbSugg}T @ ${prixEstime.toFixed(2)}€`);
+    } else if(mise > 0){
+      found.push(`Mise ${mise}€ (indicative)`);
+    }
+
+    // Conviction
+    if(conviction){
+      const slider = document.getElementById('conv-slider');
+      slider.value = conviction;
+      updateConv();
+      found.push(`Conviction ${conviction}/10`);
+    }
+
+    calcPreview();
+
+    // Feedback user
+    let msg = `✓ Rempli: ${found.length} champs`;
+    if(missing.length) msg += ` · manquant: ${missing.join(', ')}`;
+    showToast(msg, found.length > 2 ? 'ok' : 'err');
+
+  } catch(e){
+    showToast('Erreur parsing: '+e.message, 'err');
+  }
 }
 
 function calcPreview(){
@@ -809,6 +992,131 @@ function calcPreview(){
   } else {
     stopRRel.textContent = '−'+stoppct+'%';
     stopRRel.title = '';
+  }
+
+  // Checklist pre-trade
+  updateChecklist({ ko_dist, rr1, mise, lev, sens });
+}
+
+// ──────────────────────────────────────────────────────────
+// PRE-TRADE CHECKLIST
+// Évalue 5 critères en live et adapte le bouton Enregistrer
+// ──────────────────────────────────────────────────────────
+function updateChecklist(ctx){
+  const host = document.getElementById('checklist-items');
+  const scoreEl = document.getElementById('ck-score');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitLbl = document.getElementById('submit-label');
+  if(!host) return;
+
+  const conviction = parseInt(document.getElementById('conv-slider')?.value) || 7;
+  const cash = (cachedData?.content?.cto_recap?.reserve_dispo) || 0;
+
+  // Seuil mise selon conviction
+  let miseMaxPct;
+  if(conviction <= 5) miseMaxPct = 8;
+  else if(conviction <= 7) miseMaxPct = 15;
+  else if(conviction <= 8) miseMaxPct = 20;
+  else miseMaxPct = 28;
+
+  const misePct = cash > 0 ? (ctx.mise / cash * 100) : 0;
+
+  // Concentration : nb positions même sens
+  const ouv = (cachedData?.content?.positions_ouvertes || []).filter(p => p.status === 'OUVERT');
+  const nbSameSens = ouv.filter(p => p.sens === ctx.sens).length;
+
+  const items = [];
+
+  // 1. KO distance
+  if(ctx.ko_dist >= 6){
+    items.push({ state:'ok', lbl:'KO distance sécurisée', detail: ctx.ko_dist.toFixed(1)+'%' });
+  } else if(ctx.ko_dist >= 4){
+    items.push({ state:'warn', lbl:'KO distance limite', detail: ctx.ko_dist.toFixed(1)+'% (min 6%)' });
+  } else if(ctx.ko_dist > 0){
+    items.push({ state:'err', lbl:'KO distance TROP COURTE', detail: ctx.ko_dist.toFixed(1)+'% (min 6%)' });
+  } else {
+    items.push({ state:'warn', lbl:'KO distance', detail: 'à renseigner' });
+  }
+
+  // 2. RR TP1
+  if(ctx.rr1 >= 2){
+    items.push({ state:'ok', lbl:'RR TP1 sain', detail: 'RR '+ctx.rr1+':1' });
+  } else if(ctx.rr1 >= 1.5){
+    items.push({ state:'warn', lbl:'RR TP1 faible', detail: 'RR '+ctx.rr1+':1 (min 2)' });
+  } else {
+    items.push({ state:'err', lbl:'RR TP1 insuffisant', detail: 'RR '+ctx.rr1+':1' });
+  }
+
+  // 3. Mise vs conviction
+  if(ctx.mise === 0){
+    items.push({ state:'warn', lbl:'Mise à renseigner', detail: '—' });
+  } else if(misePct <= miseMaxPct){
+    items.push({ state:'ok', lbl:`Mise alignée conviction ${conviction}/10`, detail: misePct.toFixed(0)+'% cash' });
+  } else if(misePct <= miseMaxPct * 1.4){
+    items.push({ state:'warn', lbl:`Mise élevée pour conv ${conviction}/10`, detail: misePct.toFixed(0)+'% (max '+miseMaxPct+'%)' });
+  } else {
+    items.push({ state:'err', lbl:`Mise TROP haute pour conv ${conviction}/10`, detail: misePct.toFixed(0)+'% (max '+miseMaxPct+'%)' });
+  }
+
+  // 4. Levier
+  if(ctx.lev === 0){
+    items.push({ state:'warn', lbl:'Levier à calculer', detail: '—' });
+  } else if(ctx.lev <= 20){
+    items.push({ state:'ok', lbl:'Levier maîtrisé', detail: '×'+ctx.lev.toFixed(1) });
+  } else if(ctx.lev <= 30){
+    items.push({ state:'warn', lbl:'Levier élevé', detail: '×'+ctx.lev.toFixed(1) });
+  } else {
+    items.push({ state:'err', lbl:'Levier très agressif', detail: '×'+ctx.lev.toFixed(1) });
+  }
+
+  // 5. Concentration
+  if(nbSameSens === 0){
+    items.push({ state:'ok', lbl:'Aucune position même sens', detail: '0/2' });
+  } else if(nbSameSens === 1){
+    items.push({ state:'ok', lbl:'Diversification OK', detail: '1/2 même sens' });
+  } else if(nbSameSens === 2){
+    items.push({ state:'warn', lbl:`Concentration ${ctx.sens}`, detail: '2/2 (limite)' });
+  } else {
+    items.push({ state:'err', lbl:`Sur-concentration ${ctx.sens}`, detail: nbSameSens+' positions même sens' });
+  }
+
+  // Rendu
+  host.innerHTML = items.map(it => {
+    const icon = it.state==='ok' ? '✓' : (it.state==='warn' ? '!' : '×');
+    return `<div class="ck-item">
+      <span class="ck-icon ${it.state}">${icon}</span>
+      <span>${it.lbl}</span>
+      <span class="ck-detail">${it.detail}</span>
+    </div>`;
+  }).join('');
+
+  // Score global
+  const nbErr = items.filter(i => i.state === 'err').length;
+  const nbWarn = items.filter(i => i.state === 'warn').length;
+  const nbOk = items.filter(i => i.state === 'ok').length;
+
+  let scoreState, scoreTxt, btnLbl, btnClass;
+  if(nbErr > 0){
+    scoreState = 'err';
+    scoreTxt = nbErr+' critique'+(nbErr>1?'s':'');
+    btnLbl = '⚠ Enregistrer malgré risque';
+    btnClass = 'err';
+  } else if(nbWarn > 0){
+    scoreState = 'warn';
+    scoreTxt = nbWarn+' warning'+(nbWarn>1?'s':'');
+    btnLbl = 'Enregistrer (warnings)';
+    btnClass = 'warn';
+  } else {
+    scoreState = 'ok';
+    scoreTxt = nbOk+'/5 ✓';
+    btnLbl = 'Enregistrer la position';
+    btnClass = '';
+  }
+  scoreEl.textContent = scoreTxt;
+  scoreEl.className = 'checklist-score ' + scoreState;
+  if(submitBtn){
+    submitBtn.className = 'submit' + (btnClass ? ' ' + btnClass : '');
+    if(submitLbl) submitLbl.textContent = btnLbl;
   }
 }
 
@@ -1173,7 +1481,7 @@ function renderPositions(){
       <div class="pos-head">
         <div>
           <div class="pos-title">${p.sens} ${sjDisplay} ${p.strike||''}</div>
-          <div class="pos-badge ${sensCls}">${p.sens} · ×${levierDisplay}</div>
+          <div class="pos-badge ${sensCls}">${p.sens} · ×${levierDisplay}${p.conviction ? ` · <span style="color:var(--accent)">${p.conviction}/10</span>` : ''}</div>
         </div>
         <div class="pos-pnl-wrap">
           <div class="pos-pnl ${pnlCls}">${fmtSign(pnlEur)}</div>
@@ -1275,17 +1583,28 @@ function renderJournal(){
   document.getElementById('j-rr').textContent = rr;
   document.getElementById('j-count').textContent = hist.length+' trades';
 
-  // Nettoie les labels : caractères UTF-8 mal encodés, emoji cassés
+  // CHECKLIST AUDIT
+  // [x] cleanLabel : nettoie UTF-8 mal encodé, caractères bizarres
+  // [x] cleanDate : extrait JJ/MM/YYYY uniquement
+  // [x] Tri turbos : par date récente décroissante
+  // [x] Tri historique détail : par date récente décroissante
+  // [x] Affichage dates sans caractères bizarres
+  // [x] Labels sans caractères bizarres
+
+  // Nettoie label : suppression agressive de tout caractère non-ASCII standard
+  // Règles : garde lettres/chiffres/espace/ponctuation usuelle, supprime tout le reste
   const cleanLabel = (l) => {
     if(!l) return '';
-    return l
-      .replace(/[\u00C0-\u00FF]{2,}/g, '')  // séquences répétées de caractères latin-1 corrompus (Ã Â etc.)
-      .replace(/[^\x20-\x7E\u00A0-\uFFFF]/g, '') // caractères non imprimables
+    return String(l)
+      // 1. Supprime les séquences de caractères latin-1 étendus (Ã Â é à è) par blocs
+      .replace(/[\u00C0-\u024F]/g, '')  // latin extended-A
+      .replace(/[\u2000-\u206F]/g, ' ') // general punctuation, espaces spéciaux
+      .replace(/[^\x20-\x7E]/g, '')     // garde ASCII imprimable uniquement
       .replace(/\s+/g, ' ')
       .trim();
   };
 
-  // Extrait la date au format JJ/MM/YYYY depuis une string (ignore caractères corrompus, heures)
+  // Extrait JJ/MM/YYYY depuis string potentiellement corrompue
   const cleanDate = (s) => {
     if(!s) return '';
     const match = String(s).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
@@ -1294,17 +1613,25 @@ function renderJournal(){
     return d.padStart(2,'0') + '/' + m.padStart(2,'0') + '/' + y;
   };
 
-  // Regroupement par turbo (clé = label normalisé)
+  // Regroupement par turbo (clé = label + strike pour distinguer les turbos différents)
   const normalizeLabel = (l) => {
     if(!l) return 'INCONNU';
-    // Extraire le turbo name : "CALL NQ Turbo 23991 (partiel 1/2)" → "CALL NQ 23991"
     return cleanLabel(l).replace(/\(.*?\)/g, '').replace(/Turbo\s+BEST/gi, '').replace(/Turbo/gi, '')
             .replace(/Strike/gi, '').replace(/\(SG\)/gi, '')
             .replace(/\s+/g, ' ').trim();
   };
+  const buildKey = (h) => {
+    const base = normalizeLabel(h.label);
+    const strike = h.strike ? String(h.strike) : '';
+    // Si le strike n'est pas déjà dans le label nettoyé, l'ajouter
+    if(strike && !base.includes(strike)) {
+      return `${base} ${strike}`.trim();
+    }
+    return base;
+  };
   const groups = {};
   cloture.forEach(h => {
-    const key = normalizeLabel(h.label);
+    const key = buildKey(h);
     if(!groups[key]) groups[key] = { label: key, trades: [], totalMise: 0, totalPnl: 0, sens: h.sens };
     groups[key].trades.push(h);
     groups[key].totalMise += h.mise || 0;
@@ -1470,6 +1797,7 @@ async function executeSaveTrade(p){
     const tp1Prx = p.pru + riskRef*rr1v;
     const tp2Prx = p.pru + riskRef*rr2v;
 
+    const conviction = parseInt(document.getElementById('conv-slider')?.value) || null;
     const newPos = {
       label: `${posSens} ${p.sj} Turbo BEST (SG)`,
       sens: posSens, sous_jacent: p.sj, isin: `SG ${posSens} ${p.sj} ${p.strike}`,
@@ -1482,6 +1810,7 @@ async function executeSaveTrade(p){
       tp1_turbo: Math.round(tp1Prx*1000)/1000,
       tp2_turbo: Math.round(tp2Prx*1000)/1000,
       rr1: rr1v, rr2: rr2v,
+      conviction: conviction,
       status: 'OUVERT',
     };
     content.positions_ouvertes = content.positions_ouvertes||[];
@@ -1495,6 +1824,8 @@ async function executeSaveTrade(p){
     await pushToGithub(content, cachedData.sha, `UI: open ${sens} ${p.sj} ×${p.lev}`);
     showToast(`${sens} ${p.sj} enregistré`,'ok');
     ['sj','strike','ko','nb','pru','sjlive'].forEach(id => sv(id,''));
+    const recoInput = document.getElementById('reco-input');
+    if(recoInput) recoInput.value = '';
     document.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
     calcPreview();
     await syncAll();
@@ -1566,6 +1897,9 @@ async function executeClosePos(idx, label, pru, nbSold, nbTotal, miseSold, prix,
       date: new Date().toLocaleDateString('fr-FR'),
       label: pos.label + (isPartial ? ` (partiel ${nbSold}/${nbTotal})` : ''),
       sens: pos.sens,
+      sous_jacent: pos.sous_jacent,
+      strike: pos.strike,
+      ko: pos.ko,
       nb_sold: nbSold,
       prix_achat: pru,
       prix_sortie: prix,
