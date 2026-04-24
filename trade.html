@@ -970,8 +970,26 @@ function renderHero(){
   const c = cachedData.content;
   const cto = c.cto_recap || {};
   const ouvertes = (c.positions_ouvertes||[]).filter(p => p.status==='OUVERT');
-  const pnlLive = ouvertes.reduce((s,p) => s+(p.pnl_live_eur||0), 0);
-  const totalMise = ouvertes.reduce((s,p) => s+(p.mise_eur||0), 0);
+
+  // Recalcul live à la volée à partir des indices live
+  const idxLive = cto.indices_live || {};
+  const fx = cto.fx_eurusd || 1.1521;
+  ouvertes.forEach(p => {
+    const live = computePositionLive(p, idxLive, fx);
+    if(live){
+      p._live_vi  = live.vi;
+      p._live_pnl = live.pnl_eur;
+      p._live_pct = live.pnl_pct;
+      p._live_kod = live.ko_dist;
+    }
+  });
+
+  const pnlLive = ouvertes.reduce((s,p) => s + (p._live_pnl != null ? p._live_pnl : (p.pnl_live_eur||0)), 0);
+  const totalMise = ouvertes.reduce((s,p) => {
+    const nbT = p.nb_titres || p.titres || p.quantite || p.nb || 0;
+    const pruA = p.prix_achat || p.pru || p.prix_entree || 0;
+    return s + (nbT * pruA);
+  }, 0);
   const totalValue = (cto.reserve_dispo||0) + totalMise + pnlLive;
 
   const euro = Math.floor(totalValue).toLocaleString('fr-FR');
@@ -992,6 +1010,34 @@ function renderHero(){
 
   // Indices live
   renderIndices(c.positions_ouvertes || [], cto.last_refresh, cto.indices_live);
+}
+
+// Calcule VI, P&L, KO dist live à partir des indices_live et du FX
+function computePositionLive(p, idxLive, fx){
+  const sens = (p.sens || 'CALL').toUpperCase();
+  const sj = (p.sous_jacent || '').toUpperCase();
+  const sjLive = idxLive[sj];
+  if(!sjLive) return null;
+
+  const strike = parseFloat(p.strike) || 0;
+  const ko = parseFloat(p.ko) || 0;
+  const parite = parseFloat(p.parite) || 1;
+  const nb = parseFloat(p.nb_titres || p.titres || p.quantite || p.nb) || 0;
+  const pru = parseFloat(p.prix_achat || p.pru || p.prix_entree) || 0;
+  const isUSD = (p.devise === 'USD') || ['NQ','SPX','SP500','DOW','ES','YM'].some(k => sj.includes(k));
+  const effFx = isUSD ? fx : 1;
+
+  const vi = sens === 'CALL'
+    ? Math.max((sjLive - strike) / parite / effFx, 0)
+    : Math.max((strike - sjLive) / parite / effFx, 0);
+
+  const pnl_eur = (vi - pru) * nb;
+  const pnl_pct = pru > 0 ? ((vi - pru) / pru * 100) : 0;
+  const ko_dist = sens === 'CALL'
+    ? (sjLive - ko) / sjLive * 100
+    : (ko - sjLive) / sjLive * 100;
+
+  return { vi, pnl_eur, pnl_pct, ko_dist };
 }
 
 function renderIndices(allPositions, lastRefresh, indicesLive){
@@ -1051,12 +1097,23 @@ function renderPositions(){
   if(positions.length===0){ host.innerHTML = '<div class="empty">Aucune position ouverte.</div>'; return; }
   host.innerHTML = positions.map((p,i) => {
     const sensCls = p.sens==='CALL'?'call':'put';
-    const pnlCls = (p.pnl_live_eur||0)>=0?'up':'dn';
-    const koDist = p.ko_dist_live || 99;
-    const koCls = koDist < 2 ? 'var(--down)' : koDist < 3 ? 'var(--down)' : koDist < 6 ? 'var(--amber)' : 'var(--up)';
+    const nbT = parseFloat(p.nb_titres || p.titres || p.quantite || p.nb) || 0;
+    const pruA = parseFloat(p.prix_achat || p.pru || p.prix_entree) || 0;
+    const miseReal = nbT * pruA;
+
+    // Recalculer live depuis les indices si dispo, sinon prendre valeurs stockées
+    const idxLive = (cachedData.content.cto_recap||{}).indices_live || {};
+    const fx = (cachedData.content.cto_recap||{}).fx_eurusd || 1.1521;
+    const live = computePositionLive(p, idxLive, fx);
+    const pnlEur = live ? live.pnl_eur : (p.pnl_live_eur || 0);
+    const pnlPct = live ? live.pnl_pct : (p.pnl_live_pct || 0);
+    const koDist = live ? live.ko_dist : (p.ko_dist_live || 99);
+    const viLive = live ? live.vi : null;
+
+    const pnlCls = pnlEur >= 0 ? 'up' : 'dn';
+    const koCls = koDist < 2 ? 'var(--down)' : koDist < 6 ? 'var(--amber)' : 'var(--up)';
     const koPulse = koDist < 2 ? ' ko-critical' : '';
-    const nbT = p.nb_titres || p.titres || p.quantite || p.nb || '—';
-    const pruA = p.prix_achat || p.pru || p.prix_entree || null;
+
     return `<div class="pos-card${koPulse}">
       <div class="pos-head">
         <div>
@@ -1064,16 +1121,16 @@ function renderPositions(){
           <div class="pos-badge ${sensCls}">${p.sens} · ×${p.levier||'—'}</div>
         </div>
         <div class="pos-pnl-wrap">
-          <div class="pos-pnl ${pnlCls}">${fmtSign(p.pnl_live_eur||0)}</div>
-          <div class="pos-pnl-pct ${pnlCls}">${(p.pnl_live_pct||0)>=0?'+':''}${(p.pnl_live_pct||0).toFixed(1)}%</div>
+          <div class="pos-pnl ${pnlCls}">${fmtSign(pnlEur)}</div>
+          <div class="pos-pnl-pct ${pnlCls}">${pnlPct>=0?'+':''}${pnlPct.toFixed(1)}%</div>
         </div>
       </div>
       <div class="pos-grid">
-        <div><div class="pm-lbl">Titres</div><div class="pm-val">${nbT}</div></div>
+        <div><div class="pm-lbl">Titres</div><div class="pm-val">${nbT || '—'}</div></div>
         <div><div class="pm-lbl">Prix turbo achat</div><div class="pm-val">${pruA ? pruA.toFixed(2)+'€' : '—'}</div></div>
-        <div><div class="pm-lbl">Mise</div><div class="pm-val">${fmtEur(p.mise_eur||0)}</div></div>
+        <div><div class="pm-lbl">Prix turbo live</div><div class="pm-val">${viLive != null ? viLive.toFixed(2)+'€' : '—'}</div></div>
+        <div><div class="pm-lbl">Mise</div><div class="pm-val">${fmtEur(miseReal)}</div></div>
         <div><div class="pm-lbl">Strike</div><div class="pm-val">${p.strike||'—'}</div></div>
-        <div><div class="pm-lbl">KO</div><div class="pm-val">${p.ko||'—'}</div></div>
         <div><div class="pm-lbl">KO dist${koDist < 2 ? ' ⚠' : ''}</div><div class="pm-val" style="color:${koCls}">${koDist.toFixed(1)}%</div></div>
       </div>
       ${(p.stop_turbo || p.tp1_turbo || p.tp2_turbo) ? `
