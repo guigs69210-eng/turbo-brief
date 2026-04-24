@@ -1285,22 +1285,31 @@ function renderJournal(){
     }).join('');
   }
 
-  // Historique détaillé (inchangé)
+  // Historique détaillé
   const list = document.getElementById('journal-list');
   if(hist.length===0){ list.innerHTML = '<div class="empty">Aucun trade enregistré.</div>'; return; }
   list.innerHTML = hist.slice().reverse().map(h => {
     const isUp = (h.pnl_eur||0)>=0;
     const partialBadge = h.partiel ? '<span class="ji-badge partial">partiel</span>' : '';
     const koBadge = h.status === 'KO' ? '<span class="ji-badge ko">KO</span>' : '';
+    // Date : garder uniquement la partie JJ/MM/YYYY (strip time si présent)
+    const dateOnly = (h.date||'—').match(/\d{1,2}\/\d{1,2}\/\d{4}/)?.[0] || (h.date || '—');
+    // Détails : nb titres × prix vente
+    const detailsParts = [];
+    if(h.nb_sold) detailsParts.push(`${h.nb_sold} titres`);
+    if(h.prix_sortie) detailsParts.push(`vente ${h.prix_sortie.toFixed(2)}€`);
+    else if(h.prix_achat) detailsParts.push(`achat ${h.prix_achat.toFixed(2)}€`);
+    const details = detailsParts.join(' · ') || (h.sens || '');
+
     return `<div class="journal-item">
-      <div>
+      <div class="ji-left">
         <div class="ji-title">
           <span class="ji-dot ${isUp?'up':'dn'}"></span>
           ${h.label||'—'}
           ${partialBadge}
           ${koBadge}
         </div>
-        <div class="ji-meta">${h.date||'—'} · ${h.sens||''} · ${fmtEur(h.mise||0)}</div>
+        <div class="ji-meta">${dateOnly} · ${details}</div>
       </div>
       <div class="ji-right">
         <div class="ji-pnl ${isUp?'up':'dn'}">${fmtSign(h.pnl_eur||0)}</div>
@@ -1455,9 +1464,12 @@ async function executeClosePos(idx, label, pru, nbSold, nbTotal, miseSold, prix,
 
     content.historique_trades = content.historique_trades||[];
     content.historique_trades.push({
-      date: new Date().toLocaleString('fr-FR'),
+      date: new Date().toLocaleDateString('fr-FR'),
       label: pos.label + (isPartial ? ` (partiel ${nbSold}/${nbTotal})` : ''),
       sens: pos.sens,
+      nb_sold: nbSold,
+      prix_achat: pru,
+      prix_sortie: prix,
       mise: Math.round(miseSold),
       pnl_pct: Math.round(pnl_pct*10)/10,
       pnl_eur: Math.round(pnl_eur),
