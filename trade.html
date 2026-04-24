@@ -1340,27 +1340,35 @@ async function saveTrade(){
   const sjlive=gv('sjlive')||strike, parite=gv('parite')||1;
   if(!sj||!strike||!ko||!nb||!pru){ showToast('Champs manquants','err'); return; }
 
+  // Capture le sens actuellement actif (bouton visuellement sélectionné)
+  // pour éviter tout risque de désynchro avec la variable globale
+  const sensBtnCall = document.getElementById('sens-call');
+  const sensBtnPut  = document.getElementById('sens-put');
+  let currentSens = sens;  // fallback
+  if(sensBtnPut && sensBtnPut.classList.contains('on')) currentSens = 'PUT';
+  else if(sensBtnCall && sensBtnCall.classList.contains('on')) currentSens = 'CALL';
+
   // Preview confirmation
   const isUSD = ['NQ','SPX','SP500','DOW','ES','YM'].some(k => sj.includes(k));
   const fx = isUSD ? FX : 1;
-  const vi = sens==='CALL' ? Math.max((sjlive-strike)/parite/fx,0) : Math.max((strike-sjlive)/parite/fx,0);
+  const vi = currentSens==='CALL' ? Math.max((sjlive-strike)/parite/fx,0) : Math.max((strike-sjlive)/parite/fx,0);
   const lev = vi>0 ? Math.round(sjlive/(vi*parite*fx)*10)/10 : 0;
   const mise = nb*pru;
-  const ko_dist = sens==='CALL' ? (sjlive-ko)/sjlive*100 : (ko-sjlive)/sjlive*100;
+  const ko_dist = currentSens==='CALL' ? (sjlive-ko)/sjlive*100 : (ko-sjlive)/sjlive*100;
 
   const body = `
-    <b>${sens} ${sj}</b> Turbo × ${lev}<br>
+    <b>${currentSens} ${sj}</b> Turbo × ${lev}<br>
     <b>${nb}</b> titres × <b>${pru.toFixed(2)}€</b> = <b>${fmtEur(mise)}</b><br>
     Strike <b>${strike}</b> · KO <b>${ko}</b><br>
-    KO distance : <b>${ko_dist.toFixed(1)}%</b>${ko_dist < 3 ? ' ⚠' : ''}
+    KO distance : <b>${Math.abs(ko_dist).toFixed(1)}%</b>${Math.abs(ko_dist) < 3 ? ' ⚠' : ''}
   `;
 
   showConfirm({
     title: 'Enregistrer cette position ?',
     body,
-    icon: sens === 'CALL' ? '↑' : '↓',
+    icon: currentSens === 'CALL' ? '↑' : '↓',
     confirmText: 'Ouvrir position',
-    onConfirm: () => executeSaveTrade({sj, strike, ko, nb, pru, sjlive, parite, isUSD, fx, vi, lev, mise, ko_dist})
+    onConfirm: () => executeSaveTrade({sens: currentSens, sj, strike, ko, nb, pru, sjlive, parite, isUSD, fx, vi, lev, mise, ko_dist})
   });
 }
 
@@ -1373,8 +1381,10 @@ async function executeSaveTrade(p){
     const now = new Date();
     const dateStr = String(now.getDate()).padStart(2,'0')+'/'+String(now.getMonth()+1).padStart(2,'0')+'/'+now.getFullYear();
     const stoppctInput = Math.abs(gv('stoppct')), rr1v=gv('rr1')||1.5, rr2v=gv('rr2')||3;
+    // Utilise p.sens qui a été capturé au moment de la validation (pas la globale)
+    const posSens = p.sens || sens;
     // Cohérence Stop / KO : clamp si dépasse la barrière
-    const turboAtKO = sens === 'CALL'
+    const turboAtKO = posSens === 'CALL'
       ? Math.max((p.ko - p.strike) / p.parite / p.fx, 0)
       : Math.max((p.strike - p.ko) / p.parite / p.fx, 0);
     const stopMaxPct = p.pru > 0 ? Math.floor((1 - turboAtKO/p.pru) * 100) - 1 : 100;
@@ -1386,13 +1396,13 @@ async function executeSaveTrade(p){
     const tp2Prx = p.pru + riskRef*rr2v;
 
     const newPos = {
-      label: `${sens} ${p.sj} Turbo BEST (SG)`,
-      sens, sous_jacent: p.sj, isin: `SG ${sens} ${p.sj} ${p.strike}`,
+      label: `${posSens} ${p.sj} Turbo BEST (SG)`,
+      sens: posSens, sous_jacent: p.sj, isin: `SG ${posSens} ${p.sj} ${p.strike}`,
       nb_titres: p.nb, prix_achat: p.pru, strike: p.strike, ko: p.ko, parite: p.parite,
       devise: p.isUSD?'USD':'EUR', levier: p.lev, emetteur: 'SG',
       sj_entree: p.sjlive, sj_live: p.sjlive, heure_achat: dateStr,
       mise_eur: Math.round(p.mise), pnl_live_pct: 0, pnl_live_eur: 0,
-      ko_dist_live: Math.round(p.ko_dist*10)/10,
+      ko_dist_live: Math.round(Math.abs(p.ko_dist)*10)/10,
       stop_turbo: Math.round(stopPrx*1000)/1000,
       tp1_turbo: Math.round(tp1Prx*1000)/1000,
       tp2_turbo: Math.round(tp2Prx*1000)/1000,
