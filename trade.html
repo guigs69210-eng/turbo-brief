@@ -128,16 +128,30 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 .pos-pnl-pct { font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--text-3); margin-top: 2px; }
 .pos-pnl-pct.up { color: var(--up); } .pos-pnl-pct.dn { color: var(--down); }
 .pos-meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 10px 0; border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); }
+
+/* Grille uniforme 3 colonnes pour les infos position */
+.pos-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px 10px; padding: 12px 0; border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); }
+
+/* Bloc prix turbo vente programmés */
+.pos-orders { padding: 10px 0 0; }
+.pos-orders-title { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 0.04em; color: var(--text-3); text-transform: uppercase; margin-bottom: 8px; }
+.pos-orders-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
 .pm-lbl { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 0.02em; color: var(--text-3); text-transform: uppercase; margin-bottom: 3px; }
 .pm-val { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--text); }
 
-.close-form { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-top: 12px; }
-.close-form input { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text); padding: 10px 12px; font-family: var(--mono); font-size: 13px; font-weight: 600; outline: none; }
-.close-form input:focus { border-color: var(--accent); }
-.close-btn { padding: 10px 16px; background: var(--down); color: white; border: none; border-radius: 8px; font-family: var(--sans); font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
-.close-btn:active { transform: scale(0.95); }
-.close-estimate { margin-top: 8px; padding: 8px 10px; background: var(--bg); border: 1px dashed var(--border-hi); border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
-.close-estimate-lbl { color: var(--text-3); letter-spacing: 0.1em; text-transform: uppercase; font-size: 9px; font-weight: 600; font-family: var(--mono); }
+.close-form-v2 { margin-top: 12px; padding: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
+.close-form-title { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 0.04em; color: var(--text-3); text-transform: uppercase; margin-bottom: 8px; }
+.close-chips { display: flex; gap: 6px; margin-bottom: 10px; }
+.close-chip { flex: 1; padding: 8px 0; font-family: var(--sans); font-size: 11px; font-weight: 600; background: var(--bg-card); color: var(--text-2); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: all 0.15s; }
+.close-chip:active { transform: scale(0.96); }
+.close-chip.on { background: var(--accent-dim); color: var(--accent); border-color: var(--accent); }
+.close-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.close-inputs .fld label { font-size: 9px; margin-bottom: 4px; }
+.close-inputs .fld input { padding: 10px 12px; font-size: 14px; border-radius: 8px; }
+.close-submit { width: 100%; padding: 12px 0; background: var(--down); color: white; border: none; border-radius: 8px; font-family: var(--sans); font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.close-submit:active { transform: scale(0.98); }
+.close-estimate { margin-bottom: 10px; padding: 8px 10px; background: var(--bg-card); border: 1px dashed var(--border-hi); border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+.close-estimate-lbl { color: var(--text-3); letter-spacing: 0.04em; text-transform: uppercase; font-size: 10px; font-weight: 500; font-family: var(--sans); }
 .close-estimate-val { font-weight: 700; font-size: 14px; font-family: var(--mono); }
 .close-estimate-val.up { color: var(--up); } .close-estimate-val.dn { color: var(--down); }
 
@@ -176,7 +190,10 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 .tf-rr-badge.up { background: var(--up-dim); color: var(--up); border: 1px solid var(--up-line); }
 .tf-rr-badge.dn { background: var(--down-dim); color: var(--down); border: 1px solid var(--down-line); }
 .tf-rr-badge.ko { background: var(--down); color: white; }
-.ji-title { font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.2; display: flex; align-items: center; gap: 7px; }
+.ji-title { font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.2; display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.ji-badge { font-family: var(--mono); font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+.ji-badge.partial { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent); }
+.ji-badge.ko { background: var(--down); color: white; }
 .ji-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
 .ji-dot.up { background: var(--up); box-shadow: 0 0 6px var(--up-line); }
 .ji-dot.dn { background: var(--down); box-shadow: 0 0 6px var(--down-line); }
@@ -379,7 +396,7 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
   <div class="sec-header"><div class="sec-title">Paramètres turbo</div></div>
   <div class="g2">
     <div class="fld"><label>Nb titres</label><input id="nb" type="number" inputmode="decimal" step="1" placeholder="70" oninput="calcPreview()"></div>
-    <div class="fld"><label>PRU €</label><input id="pru" type="number" inputmode="decimal" step="0.01" placeholder="8.12" oninput="calcPreview()"></div>
+    <div class="fld"><label>Prix turbo achat €</label><input id="pru" type="number" inputmode="decimal" step="0.01" placeholder="8.12" oninput="calcPreview()"></div>
   </div>
   <div class="g2">
     <div class="fld">
@@ -430,16 +447,16 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
     <div class="prev-grid">
       <div><div class="prev-lbl">Mise totale</div><div class="prev-val" id="p-mise">—</div></div>
       <div><div class="prev-lbl">Levier</div><div class="prev-val amb" id="p-lev">—</div></div>
-      <div><div class="prev-lbl">VI live</div><div class="prev-val" id="p-vi">—</div></div>
+      <div><div class="prev-lbl">Prix turbo</div><div class="prev-val" id="p-vi">—</div></div>
       <div><div class="prev-lbl">KO distance</div><div class="prev-val" id="p-ko">—</div></div>
     </div>
   </div>
 
   <div class="preview" style="background:linear-gradient(135deg,#0E1F17 0%,#0A0E1A 100%)">
-    <div class="prev-title" style="color:var(--up)">Take Profit & Stop — ordres scheduler</div>
+    <div class="prev-title" style="color:var(--up)">Take Profit & Stop — prix turbo vente à programmer</div>
     <div class="tp-table">
       <div class="tp-row tp-header">
-        <div>Cible</div><div>Indice</div><div>Prix turbo</div><div>P&L</div>
+        <div>Cible</div><div>Indice</div><div>Prix turbo vente</div><div>P&L</div>
       </div>
       <div class="tp-row tp1">
         <div class="tp-lbl">TP1 <span class="tp-rr" id="tp1-rr">×2</span></div>
@@ -684,7 +701,7 @@ function calcPreview(){
   const isUSD = ['NQ','SPX','SP500','DOW','ES','YM'].some(k => sj.includes(k));
   const fx = isUSD ? FX : 1;
 
-  // VI & levier & KO distance
+  // Prix turbo live, levier & KO distance
   const vi = sens==='CALL' ? Math.max((sjlive-strike)/parite/fx,0) : Math.max((strike-sjlive)/parite/fx,0);
   const lev = vi>0 ? Math.round(sjlive/(vi*parite*fx)*10)/10 : 0;
   const mise = nb*pru;
@@ -712,22 +729,16 @@ function calcPreview(){
   const rr2 = gv('rr2') || 3;
 
   // ── Cohérence Stop / KO ──
-  // Prix turbo quand le sous-jacent atteint la barrière KO :
-  // CALL : turbo_prix_au_KO = (ko - strike) / parité / fx  (peut être 0 ou négatif → KO)
-  // PUT  : turbo_prix_au_KO = (strike - ko) / parité / fx
   const turboAtKO = sens === 'CALL'
     ? Math.max((ko - strike) / parite / fx, 0)
     : Math.max((strike - ko) / parite / fx, 0);
 
-  // Le stop doit être ATTEINT avant le KO → stopPrx doit être > turboAtKO
-  // Perte max autorisée en % pour rester au-dessus du KO :
+  // Stop max avant KO
   const stopMaxPct = pru > 0 ? Math.floor((1 - turboAtKO/pru) * 100) - 1 : 100;
-
-  // Clamper le stop au max autorisé si dépasse
   const stopConflict = stoppctInput >= stopMaxPct;
   const stoppct = stopConflict ? Math.max(stopMaxPct, 1) : stoppctInput;
 
-  // Afficher warning si conflit
+  // Warning visuel sur input
   const stopInput = document.getElementById('stoppct');
   if(stopConflict && pru > 0){
     stopInput.style.borderColor = 'var(--down)';
@@ -737,14 +748,16 @@ function calcPreview(){
     stopInput.style.boxShadow = '';
   }
 
-  // Prix turbo au stop
+  // ── Prix turbo au STOP (simule TA perte réelle) ──
   const stopPrx = pru * (1 - stoppct/100);
-  const lossStop = (stopPrx - pru) * nb;  // négatif
+  const lossStop = (stopPrx - pru) * nb;
 
-  // Prix turbo au TP = PRU + (PRU - stopPrx) * RR
-  const risk = pru - stopPrx;
-  const tp1Prx = pru + risk * rr1;
-  const tp2Prx = pru + risk * rr2;
+  // ── RR basés sur STOP STANDARD −40% (référence industrie) ──
+  // Les TP sont INDÉPENDANTS du stop utilisateur pour rester cohérents
+  const STOP_REF_PCT = 40;
+  const riskRef = pru * STOP_REF_PCT / 100;  // perte par titre au stop standard
+  const tp1Prx = pru + riskRef * rr1;
+  const tp2Prx = pru + riskRef * rr2;
 
   // Gain €
   const gain1 = (tp1Prx - pru) * nb;
@@ -1045,7 +1058,7 @@ function renderPositions(){
     return `<div class="pos-card${koPulse}">
       <div class="pos-head">
         <div>
-          <div class="pos-title">${p.label||'—'}</div>
+          <div class="pos-title">${p.sens} ${p.sous_jacent||''} ${p.strike||''}</div>
           <div class="pos-badge ${sensCls}">${p.sens} · ×${p.levier||'—'}</div>
         </div>
         <div class="pos-pnl-wrap">
@@ -1053,32 +1066,77 @@ function renderPositions(){
           <div class="pos-pnl-pct ${pnlCls}">${(p.pnl_live_pct||0)>=0?'+':''}${(p.pnl_live_pct||0).toFixed(1)}%</div>
         </div>
       </div>
-      <div class="pos-meta">
+      <div class="pos-grid">
+        <div><div class="pm-lbl">Titres</div><div class="pm-val">${p.nb_titres||'—'}</div></div>
+        <div><div class="pm-lbl">Prix turbo achat</div><div class="pm-val">${p.prix_achat ? p.prix_achat.toFixed(2)+'€' : '—'}</div></div>
         <div><div class="pm-lbl">Mise</div><div class="pm-val">${fmtEur(p.mise_eur||0)}</div></div>
         <div><div class="pm-lbl">Strike</div><div class="pm-val">${p.strike||'—'}</div></div>
+        <div><div class="pm-lbl">KO</div><div class="pm-val">${p.ko||'—'}</div></div>
         <div><div class="pm-lbl">KO dist${koDist < 2 ? ' ⚠' : ''}</div><div class="pm-val" style="color:${koCls}">${koDist.toFixed(1)}%</div></div>
       </div>
-      <div class="close-form">
-        <input id="close-prix-${i}" type="number" inputmode="decimal" step="0.01" placeholder="Prix sortie €" oninput="estimateClose(${i},${p.prix_achat},${p.nb_titres})">
-        <button class="close-btn" onclick="closePos(${i},'${(p.label||'').replace(/'/g,'')}',${p.prix_achat},${p.nb_titres},${p.mise_eur})">Fermer</button>
-      </div>
-      <div id="close-est-${i}" class="close-estimate" style="display:none">
-        <span class="close-estimate-lbl">P&L estimé</span>
-        <span id="close-est-val-${i}" class="close-estimate-val">—</span>
+      ${(p.stop_turbo || p.tp1_turbo || p.tp2_turbo) ? `
+      <div class="pos-orders">
+        <div class="pos-orders-title">Prix turbo vente programmés</div>
+        <div class="pos-orders-grid">
+          <div><div class="pm-lbl">Stop</div><div class="pm-val" style="color:var(--down)">${p.stop_turbo ? p.stop_turbo.toFixed(2)+'€' : '—'}</div></div>
+          <div><div class="pm-lbl">TP1</div><div class="pm-val" style="color:var(--up)">${p.tp1_turbo ? p.tp1_turbo.toFixed(2)+'€' : '—'}</div></div>
+          <div><div class="pm-lbl">TP2</div><div class="pm-val" style="color:var(--up)">${p.tp2_turbo ? p.tp2_turbo.toFixed(2)+'€' : '—'}</div></div>
+        </div>
+      </div>` : ''}
+      <div class="close-form-v2">
+        <div class="close-form-title">Fermer / alléger la position</div>
+        <div class="close-chips">
+          <button class="close-chip" onclick="applyPartial(${i},'TP1',${p.nb_titres},${p.tp1_turbo||0})">TP1 (33%)</button>
+          <button class="close-chip" onclick="applyPartial(${i},'TP2',${p.nb_titres},${p.tp2_turbo||0})">TP2 (33%)</button>
+          <button class="close-chip" onclick="applyPartial(${i},'ALL',${p.nb_titres},0)">Tout</button>
+        </div>
+        <div class="close-inputs">
+          <div class="fld">
+            <label>Titres à vendre</label>
+            <input id="close-nb-${i}" type="number" inputmode="decimal" step="1" placeholder="${p.nb_titres}" oninput="estimateClose(${i},${p.prix_achat})">
+          </div>
+          <div class="fld">
+            <label>Prix turbo vente €</label>
+            <input id="close-prix-${i}" type="number" inputmode="decimal" step="0.01" placeholder="ex ${p.tp1_turbo ? p.tp1_turbo.toFixed(2) : '—'}" oninput="estimateClose(${i},${p.prix_achat})">
+          </div>
+        </div>
+        <div id="close-est-${i}" class="close-estimate" style="display:none">
+          <span class="close-estimate-lbl">P&L estimé</span>
+          <span id="close-est-val-${i}" class="close-estimate-val">—</span>
+        </div>
+        <button class="close-submit" onclick="closePos(${i},'${(p.label||'').replace(/'/g,'')}',${p.prix_achat},${p.nb_titres},${p.mise_eur})">Valider la vente</button>
       </div>
     </div>`;
   }).join('');
 }
 
-function estimateClose(idx, pru, nb){
+function estimateClose(idx, pru){
   const prix = parseFloat(document.getElementById('close-prix-'+idx).value);
+  const nb   = parseFloat(document.getElementById('close-nb-'+idx).value);
   const wrap = document.getElementById('close-est-'+idx);
   const val  = document.getElementById('close-est-val-'+idx);
-  if(!prix||!pru){ wrap.style.display='none'; return; }
+  if(!prix||!pru||!nb){ wrap.style.display='none'; return; }
   const pnlEur = (prix-pru)*nb, pnlPct = (prix-pru)/pru*100;
   wrap.style.display = 'flex';
   val.textContent = `${fmtSign(pnlEur)}  ·  ${pnlPct>=0?'+':''}${pnlPct.toFixed(1)}%`;
   val.className = 'close-estimate-val '+(pnlEur>=0?'up':'dn');
+}
+
+function applyPartial(idx, type, totalNb, suggestedPrice){
+  // Applique 33% pour TP1/TP2, 100% pour ALL
+  const pct = (type === 'ALL') ? 1 : 0.33;
+  const nbSuggested = Math.round(totalNb * pct);
+  document.getElementById('close-nb-'+idx).value = nbSuggested;
+  if(suggestedPrice > 0){
+    document.getElementById('close-prix-'+idx).value = suggestedPrice.toFixed(2);
+  }
+  // Highlight chip actif
+  const card = document.getElementById('close-nb-'+idx).closest('.close-form-v2');
+  card.querySelectorAll('.close-chip').forEach(b => b.classList.remove('on'));
+  event.target.classList.add('on');
+  // Trigger estimate
+  const pos = (cachedData.content.positions_ouvertes||[]).filter(p => p.status==='OUVERT')[idx];
+  if(pos) estimateClose(idx, pos.prix_achat);
 }
 
 function renderJournal(){
@@ -1173,13 +1231,17 @@ function renderJournal(){
   if(hist.length===0){ list.innerHTML = '<div class="empty">Aucun trade enregistré.</div>'; return; }
   list.innerHTML = hist.slice().reverse().map(h => {
     const isUp = (h.pnl_eur||0)>=0;
+    const partialBadge = h.partiel ? '<span class="ji-badge partial">partiel</span>' : '';
+    const koBadge = h.status === 'KO' ? '<span class="ji-badge ko">KO</span>' : '';
     return `<div class="journal-item">
       <div>
         <div class="ji-title">
           <span class="ji-dot ${isUp?'up':'dn'}"></span>
           ${h.label||'—'}
+          ${partialBadge}
+          ${koBadge}
         </div>
-        <div class="ji-meta">${h.date||'—'} · ${h.sens||''} · ${fmtEur(h.mise||0)}${h.status==='KO'?' · KO':''}</div>
+        <div class="ji-meta">${h.date||'—'} · ${h.sens||''} · ${fmtEur(h.mise||0)}</div>
       </div>
       <div class="ji-right">
         <div class="ji-pnl ${isUp?'up':'dn'}">${fmtSign(h.pnl_eur||0)}</div>
@@ -1236,9 +1298,10 @@ async function executeSaveTrade(p){
     const stopMaxPct = p.pru > 0 ? Math.floor((1 - turboAtKO/p.pru) * 100) - 1 : 100;
     const stoppct = stoppctInput >= stopMaxPct ? Math.max(stopMaxPct, 1) : stoppctInput;
     const stopPrx = p.pru*(1 - stoppct/100);
-    const risk = p.pru - stopPrx;
-    const tp1Prx = p.pru + risk*rr1v;
-    const tp2Prx = p.pru + risk*rr2v;
+    // TP basés sur stop standard -40% (indépendant du stop utilisateur)
+    const riskRef = p.pru * 0.40;
+    const tp1Prx = p.pru + riskRef*rr1v;
+    const tp2Prx = p.pru + riskRef*rr2v;
 
     const newPos = {
       label: `${sens} ${p.sj} Turbo BEST (SG)`,
@@ -1275,60 +1338,82 @@ async function executeSaveTrade(p){
   }
 }
 
-function closePos(idx, label, pru, nb, mise){
+function closePos(idx, label, pru, nbTotal, mise){
   const prix = parseFloat(document.getElementById('close-prix-'+idx).value);
+  const nbSold = parseFloat(document.getElementById('close-nb-'+idx).value);
   if(!prix){ showToast('Prix requis','err'); return; }
-  const pnl_eur = (prix-pru)*nb, pnl_pct = (prix-pru)/pru*100;
-  const isKo = pnl_eur <= -mise*0.95;
+  if(!nbSold){ showToast('Nb titres requis','err'); return; }
+  if(nbSold > nbTotal){ showToast(`Max ${nbTotal} titres`,'err'); return; }
+
+  const isPartial = nbSold < nbTotal;
+  const pnl_eur = (prix-pru)*nbSold;
+  const pnl_pct = (prix-pru)/pru*100;
+  const miseSold = pru*nbSold;
+  const isKo = prix < pru*0.05; // prix quasi-nul = KO
   const pnlCls = pnl_eur >= 0 ? 'pnl-up' : 'pnl-dn';
   const sign = pnl_eur >= 0 ? '+' : '−';
 
   const body = `
     <b>${label}</b><br>
+    ${isPartial ? `<b>Allègement partiel</b> : ${nbSold}/${nbTotal} titres` : `<b>Clôture totale</b> : ${nbSold} titres`}<br>
     Sortie à <b>${prix.toFixed(3)}€</b> (entrée ${pru.toFixed(2)}€)<br>
-    ${nb} titres · mise ${fmtEur(mise)}<br>
+    Mise vendue : ${fmtEur(miseSold)}<br>
     P&L : <span class="${pnlCls}">${sign}${Math.abs(Math.round(pnl_eur)).toLocaleString('fr-FR')}€ · ${pnl_pct>=0?'+':''}${pnl_pct.toFixed(1)}%</span>
-    ${isKo ? '<br><b style="color:var(--down)">⚠ Position en KO</b>' : ''}
+    ${isPartial ? `<br><br>Titres restants après vente : <b>${nbTotal - nbSold}</b>` : ''}
   `;
 
   showConfirm({
-    title: 'Clôturer cette position ?',
+    title: isPartial ? 'Alléger la position ?' : 'Clôturer la position ?',
     body,
     icon: pnl_eur >= 0 ? '✓' : '!',
     danger: pnl_eur < 0,
-    confirmText: 'Clôturer',
-    onConfirm: () => executeClosePos(idx, label, pru, nb, mise, prix, pnl_eur, pnl_pct, isKo)
+    confirmText: isPartial ? 'Alléger' : 'Clôturer',
+    onConfirm: () => executeClosePos(idx, label, pru, nbSold, nbTotal, miseSold, prix, pnl_eur, pnl_pct, isKo, isPartial)
   });
 }
 
-async function executeClosePos(idx, label, pru, nb, mise, prix, pnl_eur, pnl_pct, isKo){
+async function executeClosePos(idx, label, pru, nbSold, nbTotal, miseSold, prix, pnl_eur, pnl_pct, isKo, isPartial){
   try {
     await syncAll();
     const content = cachedData.content;
     const ouv = (content.positions_ouvertes||[]).filter(p => p.status==='OUVERT');
     const pos = ouv[idx];
     if(!pos) throw new Error('Introuvable');
-    pos.status = 'CLOTURE';
-    pos.pnl_live_pct = Math.round(pnl_pct*10)/10;
-    pos.pnl_live_eur = Math.round(pnl_eur);
-    pos.prix_sortie = prix;
-    pos.heure_sortie = new Date().toLocaleDateString('fr-FR');
+
+    if(isPartial){
+      // Allègement : on décrémente le nb de titres, on ajoute à historique
+      pos.nb_titres = nbTotal - nbSold;
+      pos.mise_eur = Math.round(pos.nb_titres * pos.prix_achat);
+      // Le P&L live sera recalculé au prochain refresh yfinance
+    } else {
+      // Clôture totale
+      pos.status = 'CLOTURE';
+      pos.pnl_live_pct = Math.round(pnl_pct*10)/10;
+      pos.pnl_live_eur = Math.round(pnl_eur);
+      pos.prix_sortie = prix;
+      pos.heure_sortie = new Date().toLocaleDateString('fr-FR');
+    }
 
     content.historique_trades = content.historique_trades||[];
     content.historique_trades.push({
       date: new Date().toLocaleString('fr-FR'),
-      label: pos.label, sens: pos.sens, mise,
+      label: pos.label + (isPartial ? ` (partiel ${nbSold}/${nbTotal})` : ''),
+      sens: pos.sens,
+      mise: Math.round(miseSold),
       pnl_pct: Math.round(pnl_pct*10)/10,
       pnl_eur: Math.round(pnl_eur),
       status: isKo ? 'KO' : 'CLOTURE',
+      partiel: isPartial,
     });
+
     const restantes = (content.positions_ouvertes||[]).filter(p => p.status==='OUVERT');
     content.cto_recap.total_engage = restantes.reduce((s,p) => s+(p.mise_eur||0), 0);
     content.cto_recap.nb_positions = restantes.length;
-    content.cto_recap.reserve_dispo = (content.cto_recap.reserve_dispo||0)+mise+pnl_eur;
+    content.cto_recap.reserve_dispo = (content.cto_recap.reserve_dispo||0)+miseSold+pnl_eur;
 
-    await pushToGithub(content, cachedData.sha, `UI: close ${label} ${pnl_pct>=0?'+':''}${pnl_pct.toFixed(1)}%`);
-    showToast(`Clôturé ${fmtSign(pnl_eur)}`, pnl_eur>=0?'ok':'err');
+    const action = isPartial ? 'partial' : 'close';
+    await pushToGithub(content, cachedData.sha, `UI: ${action} ${label} ${pnl_pct>=0?'+':''}${pnl_pct.toFixed(1)}%`);
+    showToast(`${isPartial?'Allégé':'Clôturé'} ${fmtSign(pnl_eur)}`, pnl_eur>=0?'ok':'err');
     await syncAll();
   } catch(e){ showToast('Erreur: '+e.message,'err'); }
 }
@@ -1387,12 +1472,12 @@ function copyScanData(){
     txt += `\n=== POSITIONS OUVERTES (${ouvertes.length}) ===\n`;
     ouvertes.forEach(p => {
       txt += `\n• ${p.sens} ${p.sous_jacent} Strike ${p.strike} KO ${p.ko}\n`;
-      txt += `  ${p.nb_titres}T × PRU ${p.prix_achat}€ = mise ${fmtEur(p.mise_eur||0)}\n`;
+      txt += `  ${p.nb_titres}T × prix turbo achat ${p.prix_achat}€ = mise ${fmtEur(p.mise_eur||0)}\n`;
       txt += `  Levier ×${p.levier||'?'} · Parité ${p.parite||'?'} · ${p.devise||'EUR'}\n`;
       txt += `  P&L live : ${fmtSign(p.pnl_live_eur||0)} (${(p.pnl_live_pct||0)>=0?'+':''}${(p.pnl_live_pct||0).toFixed(1)}%)\n`;
       txt += `  KO dist : ${(p.ko_dist_live||0).toFixed(1)}%${(p.ko_dist_live||99)<3?' ⚠':''}\n`;
       if(p.stop_turbo || p.tp1_turbo || p.tp2_turbo){
-        txt += `  Stop ${p.stop_turbo||'—'}€ · TP1 ${p.tp1_turbo||'—'}€ · TP2 ${p.tp2_turbo||'—'}€\n`;
+        txt += `  Prix turbo vente : Stop ${p.stop_turbo||'—'}€ · TP1 ${p.tp1_turbo||'—'}€ · TP2 ${p.tp2_turbo||'—'}€\n`;
       }
     });
   } else {
@@ -1408,8 +1493,8 @@ function copyScanData(){
   txt += `   - Style (daily / momentum / swing)\n`;
   txt += `   - Niveaux précis : entrée, strike, KO, levier cible\n`;
   txt += `   - Mise suggérée (adaptée à mon cash dispo et au régime de marché)\n`;
-  txt += `   - TP1, TP2 (en niveau indice + prix turbo attendu)\n`;
-  txt += `   - Stop et invalidation de la thèse\n`;
+  txt += `   - TP1, TP2 (en niveau indice + prix turbo vente attendu)\n`;
+  txt += `   - Stop (en prix turbo vente) et invalidation de la thèse\n`;
   txt += `   - Conviction 1/10 + rationale\n`;
   txt += `5. Risk alerts majeurs du jour\n`;
   txt += `\nSois direct, concret, priorise par conviction. Pas de blabla.\n`;
