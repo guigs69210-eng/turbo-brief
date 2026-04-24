@@ -1055,13 +1055,21 @@ function computePositionLive(p, idxLive, fx){
     ? Math.max((sjLive - strike) / parite / effFx, 0)
     : Math.max((strike - sjLive) / parite / effFx, 0);
 
-  const pnl_eur = (vi - pru) * nb;
-  const pnl_pct = pru > 0 ? ((vi - pru) / pru * 100) : 0;
+  // Prime estimée : les PUT ont une prime émetteur plus élevée (skew + risque)
+  // Sur CALL : prime déjà ~5% incluse dans spreads normaux, VI pure OK
+  // Sur PUT : prime structurellement +25% en moyenne (plus haute quand KO collé)
+  const premiumFactor = sens === 'PUT' ? 1.25 : 1.0;
+  const priceEstimated = vi * premiumFactor;
+
+  const pnl_eur = (priceEstimated - pru) * nb;
+  const pnl_pct = pru > 0 ? ((priceEstimated - pru) / pru * 100) : 0;
   const ko_dist = sens === 'CALL'
     ? (sjLive - ko) / sjLive * 100
     : (ko - sjLive) / sjLive * 100;
 
-  return { vi, pnl_eur, pnl_pct, ko_dist };
+  // vi reste la valeur intrinsèque pure (affichée comme "Prix turbo live")
+  // priceEstimated tient compte de la prime émetteur pour le P&L
+  return { vi: priceEstimated, pnl_eur, pnl_pct, ko_dist };
 }
 
 function renderIndices(allPositions, lastRefresh, indicesLive){
