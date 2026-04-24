@@ -1055,6 +1055,8 @@ function renderPositions(){
     const koDist = p.ko_dist_live || 99;
     const koCls = koDist < 2 ? 'var(--down)' : koDist < 3 ? 'var(--down)' : koDist < 6 ? 'var(--amber)' : 'var(--up)';
     const koPulse = koDist < 2 ? ' ko-critical' : '';
+    const nbT = p.nb_titres || p.titres || p.quantite || p.nb || '—';
+    const pruA = p.prix_achat || p.pru || p.prix_entree || null;
     return `<div class="pos-card${koPulse}">
       <div class="pos-head">
         <div>
@@ -1067,8 +1069,8 @@ function renderPositions(){
         </div>
       </div>
       <div class="pos-grid">
-        <div><div class="pm-lbl">Titres</div><div class="pm-val">${p.nb_titres||'—'}</div></div>
-        <div><div class="pm-lbl">Prix turbo achat</div><div class="pm-val">${p.prix_achat ? p.prix_achat.toFixed(2)+'€' : '—'}</div></div>
+        <div><div class="pm-lbl">Titres</div><div class="pm-val">${nbT}</div></div>
+        <div><div class="pm-lbl">Prix turbo achat</div><div class="pm-val">${pruA ? pruA.toFixed(2)+'€' : '—'}</div></div>
         <div><div class="pm-lbl">Mise</div><div class="pm-val">${fmtEur(p.mise_eur||0)}</div></div>
         <div><div class="pm-lbl">Strike</div><div class="pm-val">${p.strike||'—'}</div></div>
         <div><div class="pm-lbl">KO</div><div class="pm-val">${p.ko||'—'}</div></div>
