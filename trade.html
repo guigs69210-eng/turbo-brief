@@ -704,6 +704,8 @@ function calcPreview(){
   const fx = isUSD ? FX : 1;
 
   // Prix turbo live (VI), levier & KO distance
+  // NOTE: turbos SG cotés en EUR. Pour sous-jacents USD (NQ, SP500), diviser par EUR/USD.
+  // Pour sous-jacents EUR (CAC40), pas de FX.
   const vi = (sjlive>0 && strike>0) ? (
     sens==='CALL' ? Math.max((sjlive-strike)/parite/fx,0) : Math.max((strike-sjlive)/parite/fx,0)
   ) : 0;
@@ -771,9 +773,7 @@ function calcPreview(){
   const gain1 = (tp1Prx - pru) * nb;
   const gain2 = (tp2Prx - pru) * nb;
 
-  // Niveaux indice correspondants
-  // Si sens=CALL : turbo_prix = (sj - strike) / parité / fx  →  sj = turbo_prix * parité * fx + strike
-  // Si sens=PUT  : turbo_prix = (strike - sj) / parité / fx  →  sj = strike - turbo_prix * parité * fx
+  // Niveaux indice correspondants (USD sous-jacent = avec FX, EUR sous-jacent = sans FX)
   const idxFromTurbo = (turboPrx) => {
     return sens==='CALL'
       ? strike + turboPrx * parite * fx
@@ -1128,11 +1128,33 @@ function renderPositions(){
     const koCls = koDist < 2 ? 'var(--down)' : koDist < 6 ? 'var(--amber)' : 'var(--up)';
     const koPulse = koDist < 2 ? ' ko-critical' : '';
 
+    // Nettoie sous_jacent pour éviter duplications (ex: "CAC40 8460 PUT" → "CAC40")
+    const cleanSJ = (sj) => {
+      if(!sj) return '';
+      const s = String(sj).toUpperCase().replace(/\s+/g,'');
+      if(s.includes('NQ') || s.includes('NASDAQ')) return 'NQ';
+      if(s.includes('CAC') || s.includes('FR40')) return 'CAC40';
+      if(s.includes('SP') || s.includes('S&P') || s.includes('SPX') || s.includes('ES')) return 'SP500';
+      return sj;
+    };
+    const sjDisplay = cleanSJ(p.sous_jacent);
+
+    // Levier live recalculé si VI dispo (plus à jour que la valeur stockée)
+    let levierDisplay = p.levier || '—';
+    if(viLive > 0) {
+      const sjLiveForLev = (cachedData.content.cto_recap||{}).indices_live?.[sjDisplay];
+      const fxLev = (p.devise === 'USD' || sjDisplay === 'NQ' || sjDisplay === 'SP500') ? fx : 1;
+      const parLev = parseFloat(p.parite) || 1;
+      if(sjLiveForLev > 0) {
+        levierDisplay = (sjLiveForLev / (viLive * parLev * fxLev)).toFixed(1);
+      }
+    }
+
     return `<div class="pos-card${koPulse}">
       <div class="pos-head">
         <div>
-          <div class="pos-title">${p.sens} ${p.sous_jacent||''} ${p.strike||''}</div>
-          <div class="pos-badge ${sensCls}">${p.sens} · ×${p.levier||'—'}</div>
+          <div class="pos-title">${p.sens} ${sjDisplay} ${p.strike||''}</div>
+          <div class="pos-badge ${sensCls}">${p.sens} · ×${levierDisplay}</div>
         </div>
         <div class="pos-pnl-wrap">
           <div class="pos-pnl ${pnlCls}">${fmtSign(pnlEur)}</div>
@@ -1234,11 +1256,22 @@ function renderJournal(){
   document.getElementById('j-rr').textContent = rr;
   document.getElementById('j-count').textContent = hist.length+' trades';
 
+  // Nettoie les labels : caractères UTF-8 mal encodés, emoji cassés
+  const cleanLabel = (l) => {
+    if(!l) return '';
+    return l
+      .replace(/[\u00C0-\u00FF]{2,}/g, '')  // séquences répétées de caractères latin-1 corrompus (Ã Â etc.)
+      .replace(/[^\x20-\x7E\u00A0-\uFFFF]/g, '') // caractères non imprimables
+      .replace(/\s+/g, ' ')
+      .trim();
+  };
+
   // Regroupement par turbo (clé = label normalisé)
   const normalizeLabel = (l) => {
     if(!l) return 'INCONNU';
     // Extraire le turbo name : "CALL NQ Turbo 23991 (partiel 1/2)" → "CALL NQ 23991"
-    return l.replace(/\(.*?\)/g, '').replace(/Turbo\s+BEST/gi, '').replace(/Turbo/gi, '')
+    return cleanLabel(l).replace(/\(.*?\)/g, '').replace(/Turbo\s+BEST/gi, '').replace(/Turbo/gi, '')
+            .replace(/Strike/gi, '').replace(/\(SG\)/gi, '')
             .replace(/\s+/g, ' ').trim();
   };
   const groups = {};
@@ -1319,7 +1352,7 @@ function renderJournal(){
       <div class="ji-left">
         <div class="ji-title">
           <span class="ji-dot ${isUp?'up':'dn'}"></span>
-          ${h.label||'—'}
+          ${cleanLabel(h.label) || '—'}
           ${partialBadge}
           ${koBadge}
         </div>
