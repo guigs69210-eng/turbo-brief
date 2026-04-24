@@ -961,14 +961,23 @@ async function syncAll(){
   const btn = document.getElementById('sync-btn');
   btn.classList.add('spin');
   try {
-    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}`, {
-      headers: { 'Authorization': `Bearer ${ghToken}`, 'Accept': 'application/vnd.github+json' }
+    // Cache buster pour forcer la dernière version (évite le cache CDN GitHub + navigateur)
+    const cacheBuster = Date.now();
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}?t=${cacheBuster}`, {
+      headers: {
+        'Authorization': `Bearer ${ghToken}`,
+        'Accept': 'application/vnd.github+json',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache'
+      },
+      cache: 'no-store'
     });
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
     cachedData = { content: JSON.parse(atob(data.content.replace(/\s/g,''))), sha: data.sha };
     renderHero(); renderPositions(); renderJournal(); renderStats();
-    showToast('Synchronisé','ok');
+    const lastRef = cachedData.content.cto_recap?.last_refresh || '—';
+    showToast('Sync · ' + lastRef.split(' ').slice(-1)[0], 'ok');
   } catch(e){ showToast('Erreur: '+e.message,'err'); }
   finally { btn.classList.remove('spin'); }
 }
