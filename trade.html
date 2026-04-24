@@ -961,22 +961,26 @@ async function syncAll(){
   const btn = document.getElementById('sync-btn');
   btn.classList.add('spin');
   try {
-    // Cache buster via query param (safe, pas de preflight CORS)
-    const cacheBuster = Date.now();
-    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE}?ref=main&t=${cacheBuster}`, {
+    const url = `https://api.github.com/repos/${REPO}/contents/${FILE}?t=${Date.now()}`;
+    const res = await fetch(url, {
       headers: {
         'Authorization': `Bearer ${ghToken}`,
         'Accept': 'application/vnd.github+json'
-      },
-      cache: 'no-store'
+      }
     });
-    if(!res.ok) throw new Error('HTTP '+res.status);
+    if(!res.ok){
+      const txt = await res.text().catch(()=>'');
+      throw new Error('HTTP '+res.status+' '+txt.slice(0,80));
+    }
     const data = await res.json();
     cachedData = { content: JSON.parse(atob(data.content.replace(/\s/g,''))), sha: data.sha };
     renderHero(); renderPositions(); renderJournal(); renderStats();
     const lastRef = cachedData.content.cto_recap?.last_refresh || '—';
     showToast('Sync · ' + lastRef.split(' ').slice(-1)[0], 'ok');
-  } catch(e){ showToast('Erreur: '+e.message,'err'); }
+  } catch(e){
+    console.error('syncAll error:', e);
+    showToast('Erreur: '+(e.message||e.name||'network'),'err');
+  }
   finally { btn.classList.remove('spin'); }
 }
 
