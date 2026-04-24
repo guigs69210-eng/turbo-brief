@@ -1285,6 +1285,15 @@ function renderJournal(){
       .trim();
   };
 
+  // Extrait la date au format JJ/MM/YYYY depuis une string (ignore caractères corrompus, heures)
+  const cleanDate = (s) => {
+    if(!s) return '';
+    const match = String(s).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    if(!match) return '';
+    const [_, d, m, y] = match;
+    return d.padStart(2,'0') + '/' + m.padStart(2,'0') + '/' + y;
+  };
+
   // Regroupement par turbo (clé = label normalisé)
   const normalizeLabel = (l) => {
     if(!l) return 'INCONNU';
@@ -1302,7 +1311,12 @@ function renderJournal(){
     groups[key].totalPnl  += h.pnl_eur || 0;
   });
 
-  const turboList = Object.values(groups).sort((a,b) => b.totalPnl - a.totalPnl);
+  const turboList = Object.values(groups).sort((a,b) => {
+    // Tri par date la plus récente du dernier trade du groupe (décroissant)
+    const dateA = cleanDate(a.trades[a.trades.length-1]?.date);
+    const dateB = cleanDate(b.trades[b.trades.length-1]?.date);
+    return dateB.localeCompare(dateA);
+  });
   document.getElementById('j-turbo-count').textContent = turboList.length+' turbos';
 
   const turboEl = document.getElementById('turbo-recap');
@@ -1320,9 +1334,12 @@ function renderJournal(){
       const rrTxt = isKo ? 'KO' : (rrReal >= 0 ? '×'+rrReal.toFixed(1) : '×'+rrReal.toFixed(1));
       const pctGlobal = g.totalMise > 0 ? g.totalPnl / g.totalMise * 100 : 0;
 
-      // Achat info (premier trade ou trade avec status "achat" idéalement)
-      const first = g.trades[0];
-      const last = g.trades[g.trades.length - 1];
+      // Achat / vente : tri par date pour avoir premier achat et dernière vente
+      const sortedTrades = [...g.trades].sort((a,b) => cleanDate(a.date).localeCompare(cleanDate(b.date)));
+      const first = sortedTrades[0];
+      const last = sortedTrades[sortedTrades.length - 1];
+      const firstDate = cleanDate(first.date);
+      const lastDate = cleanDate(last.date);
 
       return `<div class="turbo-card">
         <div class="turbo-head">
@@ -1337,12 +1354,12 @@ function renderJournal(){
         </div>
         <div class="turbo-flow">
           <div class="tf-block">
-            <div class="tf-lbl">Achat · ${first.date ? first.date.split(/[→\s]/)[0] : '—'}</div>
+            <div class="tf-lbl">Achat · ${firstDate || '—'}</div>
             <div class="tf-val">${nb} ordre${nb>1?'s':''}</div>
           </div>
           <div class="tf-arrow">→</div>
           <div class="tf-block">
-            <div class="tf-lbl">Vente · ${last.date ? (last.date.match(/(\d{1,2}\/\d{1,2}\/?\d*)/g)||['—']).pop() : '—'}</div>
+            <div class="tf-lbl">Vente · ${lastDate || '—'}</div>
             <div class="tf-val">${isKo?'KO atteint':'Clôturé'}</div>
           </div>
           <div class="tf-rr-badge ${rrCls}">${rrTxt}</div>
@@ -1351,15 +1368,21 @@ function renderJournal(){
     }).join('');
   }
 
-  // Historique détaillé
+  // Historique détaillé — tri par date décroissante (plus récent d'abord)
   const list = document.getElementById('journal-list');
   if(hist.length===0){ list.innerHTML = '<div class="empty">Aucun trade enregistré.</div>'; return; }
-  list.innerHTML = hist.slice().reverse().map(h => {
+  const sortedHist = [...hist].sort((a,b) => {
+    const dA = cleanDate(a.date);
+    const dB = cleanDate(b.date);
+    // Conversion JJ/MM/YYYY → YYYY-MM-JJ pour tri alphabétique
+    const toISO = d => d ? d.split('/').reverse().join('-') : '';
+    return toISO(dB).localeCompare(toISO(dA));
+  });
+  list.innerHTML = sortedHist.map(h => {
     const isUp = (h.pnl_eur||0)>=0;
     const partialBadge = h.partiel ? '<span class="ji-badge partial">partiel</span>' : '';
     const koBadge = h.status === 'KO' ? '<span class="ji-badge ko">KO</span>' : '';
-    // Date : garder uniquement la partie JJ/MM/YYYY (strip time si présent)
-    const dateOnly = (h.date||'—').match(/\d{1,2}\/\d{1,2}\/\d{4}/)?.[0] || (h.date || '—');
+    const dateOnly = cleanDate(h.date) || '—';
     // Détails : nb titres × prix vente
     const detailsParts = [];
     if(h.nb_sold) detailsParts.push(`${h.nb_sold} titres`);
