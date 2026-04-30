@@ -70,7 +70,7 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 .mini-val.up { color: var(--up); }
 .mini-val.dn { color: var(--down); }
 
-.tabs { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 4px; margin-bottom: 16px; }
+.tabs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 4px; margin-bottom: 16px; }
 .tab { padding: 11px 0; text-align: center; border-radius: 8px; font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--text-3); background: transparent; border: none; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 5px; }
 .tab.on { background: linear-gradient(135deg, var(--bg-hover), var(--bg-raised)); color: var(--text); box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 2px 6px rgba(0,0,0,0.2); }
 .tab-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--text-4); }
@@ -321,6 +321,76 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 .period-val { font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: -0.02em; }
 .period-val.up { color: var(--up); } .period-val.dn { color: var(--down); }
 .period-sub { font-family: var(--mono); font-size: 9px; color: var(--text-3); margin-top: 2px; }
+
+/* ━━━━━━ SIGNAUX TAB ━━━━━━ */
+.sg-recap { background: var(--bg-card); border: 2px solid var(--down); border-radius: 16px; padding: 14px; margin-bottom: 14px; position: relative; overflow: hidden; }
+.sg-recap.bull { border-color: var(--up); }
+.sg-recap.neut { border-color: var(--text-4); }
+.sg-recap::before { content: ''; position: absolute; top: 0; right: 0; width: 200px; height: 100%; background: radial-gradient(circle at 100% 0%, var(--down-dim) 0%, transparent 60%); pointer-events: none; }
+.sg-recap.bull::before { background: radial-gradient(circle at 100% 0%, var(--up-dim) 0%, transparent 60%); }
+.sg-recap.neut::before { background: none; }
+
+.sg-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; position: relative; }
+.sg-tag { font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--down); display: flex; align-items: center; gap: 6px; }
+.sg-tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--down); box-shadow: 0 0 6px var(--down); animation: sg-pulse 2s infinite; }
+.sg-recap.bull .sg-tag { color: var(--up); }
+.sg-recap.bull .sg-tag::before { background: var(--up); box-shadow: 0 0 6px var(--up); }
+.sg-recap.neut .sg-tag { color: var(--text-3); }
+.sg-recap.neut .sg-tag::before { background: var(--text-3); animation: none; box-shadow: none; }
+@keyframes sg-pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+.sg-conv { font-family: var(--mono); display: flex; align-items: baseline; gap: 1px; }
+.sg-conv-num { font-size: 20px; font-weight: 700; line-height: 1; }
+.sg-conv-num.high { color: var(--up); }
+.sg-conv-num.mid { color: var(--amber); }
+.sg-conv-num.low { color: var(--down); }
+.sg-conv-max { font-size: 11px; color: var(--text-4); }
+
+.sg-title { font-family: var(--sans); font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.02em; line-height: 1; margin-bottom: 2px; position: relative; }
+.sg-title .arr { margin-right: 6px; font-size: 18px; }
+.sg-title.bear .arr { color: var(--down); }
+.sg-title.bull .arr { color: var(--up); }
+.sg-title.neut .arr { color: var(--text-3); }
+.sg-sub { font-family: var(--mono); font-size: 11px; color: var(--text-3); margin-bottom: 12px; position: relative; }
+
+.sg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px 0; border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); margin-bottom: 10px; position: relative; }
+.sg-cell { text-align: left; }
+.sg-cell-lbl { font-size: 9px; font-weight: 600; letter-spacing: 0.08em; color: var(--text-3); text-transform: uppercase; margin-bottom: 4px; }
+.sg-cell-val { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--text); white-space: nowrap; }
+.sg-cell-val .arrow { color: var(--text-4); font-weight: 500; margin: 0 2px; }
+.sg-cell-val .target.dn { color: var(--down); }
+.sg-cell-val .target.up { color: var(--up); }
+.sg-cell-pct { font-family: var(--mono); font-size: 11px; margin-top: 2px; font-weight: 700; }
+.sg-cell-pct.dn { color: var(--down); }
+.sg-cell-pct.up { color: var(--up); }
+.sg-cell-pct.flat { color: var(--text-3); }
+
+.sg-window { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11px; color: var(--text-2); position: relative; }
+.sg-window-pill { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(255,197,100,0.3); padding: 3px 8px; border-radius: 5px; font-weight: 700; }
+
+.sg-ev { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
+.sg-ev.bear { border-left: 3px solid var(--down); }
+.sg-ev.bull { border-left: 3px solid var(--up); }
+.sg-ev.neut { border-left: 3px solid var(--text-4); }
+.sg-ev-r1 { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.sg-ev-time { font-family: var(--mono); font-size: 12px; font-weight: 700; color: var(--amber); background: var(--amber-dim); padding: 3px 7px; border-radius: 5px; border: 1px solid rgba(255,197,100,0.25); }
+.sg-ev-name { flex: 1; font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.sg-ev-stars { font-family: var(--mono); font-size: 10px; color: var(--amber); letter-spacing: -1px; }
+.sg-ev-r2 { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 11px; color: var(--text-3); }
+.sg-ev-data { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.sg-ev-data b { color: var(--text); font-weight: 700; margin-left: 3px; }
+.sg-ev-data .sep { color: var(--text-4); margin: 0 4px; }
+.sg-ev-delta { font-weight: 700; padding: 1px 6px; border-radius: 4px; font-size: 10px; margin-left: 4px; }
+.sg-ev-delta.dn { background: var(--down-dim); color: var(--down); border: 1px solid var(--down-line); }
+.sg-ev-delta.up { background: var(--up-dim); color: var(--up); border: 1px solid var(--up-line); }
+.sg-ev-delta.flat { background: var(--bg-hover); color: var(--text-3); border: 1px solid var(--border); }
+.sg-ev-conv { font-family: var(--mono); font-size: 13px; font-weight: 700; display: flex; align-items: baseline; gap: 1px; }
+.sg-ev-conv .num.high { color: var(--up); }
+.sg-ev-conv .num.mid { color: var(--amber); }
+.sg-ev-conv .num.low { color: var(--down); }
+.sg-ev-conv .max { font-size: 10px; color: var(--text-4); }
+.sg-empty { text-align: center; padding: 30px 20px; color: var(--text-3); font-size: 13px; }
+.sg-empty-icon { font-size: 32px; margin-bottom: 10px; opacity: 0.5; }
 </style>
 </head>
 <body>
@@ -405,9 +475,10 @@ body { max-width: 440px; margin: 0 auto; padding: 18px 16px 80px; position: rela
 
 <div class="tabs">
   <button class="tab on" onclick="switchMode('open',this)"><span class="tab-dot"></span>Ouvrir</button>
-  <button class="tab" onclick="switchMode('close',this)"><span class="tab-dot"></span>Positions</button>
+  <button class="tab" onclick="switchMode('close',this)"><span class="tab-dot"></span>Pos.</button>
   <button class="tab" onclick="switchMode('journal',this)"><span class="tab-dot"></span>Journal</button>
   <button class="tab" onclick="switchMode('stats',this)"><span class="tab-dot"></span>Stats</button>
+  <button class="tab" onclick="switchMode('signaux',this)"><span class="tab-dot"></span>Signaux</button>
 </div>
 
 <!-- OPEN -->
@@ -671,6 +742,65 @@ Ex: CALL SP500 · Entrée 7151 · Strike 6700 · KO 6700 · TP1 7235 · TP2 7290
   </div>
 </div>
 
+<!-- SIGNAUX -->
+<div id="m-signaux" class="mode">
+
+  <!-- RECAP MACRO -->
+  <div id="sg-recap-card" class="sg-recap bear">
+    <div class="sg-head">
+      <span class="sg-tag" id="sg-recap-tag">Recap macro · 30 avr</span>
+      <div class="sg-conv">
+        <span class="sg-conv-num high" id="sg-conv-num">8</span><span class="sg-conv-max">/10</span>
+      </div>
+    </div>
+    <div class="sg-title bear" id="sg-title">
+      <span class="arr" id="sg-arr">▼</span><span id="sg-direction">Bearish</span>
+    </div>
+    <div class="sg-sub" id="sg-sub">3 events 3★ aujourd'hui · max vol 14:30 CET</div>
+    <div class="sg-grid">
+      <div class="sg-cell">
+        <div class="sg-cell-lbl">NQ</div>
+        <div class="sg-cell-val">
+          <span id="sg-nq-now">25 089</span><span class="arrow">→</span><span class="target dn" id="sg-nq-tgt">24 562</span>
+        </div>
+        <div class="sg-cell-pct dn" id="sg-nq-pct">−2,1%</div>
+      </div>
+      <div class="sg-cell">
+        <div class="sg-cell-lbl">SP500</div>
+        <div class="sg-cell-val">
+          <span id="sg-sp-now">7 154</span><span class="arrow">→</span><span class="target dn" id="sg-sp-tgt">7 047</span>
+        </div>
+        <div class="sg-cell-pct dn" id="sg-sp-pct">−1,5%</div>
+      </div>
+      <div class="sg-cell">
+        <div class="sg-cell-lbl">CAC40</div>
+        <div class="sg-cell-val">
+          <span id="sg-cac-now">7 942</span><span class="arrow">→</span><span class="target dn" id="sg-cac-tgt">7 870</span>
+        </div>
+        <div class="sg-cell-pct dn" id="sg-cac-pct">−0,9%</div>
+      </div>
+    </div>
+    <div class="sg-window">
+      <span class="sg-window-pill" id="sg-window">Fenêtre 13:30 → 14:40</span>
+      <span id="sg-window-note">vol max post-14:30</span>
+    </div>
+  </div>
+
+  <!-- ANNONCES -->
+  <div class="sec-header">
+    <div class="sec-title">Annonces 3★ · contexte</div>
+    <div class="sec-count" id="sg-events-count">—</div>
+  </div>
+  <div id="sg-events-list">
+    <div class="sg-empty">
+      <div class="sg-empty-icon">📊</div>
+      Aucune annonce 3★ chargée.<br>
+      <span style="font-size:11px;color:var(--text-4)">Sync pour récupérer les events du jour.</span>
+    </div>
+  </div>
+
+</div>
+
 <div id="toast" class="toast"></div>
 
 <!-- CONFIRMATION MODAL -->
@@ -754,12 +884,13 @@ function clearToken(){
 }
 
 function switchMode(m,btn){
-  ['open','close','journal','stats'].forEach(x => document.getElementById('m-'+x).classList.toggle('on', x===m));
+  ['open','close','journal','stats','signaux'].forEach(x => document.getElementById('m-'+x).classList.toggle('on', x===m));
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
   btn.classList.add('on');
   if(m==='close' && cachedData) renderPositions();
   if(m==='journal' && cachedData) renderJournal();
   if(m==='stats' && cachedData) renderStats();
+  if(m==='signaux' && cachedData) renderSignaux();
 }
 
 function setSens(s){
@@ -1282,7 +1413,7 @@ async function syncAll(){
     }
     const data = await res.json();
     cachedData = { content: JSON.parse(atob(data.content.replace(/\s/g,''))), sha: data.sha };
-    renderHero(); renderPositions(); renderJournal(); renderStats();
+    renderHero(); renderPositions(); renderJournal(); renderStats(); renderSignaux();
     const lastRef = cachedData.content.cto_recap?.last_refresh || '—';
     showToast('Sync · ' + lastRef.split(' ').slice(-1)[0], 'ok');
   } catch(e){
@@ -1290,6 +1421,90 @@ async function syncAll(){
     showToast('Erreur: '+(e.message||e.name||'network'),'err');
   }
   finally { btn.classList.remove('spin'); }
+}
+
+// ━━━━━━ SIGNAUX ━━━━━━
+function renderSignaux(){
+  if(!cachedData) return;
+  const c = cachedData.content;
+  const sg = c.signaux || {};
+
+  // Recap
+  const recap = sg.recap || {};
+  const direction = (recap.direction || 'neutral').toLowerCase(); // 'bearish'|'bullish'|'neutral'
+  const card = document.getElementById('sg-recap-card');
+  card.className = 'sg-recap ' + (direction==='bearish'?'bear':direction==='bullish'?'bull':'neut');
+
+  const title = document.getElementById('sg-title');
+  title.className = 'sg-title ' + (direction==='bearish'?'bear':direction==='bullish'?'bull':'neut');
+  document.getElementById('sg-arr').textContent = direction==='bearish'?'▼':direction==='bullish'?'▲':'■';
+  document.getElementById('sg-direction').textContent = recap.direction_label || (direction==='bearish'?'Bearish':direction==='bullish'?'Bullish':'Neutre');
+
+  // Conviction
+  const conv = parseInt(recap.conviction || 0);
+  const convEl = document.getElementById('sg-conv-num');
+  convEl.textContent = conv;
+  convEl.className = 'sg-conv-num ' + (conv>=8?'high':conv>=6?'mid':'low');
+
+  // Tag + sub
+  document.getElementById('sg-recap-tag').textContent = recap.tag || ('Recap macro · ' + (recap.date||''));
+  document.getElementById('sg-sub').textContent = recap.sub || '';
+
+  // Indices
+  const idx = recap.indices || {};
+  ['nq','sp','cac'].forEach(k => {
+    const data = idx[k] || {};
+    const now = data.now || '—';
+    const tgt = data.target || '—';
+    const pct = data.pct || 0;
+    document.getElementById('sg-'+k+'-now').textContent = typeof now==='number'?now.toLocaleString('fr-FR'):now;
+    document.getElementById('sg-'+k+'-tgt').textContent = typeof tgt==='number'?tgt.toLocaleString('fr-FR'):tgt;
+    const tgtEl = document.getElementById('sg-'+k+'-tgt');
+    tgtEl.className = 'target ' + (pct<0?'dn':pct>0?'up':'flat');
+    const pctEl = document.getElementById('sg-'+k+'-pct');
+    pctEl.textContent = (pct>=0?'+':'')+pct.toFixed(1)+'%';
+    pctEl.className = 'sg-cell-pct ' + (pct<0?'dn':pct>0?'up':'flat');
+  });
+
+  // Window
+  if(recap.window){
+    document.getElementById('sg-window').textContent = recap.window;
+  }
+  if(recap.window_note){
+    document.getElementById('sg-window-note').textContent = recap.window_note;
+  }
+
+  // Events
+  const events = sg.events || [];
+  document.getElementById('sg-events-count').textContent = events.length + ' events';
+  const list = document.getElementById('sg-events-list');
+  if(events.length === 0){
+    list.innerHTML = '<div class="sg-empty"><div class="sg-empty-icon">📊</div>Aucune annonce 3★ chargée.<br><span style="font-size:11px;color:var(--text-4)">Sync pour récupérer les events du jour.</span></div>';
+    return;
+  }
+  list.innerHTML = events.map(ev => {
+    const dir = (ev.direction||'neutral').toLowerCase();
+    const cls = dir==='bearish'?'bear':dir==='bullish'?'bull':'neut';
+    const conv = parseInt(ev.conviction || 0);
+    const convCls = conv>=8?'high':conv>=6?'mid':'low';
+    const deltaCls = ev.delta_dir==='up'?'up':ev.delta_dir==='dn'?'dn':'flat';
+    const label1 = ev.label1 || 'Marché';
+    const label2 = ev.label2 || 'Modèle';
+    return `<div class="sg-ev ${cls}">
+      <div class="sg-ev-r1">
+        <span class="sg-ev-time">${ev.time||'—'}</span>
+        <span class="sg-ev-name">${ev.name||'—'}</span>
+        <span class="sg-ev-stars">${'★'.repeat(ev.stars||3)}</span>
+      </div>
+      <div class="sg-ev-r2">
+        <div class="sg-ev-data">
+          ${label1}<b>${ev.val1||'—'}</b><span class="sep">·</span>${label2}<b>${ev.val2||'—'}</b>
+          <span class="sg-ev-delta ${deltaCls}">${ev.delta||'—'}</span>
+        </div>
+        <div class="sg-ev-conv"><span class="num ${convCls}">${conv}</span><span class="max">/10</span></div>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 function renderHero(){
