@@ -25,14 +25,14 @@
     "nb_positions": 3,
     "pnl_live_total": 318,
     "indices_live": {
-      "NQ": 27304.25,
-      "SP500": 7173.5,
-      "CAC40": 8065.37
+      "NQ": 27408.5,
+      "SP500": 7197.5,
+      "CAC40": 8112.3
     },
-    "fx_eurusd": 1.1699,
+    "fx_eurusd": 1.1734,
     "pnl_latent_eur": 0,
     "pnl_latent_pct": 0.0,
-    "last_refresh": "30/04/2026 15:49"
+    "last_refresh": "30/04/2026 17:44"
   },
   "pnl_live_total": 318,
   "positions_ouvertes": [
