@@ -1,3 +1,8 @@
+"""
+run_brief.py — Turbo Brief auto-generator
+Avec intégration onglet Signaux (auto pipeline)
+"""
+
 import argparse
 import asyncio
 import json
@@ -8,9 +13,12 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(
+    level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
-    datefmt="%H:%M:%S", stream=sys.stdout)
+    datefmt="%H:%M:%S",
+    stream=sys.stdout,
+)
 log = logging.getLogger("run_brief")
 PARIS = ZoneInfo("Europe/Paris")
 
@@ -18,9 +26,12 @@ PARIS = ZoneInfo("Europe/Paris")
 def detect_trigger_from_time() -> str:
     now = datetime.now(PARIS)
     h = now.hour
-    if h == 8:   return "morning"
-    if h in (13, 14): return "us"
-    if h == 17:  return "eod"
+    if h == 8:
+        return "morning"
+    if h in (13, 14):
+        return "us"
+    if h == 17:
+        return "eod"
     return "refresh"
 
 
@@ -32,6 +43,59 @@ def _is_fomc_day() -> bool:
     return datetime.now(PARIS).date().isoformat() in fomc_dates
 
 
+# ════════════════════════════════════════════════
+# SIGNAUX — onglet trade.html (auto pipeline)
+# ════════════════════════════════════════════════
+def _build_signaux_block(report_json_path: str) -> dict | None:
+    """
+    Build le bloc 'signaux' à injecter dans report_data.json.
+    Lit l'état précédent pour fallback si fetch fail.
+    Returns None si l'agent n'est pas dispo (graceful degradation).
+    """
+    try:
+        from agents.signaux import build_signaux
+    except ImportError as e:
+        log.warning(f"Module signaux indisponible: {e}")
+        return None
+
+    # Load previous state for fallback
+    prev_signaux = None
+    try:
+        with open(report_json_path, "r", encoding="utf-8") as f:
+            prev_data = json.load(f)
+            content = prev_data.get("content", prev_data)
+            prev_signaux = content.get("signaux")
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
+    try:
+        signaux = build_signaux(prev_state=prev_signaux)
+        log.info(
+            f"Signaux ✓ — direction={signaux['recap']['direction']}, "
+            f"conviction={signaux['recap']['conviction']}/10, "
+            f"events={len(signaux['events'])}, "
+            f"stale={signaux.get('_stale', False)}"
+        )
+        return signaux
+    except Exception as e:
+        log.warning(f"build_signaux fail: {e}")
+        return prev_signaux  # fallback dernier état si on en a un
+
+
+def _inject_signaux(report_data: dict, signaux: dict) -> dict:
+    """Inject signaux block dans report_data (gère structure {content:{}} ou plate)."""
+    if not signaux:
+        return report_data
+    if "content" in report_data and isinstance(report_data["content"], dict):
+        report_data["content"]["signaux"] = signaux
+    else:
+        report_data["signaux"] = signaux
+    return report_data
+
+
+# ════════════════════════════════════════════════
+# MAIN
+# ════════════════════════════════════════════════
 async def main(trigger: str):
     log.info(f"=== Turbo Brief — trigger: {trigger} ===")
 
@@ -40,8 +104,15 @@ async def main(trigger: str):
     from agents.calendar_agent  import get_eco_calendar
     from agents.technical_agent import get_technicals
     from agents.claude_agent    import synthesize_brief
-    from agents.notifier        import send_telegram, send_email, send_telegram_pdf
+    from agents.notifier        import send_telegram, send_email
     from output.html_updater    import update_turbo_brief_html
+
+    # Optional PDF
+    try:
+        from agents.notifier import send_telegram_pdf
+        has_pdf = True
+    except ImportError:
+        has_pdf = False
 
     run_all = trigger in ("morning", "us", "fomc", "manual")
 
@@ -71,22 +142,28 @@ async def main(trigger: str):
         "is_fomc":    _is_fomc_day(),
     }
 
-    from orchestrator import TriggerType
-    trigger_map = {
-        "morning": TriggerType.MORNING_OPEN,
-        "us":      TriggerType.US_OPEN,
-        "fomc":    TriggerType.FOMC,
-        "refresh": TriggerType.MANUAL,
-        "eod":     TriggerType.MANUAL,
-        "manual":  TriggerType.MANUAL,
-    }
-    trigger_type = trigger_map.get(trigger, TriggerType.MANUAL)
+    # ─── Trigger mapping ───
+    try:
+        from orchestrator import TriggerType
+        trigger_map = {
+            "morning": TriggerType.MORNING_OPEN,
+            "us":      TriggerType.US_OPEN,
+            "fomc":    TriggerType.FOMC,
+            "refresh": TriggerType.MANUAL,
+            "eod":     TriggerType.MANUAL,
+            "manual":  TriggerType.MANUAL,
+        }
+        trigger_type = trigger_map.get(trigger, TriggerType.MANUAL)
+    except ImportError:
+        trigger_type = trigger
 
+    # ─── Build brief ───
     if trigger == "eod":
         brief = _build_eod_brief(raw_data)
     else:
         brief = await synthesize_brief(raw_data, trigger_type)
 
+    # ─── Output JSON ───
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
     (output_dir / "logs").mkdir(exist_ok=True)
@@ -99,20 +176,49 @@ async def main(trigger: str):
     hist = output_dir / "logs" / f"brief_{trigger}_{ts}.json"
     hist.write_text(json.dumps({"raw": raw_data, "brief": brief}, indent=2, ensure_ascii=False))
 
-    try:
-        update_turbo_brief_html(brief)
-    except Exception as e:
-        log.warning(f"HTML update: {e}")
+    # ════════════════════════════════════════════════
+    # SIGNAUX — push dans report_data.json (onglet trade.html)
+    # ════════════════════════════════════════════════
+    report_data_path = "report_data.json"
+    signaux_block = _build_signaux_block(report_data_path)
 
-    # 1. Message Telegram texte
+    if signaux_block:
+        # Charge ou crée report_data.json
+        try:
+            with open(report_data_path, "r", encoding="utf-8") as f:
+                report_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            report_data = {"content": {}}
+
+        report_data = _inject_signaux(report_data, signaux_block)
+
+        # Update timestamp
+        if "content" in report_data:
+            report_data["content"]["last_update"] = datetime.now(PARIS).strftime("%Y-%m-%d %H:%M")
+        else:
+            report_data["last_update"] = datetime.now(PARIS).strftime("%Y-%m-%d %H:%M")
+
+        with open(report_data_path, "w", encoding="utf-8") as f:
+            json.dump(report_data, f, ensure_ascii=False, indent=2)
+        log.info(f"report_data.json mis à jour avec signaux")
+
+        # Copie aussi dans output/ pour GitHub Pages
+        output_report = output_dir / "report_data.json"
+        with open(output_report, "w", encoding="utf-8") as f:
+            json.dump(report_data, f, ensure_ascii=False, indent=2)
+
+    # ─── HTML update + Telegram + Email ───
+    update_turbo_brief_html(brief)
+
     telegram_msg = _format_telegram(brief, trigger)
     ok = await send_telegram(telegram_msg)
     log.info(f"Telegram: {'✓' if ok else '✗'}")
 
-    # 2. PDF Telegram — toujours pour morning/fomc/manual, jamais pour eod/refresh
-    if trigger in ("morning", "us", "fomc", "manual"):
-        ok_pdf = await send_telegram_pdf(brief)
-        log.info(f"Telegram PDF: {'✓' if ok_pdf else '✗'}")
+    if has_pdf and trigger in ("morning", "us", "fomc", "manual"):
+        try:
+            await send_telegram_pdf(brief)
+        except Exception as e:
+            log.warning(f"PDF Telegram fail: {e}")
 
     if trigger in ("morning", "us", "fomc"):
         await send_email(brief)
@@ -137,7 +243,8 @@ def _build_eod_brief(raw_data: dict) -> dict:
         "signal_du_jour": {
             "titre": f"Clôture Paris — {now.strftime('%H:%M')}",
             "description": f"NQ: {fmt('nq_futures')} ({chg('nq_futures')}) · CAC: {fmt('cac40')} ({chg('cac40')})",
-            "biais": "neutre", "conviction": "faible",
+            "biais": "neutre",
+            "conviction": "faible",
         },
         "plan_actions": [],
         "niveaux_cles": [],
@@ -155,47 +262,39 @@ def _format_telegram(brief: dict, trigger: str) -> str:
     signal  = brief.get("signal_du_jour", {})
     actions = brief.get("plan_actions", [])
     alertes = brief.get("alertes", [])
+    strip   = brief.get("market_strip", {})
 
-    # Cours marchés — depuis market_strip (clés valeur/chg/dir)
-    strip = brief.get("market_strip", {})
-
-    def _price(key):
-        return strip.get(key, {}).get("valeur", "—")
-
-    def _chg(key):
-        return strip.get(key, {}).get("chg", "")
-
-    emoji = {"morning":"🌅","us":"🇺🇸","fomc":"🏛️","refresh":"🔄","eod":"🔔","manual":"📋"}.get(trigger,"🗞")
-
-    biais = signal.get("biais","").upper()
-    biais_icon = "🟢" if "haussier" in biais.lower() else "🔴" if "baissier" in biais.lower() else "🟡"
+    emoji = {
+        "morning": "🌅", "us": "🇺🇸", "fomc": "🏛️",
+        "refresh": "🔄", "eod": "🔔", "manual": "📋"
+    }.get(trigger, "🗞")
 
     lines = [
-        f"{emoji} *TURBO BRIEF — {datetime.now(PARIS).strftime('%H:%M')} CET — {brief.get('date_fr', datetime.now(PARIS).strftime('%d/%m/%Y'))}*",
-        f"{biais_icon} *{signal.get('titre','—')}*",
-        f"_{signal.get('description','')[:120]}_",
-        "",
-        f"📈 NQ `{_price('nq')}` {_chg('nq')} · CAC `{_price('cac40')}` {_chg('cac40')}",
-        f"📊 VIX `{_price('vix')}` · Brent `{_price('brent')}`",
+        f"{emoji} *Turbo Brief* — {brief.get('edition', '?')}",
+        f"*{signal.get('titre', '—')}*",
+        f"_{signal.get('description', '')[:100]}_",
         "",
     ]
 
-    if actions:
-        lines.append("*Plan d'action :*")
-        for action in actions[:4]:
-            e = "🟢" if action.get("sens") == "CALL" else "🔴" if action.get("sens") == "PUT" else "⚪"
-            mise = action.get("mise","?")
-            lev  = action.get("levier","?")
-            gain = action.get("gain_cible","")
-            lines.append(f"{e} *{action.get('heure','?')}* — {action.get('titre','?')}")
-            if mise != "?" or lev != "?":
-                lines.append(f"   `{mise}` · ×{lev}" + (f" · {gain}" if gain else ""))
+    nq  = strip.get("nq", {})
+    cac = strip.get("cac40", {})
+    vix = strip.get("vix", {})
+    if nq.get("valeur"):
+        lines.append(f"NQ `{nq['valeur']}` {nq['chg']} · CAC `{cac.get('valeur', '—')}` · VIX `{vix.get('valeur', '—')}`")
         lines.append("")
 
-    for a in alertes[:3]:
+    for action in actions[:3]:
+        e = "🟢" if action.get("sens") == "CALL" else "🔴" if action.get("sens") == "PUT" else "⚪"
+        lines.append(f"{e} *{action.get('heure', '?')}* — {action.get('titre', '?')}")
+        lines.append(f"   `{action.get('mise', '?')}` · ×{action.get('levier', '?')}")
+
+    for a in alertes[:2]:
         lines.append(f"⚠️ {a}")
 
-    lines.append(f"\n📄 PDF ci-dessous")
+    repo = os.getenv("GITHUB_REPOSITORY", "")
+    if repo and "/" in repo:
+        user, repo_name = repo.split("/", 1)
+        lines.append(f"\n📱 [Voir le brief](https://{user}.github.io/{repo_name}/)")
 
     return "\n".join(lines)
 
@@ -203,12 +302,12 @@ def _format_telegram(brief: dict, trigger: str) -> str:
 def _print_summary(brief: dict):
     signal  = brief.get("signal_du_jour", {})
     actions = brief.get("plan_actions", [])
-    print("\n" + "="*50)
-    print(f"BRIEF — {brief.get('edition','?')}")
-    print(f"Signal: {signal.get('titre','?')}")
+    print("\n" + "=" * 50)
+    print(f"BRIEF — {brief.get('edition', '?')}")
+    print(f"Signal: {signal.get('titre', '?')}")
     for a in actions:
-        print(f"  • {a.get('heure','?')} {a.get('sens','?')} {a.get('titre','?')}")
-    print("="*50 + "\n")
+        print(f"  • {a.get('heure', '?')} {a.get('sens', '?')} {a.get('titre', '?')}")
+    print("=" * 50 + "\n")
 
 
 if __name__ == "__main__":
