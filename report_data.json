@@ -5,11 +5,11 @@
   "signal": "Mixed - Long tech US, short Europe",
   "confiance": 65,
   "cto_recap": {
-    "total_engage": 787,
+    "total_engage": 509,
     "valeur_marche": 1675,
     "budget_total": 8902,
-    "reserve_dispo": 9704.199999999999,
-    "nb_positions": 2,
+    "reserve_dispo": 10146.8,
+    "nb_positions": 1,
     "pnl_live_total": 56,
     "indices_live": {
       "NQ": 29312.5,
@@ -70,18 +70,20 @@
       "sj_live": 28207,
       "heure_achat": "06/05/2026",
       "mise_eur": 278,
-      "pnl_live_eur": 42,
-      "pnl_live_pct": 3.8,
+      "pnl_live_eur": 165,
+      "pnl_live_pct": 59.4,
       "ko_dist_live": 6,
       "stop_turbo": 6.94,
       "tp1_turbo": 24.984,
       "tp2_turbo": 36.088,
       "conviction": 8,
-      "status": "OUVERT",
+      "status": "CLOTURE",
       "_live_vi": 22.81334918478261,
-      "_live_pnl": 714.6679347826087,
+      "_live_pnl": 178.66698369565216,
       "_live_pct": 64.36130536586894,
-      "_live_kod": 9.16503198294243
+      "_live_kod": 9.16503198294243,
+      "prix_sortie": 22.13,
+      "heure_sortie": "11/05/2026"
     }
   ],
   "historique_trades": [
@@ -100,6 +102,22 @@
       "pnl_eur": 491,
       "status": "CLOTURE",
       "partiel": true
+    },
+    {
+      "date": "11/05/2026",
+      "label": "CALL NQ 26626 Turbo BEST",
+      "sens": "CALL",
+      "sous_jacent": "NQ Futures",
+      "strike": 26626,
+      "ko": 26626,
+      "nb_sold": 20,
+      "prix_achat": 13.88,
+      "prix_sortie": 22.13,
+      "mise": 278,
+      "pnl_pct": 59.4,
+      "pnl_eur": 165,
+      "status": "CLOTURE",
+      "partiel": false
     }
   ]
 }
