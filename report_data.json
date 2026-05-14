@@ -12,14 +12,14 @@
     "nb_positions": 1,
     "pnl_live_total": 56,
     "indices_live": {
-      "NQ": 29704.25,
-      "SP500": 7518.75,
-      "CAC40": 8068.95
+      "NQ": 29724.0,
+      "SP500": 7522.25,
+      "CAC40": 8082.27
     },
-    "fx_eurusd": 1.1682,
-    "last_refresh": "14/05/2026 17:05",
-    "pnl_latent_eur": -96,
-    "pnl_latent_pct": -18.9
+    "fx_eurusd": 1.1681,
+    "last_refresh": "14/05/2026 19:08",
+    "pnl_latent_eur": -107,
+    "pnl_latent_pct": -21.0
   },
   "positions_ouvertes": [
     {
@@ -36,18 +36,18 @@
       "levier": 12.3,
       "emetteur": "SG",
       "sj_entree": 8040,
-      "sj_live": 8068.95,
+      "sj_live": 8082.27,
       "heure_achat": "29/04/2026",
       "mise_eur": 509,
-      "pnl_live_eur": -96,
-      "pnl_live_pct": -18.9,
-      "ko_dist_live": 6.4,
+      "pnl_live_eur": -107,
+      "pnl_live_pct": -21.0,
+      "ko_dist_live": 6.2,
       "stop_turbo": 3.18,
       "tp1_turbo": 11.448,
       "tp2_turbo": 16.536,
       "conviction": 7,
       "status": "OUVERT",
-      "prix_turbo_live": 5.161,
+      "prix_turbo_live": 5.027,
       "_live_vi": 6.900750000000006,
       "_live_pnl": 43.26000000000043,
       "_live_pct": 8.502358490566122,
