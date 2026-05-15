@@ -5,15 +5,15 @@
   "signal": "Mixed - Long tech US, short Europe",
   "confiance": 65,
   "cto_recap": {
-    "total_engage": 509,
+    "total_engage": 1518,
     "valeur_marche": 1675,
     "budget_total": 8902,
-    "reserve_dispo": 10146.8,
-    "nb_positions": 1,
+    "reserve_dispo": 9137.8,
+    "nb_positions": 2,
     "pnl_live_total": 56,
     "indices_live": {
       "NQ": 29446.25,
-      "SP500": 7483.0,
+      "SP500": 7483,
       "CAC40": 8037.31
     },
     "fx_eurusd": 1.1644,
@@ -48,10 +48,10 @@
       "conviction": 7,
       "status": "OUVERT",
       "prix_turbo_live": 5.477,
-      "_live_vi": 6.900750000000006,
-      "_live_pnl": 43.26000000000043,
-      "_live_pct": 8.502358490566122,
-      "_live_kod": 6.872452676106139
+      "_live_vi": 6.846124999999995,
+      "_live_pnl": 38.8899999999996,
+      "_live_pct": 7.643474842767217,
+      "_live_kod": 6.814344600370019
     },
     {
       "label": "CALL NQ 26626 Turbo BEST",
@@ -84,6 +84,34 @@
       "_live_kod": 9.16503198294243,
       "prix_sortie": 22.13,
       "heure_sortie": "11/05/2026"
+    },
+    {
+      "label": "CALL NQ CALL 29928 Turbo BEST (SG)",
+      "sens": "CALL",
+      "sous_jacent": "NQ CALL 29928",
+      "isin": "SG CALL NQ CALL 29928 27928",
+      "nb_titres": 80,
+      "prix_achat": 12.61,
+      "strike": 27928,
+      "ko": 27928,
+      "parite": 100,
+      "devise": "USD",
+      "levier": 19.4,
+      "emetteur": "SG",
+      "sj_entree": 29446,
+      "sj_live": 29446,
+      "heure_achat": "15/05/2026",
+      "mise_eur": 1009,
+      "pnl_live_pct": 0,
+      "pnl_live_eur": 0,
+      "ko_dist_live": 5.2,
+      "stop_turbo": 6.305,
+      "tp1_turbo": 22.698,
+      "tp2_turbo": 32.786,
+      "rr1": 2,
+      "rr2": 4,
+      "conviction": 8,
+      "status": "OUVERT"
     }
   ],
   "historique_trades": [
