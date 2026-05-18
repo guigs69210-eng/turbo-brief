@@ -5,10 +5,10 @@
   "signal": "Mixed - Long tech US, short Europe",
   "confiance": 65,
   "cto_recap": {
-    "total_engage": 1518,
+    "total_engage": 1136,
     "valeur_marche": 1675,
     "budget_total": 8902,
-    "reserve_dispo": 9137.8,
+    "reserve_dispo": 9592,
     "nb_positions": 2,
     "pnl_live_total": 56,
     "indices_live": {
@@ -27,7 +27,7 @@
       "sens": "PUT",
       "sous_jacent": "CAC40",
       "isin": "DE000FE4CUL1",
-      "nb_titres": 80,
+      "nb_titres": 20,
       "prix_achat": 6.36,
       "strike": 8585,
       "ko": 8585,
@@ -38,20 +38,20 @@
       "sj_entree": 8040,
       "sj_live": 7952.55,
       "heure_achat": "29/04/2026",
-      "mise_eur": 509,
+      "mise_eur": 127,
       "pnl_live_eur": -3,
       "pnl_live_pct": -0.6,
-      "ko_dist_live": 8.0,
+      "ko_dist_live": 8,
       "stop_turbo": 3.18,
       "tp1_turbo": 11.448,
       "tp2_turbo": 16.536,
       "conviction": 7,
       "status": "OUVERT",
       "prix_turbo_live": 6.324,
-      "_live_vi": 6.846124999999995,
-      "_live_pnl": 38.8899999999996,
-      "_live_pct": 7.643474842767217,
-      "_live_kod": 6.814344600370019
+      "_live_vi": 7.905624999999997,
+      "_live_pnl": 123.64999999999974,
+      "_live_pct": 24.302279874213784,
+      "_live_kod": 7.9527950154352975
     },
     {
       "label": "CALL NQ 26626 Turbo BEST",
@@ -111,7 +111,11 @@
       "rr1": 2,
       "rr2": 4,
       "conviction": 8,
-      "status": "OUVERT"
+      "status": "OUVERT",
+      "_live_vi": 9.388158460084215,
+      "_live_pnl": -257.7473231932628,
+      "_live_pct": -25.549893258650158,
+      "_live_kod": 3.7645802105408244
     }
   ],
   "historique_trades": [
@@ -146,6 +150,22 @@
       "pnl_eur": 165,
       "status": "CLOTURE",
       "partiel": false
+    },
+    {
+      "date": "18/05/2026",
+      "label": "PUT CAC40 8585 Turbo BEST (partiel 60/80)",
+      "sens": "PUT",
+      "sous_jacent": "CAC40",
+      "strike": 8585,
+      "ko": 8585,
+      "nb_sold": 60,
+      "prix_achat": 6.36,
+      "prix_sortie": 7.57,
+      "mise": 382,
+      "pnl_pct": 19,
+      "pnl_eur": 73,
+      "status": "CLOTURE",
+      "partiel": true
     }
   ]
 }
