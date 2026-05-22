@@ -5,11 +5,11 @@
   "signal": "Mixed - Long tech US, short Europe",
   "confiance": 65,
   "cto_recap": {
-    "total_engage": 1641,
+    "total_engage": 1136,
     "valeur_marche": 1675,
     "budget_total": 8902,
-    "reserve_dispo": 9087,
-    "nb_positions": 3,
+    "reserve_dispo": 9756.5,
+    "nb_positions": 2,
     "pnl_live_total": 56,
     "indices_live": {
       "NQ": 29559.25,
@@ -48,10 +48,10 @@
       "conviction": 7,
       "status": "OUVERT",
       "prix_turbo_live": 4.601,
-      "_live_vi": 7.905624999999997,
-      "_live_pnl": 30.912499999999934,
-      "_live_pct": 24.302279874213784,
-      "_live_kod": 7.9527950154352975
+      "_live_vi": 5.751874999999995,
+      "_live_pnl": -12.162500000000112,
+      "_live_pct": -9.561713836478075,
+      "_live_kod": 5.663489172107788
     },
     {
       "label": "CALL NQ 26626 Turbo BEST",
@@ -112,10 +112,10 @@
       "rr2": 4,
       "conviction": 8,
       "status": "OUVERT",
-      "_live_vi": 9.388158460084215,
-      "_live_pnl": -257.7473231932628,
-      "_live_pct": -25.549893258650158,
-      "_live_kod": 3.7645802105408244
+      "_live_vi": 14.051597898182445,
+      "_live_pnl": 115.32783185459564,
+      "_live_pct": 11.432180001446833,
+      "_live_kod": 5.518577095156338
     },
     {
       "label": "CALL NQ CALL 27928 ADD Turbo BEST (SG)",
@@ -134,8 +134,8 @@
       "sj_live": 29020,
       "heure_achat": "18/05/2026",
       "mise_eur": 505,
-      "pnl_live_pct": 0,
-      "pnl_live_eur": 0,
+      "pnl_live_pct": 32.7,
+      "pnl_live_eur": 165,
       "ko_dist_live": 3.8,
       "stop_turbo": 5.045,
       "tp1_turbo": 18.162,
@@ -143,7 +143,13 @@
       "rr1": 2,
       "rr2": 4,
       "conviction": 7,
-      "status": "OUVERT"
+      "status": "CLOTURE",
+      "_live_vi": 14.051597898182445,
+      "_live_pnl": 198.07989490912226,
+      "_live_pct": 39.2626154428389,
+      "_live_kod": 5.518577095156338,
+      "prix_sortie": 13.39,
+      "heure_sortie": "22/05/2026"
     }
   ],
   "historique_trades": [
@@ -194,6 +200,22 @@
       "pnl_eur": 73,
       "status": "CLOTURE",
       "partiel": true
+    },
+    {
+      "date": "22/05/2026",
+      "label": "CALL NQ CALL 27928 ADD Turbo BEST (SG)",
+      "sens": "CALL",
+      "sous_jacent": "NQ CALL 27928 ADD",
+      "strike": 27928,
+      "ko": 27928,
+      "nb_sold": 50,
+      "prix_achat": 10.09,
+      "prix_sortie": 13.39,
+      "mise": 505,
+      "pnl_pct": 32.7,
+      "pnl_eur": 165,
+      "status": "CLOTURE",
+      "partiel": false
     }
   ]
 }
