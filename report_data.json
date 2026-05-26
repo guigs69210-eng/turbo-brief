@@ -18,10 +18,10 @@
     },
     "fx_eurusd": 1.1643,
     "last_refresh": "26/05/2026 09:32",
-    "pnl_latent_eur": 153,
+    "pnl_latent_eur": -55,
     "pnl_latent_pct": -5.8,
-    "total_engage_live": 1100,
-    "valeur_totale_cto": 11057
+    "total_engage_live": 72,
+    "valeur_totale_cto": 11016
   },
   "positions_ouvertes": [
     {
@@ -41,21 +41,22 @@
       "sj_live": 8224.11,
       "heure_achat": "29/04/2026",
       "mise_eur": 127,
-      "pnl_live_eur": -55,
-      "pnl_live_pct": -43.3,
+      "pnl_live_eur": -44,
+      "pnl_live_pct": -34.3,
       "ko_dist_live": 4.4,
       "stop_turbo": 3.18,
       "tp1_turbo": 11.448,
       "tp2_turbo": 16.536,
       "conviction": 7,
       "status": "OUVERT",
-      "prix_turbo_live": 3.609,
+      "prix_turbo_live": 4.18,
       "_live_vi": 3.609,
       "_live_pnl": -55.02000000000001,
       "_live_pct": -43.25471698113208,
       "_live_kod": 4.388195196805483,
       "_live_val": 72.18,
-      "_is_broker": true
+      "_is_broker": true,
+      "broker_refresh": "26/05/2026 10:51:03"
     },
     {
       "label": "CALL NQ 26626 Turbo BEST",
