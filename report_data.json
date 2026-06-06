@@ -12,12 +12,12 @@
     "nb_positions": 1,
     "pnl_live_total": 56,
     "indices_live": {
-      "NQ": 29068.75,
-      "SP500": 7397.0,
+      "NQ": 29026.5,
+      "SP500": 7400.5,
       "CAC40": 8218.24
     },
-    "fx_eurusd": 1.1522,
-    "last_refresh": "05/06/2026 21:22",
+    "fx_eurusd": 1.1527,
+    "last_refresh": "06/06/2026 08:17",
     "pnl_latent_eur": -54,
     "pnl_latent_pct": -42.5,
     "total_engage_live": 72,
