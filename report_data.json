@@ -11,13 +11,9 @@
     "reserve_dispo": 10943.4,
     "nb_positions": 1,
     "pnl_live_total": 56,
-    "indices_live": {
-      "NQ": 29332.0,
-      "SP500": 7544.5,
-      "CAC40": 8436.24
-    },
-    "fx_eurusd": 1.1416,
-    "last_refresh": "07/07/2026 21:24",
+    "indices_live": {},
+    "fx_eurusd": 1.1521,
+    "last_refresh": "08/07/2026 10:12",
     "pnl_latent_eur": -97,
     "pnl_latent_pct": -76.4,
     "total_engage_live": 72,
