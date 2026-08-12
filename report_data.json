@@ -12,12 +12,12 @@
     "nb_positions": 1,
     "pnl_live_total": 56,
     "indices_live": {
-      "NQ": 29830.75,
-      "SP500": 7768.75,
-      "CAC40": 8705.75
+      "NQ": 29841.0,
+      "SP500": 7769.5,
+      "CAC40": 8706.41
     },
-    "fx_eurusd": 1.1542,
-    "last_refresh": "12/08/2026 11:45",
+    "fx_eurusd": 1.1537,
+    "last_refresh": "12/08/2026 12:54",
     "pnl_latent_eur": -127,
     "pnl_latent_pct": -100.0,
     "total_engage_live": 72,
@@ -38,7 +38,7 @@
       "levier": 12.3,
       "emetteur": "SG",
       "sj_entree": 8040,
-      "sj_live": 8705.75,
+      "sj_live": 8706.41,
       "heure_achat": "29/04/2026",
       "mise_eur": 127,
       "pnl_live_eur": -127,
